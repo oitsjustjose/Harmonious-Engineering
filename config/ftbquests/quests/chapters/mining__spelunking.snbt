@@ -1,0 +1,323 @@
+{
+	id: "2167092502601DFF"
+	group: "769C812A47F269AA"
+	order_index: 1
+	filename: "mining__spelunking"
+	title: "Mining \\& Ores"
+	icon: "emendatusenigmatica:iron_chunk"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ore Chunks"
+			x: 0.0d
+			y: -7.5d
+			shape: "hexagon"
+			description: ["You've found an ore chunk! You'll probably notice that you can't just throw this bad boy in a furnace to turn it into an ingot, but you'll be able to use these really soon. Hang onto them because you'll need them for your first foray into Tech!"]
+			dependencies: ["5576DA257D4825D4"]
+			id: "75C685BA3AC15524"
+			tasks: [{
+				id: "0F15DCAB9E0DD215"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "emendatusenigmatica:iron_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:gold_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:copper_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:aluminum_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:silver_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:lead_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:nickel_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:uranium_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:osmium_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:tin_chunk"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:zinc_chunk"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Where's the redstone?"
+			icon: "minecraft:redstone_ore"
+			x: -1.5d
+			y: -6.0d
+			description: ["Redstone Ore has been disabled in this pack! When / if you need redstone, you'll have to grind down Cinnabar to get some!"]
+			dependencies: ["75C685BA3AC15524"]
+			id: "4CBFEA513A0B9DD8"
+			tasks: [{
+				id: "7DFE5C1956FA896B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "49296FD617B72168"
+				type: "item"
+				item: "emendatusenigmatica:cinnabar_gem"
+				random_bonus: 1
+			}]
+		}
+		{
+			icon: "appliedenergistics2:charged_certus_quartz_crystal"
+			x: 1.5d
+			y: -6.0d
+			description: [
+				""
+				"If you're hoping to get started with AE2 sometime relatively soon, you're probably already on the hunt for Charged Certus Quartz Ore. In this pack you'll only ever find Charged Certus Quartz in the Nether where the static pressure is so high that it embues the crystalline structure of the Certus Quartz with an enhanced clock, faster than those used in your every day computer."
+				""
+				""
+				"If you're not planning on getting into AE2, that's fine. Just click that checkmark :D"
+			]
+			dependencies: ["75C685BA3AC15524"]
+			id: "6CEEAF36CF299766"
+			tasks: [{
+				id: "5E7E904FBADB6BE4"
+				type: "checkmark"
+				title: "Charged Certus Anyone?"
+			}]
+			rewards: [{
+				id: "4200DFF21CB959E2"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			icon: "powah:uraninite"
+			x: 0.0d
+			y: -4.5d
+			description: ["Yep, Uraninite has been removed as an ore, but if you keep picking up that Uranium ore and those Uranium ore chunks, you can Metallurgically Infuse them with Redstone to get some for your reactor!"]
+			dependencies: ["75C685BA3AC15524"]
+			id: "22126D2038C558A8"
+			tasks: [{
+				id: "545DA549E5ED726A"
+				type: "checkmark"
+				title: "Uraninite Too?"
+			}]
+			rewards: [{
+				id: "7E77281379BF5B32"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "ALL THE CHUNKS"
+			x: -1.5d
+			y: -9.0d
+			shape: "diamond"
+			description: [
+				"Wow you really like to mine huh? Just kidding! You'll need each and every one of these ores in the longrun!"
+				""
+				"I imagine your inventory is getting pretty full, so here - have a Crate on me! They keep their contents when broken!"
+			]
+			dependencies: ["75C685BA3AC15524"]
+			id: "780CF0898B0879B3"
+			tasks: [
+				{
+					id: "0AD5BE1428B0E64E"
+					type: "item"
+					item: "emendatusenigmatica:iron_chunk"
+				}
+				{
+					id: "2471FFCDED5E5BE9"
+					type: "item"
+					item: "emendatusenigmatica:gold_chunk"
+				}
+				{
+					id: "48DC8E6C73D919FA"
+					type: "item"
+					item: "emendatusenigmatica:copper_chunk"
+				}
+				{
+					id: "42FB254F3F9B0B99"
+					type: "item"
+					item: "emendatusenigmatica:aluminum_chunk"
+				}
+				{
+					id: "356B524BE547D4D1"
+					type: "item"
+					item: "emendatusenigmatica:silver_chunk"
+				}
+				{
+					id: "695D8AACC5EAF5AE"
+					type: "item"
+					item: "emendatusenigmatica:lead_chunk"
+				}
+				{
+					id: "4A77A834207EACF1"
+					type: "item"
+					item: "emendatusenigmatica:nickel_chunk"
+				}
+				{
+					id: "5E439AD1DD0DE50F"
+					type: "item"
+					item: "emendatusenigmatica:uranium_chunk"
+				}
+				{
+					id: "0C936F8707ADEF11"
+					type: "item"
+					item: "emendatusenigmatica:tin_chunk"
+				}
+				{
+					id: "348FFA5FCFC0EE19"
+					type: "item"
+					item: "emendatusenigmatica:osmium_chunk"
+				}
+				{
+					id: "54D252B2E20E96B1"
+					type: "item"
+					item: "emendatusenigmatica:cobalt_chunk"
+				}
+				{
+					id: "30505026CEB150A6"
+					type: "item"
+					item: "emendatusenigmatica:zinc_chunk"
+				}
+			]
+			rewards: [{
+				id: "19BE1C868AA644FA"
+				type: "item"
+				item: "immersiveengineering:crate"
+			}]
+		}
+		{
+			title: "Silk Touchist"
+			x: 1.5d
+			y: -9.0d
+			description: ["Wow you really managed to silk touch every ore, huh! Nice!! I'm very impressed. If you need to turn those back into blocks so you can break them, just shapelessly craft a chunk to get its block form. If you want to decorate with them, head over to your local stonecutter!"]
+			dependencies: ["75C685BA3AC15524"]
+			id: "7C2B64C4A87CB87B"
+			tasks: [
+				{
+					id: "3C525CED79D08A5F"
+					type: "item"
+					item: "emendatusenigmatica:coal_chunk"
+				}
+				{
+					id: "4042C4AAE704BF3D"
+					type: "item"
+					item: "emendatusenigmatica:diamond_chunk"
+				}
+				{
+					id: "4C8D5F48413ABB66"
+					type: "item"
+					item: "emendatusenigmatica:emerald_chunk"
+				}
+				{
+					id: "237DFFBD856CAD91"
+					type: "item"
+					item: "emendatusenigmatica:lapis_chunk"
+				}
+				{
+					id: "3B394608376AAFE7"
+					type: "item"
+					item: "emendatusenigmatica:certus_quartz_chunk"
+				}
+				{
+					id: "5C9DEAF785489BB3"
+					type: "item"
+					item: "emendatusenigmatica:fluorite_chunk"
+				}
+				{
+					id: "22C289C9B8483163"
+					type: "item"
+					item: "emendatusenigmatica:cinnabar_chunk"
+				}
+				{
+					id: "648C6972A768D5CE"
+					type: "item"
+					item: "emendatusenigmatica:apatite_chunk"
+				}
+				{
+					id: "6683F26A2C9DBD0A"
+					type: "item"
+					item: "emendatusenigmatica:sulfur_chunk"
+				}
+				{
+					id: "137D365E9F12D9E8"
+					type: "item"
+					item: "emendatusenigmatica:potassium_nitrate_chunk"
+				}
+				{
+					id: "46FD321E51F88712"
+					type: "item"
+					item: "emendatusenigmatica:dimensional_chunk"
+				}
+			]
+			rewards: [{
+				id: "40B6969D5F159FCC"
+				type: "item"
+				item: "farmersdelight:sweet_berry_cookie"
+				count: 13
+			}]
+		}
+		{
+			title: "Interdimensional Chunks"
+			x: 0.0d
+			y: -10.5d
+			description: ["These are the last three silk-touch chunks you can get! Nicely done."]
+			dependencies: [
+				"75C685BA3AC15524"
+				"7C2B64C4A87CB87B"
+			]
+			id: "4FEE7F24EB84E291"
+			tasks: [
+				{
+					id: "53CF24B14DEDCE14"
+					type: "item"
+					item: "emendatusenigmatica:quartz_chunk"
+				}
+				{
+					id: "39D7FE8805D2CCD5"
+					type: "item"
+					item: "emendatusenigmatica:charged_certus_quartz_chunk"
+				}
+				{
+					id: "474C6FD30A3CBCE1"
+					type: "item"
+					item: "emendatusenigmatica:dimensional_chunk"
+				}
+			]
+			rewards: [{
+				id: "4DE719973FC7F586"
+				type: "item"
+				item: "abnormals_delight:mulberry_cookie"
+				count: 26
+			}]
+		}
+	]
+}

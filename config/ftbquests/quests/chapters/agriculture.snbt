@@ -1,0 +1,71 @@
+{
+	id: "3764DAB90C76CE0D"
+	group: "769C812A47F269AA"
+	order_index: 2
+	filename: "agriculture"
+	title: "Agriculture"
+	icon: "farmersdelight:rice_panicle"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting Started"
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"Get started early with food, because you've got a lot of variety but a LOT of running around to do! There's so much to see, so don't let food hold you back."
+				""
+				"Along the way we've given you some pretty big meals to keep you satiated, but better safe than sorry."
+			]
+			id: "46DC8052BBB15618"
+			tasks: [
+				{
+					id: "239A1B83B96844F3"
+					type: "item"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:seeds"
+						}
+					}
+				}
+				{
+					id: "7E986F786FDE0F01"
+					type: "item"
+					item: {
+						id: "minecraft:stone_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2491D3449E137CDA"
+				type: "item"
+				item: "minecraft:bone_meal"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "Your Own Soup Kitchen"
+			x: -1.0d
+			y: -1.0d
+			description: ["Getting yourself a Cooking Pot is such a great idea early game - I know you'll have to invest yourself a *bit* in the alloying process, but once you do it's so worth it just for the convenience of it all. You can put this pot over top of a Campfire to get it good and heated up - from here I'd suggest starting with some simple recipes like the Cabbage Rolls which are super easy to get into early-game!"]
+			id: "3964C3FA689DB318"
+			tasks: [{
+				id: "0D0879EAF053122E"
+				type: "item"
+				item: "farmersdelight:cooking_pot"
+			}]
+			rewards: [{
+				id: "5718F57CF808A206"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+		}
+	]
+}

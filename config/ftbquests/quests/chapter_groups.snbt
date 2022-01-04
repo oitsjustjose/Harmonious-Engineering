@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "769C812A47F269AA", title: "Early Game" }
+		{ id: "2F5E9821869B4E2F", title: "Technology" }
+		{ id: "4D77B1A0ACFA64E2", title: "Comforts \\& QOL" }
+	]
+}
