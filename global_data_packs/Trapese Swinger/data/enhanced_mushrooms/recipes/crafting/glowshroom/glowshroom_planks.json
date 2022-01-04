@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ],
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "enhanced_mushrooms:stripped_glowshroom_stem"
+    },
+    {
+      "tag": "natural-progression:saw"
+    }
+  ],
+  "result": {
+    "item": "enhanced_mushrooms:glowshroom_planks",
+    "count": 4
+  }
+}
