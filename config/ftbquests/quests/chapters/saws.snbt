@@ -1,0 +1,199 @@
+{
+	id: "58BDD920A5886CEF"
+	group: "5D65BFF245310B96"
+	order_index: 0
+	filename: "saws"
+	title: "Woodcutting"
+	icon: {
+		id: "natural-progression:steel_saw"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: -7.0d
+			dependencies: ["4C9A05B0AD584B26"]
+			optional: true
+			id: "47DAF527D1046F72"
+			tasks: [{
+				id: "00913D59A1BF1686"
+				type: "item"
+				item: {
+					id: "natural-progression:improved_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			dependencies: ["4C9A05B0AD584B26"]
+			id: "0548DDE37D3D032B"
+			tasks: [{
+				id: "56E46C63CB7E5E91"
+				type: "item"
+				item: {
+					id: "natural-progression:diamond_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			dependencies: ["4C9A05B0AD584B26"]
+			optional: true
+			id: "78B4EA799C033315"
+			tasks: [{
+				id: "0AC0E7A8A48A2BE9"
+				type: "item"
+				item: {
+					id: "natural-progression:copper_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.0d
+			dependencies: ["4C9A05B0AD584B26"]
+			optional: true
+			id: "45AE67E98FE787F1"
+			tasks: [{
+				id: "60ECCCAA2FDCB3FB"
+				type: "item"
+				item: {
+					id: "natural-progression:bronze_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["4C9A05B0AD584B26"]
+			optional: true
+			id: "65F7888526E58FF9"
+			tasks: [{
+				id: "1C6DAD5FE9C4D6B0"
+				type: "item"
+				item: {
+					id: "natural-progression:steel_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			shape: "octagon"
+			dependencies: ["0548DDE37D3D032B"]
+			id: "6BEF61293DADA399"
+			tasks: [{
+				id: "098B830E19DAC243"
+				type: "item"
+				item: {
+					id: "natural-progression:netherite_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.0d
+			shape: "hexagon"
+			description: ["A sawmill will open the way to moving out of the hand-saw industry and finally give those hands a break!"]
+			id: "69F9DACE4BCC993E"
+			tasks: [{
+				id: "458794FAA75E7CF0"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+			rewards: [{
+				id: "7F1543041384B57C"
+				type: "item"
+				item: "chipped:carpenters_table"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.5d
+			shape: "octagon"
+			dependencies: [
+				"69F9DACE4BCC993E"
+				"3254AD20E1DA7ABC"
+			]
+			id: "67AF80F10D32694E"
+			tasks: [{
+				id: "4B893DA4F462FB61"
+				type: "item"
+				item: "mekanism:precision_sawmill"
+			}]
+			rewards: [{
+				id: "4B33318C7DA64694"
+				type: "item"
+				item: "atmospheric:kousa_log"
+				count: 48
+				random_bonus: 16
+			}]
+		}
+		{
+			x: -5.5d
+			y: -8.0d
+			shape: "hexagon"
+			description: ["This Sawmill won't improve your planking recipes, but it WILL help you use your hand-sawed planks more efficiently!"]
+			id: "3254AD20E1DA7ABC"
+			tasks: [{
+				id: "5B397028D62F37D3"
+				type: "item"
+				item: "corail_woodcutter:oak_woodcutter"
+			}]
+			rewards: [{
+				id: "3DD381C511AC902A"
+				type: "item"
+				item: "upgrade_aquatic:river_planks"
+				count: 64
+			}]
+		}
+		{
+			x: -0.5d
+			y: -8.5d
+			shape: "hexagon"
+			id: "4C9A05B0AD584B26"
+			tasks: [{
+				id: "7E8D31E3D9158110"
+				type: "item"
+				item: {
+					id: "natural-progression:basic_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

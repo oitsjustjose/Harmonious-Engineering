@@ -1,0 +1,224 @@
+{
+	id: "5C0FB0A5983F34CF"
+	group: "2F5E9821869B4E2F"
+	order_index: 1
+	filename: "tier_2"
+	title: "Early Engineering"
+	icon: "immersiveengineering:sample_drill"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Alloying"
+			icon: "immersiveengineering:alloy_smelter"
+			x: -9.0d
+			y: -8.0d
+			description: ["To get started with early alloys, you can make yourself an Alloy Kiln. This is a 2x2x2 of Kiln Bricks. Once built, hit it with your Engineer's Hammer to form it into a Multi-Block!"]
+			dependencies: ["30909D9243BF755A"]
+			id: "4012189A70E095DD"
+			tasks: [{
+				id: "563D98E8748A502A"
+				type: "item"
+				icon: "immersiveengineering:alloybrick"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "6BCBA5634FFD23BF"
+					type: "item"
+					item: "emendatusenigmatica:copper_ingot"
+				}
+				{
+					id: "66AE5126F953FEDA"
+					type: "item"
+					item: "emendatusenigmatica:zinc_ingot"
+				}
+			]
+		}
+		{
+			title: "Pressing Matters"
+			x: -9.0d
+			y: -12.5d
+			shape: "diamond"
+			description: [
+				"You'll need to get yourself a Hammer from Immersive Engineering in order to form any of the complex structures in the mod. "
+				""
+				"This press will be helpful for you to go about doing that, and with your hand crank you can just barely leverage this machine squeeze some metals into a flat sheet."
+				""
+				"You can use the provided depot below your press to hold your items in place."
+			]
+			id: "698A30780C0AFEC2"
+			tasks: [{
+				id: "38E8A152EA968566"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "518CB1C9F041E7F3"
+				type: "item"
+				item: "create:depot"
+			}]
+		}
+		{
+			title: "Hemp Farm"
+			x: -6.0d
+			y: -12.5d
+			shape: "diamond"
+			description: ["You'll also need lots of industrial hemp, so I'd suggest you start growing some soon!"]
+			id: "523FA138FE64AA62"
+			tasks: [{
+				id: "522769EFF4B48ABF"
+				type: "item"
+				item: "immersiveengineering:hemp_fiber"
+			}]
+			rewards: [{
+				id: "051273128D1F419E"
+				type: "item"
+				item: "immersiveengineering:hemp_fiber"
+				count: 48
+			}]
+		}
+		{
+			x: -7.5d
+			y: -10.5d
+			subtitle: "This hammer is the key to this entire chapter in this modpack!"
+			dependencies: [
+				"523FA138FE64AA62"
+				"698A30780C0AFEC2"
+			]
+			id: "30909D9243BF755A"
+			tasks: [{
+				id: "35DC5279584DB63F"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Coke Oven"
+			icon: "immersiveengineering:coke_oven"
+			x: -6.0d
+			y: -8.0d
+			description: ["A Coke Oven will get you the required coal coke needed to make steel in a blast furnace. It'll also get you Creosote Oil, which you can use (in a JerryCan is the easiest way) to make Treated Wood Planks. Treated Wood Planks are good tool materials, great for Storage Crates, Building, and as ingredients for other recipes!"]
+			dependencies: ["30909D9243BF755A"]
+			id: "1A10E66C46D2299F"
+			tasks: [{
+				id: "6B04C7A185AD435E"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			title: "Into Fire"
+			icon: "minecraft:nether_brick_wall"
+			x: -7.5d
+			y: -6.0d
+			description: [
+				"The recipe for Blast Brick has been changed to require a literal blaze burner to keep it warm enough. Fortunately, the recipe makes all 27 which is all you'll need."
+				""
+				"While you're here, you may notice TONS of new structures thanks to Better Nether and Infernal Expansion!"
+			]
+			dependencies: [
+				"1A10E66C46D2299F"
+				"4012189A70E095DD"
+			]
+			id: "4EF301A720A9A759"
+			tasks: [{
+				id: "2C1598F7B903356E"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "7F654079138CB4EC"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.5d
+			description: ["Right click the empty blaze burner on a living Blaze to capture it. You can now use it to make your blast bricks!"]
+			dependencies: ["4EF301A720A9A759"]
+			id: "532B7AF568391D28"
+			tasks: [{
+				id: "50781EC1F33160F0"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "4F7C64DBC3C8903E"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "So I Started Blasting"
+			icon: "immersiveengineering:blast_furnace"
+			x: -7.5d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"Nicely done! You survived the nether, and even made it out with some nice loot -- what's that? I have no way of knowing if you did or not? You're right. I'm just hopeful I suppose."
+				""
+				"Anyways, take some slag and some concrete to build yourself something nice I suppose!"
+			]
+			dependencies: ["532B7AF568391D28"]
+			id: "4A60BF034B726C88"
+			tasks: [{
+				id: "3C7E6270BC4B73A2"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [
+				{
+					id: "1F7668E382741369"
+					type: "item"
+					item: "immersiveengineering:slag"
+					count: 24
+					random_bonus: 40
+				}
+				{
+					id: "25A9F45435C03A13"
+					type: "item"
+					item: "immersiveengineering:concrete"
+					count: 512
+				}
+			]
+		}
+		{
+			title: "The Age Of Steel"
+			x: -7.5d
+			y: -1.5d
+			shape: "gear"
+			description: [
+				"Nicely done you! There's a lot that this steel can do for you. For now, if you want to SPRINT into the next chapter and leave IE behind, feel free!"
+				""
+				"If you want to go back and indulge in some Create and its wonderful aesthetic, go for it! Steel unlocks shafts and treated wood unlocks most generating mills you'd prefer to have."
+				""
+				"I, for one, would suggest going back for some Create washing and sticking around in this chapter for some of the late-Immersive stuff like Petroleum and even the Ore Crusher to start duplicating some resources!"
+			]
+			dependencies: ["4A60BF034B726C88"]
+			id: "1FF265E2816476AB"
+			tasks: [{
+				id: "4977E64322BACBD8"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+			rewards: [{
+				id: "6357022C7B8B0BB6"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+				count: 64
+				random_bonus: 64
+			}]
+		}
+	]
+}

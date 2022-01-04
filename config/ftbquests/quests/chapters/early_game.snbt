@@ -1,0 +1,279 @@
+{
+	id: "19589FBA2C2C45FF"
+	group: "2F5E9821869B4E2F"
+	order_index: 0
+	filename: "early_game"
+	title: "Tier 1 Mechanisms"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Crude Crafting"
+			x: -0.5d
+			y: -2.5d
+			shape: "hexagon"
+			description: [
+				"Without better processing, you're going to need to get some Andesite Alloy"
+				""
+				"Fortunately, with your Saw, some pebbles, some raw ferrous metal and clay as a binder you can form a very crude version of this alloy which you can use to make some very basic machines."
+			]
+			id: "69FF3D884B1E8649"
+			tasks: [{
+				id: "0FD7B1C3DE551305"
+				type: "item"
+				item: {
+					id: "create:andesite_alloy"
+					Count: 1b
+					tag: {
+						display: {
+							Name: "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
+						}
+					}
+				}
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "00730FA6AB7C5E95"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
+							}
+						}
+					}
+					count: 2
+				}
+				{
+					id: "7CF9D79BDC1DF63E"
+					type: "item"
+					item: "minecraft:oak_button"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Rotational Energy"
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["69FF3D884B1E8649"]
+			id: "0AA54D344D1DC314"
+			tasks: [{
+				id: "16752C704FD68F12"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+			rewards: [{
+				id: "1B4AD0F55D9C44D9"
+				type: "item"
+				item: {
+					id: "create:andesite_alloy"
+					Count: 1b
+					tag: {
+						display: {
+							Name: "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
+						}
+					}
+				}
+				random_bonus: 1
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			description: [
+				"This is how you'll produce rotational energy, but it's going to exhaust you and drain your hunger in the process."
+				""
+				"If you don't know how to use it with your cogs and Mill, hover over this item with your cursor and hold down the [W] key on your keyboard. Create will show you a lovely animation to explain how it works!"
+			]
+			dependencies: ["0AA54D344D1DC314"]
+			id: "1B6CFE3A022C3611"
+			tasks: [{
+				id: "6BA7D783874AE4DE"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "04E836AF75B55F8F"
+				type: "item"
+				item: "farmersdelight:hamburger"
+				count: 2
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Early Ore Processing"
+			x: 1.0d
+			y: 0.5d
+			description: [
+				"This bad boy doesn't have a User Interface at all! To interact with it, throw items (or hopper them) into the top of the mill where you can see a chute. As it mills away you'll keep seeing particles - once you don't see any more particles of what you're milling, right-click (or use a hopper beneath) it to get your fresh grounds!"
+				""
+				"If you don't know how to use it with your cogs and Hand Crank, hover over this item with your cursor and hold down the [W] key on your keyboard. Create will show you a lovely animation to explain how it works!"
+			]
+			dependencies: ["0AA54D344D1DC314"]
+			id: "112B521DD534552E"
+			tasks: [{
+				id: "0B6FCF3A5D431E16"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "021A119BD0ACFD5A"
+				type: "item"
+				item: "minecraft:hopper"
+			}]
+		}
+		{
+			title: "Crushing It!"
+			x: -0.5d
+			y: 2.0d
+			shape: "hexagon"
+			description: [
+				"Using your Manual Mill, hand crank, and extra cog(s) get yourself a comfortable setup for manually running this mill yourself, because it's all you've got!"
+				""
+				"We've provided a hopper to help you get started with automation - I'd suggest using it to extract your items."
+			]
+			dependencies: [
+				"112B521DD534552E"
+				"1B6CFE3A022C3611"
+			]
+			id: "557F241BD0AAA98E"
+			tasks: [{
+				id: "456FB0A837898F2A"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:crushed_iron_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_gold_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_copper_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_zinc_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_osmium_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_silver_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_tin_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_aluminum_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_nickel_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_uranium_ore"
+								Count: 1b
+							}
+							{
+								id: "morecreatestuffs:crushed_cobalt_ore"
+								Count: 1b
+							}
+							{
+								id: "create:crushed_lead_ore"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1769D597194B6A0F"
+				type: "item"
+				item: "farmersdelight:pumpkin_soup"
+				count: 16
+			}]
+		}
+		{
+			title: "Gearing Up"
+			x: 0.5d
+			y: 4.0d
+			shape: "gear"
+			description: ["Using a large cog, you can move your hand crank to crank directly into this large wheel, then use a small cog to down-shift the rotational energy to increase the speed of your milling. With a hand crank, you can only do this once, but it will make your work about twice as fast!"]
+			dependencies: ["557F241BD0AAA98E"]
+			optional: true
+			id: "33D1569B8548516D"
+			tasks: [{
+				id: "35E2FE3EC7F379CE"
+				type: "item"
+				item: "create:large_cogwheel"
+			}]
+			rewards: [{
+				id: "55F587C7D4B898B8"
+				type: "item"
+				item: "farmersdelight:stuffed_pumpkin"
+				count: 4
+				random_bonus: 3
+			}]
+		}
+		{
+			icon: "immersiveengineering:conveyor_basic"
+			x: -1.5d
+			y: 4.0d
+			description: [
+				"If you so desire, you could use a Minecart, some rails, and some blast furnaces to streamline your Ore Processing line to directly smelt your resulting crushed ore."
+				""
+				"*SINCE* this is an early-game 1:1 Ore-Processing solution, I don't recommend it, but if you did go this far I just wanted to leave you a nice green button to check because you earned it!"
+			]
+			dependencies: ["557F241BD0AAA98E"]
+			optional: true
+			id: "197F7F856D8D6B87"
+			tasks: [{
+				id: "43DAD3534A8008B8"
+				type: "checkmark"
+				title: "Early Game Assembly Line"
+			}]
+			rewards: [{
+				id: "7875750B28A7232B"
+				type: "item"
+				item: "minecraft:cookie"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			description: [
+				"If you know Create, you know that there is SO much left to do in this mod. This pack is designed such that you'll have to step away from Create and revisit it once you have a reliable supply of Steel or Treated Wood."
+				""
+				"Lucky for you, that's what the next chapter is all about!!"
+			]
+			dependencies: ["557F241BD0AAA98E"]
+			id: "6AFD4430D7D335FC"
+			tasks: [{
+				id: "1141E9288F295974"
+				type: "checkmark"
+				title: "Wrapping Up"
+			}]
+			rewards: [{
+				id: "368FFD6CB53F4962"
+				type: "item"
+				item: "immersiveengineering:craftingtable"
+			}]
+		}
+	]
+}

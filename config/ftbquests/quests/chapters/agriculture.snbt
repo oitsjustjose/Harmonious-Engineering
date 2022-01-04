@@ -3,7 +3,7 @@
 	group: "769C812A47F269AA"
 	order_index: 2
 	filename: "agriculture"
-	title: "Agriculture"
+	title: "Feeding Yourself"
 	icon: "farmersdelight:rice_panicle"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -12,6 +12,7 @@
 			title: "Getting Started"
 			x: 0.0d
 			y: -3.0d
+			shape: "hexagon"
 			description: [
 				"Get started early with food, because you've got a lot of variety but a LOT of running around to do! There's so much to see, so don't let food hold you back."
 				""
@@ -52,9 +53,10 @@
 		}
 		{
 			title: "Your Own Soup Kitchen"
-			x: -1.0d
+			x: -3.0d
 			y: -1.0d
 			description: ["Getting yourself a Cooking Pot is such a great idea early game - I know you'll have to invest yourself a *bit* in the alloying process, but once you do it's so worth it just for the convenience of it all. You can put this pot over top of a Campfire to get it good and heated up - from here I'd suggest starting with some simple recipes like the Cabbage Rolls which are super easy to get into early-game!"]
+			dependencies: ["46DC8052BBB15618"]
 			id: "3964C3FA689DB318"
 			tasks: [{
 				id: "0D0879EAF053122E"
@@ -65,6 +67,186 @@
 				id: "5718F57CF808A206"
 				type: "item"
 				item: "minecraft:campfire"
+			}]
+		}
+		{
+			title: "A Surprisingly Good Weapon"
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["46DC8052BBB15618"]
+			id: "20F4868AFBF7ECDF"
+			tasks: [{
+				id: "3FF9B5F5EC5DF810"
+				type: "item"
+				item: {
+					id: "farmersdelight:skillet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "16861D50213A5E0E"
+				type: "item"
+				item: "minecraft:egg"
+				count: 16
+			}]
+		}
+		{
+			title: "A Proper Heat Source"
+			x: -2.0d
+			y: 1.0d
+			dependencies: [
+				"3964C3FA689DB318"
+				"20F4868AFBF7ECDF"
+			]
+			id: "653E667D4286376F"
+			tasks: [{
+				id: "6ED5B0CB49E08657"
+				type: "item"
+				item: "farmersdelight:stove"
+			}]
+			rewards: [{
+				id: "2A3BBE6503FA6270"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Show Me What You Have"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "A KNIFE!"
+			description: [
+				""
+				"NO!! But really, old Vines aside a knife is an instrumental piece of kitchen equipment, allowing you to prep Meats, Vegetables and even recycle some things around the house!"
+			]
+			dependencies: ["46DC8052BBB15618"]
+			id: "7F240DA3650538E9"
+			tasks: [{
+				id: "665D9082C5A6FBB5"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "farmersdelight:iron_knife"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "farmersdelight:diamond_knife"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "farmersdelight:netherite_knife"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "farmersdelight:golden_knife"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "185C5509115495E2"
+					type: "item"
+					item: "tetra:rack"
+					count: 2
+				}
+				{
+					id: "79EA521CFA7A66CC"
+					type: "item"
+					item: "farmersdelight:spruce_pantry"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "More Like Cutting Bored"
+			x: 3.0d
+			y: -1.0d
+			description: ["Pro-tip: if you hold the thing you're cutting in your off-hand, and a knife in your main-hand, you can quickly cut through a whole ton of stuff just by holding down right-click!"]
+			dependencies: ["46DC8052BBB15618"]
+			id: "0D33786225CEED5B"
+			tasks: [{
+				id: "30ACE8317516F378"
+				type: "item"
+				item: "farmersdelight:cutting_board"
+			}]
+			rewards: [{
+				id: "072086CB8E781826"
+				type: "item"
+				title: "MY CABBAGES!"
+				item: "farmersdelight:cabbage"
+				count: 12
+			}]
+		}
+		{
+			title: "Grasping at Straws"
+			x: 2.0d
+			y: 1.0d
+			description: ["By chopping up Rice Panicles you can get straw as a byproduct. Straw can make canvas, which is nice for signs, building, book bindings and more!"]
+			dependencies: [
+				"7F240DA3650538E9"
+				"0D33786225CEED5B"
+			]
+			id: "4B79AB8D817B341C"
+			tasks: [{
+				id: "6EF04E33E94DB5E4"
+				type: "item"
+				item: "farmersdelight:straw"
+			}]
+		}
+		{
+			title: "The Lumpy Pumpkin"
+			x: 0.0d
+			y: 2.0d
+			shape: "octagon"
+			description: ["This dish takes a LOT of ingredients and know-how with Farmer's Delight. If you manage to get such a scrumptious dish then good on you!"]
+			optional: true
+			id: "13A881ABCF2248C5"
+			tasks: [{
+				id: "1FA034DE00EB3650"
+				type: "item"
+				item: "farmersdelight:stuffed_pumpkin_block"
+			}]
+			rewards: [{
+				id: "1DFCD02DC441A7C1"
+				type: "item"
+				item: {
+					id: "farmersdelight:iron_knife"
+					Count: 1b
+					tag: {
+						Unbreakable: 1
+						RepairCost: 1
+						Damage: 0
+						display: {
+							Name: "{\"text\": \"Iron Chef's Tempered Knife\", \"italic\": \"false\", \"color\": \"green\"}"
+						}
+						Enchantments: [{
+							lvl: 3s
+							id: "farmersdelight:backstabbing"
+						}]
+					}
+				}
 			}]
 		}
 	]
