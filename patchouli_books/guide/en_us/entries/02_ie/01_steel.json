@@ -1,0 +1,19 @@
+{
+  "name": "Steel Production",
+  "icon": "immersiveengineering:ingot_steel",
+  "category": "02_ie",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Once you've visited The Nether to get blast furnace ingredients, you'll need to construct a Blast Furnace and fuel it with Charcoal or Coal Coke (from your Coke Oven). Steel is a necessary ingredient, but after this point you can move into Mekanism happily!"
+    },
+    {
+      "type": "spotlight",
+      "item": "immersiveengineering:ingot_steel",
+      "link_recipe": true,
+      "title": "Into the Steel Age",
+      "text": "Yep, that's a steel for ya', now it's about what you do with it!"
+    }
+  ]
+}

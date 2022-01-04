@@ -1,0 +1,19 @@
+{
+  "name": "Enchanting",
+  "icon": "minecraft:enchanting_table",
+  "category": "08_misc",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Having trouble surviving? I get that so we have Apotheosis installed! See how many Charms you can collect, how high of an enchanting level your enchanting setup can get and how many enchantments you can manage to fit on a single tool! After that, you should be good and you'll have had a fun time doing it too :)"
+    },
+    {
+      "type": "spotlight",
+      "item": "apotheosis:pearl_endshelf",
+      "link_recipe": true,
+      "title": "The Best Shelf",
+      "text": "This bookshelf is probably the best balance of the three kinds of enchanting. Eterna gives you general enchantments (Efficiency, Unbreaking), Quanta gives you $(bold)Curses$(), and Arcana gives you Magic Enchantments (Fortune, Occult Resistance, etc.)"
+    }
+  ]
+}

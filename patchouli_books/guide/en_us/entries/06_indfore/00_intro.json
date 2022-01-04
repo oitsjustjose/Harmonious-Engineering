@@ -1,0 +1,19 @@
+{
+  "name": "Organics, Automated",
+  "icon": "industrialforegoing:pink_slime_ingot",
+  "category": "06_indfore",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Once again, you may notice that this part of the modpack is largely untouched, but there are few things that I'd like to bring up here! This section is GREAT for automating things with plants, mobs and other organic things in the Minecraft world. Don't forget though, when working with mobs you won't get any on the surface unless it's a $(bold)New Moon$()...mention things to check out now that you have a lot of power (infinity weapons)."
+    },
+    {
+      "type": "spotlight",
+      "item": "industrialforegoing:infinity_hammer",
+      "link_recipe": true,
+      "title": "Supreme Bonking",
+      "text": "This puppy right here can provide many bonks to many enemies at once. I strongly suggest you get yourself one of these once your main tools are electric! There are other infinity tools, and they all work the same -- they get more powerful the more energy they're charged with!"
+    }
+  ]
+}

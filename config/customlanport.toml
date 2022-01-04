@@ -1,0 +1,4 @@
+#Choose the LAN port.
+#Range: 0 ~ 65535
+port = 25565
+

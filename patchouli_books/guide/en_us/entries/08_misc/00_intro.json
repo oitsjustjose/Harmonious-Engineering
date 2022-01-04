@@ -1,0 +1,12 @@
+{
+  "name": "The Rest of the [Jet]Pack",
+  "icon": "simplyjetpacks:particle_rainbow",
+  "category": "08_misc",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "If you explore through JEI, you'll see there are quite a few things that have been configured but not necessarily nerfed/gated. I strongly suggest you wrap up this chapter, and then go look for yourself!"
+    }
+  ]
+}

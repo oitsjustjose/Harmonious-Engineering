@@ -1,0 +1,17 @@
+{
+  "name": "Recipes",
+  "icon": "thermal:enderium_gear",
+  "category": "00_intro",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Probably one of the most important things to consider is that to make many things, you'll need to get it a harder way first. Take gears and plates -- all of the 'easy' ways require you to get it the hard way at least once.$(br)Just keep this in mind if ever you've found a weird loophole in the recipes. And maybe I'm dumb, in which case $(l:https://www.curseforge.com/minecraft/modpacks/trapese-swinger/issues)report it to me here!$(/l)"
+    },
+    {
+      "type": "crafting",
+      "recipe": "thermal:parts/iron_gear",
+      "text": "Check out this recipe -- the plates look easy but.... look at the recipe for the iron plate (and all plates, really)."
+    }
+  ]
+}

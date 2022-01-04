@@ -1,0 +1,16 @@
+{
+  "name": "Tips",
+  "icon": "thermal:gold_coin",
+  "category": "08_misc",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "text",
+      "text": "No, not money tips! I just ran out of ideas for icons :P $(li)The order of items in this book (except this chapter) represent (roughly) the order you should take too!$() $(li)Wish Waystones was installed? Try out Wormhole Portals!$() $(li)Feather Falling IV or above puts all fall damage on your boots.$()$(li)Ore Variants drop clusters      to prevent clutter!$()"
+    },
+    {
+      "type": "text",
+      "text": "$(li)You can unbind elytra by crafting in an empty grid with your chestplate-elytra-combo-item$() $(li) You can right-click crops to harvest them $() $(li)Apotheosis is the mod making it so cacti/bamboo/sugar cane grow a specific way$() $(li)Yes, we have graves$()$(li)This is just a modpack I made for fun. If you don't like something, change it! I don't mind at all :)$()"
+    }
+  ]
+}

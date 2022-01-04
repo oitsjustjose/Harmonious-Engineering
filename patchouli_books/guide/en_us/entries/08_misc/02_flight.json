@@ -1,0 +1,16 @@
+{
+  "name": "Flight",
+  "icon": "minecraft:feather",
+  "category": "08_misc",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Actually, there are a few forms of flight in this pack. If you look up the Angel Ring from DoomAngelRing, you'll see you're expected to do quite a lot of stuff before that's yours to claim. Until then, let me suggest to you a few alternatives!"
+    },
+    {
+      "type": "text",
+      "text": "$(li)Elytra: they can be customized like banners/shields and even combined with your chestplate! Combine with an infinity trident with riptide to be propelled at the speed of sound!$() $(li)Jetpacks: they're enabled, with default recipes and all! Just get those materials and keep them charged ;)$() $(li)Angel Ring: yeah good luck, it's meant to be end-game!!$()"
+    }
+  ]
+}

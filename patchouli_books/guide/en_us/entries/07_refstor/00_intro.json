@@ -1,0 +1,21 @@
+{
+  "name": "Item Automata",
+  "icon": "refinedstorage:quartz_enriched_iron",
+  "category": "07_refstor",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Most of Refined Storage is unchanged, but to keep you from skipping over awesome storage utilities like Storage Overhaul, Storage Drawers (which have framed variants!!) and Farmer's Delight, you've got to get your hands on some machinery from Thermal or Mekanism first!"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "03_mekanism/00_intro",
+        "04_thermal/00_intro"
+      ],
+      "title": "Dependencies",
+      "text": "One of these two will provide you with a machine you'll need to make Quartz Enriched Iron. Once you've got one, you're all clear into Refined Storage!"
+    }
+  ]
+}

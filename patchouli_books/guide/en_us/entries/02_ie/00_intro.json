@@ -1,0 +1,17 @@
+{
+  "name": "Becoming an Engineer",
+  "icon": "immersiveengineering:hammer",
+  "category": "02_ie",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Your best bet to get started is to make yourself the following: $(li)Industrial Hemp$() $(li)Engineer's Manual$() $(li)Engineer's Hammer$() $(li)A Coke Oven$() $(li)A Blast Furnace$() The hemp is used to make the Engineer's Hammer, the manual explains IE in full, and the hammer is used to construct the Coke Oven and Blast Furnace."
+    },
+    {
+      "type": "crafting",
+      "recipe": "immersiveengineering:crafting/hammer_from_hammer",
+      "text": "Once you make one in a Create Mechanical Crafter, you can repair your broken down one with these materials above."
+    }
+  ]
+}
