@@ -1,22 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "B B",
-    "IWI",
-    "III"
+    " II",
+    " II",
+    "B  "
   ],
   "key": {
     "I": {
       "tag": "forge:ingots/cast_iron"
-    },
-    "W": {
-      "item": "minecraft:water_bucket"
     },
     "B": {
       "item": "extcaves:brick_half"
     }
   },
   "result": {
-    "item": "farmersdelight:cooking_pot"
+    "item": "farmersdelight:skillet"
   }
 }
