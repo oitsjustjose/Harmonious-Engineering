@@ -1,0 +1,120 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "psi:encyclopaedia_psionica": {
+      "viewedEntries": [
+        "psi:components/psigem"
+      ],
+      "bookmarks": [],
+      "history": [
+        "psi:components/psigem"
+      ],
+      "completedManualQuests": []
+    },
+    "enigmaticlegacy:the_acknowledgment": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "history": [],
+      "completedManualQuests": []
+    },
+    "rftoolsbase:manual": {
+      "viewedEntries": [
+        "xnet:simple/controller",
+        "xnet:simple/cables",
+        "xnet:simple/connector",
+        "xnet:network/router",
+        "xnet:wireless/wireless_router"
+      ],
+      "bookmarks": [],
+      "history": [
+        "xnet:simple/controller",
+        "xnet:wireless/wireless_router",
+        "xnet:simple/connector",
+        "xnet:simple/cables",
+        "xnet:network/router"
+      ],
+      "completedManualQuests": []
+    },
+    "industrialforegoing:industrial_foregoing": {
+      "viewedEntries": [
+        "industrialforegoing:tools/infinity_backpack",
+        "industrialforegoing:resource_production/mechanical_dirt",
+        "industrialforegoing:tools/infinity_hammer",
+        "industrialforegoing:tools/infinity_tools"
+      ],
+      "bookmarks": [],
+      "history": [
+        "industrialforegoing:tools/infinity_tools",
+        "industrialforegoing:tools/infinity_hammer",
+        "industrialforegoing:resource_production/mechanical_dirt",
+        "industrialforegoing:tools/infinity_backpack"
+      ],
+      "completedManualQuests": []
+    },
+    "fd_cookbook:cook_book": {
+      "viewedEntries": [
+        "fd_cookbook:basics/new_crops",
+        "fd_cookbook:basics/tatami",
+        "fd_cookbook:basics/storage_blocks",
+        "fd_cookbook:basics/knife",
+        "fd_cookbook:basics/cookingpot_stove"
+      ],
+      "bookmarks": [],
+      "history": [
+        "fd_cookbook:basics/cookingpot_stove",
+        "fd_cookbook:basics/knife",
+        "fd_cookbook:basics/storage_blocks",
+        "fd_cookbook:basics/new_crops",
+        "fd_cookbook:basics/tatami"
+      ],
+      "completedManualQuests": []
+    },
+    "patchouli:guide": {
+      "viewedEntries": [
+        "patchouli:00_intro/00_welcome",
+        "patchouli:00_intro/01_tools",
+        "patchouli:00_intro/02_plates_gears",
+        "patchouli:00_intro/02_recipes",
+        "patchouli:00_intro/03_have_fun",
+        "patchouli:01_create/00_intro",
+        "patchouli:02_ie/00_intro",
+        "patchouli:02_ie/01_steel",
+        "patchouli:01_create/00_intro_to_create",
+        "patchouli:02_ie/00_intro_to_ie",
+        "patchouli:03_mekanism/00_intro_to_mek",
+        "patchouli:03_mekanism/01_mekasuit",
+        "patchouli:04_thermal/00_intro_to_thermal",
+        "patchouli:05_powah/00_intro_to_powah",
+        "patchouli:06_indfore/00_intro_to_indfore",
+        "patchouli:04_thermal/00_intro",
+        "patchouli:05_powah/00_intro",
+        "patchouli:06_indfore/00_intro",
+        "patchouli:07_refstor/00_intro",
+        "patchouli:03_mekanism/00_intro",
+        "patchouli:08_misc/00_intro",
+        "patchouli:08_misc/01_enchanting",
+        "patchouli:08_misc/02_flight",
+        "patchouli:08_misc/03_biomes",
+        "patchouli:08_misc/04_tips"
+      ],
+      "bookmarks": [],
+      "history": [
+        "patchouli:07_refstor/00_intro",
+        "patchouli:08_misc/02_flight",
+        "patchouli:08_misc/04_tips",
+        "patchouli:00_intro/01_tools",
+        "patchouli:08_misc/03_biomes",
+        "patchouli:01_create/00_intro",
+        "patchouli:00_intro/02_recipes",
+        "patchouli:00_intro/00_welcome",
+        "patchouli:05_powah/00_intro",
+        "patchouli:03_mekanism/01_mekasuit",
+        "patchouli:02_ie/00_intro",
+        "patchouli:00_intro/03_have_fun",
+        "patchouli:08_misc/00_intro"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}
