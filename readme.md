@@ -41,6 +41,7 @@
 - ~~Remove Powah’s cables. You’re grounded.~~
 - ~~Remove Powah’s ender gates. Use Flux Networks~~
 - ~~Balance Modular Routers~~
+- Remove any offending loot from loot tables. See `loot_tables.md`
 
 ## All GP Tech Mods
 
