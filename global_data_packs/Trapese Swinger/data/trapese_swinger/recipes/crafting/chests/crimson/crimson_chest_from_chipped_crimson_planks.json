@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ppp", "p p", "ppp"],
+  "key": { "p": { "tag": "chipped:crimson_planks" } },
+  "result": { "item": "quark:crimson_chest", "count": 1 }
+}

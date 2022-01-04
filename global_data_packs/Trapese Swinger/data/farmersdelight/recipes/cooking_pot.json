@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CWC",
+    "IBI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "W": {
+      "item": "create:brass_hand"
+    },
+    "C": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "item": "farmersdelight:cooking_pot"
+  }
+}

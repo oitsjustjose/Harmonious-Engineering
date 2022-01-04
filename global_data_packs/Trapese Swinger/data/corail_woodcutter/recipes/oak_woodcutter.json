@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "PPP"
+  ],
+  "key": {
+    "B": {
+      "tag": "trapese_swinger:saw_blade"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "corail_woodcutter:oak_woodcutter"
+  }
+}

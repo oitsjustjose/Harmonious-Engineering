@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "improvedbackpacks:large_pocket"
+  },
+  "addition": {
+    "tag": "forge:storage_blocks/enderium"
+  },
+  "result": {
+    "item": "enderstorage:ender_pouch"
+  }
+}

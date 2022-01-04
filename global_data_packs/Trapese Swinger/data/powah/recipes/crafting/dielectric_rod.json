@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["PSP", "PSP", "PSP"],
+  "key": {
+    "P": {
+      "item": "powah:dielectric_paste"
+    },
+    "S": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result": {
+    "item": "powah:dielectric_rod",
+    "count": 64
+  }
+}

@@ -1,0 +1,1 @@
+{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "betterendforge:pythadendron_planks"}, "result": "betterendforge:pythadendron_door", "count": 1, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}]}

@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "compactmachines:machine_normal"
+  },
+  "addition": {
+    "item": "entangled:block"
+  },
+  "result": {
+    "item": "compactmachines:machine_large"
+  }
+}

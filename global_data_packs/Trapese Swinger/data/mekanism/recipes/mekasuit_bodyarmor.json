@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:mekasuit_bodyarmor"
+  },
+  "pattern": ["PCP", "P#P", "EEE"],
+  "key": {
+    "C": {
+      "item": "rftoolscontrol:cpu_core_2000"
+    },
+    "#": {
+      "tag": "trapese_swinger:meka/crafting_chest"
+    },
+    "P": {
+      "tag": "trapese_swinger:meka/filler_1"
+    },
+    "E": {
+      "tag": "trapese_swinger:meka/filler_2"
+    }
+  }
+}

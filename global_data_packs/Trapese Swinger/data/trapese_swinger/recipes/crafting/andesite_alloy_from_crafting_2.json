@@ -1,0 +1,35 @@
+{
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "tag": "forge:pebbles"
+    },
+    {
+      "tag": "forge:pebbles"
+    },
+    {
+      "tag": "forge:pebbles"
+    },
+    {
+      "tag": "forge:pebbles"
+    },
+    {
+      "item": "emendatusenigmatica:zinc_chunk"
+    },
+    {
+      "tag": "natural-progression:saw"
+    }
+  ],
+  "result": {
+    "item": "create:andesite_alloy",
+    "count": 1,
+    "nbt": {
+      "display": {
+        "Name": "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
+      }
+    }
+  }
+}

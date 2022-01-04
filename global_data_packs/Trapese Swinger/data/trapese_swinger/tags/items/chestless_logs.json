@@ -1,0 +1,11 @@
+{
+  "replace": "false",
+  "values": [
+    "#undergarden:wigglewood_logs",
+    "#undergarden:smogstem_logs",
+    "#undergarden:grongle_logs",
+    "#tconstruct:greenheart_logs",
+    "#tconstruct:skyroot_logs",
+    "#tconstruct:bloodshroom_logs"
+  ]
+}

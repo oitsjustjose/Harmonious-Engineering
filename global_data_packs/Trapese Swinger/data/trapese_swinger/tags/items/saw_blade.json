@@ -1,0 +1,7 @@
+{
+  "replace": "false",
+  "values": [
+    "thermal:saw_blade",
+    "#forge:sawblades"
+  ]
+}

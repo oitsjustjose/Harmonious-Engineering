@@ -1,0 +1,6 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "itemInput": { "ingredient": { "tag": "forge:ingots/uranium" } },
+  "infusionInput": { "amount": 10, "tag": "mekanism:redstone" },
+  "output": { "item": "powah:uraninite" }
+}

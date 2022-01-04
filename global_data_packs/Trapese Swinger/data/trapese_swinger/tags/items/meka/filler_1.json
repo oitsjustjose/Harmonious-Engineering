@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "powah:crystal_blazing",
+    "industrialforegoing:pink_slime_ingot",
+    "#forge:ingots/enderium",
+    "#forge:ingots/refined_obsidian"
+  ]
+}

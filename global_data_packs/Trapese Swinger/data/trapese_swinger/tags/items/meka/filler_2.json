@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "powah:capacitor_blazing",
+    "industrialforegoing:range_addon11",
+    "thermal:upgrade_augment_2",
+    "#forge:batteries"
+  ]
+}

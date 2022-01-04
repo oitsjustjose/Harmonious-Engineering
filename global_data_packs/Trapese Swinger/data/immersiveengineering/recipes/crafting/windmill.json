@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:large_cogwheel"
+  },
+  "addition": {
+    "item": "immersiveengineering:windmill_sail"
+  },
+  "result": {
+    "item": "immersiveengineering:windmill",
+    "count": 1
+  }
+}

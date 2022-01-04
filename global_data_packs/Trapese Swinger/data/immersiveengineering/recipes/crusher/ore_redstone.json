@@ -1,0 +1,21 @@
+{
+  "type": "immersiveengineering:crusher",
+  "secondaries": [
+    {
+      "chance": 0.6,
+      "output": {
+        "item": "minecraft:redstone"
+      }
+    }
+  ],
+  "result": {
+    "count": 6,
+    "base_ingredient": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "input": {
+    "tag": "forge:ores/cinnabar"
+  },
+  "energy": 9000
+}

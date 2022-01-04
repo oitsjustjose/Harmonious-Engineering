@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/cinnabar"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:redstone",
+      "count": 5
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 1,
+      "chance": 0.3
+    }
+  ],
+  "processingTime": 600,
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:gems/cinnabar",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ]
+}

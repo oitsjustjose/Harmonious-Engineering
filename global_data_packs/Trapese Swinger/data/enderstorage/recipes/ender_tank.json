@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "tag": "trapese_swinger:basic_tank"
+  },
+  "addition": {
+    "tag": "forge:storage_blocks/enderium"
+  },
+  "result": {
+    "item": "enderstorage:ender_tank"
+  }
+}

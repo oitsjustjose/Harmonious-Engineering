@@ -1,0 +1,1 @@
+{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "tconstruct:skyroot_planks"}, "result": "tconstruct:skyroot_pressure_plate", "count": 3, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "tconstruct"}, {"type": "forge:mod_loaded", "modid": "tconstruct"}]}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " r ",
+        "rgr",
+        " r "
+    ],
+    "key": {
+        "g": { "tag": "forge:gears/iron" },
+        "r": { "item": "minecraft:lapis_lazuli" }
+    },
+    "result": { "item": "thermal:lapis_gear" }
+}

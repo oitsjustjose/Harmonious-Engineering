@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "trapese_swinger:presses"
+  },
+  "addition": {
+    "item": "appliedenergistics2:purified_fluix_crystal"
+  },
+  "result": {
+    "item": "appliedenergistics2:inscriber"
+  }
+}

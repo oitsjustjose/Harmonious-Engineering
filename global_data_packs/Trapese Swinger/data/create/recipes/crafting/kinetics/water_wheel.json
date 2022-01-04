@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:treated_wood_slab"
+    },
+    "C": {
+      "item": "create:large_cogwheel"
+    }
+  },
+  "result": {
+    "item": "create:water_wheel",
+    "count": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "storagenetwork:master"
+  },
+  "addition": {
+    "item": "appliedenergistics2:engineering_processor"
+  },
+  "result": {
+    "item": "appliedenergistics2:controller"
+  }
+}

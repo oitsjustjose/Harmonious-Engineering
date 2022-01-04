@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "compactmachines:machine_small"
+  },
+  "addition": {
+    "item": "mekanism:teleporter"
+  },
+  "result": {
+    "item": "compactmachines:machine_normal"
+  }
+}

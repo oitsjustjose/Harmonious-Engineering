@@ -1,0 +1,26 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "CHC",
+    "BSB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:clay"
+    },
+    "B": {
+      "item": "createdeco:blue_bricks"
+    },
+    "H": {
+      "item": "create:chute"
+    },
+    "S": {
+      "item": "createaddition:crude_burner"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:cokebrick",
+    "count": 27
+  }
+}

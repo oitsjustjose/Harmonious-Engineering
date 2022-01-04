@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "thermal:machine_frame"
+  },
+  "addition": {
+    "item": "appliedenergistics2:wireless_booster"
+  },
+  "result": {
+    "item": "entangled:block"
+  }
+}

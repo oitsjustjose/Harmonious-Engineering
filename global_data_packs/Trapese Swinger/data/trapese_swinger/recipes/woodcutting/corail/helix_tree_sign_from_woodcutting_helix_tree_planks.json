@@ -1,0 +1,1 @@
+{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "betterendforge:helix_tree_planks"}, "result": "betterendforge:helix_tree_sign", "count": 1, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}]}

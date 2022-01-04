@@ -1,0 +1,7 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:netherite_chestplate",
+    "mekanismtools:refined_obsidian_chestplate"
+  ]
+}

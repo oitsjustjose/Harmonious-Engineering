@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " IR",
+    " SI",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "I": {
+      "tag": "forge:plates/brass"
+    },
+    "R": {
+      "item": "immersiveengineering:hemp_fiber"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:hammer",
+    "count": 1
+  }
+}

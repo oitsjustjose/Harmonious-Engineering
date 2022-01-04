@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ccc", "cgc", "ccc"],
+  "key": {
+    "g": {
+      "tag": "forge:gears/copper"
+    },
+    "c": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "supplementaries:cog_block",
+    "count": 16
+  }
+}

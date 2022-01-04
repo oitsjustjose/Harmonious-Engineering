@@ -1,0 +1,5 @@
+{
+  "type": "create:pressing",
+  "ingredients": [{ "tag": "forge:ingots/uranium" }],
+  "results": [{ "item": "immersiveengineering:plate_uranium" }]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "industrialforegoing:machine_frame_simple"
+  },
+  "addition": {
+    "tag": "forge:storage_blocks/enderium"
+  },
+  "result": {
+    "item": "compactmachines:machine_tiny"
+  }
+}

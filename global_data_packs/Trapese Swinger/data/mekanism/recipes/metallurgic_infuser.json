@@ -1,0 +1,15 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": ["SSOOI", "SFFFI", "SFBFI", "SFFFI", "SSSOO"],
+  "key": {
+    "S": { "tag": "forge:ingots/steel" },
+    "B": { "tag": "forge:storage_blocks/steel" },
+    "O": { "item": "mekanism:ingot_osmium" },
+    "I": { "item": "minecraft:iron_bars" },
+    "F": { "item": "minecraft:furnace" }
+  },
+  "result": {
+    "item": "mekanism:metallurgic_infuser",
+    "count": 1
+  }
+}

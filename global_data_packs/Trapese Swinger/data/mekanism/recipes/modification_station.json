@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:modification_station"
+  },
+  "pattern": ["AWA", "CTC", "PPP"],
+  "key": {
+    "C": {
+      "item": "rftoolscontrol:cpu_core_2000"
+    },
+    "W": {
+      "tag": "forge:chests/wooden"
+    },
+    "P": {
+      "tag": "trapese_swinger:meka/filler_1"
+    },
+    "A": {
+      "tag": "trapese_swinger:meka/filler_2"
+    },
+    "T": {
+      "tag": "forge:workbench"
+    }
+  }
+}

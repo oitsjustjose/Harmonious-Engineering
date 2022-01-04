@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "storagedrawers:controller_slave"
+  },
+  "addition": {
+    "item": "mekanism:ultimate_control_circuit"
+  },
+  "result": {
+    "item": "storagedrawers:controller"
+  }
+}

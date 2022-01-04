@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "thermal:machine_press",
+    "create:mechanical_press"
+  ]
+}

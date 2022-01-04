@@ -1,0 +1,5 @@
+{
+  "type": "create:pressing",
+  "ingredients": [{ "tag": "forge:ingots/constantan" }],
+  "results": [{ "item": "thermal:constantan_plate" }]
+}

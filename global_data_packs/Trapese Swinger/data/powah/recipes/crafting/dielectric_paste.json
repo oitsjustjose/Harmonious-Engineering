@@ -1,0 +1,27 @@
+{
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "tag": "forge:silicon"
+    },
+    {
+      "tag": "forge:dusts/coal"
+    },
+    {
+      "tag": "forge:dusts/coal"
+    },
+    {
+      "tag": "forge:dusts/coal"
+    },
+    {
+      "item": "create:super_glue"
+    },
+    {
+      "tag": "appliedenergistics2:knife"
+    }
+  ],
+  "result": {
+    "item": "powah:dielectric_paste",
+    "count": 8
+  }
+}

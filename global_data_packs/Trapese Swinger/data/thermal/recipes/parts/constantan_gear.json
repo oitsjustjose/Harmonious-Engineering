@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/constantan"}, "p": {"tag": "forge:plates/constantan"}}, "result": {"item": "thermal:constantan_gear"}}

@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "storagenetwork:master"
+  },
+  "addition": {
+    "item": "refinedstorage:advanced_processor"
+  },
+  "result": {
+    "item": "refinedstorage:controller"
+  }
+}

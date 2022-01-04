@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [{ "tag": "forge:chests/trapped" }],
+  "result": { "item": "minecraft:trapped_chest" }
+}
