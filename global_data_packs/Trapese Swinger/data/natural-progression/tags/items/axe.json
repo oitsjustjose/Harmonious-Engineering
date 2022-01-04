@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "immersiveengineering:axe_steel",
+    "mekanismtools:stone_paxel",
+    "mekanismtools:iron_paxel",
+    "mekanismtools:gold_paxel",
+    "mekanismtools:diamond_paxel",
+    "mekanismtools:netherite_paxel",
+    "mekanismtools:bronze_axe",
+    "mekanismtools:bronze_paxel",
+    "mekanismtools:osmium_axe",
+    "mekanismtools:osmium_paxel",
+    "mekanismtools:lapis_lazuli_axe",
+    "mekanismtools:lapis_lazuli_paxel",
+    "mekanismtools:refined_glowstone_axe",
+    "mekanismtools:refined_glowstone_paxel",
+    "mekanismtools:refined_obsidian_axe",
+    "mekanismtools:refined_obsidian_paxel",
+    "mekanismtools:steel_axe",
+    "mekanismtools:steel_paxel",
+    "tconstruct:hand_axe",
+    "betterendforge:aeternium_axe",
+    "betterendforge:thallasium_axe",
+    "betterendforge:terminite_axe",
+    "betternether:cincinnasite_axe",
+    "betternether:nether_ruby_axe",
+    "appliedenergistics2:certus_quartz_axe",
+    "appliedenergistics2:nether_quartz_axe"
+  ]
+}
