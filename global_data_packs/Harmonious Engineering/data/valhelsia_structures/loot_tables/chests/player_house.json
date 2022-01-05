@@ -156,7 +156,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:diamond"
+          "name": "emendatusenigmatica:diamond_chunk"
         },
         {
           "type": "minecraft:item",
@@ -418,7 +418,7 @@
               "treasure": true
             }
           ],
-          "name": "minecraft:diamond_hoe"
+          "name": "emendatusenigmatica:diamond_chunk_hoe"
         }
       ]
     }

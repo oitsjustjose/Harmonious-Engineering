@@ -34,7 +34,7 @@
           "weight": 1
         },
         {
-          "name": "minecraft:diamond",
+          "name": "emendatusenigmatica:diamond_chunk",
           "type": "minecraft:item",
           "weight": 4,
           "functions": [

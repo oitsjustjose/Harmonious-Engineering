@@ -44,12 +44,12 @@
           "weight": 10
         },
         {
-          "name": "minecraft:diamond_hoe",
+          "name": "emendatusenigmatica:diamond_chunk_hoe",
           "type": "minecraft:item",
           "weight": 15
         },
         {
-          "name": "minecraft:diamond_chestplate",
+          "name": "emendatusenigmatica:diamond_chunk_chestplate",
           "type": "minecraft:item",
           "weight": 5
         },

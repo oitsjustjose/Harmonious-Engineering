@@ -9,89 +9,59 @@
       },
       "entries": [
         {
-          "name": "minecraft:saddle",
           "type": "minecraft:item",
-          "weight": 20
+          "weight": 20,
+          "name": "minecraft:saddle"
         },
         {
-          "name": "minecraft:glistering_melon_slice",
           "type": "minecraft:item",
-          "weight": 10
+          "weight": 15,
+          "name": "minecraft:golden_apple"
         },
         {
-          "name": "minecraft:enchanted_golden_apple",
           "type": "minecraft:item",
-          "weight": 2
+          "weight": 2,
+          "name": "minecraft:enchanted_golden_apple"
         },
         {
-          "name": "minecraft:music_disc_far",
           "type": "minecraft:item",
-          "weight": 15
+          "weight": 15,
+          "name": "minecraft:music_disc_13"
         },
         {
-          "name": "minecraft:music_disc_cat",
           "type": "minecraft:item",
-          "weight": 15
+          "weight": 15,
+          "name": "minecraft:music_disc_cat"
         },
         {
-          "name": "minecraft:name_tag",
           "type": "minecraft:item",
-          "weight": 20
+          "weight": 20,
+          "name": "minecraft:name_tag"
         },
         {
-          "name": "minecraft:writable_book",
           "type": "minecraft:item",
-          "weight": 10
+          "weight": 10,
+          "name": "minecraft:golden_horse_armor"
         },
         {
-          "name": "minecraft:fishing_rod",
           "type": "minecraft:item",
-          "weight": 10
+          "weight": 15,
+          "name": "minecraft:iron_horse_armor"
         },
         {
-          "name": "minecraft:shears",
           "type": "minecraft:item",
-          "weight": 10
+          "weight": 5,
+          "name": "minecraft:diamond_horse_armor"
         },
         {
-          "name": "minecraft:iron_hoe",
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": -10.0,
-                "max": 5.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "name": "emendatusenigmatica:diamond_chunk_hoe",
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": -10.0,
-                "max": 5.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "name": "minecraft:book",
-          "type": "minecraft:item",
-          "weight": 15,
-          "functions": [
-            {
               "function": "minecraft:enchant_randomly"
             }
-          ]
+          ],
+          "name": "minecraft:book"
         }
       ]
     },
@@ -103,7 +73,6 @@
       },
       "entries": [
         {
-          "name": "emendatusenigmatica:iron_chunk",
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
@@ -115,10 +84,10 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "emendatusenigmatica:iron_chunk"
         },
         {
-          "name": "minecraft:emerald",
           "type": "minecraft:item",
           "weight": 5,
           "functions": [
@@ -126,19 +95,19 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "emendatusenigmatica:gold_chunk"
         },
         {
-          "name": "minecraft:bread",
           "type": "minecraft:item",
-          "weight": 20
+          "weight": 20,
+          "name": "minecraft:bread"
         },
         {
-          "name": "minecraft:wheat",
           "type": "minecraft:item",
           "weight": 20,
           "functions": [
@@ -150,15 +119,15 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:wheat"
         },
         {
-          "name": "minecraft:bucket",
           "type": "minecraft:item",
-          "weight": 10
+          "weight": 10,
+          "name": "minecraft:bucket"
         },
         {
-          "name": "emendatusenigmatica:cinnabar_gem",
           "type": "minecraft:item",
           "weight": 15,
           "functions": [
@@ -170,70 +139,25 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "emendatusenigmatica:cinnabar_gem"
         },
         {
-          "name": "minecraft:torch",
           "type": "minecraft:item",
           "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 8.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "name": "minecraft:melon_seeds",
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4.0,
-                "max": 8.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "name": "minecraft:melon",
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
                 "min": 1.0,
-                "max": 3.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:coal"
         },
         {
-          "name": "minecraft:potato",
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 3.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "name": "minecraft:cocoa_beans",
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
@@ -245,7 +169,38 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:melon_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:pumpkin_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:beetroot_seeds"
         }
       ]
     },
@@ -253,7 +208,6 @@
       "rolls": 3,
       "entries": [
         {
-          "name": "minecraft:bone",
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
@@ -265,25 +219,10 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:bone"
         },
         {
-          "name": "minecraft:gunpowder",
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 4.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "name": "minecraft:bamboo",
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
@@ -295,10 +234,10 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:gunpowder"
         },
         {
-          "name": "minecraft:rotten_flesh",
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
@@ -310,64 +249,23 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:rotten_flesh"
         },
         {
-          "name": "minecraft:poisonous_potato",
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 3.0,
+                "max": 8.0,
                 "type": "minecraft:uniform"
               }
             }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 0,
-      "bonus_rolls": 1,
-      "entries": [
-        {
-          "name": "minecraft:pink_banner",
-          "type": "minecraft:item",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{BlockEntityTag:{Patterns:[{Pattern:cs,Color:0},{Pattern:cs,Color:0},{Pattern:cs,Color:0},{Pattern:bo,Color:3},{Pattern:bo,Color:3},{Pattern:bo,Color:3}]}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 360
-        },
-        {
-          "name": "minecraft:black_banner",
-          "type": "minecraft:item",
-          "weight": 92,
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{BlockEntityTag:{Patterns:[{Pattern:mr,Color:5},{Pattern:flo,Color:5},{Pattern:flo,Color:15},{Pattern:tts,Color:15},{Pattern:tts,Color:15},{Pattern:tts,Color:5},{Pattern:bts,Color:15},{Pattern:bts,Color:15},{Pattern:bts,Color:5},{Pattern:cbo,Color:7},{Pattern:bo,Color:5},{Pattern:cbo,Color:15}]}}"
-            }
-          ]
-        },
-        {
-          "name": "minecraft:music_disc_11",
-          "type": "minecraft:item",
-          "weight": 132
-        },
-        {
-          "name": "minecraft:name_tag",
-          "type": "minecraft:item",
-          "weight": 176
+          ],
+          "name": "minecraft:string"
         }
       ]
     }

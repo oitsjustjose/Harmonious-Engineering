@@ -109,7 +109,7 @@
               }
             }
           ],
-          "name": "minecraft:diamond"
+          "name": "emendatusenigmatica:diamond_chunk"
         },
         {
           "type": "minecraft:item",
@@ -406,7 +406,7 @@
               "treasure": true
             }
           ],
-          "name": "minecraft:diamond_sword"
+          "name": "emendatusenigmatica:diamond_chunk_sword"
         },
         {
           "type": "minecraft:item",
@@ -421,7 +421,7 @@
               "treasure": true
             }
           ],
-          "name": "minecraft:diamond_pickaxe"
+          "name": "emendatusenigmatica:diamond_chunk_pickaxe"
         }
       ]
     }

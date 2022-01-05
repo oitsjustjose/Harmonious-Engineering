@@ -21,7 +21,7 @@
           ]
         },
         {
-          "name": "minecraft:diamond_sword",
+          "name": "emendatusenigmatica:diamond_chunk_sword",
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "name": "minecraft:diamond_chestplate",
+          "name": "emendatusenigmatica:diamond_chunk_chestplate",
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "name": "minecraft:diamond_helmet",
+          "name": "emendatusenigmatica:diamond_chunk_helmet",
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "name": "minecraft:diamond_leggings",
+          "name": "emendatusenigmatica:diamond_chunk_leggings",
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
@@ -93,7 +93,7 @@
           ]
         },
         {
-          "name": "minecraft:diamond_boots",
+          "name": "emendatusenigmatica:diamond_chunk_boots",
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
@@ -111,32 +111,32 @@
           ]
         },
         {
-          "name": "minecraft:diamond_sword",
+          "name": "emendatusenigmatica:diamond_chunk_sword",
           "type": "minecraft:item",
           "weight": 6
         },
         {
-          "name": "minecraft:diamond_chestplate",
+          "name": "emendatusenigmatica:diamond_chunk_chestplate",
           "type": "minecraft:item",
           "weight": 5
         },
         {
-          "name": "minecraft:diamond_helmet",
+          "name": "emendatusenigmatica:diamond_chunk_helmet",
           "type": "minecraft:item",
           "weight": 5
         },
         {
-          "name": "minecraft:diamond_boots",
+          "name": "emendatusenigmatica:diamond_chunk_boots",
           "type": "minecraft:item",
           "weight": 5
         },
         {
-          "name": "minecraft:diamond_leggings",
+          "name": "emendatusenigmatica:diamond_chunk_leggings",
           "type": "minecraft:item",
           "weight": 5
         },
         {
-          "name": "minecraft:diamond",
+          "name": "emendatusenigmatica:diamond_chunk",
           "type": "minecraft:item",
           "weight": 5,
           "functions": [
