@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/invar"}, "p": {"tag": "forge:plates/invar"}}, "result": {"item": "thermal:invar_gear"}}

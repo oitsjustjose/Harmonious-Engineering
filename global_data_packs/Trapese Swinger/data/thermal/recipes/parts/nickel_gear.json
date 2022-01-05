@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/nickel"}, "p": {"tag": "forge:plates/nickel"}}, "result": {"item": "thermal:nickel_gear"}}

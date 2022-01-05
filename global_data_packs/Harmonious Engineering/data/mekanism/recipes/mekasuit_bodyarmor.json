@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:mekasuit_bodyarmor"
+  },
+  "pattern": ["PCP", "P#P", "EEE"],
+  "key": {
+    "C": {
+      "item": "rftoolscontrol:cpu_core_2000"
+    },
+    "#": {
+      "tag": "harmeng:meka/crafting_chest"
+    },
+    "P": {
+      "tag": "harmeng:meka/filler_1"
+    },
+    "E": {
+      "tag": "harmeng:meka/filler_2"
+    }
+  }
+}

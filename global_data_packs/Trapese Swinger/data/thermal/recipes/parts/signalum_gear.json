@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/signalum"}, "p": {"tag": "forge:plates/signalum"}}, "result": {"item": "thermal:signalum_gear"}}

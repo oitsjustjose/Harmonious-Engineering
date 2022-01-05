@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/lumium"}, "p": {"tag": "forge:plates/lumium"}}, "result": {"item": "thermal:lumium_gear"}}

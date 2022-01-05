@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["ppp", "p p", "ppp"],
-  "key": { "p": { "tag": "trapese_swinger:chestless_logs" } },
-  "result": { "item": "minecraft:chest", "count": 4 }
-}

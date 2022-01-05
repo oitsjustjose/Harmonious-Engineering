@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/lead"}, "p": {"tag": "forge:plates/lead"}}, "result": {"item": "thermal:lead_gear"}}

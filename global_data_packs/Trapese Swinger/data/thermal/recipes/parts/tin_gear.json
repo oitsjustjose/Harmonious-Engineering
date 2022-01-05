@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/tin"}, "p": {"tag": "forge:plates/tin"}}, "result": {"item": "thermal:tin_gear"}}

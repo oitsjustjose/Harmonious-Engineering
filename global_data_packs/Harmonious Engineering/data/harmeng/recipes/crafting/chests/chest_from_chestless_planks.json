@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ppp", "p p", "ppp"],
+  "key": { "p": { "tag": "harmeng:chestless_planks" } },
+  "result": { "item": "minecraft:chest", "count": 1 }
+}

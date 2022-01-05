@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "mekanism:mekasuit_boots"
+  },
+  "pattern": ["PCP", "P#P", "EEE"],
+  "key": {
+    "C": {
+      "item": "rftoolscontrol:cpu_core_2000"
+    },
+    "#": {
+      "tag": "harmeng:meka/crafting_boots"
+    },
+    "P": {
+      "tag": "harmeng:meka/filler_1"
+    },
+    "E": {
+      "tag": "harmeng:meka/filler_2"
+    }
+  }
+}

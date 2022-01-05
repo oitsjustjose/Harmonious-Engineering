@@ -1,1 +1,0 @@
-{"type": "minecraft:crafting_shaped", "pattern": ["npn", "p p", "npn"], "key": {"n": {"tag": "forge:nuggets/electrum"}, "p": {"tag": "forge:plates/electrum"}}, "result": {"item": "thermal:electrum_gear"}}
