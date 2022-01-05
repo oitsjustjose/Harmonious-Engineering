@@ -4,7 +4,7 @@
     "item": "compactmachines:machine_small"
   },
   "addition": {
-    "item": "mekanism:teleporter"
+    "item": "immersivepetroleum:projector"
   },
   "result": {
     "item": "compactmachines:machine_normal"

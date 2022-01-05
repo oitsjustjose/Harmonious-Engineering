@@ -4,7 +4,7 @@
     "item": "compactmachines:machine_tiny"
   },
   "addition": {
-    "item": "mekanism:teleportation_core"
+    "item": "immersiveengineering:maintenance_kit"
   },
   "result": {
     "item": "compactmachines:machine_small"

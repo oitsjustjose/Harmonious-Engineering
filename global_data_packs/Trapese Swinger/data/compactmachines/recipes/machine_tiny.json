@@ -1,10 +1,10 @@
 {
   "type": "smithing",
   "base": {
-    "item": "industrialforegoing:machine_frame_simple"
+    "item": "immersiveengineering:heavy_engineering"
   },
   "addition": {
-    "tag": "forge:storage_blocks/enderium"
+    "item": "immersiveengineering:circuit_board"
   },
   "result": {
     "item": "compactmachines:machine_tiny"
