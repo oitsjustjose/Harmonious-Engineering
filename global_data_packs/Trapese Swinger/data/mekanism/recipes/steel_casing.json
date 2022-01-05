@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SGS",
+    "GAG",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "A": {
+      "item": "thermal:upgrade_augment_3"
+    }
+  },
+  "result": {
+    "item": "mekanism:steel_casing"
+  }
+}

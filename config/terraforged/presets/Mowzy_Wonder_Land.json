@@ -22,7 +22,7 @@
       "variance": 4
     },
     "dimensions": {
-      "nether": "minecraft:biomesoplenty",
+      "nether": "infernalexp:compat_world_type",
       "end": "betterendforge:world_type",
       "includeExtraDimensions": true
     }
@@ -83,6 +83,12 @@
         "spacing": 1,
         "separation": 0,
         "salt": 593751808,
+        "disabled": false
+      },
+      "betternether:city": {
+        "spacing": 64,
+        "separation": 32,
+        "salt": 1234567936,
         "disabled": false
       },
       "betterstrongholds:stronghold": {
@@ -769,6 +775,12 @@
         "salt": 2010876032,
         "disabled": false
       },
+      "repurposed_structures:village_mushroom": {
+        "spacing": 24,
+        "separation": 12,
+        "salt": 1150624896,
+        "disabled": false
+      },
       "repurposed_structures:village_oak": {
         "spacing": 38,
         "separation": 19,
@@ -902,7 +914,12 @@
       "continentType": "MULTI",
       "continentShape": "NATURAL",
       "continentScale": 3800,
-      "continentJitter": 0.587
+      "continentJitter": 0.587,
+      "continentSkipping": 0.25,
+      "continentSizeVariance": 0.25,
+      "continentNoiseOctaves": 5,
+      "continentNoiseGain": 0.259,
+      "continentNoiseLacunarity": 4.329
     },
     "controlPoints": {
       "deepOcean": 0.05,

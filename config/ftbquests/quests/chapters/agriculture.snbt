@@ -221,6 +221,11 @@
 			y: 2.0d
 			shape: "octagon"
 			description: ["This dish takes a LOT of ingredients and know-how with Farmer's Delight. If you manage to get such a scrumptious dish then good on you!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"653E667D4286376F"
+				"4B79AB8D817B341C"
+			]
 			optional: true
 			id: "13A881ABCF2248C5"
 			tasks: [{

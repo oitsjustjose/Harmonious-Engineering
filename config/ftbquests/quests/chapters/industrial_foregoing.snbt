@@ -1,0 +1,11 @@
+{
+	id: "57E8588EDFB55A0A"
+	group: "2F5E9821869B4E2F"
+	order_index: 4
+	filename: "industrial_foregoing"
+	title: "Industrial Foregoing"
+	icon: "industrialforegoing:pink_slime_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

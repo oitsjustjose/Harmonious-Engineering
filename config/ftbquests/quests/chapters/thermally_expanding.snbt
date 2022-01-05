@@ -1,0 +1,191 @@
+{
+	id: "519EE2D5AC3C34D5"
+	group: "2F5E9821869B4E2F"
+	order_index: 2
+	filename: "thermally_expanding"
+	title: "Thermally Expanding"
+	icon: "thermal:upgrade_augment_1"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Starting Your Thermal Ascension"
+			x: -2.5d
+			y: -2.0d
+			description: ["If you've been looking ahead in JEI, you no doubt know by now that you'll need a machine frame for all things Thermal. In this pack, you'll need Steel and a special kind of hardened glass to make it. Thanks to the last chapter, you should have everything you need to dive into thermal!"]
+			dependencies: ["1FF265E2816476AB"]
+			id: "5DD16A26B44A2290"
+			tasks: [{
+				id: "5666F58D47464047"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			title: "Compact 2x Ore Processing"
+			x: -5.0d
+			y: -4.0d
+			description: ["The Pulverizer can 2x your Ore Chunks as well as provide some auxiliary outputs when provided with Flint or other catalysts!"]
+			dependencies: ["5DD16A26B44A2290"]
+			id: "0A0F122B95C92B13"
+			tasks: [{
+				id: "30D6BA4303504DB8"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "05A8CECCA33EB5DD"
+				type: "item"
+				item: "emendatusenigmatica:cinnabar_gem"
+			}]
+		}
+		{
+			title: "Advanced Alloying"
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["5DD16A26B44A2290"]
+			id: "5DEC9CCB9938781B"
+			tasks: [{
+				id: "1CBCCEE30C89F4AC"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "6C607894A9B13F72"
+				type: "item"
+				item: "emendatusenigmatica:invar_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			description: ["The Redstone Furnace is an RF-powered furnace super useful with its wonderful I/O system!"]
+			dependencies: ["5DD16A26B44A2290"]
+			id: "009F3EDD5367714D"
+			tasks: [{
+				id: "5F06EFA6483F86E5"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			description: ["The Multiservo Press is the most compact means by which this pack will allow you to  press metals into plates or gears!"]
+			dependencies: ["5DD16A26B44A2290"]
+			id: "6DCDA3F80C7A9390"
+			tasks: [{
+				id: "1C36259460676AD4"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			description: ["Save yourself a lot of hassle by making yourself an extra multiservo press just for Gearworking!"]
+			hide_dependency_lines: true
+			dependencies: ["6DCDA3F80C7A9390"]
+			id: "3C82A70B67C90108"
+			tasks: [{
+				id: "6D7EF8BA69AB4ABE"
+				type: "item"
+				item: "thermal:press_gear_die"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			description: ["Add these components to any machine to augment its Efficiency and Speed"]
+			dependencies: ["5DEC9CCB9938781B"]
+			id: "026BB6835B11EC9D"
+			tasks: [{
+				id: "080BDA8DEA907A95"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+		}
+		{
+			title: "Flux Trinkets"
+			x: -0.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Thermal Expansion adds lots of lovely tools and weapons to add to your arsenal! Do so now if you want to make your life a bunch easier in the long-run!"]
+			hide_dependency_lines: true
+			dependencies: ["41778EBFE5E05233"]
+			id: "21C6451BA1501DFB"
+			tasks: [{
+				id: "4DE9BC180B9DF8A9"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:flux_drill"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "thermal:flux_saw"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "thermal:flux_capacitor"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "thermal:flux_magnet"
+								Count: 1b
+								tag: { }
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "524F874583C8DCED"
+				type: "item"
+				item: "abnormals_delight:escargot"
+				count: 6
+				random_bonus: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: ["The Tinkers' Workbench will allow you to charge and augment various Flux-based tools and trinkets!"]
+			dependencies: ["5DD16A26B44A2290"]
+			id: "41778EBFE5E05233"
+			tasks: [{
+				id: "04A60CD10BFACBE9"
+				type: "item"
+				item: "thermal:tinker_bench"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			shape: "gear"
+			description: ["These Resonant Components contain all of the Spatiotemporal Technology you could possibly need thanks to those Endermen. Now you can get into some pretty advanced technology as you progress into Mekanism - Nicely Done!!!"]
+			hide_dependency_lines: true
+			dependencies: ["026BB6835B11EC9D"]
+			id: "1A1191D78F17ED73"
+			tasks: [{
+				id: "32AC90E320EB323C"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+			rewards: [{
+				id: "3DEEB46F64B3F15B"
+				type: "item"
+				item: "mekanism:steel_casing"
+				random_bonus: 1
+			}]
+		}
+	]
+}
