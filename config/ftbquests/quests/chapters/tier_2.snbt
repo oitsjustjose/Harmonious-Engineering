@@ -12,7 +12,7 @@
 			title: "Alloying"
 			icon: "immersiveengineering:alloy_smelter"
 			x: -9.0d
-			y: -8.0d
+			y: -10.0d
 			description: ["To get started with early alloys, you can make yourself an Alloy Kiln. This is a 2x2x2 of Kiln Bricks. Once built, hit it with your Engineer's Hammer to form it into a Multi-Block!"]
 			dependencies: ["30909D9243BF755A"]
 			id: "4012189A70E095DD"
@@ -39,7 +39,7 @@
 		{
 			title: "Pressing Matters"
 			x: -9.0d
-			y: -12.5d
+			y: -12.0d
 			shape: "diamond"
 			description: [
 				"You'll need to get yourself a Hammer from Immersive Engineering in order to form any of the complex structures in the mod. "
@@ -48,6 +48,7 @@
 				""
 				"You can use the provided depot below your press to hold your items in place."
 			]
+			dependencies: ["21FC24B8288F9222"]
 			id: "698A30780C0AFEC2"
 			tasks: [{
 				id: "38E8A152EA968566"
@@ -63,9 +64,10 @@
 		{
 			title: "Hemp Farm"
 			x: -6.0d
-			y: -12.5d
+			y: -12.0d
 			shape: "diamond"
 			description: ["You'll also need lots of industrial hemp, so I'd suggest you start growing some soon!"]
+			dependencies: ["21FC24B8288F9222"]
 			id: "523FA138FE64AA62"
 			tasks: [{
 				id: "522769EFF4B48ABF"
@@ -81,7 +83,7 @@
 		}
 		{
 			x: -7.5d
-			y: -10.5d
+			y: -11.0d
 			subtitle: "This hammer is the key to this entire chapter in this modpack!"
 			dependencies: [
 				"523FA138FE64AA62"
@@ -99,12 +101,23 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "200699708F17BF5D"
+				type: "item"
+				item: {
+					id: "immersiveengineering:wirecutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			title: "Coke Oven"
 			icon: "immersiveengineering:coke_oven"
 			x: -6.0d
-			y: -8.0d
+			y: -10.0d
 			description: ["A Coke Oven will get you the required coal coke needed to make steel in a blast furnace. It'll also get you Creosote Oil, which you can use (in a JerryCan is the easiest way) to make Treated Wood Planks. Treated Wood Planks are good tool materials, great for Storage Crates, Building, and as ingredients for other recipes!"]
 			dependencies: ["30909D9243BF755A"]
 			id: "1A10E66C46D2299F"
@@ -119,7 +132,7 @@
 			title: "Into Fire"
 			icon: "minecraft:nether_brick_wall"
 			x: -7.5d
-			y: -6.0d
+			y: -9.0d
 			description: [
 				"The recipe for Blast Brick has been changed to require a literal blaze burner to keep it warm enough. Fortunately, the recipe makes all 27 which is all you'll need."
 				""
@@ -142,8 +155,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -4.5d
+			x: -9.0d
+			y: -8.0d
 			description: ["Right click the empty blaze burner on a living Blaze to capture it. You can now use it to make your blast bricks!"]
 			dependencies: ["4EF301A720A9A759"]
 			id: "532B7AF568391D28"
@@ -161,8 +174,8 @@
 		{
 			title: "So I Started Blasting"
 			icon: "immersiveengineering:blast_furnace"
-			x: -7.5d
-			y: -3.0d
+			x: -6.0d
+			y: -8.0d
 			shape: "diamond"
 			description: [
 				"Nicely done! You survived the nether, and even made it out with some nice loot -- what's that? I have no way of knowing if you did or not? You're right. I'm just hopeful I suppose."
@@ -196,7 +209,7 @@
 		{
 			title: "The Age Of Steel"
 			x: -7.5d
-			y: -1.5d
+			y: -6.5d
 			shape: "gear"
 			description: [
 				"Nicely done you! There's a lot that this steel can do for you. For now, if you want to SPRINT into the next chapter and leave IE behind, feel free!"
@@ -218,6 +231,424 @@
 				item: "immersiveengineering:treated_wood_horizontal"
 				count: 64
 				random_bonus: 64
+			}]
+		}
+		{
+			x: -2.0d
+			y: -12.0d
+			shape: "hexagon"
+			description: ["The Engineer's Workbench is a specialized bench for crafting certain components as you delve into mid-tier IE. You'll need these blueprints for Vacuum Tubes, Steel Components and more."]
+			hide_dependency_lines: true
+			dependencies: ["1FF265E2816476AB"]
+			optional: true
+			id: "49BA5A4F9C83C5C4"
+			tasks: [{
+				id: "612B024741A0A295"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "300EC819FE0EAEAE"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			title: "Automated Gardening"
+			x: -3.0d
+			y: -10.5d
+			description: ["Cloches are awesome for getting some plants and even the most annoying or specialized of crops automated."]
+			hide_dependency_lines: true
+			dependencies: [
+				"49BA5A4F9C83C5C4"
+				"20E3E34D4AF65193"
+			]
+			optional: true
+			id: "0885ECEF3EC32C34"
+			tasks: [{
+				id: "609A371CD610BB51"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+			rewards: [{
+				id: "3E64EB9ECED3B366"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+		}
+		{
+			title: "Enhanced Metallurgy"
+			icon: "immersiveengineering:metal_press"
+			x: 0.5d
+			y: -10.0d
+			description: ["Everything you need to set up a metal press! This metal press can press Gears, Wires and more so it's a significant improvement over the Create version!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"49BA5A4F9C83C5C4"
+				"20E3E34D4AF65193"
+			]
+			optional: true
+			id: "290E9396BA28BCB4"
+			tasks: [
+				{
+					id: "23DD59C01130E8E1"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "1B00EFFED585C2B7"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "71F076D780F6BF65"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "6FC43B4A3D3A69BD"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "682F6C0B0ADCDE2D"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "3990F84E86ADF072"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "molds"
+					}
+				}
+			}]
+		}
+		{
+			title: "Early Power Generation"
+			icon: {
+				id: "powah:battery_starter"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.0d
+			y: -12.0d
+			shape: "gear"
+			description: ["You don't *have* to dedicate yourself to Immersive Engineering - you can go straight to Thermal's Dynamos if you want. But if you want to immerse yourself in IE, then either the Windmill or the Water Wheel will be a great place to start!"]
+			hide_dependency_lines: true
+			dependencies: ["1FF265E2816476AB"]
+			optional: true
+			id: "20E3E34D4AF65193"
+			tasks: [
+				{
+					id: "03F43AB629BFC6B3"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:watermill"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:windmill"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "737CCE65F820F6A7"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+				{
+					id: "29EB1E8699A1F9DC"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "0DC0452E19B6F69A"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "2950C636ED63C519"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+			]
+			rewards: [{
+				id: "5AE39D28CB5EB1D8"
+				type: "item"
+				item: "immersiveengineering:windmill_sail"
+				count: 36
+				random_bonus: 20
+			}]
+		}
+		{
+			title: "2x Ore Processing"
+			icon: "immersiveengineering:crusher"
+			x: -1.5d
+			y: -10.0d
+			description: ["This quest contains everything you need to get yourself a crusher! These are super helpful for turning 1 Ore Chunk into 2 Ore Dust, which can be smelted at any time. These are super great to automate with conveyor belts and External Heaters (another quest to go fulfill)!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"20E3E34D4AF65193"
+				"49BA5A4F9C83C5C4"
+			]
+			optional: true
+			id: "1C4C3A1431B17B77"
+			tasks: [
+				{
+					id: "21D8FB88657BA652"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "46DDC8E61EF6CA79"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "7CE6529AC78547B0"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "73281E80AC07AEE8"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "1F99D54A2B5BB5EC"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+			rewards: [
+				{
+					id: "743897300C9FA8C6"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 24
+				}
+				{
+					id: "21EF50833637EF4C"
+					type: "item"
+					item: "immersiveengineering:conveyor_dropper"
+					count: 2
+				}
+				{
+					id: "092A60A765629821"
+					type: "item"
+					item: "immersiveengineering:conveyor_extract"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "6x Log Planking"
+			icon: "immersiveengineering:sawmill"
+			x: 2.0d
+			y: -10.5d
+			description: ["The sawmill is an awesome way of getting the most out of logs without having to strip them and wear your hands raw using a hand saw!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"20E3E34D4AF65193"
+				"49BA5A4F9C83C5C4"
+			]
+			optional: true
+			id: "466852B0F8603DA9"
+			tasks: [
+				{
+					id: "7D2C9B227A14956B"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "25D2D57AADCF2EFE"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 6L
+				}
+				{
+					id: "3CE819CD8CCF5AEA"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "1D193C3515EF488F"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "63C53728713ECE82"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2DA93D1F1ED51F2A"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "6A3F830CD47772E7"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "Into the Industrial Age"
+			x: -0.5d
+			y: -11.5d
+			shape: "gear"
+			description: [
+				"I could keep typing out these quests, but this is really as far as most people get into IE. I do recommend checking out Thermoelectric Generators if you want more power generation over time."
+				""
+				"From here, you can also go down the Diesel Generator route, utilizing Cloches and 1 Fermenter, Squeezer, and Refinery."
+				""
+				"Lastly, tiny compacting machines are available to you now so you should be able to make some of your more complex builds much neater! Getting things in and out of them might need something special though.."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"466852B0F8603DA9"
+				"1C4C3A1431B17B77"
+				"0885ECEF3EC32C34"
+				"290E9396BA28BCB4"
+			]
+			optional: true
+			id: "11E3E257A7FBB02C"
+			tasks: [{
+				id: "4DC73FA495B936C2"
+				type: "checkmark"
+				title: "The Rest of IE"
+			}]
+			rewards: [
+				{
+					id: "7B5525D105C74233"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 24
+				}
+				{
+					id: "7AEE2E14BC8A0B18"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -9.0d
+			shape: "hexagon"
+			description: ["The Buzzsaw is a gas-powered axe great for taking down tons of trees! We'll even save you the step of making the sawblade."]
+			hide_dependency_lines: true
+			dependencies: ["20E3E34D4AF65193"]
+			optional: true
+			id: "409AAC1AD05B60CB"
+			tasks: [{
+				id: "3A1DC993F8BCBC31"
+				type: "item"
+				item: {
+					id: "immersiveengineering:buzzsaw"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "301C10B90449E952"
+				type: "item"
+				item: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -9.0d
+			shape: "hexagon"
+			description: ["Same as the buzzsaw, the Drill is a gas-powered rock-eating tool that'll quickly tear through even the hardest ores."]
+			hide_dependency_lines: true
+			dependencies: ["20E3E34D4AF65193"]
+			optional: true
+			id: "47A281B25F2AB7C3"
+			tasks: [{
+				id: "36E84EEB41CC78D6"
+				type: "item"
+				item: {
+					id: "immersiveengineering:drill"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "6D44676BF83880BF"
+				type: "item"
+				item: "immersiveengineering:drillhead_steel"
+			}]
+		}
+		{
+			title: "Before You Start"
+			icon: "emendatusenigmatica:ruby_gear"
+			x: -7.5d
+			y: -13.0d
+			description: [
+				"Just because something isn't specifically a quest doesn't mean you can't / shouldn't do it!"
+				""
+				"These quests serve as a guide to show you how to get from where you are to where you want to be!"
+			]
+			dependencies: ["6AFD4430D7D335FC"]
+			id: "21FC24B8288F9222"
+			tasks: [{
+				id: "766E7D088F996EDA"
+				type: "checkmark"
+				title: "A Reminder"
+			}]
+			rewards: [{
+				id: "4D19192B471BD926"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 	]

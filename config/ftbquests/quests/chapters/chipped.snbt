@@ -1,0 +1,10 @@
+{
+	id: "62C230199A85BDAD"
+	group: "4D77B1A0ACFA64E2"
+	order_index: 0
+	filename: "chipped"
+	title: "Chipped"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
