@@ -3,10 +3,14 @@
   "result": {
     "item": "mekanism:mekasuit_boots"
   },
-  "pattern": ["PCP", "P#P", "EEE"],
+  "pattern": [
+    "PCP",
+    "P#P",
+    "EEE"
+  ],
   "key": {
     "C": {
-      "item": "rftoolscontrol:cpu_core_2000"
+      "item": "projectred-integration:bus_transceiver_gate"
     },
     "#": {
       "tag": "harmeng:meka/crafting_boots"

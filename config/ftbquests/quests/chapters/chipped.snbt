@@ -314,5 +314,52 @@
 				xp: 100
 			}]
 		}
+		{
+			x: -10.5d
+			y: -10.5d
+			shape: "hexagon"
+			description: ["Moving Elevators are great! You place down controllers at each floor you want, and you can right-click any side that doesn't have its buttons to change settings (or reskin if holding a block)."]
+			optional: true
+			id: "22CFB62947A76964"
+			tasks: [{
+				id: "0AD391F0DD85B243"
+				type: "item"
+				item: "movingelevators:elevator_block"
+			}]
+			rewards: [{
+				id: "1F0D06E696432998"
+				type: "item"
+				item: "movingelevators:display_block"
+				count: 2
+			}]
+		}
+		{
+			title: "Double Slabs"
+			icon: {
+				id: "doubleslabs:vertical_slab"
+				Count: 1b
+				tag: {
+					item: {
+						id: "minecraft:campfire"
+						Count: 1b
+					}
+				}
+			}
+			x: -10.5d
+			y: -6.5d
+			shape: "hexagon"
+			description: ["Slabs can be doubled-up and mixed-and-matched any way you wish! This makes building much easier and more cathartic. On top of that, you can craft vertical slabs (which also stack regardless if they match or not) to help with your newest builds!"]
+			optional: true
+			id: "309BD19B77B320E7"
+			tasks: [{
+				id: "798E0D24172E2D43"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4FA801955E7E4762"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
 	]
 }

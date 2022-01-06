@@ -1,15 +1,25 @@
 {
-  "type": "create:mechanical_crafting",
-  "pattern": ["SSOOI", "SFFFI", "SFBFI", "SFFFI", "SSSOO"],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LBR",
+    "LCR",
+    "LLR"
+  ],
   "key": {
-    "S": { "tag": "forge:ingots/steel" },
-    "B": { "tag": "forge:storage_blocks/steel" },
-    "O": { "item": "mekanism:ingot_osmium" },
-    "I": { "item": "minecraft:iron_bars" },
-    "F": { "item": "minecraft:furnace" }
+    "C": {
+      "item": "mekanism:steel_casing"
+    },
+    "R": {
+      "item": "minecraft:iron_bars"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    },
+    "L": {
+      "tag": "forge:sheetmetals/lead"
+    }
   },
   "result": {
-    "item": "mekanism:metallurgic_infuser",
-    "count": 1
+    "item": "mekanism:metallurgic_infuser"
   }
 }

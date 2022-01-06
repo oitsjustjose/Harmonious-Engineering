@@ -1,183 +1,157 @@
 {
 	id: "287BDD80190D4B3D"
 	group: "5D65BFF245310B96"
-	order_index: 3
+	order_index: 1
 	filename: "toolbelt_items"
-	title: "Toolbelt Items"
+	title: "Transport"
+	icon: {
+		id: "mekanism:hdpe_elytra"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Akashic Tome"
-			icon: "akashictome:tome"
-			x: -1.5d
-			y: -3.5d
-			shape: "hexagon"
-			description: ["Every detailed mod could use a manual - we've done the work ahead of time and have gathered all of the manuals for you in one place - all we ask for is a book in return!"]
-			id: "08C321A14FDE29DF"
+			title: "Wormholes"
+			x: -9.0d
+			y: 0.5d
+			shape: "diamond"
+			description: [
+				"Instead of Waystones or Portality, Wormholes are the method of isntant transport from Point A to Point B. I prefer using rails where possible but sometimes that's just unreasonable to do, so Wormholes are the way to go!"
+				""
+				"Recipes are unchanged because this pack encourages exploration! No need in adding that feeling of restriction to go too far from home!"
+			]
+			id: "06975494D76A3B03"
 			tasks: [{
-				id: "18EFEAFC00BA7BB9"
+				id: "7AAB330459A849BD"
 				type: "item"
-				item: "minecraft:book"
+				item: "wormhole:portal_frame"
 			}]
 			rewards: [{
-				id: "20299DD5B0DA7A54"
+				id: "49A8BAED5F2A5463"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "More Minecarts"
+			icon: "moreminecarts:sticky_piston_pushcart"
+			x: -9.0d
+			y: -2.0d
+			shape: "diamond"
+			description: ["More Minecarts is a really cool cart and rail mod akin to Railcraft's transportation components, allowing for easy transportation of blocks, items, mobs and even keeping chunks loaded along the way! I suggest you give it a look sometime if your rail setup is ever feeling slow or if you're in a pinch!"]
+			id: "3F818BF4AFA6CBF5"
+			tasks: [{
+				id: "1D10B234F240E4F5"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1CB4B5627908C0A8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			shape: "diamond"
+			description: ["Getting your first elytra is a GREAT feeling, but I just wanted to let you know that *Vanilla* elytra can be re-dyed and have banner patterns applied to them! On top of that, Elytra can be merged with any chestplate to keep both your armor and the ability to fly. This is important because as you'll see, Angel Rings are not the easiest to get ahold of..."]
+			id: "005C9A10267A103C"
+			tasks: [{
+				id: "0AD7557C8CE6AFDB"
 				type: "item"
 				item: {
-					id: "akashictome:tome"
+					id: "minecraft:elytra"
 					Count: 1b
 					tag: {
-						"akashictome:is_morphing": 1b
-						"akashictome:data": {
-							storagenetwork: {
-								id: "patchouli:guide_book"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Network Guide Book"
-									}
-									"patchouli:book": "storagenetwork:network_book"
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Network Guide Book\"}]}"
-									}
-								}
-							}
-							industrialforegoing: {
-								id: "patchouli:guide_book"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Industrial Foregoing's Manual"
-									}
-									"patchouli:book": "industrialforegoing:industrial_foregoing"
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Industrial Foregoing's Manual\"}]}"
-									}
-								}
-							}
-							modularrouters: {
-								id: "patchouli:guide_book"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Modular Routers Manual"
-									}
-									"patchouli:book": "modularrouters:book"
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Modular Routers Manual\"}]}"
-									}
-								}
-							}
-							tconstruct: {
-								id: "tconstruct:encyclopedia"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Encyclopedia of Tinkering"
-									}
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Encyclopedia of Tinkering\"}]}"
-									}
-								}
-							}
-							tetra: {
-								id: "tetra:holo"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Holosphere"
-									}
-									"holo/frame": "holo/frame"
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Holosphere\"}]}"
-									}
-									"holo/core_material": "frame/dim"
-									"holo/core": "holo/core"
-									"holo/frame_material": "core/ancient"
-								}
-							}
-							powah: {
-								id: "powah:book"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Manual (Powah!)"
-									}
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Manual (Powah!)\"}]}"
-									}
-								}
-							}
-							immersiveengineering: {
-								id: "immersiveengineering:manual"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Engineer's Manual"
-									}
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Engineer's Manual\"}]}"
-									}
-								}
-							}
-							alexsmobs: {
-								id: "alexsmobs:animal_dictionary"
-								Count: 1b
-							}
-							thermal: {
-								id: "patchouli:guide_book"
-								Count: 1b
-								tag: {
-									"patchouli:book": "thermal:guidebook"
-								}
-							}
-							rftoolsbase: {
-								id: "rftoolsbase:manual"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Technology Guide"
-									}
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Technology Guide\"}]}"
-									}
-								}
-							}
-							supplementaries: {
-								id: "patchouli:guide_book"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "§6Supplemental Manual"
-									}
-									"patchouli:book": "supplementaries:supplementaries_guide"
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"§6Supplemental Manual\"}]}"
-									}
-								}
-							}
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3E4FDBB4617F808D"
+				type: "random"
+				title: "Random Dye"
+				icon: "mekanism:dye_base"
+				table_id: 3489940685334468356L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["005C9A10267A103C"]
+			id: "61B542F5591BEB01"
+			tasks: [{
+				id: "46E02FE963099E82"
+				type: "item"
+				item: {
+					id: "tconstruct:slime_chestplate"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 672.0f
+							"tconstruct:armor": 0.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [{
+							name: "tconstruct:wings"
+							level: 1s
+						}]
+						Damage: 0
+						tic_volatile_data: {
+							"tconstruct:elyta": 1b
+						}
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 5
 						}
 					}
 				}
 			}]
 		}
 		{
-			x: 0.5d
-			y: -3.5d
-			id: "037321E8DA23FC10"
+			x: -6.5d
+			y: -0.5d
+			dependencies: ["005C9A10267A103C"]
+			id: "409587125AAE507E"
 			tasks: [{
-				id: "4BDEA1A28CC91CE4"
+				id: "3698DB24B22FF64F"
 				type: "item"
-				item: "morphtool:tool"
+				item: {
+					id: "mekanism:hdpe_elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.5d
+			subtitle: "Can you tell I dislike Creative Flight? :P"
+			dependencies: ["005C9A10267A103C"]
+			id: "1AE84695D72E01D1"
+			tasks: [{
+				id: "1659586BDE513F33"
+				type: "item"
+				item: {
+					id: "doomangelring:itemdoomangelring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0C8D7F82CB0EBAE7"
+				type: "item"
+				item: "minecraft:cookie"
 			}]
 		}
 	]

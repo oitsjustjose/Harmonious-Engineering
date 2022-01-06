@@ -3,10 +3,14 @@
   "result": {
     "item": "mekanism:meka_tool"
   },
-  "pattern": [" E#", "PoE", "CP "],
+  "pattern": [
+    " E#",
+    "PoE",
+    "CP "
+  ],
   "key": {
     "C": {
-      "item": "rftoolscontrol:cpu_core_2000"
+      "item": "projectred-integration:bus_transceiver_gate"
     },
     "#": {
       "tag": "harmeng:meka/crafting_tool_1"

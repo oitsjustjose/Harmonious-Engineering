@@ -1,0 +1,147 @@
+{
+	id: "4138B7896CD89F22"
+	group: "2F5E9821869B4E2F"
+	order_index: 5
+	filename: "tech_stuff"
+	title: "Other Tech"
+	icon: "pipez:universal_pipe"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Pipes/Ducts"
+			x: -3.0d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"While IE Conveyors and Create Belts are GREAT for item transfer, if you want lag-free guaranteed-to-work item transfer, I can't suggest Pipez enough."
+				""
+				"Pipez has a Fluid, Gas and RF Pipe as well, and the Universal Pipe does all three just like EnderIO!"
+			]
+			optional: true
+			id: "25E11D32A9C21DD6"
+			tasks: [{
+				id: "294758E441D454CD"
+				type: "checkmark"
+				title: "I Affirm That Pipez is Best Mod"
+				icon: "pipez:universal_pipe"
+			}]
+			rewards: [{
+				id: "61C14FA739349AF8"
+				type: "item"
+				item: "pipez:wrench"
+			}]
+		}
+		{
+			title: "Powah"
+			x: -3.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["Much of Powah is gated behind Steel, but once ou're done there you can go ham with most generators! A lot of the imbalanced generators have been disabled for the sanctity of this pack, but outside of that you can do so much with Reactors!"]
+			dependencies: ["1FF265E2816476AB"]
+			optional: true
+			id: "68EA1AC4051942A0"
+			tasks: [{
+				id: "32B7EC1591F5687F"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+			rewards: [{
+				id: "22FC8339E11E0312"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			shape: "diamond"
+			description: [
+				"Flux Networks is a great mod for inter-dimensional wireless power to both your own inventory and to/from other machines!"
+				""
+				"The Flux Controller is your ticket to getting a network set up, and you can set up multiple to keep your setup organized!"
+			]
+			optional: true
+			id: "32997A524540C21A"
+			tasks: [{
+				id: "452CB95B92AEBBE9"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+			rewards: [{
+				id: "4B543FEA09F39B3C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			shape: "octagon"
+			description: ["Entangled Blocks are perfect for when you need more than 6 sides to a block, or just want to keep everything nice and tidy. "]
+			dependencies: ["5DD16A26B44A2290"]
+			optional: true
+			id: "774D9289FBF8AE7A"
+			tasks: [{
+				id: "7B9E8B1B745D1894"
+				type: "item"
+				item: {
+					id: "entangled:block"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6ECFB30BDA4FE190"
+				type: "item"
+				item: {
+					id: "entangled:item"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "XNet"
+			icon: "xnet:connector_red"
+			x: -0.5d
+			y: -3.0d
+			shape: "hexagon"
+			description: ["XNet is an incredible mod that allows you to create mini-networks that can be used to configure multiple channels of different type (such as fluid, energy, items, etc..) and move them around using the specified logic, filters, etc."]
+			optional: true
+			id: "43CC386838B25C57"
+			tasks: [{
+				id: "747B9AFFDE4C7BEC"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6757E0448023CA9E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Smol Utilities"
+			icon: "chickenchunks:chunk_loader"
+			x: -0.5d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"Chicken Chunks is a great chunk loading mod with lots of configuration, so if you need to leave something processing while you run off adventuring, toss a chunk loader down!"
+				""
+				"On the other hand, if you need to suck up a large amount of fluid like Water or Oil, you can do so using Ranged Pumps which will self-chunk-load wherever they need to!"
+			]
+			optional: true
+			id: "1E05C31D669C7ED8"
+			tasks: [{
+				id: "130AAE693F5DA680"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1D901ED3B30F4C8F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

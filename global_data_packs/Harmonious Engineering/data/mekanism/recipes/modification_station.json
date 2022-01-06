@@ -3,10 +3,14 @@
   "result": {
     "item": "mekanism:modification_station"
   },
-  "pattern": ["AWA", "CTC", "PPP"],
+  "pattern": [
+    "AWA",
+    "CTC",
+    "PPP"
+  ],
   "key": {
     "C": {
-      "item": "rftoolscontrol:cpu_core_2000"
+      "item": "projectred-integration:bus_transceiver_gate"
     },
     "W": {
       "tag": "forge:chests/wooden"

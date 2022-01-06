@@ -164,5 +164,43 @@
 				count: 64
 			}]
 		}
+		{
+			x: 0.5d
+			y: -6.0d
+			shape: "octagon"
+			description: [
+				"Ender Chests are SUPER helpful ways to transport items across large spanses of space, and even interdimensionally!"
+				""
+				"You can apply a diamond to the lock of the chest to make the chest private to you (great for Servers), and you can dye the 3 wool tabs on the top of the chest to make \"frequencies\" that connect when they match"
+			]
+			id: "2569B33BAB1DF04A"
+			tasks: [{
+				id: "1773CB32A344579A"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+			rewards: [{
+				id: "3536C90D3DB4051A"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			shape: "octagon"
+			description: ["Ender Tanks are just like Ender Chests, but for Fluids."]
+			id: "19BE7684C41A0E66"
+			tasks: [{
+				id: "3A8065AA8CD2A9F3"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+			rewards: [{
+				id: "1200E2A98C117196"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
 	]
 }

@@ -7,5 +7,258 @@
 	icon: "industrialforegoing:pink_slime_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Pressed Plastic"
+			x: -2.0d
+			y: -5.0d
+			shape: "hexagon"
+			description: ["Using an Osmium Compressor and some Oxygen, you can create Plastic which is an instrumental ingredient in Industrial Foregoing"]
+			dependencies: ["40B3A14EA5AC792C"]
+			id: "568810B360CC78F0"
+			tasks: [{
+				id: "300301E166825385"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+			rewards: [{
+				id: "230772BC287DBC82"
+				type: "item"
+				item: "industrialforegoing:plastic"
+				count: 7
+				random_bonus: 9
+			}]
+		}
+		{
+			icon: {
+				id: "industrialforegoing:speed_addon_2"
+				Count: 1b
+				tag: {
+					TitaniumAugment: {
+						Speed: 3.0f
+					}
+				}
+			}
+			x: -2.0d
+			y: -3.0d
+			description: ["Industrial Foregoing is a vast mod with tons of utilities ranging from Tree Farms, Mob Farms and even Enchantment Stripping or Automation. I haven't changed any recipes aside from the Plastic one, so have fun and automate the last few things you've been waiting to automate! I've made a few quests for this chapter just to give you a mission in the end :)"]
+			dependencies: ["568810B360CC78F0"]
+			id: "7E8B45D166B71957"
+			tasks: [{
+				id: "310BEDA0717D3653"
+				type: "checkmark"
+				title: "Free Reign!"
+			}]
+			rewards: [{
+				id: "1382B06FD33A6294"
+				type: "item"
+				item: "industrialforegoing:meat_feeder"
+			}]
+		}
+		{
+			title: "Infinity Tools"
+			x: 0.0d
+			y: -5.0d
+			shape: "octagon"
+			description: ["Infinity Tools take a near-infinite amount of RF - as they receive this much power, they tier up more and more to have better attributes like dig speed, attack strength and more."]
+			hide_dependency_lines: true
+			dependencies: ["568810B360CC78F0"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "6BF04707B681A507"
+			tasks: [
+				{
+					id: "72418207CD06BF7F"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_trident"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Riptide: 0
+							Channeling: 0b
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0b
+							Selected: "POOR"
+							Loyalty: 0
+						}
+					}
+				}
+				{
+					id: "4B9734EACA3B835E"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_drill"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+				}
+				{
+					id: "4D89A5E92BA4AB9E"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_launcher"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0b
+							Selected: "POOR"
+							Plunger: 0
+						}
+					}
+				}
+				{
+					id: "345BE214346C7D80"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_nuke"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+				}
+				{
+					id: "72608E4BF55F3D88"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_saw"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+				}
+				{
+					id: "4609D17749189E98"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_hammer"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0b
+							Selected: "POOR"
+							Beheading: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1F6ABBF272AE40FA"
+				type: "item"
+				item: {
+					id: "powah:battery_nitro"
+					Count: 1b
+					tag: {
+						charging: 0b
+						lollipoptile_stack_nbt: {
+							energy_stored_main_energy: 140000000L
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["7E8B45D166B71957"]
+			optional: true
+			id: "77021BDB7ADE594B"
+			tasks: [{
+				id: "45926AAE0F36255A"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_tank"
+			}]
+			rewards: [{
+				id: "442A98DAB702C146"
+				type: "item"
+				item: "enderstorage:ender_tank"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["7E8B45D166B71957"]
+			optional: true
+			id: "22563478738E3084"
+			tasks: [{
+				id: "590821DF8B415C26"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_unit"
+			}]
+			rewards: [{
+				id: "32F1509F6F9937FF"
+				type: "item"
+				item: "enderstorage:ender_chest"
+				count: 2
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -3.0d
+			shape: "gear"
+			hide_dependency_lines: true
+			dependencies: [
+				"7E8B45D166B71957"
+				"77021BDB7ADE594B"
+				"22563478738E3084"
+			]
+			optional: true
+			id: "67F434A6BF0C1588"
+			tasks: [{
+				id: "2E25B5926196E32D"
+				type: "item"
+				item: "industrialforegoing:black_hole_controller"
+			}]
+			rewards: [{
+				id: "16B83002BDF079F3"
+				type: "item"
+				item: "emendatusenigmatica:enderium_ingot"
+				count: 12
+				random_bonus: 4
+			}]
+		}
+	]
 }

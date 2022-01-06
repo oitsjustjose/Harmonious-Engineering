@@ -1,12 +1,11 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "thermal:machine_centrifuge"
-  },
-  "addition": {
-    "tag": "forge:storage_blocks/enderium"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    }
+  ],
   "result": {
-    "item": "industrialforegoing:latex_processing_unit"
+    "item": "minecraft:air"
   }
 }
