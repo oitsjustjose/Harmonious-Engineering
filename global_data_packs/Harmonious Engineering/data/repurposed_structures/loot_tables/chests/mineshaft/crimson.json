@@ -317,7 +317,7 @@
           ]
         },
         {
-          "name": "emendatusenigmatica:cinnabar_gem_torch",
+          "name": "minecraft:redstone_torch",
           "type": "minecraft:item",
           "weight": 15,
           "functions": [

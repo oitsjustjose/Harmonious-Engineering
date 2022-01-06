@@ -6,7 +6,7 @@
       "bonus_rolls": 1.0,
       "entries": [
         {
-          "name": "emendatusenigmatica:cinnabar_gem_block",
+          "name": "emendatusenigmatica:cinnabar_block",
           "type": "minecraft:item",
           "weight": 16,
           "functions": [
@@ -160,7 +160,7 @@
           ]
         },
         {
-          "name": "emendatusenigmatica:cinnabar_gem_ore",
+          "name": "emendatusenigmatica:cinnabar_chunk",
           "type": "minecraft:item",
           "weight": 1,
           "functions": [

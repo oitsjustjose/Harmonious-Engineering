@@ -154,7 +154,7 @@
           "weight": 2
         },
         {
-          "name": "emendatusenigmatica:cinnabar_gem_block",
+          "name": "emendatusenigmatica:cinnabar_block",
           "type": "minecraft:item",
           "weight": 2
         },
@@ -305,7 +305,7 @@
       },
       "entries": [
         {
-          "name": "emendatusenigmatica:cinnabar_gem_ore",
+          "name": "emendatusenigmatica:cinnabar_chunk",
           "type": "minecraft:item",
           "weight": 3,
           "functions": [
