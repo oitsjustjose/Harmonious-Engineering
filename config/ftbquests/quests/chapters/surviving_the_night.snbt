@@ -465,28 +465,21 @@
 			}]
 		}
 		{
-			title: "Map Atlases"
-			icon: "mapatlases:atlas"
+			title: "Immersive Minimap"
+			icon: "antiqueatlas:empty_antique_atlas"
 			x: 1.0d
 			y: -5.0d
 			shape: "diamond"
-			description: ["There isn't a minimap mod, but rather Map Atlases. It utilizes vanilla maps to fill in your map grid, and waypoints can be made using banners (which can be renamed), the Vanilla way"]
+			description: ["There isn't a minimap mod, but rather Antique Atlases. It works a lot like a normal minimap but requires that you have the item on you - fortunately, it can be stored inside of your Akashic Tome so you can keep your inventory clean!"]
 			id: "298986B225CB4BC1"
 			tasks: [{
 				id: "3AC6280AF70E3872"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "5A97907D0F17AFC9"
+				id: "6A55FD30E1BECEDC"
 				type: "item"
-				item: {
-					id: "mapatlases:atlas"
-					Count: 1b
-					tag: {
-						maps: [I;0]
-						empty: 120
-					}
-				}
+				item: "antiqueatlas:empty_antique_atlas"
 			}]
 		}
 	]

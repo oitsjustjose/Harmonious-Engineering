@@ -21,6 +21,7 @@
 				id: "18EFEAFC00BA7BB9"
 				type: "item"
 				item: "minecraft:book"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "20299DD5B0DA7A54"
