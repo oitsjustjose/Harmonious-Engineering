@@ -17,6 +17,7 @@
 		{
 			x: 1.0d
 			y: -7.0d
+			description: ["Same durability as Vanilla Iron tools (about 200 uses). Super nice way to save some sanity though!"]
 			dependencies: ["4C9A05B0AD584B26"]
 			optional: true
 			id: "47DAF527D1046F72"
@@ -31,11 +32,24 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2A42C5AC7DBFF28A"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 4
+			}]
 		}
 		{
+			title: "Serious Dedication"
 			x: -0.5d
 			y: -3.0d
+			description: [
+				"Oh wow. That's uh.. some serious dedication there... You weren't going to put Netherite on that right? That would be crazy..."
+				""
+				"*begins sweating nervously*"
+			]
 			dependencies: ["4C9A05B0AD584B26"]
+			optional: true
 			id: "0548DDE37D3D032B"
 			tasks: [{
 				id: "56E46C63CB7E5E91"
@@ -48,10 +62,17 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "02C8A5C409610DF7"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 32
+			}]
 		}
 		{
 			x: -2.0d
 			y: -7.0d
+			description: ["The Copper Saw isn't as good as Iron, but it's a significant improvement and an Iron saver if you don't have enough!"]
 			dependencies: ["4C9A05B0AD584B26"]
 			optional: true
 			id: "78B4EA799C033315"
@@ -66,10 +87,17 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "0E44DFB68B188B3F"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 2
+			}]
 		}
 		{
 			x: -1.5d
 			y: -5.0d
+			description: ["I don't know if bronze is a logical next step, but if steel is taking you too long but you've already got an alloy kiln then knock yourself out!"]
 			dependencies: ["4C9A05B0AD584B26"]
 			optional: true
 			id: "45AE67E98FE787F1"
@@ -84,10 +112,17 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5BF8A10E37E9A9E2"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 8
+			}]
 		}
 		{
 			x: 0.5d
 			y: -5.0d
+			description: ["Alright, at this point you're clearly tired of crafting more of these and I don't blame you."]
 			dependencies: ["4C9A05B0AD584B26"]
 			optional: true
 			id: "65F7888526E58FF9"
@@ -102,12 +137,21 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1783E8181780C8FC"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 16
+			}]
 		}
 		{
+			title: "You Should Go Outdoors"
 			x: -0.5d
 			y: -1.5d
 			shape: "octagon"
+			description: ["This person legit said \"I have Netherite, and rather than invest my time in other means to process logs, you chose more of this masochism. Wow."]
 			dependencies: ["0548DDE37D3D032B"]
+			optional: true
 			id: "6BEF61293DADA399"
 			tasks: [{
 				id: "098B830E19DAC243"
@@ -119,6 +163,12 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "76FED007EB91ADCB"
+				type: "item"
+				item: "minecraft:cookie"
+				count: 512
 			}]
 		}
 		{
@@ -182,6 +232,11 @@
 			x: -0.5d
 			y: -8.5d
 			shape: "hexagon"
+			description: [
+				"This'll do pig. It won't do much, but hey."
+				""
+				"...watch your fingers though."
+			]
 			id: "4C9A05B0AD584B26"
 			tasks: [{
 				id: "7E8D31E3D9158110"
@@ -193,6 +248,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "135F4128DB59787A"
+				type: "item"
+				item: "minecraft:cookie"
 			}]
 		}
 	]
