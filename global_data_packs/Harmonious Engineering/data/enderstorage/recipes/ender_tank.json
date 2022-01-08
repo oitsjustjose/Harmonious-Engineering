@@ -1,5 +1,5 @@
 {
-  "type": "smithing",
+  "type": "minecraft:smithing",
   "base": {
     "tag": "harmeng:basic_tank"
   },
