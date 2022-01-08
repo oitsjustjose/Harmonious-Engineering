@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:enchanting_table"
+  },
+  "addition": {
+    "item": "rftoolsbase:infused_enderpearl"
+  },
+  "result": {
+    "item": "chickenchunks:chunk_loader"
+  }
+}
