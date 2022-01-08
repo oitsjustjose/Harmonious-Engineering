@@ -23,6 +23,7 @@
 				{
 					id: "239A1B83B96844F3"
 					type: "item"
+					title: "Any Seed"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b

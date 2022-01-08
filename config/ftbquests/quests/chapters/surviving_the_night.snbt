@@ -49,13 +49,20 @@
 			id: "25A47A55DD6564CA"
 			tasks: [
 				{
-					id: "792F31283E5FED20"
+					id: "29B351D8F20D118E"
 					type: "item"
-					item: "natural-progression:stone_pebble"
+					title: "Any 2 Pebbles"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:pebbles"
+						}
+					}
 					count: 2L
 				}
 				{
-					id: "6D8DA0490C859C8B"
+					id: "31D09D080327534E"
 					type: "item"
 					item: "minecraft:flint"
 				}
