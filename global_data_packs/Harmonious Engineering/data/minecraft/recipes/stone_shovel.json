@@ -10,7 +10,7 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "tag": "minecraft:stone_tool_materials"
+      "tag": "quark:stone_tool_materials"
     }
   },
   "result": {

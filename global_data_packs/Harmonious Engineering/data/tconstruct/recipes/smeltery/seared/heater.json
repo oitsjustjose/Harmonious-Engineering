@@ -1,0 +1,36 @@
+{
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    },
+    {
+      "item": "tconstruct:seared_brick"
+    }
+  ],
+  "result": {
+    "item": "tconstruct:seared_heater",
+    "count": 1
+  }
+}
