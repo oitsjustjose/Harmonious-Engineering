@@ -1,8 +1,8 @@
 {
   "miscellaneous": {
     "smoothLayerDecorator": true,
-    "strataRegionSize": 600,
-    "strataDecorator": false,
+    "strataRegionSize": 1000,
+    "strataDecorator": true,
     "oreCompatibleStoneOnly": true,
     "erosionDecorator": true,
     "plainStoneErosion": true,
@@ -12,8 +12,8 @@
     "vanillaSprings": false,
     "vanillaLavaLakes": false,
     "vanillaLavaSprings": false,
-    "mountainBiomeUsage": 0.64,
-    "volcanoBiomeUsage": 0.64
+    "mountainBiomeUsage": 0.639,
+    "volcanoBiomeUsage": 0.639
   },
   "dimensions": {
     "bedrockLayer": {
@@ -317,24 +317,6 @@
         "spacing": 34,
         "separation": 16,
         "salt": 550292480,
-        "disabled": false
-      },
-      "mowziesmobs:barakoa_village": {
-        "spacing": 25,
-        "separation": 8,
-        "salt": 123444792,
-        "disabled": false
-      },
-      "mowziesmobs:frostmaw_spawn": {
-        "spacing": 25,
-        "separation": 8,
-        "salt": 1237654784,
-        "disabled": false
-      },
-      "mowziesmobs:wrought_chamber": {
-        "spacing": 15,
-        "separation": 5,
-        "salt": 123555792,
         "disabled": false
       },
       "quark:big_dungeon": {
@@ -919,7 +901,7 @@
       "continentSizeVariance": 0.25,
       "continentNoiseOctaves": 5,
       "continentNoiseGain": 0.259,
-      "continentNoiseLacunarity": 4.329
+      "continentNoiseLacunarity": 4.328
     },
     "controlPoints": {
       "deepOcean": 0.05,

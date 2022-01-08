@@ -1925,10 +1925,10 @@
 	active = true
 
 ["Stratum Config: minecraft_granite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_diorite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_sand"]
 	active = false
@@ -1946,7 +1946,7 @@
 	active = true
 
 ["Stratum Config: minecraft_soul_soil"]
-	active = true
+	active = false
 
 ["Stratum Config: minecraft_end_stone"]
 	active = true
@@ -1967,31 +1967,31 @@
 	active = true
 
 ["Stratum Config: quark_marble"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_slate"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_mossy_stone"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_brimstone"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_subzero_ash"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_blue_netherrack"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_nylium_soul_soil"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_ether_stone"]
-	active = true
+	active = false
 
 ["Stratum Config: byg_cryptic_stone"]
-	active = true
+	active = false
 
 ["Stratum Config: betterend_flavolite"]
 	active = true
@@ -2003,7 +2003,7 @@
 	active = true
 
 ["Stratum Config: astral_marble"]
-	active = true
+	active = false
 
 ["Cobalt Config"]
 
