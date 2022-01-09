@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:crusher",
+  "secondaries": [],
+  "result": {
+    "item": "emendatusenigmatica:quartz_dust"
+  },
+  "input": {
+    "tag": "forge:gems/quartz"
+  },
+  "energy": 1600
+}
