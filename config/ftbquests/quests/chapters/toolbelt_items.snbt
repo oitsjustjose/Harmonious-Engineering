@@ -60,11 +60,20 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "1CB4B5627908C0A8"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "1D32990AE75E7FDD"
+					type: "item"
+					item: "minecraft:rail"
+					count: 32
+					random_bonus: 16
+				}
+				{
+					id: "47F75E0037113129"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+			]
 		}
 		{
 			x: -5.0d
