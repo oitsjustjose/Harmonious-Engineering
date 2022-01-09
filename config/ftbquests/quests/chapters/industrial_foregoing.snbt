@@ -41,8 +41,10 @@
 			}
 			x: -2.0d
 			y: -3.0d
+			shape: "gear"
 			description: ["Industrial Foregoing is a vast mod with tons of utilities ranging from Tree Farms, Mob Farms and even Enchantment Stripping or Automation. I haven't changed any recipes aside from the Plastic one, so have fun and automate the last few things you've been waiting to automate! I've made a few quests for this chapter just to give you a mission in the end :)"]
 			dependencies: ["568810B360CC78F0"]
+			size: 1.25d
 			id: "7E8B45D166B71957"
 			tasks: [{
 				id: "310BEDA0717D3653"

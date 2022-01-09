@@ -256,14 +256,17 @@
 		}
 		{
 			title: "End of Early-Game"
+			icon: "minecraft:oak_log"
 			x: -0.5d
-			y: 5.0d
+			y: 6.0d
+			shape: "octagon"
 			description: [
 				"If you know Create, you know that there is SO much left to do in this mod. This pack is designed such that you'll have to step away from Create and revisit it once you have a reliable supply of Steel or Treated Wood."
 				""
 				"Lucky for you, that's what the next chapter is all about!!"
 			]
 			dependencies: ["557F241BD0AAA98E"]
+			size: 1.5d
 			id: "6AFD4430D7D335FC"
 			tasks: [{
 				id: "1141E9288F295974"

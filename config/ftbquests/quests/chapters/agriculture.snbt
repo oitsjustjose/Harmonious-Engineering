@@ -109,9 +109,9 @@
 				item: "farmersdelight:stove"
 			}]
 			rewards: [{
-				id: "2A3BBE6503FA6270"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "2935DD2AB5BA9497"
+				type: "xp"
+				xp: 700
 			}]
 		}
 		{
@@ -215,6 +215,13 @@
 				type: "item"
 				item: "farmersdelight:straw"
 			}]
+			rewards: [{
+				id: "45E5C6AC9CDF7BF5"
+				type: "item"
+				item: "farmersdelight:organic_compost"
+				count: 3
+				random_bonus: 3
+			}]
 		}
 		{
 			title: "The Lumpy Pumpkin"
@@ -227,6 +234,7 @@
 				"653E667D4286376F"
 				"4B79AB8D817B341C"
 			]
+			size: 1.5d
 			optional: true
 			id: "13A881ABCF2248C5"
 			tasks: [{

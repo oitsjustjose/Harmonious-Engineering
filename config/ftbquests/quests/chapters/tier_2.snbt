@@ -11,8 +11,8 @@
 		{
 			title: "Alloying"
 			icon: "immersiveengineering:alloy_smelter"
-			x: -9.0d
-			y: -10.0d
+			x: -9.5d
+			y: -9.0d
 			description: ["To get started with early alloys, you can make yourself an Alloy Kiln. This is a 2x2x2 of Kiln Bricks. Once built, hit it with your Engineer's Hammer to form it into a Multi-Block!"]
 			dependencies: ["30909D9243BF755A"]
 			id: "4012189A70E095DD"
@@ -116,8 +116,8 @@
 		{
 			title: "Coke Oven"
 			icon: "immersiveengineering:coke_oven"
-			x: -6.0d
-			y: -10.0d
+			x: -5.5d
+			y: -9.0d
 			description: ["A Coke Oven will get you the required coal coke needed to make steel in a blast furnace. It'll also get you Creosote Oil, which you can use (in a JerryCan is the easiest way) to make Treated Wood Planks. Treated Wood Planks are good tool materials, great for Storage Crates, Building, and as ingredients for other recipes!"]
 			dependencies: ["30909D9243BF755A"]
 			id: "1A10E66C46D2299F"
@@ -127,12 +127,17 @@
 				item: "immersiveengineering:cokebrick"
 				count: 27L
 			}]
+			rewards: [{
+				id: "7C680D5404053C2D"
+				type: "item"
+				item: "immersiveengineering:jerrycan"
+			}]
 		}
 		{
 			title: "Into Fire"
 			icon: "minecraft:nether_brick_wall"
 			x: -7.5d
-			y: -9.0d
+			y: -7.5d
 			description: [
 				"The recipe for Blast Brick has been changed to require a literal blaze burner to keep it warm enough. Fortunately, the recipe makes all 27 which is all you'll need."
 				""
@@ -149,47 +154,43 @@
 				dimension: "minecraft:the_nether"
 			}]
 			rewards: [{
-				id: "7F654079138CB4EC"
+				id: "0E97C6EF7B4B072B"
 				type: "item"
-				item: "create:empty_blaze_burner"
-			}]
-		}
-		{
-			x: -9.0d
-			y: -8.0d
-			description: ["Right click the empty blaze burner on a living Blaze to capture it. You can now use it to make your blast bricks!"]
-			dependencies: ["4EF301A720A9A759"]
-			id: "532B7AF568391D28"
-			tasks: [{
-				id: "50781EC1F33160F0"
-				type: "item"
-				item: "create:blaze_burner"
-			}]
-			rewards: [{
-				id: "4F7C64DBC3C8903E"
-				type: "xp_levels"
-				xp_levels: 15
+				item: {
+					id: "minecraft:splash_potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
 			}]
 		}
 		{
 			title: "So I Started Blasting"
 			icon: "immersiveengineering:blast_furnace"
-			x: -6.0d
-			y: -8.0d
+			x: -7.5d
+			y: -5.5d
 			shape: "diamond"
 			description: [
-				"Nicely done! You survived the nether, and even made it out with some nice loot -- what's that? I have no way of knowing if you did or not? You're right. I'm just hopeful I suppose."
+				"You'll want to find yourself a Nether Fortress (or a blaze) and capture it using an Empty Blaze Burner. Once you have this, you're ready to get started with Blasting."
 				""
-				"Anyways, take some slag and some concrete to build yourself something nice I suppose!"
+				"Since you managed to survive (or so I hope), take some slag and some concrete to build yourself something nice I suppose!"
 			]
-			dependencies: ["532B7AF568391D28"]
+			dependencies: ["4EF301A720A9A759"]
 			id: "4A60BF034B726C88"
-			tasks: [{
-				id: "3C7E6270BC4B73A2"
-				type: "item"
-				item: "immersiveengineering:blastbrick"
-				count: 27L
-			}]
+			tasks: [
+				{
+					id: "1D2BB2AD1B1FFD8A"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "61E2A60728647DA2"
+					type: "item"
+					item: "immersiveengineering:blastbrick"
+					count: 27L
+				}
+			]
 			rewards: [
 				{
 					id: "1F7668E382741369"
@@ -208,8 +209,8 @@
 		}
 		{
 			title: "The Age Of Steel"
-			x: -7.5d
-			y: -6.5d
+			x: -5.5d
+			y: -5.5d
 			shape: "gear"
 			description: [
 				"Nicely done you! There's a lot that this steel can do for you. For now, if you want to SPRINT into the next chapter and leave IE behind, feel free!"
@@ -219,6 +220,7 @@
 				"I, for one, would suggest going back for some Create crushing wheels and come back around to this chapter for some of the late-Immersive stuff like Petroleum and even the Ore Crusher to start duplicating some resources!"
 			]
 			dependencies: ["4A60BF034B726C88"]
+			size: 1.5d
 			id: "1FF265E2816476AB"
 			tasks: [{
 				id: "4977E64322BACBD8"
@@ -550,19 +552,13 @@
 				type: "checkmark"
 				title: "The Rest of IE"
 			}]
-			rewards: [
-				{
-					id: "7B5525D105C74233"
-					type: "item"
-					item: "immersiveengineering:steel_scaffolding_standard"
-					count: 24
-				}
-				{
-					id: "7AEE2E14BC8A0B18"
-					type: "xp_levels"
-					xp_levels: 20
-				}
-			]
+			rewards: [{
+				id: "7B5525D105C74233"
+				type: "item"
+				item: "immersiveengineering:steel_scaffolding_standard"
+				count: 24
+				random_bonus: 8
+			}]
 		}
 		{
 			x: -2.5d
@@ -646,9 +642,50 @@
 				title: "A Reminder"
 			}]
 			rewards: [{
-				id: "4D19192B471BD926"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "7AA9FAA9E512A8AA"
+				type: "xp"
+				xp: 1100
+			}]
+		}
+		{
+			title: "1.5xing Ores"
+			icon: "tconstruct:seared_brick"
+			x: -7.5d
+			y: -9.0d
+			shape: "hexagon"
+			description: [
+				"If you're looking to min/max your Minecraft experience, the best you can do now that you have a hammer is to set up a Melter station with Tinkers Construct."
+				""
+				"For that extra touch, you can automate your setup using a nugget cast, two hoppers and a lever powering your faucet."
+			]
+			dependencies: ["30909D9243BF755A"]
+			id: "58D13C5C45E5C77B"
+			tasks: [
+				{
+					id: "7855CDADDF89325C"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "66FBAEC21FFB6435"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "6A3C883F204667E8"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "1449664100C20BB1"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+			]
+			rewards: [{
+				id: "6AA2528800D74B61"
+				type: "item"
+				item: "tconstruct:puny_smelting"
 			}]
 		}
 	]

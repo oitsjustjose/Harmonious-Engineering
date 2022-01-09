@@ -20,6 +20,12 @@
 				type: "item"
 				item: "thermal:machine_frame"
 			}]
+			rewards: [{
+				id: "6EBF64C03D7010D8"
+				type: "item"
+				item: "thermal:lock"
+				count: 4
+			}]
 		}
 		{
 			title: "Compact 2x Ore Processing"
@@ -68,6 +74,11 @@
 				type: "item"
 				item: "thermal:machine_furnace"
 			}]
+			rewards: [{
+				id: "5131F8474543847B"
+				type: "item"
+				item: "thermal:xp_storage_augment"
+			}]
 		}
 		{
 			x: -2.5d
@@ -80,6 +91,23 @@
 				type: "item"
 				item: "thermal:machine_press"
 			}]
+			rewards: [
+				{
+					id: "46C8FF6A7B646063"
+					type: "item"
+					item: "thermal:press_packing_2x2_die"
+				}
+				{
+					id: "61D6BB25B612AE2D"
+					type: "item"
+					item: "thermal:press_packing_3x3_die"
+				}
+				{
+					id: "217041FE0D35A839"
+					type: "item"
+					item: "thermal:press_unpacking_die"
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -93,6 +121,11 @@
 				type: "item"
 				item: "thermal:press_gear_die"
 			}]
+			rewards: [{
+				id: "73FF8892AA199855"
+				type: "item"
+				item: "thermal:machine_speed_augment"
+			}]
 		}
 		{
 			x: -5.0d
@@ -104,6 +137,13 @@
 				id: "080BDA8DEA907A95"
 				type: "item"
 				item: "thermal:upgrade_augment_1"
+			}]
+			rewards: [{
+				id: "06C1F6C94B352093"
+				type: "item"
+				item: "emendatusenigmatica:lumium_ingot"
+				count: 4
+				random_bonus: 4
 			}]
 		}
 		{
@@ -166,6 +206,11 @@
 				type: "item"
 				item: "thermal:tinker_bench"
 			}]
+			rewards: [{
+				id: "42D47452438BA03F"
+				type: "item"
+				item: "thermal:rf_coil_xfer_augment"
+			}]
 		}
 		{
 			x: -2.5d
@@ -174,6 +219,7 @@
 			description: ["These Resonant Components contain all of the Spatiotemporal Technology you could possibly need thanks to those Endermen. Now you can get into some pretty advanced technology as you progress into Mekanism - Nicely Done!!!"]
 			hide_dependency_lines: true
 			dependencies: ["026BB6835B11EC9D"]
+			size: 1.5d
 			id: "1A1191D78F17ED73"
 			tasks: [{
 				id: "32AC90E320EB323C"

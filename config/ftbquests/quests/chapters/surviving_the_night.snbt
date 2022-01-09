@@ -165,6 +165,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4A35DD53B984A3B3"
+				type: "xp"
+				xp: 300
+			}]
 		}
 		{
 			title: "Tinkers' Construct"
@@ -215,6 +220,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "79896543C95D80B7"
+				type: "item"
+				item: "tconstruct:earth_cake"
+			}]
 		}
 		{
 			title: "Tetra"
@@ -243,6 +253,11 @@
 						"double/basic_hammer_left_material": "basic_hammer/oak"
 					}
 				}
+			}]
+			rewards: [{
+				id: "7DC9165D21ED517F"
+				type: "item"
+				item: "tetra:rack"
 			}]
 		}
 		{
@@ -416,6 +431,8 @@
 			shape: "octagon"
 			description: ["To proceed, you'll need some Iron, Copper, Coal, y'know the common resources. Go hit the mines and head on back to the next chapter when you think you're ready!"]
 			dependencies: ["5F04546C2125C6D2"]
+			hide: false
+			size: 1.5d
 			id: "5576DA257D4825D4"
 			tasks: [{
 				id: "5092DB42DFD9055D"

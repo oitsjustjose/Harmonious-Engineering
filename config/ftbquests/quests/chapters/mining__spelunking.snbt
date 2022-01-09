@@ -15,6 +15,7 @@
 			shape: "hexagon"
 			description: ["You've found an ore chunk! You'll probably notice that you can't just throw this bad boy in a furnace to turn it into an ingot, but you'll be able to use these really soon. Hang onto them because you'll need them for your first foray into Tech!"]
 			dependencies: ["5576DA257D4825D4"]
+			size: 1.5d
 			id: "75C685BA3AC15524"
 			tasks: [{
 				id: "0F15DCAB9E0DD215"
@@ -72,6 +73,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5174BC519689CF28"
+				type: "xp"
+				xp: 1100
+			}]
 		}
 		{
 			title: "Where's the redstone?"
@@ -111,9 +117,9 @@
 				title: "Charged Certus Anyone?"
 			}]
 			rewards: [{
-				id: "4200DFF21CB959E2"
-				type: "xp_levels"
-				xp_levels: 3
+				id: "1D241E4AE46BD6B6"
+				type: "xp"
+				xp: 300
 			}]
 		}
 		{
@@ -129,9 +135,9 @@
 				title: "Uraninite Too?"
 			}]
 			rewards: [{
-				id: "7E77281379BF5B32"
-				type: "xp_levels"
-				xp_levels: 3
+				id: "4E5CE80E8E0379DB"
+				type: "xp"
+				xp: 300
 			}]
 		}
 		{

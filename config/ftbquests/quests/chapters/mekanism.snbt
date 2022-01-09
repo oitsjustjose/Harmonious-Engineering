@@ -44,6 +44,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["79D0FF37CBEF39D5"]
+			size: 1.5d
 			id: "40B3A14EA5AC792C"
 			tasks: [{
 				id: "5FDF943C28FAAC78"
@@ -126,14 +127,15 @@
 				{
 					id: "43B92B0B2DFEB42A"
 					type: "item"
+					title: "Some Chunks To Test With"
 					item: "emendatusenigmatica:iron_chunk"
 					count: 12
 					random_bonus: 12
 				}
 				{
-					id: "45335D4B51184362"
-					type: "xp_levels"
-					xp_levels: 25
+					id: "45D0B837CEE4FF52"
+					type: "xp"
+					xp: 1500
 				}
 			]
 		}
@@ -289,6 +291,7 @@
 			tasks: [{
 				id: "70A0ABB6ED4DCCF9"
 				type: "item"
+				title: "Any Renewable Energy Provider"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -311,9 +314,11 @@
 				}
 			}]
 			rewards: [{
-				id: "64B29BA0B243F868"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "6DB5B0E5D646184F"
+				type: "item"
+				item: "pipez:energy_pipe"
+				count: 12
+				random_bonus: 8
 			}]
 		}
 		{
@@ -328,6 +333,12 @@
 				id: "49C15631CFA863AF"
 				type: "item"
 				item: "mekanism:digital_miner"
+			}]
+			rewards: [{
+				id: "7B29D0464D436EE6"
+				type: "item"
+				item: "enderstorage:ender_chest"
+				count: 2
 			}]
 		}
 		{
@@ -407,9 +418,11 @@
 				item: "mekanism:ingot_refined_obsidian"
 			}]
 			rewards: [{
-				id: "054DCFD795730292"
-				type: "xp_levels"
-				xp_levels: 15
+				id: "183A6701031EA078"
+				type: "item"
+				item: "mekanism:enriched_refined_obsidian"
+				count: 2
+				random_bonus: 2
 			}]
 		}
 	]
