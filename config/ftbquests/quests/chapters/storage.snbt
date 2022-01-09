@@ -24,9 +24,11 @@
 				item: "storage_overhaul:oak_chest_tier_1"
 			}]
 			rewards: [{
-				id: "0064D0601D7DA3FC"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "2B600428D51BCE07"
+				type: "item"
+				item: "minecraft:oak_planks"
+				count: 16
+				random_bonus: 16
 			}]
 		}
 		{
@@ -41,9 +43,11 @@
 				item: "storage_overhaul:oak_barrel"
 			}]
 			rewards: [{
-				id: "2190B6467189823B"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "5AD912DE3B9FB45E"
+				type: "item"
+				item: "minecraft:oak_planks"
+				count: 16
+				random_bonus: 16
 			}]
 		}
 		{
@@ -58,9 +62,12 @@
 				item: "storage_overhaul:oak_storage_barrel"
 			}]
 			rewards: [{
-				id: "1E29A139B0A3CCDD"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "49208F3187E9E373"
+				type: "item"
+				auto: "disabled"
+				item: "minecraft:oak_planks"
+				count: 64
+				random_bonus: 64
 			}]
 		}
 		{
@@ -76,9 +83,9 @@
 				item: "storagedrawers:oak_full_drawers_1"
 			}]
 			rewards: [{
-				id: "4DF117CC12E01B61"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "4B954EEA80404E92"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -93,9 +100,9 @@
 				item: "framedcompactdrawers:framed_full_one"
 			}]
 			rewards: [{
-				id: "330D515BA24E004D"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "65176B104DF82427"
+				type: "xp"
+				xp: 200
 			}]
 		}
 		{
@@ -197,9 +204,11 @@
 				item: "enderstorage:ender_tank"
 			}]
 			rewards: [{
-				id: "1200E2A98C117196"
-				type: "xp_levels"
-				xp_levels: 10
+				id: "554ADE368F07E5EA"
+				type: "item"
+				item: "pipez:fluid_pipe"
+				count: 12
+				random_bonus: 8
 			}]
 		}
 	]

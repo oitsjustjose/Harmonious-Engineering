@@ -31,9 +31,13 @@
 				item: "wormhole:portal_frame"
 			}]
 			rewards: [{
-				id: "49A8BAED5F2A5463"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "2353BC746911E678"
+				type: "item"
+				item: {
+					id: "wormhole:target_device"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 		{
@@ -45,8 +49,16 @@
 			description: ["More Minecarts is a really cool cart and rail mod akin to Railcraft's transportation components, allowing for easy transportation of blocks, items, mobs and even keeping chunks loaded along the way! I suggest you give it a look sometime if your rail setup is ever feeling slow or if you're in a pinch!"]
 			id: "3F818BF4AFA6CBF5"
 			tasks: [{
-				id: "1D10B234F240E4F5"
-				type: "checkmark"
+				id: "0511193A36DB41B9"
+				type: "item"
+				title: "Any More Minecarts Item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "moreminecarts"
+					}
+				}
 			}]
 			rewards: [{
 				id: "1CB4B5627908C0A8"
@@ -113,6 +125,21 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "71AC7977BD90D21D"
+				type: "item"
+				item: {
+					id: "minecraft:firework_rocket"
+					Count: 1b
+					tag: {
+						Fireworks: {
+							Flight: 1b
+						}
+					}
+				}
+				count: 32
+				random_bonus: 32
+			}]
 		}
 		{
 			x: -6.5d
@@ -129,6 +156,21 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "76D60A7D9CD0989E"
+				type: "item"
+				item: {
+					id: "minecraft:firework_rocket"
+					Count: 1b
+					tag: {
+						Fireworks: {
+							Flight: 1b
+						}
+					}
+				}
+				count: 32
+				random_bonus: 32
 			}]
 		}
 		{

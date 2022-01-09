@@ -356,9 +356,9 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "4FA801955E7E4762"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "6738FA82FBB23DBF"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

@@ -366,14 +366,15 @@
 			optional: true
 			id: "657AD360C363DA5E"
 			tasks: [{
-				id: "72BF15543E048144"
+				id: "5F8F96E5BC0A2D75"
 				type: "item"
-				item: "minecraft:oak_planks"
+				item: "create:schematic_table"
 			}]
 			rewards: [{
-				id: "175A86FCFE2F1103"
-				type: "xp"
-				xp: 100
+				id: "6FBCBA1D14B49E2F"
+				type: "item"
+				item: "create:schematic_and_quill"
+				random_bonus: 2
 			}]
 		}
 		{
@@ -396,9 +397,9 @@
 					item: "minecraft:jukebox"
 				}
 				{
-					id: "3A5542671BFA44C7"
+					id: "623B8CF45CEA0332"
 					type: "item"
-					item: "quark:music_disc_rain"
+					item: "quark:music_disc_fire"
 				}
 			]
 		}
