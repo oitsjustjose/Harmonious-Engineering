@@ -1,4 +1,4 @@
-ignoreUpdate:121
+ignoreUpdate:124
 updateNotification:true
 differentiateByServerAddress:true
 netherlikeCaveMapAllowed:true
@@ -26,4 +26,6 @@ waypointBackgrounds:true
 detectAmbiguousY:true
 showDisabledWaypoints:false
 closeWaypointsWhenHopping:true
+adjustHeightForCarpetLikeBlocks:true
+onlyCurrentMapWaypoints:false
 globalVersion:1
