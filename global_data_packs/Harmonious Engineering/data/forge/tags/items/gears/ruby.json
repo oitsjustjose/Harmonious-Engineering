@@ -1,1 +1,6 @@
-{"replace": true, "values": ["emendatusenigmatica:ruby_gear"]}
+{
+  "replace": true,
+  "values": [
+    "emendatusenigmatica:ruby_gear"
+  ]
+}

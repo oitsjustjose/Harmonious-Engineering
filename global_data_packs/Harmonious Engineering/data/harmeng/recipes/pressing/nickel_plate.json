@@ -1,5 +1,13 @@
 {
   "type": "create:pressing",
-  "ingredients": [{ "tag": "forge:ingots/nickel" }],
-  "results": [{ "item": "thermal:nickel_plate" }]
+  "ingredients": [
+    {
+      "tag": "forge:ingots/nickel"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:nickel_plate"
+    }
+  ]
 }

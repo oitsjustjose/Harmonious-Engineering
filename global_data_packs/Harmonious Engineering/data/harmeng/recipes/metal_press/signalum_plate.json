@@ -1,0 +1,13 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": {
+    "item": "immersiveengineering:mold_plate"
+  },
+  "input": {
+    "tag": "forge:ingots/signalum"
+  },
+  "result": {
+    "item": "emendatusenigmatica:signalum_plate"
+  },
+  "energy": 2400
+}

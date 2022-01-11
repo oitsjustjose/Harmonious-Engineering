@@ -1,6 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["PSP", "PSP", "PSP"],
+  "pattern": [
+    "PSP",
+    "PSP",
+    "PSP"
+  ],
   "key": {
     "P": {
       "item": "powah:dielectric_paste"

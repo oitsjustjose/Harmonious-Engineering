@@ -1,1 +1,17 @@
-{"type": "thermal:press", "ingredients": [{"tag": "forge:ingots/cobalt", "count": 4}, {"item": "thermal:press_gear_die"}], "result": [{"item": "emendatusenigmatica:cobalt_gear"}]}
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/cobalt",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "emendatusenigmatica:cobalt_gear"
+    }
+  ]
+}

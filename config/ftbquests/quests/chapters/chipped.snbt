@@ -187,6 +187,7 @@
 				id: "24B4D34DEB92CBDA"
 				type: "item"
 				item: "minecraft:stonecutter"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "3C25183BABE4BB36"

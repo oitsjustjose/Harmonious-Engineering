@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/ruby"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:ruby_plate"
+    }
+  ]
+}

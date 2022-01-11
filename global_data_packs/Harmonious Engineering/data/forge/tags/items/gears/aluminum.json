@@ -1,1 +1,6 @@
-{"replace": true, "values": ["emendatusenigmatica:aluminum_gear"]}
+{
+  "replace": true,
+  "values": [
+    "emendatusenigmatica:aluminum_gear"
+  ]
+}

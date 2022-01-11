@@ -1,1 +1,6 @@
-{"replace": true, "values": ["emendatusenigmatica:cast_iron_gear"]}
+{
+  "replace": true,
+  "values": [
+    "emendatusenigmatica:cast_iron_gear"
+  ]
+}

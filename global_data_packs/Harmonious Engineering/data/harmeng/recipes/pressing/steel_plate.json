@@ -1,5 +1,13 @@
 {
   "type": "create:pressing",
-  "ingredients": [{ "tag": "forge:ingots/steel" }],
-  "results": [{ "item": "immersiveengineering:plate_steel" }]
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:steel_plate"
+    }
+  ]
 }

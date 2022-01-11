@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/peridot"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:peridot_plate"
+    }
+  ]
+}

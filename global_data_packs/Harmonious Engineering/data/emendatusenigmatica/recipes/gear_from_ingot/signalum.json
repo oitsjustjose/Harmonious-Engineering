@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:signalum_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/signalum"}, {"tag": "forge:plates/signalum"}, {"tag": "forge:plates/signalum"}, {"tag": "forge:plates/signalum"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:signalum_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/signalum"
+    },
+    {
+      "tag": "forge:plates/signalum"
+    },
+    {
+      "tag": "forge:plates/signalum"
+    },
+    {
+      "tag": "forge:plates/signalum"
+    }
+  ]
+}

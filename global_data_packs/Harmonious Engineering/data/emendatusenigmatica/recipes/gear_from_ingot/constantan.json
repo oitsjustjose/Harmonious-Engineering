@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:constantan_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/constantan"}, {"tag": "forge:plates/constantan"}, {"tag": "forge:plates/constantan"}, {"tag": "forge:plates/constantan"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:constantan_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/constantan"
+    },
+    {
+      "tag": "forge:plates/constantan"
+    },
+    {
+      "tag": "forge:plates/constantan"
+    },
+    {
+      "tag": "forge:plates/constantan"
+    }
+  ]
+}

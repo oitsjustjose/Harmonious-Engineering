@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:lapis_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/lapis"}, {"tag": "forge:plates/lapis"}, {"tag": "forge:plates/lapis"}, {"tag": "forge:plates/lapis"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:lapis_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/lapis"
+    },
+    {
+      "tag": "forge:plates/lapis"
+    },
+    {
+      "tag": "forge:plates/lapis"
+    },
+    {
+      "tag": "forge:plates/lapis"
+    }
+  ]
+}

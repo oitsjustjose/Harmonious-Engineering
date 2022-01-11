@@ -1,0 +1,11 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/cobalt"
+  },
+  "result": [
+    {
+      "item": "emendatusenigmatica:cobalt_plate"
+    }
+  ]
+}

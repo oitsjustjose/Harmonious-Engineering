@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/osmium"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:osmium_plate"
+    }
+  ]
+}

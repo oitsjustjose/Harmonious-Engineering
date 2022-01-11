@@ -1,1 +1,8 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"tag": "upgrade_aquatic:driftwood_logs"}, "result": "decorative_blocks_abnormals:driftwood_beam", "count": 1}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "tag": "upgrade_aquatic:driftwood_logs"
+  },
+  "result": "decorative_blocks_abnormals:driftwood_beam",
+  "count": 1
+}

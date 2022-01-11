@@ -1,0 +1,11 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/osmium"
+  },
+  "result": [
+    {
+      "item": "emendatusenigmatica:osmium_plate"
+    }
+  ]
+}

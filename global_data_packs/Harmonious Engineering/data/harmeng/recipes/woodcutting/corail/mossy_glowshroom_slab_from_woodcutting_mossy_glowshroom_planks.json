@@ -1,1 +1,22 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "betterendforge:mossy_glowshroom_planks"}, "result": "betterendforge:mossy_glowshroom_slab", "count": 2, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}]}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "item": "betterendforge:mossy_glowshroom_planks"
+  },
+  "result": "betterendforge:mossy_glowshroom_slab",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterendforge"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterendforge"
+    }
+  ]
+}

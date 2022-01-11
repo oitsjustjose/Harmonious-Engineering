@@ -1,5 +1,13 @@
 {
   "type": "create:pressing",
-  "ingredients": [{ "tag": "forge:ingots/enderium" }],
-  "results": [{ "item": "thermal:enderium_plate" }]
+  "ingredients": [
+    {
+      "tag": "forge:ingots/enderium"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:enderium_plate"
+    }
+  ]
 }

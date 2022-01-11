@@ -1,1 +1,22 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "tconstruct:bloodshroom_planks"}, "result": "tconstruct:bloodshroom_pressure_plate", "count": 3, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "tconstruct"}, {"type": "forge:mod_loaded", "modid": "tconstruct"}]}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "item": "tconstruct:bloodshroom_planks"
+  },
+  "result": "tconstruct:bloodshroom_pressure_plate",
+  "count": 3,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tconstruct"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tconstruct"
+    }
+  ]
+}

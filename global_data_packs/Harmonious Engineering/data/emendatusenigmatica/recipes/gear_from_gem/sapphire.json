@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:sapphire_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/sapphire"}, {"tag": "forge:plates/sapphire"}, {"tag": "forge:plates/sapphire"}, {"tag": "forge:plates/sapphire"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:sapphire_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/sapphire"
+    },
+    {
+      "tag": "forge:plates/sapphire"
+    },
+    {
+      "tag": "forge:plates/sapphire"
+    },
+    {
+      "tag": "forge:plates/sapphire"
+    }
+  ]
+}

@@ -1,6 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["ppp", "p p", "ppp"],
-  "key": { "p": { "tag": "chipped:dark_oak_planks" } },
-  "result": { "item": "quark:dark_oak_chest", "count": 1 }
+  "pattern": [
+    "ppp",
+    "p p",
+    "ppp"
+  ],
+  "key": {
+    "p": {
+      "tag": "chipped:dark_oak_planks"
+    }
+  },
+  "result": {
+    "item": "quark:dark_oak_chest",
+    "count": 1
+  }
 }

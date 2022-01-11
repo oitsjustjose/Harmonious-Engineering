@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:steel_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/steel"}, {"tag": "forge:plates/steel"}, {"tag": "forge:plates/steel"}, {"tag": "forge:plates/steel"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:steel_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/steel"
+    },
+    {
+      "tag": "forge:plates/steel"
+    },
+    {
+      "tag": "forge:plates/steel"
+    },
+    {
+      "tag": "forge:plates/steel"
+    }
+  ]
+}

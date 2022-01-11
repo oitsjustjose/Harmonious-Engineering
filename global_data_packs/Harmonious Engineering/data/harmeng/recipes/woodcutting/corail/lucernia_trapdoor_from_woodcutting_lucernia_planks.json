@@ -1,1 +1,22 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "betterendforge:lucernia_planks"}, "result": "betterendforge:lucernia_trapdoor", "count": 2, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}]}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "item": "betterendforge:lucernia_planks"
+  },
+  "result": "betterendforge:lucernia_trapdoor",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterendforge"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterendforge"
+    }
+  ]
+}

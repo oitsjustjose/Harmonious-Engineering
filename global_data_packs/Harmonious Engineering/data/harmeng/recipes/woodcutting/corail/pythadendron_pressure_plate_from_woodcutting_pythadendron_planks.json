@@ -1,1 +1,22 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "betterendforge:pythadendron_planks"}, "result": "betterendforge:pythadendron_pressure_plate", "count": 3, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}, {"type": "forge:mod_loaded", "modid": "betterendforge"}]}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "item": "betterendforge:pythadendron_planks"
+  },
+  "result": "betterendforge:pythadendron_pressure_plate",
+  "count": 3,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterendforge"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "betterendforge"
+    }
+  ]
+}

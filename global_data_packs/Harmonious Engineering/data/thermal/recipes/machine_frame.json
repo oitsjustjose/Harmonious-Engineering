@@ -1,6 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["SGS", "GTG", "SGS"],
+  "pattern": [
+    "SGS",
+    "GTG",
+    "SGS"
+  ],
   "key": {
     "G": {
       "item": "mekanism:structural_glass"

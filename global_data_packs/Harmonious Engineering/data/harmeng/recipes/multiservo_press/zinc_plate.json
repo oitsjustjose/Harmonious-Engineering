@@ -1,0 +1,11 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/zinc"
+  },
+  "result": [
+    {
+      "item": "emendatusenigmatica:zinc_plate"
+    }
+  ]
+}

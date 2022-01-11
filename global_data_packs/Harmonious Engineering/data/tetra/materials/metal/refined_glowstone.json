@@ -14,7 +14,10 @@
     "glyph": "FCF1AA",
     "texture": "FCF1AA"
   },
-  "textures": ["metal", "default"],
+  "textures": [
+    "metal",
+    "default"
+  ],
   "material": {
     "tag": "forge:ingots/refined_glowstone"
   },

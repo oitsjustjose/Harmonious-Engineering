@@ -1,0 +1,11 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:gems/sapphire"
+  },
+  "result": [
+    {
+      "item": "emendatusenigmatica:sapphire_plate"
+    }
+  ]
+}

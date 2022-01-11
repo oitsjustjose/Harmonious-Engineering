@@ -1,1 +1,6 @@
-{"replace": true, "values": ["emendatusenigmatica:cobalt_gear"]}
+{
+  "replace": true,
+  "values": [
+    "emendatusenigmatica:cobalt_gear"
+  ]
+}

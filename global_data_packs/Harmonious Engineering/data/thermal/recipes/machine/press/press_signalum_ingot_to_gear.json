@@ -1,1 +1,17 @@
-{"type": "thermal:press", "ingredients": [{"tag": "forge:ingots/signalum", "count": 4}, {"item": "thermal:press_gear_die"}], "result": [{"item": "emendatusenigmatica:signalum_gear"}]}
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/signalum",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "emendatusenigmatica:signalum_gear"
+    }
+  ]
+}

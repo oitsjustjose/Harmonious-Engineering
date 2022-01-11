@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:invar_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/invar"}, {"tag": "forge:plates/invar"}, {"tag": "forge:plates/invar"}, {"tag": "forge:plates/invar"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:invar_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/invar"
+    },
+    {
+      "tag": "forge:plates/invar"
+    },
+    {
+      "tag": "forge:plates/invar"
+    },
+    {
+      "tag": "forge:plates/invar"
+    }
+  ]
+}

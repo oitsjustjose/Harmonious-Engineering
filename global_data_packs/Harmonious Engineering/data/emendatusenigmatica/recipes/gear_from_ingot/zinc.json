@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:zinc_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/zinc"}, {"tag": "forge:plates/zinc"}, {"tag": "forge:plates/zinc"}, {"tag": "forge:plates/zinc"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:zinc_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    }
+  ]
+}

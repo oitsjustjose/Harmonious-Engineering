@@ -14,7 +14,10 @@
     "glyph": "7E65AB",
     "texture": "7E65AB"
   },
-  "textures": ["metal", "default"],
+  "textures": [
+    "metal",
+    "default"
+  ],
   "material": {
     "tag": "forge:ingots/refined_obsidian"
   },

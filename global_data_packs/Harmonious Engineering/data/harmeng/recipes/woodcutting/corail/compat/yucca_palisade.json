@@ -1,1 +1,8 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"tag": "atmospheric:yucca_logs"}, "result": "decorative_blocks_abnormals:yucca_palisade", "count": 4}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "tag": "atmospheric:yucca_logs"
+  },
+  "result": "decorative_blocks_abnormals:yucca_palisade",
+  "count": 4
+}

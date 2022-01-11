@@ -1,1 +1,17 @@
-{"type": "thermal:press", "ingredients": [{"tag": "forge:gems/sapphire", "count": 4}, {"item": "thermal:press_gear_die"}], "result": [{"item": "emendatusenigmatica:sapphire_gear"}]}
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:gems/sapphire",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "emendatusenigmatica:sapphire_gear"
+    }
+  ]
+}

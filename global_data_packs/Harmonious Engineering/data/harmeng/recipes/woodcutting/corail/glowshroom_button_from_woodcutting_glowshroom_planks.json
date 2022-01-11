@@ -1,1 +1,22 @@
-{"type": "corail_woodcutter:woodcutting", "ingredient": {"item": "enhanced_mushrooms:glowshroom_planks"}, "result": "enhanced_mushrooms:glowshroom_button", "count": 4, "conditions": [{"type": "forge:mod_loaded", "modid": "corail_woodcutter"}, {"type": "forge:mod_loaded", "modid": "enhanced_mushrooms"}, {"type": "forge:mod_loaded", "modid": "enhanced_mushrooms"}]}
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "item": "enhanced_mushrooms:glowshroom_planks"
+  },
+  "result": "enhanced_mushrooms:glowshroom_button",
+  "count": 4,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 {
   "type": "create:pressing",
-  "ingredients": [{ "tag": "forge:ingots/bronze" }],
-  "results": [{ "item": "thermal:bronze_plate" }]
+  "ingredients": [
+    {
+      "tag": "forge:ingots/bronze"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:bronze_plate"
+    }
+  ]
 }

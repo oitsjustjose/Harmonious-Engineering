@@ -1,5 +1,13 @@
 {
   "type": "create:pressing",
-  "ingredients": [{ "tag": "forge:ingots/signalum" }],
-  "results": [{ "item": "thermal:signalum_plate" }]
+  "ingredients": [
+    {
+      "tag": "forge:ingots/signalum"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:signalum_plate"
+    }
+  ]
 }

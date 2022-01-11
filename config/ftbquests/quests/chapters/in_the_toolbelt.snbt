@@ -184,6 +184,7 @@
 				id: "4BDEA1A28CC91CE4"
 				type: "item"
 				item: "morphtool:tool"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "0363A8822BB9621A"

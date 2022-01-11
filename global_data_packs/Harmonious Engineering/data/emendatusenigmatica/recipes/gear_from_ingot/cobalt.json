@@ -1,1 +1,26 @@
-{"result": {"item": "emendatusenigmatica:cobalt_gear"}, "type": "natural-progression:damage_tools", "ingredients": [{"item": "create:cogwheel"}, {"item": "immersiveengineering:hammer"}, {"tag": "forge:plates/cobalt"}, {"tag": "forge:plates/cobalt"}, {"tag": "forge:plates/cobalt"}, {"tag": "forge:plates/cobalt"}]}
+{
+  "result": {
+    "item": "emendatusenigmatica:cobalt_gear"
+  },
+  "type": "natural-progression:damage_tools",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "immersiveengineering:hammer"
+    },
+    {
+      "tag": "forge:plates/cobalt"
+    },
+    {
+      "tag": "forge:plates/cobalt"
+    },
+    {
+      "tag": "forge:plates/cobalt"
+    },
+    {
+      "tag": "forge:plates/cobalt"
+    }
+  ]
+}

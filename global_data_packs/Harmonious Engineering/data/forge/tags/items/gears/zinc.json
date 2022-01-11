@@ -1,1 +1,6 @@
-{"replace": true, "values": ["emendatusenigmatica:zinc_gear"]}
+{
+  "replace": true,
+  "values": [
+    "emendatusenigmatica:zinc_gear"
+  ]
+}

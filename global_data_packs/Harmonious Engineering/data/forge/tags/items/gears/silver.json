@@ -1,1 +1,6 @@
-{"replace": true, "values": ["emendatusenigmatica:silver_gear"]}
+{
+  "replace": true,
+  "values": [
+    "emendatusenigmatica:silver_gear"
+  ]
+}

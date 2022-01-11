@@ -1,0 +1,13 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": {
+    "item": "immersiveengineering:mold_plate"
+  },
+  "input": {
+    "tag": "forge:gems/peridot"
+  },
+  "result": {
+    "item": "emendatusenigmatica:peridot_plate"
+  },
+  "energy": 2400
+}

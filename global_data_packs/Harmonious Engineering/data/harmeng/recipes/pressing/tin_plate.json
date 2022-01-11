@@ -1,5 +1,13 @@
 {
   "type": "create:pressing",
-  "ingredients": [{ "tag": "forge:ingots/tin" }],
-  "results": [{ "item": "thermal:tin_plate" }]
+  "ingredients": [
+    {
+      "tag": "forge:ingots/tin"
+    }
+  ],
+  "results": [
+    {
+      "item": "emendatusenigmatica:tin_plate"
+    }
+  ]
 }
