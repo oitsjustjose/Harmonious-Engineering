@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "immersiveengineering:mold_plate",
+    "immersiveengineering:mold_gear",
+    "immersiveengineering:mold_rod",
+    "immersiveengineering:mold_bullet_casing",
+    "immersiveengineering:mold_wire"
+  ]
+}

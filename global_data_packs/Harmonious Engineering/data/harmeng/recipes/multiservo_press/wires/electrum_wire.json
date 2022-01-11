@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/electrum"
+    },
+    {
+      "item": "immersiveengineering:mold_wire"
+    }
+  ],
+  "result": [
+    {
+      "item": "immersiveengineering:wire_electrum",
+      "count": 2
+    }
+  ]
+}

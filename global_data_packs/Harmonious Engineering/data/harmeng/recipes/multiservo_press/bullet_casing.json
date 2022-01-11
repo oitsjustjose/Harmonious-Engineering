@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "item": "immersiveengineering:mold_bullet_casing"
+    }
+  ],
+  "result": [
+    {
+      "item": "immersiveengineering:empty_casing",
+      "count": 2
+    }
+  ]
+}

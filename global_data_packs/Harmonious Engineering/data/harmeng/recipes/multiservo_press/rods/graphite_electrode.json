@@ -1,0 +1,21 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/hop_graphite",
+      "count": 4
+    },
+    {
+      "item": "immersiveengineering:mold_rod"
+    }
+  ],
+  "result": [
+    {
+      "item": "immersiveengineering:graphite_electrode",
+      "count": 1,
+      "nbt": {
+        "graphDmg": 48000
+      }
+    }
+  ]
+}

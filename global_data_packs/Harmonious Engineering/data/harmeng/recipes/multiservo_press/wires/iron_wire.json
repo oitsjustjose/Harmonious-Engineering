@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "item": "immersiveengineering:mold_wire"
+    }
+  ],
+  "result": [
+    {
+      "item": "createaddition:iron_wire",
+      "count": 2
+    }
+  ]
+}
