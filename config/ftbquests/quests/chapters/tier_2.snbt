@@ -396,11 +396,11 @@
 				}
 			]
 			rewards: [{
-				id: "5AE39D28CB5EB1D8"
+				id: "356AE4A4D2EB95F1"
 				type: "item"
-				item: "immersiveengineering:windmill_sail"
-				count: 36
-				random_bonus: 20
+				item: "immersiveengineering:hemp_fabric"
+				count: 32
+				random_bonus: 16
 			}]
 		}
 		{
