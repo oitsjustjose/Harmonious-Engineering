@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "rftoolsbase:tablet"
   },
-  "result": "modularrouters:blank_module",
+  "result": "modularrouters:augment_core",
   "count": 2
 }
