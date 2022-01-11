@@ -37,4 +37,4 @@ config/jei/ingredient-list-type-sort-order.ini
 config/jei/recipe-category-sort-order.ini
 
 XaeroWorldMap
-XaeroWaypoints
+XaeroWaypoints*
