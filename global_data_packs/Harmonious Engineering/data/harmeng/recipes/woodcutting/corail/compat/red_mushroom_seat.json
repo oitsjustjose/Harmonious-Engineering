@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "item": "enhanced_mushrooms:red_mushroom_planks"
-  },
-  "result": "decorative_blocks_abnormals:red_mushroom_seat",
-  "count": 1
-}

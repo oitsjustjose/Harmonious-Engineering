@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "tag": "enhanced_mushrooms:brown_mushroom_stems"
-  },
-  "result": "decorative_blocks_abnormals:brown_mushroom_beam",
-  "count": 1
-}

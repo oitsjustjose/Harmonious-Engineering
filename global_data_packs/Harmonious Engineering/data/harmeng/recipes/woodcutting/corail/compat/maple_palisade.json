@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "tag": "autumnity:maple_logs"
-  },
-  "result": "decorative_blocks_abnormals:maple_palisade",
-  "count": 4
-}

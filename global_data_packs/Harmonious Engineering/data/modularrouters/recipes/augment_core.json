@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "rftoolsbase:tablet"
-  },
-  "result": "modularrouters:augment_core",
-  "count": 2
-}

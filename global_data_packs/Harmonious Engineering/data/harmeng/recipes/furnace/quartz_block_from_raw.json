@@ -1,9 +1,0 @@
-{
-  "type": "smelting",
-  "ingredient": {
-    "item": "byg:raw_quartz_block"
-  },
-  "result": "minecraft:quartz_block",
-  "experience": 0,
-  "cookingtime": 200
-}

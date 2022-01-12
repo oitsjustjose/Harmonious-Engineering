@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "item": "autumnity:maple_planks"
-  },
-  "result": "decorative_blocks_abnormals:maple_seat",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "item": "atmospheric:rosewood_planks"
-  },
-  "result": "decorative_blocks_abnormals:rosewood_seat",
-  "count": 1
-}

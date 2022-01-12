@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "tag": "forge:plates/steel"
-  },
-  "result": "appliedenergistics2:logic_processor_press",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "item": "atmospheric:morado_planks"
-  },
-  "result": "decorative_blocks_abnormals:morado_support",
-  "count": 1
-}

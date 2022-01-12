@@ -1,8 +1,0 @@
-{
-  "type": "corail_woodcutter:woodcutting",
-  "ingredient": {
-    "tag": "atmospheric:yucca_logs"
-  },
-  "result": "decorative_blocks_abnormals:yucca_beam",
-  "count": 1
-}
