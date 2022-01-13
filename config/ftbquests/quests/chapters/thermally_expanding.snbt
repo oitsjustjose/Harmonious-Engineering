@@ -227,10 +227,11 @@
 				item: "thermal:upgrade_augment_3"
 			}]
 			rewards: [{
-				id: "3DEEB46F64B3F15B"
+				id: "7701FC8A9810CA56"
 				type: "item"
-				item: "mekanism:steel_casing"
-				random_bonus: 1
+				item: "emendatusenigmatica:enderium_ingot"
+				count: 2
+				random_bonus: 2
 			}]
 		}
 	]

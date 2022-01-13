@@ -35,6 +35,9 @@ onEvent("recipes", (event) => {
   event.remove({ output: `${modid}:watermill` });
   event.remove({ output: `${modid}:windmill` });
 
+  event.remove({ output: `${modid}:hemp_fabric` });
+  event.remove({ output: `${modid}:windmill_sail` });
+
   event.smithing(
     "immersiveengineering:alloybrick",
     "createdeco:dean_bricks",
@@ -72,4 +75,32 @@ onEvent("recipes", (event) => {
     "create:large_cogwheel",
     "immersiveengineering:windmill_sail"
   );
+
+  event.custom({
+    type: "improvedbackpacks:sewing",
+    spools_count: 1,
+    first: {
+      item: `${modid}:stick_treated`,
+    },
+    first_count: 1,
+    second: {
+      item: `${modid}:hemp_fiber`,
+    },
+    second_count: 8,
+    result: `${modid}:hemp_fabric`,
+  });
+
+  event.custom({
+    type: "improvedbackpacks:sewing",
+    spools_count: 1,
+    first: {
+      item: `${modid}:hemp_fabric`,
+    },
+    first_count: 6,
+    second: {
+      item: `${modid}:stick_treated`,
+    },
+    second_count: 1,
+    result: `${modid}:windmill_sail`,
+  });
 });

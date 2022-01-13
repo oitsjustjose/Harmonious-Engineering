@@ -55,9 +55,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
-                "minecraft:smite"
-              ]
+              "enchantments": ["minecraft:smite"]
             }
           ]
         },
@@ -254,9 +252,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
-                "minecraft:projectile_protection"
-              ]
+              "enchantments": ["minecraft:projectile_protection"]
             }
           ]
         },

@@ -5,6 +5,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "create:hand_crank" });
   event.remove({ output: "create:shaft" });
   event.remove({ output: "create:water_wheel" });
+  event.remove({ output: "create:white_sail" });
   // Leave the createadditions recipe behind
   event.remove({ id: "create:crafting/kinetics/white_sail" });
   event.remove({ id: "create:cutting/andesite_alloy" });
@@ -34,5 +35,19 @@ onEvent("recipes", (event) => {
       },
     ],
     processingTime: 200,
+  });
+
+  event.custom({
+    type: "improvedbackpacks:sewing",
+    spools_count: 4,
+    first: {
+      item: "create:sail_frame",
+    },
+    first_count: 1,
+    second: {
+      item: "immersiveengineering:windmill_sail",
+    },
+    second_count: 1,
+    result: `create:white_sail`,
   });
 });

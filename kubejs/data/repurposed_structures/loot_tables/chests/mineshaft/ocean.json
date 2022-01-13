@@ -60,9 +60,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
-                "minecraft:aqua_affinity"
-              ]
+              "enchantments": ["minecraft:aqua_affinity"]
             }
           ]
         },
@@ -73,9 +71,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
-                "minecraft:depth_strider"
-              ]
+              "enchantments": ["minecraft:depth_strider"]
             }
           ]
         },
@@ -86,9 +82,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
-                "minecraft:riptide"
-              ]
+              "enchantments": ["minecraft:riptide"]
             }
           ]
         }
