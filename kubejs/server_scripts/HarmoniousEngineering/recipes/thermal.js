@@ -1,6 +1,7 @@
 onEvent("recipes", (event) => {
   event.remove({ output: "thermal:rf_coil" });
   event.remove({ output: "thermal:machine_frame" });
+  event.remove({ output: "thermal:saw_blade" });
 
   event.shaped("1x thermal:rf_coil", [" RG", "RSR", "GR "], {
     R: "immersiveengineering:wirecoil_redstone",
@@ -12,5 +13,10 @@ onEvent("recipes", (event) => {
     G: "mekanism:structural_glass",
     S: "#forge:ingots/steel",
     T: "#forge:gears/tin",
+  });
+
+  event.shaped("1x thermal:saw_blade", ["SS ", "SCS", " SS"], {
+    S: "#forge:ingots/steel",
+    C: "#forge:ingots/copper",
   });
 });

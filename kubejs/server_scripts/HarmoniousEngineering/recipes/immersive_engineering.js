@@ -39,42 +39,30 @@ onEvent("recipes", (event) => {
   event.remove({ output: `${modid}:windmill_sail` });
 
   event.smithing(
-    "immersiveengineering:alloybrick",
+    `${modid}:alloybrick`,
     "createdeco:dean_bricks",
     "minecraft:sandstone"
   );
 
-  event.shaped("27x immersiveengineering:blastbrick", ["CHC", "BSB", "CBC"], {
+  event.shaped(`27x ${modid}:blastbrick`, ["CHC", "BSB", "CBC"], {
     C: "minecraft:clay",
     B: "createdeco:dusk_bricks",
     S: "create:blaze_burner",
     H: "create:chute",
   });
 
-  event.shaped("27x immersiveengineering:cokebrick", ["CHC", "BSB", "CBC"], {
+  event.shaped(`27x ${modid}:cokebrick`, ["CHC", "BSB", "CBC"], {
     C: "minecraft:clay",
     B: "createdeco:blue_bricks",
     H: "create:chute",
     S: "createaddition:crude_burner",
   });
 
-  event.shaped("1x immersiveengineering:hammer", [" IR", " SI", "S  "], {
+  event.shaped(`1x ${modid}:hammer`, [" IR", " SI", "S  "], {
     S: "#forge:rods/wooden",
     I: "#forge:plates/iron",
     R: "immersiveengineering:hemp_fiber",
   });
-
-  event.smithing(
-    "immersiveengineering:watermill",
-    "create:large_cogwheel",
-    "immersiveengineering:waterwheel_segment"
-  );
-
-  event.smithing(
-    "immersiveengineering:windmill",
-    "create:large_cogwheel",
-    "immersiveengineering:windmill_sail"
-  );
 
   event.custom({
     type: "improvedbackpacks:sewing",
@@ -102,5 +90,58 @@ onEvent("recipes", (event) => {
     },
     second_count: 1,
     result: `${modid}:windmill_sail`,
+  });
+
+  event.custom({
+    type: "improvedbackpacks:sewing",
+    spools_count: 1,
+    first: {
+      item: `${modid}:windmill_blade`,
+    },
+    first_count: 1,
+    second: {
+      item: `${modid}:windmill_sail`,
+    },
+    second_count: 1,
+    result: "kubejs:cloth_covered_windmill_blade",
+  });
+
+  event.custom({
+    type: "create:mechanical_crafting",
+    pattern: ["BBB", "BSB", "BBB"],
+    key: {
+      B: {
+        item: "kubejs:cloth_covered_windmill_blade",
+      },
+      S: {
+        tag: "forge:ingots/steel",
+      },
+    },
+    result: {
+      item: `${modid}:windmill`,
+    },
+  });
+
+  event.custom({
+    type: "create:mechanical_crafting",
+    pattern: [" B ", "BSB", " B "],
+    key: {
+      B: {
+        item: `${modid}:waterwheel_segment`,
+      },
+      S: {
+        tag: "forge:ingots/steel",
+      },
+    },
+    result: {
+      item: `${modid}:watermill`,
+    },
+  });
+
+  event.custom({
+    type: "corail_woodcutter:woodcutting",
+    ingredient: { tag: "forge:treated_wood" },
+    result: `${modid}:waterwheel_segment`,
+    count: 1,
   });
 });

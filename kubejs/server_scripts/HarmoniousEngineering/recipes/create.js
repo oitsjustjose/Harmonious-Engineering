@@ -16,10 +16,6 @@ onEvent("recipes", (event) => {
     C: "create:cogwheel",
     A: "create:andesite_alloy",
   });
-  event.shaped("1x create:water_wheel", ["SSS", "SCS", "SSS"], {
-    S: "#forge:treated_wood_slab",
-    C: "create:large_cogwheel",
-  });
 
   event.custom({
     type: "create:cutting",
@@ -49,5 +45,21 @@ onEvent("recipes", (event) => {
     },
     second_count: 1,
     result: `create:white_sail`,
+  });
+
+  event.custom({
+    type: "create:mechanical_crafting",
+    pattern: [" B ", "BCB", " B "],
+    key: {
+      B: {
+        item: "immersiveengineering:waterwheel_segment",
+      },
+      C: {
+        item: "create:large_cogwheel",
+      },
+    },
+    result: {
+      item: "create:water_wheel",
+    },
   });
 });
