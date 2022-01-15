@@ -9,10 +9,10 @@ onEvent("recipes", (event) => {
     type: "minecraft:crafting_shapeless",
   });
 
-  event.remove({
-    output: "#forge:dusts",
-    type: "minecraft:crafting_shapeless",
-  });
+  // event.remove({
+  //   output: "#forge:dusts",
+  //   type: "minecraft:crafting_shapeless",
+  // });
 
   // Removes all smelting recipes with input <ore> and output <ingot>
   event.remove({
