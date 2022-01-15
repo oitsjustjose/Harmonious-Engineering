@@ -146,6 +146,15 @@ const crafting = (event) => {
   event.shaped("minecraft:chest", ["ppp", "p p", "ppp"], {
     p: "#harmeng:chestless_planks",
   });
+
+  event.remove({ output: "chipped:carpenters_table" });
+  event.shaped("1x chipped:carpenters_table", ["  I", "LWL", "SPL"], {
+    I: "#forge:ingots/iron",
+    L: "#minecraft:logs",
+    P: "#minecraft:planks",
+    S: "#natural-progression:saw",
+    W: "corail_woodcutter:oak_woodcutter",
+  });
 };
 
 const metallurgicInfuser = (event) => {
