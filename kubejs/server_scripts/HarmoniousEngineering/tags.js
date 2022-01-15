@@ -205,6 +205,7 @@ onEvent("tags.items", (event) => {
   naturalProgressionTags(event);
   removePlates(event);
   removeGears(event);
+  thermalTags(event);
   event.add("forge:stone", "quark:deepslate");
   event.add(
     "valhelsia_structures:axe_crafting_blacklisted",
