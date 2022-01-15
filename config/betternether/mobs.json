@@ -2,9 +2,9 @@
   "mobs": {
     "firefly[def: true]": true,
     "hydrogen_jellyfish[def: true]": true,
-    "naga[def: true]": true,
+    "naga[def: true]": false,
     "flying_pig[def: true]": true,
     "jungle_skeleton[def: true]": true,
-    "skull[def: true]": true
+    "skull[def: true]": false
   }
 }
