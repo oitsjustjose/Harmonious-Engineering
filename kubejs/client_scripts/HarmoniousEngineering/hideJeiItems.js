@@ -113,13 +113,19 @@ onEvent("jei.hide.items", (event) => {
     "emendatusenigmatica:enigmatic_hammer",
   ].forEach((x) => event.hide(x));
 
-  ["helmet", "chestplate", "leggings", "boots"].forEach((armor) => {
-    event.hide(`mekanismtools:lapis_lazuli_${armor}`);
-    event.hide(`mekanismtools:osmium_${armor}`);
-  });
-
-  ["sword", "pickaxe", "shovel", "axe", "hoe", "paxel"].forEach((tool) => {
-    event.hide(`mekanismtools:lapis_lazuli_${tool}`);
-    event.hide(`mekanismtools:osmium_${tool}`);
+  [
+    "helmet",
+    "chestplate",
+    "leggings",
+    "boots",
+    "sword",
+    "pickaxe",
+    "shovel",
+    "axe",
+    "hoe",
+    "paxel",
+  ].forEach((gear) => {
+    event.hide(`mekanismtools:lapis_lazuli_${gear}`);
+    event.hide(`mekanismtools:osmium_${gear}`);
   });
 });
