@@ -12,7 +12,7 @@ onEvent("recipes", (event) => {
 
   event.remove({ id: "minecraft:stonecutter" });
   event.shaped("1x minecraft:stonecutter", [" B ", "SSS"], {
-    B: "#harmeng:saw_blade",
+    B: "immersiveengineering:rockcutter",
     S: "#forge:stone",
   });
 });

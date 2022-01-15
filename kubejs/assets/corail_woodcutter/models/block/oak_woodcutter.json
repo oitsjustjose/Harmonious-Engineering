@@ -1,11 +1,11 @@
 {
   "parent": "block/block",
   "textures": {
-    "particle": "create:block/andesite_casing",
-    "bottom": "create:block/andesite_casing",
-    "top": "create:block/andesite_casing",
-    "side": "create:block/depot_side",
-    "saw": "block/stonecutter_saw"
+    "particle": "kubejs:block/woodcutter_bottom",
+    "bottom": "kubejs:block/woodcutter_bottom",
+    "top": "kubejs:block/woodcutter_top",
+    "side": "kubejs:block/woodcutter_side",
+    "saw": "kubejs:block/woodcutter_saw"
   },
   "elements": [
     {
