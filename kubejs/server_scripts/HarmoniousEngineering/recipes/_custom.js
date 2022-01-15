@@ -341,6 +341,9 @@ const stonecutter = (event) => {
     "#forge:plates/steel"
   );
   event.stonecutting("appliedenergistics2:name_press", "#forge:plates/steel");
+
+  // Uncraft quartz block via stonecutting
+  event.stonecutting("4x minecraft:quartz", "minecraft:quartz_block");
 };
 
 const woodcutter = (event) => {
