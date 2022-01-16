@@ -33,7 +33,6 @@ onEvent("jei.hide.items", (event) => {
     "projectred-core:silver_ingot",
     // Keep the / - doesn't work without them to indicate regex
     "/appliedenergistics2:facade/",
-    "corail_woodcutter:acacia_woodcutter",
     "corail_woodcutter:light_gray_stained_woodcutter",
     "corail_woodcutter:birch_woodcutter",
     "corail_woodcutter:lime_stained_woodcutter",

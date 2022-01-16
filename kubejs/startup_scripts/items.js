@@ -5,5 +5,3 @@ onEvent("item.registry", (event) => {
     .create("cloth_covered_windmill_blade")
     .texture("kubejs:item/cloth_covered_windmill_blade");
 });
-
-// onEvent("block.registry", (event) => {});
