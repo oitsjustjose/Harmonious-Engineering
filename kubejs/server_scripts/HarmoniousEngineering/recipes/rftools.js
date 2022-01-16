@@ -9,12 +9,4 @@ onEvent("recipes", (event) => {
     G: "#forge:gears/lapis",
     F: "thermal:machine_frame",
   });
-  event.shaped("1x rftoolsbase:infused_diamond", ["DDD", "DID", "DDD"], {
-    D: "#forge:gems/dimensional",
-    I: "#forge:gems/diamond",
-  });
-  event.shaped("1x rftoolsbase:infused_enderpearl", ["DDD", "DID", "DDD"], {
-    D: "#forge:gems/dimensional",
-    I: "minecraft:ender_pearl",
-  });
 });

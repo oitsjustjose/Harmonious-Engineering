@@ -149,9 +149,9 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "4BBBD01ABCCB035E"
+				id: "24DFCC3C6DBD887C"
 				type: "item"
-				item: "emendatusenigmatica:dimensional_gem"
+				item: "minecraft:obsidian"
 				count: 2
 				random_bonus: 2
 			}]

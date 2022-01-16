@@ -110,6 +110,13 @@ onEvent("jei.hide.items", (event) => {
     "thermal:lapis_gear",
     "kubejs:dummy_fluid_item",
     "emendatusenigmatica:enigmatic_hammer",
+    "rftoolsbase:infused_diamond",
+    "rftoolsbase:infused_enderpearl",
+    "/emendatusenigmatica:dimensional_*/",
+    "rftoolsbase:dimensionalshard",
+    "rftoolsbase:dimensionalshard_overworld",
+    "rftoolsbase:dimensionalshard_nether",
+    "rftoolsbase:dimensionalshard_end",
   ].forEach((x) => event.hide(x));
 
   [

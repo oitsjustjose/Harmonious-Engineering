@@ -5,12 +5,13 @@ onEvent("recipes", (event) => {
   event.smithing(
     "chickenchunks:chunk_loader",
     "minecraft:enchanting_table",
-    "rftoolsbase:infused_enderpearl"
+    "powah:ender_core"
   );
 
   event.shaped("1x chickenchunks:chunk_loader", ["xxx", "xxx", "xxx"], {
     x: "chickenchunks:spot_loader",
   });
+
   event.custom({
     type: "natural-progression:damage_tools",
     ingredients: [
