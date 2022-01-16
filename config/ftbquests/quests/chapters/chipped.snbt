@@ -178,7 +178,7 @@
 			title: "Portable Stonecutter"
 			icon: "portable_stonecutter:portable_stonecutter"
 			x: -10.5d
-			y: -8.5d
+			y: -7.5d
 			shape: "diamond"
 			description: ["The portable stonecutter is a crazy helpful tool to stonecut all the things on the go!"]
 			optional: true
@@ -317,7 +317,7 @@
 		}
 		{
 			x: -10.5d
-			y: -10.5d
+			y: -11.5d
 			shape: "hexagon"
 			description: ["Moving Elevators are great! You place down controllers at each floor you want, and you can right-click any side that doesn't have its buttons to change settings (or reskin if holding a block)."]
 			optional: true
@@ -347,7 +347,7 @@
 				}
 			}
 			x: -10.5d
-			y: -6.5d
+			y: -5.5d
 			shape: "hexagon"
 			description: ["Slabs can be doubled-up and mixed-and-matched any way you wish! This makes building much easier and more cathartic. On top of that, you can craft vertical slabs (which also stack regardless if they match or not) to help with your newest builds!"]
 			optional: true
@@ -360,6 +360,26 @@
 				id: "6738FA82FBB23DBF"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			icon: "corail_woodcutter:acacia_woodcutter"
+			x: -10.5d
+			y: -9.5d
+			shape: "diamond"
+			description: ["The portable woodcutter is a portable variant that you can use without placing it down. It's a modified version made by myself in KubeJS so it's not *perfect* but it's pretty darn great considering the alternative."]
+			optional: true
+			id: "5CBA688F12D94A9D"
+			tasks: [{
+				id: "78DA6CB99C8A8C49"
+				type: "item"
+				item: "corail_woodcutter:oak_woodcutter"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "413415D9658AB9B4"
+				type: "item"
+				item: "corail_woodcutter:acacia_woodcutter"
 			}]
 		}
 	]
