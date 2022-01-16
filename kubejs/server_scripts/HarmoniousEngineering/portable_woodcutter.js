@@ -38,11 +38,15 @@ onEvent("player.inventory.opened", (event) => {
 
 // Prevents ever placing the acacia woodcutter. Causes item to desync out of your inv so the next event fixes that
 onEvent("block.right_click", (event) => {
-  if (event.getItem() === "corail_woodcutter:acacia_woodcutter") {
+  const player = event.getEntity();
+  const playerEntity = player.minecraftPlayer;
+  if (event.getItem() === "corail_woodcutter:oak_woodcutter") {
+    if (playerEntity.func_225608_bj_() || player.isCrouching()) {
+      event.cancel();
+    }
+  } else if (event.getItem() === "corail_woodcutter:acacia_woodcutter") {
     event.cancel();
 
-    const player = event.getEntity();
-    const playerEntity = player.minecraftPlayer;
     playerEntity.func_226284_e_(true); // setSneaking
 
     const portableWoodcutter = Item.of("corail_woodcutter:acacia_woodcutter");

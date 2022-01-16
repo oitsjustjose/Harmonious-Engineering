@@ -28,4 +28,25 @@ onEvent("recipes", (event) => {
     B: "#harmeng:saw_blade",
     P: "#minecraft:planks",
   });
+
+  event.custom({
+    type: "portable_stonecutter:anvil_flattening",
+    ingredients: [
+      {
+        tag: "minecraft:wooden_pressure_plates",
+      },
+      {
+        item: "minecraft:redstone",
+      },
+      {
+        item: "minecraft:redstone",
+      },
+      {
+        item: "corail_woodcutter:oak_woodcutter",
+      },
+    ],
+    output: {
+      item: "corail_woodcutter:acacia_woodcutter",
+    },
+  });
 });
