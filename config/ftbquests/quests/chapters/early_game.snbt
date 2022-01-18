@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Crude Crafting"
-			x: -0.5d
-			y: -2.5d
+			x: 12.0d
+			y: 1.5d
 			shape: "hexagon"
 			description: [
 				"Without better processing, you're going to need to get some Andesite Alloy"
@@ -58,8 +58,8 @@
 		}
 		{
 			title: "Rotational Energy"
-			x: -0.5d
-			y: -1.0d
+			x: 12.0d
+			y: 3.0d
 			dependencies: ["69FF3D884B1E8649"]
 			id: "0AA54D344D1DC314"
 			tasks: [{
@@ -83,8 +83,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.5d
+			x: 10.5d
+			y: 4.5d
 			description: [
 				"This is how you'll produce rotational energy, but it's going to exhaust you and drain your hunger in the process."
 				""
@@ -107,8 +107,8 @@
 		}
 		{
 			title: "Early Ore Processing"
-			x: 1.0d
-			y: 0.5d
+			x: 13.5d
+			y: 4.5d
 			description: [
 				"This bad boy doesn't have a User Interface at all! To interact with it, throw items (or hopper them) into the top of the mill where you can see a chute. As it mills away you'll keep seeing particles - once you don't see any more particles of what you're milling, right-click (or use a hopper beneath) it to get your fresh grounds!"
 				""
@@ -129,8 +129,8 @@
 		}
 		{
 			title: "Crushing It!"
-			x: -0.5d
-			y: 2.0d
+			x: 12.0d
+			y: 6.0d
 			shape: "hexagon"
 			description: [
 				"Using your Manual Mill, hand crank, and extra cog(s) get yourself a comfortable setup for manually running this mill yourself, because it's all you've got!"
@@ -145,6 +145,7 @@
 			tasks: [{
 				id: "456FB0A837898F2A"
 				type: "item"
+				title: "Any Crushed Ore"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -211,8 +212,8 @@
 		}
 		{
 			title: "Gearing Up"
-			x: 0.5d
-			y: 4.0d
+			x: 13.0d
+			y: 8.0d
 			shape: "gear"
 			description: ["Using a large cog, you can move your hand crank to crank directly into this large wheel, then use a small cog to down-shift the rotational energy to increase the speed of your milling. With a hand crank, you can only do this once, but it will make your work about twice as fast!"]
 			dependencies: ["557F241BD0AAA98E"]
@@ -233,8 +234,8 @@
 		}
 		{
 			icon: "immersiveengineering:conveyor_basic"
-			x: -1.5d
-			y: 4.0d
+			x: 11.0d
+			y: 8.0d
 			description: [
 				"If you so desire, you could use a Minecart, some rails, and some blast furnaces to streamline your Ore Processing line to directly smelt your resulting crushed ore."
 				""
@@ -257,8 +258,8 @@
 		{
 			title: "End of Early-Game"
 			icon: "minecraft:oak_log"
-			x: -0.5d
-			y: 6.0d
+			x: 12.0d
+			y: 10.0d
 			shape: "octagon"
 			description: [
 				"If you know Create, you know that there is SO much left to do in this mod. This pack is designed such that you'll have to step away from Create and revisit it once you have a reliable supply of Steel or Treated Wood."
