@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "minecraft:netherrack"
+              "name": "minecraft:end_stone"
             },
             {
               "type": "minecraft:item",
@@ -33,7 +33,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "natural-progression:cobbled_netherrack"
+              "name": "natural-progression:cobbled_end_stone"
             }
           ]
         }
