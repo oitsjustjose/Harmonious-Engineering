@@ -48,6 +48,8 @@ onEvent("recipes", (event) => {
   event.remove({ id: "powah:crafting/dielectric_paste" });
   event.remove({ id: "powah:crafting/dielectric_rod" });
 
+  event.remove({ output: "powah:ender_core" });
+
   event.custom({
     type: "natural-progression:damage_tools",
     ingredients: [
@@ -80,4 +82,20 @@ onEvent("recipes", (event) => {
     P: "powah:dielectric_paste",
     S: "#forge:ingots/steel",
   });
+});
+
+onEvent("entity.drops", (event) => {
+  const entity = event.getEntity();
+
+  if (entity.getType() !== "minecraft:enderman") {
+    return;
+  }
+
+  const comp = entity.minecraftEntity.getPersistentData();
+  const isChallengerMob = comp.func_74764_b("challenger_mob_data"); // contains()
+  if (isChallengerMob) {
+    const qty =
+      1 + (parseInt(Math.random() * 10) % (2 + event.getLootingLevel()));
+    event.addDrop(Item.of(`${qty}x powah:ender_core`));
+  }
 });
