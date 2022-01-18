@@ -71,7 +71,7 @@
 	challengerMobsBlacklist = ["minecraft:pillager", "minecraft:endermite", "alexsmobs:bone_serpent", "alexsmobs:bone_serpent_part", "alexsmobs:centipede_body", "alexsmobs:centipede_head", "alexsmobs:centipede_tail", "alexsmobs:crimson_mosquito", "alexsmobs:grizzly_bear", "alexsmobs:komodo_dragon", "alexsmobs:hammerhead_shark", "betternether:naga", "betternether:skull", "infernalexp:voline"]
 	#The frequency (out of 100 - higher means more frequent) of a mob being turned into a Challenger
 	#Range: 1 ~ 100
-	challengerMobsFrequency = 5
+	challengerMobsFrequency = 10
 	#Prevents mobs from spawning above sea level unless it's a new moon
 	peacefulSurfaceEnabled = true
 	#A list of dimensions (of form <modid:type>) to ignore when prevent surface mob spawns.
