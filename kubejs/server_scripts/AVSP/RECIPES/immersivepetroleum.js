@@ -14,14 +14,14 @@ onEvent("recipes", (event) => {
   event.shaped("8x immersivepetroleum:asphalt", ["SBS", "GWG", "SBS"], {
     S: "#forge:sand",
     B: "#forge:bitumen",
-    W: "#forge:buckets/water",
+    W: "minecraft:water_bucket",
     G: "#forge:gravel",
   });
   event.remove({ id: "immersivepetroleum:asphalt2" });
   event.shaped("12x immersivepetroleum:asphalt", ["SBS", "GWG", "SBS"], {
     S: "#forge:slag",
     B: "#forge:bitumen",
-    W: "#forge:buckets/water",
+    W: "minecraft:water_bucket",
     G: "#forge:gravel",
   });
 

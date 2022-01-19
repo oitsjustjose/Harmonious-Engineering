@@ -22,6 +22,20 @@ onEvent("recipes", (event) => {
   //SUPPORT FOR CURRENTLY UNSUPPORTED MATERIALS
   //
 
+  event.custom({
+    type: "thermal:pulverizer",
+    ingredient: {
+      tag: "forge:ingots/osmium",
+    },
+    result: [
+      {
+        item: "emendatusenigmatica:osmium_dust",
+        count: 1,
+      },
+    ],
+    experience: 0.0,
+  });
+
   //COAL
   //CHEMICAL DISSOLUTION
   event.custom({
