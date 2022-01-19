@@ -94,8 +94,7 @@ onEvent("entity.drops", (event) => {
   const comp = entity.minecraftEntity.getPersistentData();
   const isChallengerMob = comp.func_74764_b("challenger_mob_data"); // contains()
   if (isChallengerMob) {
-    const qty =
-      1 + (parseInt(Math.random() * 10) % (2 + event.getLootingLevel()));
-    event.addDrop(Item.of(`${qty}x powah:ender_core`));
+    event.getDrops().clear();
+    event.addDrop(Item.of("1x powah:ender_core"));
   }
 });
