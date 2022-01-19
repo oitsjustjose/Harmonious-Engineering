@@ -253,7 +253,7 @@
           ]
         },
         {
-          "name": "minecraft:elytra",
+          "name": "customizableelytra:customizable_elytra",
           "type": "minecraft:item",
           "weight": 1
         }

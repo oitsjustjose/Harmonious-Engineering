@@ -526,4 +526,12 @@ onEvent("recipes", (event) => {
   multiservoPress(event);
   stonecutter(event);
   woodcutter(event);
+
+  global.minecraftColors.forEach((color) => {
+    event.smithing(
+      `storage_overhaul:${color}_shulker_box`,
+      `minecraft:${color}_shulker_box`,
+      "#forge:ingots/iron"
+    );
+  });
 });

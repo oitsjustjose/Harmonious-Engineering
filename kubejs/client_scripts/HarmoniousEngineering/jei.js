@@ -117,6 +117,8 @@ onEvent("jei.hide.items", (event) => {
     "rftoolsbase:dimensionalshard_overworld",
     "rftoolsbase:dimensionalshard_nether",
     "rftoolsbase:dimensionalshard_end",
+    "minecraft:elytra",
+    "customizableelytra:elytra_wing",
   ].forEach((x) => event.hide(x));
 
   [
@@ -141,4 +143,8 @@ onEvent("jei.information", (event) => {
   event.add("powah:ender_core", [
     "Challenger Mobs have fancy §cc§4o§6l§eo§2r§3e§bd§r particles and prefixes like §3'Agile'§r or §1'Mighty'§r",
   ]);
+});
+
+onEvent("jei.add.items", (event) => {
+  event.add(Item.of("customizableelytra:customizable_elytra"));
 });

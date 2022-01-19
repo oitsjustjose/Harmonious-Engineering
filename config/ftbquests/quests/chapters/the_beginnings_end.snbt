@@ -145,17 +145,23 @@
 			optional: true
 			id: "51B99C63EA976A04"
 			tasks: [{
-				id: "1EF372283629E071"
-				type: "structure"
-				title: "Find an End City!"
-				icon: "minecraft:end_rod"
-				structure: "minecraft:endcity"
+				id: "1EAAF45E0541F042"
+				type: "advancement"
+				title: "Visit an End City"
+				icon: "minecraft:shulker_shell"
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
 			}]
 			rewards: [{
-				id: "359375989E1C2670"
+				id: "34F75EAD9EE0757D"
 				type: "item"
-				item: "customizableelytra:elytra_wing"
-				count: 2
+				item: {
+					id: "customizableelytra:customizable_elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		}
 		{
