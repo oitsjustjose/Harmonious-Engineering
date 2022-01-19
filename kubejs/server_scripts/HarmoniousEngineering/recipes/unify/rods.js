@@ -124,7 +124,7 @@ const addRodRecipesForEE = (event) => {
         },
       },
       result: {
-        item: `emendatusenigmatica:${baseMat}_plate`,
+        item: `emendatusenigmatica:${baseMat}_rod`,
         count: 2,
       },
       energy: 2400,
