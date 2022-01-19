@@ -515,6 +515,62 @@ const woodcutter = (event) => {
       });
     });
   });
+
+  /* IE Compat */
+  [
+    {
+      result: "immersiveengineering:treated_wood_horizontal",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:slab_treated_wood_horizontal",
+      count: 2,
+    },
+    {
+      result: "immersiveengineering:stairs_treated_wood_horizontal",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:treated_wood_vertical",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:slab_treated_wood_vertical",
+      count: 2,
+    },
+    {
+      result: "immersiveengineering:stairs_treated_wood_vertical",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:treated_wood_packaged",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:slab_treated_wood_packaged",
+      count: 2,
+    },
+    {
+      result: "immersiveengineering:stairs_treated_wood_packaged",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:treated_fence",
+      count: 1,
+    },
+    {
+      result: "immersiveengineering:treated_scaffold",
+      count: 1,
+    },
+  ].forEach((recipe) => {
+    const { result, count } = recipe;
+    event.custom({
+      type: "corail_woodcutter:woodcutting",
+      ingredient: { tag: "forge:treated_wood" },
+      result: result,
+      count: count,
+    });
+  });
 };
 
 // Completely custom, non-replacing recipes
