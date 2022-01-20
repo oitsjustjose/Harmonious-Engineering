@@ -28,6 +28,7 @@ screenshots
 .curseclient
 
 mods
+backups
 **/bookmarks.ini
 
 config.bak.json
@@ -35,6 +36,10 @@ config/jei/bookmarks.ini
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/ingredient-list-type-sort-order.ini
 config/jei/recipe-category-sort-order.ini
+
+config/xaerominimap_entities.json
+TrashSlotSaveState.json
+WailaErrorOutput.txt
 
 XaeroWorldMap
 XaeroWaypoints*
