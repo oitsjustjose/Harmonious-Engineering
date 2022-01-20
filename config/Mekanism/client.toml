@@ -75,8 +75,8 @@
 				y = 2147483647
 
 			[client.gui.window.upgrade]
-				x = 2147483647
-				y = 2147483647
+				x = 14
+				y = 22
 
 			[client.gui.window.crafting0]
 				x = 2147483647
