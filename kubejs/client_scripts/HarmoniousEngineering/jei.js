@@ -3,6 +3,8 @@ onEvent("jei.hide.items", (event) => {
     "/appliedenergistics2:facade/",
     "/emendatusenigmatica:dimensional_*/",
     "/emendatusenigmatica:iridium*/",
+    "ae2wtlib:infinity_booster_card",
+    "ae2wtlib:wireless_fluid_terminal",
     "appliedenergistics2:condenser",
     "appliedenergistics2:gold_dust",
     "appliedenergistics2:grindstone",

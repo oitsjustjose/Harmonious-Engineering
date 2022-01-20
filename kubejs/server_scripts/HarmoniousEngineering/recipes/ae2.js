@@ -4,6 +4,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "appliedenergistics2:inscriber" });
   event.remove({ output: "appliedenergistics2:wireless_receiver" });
   event.remove({ output: "appliedenergistics2:wireless_booster" });
+  event.remove({ output: "ae2wtlib:infinity_booster_card" });
 
   event.smithing("appliedenergistics2:controller", "storagenetwork:master", "appliedenergistics2:engineering_processor");
   event.smithing("appliedenergistics2:inscriber", "#harmeng:presses", "appliedenergistics2:purified_fluix_crystal");
