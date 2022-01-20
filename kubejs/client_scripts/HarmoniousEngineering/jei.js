@@ -117,32 +117,29 @@ onEvent("jei.hide.items", (event) => {
     "rftoolsbase:dimensionalshard_overworld",
     "rftoolsbase:dimensionalshard_nether",
     "rftoolsbase:dimensionalshard_end",
+    "xnet:connector_upgrade",
     "minecraft:elytra",
     "customizableelytra:elytra_wing",
+    // EmendEnig fluix/certus stuff hidden
+    "emendatusenigmatica:molten_certus_quartz_bucket",
+    "emendatusenigmatica:molten_charged_certus_quartz_bucket",
+    "emendatusenigmatica:molten_fluix_bucket",
   ].forEach((x) => event.hide(x));
 
-  [
-    "helmet",
-    "chestplate",
-    "leggings",
-    "boots",
-    "sword",
-    "pickaxe",
-    "shovel",
-    "axe",
-    "hoe",
-    "paxel",
-  ].forEach((gear) => {
+  ["helmet", "chestplate", "leggings", "boots", "sword", "pickaxe", "shovel", "axe", "hoe", "paxel"].forEach((gear) => {
     event.hide(`mekanismtools:lapis_lazuli_${gear}`);
     event.hide(`mekanismtools:osmium_${gear}`);
+  });
+
+  ["block", "gem", "cluster", "clump", "crystal", "dirty_dust", "shard", "crushed", "fragment", "gravel"].forEach((itemType) => {
+    event.hide(`emendatusenigmatica:certus_quartz_${itemType}`);
+    event.hide(`emendatusenigmatica:charged_certus_quartz_${itemType}`);
   });
 });
 
 onEvent("jei.information", (event) => {
   event.add("powah:ender_core", ["Only dropped by §5Challenger Endermen§r."]);
-  event.add("powah:ender_core", [
-    "Challenger Mobs have fancy §cc§4o§6l§eo§2r§3e§bd§r particles and prefixes like §3'Agile'§r or §1'Mighty'§r",
-  ]);
+  event.add("powah:ender_core", ["Challenger Mobs have fancy §cc§4o§6l§eo§2r§3e§bd§r particles and prefixes like §3'Agile'§r or §1'Mighty'§r"]);
 });
 
 onEvent("jei.add.items", (event) => {
