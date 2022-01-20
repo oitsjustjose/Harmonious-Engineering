@@ -179,7 +179,7 @@
           ]
         },
         {
-          "name": "emendatusenigmatica:diamond_chunk_sword",
+          "name": "emendatusenigmatica:diamond_chunk",
           "type": "minecraft:item",
           "weight": 1,
           "functions": [

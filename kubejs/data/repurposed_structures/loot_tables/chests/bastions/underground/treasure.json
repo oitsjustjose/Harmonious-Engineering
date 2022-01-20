@@ -21,7 +21,7 @@
           ]
         },
         {
-          "name": "emendatusenigmatica:diamond_chunk_sword",
+          "name": "emendatusenigmatica:diamond_chunk",
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
@@ -111,7 +111,7 @@
           ]
         },
         {
-          "name": "emendatusenigmatica:diamond_chunk_sword",
+          "name": "emendatusenigmatica:diamond_chunk",
           "type": "minecraft:item",
           "weight": 6
         },
