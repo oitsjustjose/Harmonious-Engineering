@@ -21,10 +21,7 @@ const bottler = (event) => {
 
 const campfire = (event) => {
   // Cast-Iron from campfire
-  event.campfireCooking(
-    "1x emendatusenigmatica:cast_iron_ingot",
-    "#forge:ingots/iron"
-  );
+  event.campfireCooking("1x emendatusenigmatica:cast_iron_ingot", "#forge:ingots/iron");
 };
 
 const crafting = (event) => {
@@ -118,22 +115,10 @@ const crafting = (event) => {
   event.shapeless("1x minecraft:chest", ["#forge:chests/wooden"]);
   event.shapeless("1x minecraft:trapped_chest", ["#forge:chests/trapped"]);
 
-  event.shapeless("4x appliedenergistics2:sky_stone_block", [
-    "3x #forge:stone",
-    "#forge:silicon",
-  ]);
+  event.shapeless("4x appliedenergistics2:sky_stone_block", ["3x #forge:stone", "#forge:silicon"]);
 
   // chipped planks for quark chest crafting
-  [
-    "acacia",
-    "birch",
-    "crimson",
-    "dark_oak",
-    "jungle",
-    "oak",
-    "spruce",
-    "warped",
-  ].forEach((plank) => {
+  ["acacia", "birch", "crimson", "dark_oak", "jungle", "oak", "spruce", "warped"].forEach((plank) => {
     event.shaped(`1x quark:${plank}_chest`, ["ppp", "p p", "ppp"], {
       p: `#chipped:${plank}_planks`,
     });
@@ -333,22 +318,10 @@ const multiservoPress = (event) => {
 };
 
 const stonecutter = (event) => {
-  event.stonecutting(
-    "appliedenergistics2:calculation_processor_press",
-    "#forge:plates/steel"
-  );
-  event.stonecutting(
-    "appliedenergistics2:engineering_processor_press",
-    "#forge:plates/steel"
-  );
-  event.stonecutting(
-    "appliedenergistics2:logic_processor_press",
-    "#forge:plates/steel"
-  );
-  event.stonecutting(
-    "appliedenergistics2:silicon_press",
-    "#forge:plates/steel"
-  );
+  event.stonecutting("appliedenergistics2:calculation_processor_press", "#forge:plates/steel");
+  event.stonecutting("appliedenergistics2:engineering_processor_press", "#forge:plates/steel");
+  event.stonecutting("appliedenergistics2:logic_processor_press", "#forge:plates/steel");
+  event.stonecutting("appliedenergistics2:silicon_press", "#forge:plates/steel");
   event.stonecutting("appliedenergistics2:name_press", "#forge:plates/steel");
 
   // Uncraft quartz block via stonecutting
@@ -442,9 +415,7 @@ const woodcutter = (event) => {
       { type: "palisade", qty: 4 },
     ].forEach((x) => {
       const { type, qty } = x;
-      const output = `decorative_blocks_abnormals:${path}_${type}`
-        .replace("_logs", "")
-        .replace("_stems", "");
+      const output = `decorative_blocks_abnormals:${path}_${type}`.replace("_logs", "").replace("_stems", "");
       event.custom({
         type: "corail_woodcutter:woodcutting",
         ingredient: { tag: wood },
@@ -488,10 +459,7 @@ const woodcutter = (event) => {
       { type: "support", qty: 1 },
     ].forEach((x) => {
       const { type, qty } = x;
-      const output = `decorative_blocks_abnormals:${path}_${type}`.replace(
-        "_planks",
-        ""
-      );
+      const output = `decorative_blocks_abnormals:${path}_${type}`.replace("_planks", "");
       event.custom({
         type: "corail_woodcutter:woodcutting",
         ingredient: { item: wood },
@@ -584,10 +552,22 @@ onEvent("recipes", (event) => {
   woodcutter(event);
 
   global.minecraftColors.forEach((color) => {
-    event.smithing(
-      `storage_overhaul:${color}_shulker_box`,
-      `minecraft:${color}_shulker_box`,
-      "#forge:ingots/iron"
-    );
+    event.smithing(`storage_overhaul:${color}_shulker_box`, `minecraft:${color}_shulker_box`, "#forge:ingots/iron");
+  });
+
+  // Mekanism Singularity Crafting.. ;)
+  event.custom({
+    type: "mekanism:reaction",
+    itemInput: { ingredient: { item: "powah:ender_core" } },
+    fluidInput: { amount: 1000, tag: "minecraft:water" },
+    gasInput: { amount: 1000, gas: "mekanism:water_vapor" },
+    duration: 1000,
+    itemOutput: {
+      item: "appliedenergistics2:singularity",
+      nbt: {
+        display: { Lore: ['[{"text":"Forcing something so hydrophobic to fuse with water might tear a rip in the fabric of space-time...","italic":false,"color":"dark_gray"}]'] },
+      },
+    },
+    gasOutput: { gas: "mekanism:oxygen", amount: 10 },
   });
 });

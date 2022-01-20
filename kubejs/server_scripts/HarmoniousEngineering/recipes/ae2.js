@@ -2,9 +2,22 @@ onEvent("recipes", (event) => {
   event.remove({ output: "appliedenergistics2:grindstone" });
   event.remove({ output: "appliedenergistics2:controller" });
   event.remove({ output: "appliedenergistics2:inscriber" });
+  event.remove({ output: "appliedenergistics2:wireless_receiver" });
+  event.remove({ output: "appliedenergistics2:wireless_booster" });
 
   event.smithing("appliedenergistics2:controller", "storagenetwork:master", "appliedenergistics2:engineering_processor");
   event.smithing("appliedenergistics2:inscriber", "#harmeng:presses", "appliedenergistics2:purified_fluix_crystal");
+  event.shaped("1x appliedenergistics2:wireless_receiver", [" S ", "IFI", " I "], {
+    S: "appliedenergistics2:singularity",
+    I: "#forge:ingots/iron",
+    F: "appliedenergistics2:quartz_fiber",
+  });
+  event.shaped("1x appliedenergistics2:wireless_booster", ["FSE", "III"], {
+    S: "appliedenergistics2:singularity",
+    I: "#forge:ingots/iron",
+    F: "#forge:dusts/fluix",
+    E: "#forge:dusts/ender",
+  });
 
   // AE2 crushing in IE Crusher
   event.custom({

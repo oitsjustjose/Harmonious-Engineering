@@ -11,7 +11,7 @@ onEvent("recipes", (event) => {
 
   event.shaped("1x scannable:scanner", ["n n", "bcb", "ntn"], {
     n: "#forge:ingots/netherite",
-    c: "powah:ender_core",
+    c: "appliedenergistics2:singularity",
     b: "minecraft:iron_bars",
     t: "mekanism:portable_teleporter",
   });

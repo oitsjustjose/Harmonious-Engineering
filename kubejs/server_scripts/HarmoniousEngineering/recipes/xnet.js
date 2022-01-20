@@ -13,10 +13,10 @@ onEvent("recipes", (event) => {
   event.remove({ id: "xnet:connector_upgrade" });
 
   event.remove({ id: "xnet:wireless_router" });
-  event.shaped("1x xnet:wireless_router", ["SES", "RFR", "SRS"], {
-    S: "appliedenergistics2:singularity",
-    E: "minecraft:repeater",
+  event.shaped("1x xnet:wireless_router", ["CSC", "RFR", "CRC"], {
     R: "#forge:dusts/redstone",
+    C: "#xnet:advanced_connectors",
     F: "rftoolsbase:machine_frame",
+    S: "appliedenergistics2:quantum_entangled_singularity",
   });
 });
