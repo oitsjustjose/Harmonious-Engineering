@@ -269,19 +269,9 @@
 					item: "emendatusenigmatica:apatite_chunk"
 				}
 				{
-					id: "6683F26A2C9DBD0A"
-					type: "item"
-					item: "emendatusenigmatica:sulfur_chunk"
-				}
-				{
 					id: "137D365E9F12D9E8"
 					type: "item"
 					item: "emendatusenigmatica:potassium_nitrate_chunk"
-				}
-				{
-					id: "46FD321E51F88712"
-					type: "item"
-					item: "emendatusenigmatica:dimensional_chunk"
 				}
 			]
 			rewards: [{
@@ -296,10 +286,7 @@
 			x: 0.0d
 			y: -10.5d
 			description: ["These are the last three silk-touch chunks you can get! Nicely done."]
-			dependencies: [
-				"75C685BA3AC15524"
-				"7C2B64C4A87CB87B"
-			]
+			dependencies: ["75C685BA3AC15524"]
 			id: "4FEE7F24EB84E291"
 			tasks: [
 				{
@@ -311,11 +298,6 @@
 					id: "39D7FE8805D2CCD5"
 					type: "item"
 					item: "emendatusenigmatica:charged_certus_quartz_chunk"
-				}
-				{
-					id: "474C6FD30A3CBCE1"
-					type: "item"
-					item: "emendatusenigmatica:dimensional_chunk"
 				}
 			]
 			rewards: [{
