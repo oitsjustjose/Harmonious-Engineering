@@ -36,8 +36,11 @@ config/jei/bookmarks.ini
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/ingredient-list-type-sort-order.ini
 config/jei/recipe-category-sort-order.ini
-
+config/blame-forge.properties
+config/xaeroworldmap.txt
 config/xaerominimap_entities.json
+config/sidebar_buttons.json
+
 TrashSlotSaveState.json
 WailaErrorOutput.txt
 
