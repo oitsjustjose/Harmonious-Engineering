@@ -552,22 +552,27 @@ onEvent("recipes", (event) => {
   woodcutter(event);
 
   global.minecraftColors.forEach((color) => {
-    event.smithing(`storage_overhaul:${color}_shulker_box`, `minecraft:${color}_shulker_box`, "#forge:ingots/iron");
+    global.genCombinedRecipe(event, `minecraft:${color}_shulker_box`, "#forge:ingots/iron", `storage_overhaul:${color}_shulker_box`);
   });
 
-  // Mekanism Singularity Crafting.. ;)
+  // Ender Singularity Crafting
   event.custom({
-    type: "mekanism:reaction",
-    itemInput: { ingredient: { item: "powah:ender_core" } },
-    fluidInput: { amount: 1000, tag: "minecraft:water" },
-    gasInput: { amount: 1000, gas: "mekanism:water_vapor" },
-    duration: 1000,
-    itemOutput: {
-      item: "appliedenergistics2:singularity",
-      nbt: {
-        display: { Lore: ['[{"text":"Forcing something so hydrophobic to fuse with water might tear a rip in the fabric of space-time...","italic":false,"color":"dark_gray"}]'] },
+    type: "thermal:chiller",
+    ingredients: [
+      {
+        fluid: "minecraft:water",
+        amount: 1000,
       },
-    },
-    gasOutput: { gas: "mekanism:oxygen", amount: 10 },
+      {
+        item: "powah:ender_core",
+      },
+    ],
+    result: [
+      {
+        item: "kubejs:ender_singularity",
+        count: 1,
+      },
+    ],
+    energy: 20000,
   });
 });

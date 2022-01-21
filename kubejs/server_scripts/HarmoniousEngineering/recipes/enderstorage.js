@@ -3,21 +3,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "enderstorage:ender_tank" });
   event.remove({ output: "enderstorage:ender_pouch" });
 
-  event.smithing(
-    "enderstorage:ender_chest",
-    "minecraft:ender_chest",
-    "#forge:storage_blocks/enderium"
-  );
-
-  event.smithing(
-    "enderstorage:ender_tank",
-    "#harmeng:basic_tank",
-    "#forge:storage_blocks/enderium"
-  );
-
-  event.smithing(
-    "enderstorage:ender_pouch",
-    "improvedbackpacks:large_pocket",
-    "#forge:storage_blocks/enderium"
-  );
+  global.genCombinedRecipe(event, "minecraft:ender_chest", "#forge:storage_blocks/enderium", "enderstorage:ender_chest");
+  global.genCombinedRecipe(event, "#harmeng:basic_tank", "#forge:storage_blocks/enderium", "enderstorage:ender_tank");
+  global.genCombinedRecipe(event, "improvedbackpacks:large_pocket", "#forge:storage_blocks/enderium", "enderstorage:ender_pouch");
 });

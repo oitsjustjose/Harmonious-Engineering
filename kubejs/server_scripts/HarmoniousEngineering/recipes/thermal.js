@@ -2,6 +2,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "thermal:rf_coil" });
   event.remove({ output: "thermal:machine_frame" });
   event.remove({ output: "thermal:saw_blade" });
+  event.remove({ id: "thermal:machine/chiller/chiller_ender_to_ender_pearl" });
 
   event.shaped("1x thermal:rf_coil", [" RG", "RSR", "GR "], {
     R: "immersiveengineering:wirecoil_redstone",

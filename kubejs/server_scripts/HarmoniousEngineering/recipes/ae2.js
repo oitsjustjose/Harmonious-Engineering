@@ -5,16 +5,32 @@ onEvent("recipes", (event) => {
   event.remove({ output: "appliedenergistics2:wireless_receiver" });
   event.remove({ output: "appliedenergistics2:wireless_booster" });
   event.remove({ output: "ae2wtlib:infinity_booster_card" });
+  event.remove({ output: "aeinfinitybooster:infinity_card" });
+  event.remove({ output: "aeinfinitybooster:dimension_card" });
 
-  event.smithing("appliedenergistics2:controller", "storagenetwork:master", "appliedenergistics2:engineering_processor");
-  event.smithing("appliedenergistics2:inscriber", "#harmeng:presses", "appliedenergistics2:purified_fluix_crystal");
+  event.shaped("1x aeinfinitybooster:infinity_card", ["SWS", "WNW", "III"], {
+    W: "appliedenergistics2:wireless_booster",
+    I: "#forge:ingots/netherite",
+    N: "minecraft:nether_star",
+    S: "kubejs:ender_singularity",
+  });
+
+  event.shaped("1x aeinfinitybooster:dimension_card", ["WNW", "NSN", "WNW"], {
+    W: "aeinfinitybooster:infinity_card",
+    N: "minecraft:nether_star",
+    S: "kubejs:ender_singularity",
+  });
+
+  global.genCombinedRecipe(event, "storagenetwork:master", "appliedenergistics2:engineering_processor", "appliedenergistics2:controller");
+  global.genCombinedRecipe(event, "#harmeng:presses", "appliedenergistics2:purified_fluix_crystal", "appliedenergistics2:inscriber");
+
   event.shaped("1x appliedenergistics2:wireless_receiver", [" S ", "IFI", " I "], {
-    S: "appliedenergistics2:singularity",
+    S: "kubejs:ender_singularity",
     I: "#forge:ingots/iron",
     F: "appliedenergistics2:quartz_fiber",
   });
   event.shaped("1x appliedenergistics2:wireless_booster", ["FSE", "III"], {
-    S: "appliedenergistics2:singularity",
+    S: "kubejs:ender_singularity",
     I: "#forge:ingots/iron",
     F: "#forge:dusts/fluix",
     E: "#forge:dusts/ender",

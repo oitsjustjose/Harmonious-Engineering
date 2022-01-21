@@ -17,6 +17,8 @@ onEvent("recipes", (event) => {
     A: "create:andesite_alloy",
   });
 
+  global.genCombinedRecipeSewing(event, Ingredient.of("create:sail_frame"), Ingredient.of("immersiveengineering:windmill_sail"), Item.of("create:white_sail"), 4);
+
   event.custom({
     type: "create:cutting",
     ingredients: [
@@ -31,20 +33,6 @@ onEvent("recipes", (event) => {
       },
     ],
     processingTime: 200,
-  });
-
-  event.custom({
-    type: "improvedbackpacks:sewing",
-    spools_count: 4,
-    first: {
-      item: "create:sail_frame",
-    },
-    first_count: 1,
-    second: {
-      item: "immersiveengineering:windmill_sail",
-    },
-    second_count: 1,
-    result: `create:white_sail`,
   });
 
   event.custom({

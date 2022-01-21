@@ -7,29 +7,9 @@ onEvent("recipes", (event) => {
   event.remove({ output: "compactmachines:machine_giant" });
   event.remove({ output: "compactmachines:machine_maximum" });
 
-  event.smithing(
-    "compactmachines:wall",
-    "minecraft:iron_block",
-    "minecraft:redstone"
-  );
-  event.smithing(
-    "compactmachines:machine_tiny",
-    "immersiveengineering:heavy_engineering",
-    "immersiveengineering:circuit_board"
-  );
-  event.smithing(
-    "compactmachines:machine_small",
-    "compactmachines:machine_tiny",
-    "immersiveengineering:maintenance_kit"
-  );
-  event.smithing(
-    "compactmachines:machine_normal",
-    "compactmachines:machine_small",
-    "immersivepetroleum:projector"
-  );
-  event.smithing(
-    "compactmachines:machine_large",
-    "compactmachines:machine_normal",
-    "entangled:block"
-  );
+  global.genCombinedRecipe(event, "minecraft:iron_block", "minecraft:redstone", "compactmachines:wall");
+  global.genCombinedRecipe(event, "immersiveengineering:heavy_engineering", "immersiveengineering:circuit_board", "compactmachines:machine_tiny");
+  global.genCombinedRecipe(event, "compactmachines:machine_tiny", "immersiveengineering:maintenance_kit", "compactmachines:machine_small");
+  global.genCombinedRecipe(event, "compactmachines:machine_small", "immersivepetroleum:projector", "compactmachines:machine_normal");
+  global.genCombinedRecipe(event, "compactmachines:machine_normal", "entangled:block", "compactmachines:machine_large");
 });

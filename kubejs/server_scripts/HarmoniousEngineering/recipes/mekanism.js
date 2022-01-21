@@ -32,7 +32,7 @@ onEvent("recipes", (event) => {
     L: "#forge:gems/lapis",
     G: "#forge:ingots/gold",
     A: "mekanism:alloy_atomic",
-    S: "appliedenergistics2:quantum_entangled_singularity",
+    S: "kubejs:ender_singularity",
   });
 
   [("copper", "lead", "osmium", "tin", "uranium")].forEach((ingot) => {

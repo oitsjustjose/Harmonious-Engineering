@@ -8,26 +8,26 @@ onEvent("recipes", (event) => {
 
   event.shaped("refinedstorage:wireless_transmitter", ["QSQ", "QCQ", "QPQ"], {
     Q: "refinedstorage:quartz_enriched_iron",
-    S: "appliedenergistics2:quantum_entangled_singularity",
+    S: "kubejs:ender_singularity",
     C: "refinedstorage:machine_casing",
     P: "refinedstorage:advanced_processor",
   });
 
   event.shaped("refinedstorage:wireless_grid", ["QSQ", "QCQ", "QPQ"], {
     Q: "refinedstorage:quartz_enriched_iron",
-    S: "appliedenergistics2:singularity",
+    S: "kubejs:ender_singularity",
     C: "#refinedstorage:grid",
     P: "refinedstorage:advanced_processor",
   });
 
   event.shaped("refinedstorageaddons:wireless_crafting_grid", ["QSQ", "QCQ", "QPQ"], {
     Q: "refinedstorage:quartz_enriched_iron",
-    S: "appliedenergistics2:singularity",
+    S: "kubejs:ender_singularity",
     C: "#refinedstorage:crafting_grid",
     P: "refinedstorage:advanced_processor",
   });
 
-  event.smithing("refinedstorage:controller", "storagenetwork:master", "refinedstorage:advanced_processor");
+  global.genCombinedRecipe(event, "storagenetwork:master", "refinedstorage:advanced_processor", "refinedstorage:controller");
   event.custom({
     type: "mekanism:combining",
     mainInput: {

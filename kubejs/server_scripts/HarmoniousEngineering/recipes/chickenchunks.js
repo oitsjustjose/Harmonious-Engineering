@@ -2,11 +2,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "chickenchunks:chunk_loader" });
   event.remove({ output: "chickenchunks:spot_loader" });
 
-  event.smithing(
-    "chickenchunks:chunk_loader",
-    "minecraft:enchanting_table",
-    "powah:ender_core"
-  );
+  global.genCombinedRecipe(event, "minecraft:enchanting_table", "moreminecarts:chunkrodite", "chickenchunks:chunk_loader");
 
   event.shaped("1x chickenchunks:chunk_loader", ["xxx", "xxx", "xxx"], {
     x: "chickenchunks:spot_loader",

@@ -38,11 +38,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: `${modid}:hemp_fabric` });
   event.remove({ output: `${modid}:windmill_sail` });
 
-  event.smithing(
-    `${modid}:alloybrick`,
-    "createdeco:dean_bricks",
-    "minecraft:sandstone"
-  );
+  global.genCombinedRecipe(event, "createdeco:dean_bricks", "minecraft:sandstone", `${modid}:alloybrick`);
 
   event.shaped(`27x ${modid}:blastbrick`, ["CHC", "BSB", "CBC"], {
     C: "minecraft:clay",
@@ -64,47 +60,9 @@ onEvent("recipes", (event) => {
     R: "immersiveengineering:hemp_fiber",
   });
 
-  event.custom({
-    type: "improvedbackpacks:sewing",
-    spools_count: 1,
-    first: {
-      item: `${modid}:stick_treated`,
-    },
-    first_count: 1,
-    second: {
-      item: `${modid}:hemp_fiber`,
-    },
-    second_count: 8,
-    result: `${modid}:hemp_fabric`,
-  });
-
-  event.custom({
-    type: "improvedbackpacks:sewing",
-    spools_count: 1,
-    first: {
-      item: `${modid}:hemp_fabric`,
-    },
-    first_count: 6,
-    second: {
-      item: `${modid}:stick_treated`,
-    },
-    second_count: 1,
-    result: `${modid}:windmill_sail`,
-  });
-
-  event.custom({
-    type: "improvedbackpacks:sewing",
-    spools_count: 1,
-    first: {
-      item: `${modid}:windmill_blade`,
-    },
-    first_count: 1,
-    second: {
-      item: `${modid}:windmill_sail`,
-    },
-    second_count: 1,
-    result: "kubejs:cloth_covered_windmill_blade",
-  });
+  global.genCombinedRecipeSewing(event, Ingredient.of(`${modid}:stick_treated`), Ingredient.of(`8x ${modid}:hemp_fiber`), Item.of(`${modid}:hemp_fabric`), 1);
+  global.genCombinedRecipeSewing(event, Ingredient.of(`6x ${modid}:hemp_fabric`), Ingredient.of(`${modid}:stick_treated`), Item.of(`${modid}:windmill_sail`), 1);
+  global.genCombinedRecipeSewing(event, Ingredient.of(`${modid}:windmill_blade`), Ingredient.of(`${modid}:windmill_sail`), Item.of("kubejs:cloth_covered_windmill_blade"), 1);
 
   event.custom({
     type: "create:mechanical_crafting",

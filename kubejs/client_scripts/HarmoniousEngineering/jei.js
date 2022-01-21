@@ -5,7 +5,6 @@ onEvent("jei.hide.items", (event) => {
     "/emendatusenigmatica:iridium*/",
     "ae2wtlib:infinity_booster_card",
     "ae2wtlib:wireless_fluid_terminal",
-    "appliedenergistics2:condenser",
     "appliedenergistics2:gold_dust",
     "appliedenergistics2:grindstone",
     "appliedenergistics2:iron_dust",
@@ -430,4 +429,11 @@ onEvent("jei.information", (event) => {
 
 onEvent("jei.add.items", (event) => {
   event.add(Item.of("customizableelytra:customizable_elytra"));
+  event.add(
+    Item.of("create:andesite_alloy", {
+      display: {
+        Name: '{"text": "Crude Andesite Alloy", "italic": "false"}',
+      },
+    })
+  );
 });

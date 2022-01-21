@@ -2,13 +2,13 @@ onEvent("recipes", (event) => {
   const cableVariants = ["red", "green", "blue", "yellow", "routing"];
   // Cables
   cableVariants.forEach((x) => event.remove({ id: `xnet:netcable_${x}` }));
-  cableVariants.forEach((x) => event.smithing(`32x xnet:netcable_${x}`, "pipez:universal_pipe", `#forge:dyes/${x === "routing" ? "black" : x}`));
+  cableVariants.forEach((x) => global.genCombinedRecipe(event, "pipez:universal_pipe", `#forge:dyes/${x === "routing" ? "black" : x}`, `32x xnet:netcable_${x}`));
   // Connectors
   cableVariants.forEach((x) => event.remove({ id: `xnet:connector_${x}` }));
-  cableVariants.forEach((x) => event.smithing(`1x xnet:connector_${x}`, `xnet:netcable_${x}`, "#forge:ingots/gold"));
+  cableVariants.forEach((x) => global.genCombinedRecipe(event, `xnet:netcable_${x}`, "#forge:ingots/gold", `1x xnet:connector_${x}`));
   // Advanced Connectors
   cableVariants.forEach((x) => event.remove({ id: `xnet:advanced_connector_${x}` }));
-  cableVariants.forEach((x) => event.smithing(`1x xnet:advanced_connector_${x}`, `xnet:connector_${x}`, "#forge:ingots/cobalt"));
+  cableVariants.forEach((x) => global.genCombinedRecipe(event, `xnet:connector_${x}`, "#forge:ingots/cobalt", `1x xnet:advanced_connector_${x}`));
 
   event.remove({ id: "xnet:connector_upgrade" });
 
@@ -17,6 +17,6 @@ onEvent("recipes", (event) => {
     R: "#forge:dusts/redstone",
     C: "#xnet:advanced_connectors",
     F: "rftoolsbase:machine_frame",
-    S: "appliedenergistics2:quantum_entangled_singularity",
+    S: "kubejs:ender_singularity",
   });
 });
