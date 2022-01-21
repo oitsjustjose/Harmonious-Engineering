@@ -21,8 +21,8 @@ onEvent("recipes", (event) => {
     S: "kubejs:ender_singularity",
   });
 
-  global.genCombinedRecipe(event, "storagenetwork:master", "appliedenergistics2:engineering_processor", "appliedenergistics2:controller");
-  global.genCombinedRecipe(event, "#harmeng:presses", "appliedenergistics2:purified_fluix_crystal", "appliedenergistics2:inscriber");
+  global.genCombinedRecipe(event, Ingredient.of("storagenetwork:master"), Ingredient.of("appliedenergistics2:engineering_processor"), Item.of("appliedenergistics2:controller"));
+  global.genCombinedRecipe(event, Ingredient.of("#harmeng:presses"), Ingredient.of("appliedenergistics2:purified_fluix_crystal"), Item.of("appliedenergistics2:inscriber"));
 
   event.shaped("1x appliedenergistics2:wireless_receiver", [" S ", "IFI", " I "], {
     S: "kubejs:ender_singularity",

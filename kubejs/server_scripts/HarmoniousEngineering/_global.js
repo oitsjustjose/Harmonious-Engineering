@@ -55,19 +55,31 @@ onEvent("server.datapack.first", (_) => {
     return [stripLogWithSaw, planksFromStrippedAxe, planksFromStrippedSaw];
   };
 
+  /**
+   *
+   * @param {event} evt
+   * @param {IngredientJS} left
+   * @param {IngredientJS} right
+   * @param {ItemStackJS} output
+   */
   global.genCombinedRecipe = (evt, left, right, output) => {
-    const leftInput = left.includes("#") ? { tag: left.replace(/#/g, "") } : { item: left };
-    const rightInput = right.includes("#") ? { tag: right.replace(/#/g, "") } : { item: right };
-
     evt.smithing(output, left, right);
     evt.custom({
       type: "mekanism:combining",
-      mainInput: { ingredient: leftInput },
-      extraInput: { amount: 1, ingredient: rightInput },
-      output: { item: output },
+      mainInput: JSON.parse(left.toJson()),
+      extraInput: JSON.parse(right.toJson()),
+      output: output.toResultJson(),
     });
   };
 
+  /**
+   *
+   * @param {RecipeEventJS} evt
+   * @param {IngredientJS} left
+   * @param {IngredientJS} right
+   * @param {ItemStackJS} output
+   * @param {Number} spoolCt
+   */
   global.genCombinedRecipeSewing = (evt, left, right, output, spoolCt) => {
     const main = JSON.parse(left.toJson());
     const extra = JSON.parse(right.toJson());

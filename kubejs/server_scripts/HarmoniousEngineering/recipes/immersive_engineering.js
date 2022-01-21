@@ -38,7 +38,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: `${modid}:hemp_fabric` });
   event.remove({ output: `${modid}:windmill_sail` });
 
-  global.genCombinedRecipe(event, "createdeco:dean_bricks", "minecraft:sandstone", `${modid}:alloybrick`);
+  global.genCombinedRecipe(event, Ingredient.of("createdeco:dean_bricks"), Ingredient.of("minecraft:sandstone"), Item.of(`${modid}:alloybrick`));
 
   event.shaped(`27x ${modid}:blastbrick`, ["CHC", "BSB", "CBC"], {
     C: "minecraft:clay",

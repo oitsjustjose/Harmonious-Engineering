@@ -2,13 +2,15 @@ onEvent("recipes", (event) => {
   const cableVariants = ["red", "green", "blue", "yellow", "routing"];
   // Cables
   cableVariants.forEach((x) => event.remove({ id: `xnet:netcable_${x}` }));
-  cableVariants.forEach((x) => global.genCombinedRecipe(event, "pipez:universal_pipe", `#forge:dyes/${x === "routing" ? "black" : x}`, `32x xnet:netcable_${x}`));
+  cableVariants.forEach((x) =>
+    global.genCombinedRecipe(event, Ingredient.of("pipez:universal_pipe"), Ingredient.of(`#forge:dyes/${x === "routing" ? "black" : x}`), Item.of(`32x xnet:netcable_${x}`))
+  );
   // Connectors
   cableVariants.forEach((x) => event.remove({ id: `xnet:connector_${x}` }));
-  cableVariants.forEach((x) => global.genCombinedRecipe(event, `xnet:netcable_${x}`, "#forge:ingots/gold", `1x xnet:connector_${x}`));
+  cableVariants.forEach((x) => global.genCombinedRecipe(event, Ingredient.of(`xnet:netcable_${x}`), Ingredient.of("#forge:ingots/gold"), Item.of(`1x xnet:connector_${x}`)));
   // Advanced Connectors
   cableVariants.forEach((x) => event.remove({ id: `xnet:advanced_connector_${x}` }));
-  cableVariants.forEach((x) => global.genCombinedRecipe(event, `xnet:connector_${x}`, "#forge:ingots/cobalt", `1x xnet:advanced_connector_${x}`));
+  cableVariants.forEach((x) => global.genCombinedRecipe(event, Ingredient.of(`xnet:connector_${x}`), Ingredient.of("#forge:ingots/cobalt"), Item.of(`1x xnet:advanced_connector_${x}`)));
 
   event.remove({ id: "xnet:connector_upgrade" });
 

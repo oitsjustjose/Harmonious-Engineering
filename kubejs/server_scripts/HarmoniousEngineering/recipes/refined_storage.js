@@ -27,7 +27,7 @@ onEvent("recipes", (event) => {
     P: "refinedstorage:advanced_processor",
   });
 
-  global.genCombinedRecipe(event, "storagenetwork:master", "refinedstorage:advanced_processor", "refinedstorage:controller");
+  global.genCombinedRecipe(event, Ingredient.of("storagenetwork:master"), Ingredient.of("refinedstorage:advanced_processor"), Item.of("refinedstorage:controller"));
   event.custom({
     type: "mekanism:combining",
     mainInput: {

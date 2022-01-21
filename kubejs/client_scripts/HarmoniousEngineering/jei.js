@@ -429,11 +429,4 @@ onEvent("jei.information", (event) => {
 
 onEvent("jei.add.items", (event) => {
   event.add(Item.of("customizableelytra:customizable_elytra"));
-  event.add(
-    Item.of("create:andesite_alloy", {
-      display: {
-        Name: '{"text": "Crude Andesite Alloy", "italic": "false"}',
-      },
-    })
-  );
 });

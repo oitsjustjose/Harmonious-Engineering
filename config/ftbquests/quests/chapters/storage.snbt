@@ -187,9 +187,9 @@
 				item: "enderstorage:ender_chest"
 			}]
 			rewards: [{
-				id: "3536C90D3DB4051A"
-				type: "xp_levels"
-				xp_levels: 15
+				id: "0F1957B48E096382"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{

@@ -13,48 +13,31 @@
 			x: 12.0d
 			y: 1.5d
 			shape: "hexagon"
+			subtitle: "This thing looks horrible! I need to sand it down"
 			description: [
 				"Without better processing, you're going to need to get some Andesite Alloy"
 				""
-				"Fortunately, with your Saw, some pebbles, some raw ferrous metal and clay as a binder you can form a very crude version of this alloy which you can use to make some very basic machines."
+				"Fortunately, with your Saw, some pebbles, some raw ferrous metal and clay as a binder you can form a very crude version of this alloy which you can sand down to bring to a workable shape to be used in basic mechanical machinery."
+				""
+				"If you need more Sandpaper, there is a repeatable quest off to the side to get yourself some more."
 			]
 			id: "69FF3D884B1E8649"
 			tasks: [{
-				id: "0FD7B1C3DE551305"
+				id: "6B4BDBD0FABAABA6"
+				type: "item"
+				item: "kubejs:crude_andesite_alloy"
+			}]
+			rewards: [{
+				id: "4F16D565A7399F36"
 				type: "item"
 				item: {
-					id: "create:andesite_alloy"
+					id: "create:sand_paper"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
-						}
+						Damage: 0
 					}
 				}
-				count: 4L
 			}]
-			rewards: [
-				{
-					id: "00730FA6AB7C5E95"
-					type: "item"
-					item: {
-						id: "create:andesite_alloy"
-						Count: 1b
-						tag: {
-							display: {
-								Name: "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
-							}
-						}
-					}
-					count: 2
-				}
-				{
-					id: "7CF9D79BDC1DF63E"
-					type: "item"
-					item: "minecraft:oak_button"
-					count: 64
-				}
-			]
 		}
 		{
 			title: "Rotational Energy"
@@ -70,15 +53,7 @@
 			rewards: [{
 				id: "1B4AD0F55D9C44D9"
 				type: "item"
-				item: {
-					id: "create:andesite_alloy"
-					Count: 1b
-					tag: {
-						display: {
-							Name: "{\"text\": \"Crude Andesite Alloy\", \"italic\": \"false\"}"
-						}
-					}
-				}
+				item: "create:andesite_alloy"
 				random_bonus: 1
 			}]
 		}
@@ -279,6 +254,61 @@
 				type: "item"
 				item: "immersiveengineering:craftingtable"
 			}]
+		}
+		{
+			title: "Sand Paper Trader"
+			icon: {
+				id: "create:sand_paper"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			disable_toast: true
+			x: 14.0d
+			y: 2.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["69FF3D884B1E8649"]
+			optional: true
+			id: "78777AEE4C8C1401"
+			tasks: [{
+				id: "0B3EC475833ED32D"
+				type: "item"
+				title: "Any Log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "1F695235F286DB81"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "create:sand_paper"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7684CFABF4CAB07C"
+					type: "command"
+					title: "Repeatable"
+					icon: "thermal:machine_cycle_augment"
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 78777AEE4C8C1401"
+					player_command: false
+				}
+			]
 		}
 	]
 }

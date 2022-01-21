@@ -25,6 +25,58 @@ const campfire = (event) => {
 };
 
 const crafting = (event) => {
+  event.remove({ output: "create:andesite_alloy" });
+
+  // Combining
+  event.custom({
+    type: "mekanism:combining",
+    mainInput: { ingredient: { tag: "chipped:andesite" } },
+    extraInput: { ingredient: { tag: "forge:ingots/zinc" } },
+    output: {
+      item: "create:andesite_alloy",
+      count: 2,
+    },
+  });
+
+  // Induction Smelter
+  event.custom({
+    type: "thermal:smelter",
+    ingredients: [
+      {
+        value: [{ tag: "chipped:andesite" }],
+        count: 1,
+      },
+      {
+        value: [{ tag: "forge:ingots/zinc" }],
+        count: 1,
+      },
+    ],
+    result: [
+      {
+        item: "create:andesite_alloy",
+        count: 2,
+      },
+    ],
+    energy: 9600,
+  });
+
+  // Alloy Kiln
+  event.custom({
+    type: "immersiveengineering:alloy",
+    time: 400,
+    input0: { base_ingredient: { tag: "chipped:andesite" } },
+    input1: { tag: "forge:ingots/zinc" },
+    result: { count: 2, base_ingredient: { item: "create:andesite_alloy" } },
+  });
+
+  // Create Mixing
+  event.custom({
+    type: "create:mixing",
+    ingredients: [{ tag: "chipped:andesite" }, { tag: "forge:ingots/zinc" }],
+    results: [{ item: "create:andesite_alloy", count: 2 }],
+    heatRequirement: "heated",
+  });
+
   event.custom({
     type: "natural-progression:damage_tools",
     ingredients: [
@@ -45,13 +97,8 @@ const crafting = (event) => {
       },
     ],
     result: {
-      item: "create:andesite_alloy",
+      item: "kubejs:crude_andesite_alloy",
       count: 1,
-      nbt: {
-        display: {
-          Name: '{"text": "Crude Andesite Alloy", "italic": "false"}',
-        },
-      },
     },
   });
 
@@ -75,14 +122,23 @@ const crafting = (event) => {
       },
     ],
     result: {
-      item: "create:andesite_alloy",
+      item: "kubejs:crude_andesite_alloy",
       count: 1,
-      nbt: {
-        display: {
-          Name: '{"text": "Crude Andesite Alloy", "italic": "false"}',
-        },
-      },
     },
+  });
+
+  event.custom({
+    type: "create:sandpaper_polishing",
+    ingredients: [
+      {
+        item: "kubejs:crude_andesite_alloy",
+      },
+    ],
+    results: [
+      {
+        item: "create:andesite_alloy",
+      },
+    ],
   });
 
   event.custom({
@@ -552,7 +608,7 @@ onEvent("recipes", (event) => {
   woodcutter(event);
 
   global.minecraftColors.forEach((color) => {
-    global.genCombinedRecipe(event, `minecraft:${color}_shulker_box`, "#forge:ingots/iron", `storage_overhaul:${color}_shulker_box`);
+    global.genCombinedRecipe(event, Ingredient.of(`minecraft:${color}_shulker_box`), Ingredient.of("#forge:ingots/iron"), Item.of(`storage_overhaul:${color}_shulker_box`));
   });
 
   // Ender Singularity Crafting

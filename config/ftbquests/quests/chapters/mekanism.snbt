@@ -34,7 +34,7 @@
 		}
 		{
 			title: "Actual Plastic"
-			x: -2.0d
+			x: -3.75d
 			y: -1.5d
 			shape: "gear"
 			description: [
@@ -421,6 +421,33 @@
 				id: "183A6701031EA078"
 				type: "item"
 				item: "mekanism:enriched_refined_obsidian"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -0.2857142857142847d
+			y: -1.482142857142854d
+			shape: "gear"
+			description: [
+				"As you've no doubt noticed, a lot of specialty devices require you to *manually* craft them in a Sewing or Smithing Table. These, unfortunately, cannot be automated - but in the spirit of \"automate all teh things!\" these recipes are also made compatible in the Mekanism Combiner."
+				""
+				"The Combiner is your *only* hope to getting these recipes automated, so if you don't like manually crafting things like Ender Chests or XNet Cables, you might want to look into this guy!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["548FF0C4E700EFE2"]
+			size: 1.5d
+			optional: true
+			id: "286F8D75386E6071"
+			tasks: [{
+				id: "79BD655760AEA4F6"
+				type: "item"
+				item: "mekanism:combiner"
+			}]
+			rewards: [{
+				id: "58348A63D191C65C"
+				type: "item"
+				item: "emendatusenigmatica:cobalt_ingot"
 				count: 2
 				random_bonus: 2
 			}]
