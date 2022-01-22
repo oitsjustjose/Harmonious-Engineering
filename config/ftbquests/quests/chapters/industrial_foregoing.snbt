@@ -12,7 +12,7 @@
 			title: "Pressed Plastic"
 			x: -2.0d
 			y: -5.0d
-			shape: "hexagon"
+			shape: "diamond"
 			description: ["Using an Osmium Compressor and some Oxygen, you can create Plastic which is an instrumental ingredient in Industrial Foregoing"]
 			dependencies: ["40B3A14EA5AC792C"]
 			id: "568810B360CC78F0"
@@ -41,7 +41,7 @@
 			}
 			x: -2.0d
 			y: -3.0d
-			shape: "gear"
+			shape: "octagon"
 			description: ["Industrial Foregoing is a vast mod with tons of utilities ranging from Tree Farms, Mob Farms and even Enchantment Stripping or Automation. I haven't changed any recipes aside from the Plastic one, so have fun and automate the last few things you've been waiting to automate! I've made a few quests for this chapter just to give you a mission in the end :)"]
 			dependencies: ["568810B360CC78F0"]
 			size: 1.25d
@@ -61,7 +61,7 @@
 			title: "Infinity Tools"
 			x: 0.0d
 			y: -5.0d
-			shape: "octagon"
+			shape: "rsquare"
 			description: ["Infinity Tools take a near-infinite amount of RF - as they receive this much power, they tier up more and more to have better attributes like dig speed, attack strength and more."]
 			hide_dependency_lines: true
 			dependencies: ["568810B360CC78F0"]
@@ -201,6 +201,7 @@
 		{
 			x: 0.0d
 			y: -3.0d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["7E8B45D166B71957"]
 			optional: true
@@ -220,6 +221,7 @@
 		{
 			x: 2.0d
 			y: -5.0d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["7E8B45D166B71957"]
 			optional: true
@@ -240,7 +242,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: -3.0d
-			shape: "gear"
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: [
 				"7E8B45D166B71957"

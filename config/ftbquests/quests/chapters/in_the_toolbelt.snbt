@@ -5,7 +5,7 @@
 	filename: "in_the_toolbelt"
 	title: "In the Toolbelt"
 	icon: "toolbelt:belt"
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
@@ -13,7 +13,7 @@
 			icon: "akashictome:tome"
 			x: -4.0d
 			y: 0.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Every detailed mod could use a manual - we've done the work ahead of time and have gathered all of the manuals for you in one place - all we ask for is a book in return!"]
 			optional: true
 			id: "08C321A14FDE29DF"
@@ -176,7 +176,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["The morphing tool will automatically switch to the right tool for the job when you look at a block that needs to be wrenched! These are great for consolidating wrenches."]
 			optional: true
 			id: "037321E8DA23FC10"
@@ -362,7 +362,7 @@
 			title: "The Mighty Architect"
 			x: -4.0d
 			y: 2.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["By pressing [G], you can start composing a beautiful new build using the Mighty Architect - when you hit [G], you'll get a full walkthrough better than anything I could ever provide!"]
 			optional: true
 			id: "657AD360C363DA5E"
@@ -383,7 +383,7 @@
 			icon: "supplementaries:speaker_block"
 			x: 0.0d
 			y: 2.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Reload Audio Driver (RAD) prevents you from having to restart the game if you sound stops working. Just hit F3+R to reload the sound engine and fix any issues!"]
 			optional: true
 			id: "3327426D6090926D"

@@ -1,22 +1,22 @@
 {
 	id: "4138B7896CD89F22"
-	group: "2F5E9821869B4E2F"
-	order_index: 6
+	group: "4D77B1A0ACFA64E2"
+	order_index: 3
 	filename: "tech_stuff"
 	title: "Other Tech"
 	icon: "pipez:universal_pipe"
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Pipes/Ducts"
 			x: -3.75d
 			y: -3.75d
-			shape: "diamond"
+			shape: "rsquare"
 			description: [
 				"While IE Conveyors and Create Belts are GREAT for item transfer, if you want lag-free guaranteed-to-work item transfer, I can't suggest Pipez enough."
 				""
-				"Pipez has a Fluid, Gas and RF Pipe as well, and the Universal Pipe does all three just like EnderIO!"
+				"Pipez has a Fluid, Item, Gas and RF Pipe as well, and the Universal Pipe does all three just like EnderIO!"
 			]
 			size: 1.5d
 			optional: true
@@ -37,7 +37,7 @@
 			title: "Powah"
 			x: -3.75d
 			y: -0.75d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Much of Powah is gated behind Steel, but once ou're done there you can go ham with most generators! A lot of the imbalanced generators have been disabled for the sanctity of this pack, but outside of that you can do so much with Reactors!"]
 			dependencies: ["1FF265E2816476AB"]
 			size: 1.5d
@@ -57,9 +57,10 @@
 			}]
 		}
 		{
+			title: "Flux Networks"
 			x: -3.75d
 			y: 2.25d
-			shape: "diamond"
+			shape: "rsquare"
 			description: [
 				"Flux Networks is a great mod for inter-dimensional wireless power to both your own inventory and to/from other machines!"
 				""
@@ -82,7 +83,7 @@
 		{
 			x: 0.0d
 			y: -0.75d
-			shape: "octagon"
+			shape: "rsquare"
 			description: ["Entangled Blocks are perfect for when you need more than 6 sides to a block, or just want to keep everything nice and tidy. "]
 			dependencies: ["5DD16A26B44A2290"]
 			size: 1.5d
@@ -108,33 +109,11 @@
 			}]
 		}
 		{
-			title: "XNet"
-			icon: "xnet:connector_red"
-			x: 0.0d
-			y: -3.75d
-			shape: "hexagon"
-			description: ["XNet is an incredible mod that allows you to create mini-networks that can be used to configure multiple channels of different type (such as fluid, energy, items, etc..) and move them around using the specified logic, filters, etc."]
-			size: 1.5d
-			optional: true
-			id: "43CC386838B25C57"
-			tasks: [{
-				id: "747B9AFFDE4C7BEC"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "3E33C9CF3ABE4B22"
-				type: "item"
-				item: "xnet:facade"
-				count: 16
-				random_bonus: 16
-			}]
-		}
-		{
 			title: "Other Utilities"
 			icon: { id: "chickenchunks:chunk_loader", Count: 15b }
 			x: 0.0d
 			y: 2.25d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: [
 				"Chicken Chunks is a great chunk loading mod with lots of configuration, so if you need to leave something processing while you run off adventuring, toss a chunk loader down!"
 				""
@@ -154,6 +133,38 @@
 				item: "minecraft:obsidian"
 				count: 2
 				random_bonus: 2
+			}]
+		}
+		{
+			title: "Torchmaster"
+			icon: "torchmaster:megatorch"
+			x: 0.0d
+			y: -3.75d
+			shape: "rsquare"
+			description: [
+				"Torchmaster is a lighting mod that takes all of your concerns about lighting and puts them in the backseat."
+				""
+				"If you just want to avoid mob spawns and don't care about aesthetic lighting, the Feral Flare Lantern will light up a HUGE radius around it, preventing any chances of your large builds having dark spots."
+				""
+				"That said, if you want a build to be on the dark side but don't want to use Slabs or deal with mobs, the MegaTorch will prevent mob spawns in a huge radius around it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["49BA5A4F9C83C5C4"]
+			size: 1.5d
+			optional: true
+			id: "7F744BD5EC79EEDA"
+			tasks: [{
+				id: "425081C476B85C88"
+				type: "checkmark"
+				title: "Neat"
+			}]
+			rewards: [{
+				id: "51D3BFE0327E46FD"
+				type: "item"
+				title: "Is a Mod by Vazkii"
+				item: "torchmaster:frozen_pearl"
+				count: 4
+				random_bonus: 4
 			}]
 		}
 	]

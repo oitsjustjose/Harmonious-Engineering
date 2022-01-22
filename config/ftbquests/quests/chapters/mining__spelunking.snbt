@@ -12,7 +12,7 @@
 			title: "Ore Chunks"
 			x: 0.0d
 			y: -7.5d
-			shape: "hexagon"
+			shape: "diamond"
 			description: ["You've found an ore chunk! You'll probably notice that you can't just throw this bad boy in a furnace to turn it into an ingot, but you'll be able to use these really soon. Hang onto them because you'll need them for your first foray into Tech!"]
 			dependencies: ["5576DA257D4825D4"]
 			size: 1.5d
@@ -144,7 +144,6 @@
 			title: "ALL THE CHUNKS"
 			x: -1.5d
 			y: -9.0d
-			shape: "diamond"
 			description: [
 				"Wow you really like to mine huh? Just kidding! You'll need each and every one of these ores in the longrun!"
 				""
@@ -222,8 +221,9 @@
 		}
 		{
 			title: "Silk Touchist"
-			x: 1.5d
-			y: -9.0d
+			x: 0.0d
+			y: -10.5d
+			shape: "octagon"
 			description: ["Wow you really managed to silk touch every ore, huh! Nice!! I'm very impressed. If you need to turn those back into blocks so you can break them, just shapelessly craft a chunk to get its block form. If you want to decorate with them, head over to your local stonecutter!"]
 			dependencies: ["75C685BA3AC15524"]
 			id: "7C2B64C4A87CB87B"
@@ -283,8 +283,8 @@
 		}
 		{
 			title: "Interdimensional Chunks"
-			x: 0.0d
-			y: -10.5d
+			x: 1.5d
+			y: -9.0d
 			description: ["These are the last three silk-touch chunks you can get! Nicely done."]
 			dependencies: ["75C685BA3AC15524"]
 			id: "4FEE7F24EB84E291"

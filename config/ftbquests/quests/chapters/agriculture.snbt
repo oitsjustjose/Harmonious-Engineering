@@ -12,7 +12,7 @@
 			title: "Getting Started"
 			x: 0.0d
 			y: -3.0d
-			shape: "hexagon"
+			shape: "diamond"
 			description: [
 				"Get started early with food, because you've got a lot of variety but a LOT of running around to do! There's so much to see, so don't let food hold you back."
 				""

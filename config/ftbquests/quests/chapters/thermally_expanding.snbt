@@ -12,6 +12,7 @@
 			title: "Starting Your Thermal Ascension"
 			x: -2.5d
 			y: -2.0d
+			shape: "diamond"
 			description: ["If you've been looking ahead in JEI, you no doubt know by now that you'll need a machine frame for all things Thermal. In this pack, you'll need Steel and a special kind of hardened glass to make it. Thanks to the last chapter, you should have everything you need to dive into thermal!"]
 			dependencies: ["1FF265E2816476AB"]
 			id: "5DD16A26B44A2290"
@@ -83,8 +84,10 @@
 		{
 			x: -2.5d
 			y: -4.0d
+			shape: "rsquare"
 			description: ["The Multiservo Press is the most compact means by which this pack will allow you to  press metals into plates or gears!"]
 			dependencies: ["5DD16A26B44A2290"]
+			optional: true
 			id: "6DCDA3F80C7A9390"
 			tasks: [{
 				id: "1C36259460676AD4"
@@ -112,9 +115,11 @@
 		{
 			x: 0.0d
 			y: -4.0d
+			shape: "rsquare"
 			description: ["Save yourself a lot of hassle by making yourself an extra multiservo press just for Gearworking!"]
 			hide_dependency_lines: true
 			dependencies: ["6DCDA3F80C7A9390"]
+			optional: true
 			id: "3C82A70B67C90108"
 			tasks: [{
 				id: "6D7EF8BA69AB4ABE"
@@ -150,10 +155,11 @@
 			title: "Flux Trinkets"
 			x: 0.0d
 			y: 0.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Thermal Expansion adds lots of lovely tools and weapons to add to your arsenal! Do so now if you want to make your life a bunch easier in the long-run!"]
 			hide_dependency_lines: true
 			dependencies: ["41778EBFE5E05233"]
+			optional: true
 			id: "21C6451BA1501DFB"
 			tasks: [{
 				id: "4DE9BC180B9DF8A9"
@@ -198,8 +204,10 @@
 		{
 			x: 0.0d
 			y: -2.0d
+			shape: "rsquare"
 			description: ["The Tinkers' Workbench will allow you to charge and augment various Flux-based tools and trinkets!"]
 			dependencies: ["5DD16A26B44A2290"]
+			optional: true
 			id: "41778EBFE5E05233"
 			tasks: [{
 				id: "04A60CD10BFACBE9"
@@ -215,7 +223,7 @@
 		{
 			x: -4.5d
 			y: 2.25d
-			shape: "gear"
+			shape: "octagon"
 			description: ["These Resonant Components contain all of the Spatiotemporal Technology you could possibly need thanks to those Endermen. Now you can get into some pretty advanced technology as you progress into Mekanism - Nicely Done!!!"]
 			hide_dependency_lines: true
 			dependencies: ["026BB6835B11EC9D"]
@@ -238,7 +246,7 @@
 			disable_toast: true
 			x: -0.75d
 			y: 2.25d
-			shape: "gear"
+			shape: "octagon"
 			description: [
 				"By subduing the Core of the Enderman to survive the harsh cold of the blast chiller, you've managed to crack the key to the ability for Endermen to teleport."
 				""

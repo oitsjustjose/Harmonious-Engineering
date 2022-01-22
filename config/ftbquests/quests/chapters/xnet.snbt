@@ -1,0 +1,259 @@
+{
+	id: "10A249EB60E90D33"
+	group: "4D77B1A0ACFA64E2"
+	order_index: 2
+	filename: "xnet"
+	title: "XNet"
+	icon: "xnet:netcable_routing"
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "XNet Cables"
+			x: -3.0d
+			y: -3.5d
+			shape: "rsquare"
+			description: ["Think of these cables as the lines between point A and B. They won't connect to an inventory, but they're how you would connect your connectors together (this is why the recipe yields so many)."]
+			dependencies: ["7D339CCA04975378"]
+			id: "0248F6E0D036E004"
+			tasks: [{
+				id: "234CB44A211A63D9"
+				type: "item"
+				title: "Any Basic XNet Cable"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:netcable_red"
+								Count: 1b
+							}
+							{
+								id: "xnet:netcable_green"
+								Count: 1b
+							}
+							{
+								id: "xnet:netcable_blue"
+								Count: 1b
+							}
+							{
+								id: "xnet:netcable_yellow"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "492A3F764F905C4D"
+				type: "choice"
+				title: "Any XNet Dye"
+				icon: "mekanism:dye_base"
+				table_id: 5299794196903863917L
+			}]
+		}
+		{
+			title: "Getting Started"
+			icon: "rftoolsbase:smartwrench"
+			x: -1.5d
+			y: -5.0d
+			shape: "diamond"
+			description: [
+				"XNet is made by the same developer that brings you RFTools. It's an incredibly powerful logistics mod capable of making complicated, Dire-Wired setup nice and neat. XNet is great for automating things like the AE2 Inscriber, Thermal Rubber, and really just about anything."
+				""
+				"Where XNet really accels is anywhere that you may need some combination of fluids, items and energy transfer. While Pipez' universal pipe can do this nicely, it's a bit difficult to manage in high-complexity builds."
+				""
+				"As such, XNet has a controller that is easier to understand once you get acquainted with it. Since the in-game Guide isn't complete for this mod, I wanted to highlight it with quests."
+			]
+			dependencies: ["5DD16A26B44A2290"]
+			optional: true
+			id: "7D339CCA04975378"
+			tasks: [{
+				id: "61DC10FCB0BEC3D8"
+				type: "checkmark"
+				title: " "
+				icon: "rftoolsbase:manual"
+			}]
+			rewards: [{
+				id: "1A64AE32E2B0A8BC"
+				type: "choice"
+				title: "Any XNet Dye"
+				icon: "mekanism:dye_base"
+				table_id: 5299794196903863917L
+			}]
+		}
+		{
+			title: "XNet Controller"
+			x: -1.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"This device is where you're going to be able to get started with the configuration for your XNet Network. You can create separate channels, which can only do one type of transaction (be that Redstone, Item, Fluid, Energy, or Gas transfer). From there, you can select any inventory you have a Connector attached to and select the action like Input, Output, black/white-list I/O and more."
+				""
+				"PRO TIP: You will need a connector to be connected to your XNet Controller in order for the Controller to function."
+				""
+				"Another Tip: You can jumpstart your XNet controller with enough RF to get it started, and then use a connector to import RF from your current energy source. Then you can use the Controller to send that power to any of your attached machines, including the controller itself."
+			]
+			dependencies: ["7D339CCA04975378"]
+			id: "5737BF87EFCF9BEA"
+			tasks: [{
+				id: "3A6240224BB7A0F5"
+				type: "item"
+				item: "xnet:controller"
+			}]
+			rewards: [{
+				id: "4EE8B88B5D004694"
+				type: "choice"
+				title: "Any XNet Dye"
+				icon: "mekanism:dye_base"
+				table_id: 5299794196903863917L
+			}]
+		}
+		{
+			title: "XNet Connectors"
+			x: 0.0d
+			y: -3.5d
+			shape: "rsquare"
+			description: [
+				"Connectors are the means with which you will connect to an XNet Controller, Device, Machine, Etc."
+				""
+				""
+			]
+			dependencies: ["7D339CCA04975378"]
+			id: "0AF14FD60976085D"
+			tasks: [{
+				id: "0AB91D51E8F01B47"
+				type: "item"
+				title: "Any XNet Connector"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:connector_red"
+								Count: 1b
+							}
+							{
+								id: "xnet:connector_green"
+								Count: 1b
+							}
+							{
+								id: "xnet:connector_blue"
+								Count: 1b
+							}
+							{
+								id: "xnet:connector_yellow"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "443D5C65BC40E008"
+				type: "choice"
+				title: "Any XNet Dye"
+				icon: "mekanism:dye_base"
+				table_id: 5299794196903863917L
+			}]
+		}
+		{
+			title: "Advanced Connectors"
+			x: 2.5d
+			y: -3.5d
+			shape: "hexagon"
+			description: ["Advanced Connectors have the benefit of being able to control which side you wish to perform your Input/Output from. Assuming you only have one side of a block free to put a connector on, you can use an advanced connector to emulate inserting/outputing on any of the 6 sides of the block, not just the side it's currently connected on."]
+			hide_dependency_lines: true
+			dependencies: ["0AF14FD60976085D"]
+			size: 1.25d
+			id: "1DDC47C17456048D"
+			tasks: [{
+				id: "42CEE047CAF002B1"
+				type: "item"
+				title: "Any XNet Advanced Connector"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:advanced_connector_red"
+								Count: 1b
+							}
+							{
+								id: "xnet:advanced_connector_green"
+								Count: 1b
+							}
+							{
+								id: "xnet:advanced_connector_yellow"
+								Count: 1b
+							}
+							{
+								id: "xnet:advanced_connector_blue"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0587247C7E4BF7CB"
+				type: "choice"
+				title: "Any XNet Dye"
+				icon: "mekanism:dye_base"
+				table_id: 5299794196903863917L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			shape: "hexagon"
+			description: ["XNet Facades are great for hiding your XNet spaghetti (if you had any)."]
+			hide_dependency_lines: true
+			dependencies: ["0248F6E0D036E004"]
+			size: 1.25d
+			id: "708C0333F81ECCC9"
+			tasks: [{
+				id: "60A08117899DE3DF"
+				type: "item"
+				item: "xnet:facade"
+			}]
+			rewards: [{
+				id: "47CDF0AC3D0D74E6"
+				type: "item"
+				item: "xnet:facade"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "Further Watching"
+			x: -1.5d
+			y: 0.0d
+			shape: "octagon"
+			hide_dependency_lines: true
+			dependencies: ["5737BF87EFCF9BEA"]
+			size: 1.25d
+			optional: true
+			id: "025F87C1C4FDE456"
+			tasks: [{
+				id: "41D7820B90D9F274"
+				type: "observation"
+				title: "Your First Controller"
+				icon: "xnet:controller"
+				timer: 0L
+				observe_type: 0
+				to_observe: "xnet:controller"
+			}]
+			rewards: [{
+				id: "278A590DFC59BD0E"
+				type: "command"
+				auto: "enabled"
+				command: "/tellraw @p {\"text\":\"If you get stuck, this video taught me how XNet works.\",\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/qidHQ8bxbHg?t=827\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Open Video\",\"color\":\"dark_blue\"}]}}"
+				player_command: false
+			}]
+		}
+	]
+}

@@ -40,7 +40,6 @@
 			title: "Pressing Matters"
 			x: -9.0d
 			y: -12.0d
-			shape: "diamond"
 			description: [
 				"You'll need to get yourself a Hammer from Immersive Engineering in order to form any of the complex structures in the mod. "
 				""
@@ -65,7 +64,6 @@
 			title: "Hemp Farm"
 			x: -6.0d
 			y: -12.0d
-			shape: "diamond"
 			description: ["You'll also need lots of industrial hemp, so I'd suggest you start growing some soon!"]
 			dependencies: ["21FC24B8288F9222"]
 			id: "523FA138FE64AA62"
@@ -84,7 +82,7 @@
 		{
 			x: -7.5d
 			y: -11.0d
-			subtitle: "This hammer is the key to this entire chapter in this modpack!"
+			subtitle: "The key to this entire chapter in this modpack!"
 			dependencies: [
 				"523FA138FE64AA62"
 				"698A30780C0AFEC2"
@@ -170,7 +168,6 @@
 			icon: "immersiveengineering:blast_furnace"
 			x: -7.5d
 			y: -5.5d
-			shape: "diamond"
 			description: [
 				"You'll want to find yourself a Nether Fortress (or a blaze) and capture it using an Empty Blaze Burner. Once you have this, you're ready to get started with Blasting."
 				""
@@ -211,7 +208,7 @@
 			title: "The Age Of Steel"
 			x: -5.5d
 			y: -5.5d
-			shape: "gear"
+			shape: "octagon"
 			description: [
 				"Nicely done you! There's a lot that this steel can do for you. For now, if you want to SPRINT into the next chapter and leave IE behind, feel free!"
 				""
@@ -238,7 +235,7 @@
 		{
 			x: -2.0d
 			y: -12.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["The Engineer's Workbench is a specialized bench for crafting certain components as you delve into mid-tier IE. You'll need these blueprints for Vacuum Tubes, Steel Components and more."]
 			hide_dependency_lines: true
 			dependencies: ["1FF265E2816476AB"]
@@ -265,6 +262,7 @@
 			title: "Automated Gardening"
 			x: -3.0d
 			y: -10.5d
+			shape: "rsquare"
 			description: ["Cloches are awesome for getting some plants and even the most annoying or specialized of crops automated."]
 			hide_dependency_lines: true
 			dependencies: [
@@ -289,6 +287,7 @@
 			icon: "immersiveengineering:metal_press"
 			x: 0.5d
 			y: -10.0d
+			shape: "rsquare"
 			description: ["Everything you need to set up a metal press! This metal press can press Gears, Wires and more so it's a significant improvement over the Create version!"]
 			hide_dependency_lines: true
 			dependencies: [
@@ -347,7 +346,7 @@
 			}
 			x: 1.0d
 			y: -12.0d
-			shape: "gear"
+			shape: "rsquare"
 			description: ["You don't *have* to dedicate yourself to Immersive Engineering - you can go straight to Thermal's Dynamos if you want. But if you want to immerse yourself in IE, then either the Windmill or the Water Wheel will be a great place to start!"]
 			hide_dependency_lines: true
 			dependencies: ["1FF265E2816476AB"]
@@ -408,6 +407,7 @@
 			icon: "immersiveengineering:crusher"
 			x: -1.5d
 			y: -10.0d
+			shape: "rsquare"
 			description: ["This quest contains everything you need to get yourself a crusher! These are super helpful for turning 1 Ore Chunk into 2 Ore Dust, which can be smelted at any time. These are super great to automate with conveyor belts and External Heaters (another quest to go fulfill)!"]
 			hide_dependency_lines: true
 			dependencies: [
@@ -473,6 +473,7 @@
 			icon: "immersiveengineering:sawmill"
 			x: 2.0d
 			y: -10.5d
+			shape: "rsquare"
 			description: ["The sawmill is an awesome way of getting the most out of logs without having to strip them and wear your hands raw using a hand saw!"]
 			hide_dependency_lines: true
 			dependencies: [
@@ -530,7 +531,7 @@
 			title: "Into the Industrial Age"
 			x: -0.5d
 			y: -11.5d
-			shape: "gear"
+			shape: "octagon"
 			description: [
 				"I could keep typing out these quests, but this is really as far as most people get into IE. I do recommend checking out Thermoelectric Generators if you want more power generation over time."
 				""
@@ -563,7 +564,7 @@
 		{
 			x: -2.5d
 			y: -9.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["The Buzzsaw is a gas-powered axe great for taking down tons of trees! We'll even save you the step of making the sawblade."]
 			hide_dependency_lines: true
 			dependencies: ["20E3E34D4AF65193"]
@@ -598,7 +599,7 @@
 		{
 			x: 1.5d
 			y: -9.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Same as the buzzsaw, the Drill is a gas-powered rock-eating tool that'll quickly tear through even the hardest ores."]
 			hide_dependency_lines: true
 			dependencies: ["20E3E34D4AF65193"]
@@ -629,6 +630,7 @@
 			icon: "emendatusenigmatica:ruby_gear"
 			x: -7.5d
 			y: -13.0d
+			shape: "diamond"
 			description: [
 				"Just because something isn't specifically a quest doesn't mean you can't / shouldn't do it!"
 				""
@@ -652,13 +654,14 @@
 			icon: "tconstruct:seared_brick"
 			x: -7.5d
 			y: -9.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: [
 				"If you're looking to min/max your Minecraft experience, the best you can do now that you have a hammer is to set up a Melter station with Tinkers Construct."
 				""
 				"For that extra touch, you can automate your setup using a nugget cast, two hoppers and a lever powering your faucet."
 			]
 			dependencies: ["30909D9243BF755A"]
+			optional: true
 			id: "58D13C5C45E5C77B"
 			tasks: [
 				{

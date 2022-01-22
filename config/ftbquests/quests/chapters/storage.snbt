@@ -5,12 +5,13 @@
 	filename: "storage"
 	title: "Storage"
 	icon: "storage_overhaul:oak_chest_tier_1"
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: -4.0d
 			y: -7.0d
+			shape: "rsquare"
 			description: [
 				"Better than your average chest, these Storage Overhaul chests can be join to adjacent matching chests just like Vanilla, making these great for storage early-game."
 				""
@@ -109,7 +110,7 @@
 			title: "Baby's First Storage Network"
 			x: -3.0d
 			y: -3.0d
-			shape: "hexagon"
+			shape: "diamond"
 			description: ["Simple Storage Networks is a great mod for building a very primitive, power-free network for digital storage. It offers a fully fledged crafting grid, external storage, and even a crafting remote... if you really want to work that hard for it!"]
 			id: "46DDBC5F6C66BD6A"
 			tasks: [{
@@ -136,7 +137,7 @@
 			title: "RS Controller"
 			x: -4.0d
 			y: -1.5d
-			shape: "gear"
+			shape: "octagon"
 			description: ["To your relief, Refined Storage has gone mostly unchanged aside from the fact that Quartz-Enriched Iron now requires some specialized alloying machinery to create! Have a blast with your crazy storage system!"]
 			dependencies: ["46DDBC5F6C66BD6A"]
 			id: "7F3A8792FED32768"
@@ -155,7 +156,7 @@
 		{
 			x: -2.0d
 			y: -1.5d
-			shape: "gear"
+			shape: "octagon"
 			description: ["As you've no doubt figured out, Charged Certus Quartz can only be found in the Nether and Meteors have been completely disabled. You can still craft SkyStone with Silicon, and the Presses can be stone-cut into the ones you need!"]
 			dependencies: ["46DDBC5F6C66BD6A"]
 			id: "6F2D0AD09EA16DC3"
@@ -174,12 +175,13 @@
 		{
 			x: 0.5d
 			y: -6.0d
-			shape: "octagon"
+			shape: "rsquare"
 			description: [
 				"Ender Chests are SUPER helpful ways to transport items across large spanses of space, and even interdimensionally!"
 				""
 				"You can apply a diamond to the lock of the chest to make the chest private to you (great for Servers), and you can dye the 3 wool tabs on the top of the chest to make \"frequencies\" that connect when they match"
 			]
+			optional: true
 			id: "2569B33BAB1DF04A"
 			tasks: [{
 				id: "1773CB32A344579A"
@@ -195,8 +197,9 @@
 		{
 			x: 0.5d
 			y: -3.0d
-			shape: "octagon"
+			shape: "rsquare"
 			description: ["Ender Tanks are just like Ender Chests, but for Fluids."]
+			optional: true
 			id: "19BE7684C41A0E66"
 			tasks: [{
 				id: "3A8065AA8CD2A9F3"

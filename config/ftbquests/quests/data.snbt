@@ -1,11 +1,23 @@
 {
 	version: 13
+	title: "Harmonious Engineering"
+	icon: "emendatusenigmatica:steel_gear"
 	default_reward_team: false
 	default_consume_items: false
 	default_autoclaim_rewards: "disabled"
 	default_quest_shape: "circle"
 	default_quest_disable_jei: false
-	emergency_items_cooldown: 300
+	emergency_items: [
+		{ id: "minecraft:flint", Count: 5b }
+		{
+			id: "natural-progression:flint_hatchet"
+			Count: 1b
+			tag: {
+				Damage: 0
+			}
+		}
+	]
+	emergency_items_cooldown: 86400
 	drop_loot_crates: false
 	loot_crate_no_drop: {
 		passive: 4000

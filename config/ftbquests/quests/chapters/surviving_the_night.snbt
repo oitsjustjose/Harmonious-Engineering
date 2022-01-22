@@ -12,9 +12,9 @@
 		{
 			title: "Monsters"
 			icon: "minecraft:zombie_head"
-			x: -1.0d
+			x: -1.5d
 			y: -2.0d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: [
 				"Because of V-Tweaks, mobs will not spawn on the surface unless the moon's current phase is a new moon. Otherwise, you're safe to explore all throughout the night! If you need it, here's a campfire and a bench to take in the environment."
 				""
@@ -45,6 +45,7 @@
 			icon: "natural-progression:quark_jasper_pebble"
 			x: 2.0d
 			y: -4.0d
+			shape: "diamond"
 			description: ["To get started, pick up at least two Pebbles and put one each in your main and off-hand. Hold down right-click and knap the two pebbles together until you hear a *click* which indicates your first pieces of Flint!"]
 			id: "25A47A55DD6564CA"
 			tasks: [
@@ -78,6 +79,7 @@
 			title: "Grab a Stick"
 			x: 0.0d
 			y: -4.0d
+			shape: "diamond"
 			description: ["All around on the ground you should see sticks. Break, or right-click, these sticks to pick some up! You'll need around 8."]
 			id: "49D70EF0D47D9161"
 			tasks: [{
@@ -148,8 +150,8 @@
 		{
 			title: "Vanilla"
 			x: 1.0d
-			y: 1.0d
-			shape: "diamond"
+			y: 2.0d
+			shape: "rsquare"
 			description: ["Now that you've gotten yourself a crafting table, you can combine a 2x2 of those pebbles you keep finding to make your first stone tools. Tools from here are pretty much the same as usual, but this means you have a choice! Vanilla, Tinkers Construct, or Tetra! Pick your poison, as they all have their benefits and downfalls!"]
 			dependencies: ["0FF7D2AD65E5DE75"]
 			optional: true
@@ -173,9 +175,9 @@
 		}
 		{
 			title: "Tinkers' Construct"
-			x: -0.5d
-			y: -0.5d
-			shape: "diamond"
+			x: -1.5d
+			y: 2.0d
+			shape: "rsquare"
 			description: ["Now that you've gotten yourself a crafting table, you can combine a 2x2 of those pebbles you keep finding to make your first stone tools. Tools from here are pretty much the same as usual, but this means you have a choice! Vanilla, Tinkers Construct, or Tetra! Pick your poison, as they all have their benefits and downfalls!"]
 			dependencies: ["0FF7D2AD65E5DE75"]
 			optional: true
@@ -228,9 +230,9 @@
 		}
 		{
 			title: "Tetra"
-			x: 2.5d
-			y: -0.5d
-			shape: "diamond"
+			x: 3.5d
+			y: 2.0d
+			shape: "rsquare"
 			description: ["Now that you've gotten yourself a crafting table, you can combine a 2x2 of those pebbles you keep finding to make your first stone tools. Tools from here are pretty much the same as usual, but this means you have a choice! Vanilla, Tinkers Construct, or Tetra! Pick your poison, as they all have their benefits and downfalls!"]
 			dependencies: ["0FF7D2AD65E5DE75"]
 			optional: true
@@ -306,9 +308,11 @@
 		}
 		{
 			title: "Improved Backpacks"
-			x: 2.5d
-			y: 2.0d
+			x: 3.5d
+			y: -0.5d
+			shape: "rsquare"
 			description: ["Improved Backpacks is a greatly modular system for sewing yourself a lovely backpack. If you've made one, take a couple of pouches on us!"]
+			hide_dependency_lines: true
 			dependencies: ["0FF7D2AD65E5DE75"]
 			optional: true
 			id: "538BE0FE8127240D"
@@ -397,8 +401,9 @@
 		}
 		{
 			icon: "minecraft:wheat"
-			x: 3.0d
+			x: 3.5d
 			y: -2.0d
+			shape: "rsquare"
 			description: ["Just for your convenience, this pack has a right-click crop harvesting mechanic so don't hesitate to leave some behind for your friends!"]
 			optional: true
 			id: "6AADA1EF423B341A"
@@ -430,8 +435,14 @@
 			y: 4.5d
 			shape: "octagon"
 			description: ["To proceed, you'll need some Iron, Copper, Coal, y'know the common resources. Go hit the mines and head on back to the next chapter when you think you're ready!"]
-			dependencies: ["5F04546C2125C6D2"]
+			min_required_dependencies: 1
+			dependencies: [
+				"5F04546C2125C6D2"
+				"438DF8E68752EC71"
+				"277F51B86D0AEFDE"
+			]
 			hide: false
+			dependency_requirement: "one_completed"
 			size: 1.5d
 			id: "5576DA257D4825D4"
 			tasks: [{
@@ -472,9 +483,11 @@
 		}
 		{
 			title: "Optimizing That Inv"
-			x: -0.5d
-			y: 2.0d
+			x: -1.5d
+			y: -0.5d
+			shape: "rsquare"
 			description: ["We know that the inventory can get cluttered SUPER quickly. The Toolbelt mod has a nicely configurable radial menu that lets you store stuff like Napsacks, Akashic Tomes, Morphing Tools and other day-to-day tools right on your belt! Give it a try if you're struggling to keep your hotbar organized!"]
+			hide_dependency_lines: true
 			dependencies: ["0FF7D2AD65E5DE75"]
 			optional: true
 			id: "0E1F2F402BDF4399"

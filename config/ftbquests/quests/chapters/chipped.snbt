@@ -5,7 +5,7 @@
 	filename: "chipped"
 	title: "Decor"
 	icon: "chipped:glassblower"
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
@@ -179,7 +179,7 @@
 			icon: "portable_stonecutter:portable_stonecutter"
 			x: -10.5d
 			y: -7.5d
-			shape: "diamond"
+			shape: "rsquare"
 			description: ["The portable stonecutter is a crazy helpful tool to stonecut all the things on the go!"]
 			optional: true
 			id: "4EB71C2242313276"
@@ -318,7 +318,6 @@
 		{
 			x: -10.5d
 			y: -11.5d
-			shape: "hexagon"
 			description: ["Moving Elevators are great! You place down controllers at each floor you want, and you can right-click any side that doesn't have its buttons to change settings (or reskin if holding a block)."]
 			optional: true
 			id: "22CFB62947A76964"
@@ -348,7 +347,7 @@
 			}
 			x: -10.5d
 			y: -5.5d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Slabs can be doubled-up and mixed-and-matched any way you wish! This makes building much easier and more cathartic. On top of that, you can craft vertical slabs (which also stack regardless if they match or not) to help with your newest builds!"]
 			optional: true
 			id: "309BD19B77B320E7"
@@ -366,7 +365,6 @@
 			icon: "corail_woodcutter:acacia_woodcutter"
 			x: -10.5d
 			y: -9.5d
-			shape: "diamond"
 			description: ["The portable woodcutter is a portable variant that you can use without placing it down. It's a modified version made by myself in KubeJS so it's not *perfect* but it's pretty darn great considering the alternative."]
 			optional: true
 			id: "5CBA688F12D94A9D"

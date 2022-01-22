@@ -12,7 +12,7 @@
 			title: "Crude Crafting"
 			x: 12.0d
 			y: 1.5d
-			shape: "hexagon"
+			shape: "diamond"
 			subtitle: "This thing looks horrible! I need to sand it down"
 			description: [
 				"Without better processing, you're going to need to get some Andesite Alloy"
@@ -28,15 +28,11 @@
 				item: "kubejs:crude_andesite_alloy"
 			}]
 			rewards: [{
-				id: "4F16D565A7399F36"
+				id: "5143E6F81AFF5F05"
 				type: "item"
-				item: {
-					id: "create:sand_paper"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "natural-progression:stone_pebble"
+				count: 16
+				random_bonus: 16
 			}]
 		}
 		{
@@ -189,7 +185,7 @@
 			title: "Gearing Up"
 			x: 13.0d
 			y: 8.0d
-			shape: "gear"
+			shape: "rsquare"
 			description: ["Using a large cog, you can move your hand crank to crank directly into this large wheel, then use a small cog to down-shift the rotational energy to increase the speed of your milling. With a hand crank, you can only do this once, but it will make your work about twice as fast!"]
 			dependencies: ["557F241BD0AAA98E"]
 			optional: true
@@ -211,6 +207,7 @@
 			icon: "immersiveengineering:conveyor_basic"
 			x: 11.0d
 			y: 8.0d
+			shape: "rsquare"
 			description: [
 				"If you so desire, you could use a Minecart, some rails, and some blast furnaces to streamline your Ore Processing line to directly smelt your resulting crushed ore."
 				""
@@ -265,9 +262,9 @@
 				}
 			}
 			disable_toast: true
-			x: 14.0d
-			y: 2.5d
-			shape: "diamond"
+			x: 12.0d
+			y: 4.5d
+			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["69FF3D884B1E8649"]
 			optional: true

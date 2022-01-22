@@ -38,7 +38,6 @@
 			y: -0.75d
 			dependencies: ["1C4827A72246558E"]
 			size: 1.5d
-			optional: true
 			id: "50807BC96CCD74AB"
 			tasks: [{
 				id: "0E3B8823BDA1A80F"
@@ -63,7 +62,6 @@
 			y: 1.0d
 			shape: "octagon"
 			dependencies: ["50807BC96CCD74AB"]
-			optional: true
 			id: "1CAD34C4A5929DC9"
 			tasks: [{
 				id: "6C3A14E441FE839C"
@@ -83,10 +81,8 @@
 		{
 			x: 0.0d
 			y: -2.5d
-			shape: "hexagon"
 			description: ["Now that you've found a Stronghold you're in for a good time! With YUNG's Better Strongholds, the Stronghold isn't the same awkward Stone Brick box that it once was - now they have several stories, catacombs, armories and more!"]
 			dependencies: ["0FDD8580ACB14D01"]
-			optional: true
 			id: "1C4827A72246558E"
 			tasks: [{
 				id: "0E1B0B070EEE6119"
@@ -114,7 +110,6 @@
 				"*slowly winks*"
 			]
 			dependencies: ["1CAD34C4A5929DC9"]
-			optional: true
 			id: "0675386FB27D119E"
 			tasks: [{
 				id: "2AF9F429C43879C3"
@@ -142,7 +137,6 @@
 				"* Firework Rockets Not Included"
 			]
 			dependencies: ["1CAD34C4A5929DC9"]
-			optional: true
 			id: "51B99C63EA976A04"
 			tasks: [{
 				id: "1EAAF45E0541F042"

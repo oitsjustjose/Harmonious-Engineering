@@ -11,14 +11,13 @@
 			Damage: 0
 		}
 	}
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Wormholes"
 			x: -9.0d
 			y: 0.5d
-			shape: "diamond"
 			description: [
 				"Instead of Waystones or Portality, Wormholes are the method of isntant transport from Point A to Point B. I prefer using rails where possible but sometimes that's just unreasonable to do, so Wormholes are the way to go!"
 				""
@@ -45,7 +44,6 @@
 			icon: "moreminecarts:sticky_piston_pushcart"
 			x: -9.0d
 			y: -2.0d
-			shape: "diamond"
 			description: ["More Minecarts is a really cool cart and rail mod akin to Railcraft's transportation components, allowing for easy transportation of blocks, items, mobs and even keeping chunks loaded along the way! I suggest you give it a look sometime if your rail setup is ever feeling slow or if you're in a pinch!"]
 			id: "3F818BF4AFA6CBF5"
 			tasks: [{

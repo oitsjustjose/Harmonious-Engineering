@@ -11,7 +11,7 @@
 			Damage: 0
 		}
 	}
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
@@ -173,7 +173,7 @@
 		}
 		{
 			x: -5.5d
-			y: -3.0d
+			y: -6.0d
 			shape: "hexagon"
 			description: ["A sawmill will open the way to moving out of the hand-saw industry and finally give those hands a break!"]
 			id: "69F9DACE4BCC993E"
@@ -190,12 +190,8 @@
 		}
 		{
 			x: -5.5d
-			y: -5.5d
-			shape: "octagon"
-			dependencies: [
-				"69F9DACE4BCC993E"
-				"3254AD20E1DA7ABC"
-			]
+			y: -4.0d
+			shape: "hexagon"
 			id: "67AF80F10D32694E"
 			tasks: [{
 				id: "4B893DA4F462FB61"
@@ -213,7 +209,7 @@
 		{
 			x: -5.5d
 			y: -8.0d
-			shape: "hexagon"
+			shape: "diamond"
 			description: ["This Sawmill won't improve your planking recipes, but it WILL help you use your hand-sawed planks more efficiently!"]
 			id: "3254AD20E1DA7ABC"
 			tasks: [{
@@ -231,7 +227,7 @@
 		{
 			x: -0.5d
 			y: -8.5d
-			shape: "hexagon"
+			shape: "diamond"
 			description: [
 				"This'll do pig. It won't do much, but hey."
 				""

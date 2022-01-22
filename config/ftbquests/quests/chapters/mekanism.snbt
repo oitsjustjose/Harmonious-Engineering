@@ -36,7 +36,7 @@
 			title: "Actual Plastic"
 			x: -3.75d
 			y: -1.5d
-			shape: "gear"
+			shape: "octagon"
 			description: [
 				"HDPE is a type of non-recyclable plastic, so needless to say it plays an integral role in creating plastic for Industrial Foregoing. As such, you won't need to Fluid Extract wood right away because plastic isn't obtained via Latex Processing."
 				""
@@ -87,7 +87,7 @@
 			icon: "mekanism:clump_copper"
 			x: -3.0d
 			y: -7.5d
-			shape: "gear"
+			shape: "rsquare"
 			description: [
 				"Ore Tripling is pretty straight forward to set up - the tooltips in Mekanism and in this quest should help you get an idea for how items should flow!"
 				""
@@ -200,7 +200,6 @@
 			icon: "mekanism:pressurized_reaction_chamber"
 			x: -3.0d
 			y: -3.5d
-			shape: "hexagon"
 			description: [
 				"By combining Water, Hydrogen and Bio Fuel in a PRC (Pressurized Reaction Chamber), you can produce Ethylene. If you automated this process (say using Melons in Cloches) you could produce a LOT of Ethylene which can be burned in a Gas-Burning generator for a lot of RF/t!"
 				""
@@ -255,7 +254,7 @@
 			icon: "mekanism:hdpe_pellet"
 			x: 1.0d
 			y: -3.5d
-			shape: "octagon"
+			shape: "hexagon"
 			dependencies: ["20943501D69EADB2"]
 			id: "79D0FF37CBEF39D5"
 			tasks: [
@@ -283,6 +282,7 @@
 			icon: "mekanismgenerators:solar_panel"
 			x: -1.0d
 			y: -7.5d
+			shape: "rsquare"
 			description: ["Renewable power is super convenient, so once you get to this point in your technolgical adventure don't be afraid to dive right in! RF/t rates have NOT been nerfed in any way, because these recipes have been naturally made harder by the progression it took to get here!"]
 			hide_dependency_lines: true
 			dependencies: ["548FF0C4E700EFE2"]
@@ -324,6 +324,7 @@
 		{
 			x: -1.0d
 			y: -5.5d
+			shape: "rsquare"
 			description: ["The Digital Miner is your best way out of having to mine everything all the time. I imagine there's a way to combine this with a Create flying machine to automate infinitely, but even if there isn't it's a great way to avoid running out of resources all the time!"]
 			hide_dependency_lines: true
 			dependencies: ["548FF0C4E700EFE2"]
@@ -345,7 +346,7 @@
 			title: "Mekasuit Armor"
 			x: 1.0d
 			y: -7.5d
-			shape: "hexagon"
+			shape: "rsquare"
 			description: ["Mekasuit armor has been much easier to make, because honestly there aren't many other good electrical armor sets out there in the modding scene. As such, they're still meant to be a bit of a grind, but I hope that you enjoy having access to them sooner than later!"]
 			hide_dependency_lines: true
 			dependencies: ["548FF0C4E700EFE2"]
@@ -407,6 +408,7 @@
 			title: "Refined Obsidian Tools \\& Armor"
 			x: 1.0d
 			y: -5.5d
+			shape: "rsquare"
 			description: ["Refined Obsidian Armor and Tools are REALLY incredible. If you're still looking for a good sword, the Refined Obsidian Sword does tons of base damage."]
 			hide_dependency_lines: true
 			dependencies: ["548FF0C4E700EFE2"]
@@ -428,7 +430,7 @@
 		{
 			x: -0.2857142857142847d
 			y: -1.482142857142854d
-			shape: "gear"
+			shape: "octagon"
 			description: [
 				"As you've no doubt noticed, a lot of specialty devices require you to *manually* craft them in a Sewing or Smithing Table. These, unfortunately, cannot be automated - but in the spirit of \"automate all teh things!\" these recipes are also made compatible in the Mekanism Combiner."
 				""
