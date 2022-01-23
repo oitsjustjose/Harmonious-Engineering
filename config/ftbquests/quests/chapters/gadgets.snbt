@@ -4,15 +4,28 @@
 	order_index: 1
 	filename: "gadgets"
 	title: "Gadgets"
-	subtitle: ["Secrets to making building easier"]
+	icon: {
+		id: "buildinggadgets:gadget_building"
+		Count: 1b
+		tag: {
+			state: {
+				serializer: "buildinggadgets:dummy_serializer"
+				state: {
+					Name: "minecraft:air"
+				}
+				data: { }
+			}
+		}
+	}
+	subtitle: ["Secrets to making your builds easier and more creative!"]
 	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Portable Stonecutter"
 			icon: "portable_stonecutter:portable_stonecutter"
-			x: 0.0d
-			y: -1.0d
+			x: 0.5d
+			y: -2.0d
 			description: ["The portable stonecutter is a crazy helpful tool to stonecut all the things on the go!"]
 			optional: true
 			id: "4EB71C2242313276"
@@ -30,8 +43,8 @@
 		}
 		{
 			icon: "corail_woodcutter:acacia_woodcutter"
-			x: -1.0d
-			y: -1.0d
+			x: -1.5d
+			y: -2.0d
 			description: ["The portable woodcutter is a portable variant that you can use without placing it down. It's a modified version made by myself in KubeJS so it's not *perfect* but it's pretty darn great considering the alternative."]
 			optional: true
 			id: "5CBA688F12D94A9D"
@@ -50,8 +63,9 @@
 		{
 			title: "Building Gadgets"
 			x: -0.5d
-			y: -2.0d
+			y: -3.0d
 			description: ["Building Gadgets is a great mod full of many wonderful tools for building your houses, factories and more."]
+			optional: true
 			id: "41FBF3FA006B2CC6"
 			tasks: [
 				{
@@ -129,7 +143,8 @@
 		{
 			disable_toast: true
 			x: -0.5d
-			y: 0.0d
+			y: -1.0d
+			optional: true
 			id: "330D490407F53E57"
 			tasks: [{
 				id: "71881BA776EA525C"
@@ -143,15 +158,16 @@
 				}
 			}]
 			rewards: [{
-				id: "3CCD6802B38CF58B"
+				id: "7E7BD8DCC7E5CCE9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: -1.5d
-			y: -2.0d
+			x: -2.5d
+			y: -3.0d
 			description: ["Throws blocks in your inventory, placing them in the world wherever they land. Super helpful for those hard-to-reach places when you don't have scaffolding yet."]
+			optional: true
 			id: "003EB32466D9DCB2"
 			tasks: [{
 				id: "0B8CF58F8C4E3869"
@@ -171,9 +187,10 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -2.0d
+			x: 1.5d
+			y: -3.0d
 			description: ["Rotates blocks placed in the world, for those times when you need to rotate a chest, stair, door, etc.."]
+			optional: true
 			id: "0B7031A7CC76B510"
 			tasks: [{
 				id: "596A55B09BC0A898"
@@ -194,9 +211,10 @@
 		}
 		{
 			title: "Microblocks"
-			x: -1.0d
-			y: -3.0d
+			x: -1.5d
+			y: -4.0d
 			description: ["Unlike the Saws from Natural Progression, the CBMicroBlock saws allow you to cut up most blocks into smaller pieces like slabs, corners, etc.."]
+			optional: true
 			id: "21AE5453B278CD21"
 			tasks: [{
 				id: "030A21BA7E522FB3"
@@ -239,9 +257,10 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -3.0d
+			x: 0.5d
+			y: -4.0d
 			description: ["The Wand of Symmetry is pretty late-game Create, but maybe this gives you a reason to get into it and learn all about the Addons this pack has such as Steam-Powered Create!"]
+			optional: true
 			id: "45F5AA40B471236A"
 			tasks: [{
 				id: "452DC7064055728D"
@@ -262,7 +281,8 @@
 		}
 		{
 			x: -0.5d
-			y: -4.0d
+			y: -5.0d
+			optional: true
 			id: "56DDA3E8552984E9"
 			tasks: [{
 				id: "128A55BE1DA1A52B"
