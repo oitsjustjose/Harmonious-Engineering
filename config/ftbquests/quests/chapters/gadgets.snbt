@@ -1,0 +1,279 @@
+{
+	id: "5EEFE4F49E892EAF"
+	group: "2DBE15AF0366896A"
+	order_index: 1
+	filename: "gadgets"
+	title: "Gadgets"
+	subtitle: ["Secrets to making building easier"]
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Portable Stonecutter"
+			icon: "portable_stonecutter:portable_stonecutter"
+			x: 0.0d
+			y: -1.0d
+			description: ["The portable stonecutter is a crazy helpful tool to stonecut all the things on the go!"]
+			optional: true
+			id: "4EB71C2242313276"
+			tasks: [{
+				id: "24B4D34DEB92CBDA"
+				type: "item"
+				item: "minecraft:stonecutter"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3C25183BABE4BB36"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+			}]
+		}
+		{
+			icon: "corail_woodcutter:acacia_woodcutter"
+			x: -1.0d
+			y: -1.0d
+			description: ["The portable woodcutter is a portable variant that you can use without placing it down. It's a modified version made by myself in KubeJS so it's not *perfect* but it's pretty darn great considering the alternative."]
+			optional: true
+			id: "5CBA688F12D94A9D"
+			tasks: [{
+				id: "78DA6CB99C8A8C49"
+				type: "item"
+				item: "corail_woodcutter:oak_woodcutter"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "413415D9658AB9B4"
+				type: "item"
+				item: "corail_woodcutter:acacia_woodcutter"
+			}]
+		}
+		{
+			title: "Building Gadgets"
+			x: -0.5d
+			y: -2.0d
+			description: ["Building Gadgets is a great mod full of many wonderful tools for building your houses, factories and more."]
+			id: "41FBF3FA006B2CC6"
+			tasks: [
+				{
+					id: "36B24183A82A787F"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_building"
+						Count: 1b
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
+							}
+						}
+					}
+				}
+				{
+					id: "6FE840CE64A9C0C9"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_exchanging"
+						Count: 1b
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
+							}
+						}
+					}
+				}
+				{
+					id: "0E51590C66391B3F"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_copy_paste"
+						Count: 1b
+						tag: {
+							mode: 0b
+							template_id: [I;
+								1884688768
+								133121741
+								-1331949028
+								-1817349995
+							]
+						}
+					}
+				}
+				{
+					id: "12972CAE0B194763"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_destruction"
+						Count: 1b
+						tag: {
+							overlay: 1b
+							fuzzy: 1b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4970F0BA35CCE33F"
+				type: "item"
+				item: "buildinggadgets:construction_paste"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			disable_toast: true
+			x: -0.5d
+			y: 0.0d
+			id: "330D490407F53E57"
+			tasks: [{
+				id: "71881BA776EA525C"
+				type: "item"
+				item: {
+					id: "quark:trowel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3CCD6802B38CF58B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			description: ["Throws blocks in your inventory, placing them in the world wherever they land. Super helpful for those hard-to-reach places when you don't have scaffolding yet."]
+			id: "003EB32466D9DCB2"
+			tasks: [{
+				id: "0B8CF58F8C4E3869"
+				type: "item"
+				item: {
+					id: "supplementaries:slingshot"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3293174A8A3458C9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			description: ["Rotates blocks placed in the world, for those times when you need to rotate a chest, stair, door, etc.."]
+			id: "0B7031A7CC76B510"
+			tasks: [{
+				id: "596A55B09BC0A898"
+				type: "item"
+				item: {
+					id: "supplementaries:wrench"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6DA4D62B7AFADBD1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Microblocks"
+			x: -1.0d
+			y: -3.0d
+			description: ["Unlike the Saws from Natural Progression, the CBMicroBlock saws allow you to cut up most blocks into smaller pieces like slabs, corners, etc.."]
+			id: "21AE5453B278CD21"
+			tasks: [{
+				id: "030A21BA7E522FB3"
+				type: "item"
+				title: "Any CBMicroBlock Saw"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "cb_microblock:stone_saw"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "cb_microblock:iron_saw"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "cb_microblock:diamond_saw"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "4BCC99C0F2A83732"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["The Wand of Symmetry is pretty late-game Create, but maybe this gives you a reason to get into it and learn all about the Addons this pack has such as Steam-Powered Create!"]
+			id: "45F5AA40B471236A"
+			tasks: [{
+				id: "452DC7064055728D"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+			rewards: [{
+				id: "7479DB81C5F1C735"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			id: "56DDA3E8552984E9"
+			tasks: [{
+				id: "128A55BE1DA1A52B"
+				type: "item"
+				item: "extendedcrafting:handheld_table"
+			}]
+			rewards: [{
+				id: "3507ACA4859C751C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+}

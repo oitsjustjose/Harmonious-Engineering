@@ -1,7 +1,7 @@
 {
 	id: "4138B7896CD89F22"
 	group: "4D77B1A0ACFA64E2"
-	order_index: 3
+	order_index: 1
 	filename: "tech_stuff"
 	title: "Other Tech"
 	icon: "pipez:universal_pipe"
@@ -35,7 +35,7 @@
 		}
 		{
 			title: "Powah"
-			x: -3.75d
+			x: -5.25d
 			y: -0.75d
 			shape: "rsquare"
 			description: ["Much of Powah is gated behind Steel, but once ou're done there you can go ham with most generators! A lot of the imbalanced generators have been disabled for the sanctity of this pack, but outside of that you can do so much with Reactors!"]
@@ -81,7 +81,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 1.5d
 			y: -0.75d
 			shape: "rsquare"
 			description: ["Entangled Blocks are perfect for when you need more than 6 sides to a block, or just want to keep everything nice and tidy. "]
@@ -165,6 +165,37 @@
 				item: "torchmaster:frozen_pearl"
 				count: 4
 				random_bonus: 4
+			}]
+		}
+		{
+			title: "Automated Large Crafting"
+			x: -1.7321428571428612d
+			y: -0.7857142857142847d
+			description: [
+				"As you've no doubt noticed, a lot of larger blocks or more powerful creations make use of Create's Mechanical Crafting. I get that this can be tedious, so if you make the Ultimate Crafting Table you can more efficiently automate these recipes at the cost of some RF."
+				""
+				"You can save up to 3 recipes per table, and once saved you can put any storage block (e.g. Chest, Barrel) above the table and a hopper/importing device below."
+				""
+				"Once you select your saved recipe, it will automatically craft for you!"
+			]
+			dependencies: [
+				"2D20B2E24752725E"
+				"1C4C3A1431B17B77"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "1B07D6AE58A8A0F1"
+			tasks: [{
+				id: "0BF7025CB679E02B"
+				type: "item"
+				item: "extendedcrafting:ultimate_auto_table"
+			}]
+			rewards: [{
+				id: "31129AD7757056CD"
+				type: "item"
+				item: "betterendforge:mossy_glowshroom_chest"
+				count: 2
+				random_bonus: 2
 			}]
 		}
 	]

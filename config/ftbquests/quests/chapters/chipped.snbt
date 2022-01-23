@@ -1,6 +1,6 @@
 {
 	id: "62C230199A85BDAD"
-	group: "4D77B1A0ACFA64E2"
+	group: "2DBE15AF0366896A"
 	order_index: 0
 	filename: "chipped"
 	title: "Decor"
@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -5.5d
 			description: ["The Botanist's Workbench is the right tool for getting beautiful variants of all things organic - mushrooms, glowshrooms, pumpkins, melons and more!"]
 			optional: true
@@ -37,7 +37,7 @@
 			]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -6.5d
 			description: ["The Glass Blower can turn your glass and glass panes into wonderful and colorful variants with intricate designs and patterns!"]
 			optional: true
@@ -65,7 +65,7 @@
 			]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -10.5d
 			description: ["The Carpenter's Table is great for getting variants of woodlike blocks!"]
 			optional: true
@@ -93,7 +93,7 @@
 			]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -7.5d
 			description: ["The Loom is great for getting variants of wool and carpet!"]
 			optional: true
@@ -112,7 +112,7 @@
 			}]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -11.5d
 			description: ["The Mason's Table is great for getting variants of stone-ish blocks!"]
 			optional: true
@@ -131,7 +131,7 @@
 			}]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -8.5d
 			description: ["The Alchemy Bench is perfect for getting variants of more eldrich blocks like Obsidian, Crying Obsidian and Glowstone!"]
 			optional: true
@@ -149,7 +149,7 @@
 			}]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -9.5d
 			description: ["The Mechanist's Workbench is great for getting variants of redstone components like redstone blocks, lamps, torches, and more!"]
 			optional: true
@@ -175,30 +175,9 @@
 			]
 		}
 		{
-			title: "Portable Stonecutter"
-			icon: "portable_stonecutter:portable_stonecutter"
-			x: -10.5d
-			y: -7.5d
-			shape: "rsquare"
-			description: ["The portable stonecutter is a crazy helpful tool to stonecut all the things on the go!"]
-			optional: true
-			id: "4EB71C2242313276"
-			tasks: [{
-				id: "24B4D34DEB92CBDA"
-				type: "item"
-				item: "minecraft:stonecutter"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "3C25183BABE4BB36"
-				type: "item"
-				item: "portable_stonecutter:portable_stonecutter"
-			}]
-		}
-		{
 			title: "Project: Red"
 			icon: "projectred-illumination:white_inverted_fallout_light"
-			x: -7.5d
+			x: -8.5d
 			y: -10.5d
 			description: ["Project Red has some really beautiful light fixtures to help get your build nicely assembled if you're going for the clean, factory feel!"]
 			optional: true
@@ -210,7 +189,7 @@
 		}
 		{
 			title: "Framed Blocks"
-			x: -7.5d
+			x: -8.5d
 			y: -11.5d
 			description: ["The Framed Blocks mod lets you turn any standard block into slabs/slopes/stairs/etc! The hammer provided will help remove the block you apply to a frame as you build!"]
 			optional: true
@@ -229,7 +208,7 @@
 		{
 			title: "Extra Lighting"
 			icon: "extlights:glowstone_bulb"
-			x: -7.5d
+			x: -8.5d
 			y: -9.5d
 			description: ["Extended Lights adds several really beautiful light fixtures if you're going for that really detailed look!"]
 			optional: true
@@ -247,7 +226,7 @@
 		{
 			title: "Glass Mods"
 			icon: "glassential:glass_ethereal"
-			x: -7.5d
+			x: -8.5d
 			y: -8.5d
 			description: ["This modpack comes equipped with Glassential (adding dark glass, ethereal glass, etc.) as well as Connecting Glass (CTM glass + panes without Optifine)!"]
 			optional: true
@@ -265,7 +244,7 @@
 		{
 			title: "Macaw's Paintings"
 			icon: "infernalexp:infernal_painting"
-			x: -7.5d
+			x: -8.5d
 			y: -6.5d
 			description: ["You'll find that some paintings have been added for your home decor pleasure!"]
 			optional: true
@@ -283,7 +262,7 @@
 		{
 			title: "Macaw's Lights"
 			icon: "mcwlights:white_lamp"
-			x: -7.5d
+			x: -8.5d
 			y: -5.5d
 			optional: true
 			id: "339B8C929964DEFB"
@@ -300,7 +279,7 @@
 		{
 			title: "Decorative Blocks"
 			icon: "decorative_blocks:spruce_support"
-			x: -7.5d
+			x: -8.5d
 			y: -7.5d
 			description: ["The Decorative Blocks mod adds wonderful supports, braziers, chandeliers and more! It even has mod support for many wood types in this pack!!"]
 			optional: true
@@ -317,7 +296,7 @@
 		}
 		{
 			x: -10.5d
-			y: -11.5d
+			y: -9.5d
 			description: ["Moving Elevators are great! You place down controllers at each floor you want, and you can right-click any side that doesn't have its buttons to change settings (or reskin if holding a block)."]
 			optional: true
 			id: "22CFB62947A76964"
@@ -346,7 +325,7 @@
 				}
 			}
 			x: -10.5d
-			y: -5.5d
+			y: -7.5d
 			shape: "rsquare"
 			description: ["Slabs can be doubled-up and mixed-and-matched any way you wish! This makes building much easier and more cathartic. On top of that, you can craft vertical slabs (which also stack regardless if they match or not) to help with your newest builds!"]
 			optional: true
@@ -359,25 +338,6 @@
 				id: "6738FA82FBB23DBF"
 				type: "xp"
 				xp: 100
-			}]
-		}
-		{
-			icon: "corail_woodcutter:acacia_woodcutter"
-			x: -10.5d
-			y: -9.5d
-			description: ["The portable woodcutter is a portable variant that you can use without placing it down. It's a modified version made by myself in KubeJS so it's not *perfect* but it's pretty darn great considering the alternative."]
-			optional: true
-			id: "5CBA688F12D94A9D"
-			tasks: [{
-				id: "78DA6CB99C8A8C49"
-				type: "item"
-				item: "corail_woodcutter:oak_woodcutter"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "413415D9658AB9B4"
-				type: "item"
-				item: "corail_woodcutter:acacia_woodcutter"
 			}]
 		}
 	]

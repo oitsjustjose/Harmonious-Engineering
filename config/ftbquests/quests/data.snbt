@@ -8,7 +8,7 @@
 	default_quest_shape: "circle"
 	default_quest_disable_jei: false
 	emergency_items: [
-		{ id: "minecraft:flint", Count: 5b }
+		{ id: "minecraft:flint", Count: 1b }
 		{
 			id: "natural-progression:flint_hatchet"
 			Count: 1b
@@ -17,7 +17,7 @@
 			}
 		}
 	]
-	emergency_items_cooldown: 86400
+	emergency_items_cooldown: 6
 	drop_loot_crates: false
 	loot_crate_no_drop: {
 		passive: 4000

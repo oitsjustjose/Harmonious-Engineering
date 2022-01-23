@@ -1,0 +1,32 @@
+{
+	id: "00D9D4A5D3B5C106"
+	group: "2F5E9821869B4E2F"
+	order_index: 7
+	filename: "draconic_evolution"
+	title: "Draconic Evolution"
+	icon: "draconicevolution:chaotic_core"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -5.5d
+		y: -2.0d
+		shape: "diamond"
+		description: [
+			"As you can no-doubt tell, getting to the point where you can harness the power of the Ender Dragon required a lot of research and dedication in Physics and Chemistry."
+			""
+			"Fortunately, your research was a success - by harnessing the strange but maleable Pink Slime, its protons can be rearranged with Antimatter to form some new substance.. Draconium."
+			""
+			"Pack dev note: At this point I have only changed a very small number of recipes at this point. You'll find them as you go, but you probably won't be struggling with any recipes at this point in the pack. I hope you had fun with the quests and enjoy the crazy-powerful ending to it which is Draconic Evolution!"
+		]
+		dependencies: [
+			"3E9E8F85F668A000"
+			"1CB98DB1EF80834D"
+		]
+		id: "64B207F46287BCED"
+		tasks: [{
+			id: "10011C233EC78E2B"
+			type: "item"
+			item: "draconicevolution:draconium_ingot"
+		}]
+	}]
+}

@@ -1,7 +1,7 @@
 {
 	id: "10A249EB60E90D33"
 	group: "4D77B1A0ACFA64E2"
-	order_index: 2
+	order_index: 0
 	filename: "xnet"
 	title: "XNet"
 	icon: "xnet:netcable_routing"

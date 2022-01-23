@@ -1,0 +1,344 @@
+{
+	id: "5985D794526FF230"
+	group: "4D77B1A0ACFA64E2"
+	order_index: 4
+	filename: "applied_energistics"
+	title: "Applied Energistics"
+	icon: "appliedenergistics2:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -4.5d
+			shape: "diamond"
+			description: [
+				"By throwing 1 Redstone Dust, 1 Charged Certus and 1 Nether Quartz into a pool of water, you can create Fluix."
+				""
+				"Fluix is the core crafting component of most AE2 components."
+				""
+				"You'll also note: there are NO AE2 meteors. Skystone can be crafted, as can the inscriber presses. I feel like in 2022 we can all agree that meteors were just a bit much, and never had that 4th press we were looking for >:I"
+			]
+			id: "3849FD4C3D7A10E1"
+			tasks: [{
+				id: "145713D02ED32F2C"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+			}]
+			rewards: [{
+				id: "386FE0943924E535"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The Charger is useful for infusing your standard Certus Quartz with RF/FE/AE Energy, thus turning it into a Charged Certus Quartz."]
+			dependencies: ["161E8A3DFFF111D2"]
+			optional: true
+			id: "2470A2F8041AEF74"
+			tasks: [{
+				id: "40F39A0B38D8DB2F"
+				type: "item"
+				item: "appliedenergistics2:charger"
+			}]
+			rewards: [{
+				id: "5B2C4FAFFAC53739"
+				type: "item"
+				title: "Try it out with these!"
+				item: "appliedenergistics2:certus_quartz_crystal"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Growing Quartz Seeds in water no doubt takes a LONG time. By making 5 of these, you can surround the Top and 4 Sides of a block of Water and provide them with AE power from an Energy Acceptor."]
+			dependencies: ["0050052B1FC58EB6"]
+			optional: true
+			id: "10D02B9DDACF181D"
+			tasks: [{
+				id: "1856199C46E69B23"
+				type: "item"
+				item: "appliedenergistics2:quartz_growth_accelerator"
+			}]
+			rewards: [{
+				id: "593C0445E163A5CA"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Quartz Seeds"
+			x: 3.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: [
+				"Using a crushed Quartz (Fluix, Certus or Nether) and some Sand, you can create a Quartz Seed. By throwing this seed in some water and letting it sit (it will not despawn), you can grow it to become a Pure Crystal."
+				""
+				"Once grown, they can be used equivalently to their normal counterparts in most AE2 recipes, thus making your Quartz supply go twice as far as before!"
+			]
+			dependencies: ["161E8A3DFFF111D2"]
+			optional: true
+			id: "0050052B1FC58EB6"
+			tasks: [{
+				id: "60955CC47414471A"
+				type: "item"
+				title: "Any Quartz Seed"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "appliedenergistics2:certus_crystal_seed"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:fluix_crystal_seed"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:nether_quartz_seed"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			shape: "hexagon"
+			description: [
+				"The Energy Acceptor will accept any FE/RF Power, and convert it to AE power. Moreso, the acceptor can be used to act as a very crude early-game ME network, only serving a limited amount of channels (but enough to get you started!)."
+				""
+				"{image:kubejs:textures/gui/rudimentary_me.png width:320 height:180 align:1}"
+			]
+			dependencies: ["3849FD4C3D7A10E1"]
+			id: "161E8A3DFFF111D2"
+			tasks: [{
+				id: "53740EA28C02276A"
+				type: "item"
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+			rewards: [{
+				id: "35CD93C05CD6AC6C"
+				type: "item"
+				title: "Combine with Most Blocks to make Covers!"
+				item: "appliedenergistics2:cable_anchor"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: [
+				"The inscriber is the key to getting Silicon and Circuit components molded and formed to be used to make some of the more advanced components in AE2."
+				""
+				"A couple of tips:"
+				"  1. You'll need Inscriber Presses. See JEI for recipes."
+				"  2. You can rotate them and place them sideways to make automation easier."
+				"  3. You can use XNet to make automating them REALLY much easier."
+			]
+			dependencies: ["161E8A3DFFF111D2"]
+			id: "288A24112A69D326"
+			tasks: [{
+				id: "63FE0D14866E2275"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+			rewards: [{
+				id: "592B969284CB83FC"
+				type: "item"
+				item: "minecraft:stonecutter"
+			}]
+		}
+		{
+			title: "Under Control"
+			x: 0.0d
+			y: 3.0d
+			shape: "hexagon"
+			description: [
+				"The ME Controller can accept FE/RF just like the acceptor can, but unlike the acceptor this dedicated computational core is capable of handling many more channels in parallel. This makes the expandability of your network endless!"
+				""
+				"FYI: You can connect multiple ME Controllers to each other and they form a combined singular controller. The only thing is, a controller can only connect to up to 3 other controllers. No more than that."
+			]
+			dependencies: ["288A24112A69D326"]
+			size: 1.5d
+			id: "49BB80B8831D916B"
+			tasks: [{
+				id: "08796D1FC7A48FED"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+			rewards: [{
+				id: "5BFCA770FEF9E019"
+				type: "item"
+				item: "minecraft:white_wool"
+				count: 16
+				random_bonus: 32
+			}]
+		}
+		{
+			icon: "appliedenergistics2:fluix_glass_cable"
+			x: -3.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"There are several different types of cables in AE2, so I thought I'd take this time to break that down."
+				""
+				"Quartz Fibre cannot transmit data, only AE Power. Therefore they're great for powering P2P networks and some AE2 machinery, but not much else."
+				""
+				"Standard Fluix cables (and Covered cables) can transmit data to up to 8 devices (8 channels)."
+				""
+				"Dense cables can transmit up to 32 channels, but usually do not directly connect to anything (that task is relegated to standard / covered fluix cables)"
+				""
+				"Smart cable variants of all of these work exactly the same, but render a nice little display that tells you how many channels that particular line at that point is handling. Great for determining where a network bottleneck or overload is occurring."
+			]
+			dependencies: ["2470A2F8041AEF74"]
+			optional: true
+			id: "01A93BFE57557124"
+			tasks: [{
+				id: "4B0FE83B9F2AE4E7"
+				type: "checkmark"
+				title: "Cable Types"
+			}]
+			rewards: [{
+				id: "0BFDC5AD226F30A7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Terminals"
+			x: -3.5d
+			y: 2.0d
+			description: ["Terminals allow you to access the contents of your ME Network, be it fluids, items, patterns, etc.."]
+			dependencies: ["288A24112A69D326"]
+			id: "12B55A07958426E9"
+			tasks: [{
+				id: "24DA412A79329CAD"
+				type: "item"
+				title: "Any Terminal (Probably Crafting..?)"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "appliedenergistics2:pattern_terminal"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:crafting_terminal"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:terminal"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:interface_terminal"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:fluid_terminal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "4E83E365265C552E"
+				type: "item"
+				item: "appliedenergistics2:semi_dark_monitor"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Digital Item Access"
+			x: 3.5d
+			y: 2.0d
+			description: [
+				"At this point, you have two ways to store your items (or you can combine the two!)."
+				""
+				"The first is to create a ME Drive and populate it with Storage Cells."
+				""
+				"The second is to use a Storage Bus to connect your existing Chests/Drawers/Crates/Barrels to the system."
+			]
+			dependencies: ["288A24112A69D326"]
+			id: "318D8C5DA5272C22"
+			tasks: [{
+				id: "6E928290D81F0D26"
+				type: "item"
+				title: "ME Drive or Storage Bus"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "appliedenergistics2:storage_bus"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:drive"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "01CDAE03A7934DEA"
+				type: "item"
+				item: "appliedenergistics2:empty_storage_cell"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			shape: "octagon"
+			description: [
+				"AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here, but just know that this route you've chosen is more difficult than Refined Storage."
+				""
+				"That said, if you find yourself frustrated at any point, it's pretty easy to change trains over to RS :)"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"12B55A07958426E9"
+				"318D8C5DA5272C22"
+				"49BB80B8831D916B"
+			]
+			hide: true
+			hide_text_until_complete: true
+			id: "7295E9F89A61B175"
+			tasks: [{
+				id: "633047BFF1073944"
+				type: "checkmark"
+				title: "The Rest is Complicated.."
+			}]
+			rewards: [{
+				id: "7274952ACFA0E575"
+				type: "command"
+				auto: "invisible"
+				command: "/tellraw @p {\"text\":\"Link to the Official AE2 Wiki\",\"color\":\"aqua\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Open URL\",\"color\":\"dark_gray\"}]}}"
+				player_command: false
+			}]
+		}
+	]
+}

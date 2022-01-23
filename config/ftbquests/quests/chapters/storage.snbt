@@ -1,7 +1,7 @@
 {
 	id: "7E86D54AF7848E9D"
 	group: "4D77B1A0ACFA64E2"
-	order_index: 1
+	order_index: 2
 	filename: "storage"
 	title: "Storage"
 	icon: "storage_overhaul:oak_chest_tier_1"
@@ -212,6 +212,44 @@
 				item: "pipez:fluid_pipe"
 				count: 12
 				random_bonus: 8
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			optional: true
+			id: "22563478738E3084"
+			tasks: [{
+				id: "590821DF8B415C26"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_unit"
+			}]
+			rewards: [{
+				id: "3824B402F75F6429"
+				type: "item"
+				item: "industrialforegoing:item_transporter_type"
+				count: 2
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			optional: true
+			id: "77021BDB7ADE594B"
+			tasks: [{
+				id: "45926AAE0F36255A"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_tank"
+			}]
+			rewards: [{
+				id: "4C5B886E7D194CDC"
+				type: "item"
+				item: "industrialforegoing:fluid_transporter_type"
+				count: 2
 			}]
 		}
 	]

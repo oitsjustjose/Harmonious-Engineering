@@ -10,10 +10,14 @@
 	quests: [
 		{
 			title: "Pressed Plastic"
-			x: -2.0d
-			y: -5.0d
+			x: 1.0d
+			y: -7.0d
 			shape: "diamond"
-			description: ["Using an Osmium Compressor and some Oxygen, you can create Plastic which is an instrumental ingredient in Industrial Foregoing"]
+			description: [
+				"Using an Osmium Compressor and some Oxygen, you can create Plastic which is an instrumental ingredient in Industrial Foregoing."
+				""
+				"Once you've gotten your hands on some Plastic by pressing HDPE Sheets, you can finally dive into Industrial Foregoing (IF)."
+			]
 			dependencies: ["40B3A14EA5AC792C"]
 			id: "568810B360CC78F0"
 			tasks: [{
@@ -30,37 +34,9 @@
 			}]
 		}
 		{
-			icon: {
-				id: "industrialforegoing:speed_addon_2"
-				Count: 1b
-				tag: {
-					TitaniumAugment: {
-						Speed: 3.0f
-					}
-				}
-			}
-			x: -2.0d
-			y: -3.0d
-			shape: "octagon"
-			description: ["Industrial Foregoing is a vast mod with tons of utilities ranging from Tree Farms, Mob Farms and even Enchantment Stripping or Automation. I haven't changed any recipes aside from the Plastic one, so have fun and automate the last few things you've been waiting to automate! I've made a few quests for this chapter just to give you a mission in the end :)"]
-			dependencies: ["568810B360CC78F0"]
-			size: 1.25d
-			id: "7E8B45D166B71957"
-			tasks: [{
-				id: "310BEDA0717D3653"
-				type: "checkmark"
-				title: "Free Reign!"
-			}]
-			rewards: [{
-				id: "1382B06FD33A6294"
-				type: "item"
-				item: "industrialforegoing:meat_feeder"
-			}]
-		}
-		{
 			title: "Infinity Tools"
-			x: 0.0d
-			y: -5.0d
+			x: 5.5d
+			y: -6.5d
 			shape: "rsquare"
 			description: ["Infinity Tools take a near-infinite amount of RF - as they receive this much power, they tier up more and more to have better attributes like dig speed, attack strength and more."]
 			hide_dependency_lines: true
@@ -199,53 +175,13 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -3.0d
-			shape: "rsquare"
-			hide_dependency_lines: true
-			dependencies: ["7E8B45D166B71957"]
-			optional: true
-			id: "77021BDB7ADE594B"
-			tasks: [{
-				id: "45926AAE0F36255A"
-				type: "item"
-				item: "industrialforegoing:supreme_black_hole_tank"
-			}]
-			rewards: [{
-				id: "442A98DAB702C146"
-				type: "item"
-				item: "enderstorage:ender_tank"
-				count: 2
-			}]
-		}
-		{
-			x: 2.0d
-			y: -5.0d
-			shape: "rsquare"
-			hide_dependency_lines: true
-			dependencies: ["7E8B45D166B71957"]
-			optional: true
-			id: "22563478738E3084"
-			tasks: [{
-				id: "590821DF8B415C26"
-				type: "item"
-				item: "industrialforegoing:supreme_black_hole_unit"
-			}]
-			rewards: [{
-				id: "32F1509F6F9937FF"
-				type: "item"
-				item: "enderstorage:ender_chest"
-				count: 2
-			}]
-		}
-		{
 			disable_toast: true
-			x: 2.0d
-			y: -3.0d
+			x: 5.5d
+			y: -2.5d
 			shape: "rsquare"
+			description: ["The Black Hole controller can be used to store up to 16 Black Hole Tanks or Units (or a mix!). While you can't directly access the contents of the embedded Black Hole units, you can access them via automation extraction such as a Simple Storage, Refined Storage or ME Network."]
 			hide_dependency_lines: true
 			dependencies: [
-				"7E8B45D166B71957"
 				"77021BDB7ADE594B"
 				"22563478738E3084"
 			]
@@ -262,6 +198,346 @@
 				item: "emendatusenigmatica:enderium_ingot"
 				count: 12
 				random_bonus: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			description: [
+				"The Mob Slaughter Factory is capable of killing mobs when provided power. Doing so with the Mob Slaughter Factory will consume all mob drops, but in exchange it will produce Liquid Meat (see sidequest for a neat use) and Pink Slime."
+				""
+				"You'll need Pink Slime to progress into the late-game of this pack, so you might want to automate this."
+			]
+			dependencies: ["568810B360CC78F0"]
+			id: "6D0044D41BEB1891"
+			tasks: [{
+				id: "3ECADDC365F990F2"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+			rewards: [{
+				id: "316A705B97A3B81E"
+				type: "item"
+				item: "mekanism:elite_fluid_tank"
+				count: 2
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			description: ["The Thermal Blast Chiller is going to be quintessential to creating your Pink Slime ingots, as Pink Slime is still a bit volatile and only wants to keep solid form when at sub-zero temperatures."]
+			dependencies: ["568810B360CC78F0"]
+			id: "40B4943CAC7CEF80"
+			tasks: [{
+				id: "29BDA7E665D98578"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+			rewards: [{
+				id: "1B86FE686F76E0AC"
+				type: "item"
+				item: "thermal:chiller_ingot_cast"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["Once you have Pink Slime from your Mob Slaughter Factory, you can scoop it up in a bucket and insert it into your blast chiller to solidify."]
+			dependencies: ["568810B360CC78F0"]
+			id: "5B005066CDAE5DE2"
+			tasks: [{
+				id: "040FC76312A4AA0A"
+				type: "item"
+				item: "industrialforegoing:pink_slime_bucket"
+			}]
+			rewards: [{
+				id: "2EAA36E4C19E63C9"
+				type: "item"
+				item: "industrialforegoing:meat_feeder"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["You did it! You managed to get some Pink Slime. This is super useful for late-game IF, but also it's the first step to get into Draconic Evolution. You still have a long way before you can get that much done."]
+			dependencies: [
+				"5B005066CDAE5DE2"
+				"40B4943CAC7CEF80"
+				"6D0044D41BEB1891"
+			]
+			id: "3E9E8F85F668A000"
+			tasks: [{
+				id: "3A99170BF2162798"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["Liquid Meat is great in the Meat Feeder, as it keeps you from having to keep up with feeding yourself and rather just converting whatever mobs you kill into Meat!"]
+			hide_dependency_lines: true
+			dependencies: ["6D0044D41BEB1891"]
+			optional: true
+			id: "0B156792D832C3D1"
+			tasks: [{
+				id: "4EB05F459B8C993F"
+				type: "fluid"
+				title: "Over 9000 (Meat ??)"
+				fluid: "industrialforegoing:meat_fluid"
+				amount: 9001L
+			}]
+			rewards: [{
+				id: "14F00E90634651A9"
+				type: "item"
+				item: {
+					id: "draconicevolution:mob_soul"
+					Count: 1b
+					tag: {
+						EntityName: "minecraft:cow"
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -6.5d
+			shape: "diamond"
+			description: ["There is a LOT left to Industrial Foregoing. I could go over each and every thing, but what I thought would be coolest would be to lay out some goals for things you might find convenient as you settle into your world."]
+			hide_dependency_lines: true
+			dependencies: ["568810B360CC78F0"]
+			optional: true
+			id: "1FC26941C33948E8"
+			tasks: [{
+				id: "0CE93B98E6377316"
+				type: "checkmark"
+				title: "Stretch Goals"
+			}]
+			rewards: [{
+				id: "0481DADAC89C7423"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: -6.0d
+			shape: "rsquare"
+			description: [
+				"The Enchantment Extractor will remove any enchantments (that aren't Curses, at least) from your tool, saving all enchantments and the tool itself."
+				""
+				"Conversely, if you don't want the outputs you can convert it directly into essence with the convenient In-GUI toggle!"
+			]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "6E36F33CB65C978C"
+			tasks: [{
+				id: "5E6E3F404315E800"
+				type: "item"
+				item: "industrialforegoing:enchantment_extractor"
+			}]
+			rewards: [{
+				id: "04B76DBBD3EC7AB9"
+				type: "item"
+				item: "minecraft:book"
+				count: 16
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "Ore Lasers"
+			x: 12.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["Ore Lasers can be used to gather infinitely many ores at a pretty slow rate. That said, this is great to keep running passively if you can afford the immense amount of power used by these lasers drills."]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "53545C945E4E77FE"
+			tasks: [
+				{
+					id: "7FC09592F845E601"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+				{
+					id: "467545DB9758AB9E"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "44DA8D7144B25AB3"
+				type: "item"
+				item: {
+					id: "industrialforegoing:speed_addon_1"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Speed: 2.0f
+						}
+					}
+				}
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.5d
+			shape: "octagon"
+			description: ["Ether Gas is gathered by using a Fluid Laser Base with a Wither below it. This is most easily done by keeping the Wither in Stasis using a Stasis Chamber."]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "5E99DD0BB94677B5"
+			tasks: [{
+				id: "679399F1899D8021"
+				type: "fluid"
+				title: "Ether Gas"
+				fluid: "industrialforegoing:ether_gas_fluid"
+				amount: 100L
+			}]
+			rewards: [{
+				id: "286A12CC9C727AAB"
+				type: "item"
+				item: {
+					id: "industrialforegoing:efficiency_addon_2"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Efficiency: 0.8f
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Automated Husbandry"
+			x: 8.5d
+			y: -3.0d
+			shape: "rsquare"
+			description: [
+				"Using an Animal Feeder, you can feed any animals in the affected area (modified by Range Upgrades) with the provided food."
+				""
+				"Then, you can use the Animal Separator to separate the babies from the adult animals. This can be useful if you want to set aside a subset of animals to be slaughtered later for Pink Slime, Liquid Meat, etc."
+				""
+				"Lastly, the Animal Rancher can be used on mature animals to harvest renewable resources from them such as Wool from Sheep, Milk from Cows, and Mushroom Soup from Mooshrooms."
+			]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "1AEE650683701880"
+			tasks: [
+				{
+					id: "46C5FDC881F7AA66"
+					type: "item"
+					item: "industrialforegoing:animal_baby_separator"
+				}
+				{
+					id: "75A0941BA29BA9BA"
+					type: "item"
+					item: "industrialforegoing:animal_rancher"
+				}
+				{
+					id: "7A204F9B215DAD06"
+					type: "item"
+					item: "industrialforegoing:animal_feeder"
+				}
+			]
+			rewards: [{
+				id: "225848355AED5F7D"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon3"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 3.0f
+						}
+					}
+				}
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.5d
+			y: -3.0d
+			shape: "rsquare"
+			description: ["Mechanical Dirt runs off of Liquid Meat to spawn hostile mobs. This is GREAT for mob farms that you may decide to build, but to avoid lag and a huge mess, my suggestion is to build this mob farm up in a Compact Dimension using the reward from this quest :)"]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "1D655B1043B8D5F2"
+			tasks: [{
+				id: "745EF6F4BA565E74"
+				type: "item"
+				item: "industrialforegoing:mechanical_dirt"
+			}]
+			rewards: [{
+				id: "101144FF85A389C0"
+				type: "item"
+				item: "compactmachines:machine_normal"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: ["The Material Stonework Factory is a wonderful contraption which allows you to automate all things Cobblestone and the subsequent processing steps, like Smelting, 2x2 Crafting, Crushing and more."]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "3CC56B78D3077DE3"
+			tasks: [{
+				id: "5FD35D939664B243"
+				type: "item"
+				item: "industrialforegoing:material_stonework_factory"
+			}]
+			rewards: [
+				{
+					id: "5761213E052D69CC"
+					type: "item"
+					item: "framedcompactdrawers:framed_full_four"
+				}
+				{
+					id: "0F8B0005DBFEE95E"
+					type: "item"
+					item: "storagedrawers:gold_storage_upgrade"
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: -6.0d
+			shape: "rsquare"
+			description: ["Using a Mob Crusher and an Ender Ender, you can get some really serious loot pretty quickly. This includes a large amount of Powah Ender Cores, so this would probably be your best bet to automate those to make Ender Singularities!"]
+			dependencies: ["1FC26941C33948E8"]
+			optional: true
+			id: "65DD6DFAB42554C9"
+			tasks: [
+				{
+					id: "4F555C66F7A41471"
+					type: "item"
+					title: "Ender Core Automation"
+					item: "powah:ender_core"
+					count: 256L
+				}
+				{
+					id: "614568EEE474E19E"
+					type: "item"
+					item: "industrialforegoing:mob_crusher"
+				}
+			]
+			rewards: [{
+				id: "41AD90360B072D7F"
+				type: "item"
+				item: "thermal:enderium_coin"
+				count: 3
+				random_bonus: 3
 			}]
 		}
 	]
