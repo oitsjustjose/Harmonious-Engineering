@@ -18,7 +18,7 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at max RPM).
 	#Range: > 0
-	fe_conversion = 240
+	fe_conversion = 80
 	#Max stress for the Alternator and Electric Motor (in SU at max RPM).
 	#Range: > 0
 	baseline_stress = 8192
