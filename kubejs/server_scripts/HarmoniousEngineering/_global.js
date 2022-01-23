@@ -101,4 +101,55 @@ onEvent("server.datapack.first", (_) => {
       output: output.toResultJson(),
     });
   };
+
+  /**
+   *
+   * @param {RecipeEventJS} evt
+   * @param {Object} first { tag/item: ResourceLocation }
+   * @param {Object} second { tag/item: ResourceLocation }
+   * @param {string} output
+   * @param {number} qty
+   */
+  global.genAlloyingRecipe = (evt, first, second, output, qty) => {
+    evt.custom({
+      type: "mekanism:combining",
+      mainInput: { ingredient: first },
+      extraInput: { ingredient: second },
+      output: {
+        item: output,
+        count: qty,
+      },
+    });
+
+    evt.custom({
+      type: "thermal:smelter",
+      ingredients: [
+        { value: [first], count: 1 },
+        { value: [second], count: 1 },
+      ],
+      result: [{ item: output, count: qty }],
+      energy: 4800,
+    });
+
+    evt.custom({
+      type: "immersiveengineering:alloy",
+      time: 400,
+      input0: { base_ingredient: first },
+      input1: second,
+      result: { count: qty, base_ingredient: { item: output } },
+    });
+
+    evt.custom({
+      type: "create:mixing",
+      ingredients: [first, second],
+      results: [{ item: output, count: qty }],
+      heatRequirement: "heated",
+    });
+  };
+
+  global.genLargeRecipe = (evt, pattern, key, result) => {
+    ["extendedcrafting:shaped_table", "create:mechanical_crafting"].forEach((type) => {
+      evt.custom({ type: type, pattern: pattern, key: key, result: result });
+    });
+  };
 });

@@ -27,6 +27,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "mekanism:module_vision_enhancement_unit" });
   event.remove({ output: "mekanism:steel_casing" });
   event.remove({ output: "mekanism:teleportation_core" });
+  event.remove({ output: "mekanism:cardboard_box" });
 
   event.shaped("1x mekanism:teleportation_core", ["LAL", "GSG", "LAL"], {
     L: "#forge:gems/lapis",

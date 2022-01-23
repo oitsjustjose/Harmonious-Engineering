@@ -28,21 +28,8 @@ onEvent("recipes", (event) => {
   });
 
   global.genCombinedRecipe(event, Ingredient.of("storagenetwork:master"), Ingredient.of("refinedstorage:advanced_processor"), Item.of("refinedstorage:controller"));
-  event.custom({
-    type: "mekanism:combining",
-    mainInput: {
-      ingredient: {
-        item: "minecraft:iron_ingot",
-      },
-    },
-    extraInput: {
-      ingredient: {
-        tag: "forge:dusts/quartz",
-      },
-    },
-    output: {
-      item: "refinedstorage:quartz_enriched_iron",
-      count: 2,
-    },
-  });
+  global.genAlloyingRecipe(event, { item: "minecraft:iron_ingot" }, { tag: "forge:dusts/quartz" }, "refinedstorage:quartz_enriched_iron", 2);
+
+  /* Cable Tiers */
+  event.replaceInput({ mod: "cabletiers" }, "minecraft:dragon_head", "industrialforegoing:pink_slime_ingot");
 });

@@ -35,10 +35,10 @@ onEvent("recipes", (event) => {
     processingTime: 200,
   });
 
-  event.custom({
-    type: "create:mechanical_crafting",
-    pattern: [" B ", "BCB", " B "],
-    key: {
+  global.genLargeRecipe(
+    event,
+    [" B ", "BCB", " B "],
+    {
       B: {
         item: "immersiveengineering:waterwheel_segment",
       },
@@ -46,8 +46,18 @@ onEvent("recipes", (event) => {
         item: "create:large_cogwheel",
       },
     },
-    result: {
+    {
       item: "create:water_wheel",
-    },
-  });
+    }
+  );
+
+  event.replaceInput({ output: "steampowered:cast_iron_burner" }, "#forge:plates/iron", "#forge:plates/cast_iron");
+  event.replaceInput({ output: "steampowered:cast_iron_boiler" }, "#forge:plates/iron", "#forge:plates/cast_iron");
+  event.replaceInput({ output: "steampowered:cast_iron_steam_engine" }, "#forge:plates/iron", "#forge:plates/cast_iron");
+  event.replaceInput({ output: "steampowered:cast_iron_steam_engine" }, "minecraft:iron_ingot", "#forge:ingots/cast_iron");
+  event.replaceInput({ output: "steampowered:cast_iron_flywheel" }, "minecraft:iron_ingot", "#forge:ingots/cast_iron");
+
+  event.replaceInput({ output: "steampowered:cast_iron_cogwheel" }, "minecraft:iron_ingot", "#forge:ingots/cast_iron");
+  event.replaceInput({ output: "steampowered:cast_iron_large_cogwheel" }, "minecraft:iron_ingot", "#forge:ingots/cast_iron");
+  event.replaceInput({ output: "steampowered:cast_iron_large_cogwheel" }, "#forge:plates/iron", "#forge:plates/cast_iron");
 });

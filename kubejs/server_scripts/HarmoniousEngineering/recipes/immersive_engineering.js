@@ -64,10 +64,10 @@ onEvent("recipes", (event) => {
   global.genCombinedRecipeSewing(event, Ingredient.of(`6x ${modid}:hemp_fabric`), Ingredient.of(`${modid}:stick_treated`), Item.of(`${modid}:windmill_sail`), 1);
   global.genCombinedRecipeSewing(event, Ingredient.of(`${modid}:windmill_blade`), Ingredient.of(`${modid}:windmill_sail`), Item.of("kubejs:cloth_covered_windmill_blade"), 1);
 
-  event.custom({
-    type: "create:mechanical_crafting",
-    pattern: ["BBB", "BSB", "BBB"],
-    key: {
+  global.genLargeRecipe(
+    event,
+    ["BBB", "BSB", "BBB"],
+    {
       B: {
         item: "kubejs:cloth_covered_windmill_blade",
       },
@@ -75,15 +75,15 @@ onEvent("recipes", (event) => {
         tag: "forge:ingots/steel",
       },
     },
-    result: {
+    {
       item: `${modid}:windmill`,
-    },
-  });
+    }
+  );
 
-  event.custom({
-    type: "create:mechanical_crafting",
-    pattern: [" B ", "BSB", " B "],
-    key: {
+  global.genLargeRecipe(
+    event,
+    [" B ", "BSB", " B "],
+    {
       B: {
         item: `${modid}:waterwheel_segment`,
       },
@@ -91,10 +91,10 @@ onEvent("recipes", (event) => {
         tag: "forge:ingots/steel",
       },
     },
-    result: {
+    {
       item: `${modid}:watermill`,
-    },
-  });
+    }
+  );
 
   event.custom({
     type: "corail_woodcutter:woodcutting",
