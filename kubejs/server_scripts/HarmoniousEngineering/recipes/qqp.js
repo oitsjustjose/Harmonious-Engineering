@@ -24,7 +24,7 @@ onEvent("recipes", (event) => {
       W: { item: "wormhole:portal_frame" },
       C: { item: "chickenchunks:spot_loader" },
       K: { item: "moreminecarts:chunkrodite" },
-      I: { item: "industrialforegoing:infinity_drill" },
+      I: { item: "mekanism:digital_miner" },
       N: { item: "minecraft:nether_star" },
     },
     {

@@ -1,3 +1,71 @@
+# 1.2.0
+
+## Added
+
+### Mods
+
+- Blame
+- Cable Tiers
+- Clumps
+- Create: Steam Powered
+- Draconic Evolution
+- Extended Crafting
+- Lootr
+- OAuth
+- Quantum Quarry Plus
+- Spark
+- Towers of the Wild (And addons)
+
+### Custom Items
+
+- Crude Alloy is now its own item, used for crafting
+- Ender Singularity - by subjecting the core of an Enderman to cold environments, you can force it to exist within water. This isn't a good idea and you know it, but you may have to if you want to harness that sweet sweet Ender technology.
+
+## Updated
+
+### Mods
+
+- RSInfinityBooster
+- Curios
+- Framed Blocks
+- KubeJS for IE
+
+### Pack
+
+#### Quests
+
+- Added quest chapter for XNet
+- Added quest chapter for Building Tools
+- Added quest chapter for Appled Energistics
+- Added quest chapter for Refined Storage
+- Added quest chapter for Late-Game Mekanism
+- Added quest chapter for Draconic Evolution
+- Filled out the Quest Chapter for Industrial Foregoing
+- Added quest for Torchmaster
+- Added emergency kit
+- All Optional quests are Rounded Square shape.
+- All Quests (optional or not) are Hexagononally shaped.
+- All Quests that start a questline are Diamond shaped.
+- All Quests that end a questline are Octagonally shaped.
+
+#### Progression
+
+- Changed early-game progression with Crude Alloy
+
+### Recipes
+
+- Made Torchmaster recipes balanced
+- Made all Sewing / Smithing recipes able to be done in the Mekanism Combiner so you can automate most recipes changed by this pack
+- Made custom recipes for ProjectRed that make more sense
+- Made custom recipes for Quantum Quarry Plus
+- Made custom recipes for Draconium, the key item for crafting in Draconic Evolution
+
+## Removed
+
+- Magnesium (Caused rendering issues with Refined Storage)
+- Magnesium Dynamic Lights (Caused rendering issues with Refined Storage)
+- Better Magnesium Video Settings (Caused rendering issues with Refined Storage)
+
 # 1.1.2
 
 ## Added

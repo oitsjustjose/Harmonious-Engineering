@@ -1,29 +1,15 @@
 events.listen("recipes", (event) => {
-  event.replaceOutput({}, "#forge:dusts/certus_quartz", "emendatusenigmatica:certus_quartz_dust");
-  // event.replaceOutput({}, "#forge:dusts/fluix", "emendatusenigmatica:fluix_dust");
-  event.replaceOutput({}, "#forge:gems/certus_quartz", "emendatusenigmatica:certus_quartz_gem");
-  event.replaceOutput({}, "#forge:gems/charged_certus_quartz", "emendatusenigmatica:charged_certus_quartz_gem");
-  // event.replaceOutput({}, "#forge:gems/fluix", "emendatusenigmatica:fluix_gem");
-  // event.replaceOutput({}, "#forge:storage_blocks/fluix", "emendatusenigmatica:fluix_block");
-  // event.replaceOutput( {}, 'appliedenergistics2:certus_quartz_crystal', 'emendatusenigmatica:certus_quartz_gem')
-  // event.replaceOutput( {}, 'appliedenergistics2:certus_quartz_crystal', 'emendatusenigmatica:certus_quartz_gem')
-  // event.replaceOutput( {}, 'appliedenergistics2:certus_quartz_dust', 'emendatusenigmatica:certus_quartz_dust')
-  // event.replaceOutput( {}, 'appliedenergistics2:certus_quartz_dust', 'emendatusenigmatica:certus_quartz_dust')
-  // event.replaceOutput( {}, 'appliedenergistics2:charged_certus_quartz_crystal', 'emendatusenigmatica:charged_certus_quartz_gem')
-  // event.replaceOutput( {}, 'appliedenergistics2:charged_certus_quartz_crystal', 'emendatusenigmatica:charged_certus_quartz_gem')
-  // event.replaceOutput( {}, 'appliedenergistics2:fluix_block', 'emendatusenigmatica:fluix_block')
-  // event.replaceOutput( {}, 'appliedenergistics2:fluix_block', 'emendatusenigmatica:fluix_block')
-  // event.replaceOutput( {}, 'appliedenergistics2:fluix_crystal', 'emendatusenigmatica:fluix_gem')
-  // event.replaceOutput( {}, 'appliedenergistics2:fluix_crystal', 'emendatusenigmatica:fluix_gem')
-  // event.replaceOutput( {}, 'appliedenergistics2:fluix_dust', 'emendatusenigmatica:fluix_dust')
-  // event.replaceOutput( {}, 'appliedenergistics2:fluix_dust', 'emendatusenigmatica:fluix_dust')
+  // event.replaceOutput({}, "#forge:dusts/certus_quartz", "emendatusenigmatica:certus_quartz_dust");
+  // event.replaceOutput({}, "#forge:gems/certus_quartz", "emendatusenigmatica:certus_quartz_gem");
+  // event.replaceOutput({}, "#forge:gems/charged_certus_quartz", "emendatusenigmatica:charged_certus_quartz_gem");
+  event.replaceOutput({}, "emendatusenigmatica:certus_quartz_gem", "appliedenergistics:certus_quartz_crystal");
+  event.replaceOutput({}, "emendatusenigmatica:charged_certus_quartz_gem", "appliedenergistics2:charged_certus_quartz_crystal");
   event.replaceOutput({}, "#forge:bitumen", "emendatusenigmatica:bitumen_gem");
   event.replaceOutput({}, "#forge:coal_coke", "emendatusenigmatica:coke_gem");
   event.replaceOutput({}, "#forge:dusts/aluminum", "emendatusenigmatica:aluminum_dust");
   event.replaceOutput({}, "#forge:dusts/apatite", "emendatusenigmatica:apatite_dust");
   event.replaceOutput({}, "#forge:dusts/brass", "emendatusenigmatica:brass_dust");
   event.replaceOutput({}, "#forge:dusts/bronze", "emendatusenigmatica:bronze_dust");
-  // event.replaceOutput( {}, "#forge:dusts/certus_quartz", "appliedenergistics2:certus_quartz_dust" );
   event.replaceOutput({}, "#forge:dusts/charcoal", "emendatusenigmatica:charcoal_dust");
   event.replaceOutput({}, "#forge:dusts/cinnabar", "emendatusenigmatica:cinnabar_dust");
   event.replaceOutput({}, "#forge:dusts/coal_coke", "emendatusenigmatica:coke_dust");
@@ -37,7 +23,6 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "#forge:dusts/ender_pearl", "emendatusenigmatica:ender_dust");
   event.replaceOutput({}, "#forge:dusts/ender", "emendatusenigmatica:ender_dust");
   event.replaceOutput({}, "#forge:dusts/enderium", "emendatusenigmatica:enderium_dust");
-  // event.replaceOutput( {}, "#forge:dusts/fluix", "appliedenergistics2:fluix_dust" );
   event.replaceOutput({}, "#forge:dusts/fluorite", "emendatusenigmatica:fluorite_dust");
   event.replaceOutput({}, "#forge:dusts/gold", "emendatusenigmatica:gold_dust");
   event.replaceOutput({}, "#forge:dusts/graphite", "emendatusenigmatica:graphite_dust");
@@ -82,12 +67,9 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "#forge:gears/tin", "emendatusenigmatica:tin_gear");
   event.replaceOutput({}, "#forge:gems/apatite", "emendatusenigmatica:apatite_gem");
   event.replaceOutput({}, "#forge:gems/bitumen", "emendatusenigmatica:bitumen_gem");
-  // event.replaceOutput( {}, "#forge:gems/certus_quartz", "appliedenergistics2:certus_quartz_crystal" );
-  // event.replaceOutput( {}, "#forge:gems/charged_certus_quartz", "appliedenergistics2:charged_certus_quartz_crystal" );
   event.replaceOutput({}, "#forge:gems/cinnabar", "emendatusenigmatica:cinnabar_gem");
   event.replaceOutput({}, "#forge:gems/coal_coke", "emendatusenigmatica:coke_gem");
   event.replaceOutput({}, "#forge:gems/coke", "emendatusenigmatica:coke_gem");
-  // event.replaceOutput( {}, "#forge:gems/fluix", "appliedenergistics2:fluix_crystal" );
   event.replaceOutput({}, "#forge:gems/fluorite", "emendatusenigmatica:fluorite_gem");
   event.replaceOutput({}, "#forge:gems/niter", "emendatusenigmatica:potassium_nitrate_gem");
   event.replaceOutput({}, "#forge:gems/potassium_nitrate", "emendatusenigmatica:potassium_nitrate_gem");
@@ -179,7 +161,6 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "#forge:storage_blocks/copper", "emendatusenigmatica:copper_block");
   event.replaceOutput({}, "#forge:storage_blocks/electrum", "emendatusenigmatica:electrum_block");
   event.replaceOutput({}, "#forge:storage_blocks/enderium", "emendatusenigmatica:enderium_block");
-  // event.replaceOutput( {}, "#forge:storage_blocks/fluix", "appliedenergistics2:fluix_block" );
   event.replaceOutput({}, "#forge:storage_blocks/invar", "emendatusenigmatica:invar_block");
   event.replaceOutput({}, "#forge:storage_blocks/leads", "emendatusenigmatica:lead_block");
   event.replaceOutput({}, "#forge:storage_blocks/lumium", "emendatusenigmatica:lumium_block");
@@ -195,16 +176,6 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "#forge:storage_blocks/tin", "emendatusenigmatica:tin_block");
   event.replaceOutput({}, "#forge:storage_blocks/uranium", "emendatusenigmatica:uranium_block");
   event.replaceOutput({}, "#forge:storage_blocks/zinc", "emendatusenigmatica:zinc_block");
-  // event.replaceOutput( {}, "appliedenergistics2:ender_dust", "emendatusenigmatica:ender_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:ender_dust", "emendatusenigmatica:ender_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:gold_dust", "emendatusenigmatica:gold_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:gold_dust", "emendatusenigmatica:gold_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:iron_dust", "emendatusenigmatica:iron_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:iron_dust", "emendatusenigmatica:iron_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:nether_quartz_dust", "emendatusenigmatica:quartz_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:nether_quartz_dust", "emendatusenigmatica:quartz_dust" );
-  // event.replaceOutput( {}, "appliedenergistics2:silicon", "emendatusenigmatica:silicon_gem" );
-  // event.replaceOutput( {}, "appliedenergistics2:silicon", "emendatusenigmatica:silicon_gem" );
   event.replaceOutput({}, "betterendforge:ender_dust", "emendatusenigmatica:ender_dust");
   event.replaceOutput({}, "create:brass_block", "emendatusenigmatica:brass_block");
   event.replaceOutput({}, "create:brass_block", "emendatusenigmatica:brass_block");
@@ -238,18 +209,6 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "createaddition:gold_rod", "emendatusenigmatica:gold_rod");
   event.replaceOutput({}, "createaddition:iron_rod", "emendatusenigmatica:iron_rod");
   event.replaceOutput({}, "createaddition:zinc_sheet", "emendatusenigmatica:zinc_plate");
-  // event.replaceOutput( {}, "emendatusenigmatica:certus_quartz_dust", "appliedenergistics2:certus_quartz_dust" );
-  // event.replaceOutput( {}, "emendatusenigmatica:certus_quartz_dust", "appliedenergistics2:certus_quartz_dust" );
-  // event.replaceOutput( {}, "emendatusenigmatica:certus_quartz_gem", "appliedenergistics2:certus_quartz_crystal" );
-  // event.replaceOutput( {}, "emendatusenigmatica:certus_quartz_gem", "appliedenergistics2:certus_quartz_crystal" );
-  // event.replaceOutput( {}, "emendatusenigmatica:charged_certus_quartz_gem", "appliedenergistics2:charged_certus_quartz_crystal" );
-  // event.replaceOutput( {}, "emendatusenigmatica:charged_certus_quartz_gem", "appliedenergistics2:charged_certus_quartz_crystal" );
-  // event.replaceOutput( {}, "emendatusenigmatica:fluix_block", "appliedenergistics2:fluix_block" );
-  // event.replaceOutput( {}, "emendatusenigmatica:fluix_block", "appliedenergistics2:fluix_block" );
-  // event.replaceOutput( {}, "emendatusenigmatica:fluix_dust", "appliedenergistics2:fluix_dust" );
-  // event.replaceOutput( {}, "emendatusenigmatica:fluix_dust", "appliedenergistics2:fluix_dust" );
-  // event.replaceOutput( {}, "emendatusenigmatica:fluix_gem", "appliedenergistics2:fluix_crystal" );
-  // event.replaceOutput( {}, "emendatusenigmatica:fluix_gem", "appliedenergistics2:fluix_crystal" );
   event.replaceOutput({}, "forge:dusts/lead", "emendatusenigmatica:lead_dust");
   event.replaceOutput({}, "forge:gems/cinnabar", "emendatusenigmatica:cinnabar_gem");
   event.replaceOutput({}, "forge:ingots/nickel", "emendatusenigmatica:nickel_ingot");

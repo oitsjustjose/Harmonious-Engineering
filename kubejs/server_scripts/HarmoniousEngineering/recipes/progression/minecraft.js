@@ -1,9 +1,4 @@
 onEvent("recipes", (event) => {
-  event.remove({ id: "minecraft:gold_ingot" });
-  event.remove({ id: "minecraft:iron_ingot" });
-  event.remove({ id: "minecraft:gold_ingot_from_blasting" });
-  event.remove({ id: "minecraft:iron_ingot_from_blasting" });
-
   event.remove({ id: "minecraft:wooden_axe" });
   event.remove({ id: "minecraft:wooden_hoe" });
   event.remove({ id: "minecraft:wooden_pickaxe" });
