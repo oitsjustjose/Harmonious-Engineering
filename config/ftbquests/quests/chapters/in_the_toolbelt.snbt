@@ -404,5 +404,22 @@
 				}
 			]
 		}
+		{
+			x: -2.0d
+			y: 1.0d
+			description: ["The scanner is great for finding specific mobs, blocks, ores and more in an area. It's pretty expensive because of how powerful it is, but it's worthwhile in the longterm!"]
+			id: "2EF23CBBBDF37F40"
+			tasks: [{
+				id: "4658D93C9BD6E68A"
+				type: "item"
+				item: "scannable:scanner"
+			}]
+			rewards: [{
+				id: "0865AD0C207689F1"
+				type: "item"
+				item: "scannable:module_blank"
+				random_bonus: 1
+			}]
+		}
 	]
 }

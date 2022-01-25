@@ -16,8 +16,8 @@
 	quests: [
 		{
 			title: "Wormholes"
-			x: -9.0d
-			y: 0.5d
+			x: -9.5d
+			y: 1.0d
 			description: [
 				"Instead of Waystones or Portality, Wormholes are the method of isntant transport from Point A to Point B. I prefer using rails where possible but sometimes that's just unreasonable to do, so Wormholes are the way to go!"
 				""
@@ -42,7 +42,7 @@
 		{
 			title: "More Minecarts"
 			icon: "moreminecarts:sticky_piston_pushcart"
-			x: -9.0d
+			x: -9.5d
 			y: -2.0d
 			description: ["More Minecarts is a really cool cart and rail mod akin to Railcraft's transportation components, allowing for easy transportation of blocks, items, mobs and even keeping chunks loaded along the way! I suggest you give it a look sometime if your rail setup is ever feeling slow or if you're in a pinch!"]
 			id: "3F818BF4AFA6CBF5"
@@ -99,7 +99,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -3.0d
 			y: -0.5d
 			dependencies: ["005C9A10267A103C"]
 			id: "61B542F5591BEB01"
@@ -149,7 +149,7 @@
 			}]
 		}
 		{
-			x: -6.5d
+			x: -7.0d
 			y: -0.5d
 			dependencies: ["005C9A10267A103C"]
 			id: "409587125AAE507E"
@@ -181,8 +181,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 0.5d
+			x: -6.0d
+			y: 1.0d
 			subtitle: "Can you tell I dislike Creative Flight? :P"
 			dependencies: ["005C9A10267A103C"]
 			id: "1AE84695D72E01D1"
@@ -201,6 +201,27 @@
 				id: "0C8D7F82CB0EBAE7"
 				type: "item"
 				item: "minecraft:cookie"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			description: ["Flux-infused elytra can be controlled with an Elytra Controller, and uses RF to prevent you from blasting through your Gunpowder supply."]
+			dependencies: ["005C9A10267A103C"]
+			id: "53AD34D95F764D3F"
+			tasks: [{
+				id: "7DC24F289EAA90FB"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_elytra"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7B5AD307978BC7E5"
+				type: "item"
+				item: "redstone_arsenal:flux_controller"
 			}]
 		}
 	]
