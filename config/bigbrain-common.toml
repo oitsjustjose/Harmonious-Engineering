@@ -27,7 +27,7 @@
 	"Animal Night BlackList" = ["minecraft:cat"]
 	#Any mob id in this list will not attempt to find an area to stay in while it's raining.
 	"Animal Raining BlackList" = []
-	"Animals seek shelter?" = true
+	"Animals seek shelter?" = false
 	#Any mob id in this list will not attempt to find an area to stay in while it's raining or at night.
 	"Animal BlackList" = ["minecraft:fox", "minecraft:wolf", "minecraft:turtle"]
 

@@ -19,6 +19,7 @@
 				""
 				"You'll also note: there are NO AE2 meteors. Skystone can be crafted, as can the inscriber presses. I feel like in 2022 we can all agree that meteors were just a bit much, and never had that 4th press we were looking for >:I"
 			]
+			dependencies: ["7F3A8792FED32768"]
 			id: "3849FD4C3D7A10E1"
 			tasks: [{
 				id: "145713D02ED32F2C"

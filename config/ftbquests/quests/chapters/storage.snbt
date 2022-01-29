@@ -134,39 +134,26 @@
 			]
 		}
 		{
-			title: "RS Controller"
-			x: -4.0d
+			title: "Applying your.. Energistics?"
+			x: -3.0d
 			y: -1.5d
 			shape: "octagon"
-			description: ["To your relief, Refined Storage has gone mostly unchanged aside from the fact that Quartz-Enriched Iron now requires some specialized alloying machinery to create! Have a blast with your crazy storage system!"]
+			description: [
+				"This pack has Refined Storage, but it has been made unreachable to you by all means other than Creative Mode."
+				""
+				"If you already had an RS system, you can convert all components to AE2 by shapeless crafting them."
+				""
+				"Anyways, most of AE2 is untouched so have fun!"
+			]
 			dependencies: ["46DDBC5F6C66BD6A"]
 			id: "7F3A8792FED32768"
 			tasks: [{
-				id: "139B52607652B0E2"
-				type: "item"
-				item: "refinedstorage:controller"
-			}]
-			rewards: [{
-				id: "2966C17AFD6892BD"
-				type: "item"
-				item: "refinedstorage:cable"
-				count: 64
-			}]
-		}
-		{
-			x: -2.0d
-			y: -1.5d
-			shape: "octagon"
-			description: ["As you've no doubt figured out, Charged Certus Quartz can only be found in the Nether and Meteors have been completely disabled. You can still craft SkyStone with Silicon, and the Presses can be stone-cut into the ones you need!"]
-			dependencies: ["46DDBC5F6C66BD6A"]
-			id: "6F2D0AD09EA16DC3"
-			tasks: [{
-				id: "02C39E37DB23DEA9"
+				id: "10A002253D5A7A5E"
 				type: "item"
 				item: "appliedenergistics2:controller"
 			}]
 			rewards: [{
-				id: "255C32819354DD2E"
+				id: "2966C17AFD6892BD"
 				type: "item"
 				item: "appliedenergistics2:fluix_glass_cable"
 				count: 64
