@@ -72,6 +72,8 @@ onEvent("recipes", (event) => {
     },
     energy: 1600,
   });
+
+  event.shapeless("appliedenergistics2:cable_anchor", ["appliedenergistics2:facade", "appliedenergistics2:facade"]);
 });
 
 /* Replaces all thrown certus with AE2 Certus */
