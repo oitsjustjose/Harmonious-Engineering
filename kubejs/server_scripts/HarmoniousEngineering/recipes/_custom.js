@@ -542,10 +542,6 @@ onEvent("recipes", (event) => {
   stonecutter(event);
   woodcutter(event);
 
-  global.minecraftColors.forEach((color) => {
-    global.genCombinedRecipe(event, Ingredient.of(`minecraft:${color}_shulker_box`), Ingredient.of("#forge:ingots/iron"), Item.of(`storage_overhaul:${color}_shulker_box`));
-  });
-
   // Ender Singularity Crafting
   event.custom({
     type: "thermal:chiller",
