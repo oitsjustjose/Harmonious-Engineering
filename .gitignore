@@ -42,6 +42,10 @@ config/xaeroworldmap.txt
 config/xaerominimap_entities.json
 config/sidebar_buttons.json
 
+config/Mekanism/general.toml
+config/appliedenergistics2-client.toml
+config/blame-forge.properties
+
 TrashSlotSaveState.json
 WailaErrorOutput.txt
 
