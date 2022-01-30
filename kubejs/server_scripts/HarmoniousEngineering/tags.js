@@ -49,40 +49,22 @@ const harmoniousEngineeringTags = (event) => {
   event.add("harmeng:meka/filler_2", "#forge:batteries");
 
   event.add("harmeng:meka/crafting_tool_1", "minecraft:netherite_pickaxe");
-  event.add(
-    "harmeng:meka/crafting_tool_1",
-    "mekanismtools:refined_obsidian_pickaxe"
-  );
+  event.add("harmeng:meka/crafting_tool_1", "mekanismtools:refined_obsidian_pickaxe");
 
   event.add("harmeng:meka/crafting_tool_2", "minecraft:netherite_axe");
-  event.add(
-    "harmeng:meka/crafting_tool_2",
-    "mekanismtools:refined_obsidian_axe"
-  );
+  event.add("harmeng:meka/crafting_tool_2", "mekanismtools:refined_obsidian_axe");
 
   event.add("harmeng:meka/crafting_helm", "minecraft:netherite_helmet");
-  event.add(
-    "harmeng:meka/crafting_helm",
-    "mekanismtools:refined_obsidian_helmet"
-  );
+  event.add("harmeng:meka/crafting_helm", "mekanismtools:refined_obsidian_helmet");
 
   event.add("harmeng:meka/crafting_chest", "minecraft:netherite_chestplate");
-  event.add(
-    "harmeng:meka/crafting_chest",
-    "mekanismtools:refined_obsidian_chestplate"
-  );
+  event.add("harmeng:meka/crafting_chest", "mekanismtools:refined_obsidian_chestplate");
 
   event.add("harmeng:meka/crafting_legs", "minecraft:netherite_leggings");
-  event.add(
-    "harmeng:meka/crafting_legs",
-    "mekanismtools:refined_obsidian_leggings"
-  );
+  event.add("harmeng:meka/crafting_legs", "mekanismtools:refined_obsidian_leggings");
 
   event.add("harmeng:meka/crafting_boots", "minecraft:netherite_boots");
-  event.add(
-    "harmeng:meka/crafting_boots",
-    "mekanismtools:refined_obsidian_boots"
-  );
+  event.add("harmeng:meka/crafting_boots", "mekanismtools:refined_obsidian_boots");
 };
 
 const naturalProgressionTags = (event) => {
@@ -109,18 +91,9 @@ const naturalProgressionTags = (event) => {
   event.add("natural-progression:axes", "betterendforge:terminite_axe");
   event.add("natural-progression:axes", "betternether:cincinnasite_axe");
   event.add("natural-progression:axes", "betternether:nether_ruby_axe");
-  event.add(
-    "natural-progression:axes",
-    "mekanismtools:refined_glowstone_paxel"
-  );
-  event.add(
-    "natural-progression:axes",
-    "appliedenergistics2:certus_quartz_axe"
-  );
-  event.add(
-    "natural-progression:axes",
-    "appliedenergistics2:nether_quartz_axe"
-  );
+  event.add("natural-progression:axes", "mekanismtools:refined_glowstone_paxel");
+  event.add("natural-progression:axes", "appliedenergistics2:certus_quartz_axe");
+  event.add("natural-progression:axes", "appliedenergistics2:nether_quartz_axe");
 };
 
 const thermalTags = (event) => {
@@ -132,68 +105,24 @@ const thermalTags = (event) => {
 };
 
 const removePlates = (event) => {
-  [
-    "bronze",
-    "constantan",
-    "copper",
-    "electrum",
-    "enderium",
-    "gold",
-    "invar",
-    "iron",
-    "lead",
-    "lumium",
-    "nickel",
-    "signalum",
-    "silver",
-    "tin",
-  ].forEach((mat) => {
+  ["bronze", "constantan", "copper", "electrum", "enderium", "gold", "invar", "iron", "lead", "lumium", "nickel", "signalum", "silver", "tin"].forEach((mat) => {
     event.remove(`forge:plates/${mat}`, `thermal:${mat}_plate`);
     event.remove(`forge:plates`, `thermal:${mat}_plate`);
   });
 
-  [
-    "copper",
-    "aluminum",
-    "lead",
-    "silver",
-    "nickel",
-    "uranium",
-    "constantan",
-    "electrum",
-    "steel",
-    "iron",
-    "gold",
-  ].forEach((mat) => {
+  ["copper", "aluminum", "lead", "silver", "nickel", "uranium", "constantan", "electrum", "steel", "iron", "gold"].forEach((mat) => {
     event.remove(`forge:plates/${mat}`, `immersiveengineering:plate_${mat}`);
     event.remove(`forge:plates`, `immersiveengineering:plate_${mat}`);
   });
 };
 
 const removeGears = (event) => {
-  [
-    "bronze",
-    "constantan",
-    "copper",
-    "diamond",
-    "electrum",
-    "emerald",
-    "enderium",
-    "gold",
-    "invar",
-    "iron",
-    "lapis",
-    "lead",
-    "lumium",
-    "nickel",
-    "quartz",
-    "signalum",
-    "silver",
-    "tin",
-  ].forEach((mat) => {
-    event.remove(`forge:gears/${mat}`, `thermal:${mat}_gear`);
-    event.remove(`forge:gears`, `thermal:${mat}_gear`);
-  });
+  ["bronze", "constantan", "copper", "diamond", "electrum", "emerald", "enderium", "gold", "invar", "iron", "lapis", "lead", "lumium", "nickel", "quartz", "signalum", "silver", "tin"].forEach(
+    (mat) => {
+      event.remove(`forge:gears/${mat}`, `thermal:${mat}_gear`);
+      event.remove(`forge:gears`, `thermal:${mat}_gear`);
+    }
+  );
 };
 
 onEvent("tags.blocks", (event) => {
@@ -207,8 +136,7 @@ onEvent("tags.items", (event) => {
   removeGears(event);
   thermalTags(event);
   event.add("forge:stone", "quark:deepslate");
-  event.add(
-    "valhelsia_structures:axe_crafting_blacklisted",
-    "#natural-progression:saw"
-  );
+  event.add("valhelsia_structures:axe_crafting_blacklisted", "#natural-progression:saw");
+  event.add("forge:dusts/ender", "betterendforge:ender_dust");
+  event.add("forge:dusts/ender", "appliedenergistics2:ender_dust");
 });
