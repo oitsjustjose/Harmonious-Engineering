@@ -1,2 +1,0 @@
-Helper file showing all available BiomeDictionary biome tags.
-
