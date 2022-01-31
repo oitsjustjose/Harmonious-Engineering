@@ -1,65 +1,65 @@
 /* Handles turning cinnabar into redstone in the many ways */
-const ieCrusher = (event) => {
+const ieCrusher = event => {
   event.custom({
-    type: "immersiveengineering:crusher",
+    type: 'immersiveengineering:crusher',
     secondaries: [
       {
         chance: 0.6,
         output: {
-          item: "minecraft:redstone",
+          item: 'minecraft:redstone',
         },
       },
     ],
     result: {
       count: 4,
       base_ingredient: {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
       },
     },
     input: {
-      tag: "forge:gems/cinnabar",
+      tag: 'forge:gems/cinnabar',
     },
     energy: 9000,
   });
 
   event.custom({
-    type: "immersiveengineering:crusher",
+    type: 'immersiveengineering:crusher',
     secondaries: [
       {
         chance: 0.6,
         output: {
-          item: "minecraft:redstone",
+          item: 'minecraft:redstone',
         },
       },
     ],
     result: {
       count: 6,
       base_ingredient: {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
       },
     },
     input: {
-      tag: "forge:ores/cinnabar",
+      tag: 'forge:ores/cinnabar',
     },
     energy: 12000,
   });
 };
 
-const mill = (event) => {
+const mill = event => {
   event.custom({
-    type: "create:milling",
+    type: 'create:milling',
     ingredients: [
       {
-        tag: "forge:gems/cinnabar",
+        tag: 'forge:gems/cinnabar',
       },
     ],
     results: [
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 1,
       },
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 1,
         chance: 0.5,
       },
@@ -68,30 +68,30 @@ const mill = (event) => {
     conditions: [
       {
         value: {
-          tag: "forge:gems/cinnabar",
-          type: "forge:tag_empty",
+          tag: 'forge:gems/cinnabar',
+          type: 'forge:tag_empty',
         },
-        type: "forge:not",
+        type: 'forge:not',
       },
     ],
   });
 };
 
-const crushingWheel = (event) => {
+const crushingWheel = event => {
   event.custom({
-    type: "create:crushing",
+    type: 'create:crushing',
     ingredients: [
       {
-        tag: "forge:ores/cinnabar",
+        tag: 'forge:ores/cinnabar',
       },
     ],
     results: [
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 8,
       },
       {
-        item: "minecraft:cobblestone",
+        item: 'minecraft:cobblestone',
         chance: 0.3,
       },
     ],
@@ -99,28 +99,28 @@ const crushingWheel = (event) => {
     conditions: [
       {
         value: {
-          tag: "forge:ores/cinnabar",
-          type: "forge:tag_empty",
+          tag: 'forge:ores/cinnabar',
+          type: 'forge:tag_empty',
         },
-        type: "forge:not",
+        type: 'forge:not',
       },
     ],
   });
 
   event.custom({
-    type: "create:crushing",
+    type: 'create:crushing',
     ingredients: [
       {
-        tag: "forge:gems/cinnabar",
+        tag: 'forge:gems/cinnabar',
       },
     ],
     results: [
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 5,
       },
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 1,
         chance: 0.3,
       },
@@ -129,68 +129,68 @@ const crushingWheel = (event) => {
     conditions: [
       {
         value: {
-          tag: "forge:gems/cinnabar",
-          type: "forge:tag_empty",
+          tag: 'forge:gems/cinnabar',
+          type: 'forge:tag_empty',
         },
-        type: "forge:not",
+        type: 'forge:not',
       },
     ],
   });
 };
 
-const enrichmentChamber = (event) => {
+const enrichmentChamber = event => {
   event.custom({
-    type: "mekanism:enriching",
+    type: 'mekanism:enriching',
     input: {
       ingredient: {
-        tag: "forge:gems/cinnabar",
+        tag: 'forge:gems/cinnabar',
       },
     },
     output: {
-      item: "minecraft:redstone",
+      item: 'minecraft:redstone',
       count: 7,
     },
   });
 };
 
-const purifier = (event) => {
+const purifier = event => {
   event.custom({
-    type: "mekanism:purifying",
+    type: 'mekanism:purifying',
     itemInput: {
       ingredient: {
-        tag: "forge:gems/cinnabar",
+        tag: 'forge:gems/cinnabar',
       },
     },
     gasInput: {
       amount: 1,
-      gas: "mekanism:oxygen",
+      gas: 'mekanism:oxygen',
     },
     output: {
-      item: "minecraft:redstone",
+      item: 'minecraft:redstone',
       count: 11,
     },
   });
 };
 
-const pulverizer = (event) => {
-  event.remove({ id: "thermal:machine/pulverizer/pulverizer_cinnabar" });
+const pulverizer = event => {
+  event.remove({id: 'thermal:machine/pulverizer/pulverizer_cinnabar'});
   event.custom({
-    type: "thermal:pulverizer",
+    type: 'thermal:pulverizer',
     ingredient: {
-      tag: "forge:ores/cinnabar",
+      tag: 'forge:ores/cinnabar',
     },
     result: [
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 8,
       },
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 3,
         chance: 0.85,
       },
       {
-        item: "minecraft:gravel",
+        item: 'minecraft:gravel',
         chance: 0.2,
       },
     ],
@@ -198,17 +198,17 @@ const pulverizer = (event) => {
   });
 
   event.custom({
-    type: "thermal:pulverizer",
+    type: 'thermal:pulverizer',
     ingredient: {
-      tag: "forge:gems/cinnabar",
+      tag: 'forge:gems/cinnabar',
     },
     result: [
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 6,
       },
       {
-        item: "minecraft:redstone",
+        item: 'minecraft:redstone',
         count: 2,
         chance: 0.65,
       },
@@ -217,7 +217,7 @@ const pulverizer = (event) => {
   });
 };
 
-onEvent("recipes", (event) => {
+onEvent('recipes', event => {
   crushingWheel(event);
   enrichmentChamber(event);
   ieCrusher(event);

@@ -1,48 +1,40 @@
-onEvent("recipes", (event) => {
-  event.remove({ output: "doomangelring:itemdoomangelring" });
+onEvent('recipes', event => {
+  event.remove({output: 'doomangelring:itemdoomangelring'});
 
   event.custom({
-    type: "create:mechanical_crafting",
-    pattern: [
-      "FFBBBFF",
-      "FBNRNBF",
-      "BHSGSHB",
-      "BLT TLB",
-      "BHSGSHB",
-      " BNRNB ",
-      "  BBB  ",
-    ],
+    type: 'create:mechanical_crafting',
+    pattern: ['FFBBBFF', 'FBNRNBF', 'BHSGSHB', 'BLT TLB', 'BHSGSHB', ' BNRNB ', '  BBB  '],
     key: {
       B: {
-        item: "create:brass_ingot",
+        item: 'create:brass_ingot',
       },
       S: {
-        item: "minecraft:nether_star",
+        item: 'minecraft:nether_star',
       },
       G: {
-        item: "tconstruct:hepatizon_ingot",
+        item: 'tconstruct:hepatizon_ingot',
       },
       R: {
-        item: "create:refined_radiance",
+        item: 'create:refined_radiance',
       },
       L: {
-        item: "alexsmobs:void_worm_eye",
+        item: 'alexsmobs:void_worm_eye',
       },
       H: {
-        item: "buzzier_bees:bee_bottle",
+        item: 'buzzier_bees:bee_bottle',
       },
       N: {
-        item: "minecraft:netherite_block",
+        item: 'minecraft:netherite_block',
       },
       T: {
-        item: "alexsmobs:tarantula_hawk_wing",
+        item: 'alexsmobs:tarantula_hawk_wing',
       },
       F: {
-        item: "minecraft:feather",
+        item: 'minecraft:feather',
       },
     },
     result: {
-      item: "doomangelring:itemdoomangelring",
+      item: 'doomangelring:itemdoomangelring',
       count: 1,
     },
   });
