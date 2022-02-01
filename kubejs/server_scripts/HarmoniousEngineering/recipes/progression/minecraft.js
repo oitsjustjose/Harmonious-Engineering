@@ -10,4 +10,7 @@ onEvent('recipes', event => {
     B: 'immersiveengineering:rockcutter',
     S: '#forge:stone',
   });
+
+  event.remove({output: 'minecraft:furnace'});
+  event.shaped('1x minecraft:furnace', ['CCC', 'C C', 'CCC'], {C: '#forge:cobblestone'});
 });
