@@ -1589,8 +1589,8 @@
 				# plateau, modified, ocean, river, water, mesa, forest,
 				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 				# beach, void, overworld, nether, end]
-				"Biome Types" = ["ocean", "beach", "nether", "end"]
-				"Is Blacklist" = true
+				"Biome Types" = ["overworld"]
+				"Is Blacklist" = false
 
 			[world.big_dungeon.biome_config.biomes]
 				Biomes = []
