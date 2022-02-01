@@ -314,19 +314,6 @@
 									}
 								}
 							}
-							refinedstorage: {
-								id: "refinedstorage:wrench"
-								Count: 1b
-								tag: {
-									"morphtool:is_morphing": 1b
-									"morphtool:displayName": {
-										text: "Wrench"
-									}
-									display: {
-										Name: "{\"translate\":\"morphtool.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Wrench\"}]}"
-									}
-								}
-							}
 							appliedenergistics2: {
 								id: "appliedenergistics2:certus_quartz_wrench"
 								Count: 1b

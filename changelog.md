@@ -1,3 +1,54 @@
+# 1.4.0
+
+# REFINED STORAGE WILL BE REMOVED IN 1.5.0
+
+This has been a pack architectural design change that I didn't really have the foresight to plan for, but right now it's "deprecated" in this pack. What that means is that if you download this version, **your Refined Storage network will continue to work**. While it's working, get your stuff out and take a look at AE2 - you'll see that all Refined Storage items can be shapelessly crafting into their AE2 Equivalent, so you will be able to migrate freely and at your own leasure.
+
+## Added
+
+### Mods
+
+- Inventory Tweaks
+- Starlight
+
+## Updated
+
+### Mods
+
+- Supplementaries
+- Mantle / TConstruct
+- SteamPowered
+- OAuth
+- KubeJS
+- CreateAddition
+
+### Other
+
+- Custom-made textures for Ender Chests and Ender Tanks
+- Custom recipes for Storage Overhaul to upgrade chests to the next tier
+- Custom recipes for WormHole mod
+- New and Revamped Quest Lines for a few of your favorite mods!
+
+## Fixed
+
+- Quark's Big Dungeons generating in non-overworld biomes
+- Ender Dragon dropping Draconium Dust
+- Ender Pearl Dust crafting incompatibilities / issues
+- Towers of the Wild:
+  - Generating with loot that they shouldn't (iron/gold ingots)
+  - Generating too frequently
+
+## Changed
+
+- Refined Storage and all addons are now deprecated (see big note above)
+- Passive entities will no longer seek cover / higher ground at night
+
+## Removed
+
+- Unused configuration files
+- Inventory Sorter - has issues with Refined Storage even if deprecated
+- Passable Foliage - in a quest, I recommend building an Ender Ender. I noticed that most people use Leaves, so this felt like an unfair mod to keep.
+
 # 1.2.0
 
 ## Added
