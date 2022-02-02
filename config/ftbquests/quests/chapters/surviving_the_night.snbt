@@ -453,14 +453,14 @@
 				dimension: "minecraft:overworld"
 				ignore_dimension: true
 				position: [I;
-					0
+					-1073741823
 					50
-					0
+					-1073741823
 				]
 				size: [I;
-					1569325055
+					2147483647
 					1
-					1569325055
+					2147483647
 				]
 			}]
 			rewards: [

@@ -222,19 +222,6 @@
 									}
 								}
 							}
-							immersiveengineering: {
-								id: "immersiveengineering:screwdriver"
-								Count: 1b
-								tag: {
-									"morphtool:is_morphing": 1b
-									"morphtool:displayName": {
-										text: "Engineer's Screwdriver"
-									}
-									display: {
-										Name: "{\"translate\":\"morphtool.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Engineer's Screwdriver\"}]}"
-									}
-								}
-							}
 							mekanism: {
 								id: "mekanism:configurator"
 								Count: 1b
@@ -245,6 +232,19 @@
 									}
 									display: {
 										Name: "{\"translate\":\"morphtool.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Configurator\"}]}"
+									}
+								}
+							}
+							immersiveengineering: {
+								id: "immersiveengineering:screwdriver"
+								Count: 1b
+								tag: {
+									"morphtool:is_morphing": 1b
+									"morphtool:displayName": {
+										text: "Engineer's Screwdriver"
+									}
+									display: {
+										Name: "{\"translate\":\"morphtool.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Engineer's Screwdriver\"}]}"
 									}
 								}
 							}

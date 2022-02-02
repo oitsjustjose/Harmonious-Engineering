@@ -7,6 +7,7 @@ onEvent('recipes', event => {
   event.remove({output: 'ae2wtlib:infinity_booster_card'});
   event.remove({output: 'aeinfinitybooster:infinity_card'});
   event.remove({output: 'aeinfinitybooster:dimension_card'});
+  event.remove({output: 'appliedenergistics2:energy_acceptor'});
 
   event.shaped('1x aeinfinitybooster:infinity_card', ['SWS', 'WNW', 'III'], {
     W: 'appliedenergistics2:wireless_booster',
@@ -24,9 +25,17 @@ onEvent('recipes', event => {
   global.genCombinedRecipe(
     event,
     Ingredient.of('storagenetwork:master'),
+    Ingredient.of('#forge:gems/fluix'),
+    Item.of('appliedenergistics2:energy_acceptor')
+  );
+
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('appliedenergistics2:energy_acceptor'),
     Ingredient.of('appliedenergistics2:engineering_processor'),
     Item.of('appliedenergistics2:controller')
   );
+
   global.genCombinedRecipe(
     event,
     Ingredient.of('#harmeng:presses'),

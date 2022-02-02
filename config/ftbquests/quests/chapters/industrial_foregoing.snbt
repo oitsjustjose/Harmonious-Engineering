@@ -274,29 +274,36 @@
 			}]
 		}
 		{
+			title: "Full of Meat!"
 			x: 5.5d
 			y: -4.5d
 			shape: "rsquare"
-			description: ["Liquid Meat is great in the Meat Feeder, as it keeps you from having to keep up with feeding yourself and rather just converting whatever mobs you kill into Meat!"]
+			subtitle: "Arby's would like to know your location."
+			description: [
+				"Liquid Meat is a great way to keep yourself from having to constantly feed yourself, especially when combined with a Meat Feeder. Use these buckets (and your quest reward) to fill yourself up on meat constantly!"
+				""
+			]
 			hide_dependency_lines: true
 			dependencies: ["6D0044D41BEB1891"]
 			optional: true
 			id: "0B156792D832C3D1"
 			tasks: [{
-				id: "4EB05F459B8C993F"
-				type: "fluid"
-				title: "Over 9000 (Meat ??)"
-				fluid: "industrialforegoing:meat_fluid"
-				amount: 9001L
+				id: "3E2B224AD3A75DAD"
+				type: "item"
+				item: "industrialforegoing:meat_bucket"
+				count: 8L
 			}]
 			rewards: [{
-				id: "14F00E90634651A9"
+				id: "75490371D2EC725B"
 				type: "item"
 				item: {
-					id: "draconicevolution:mob_soul"
+					id: "thermal:fluid_reservoir"
 					Count: 1b
 					tag: {
-						EntityName: "minecraft:cow"
+						Fluid: {
+							FluidName: "industrialforegoing:meat"
+							Amount: 16000
+						}
 					}
 				}
 			}]
@@ -398,25 +405,26 @@
 			optional: true
 			id: "5E99DD0BB94677B5"
 			tasks: [{
-				id: "679399F1899D8021"
-				type: "fluid"
-				title: "Ether Gas"
-				fluid: "industrialforegoing:ether_gas_fluid"
-				amount: 100L
-			}]
-			rewards: [{
-				id: "286A12CC9C727AAB"
+				id: "33AEF898677C01F5"
 				type: "item"
-				item: {
-					id: "industrialforegoing:efficiency_addon_2"
-					Count: 1b
-					tag: {
-						TitaniumAugment: {
-							Efficiency: 0.8f
-						}
-					}
-				}
+				item: "industrialforegoing:ether_gas_bucket"
 			}]
+			rewards: [
+				{
+					id: "42981A3941D34A78"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 3
+					random_bonus: 9
+				}
+				{
+					id: "395B2DD1B18C3901"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4
+					random_bonus: 12
+				}
+			]
 		}
 		{
 			title: "Automated Husbandry"
