@@ -136,16 +136,15 @@
 		{
 			title: "Applying your.. Energistics?"
 			x: -3.0d
-			y: -1.5d
+			y: -0.75d
 			shape: "octagon"
 			description: [
 				"This pack has Refined Storage, but it has been made unreachable to you by all means other than Creative Mode."
 				""
-				"If you already had an RS system, you can convert all components to AE2 by shapeless crafting them."
-				""
 				"Anyways, most of AE2 is untouched so have fun!"
 			]
 			dependencies: ["46DDBC5F6C66BD6A"]
+			size: 1.5d
 			id: "7F3A8792FED32768"
 			tasks: [{
 				id: "10A002253D5A7A5E"
@@ -237,6 +236,65 @@
 				type: "item"
 				item: "industrialforegoing:fluid_transporter_type"
 				count: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: -10.0d
+			description: ["Ok show-off. If you need this much stuff in your inventory I get it, but wow that's a lot of storage!!"]
+			dependencies: ["568810B360CC78F0"]
+			id: "09DA52EA46B053D1"
+			tasks: [{
+				id: "729B25358501E3AC"
+				type: "item"
+				item: "dankstorage:dank_4"
+			}]
+			rewards: [{
+				id: "45E3D0F48ED19FAD"
+				type: "xp"
+				xp: 200
+			}]
+		}
+		{
+			x: -6.5d
+			y: -10.0d
+			description: ["If you aren't familiar with Dank Storage, it's a great way to store bulk items in your inventory and void excess bulk. These are great to make before you go mining, so I strongly suggest nabbing this low-tier version to keep your inventory tidy!"]
+			dependencies: ["69FF3D884B1E8649"]
+			id: "0DCC81AEAEF4EA61"
+			tasks: [{
+				id: "6958D2A0358DB688"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_3"
+					Count: 1b
+					tag: {
+						inv: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "5CB923F8DFE32BF3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: -10.0d
+			shape: "octagon"
+			description: ["You're a completionist, aren't you? Well, welcome - I made this quest for a reason. Enjoy this thing - it can hold so much that you don't even need your storage drawer wall anymore."]
+			dependencies: ["5E99DD0BB94677B5"]
+			size: 1.25d
+			id: "748C16065DA59A48"
+			tasks: [{
+				id: "199F161AF0AC5102"
+				type: "item"
+				item: "dankstorage:dank_7"
+			}]
+			rewards: [{
+				id: "2D48016D4E793FCC"
+				type: "item"
+				item: "dankstorage:dock"
 			}]
 		}
 	]

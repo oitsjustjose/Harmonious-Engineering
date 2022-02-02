@@ -38,33 +38,20 @@ const harmoniousEngineeringTags = event => {
   event.add('harmeng:saw_blade', 'thermal:saw_blade');
   event.add('harmeng:saw_blade', '#forge:sawblades');
 
-  event.add('harmeng:meka/filler_1', 'powah:crystal_blazing');
-  event.add('harmeng:meka/filler_1', 'industrialforegoing:pink_slime_ingot');
-  event.add('harmeng:meka/filler_1', '#forge:ingots/enderium');
-  event.add('harmeng:meka/filler_1', '#forge:ingots/refined_obsidian');
+  event.add('harmeng:meka/mid_tier_mat', 'powah:crystal_blazing');
+  event.add('harmeng:meka/mid_tier_mat', 'industrialforegoing:pink_slime_ingot');
+  event.add('harmeng:meka/mid_tier_mat', '#forge:ingots/enderium');
+  event.add('harmeng:meka/mid_tier_mat', '#forge:ingots/refined_obsidian');
 
-  event.add('harmeng:meka/filler_2', 'powah:capacitor_blazing');
-  event.add('harmeng:meka/filler_2', 'industrialforegoing:range_addon11');
-  event.add('harmeng:meka/filler_2', 'thermal:upgrade_augment_2');
-  event.add('harmeng:meka/filler_2', '#forge:batteries');
-
-  event.add('harmeng:meka/crafting_tool_1', 'minecraft:netherite_pickaxe');
-  event.add('harmeng:meka/crafting_tool_1', 'mekanismtools:refined_obsidian_pickaxe');
-
-  event.add('harmeng:meka/crafting_tool_2', 'minecraft:netherite_axe');
-  event.add('harmeng:meka/crafting_tool_2', 'mekanismtools:refined_obsidian_axe');
-
-  event.add('harmeng:meka/crafting_helm', 'minecraft:netherite_helmet');
-  event.add('harmeng:meka/crafting_helm', 'mekanismtools:refined_obsidian_helmet');
-
-  event.add('harmeng:meka/crafting_chest', 'minecraft:netherite_chestplate');
-  event.add('harmeng:meka/crafting_chest', 'mekanismtools:refined_obsidian_chestplate');
-
-  event.add('harmeng:meka/crafting_legs', 'minecraft:netherite_leggings');
-  event.add('harmeng:meka/crafting_legs', 'mekanismtools:refined_obsidian_leggings');
-
-  event.add('harmeng:meka/crafting_boots', 'minecraft:netherite_boots');
-  event.add('harmeng:meka/crafting_boots', 'mekanismtools:refined_obsidian_boots');
+  event.add('harmeng:drawer_like', '#storagedrawers:drawers');
+  event.add('harmeng:drawer_like', 'storage_overhaul:oak_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:spruce_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:birch_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:acacia_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:jungle_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:dark_oak_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:crimson_storage_barrel');
+  event.add('harmeng:drawer_like', 'storage_overhaul:warped_storage_barrel');
 };
 
 const naturalProgressionTags = event => {
@@ -94,6 +81,9 @@ const naturalProgressionTags = event => {
   event.add('natural-progression:axes', 'mekanismtools:refined_glowstone_paxel');
   event.add('natural-progression:axes', 'appliedenergistics2:certus_quartz_axe');
   event.add('natural-progression:axes', 'appliedenergistics2:nether_quartz_axe');
+
+  event.add('natural-progression:override_axes', 'industrialforegoing:infinity_drill');
+  event.add('natural-progression:override_axes', 'industrialforegoing:infinity_saw');
 };
 
 const thermalTags = event => {
