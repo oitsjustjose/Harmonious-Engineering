@@ -10,6 +10,22 @@ onEvent('recipes', event => {
   event.remove({id: 'create:crafting/kinetics/white_sail'});
   event.remove({id: 'create:cutting/andesite_alloy'});
 
+  event.remove({id: 'create:mixing/chromatic_compound'});
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+      {tag: 'forge:dusts/glowstone'},
+      {tag: 'forge:dusts/glowstone'},
+      {tag: 'forge:dusts/glowstone'},
+      {tag: 'forge:dusts/obsidian'},
+      {tag: 'forge:dusts/obsidian'},
+      {tag: 'forge:dusts/obsidian'},
+      {item: 'create:polished_rose_quartz'},
+    ],
+    results: [{item: 'create:chromatic_compound'}],
+    heatRequirement: 'superheated',
+  });
+
   event.shaped('18x create:shaft', ['R', 'R'], {R: '#forge:rods/steel'});
   event.shaped('1x create:hand_crank', [' C ', 'PPP', '  A'], {
     P: '#minecraft:planks',
