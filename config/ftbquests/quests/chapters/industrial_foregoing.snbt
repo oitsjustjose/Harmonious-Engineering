@@ -323,15 +323,10 @@
 				title: "Stretch Goals"
 			}]
 			rewards: [{
-				id: "0481DADAC89C7423"
+				id: "7576076FC57E1E60"
 				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "industrialforegoing:industrial_foregoing"
-					}
-				}
+				item: "industrialforegoing:machine_frame_pity"
+				random_bonus: 2
 			}]
 		}
 		{
@@ -350,13 +345,6 @@
 				id: "5E6E3F404315E800"
 				type: "item"
 				item: "industrialforegoing:enchantment_extractor"
-			}]
-			rewards: [{
-				id: "04B76DBBD3EC7AB9"
-				type: "item"
-				item: "minecraft:book"
-				count: 16
-				random_bonus: 32
 			}]
 		}
 		{
@@ -382,18 +370,9 @@
 				}
 			]
 			rewards: [{
-				id: "44DA8D7144B25AB3"
+				id: "12EB31E8159B0DA8"
 				type: "item"
-				item: {
-					id: "industrialforegoing:speed_addon_1"
-					Count: 1b
-					tag: {
-						TitaniumAugment: {
-							Speed: 2.0f
-						}
-					}
-				}
-				random_bonus: 3
+				item: "enderstorage:ender_chest"
 			}]
 		}
 		{
@@ -409,22 +388,6 @@
 				type: "item"
 				item: "industrialforegoing:ether_gas_bucket"
 			}]
-			rewards: [
-				{
-					id: "42981A3941D34A78"
-					type: "item"
-					item: "minecraft:wither_skeleton_skull"
-					count: 3
-					random_bonus: 9
-				}
-				{
-					id: "395B2DD1B18C3901"
-					type: "item"
-					item: "minecraft:soul_sand"
-					count: 4
-					random_bonus: 12
-				}
-			]
 		}
 		{
 			title: "Automated Husbandry"
@@ -458,26 +421,12 @@
 					item: "industrialforegoing:animal_feeder"
 				}
 			]
-			rewards: [{
-				id: "225848355AED5F7D"
-				type: "item"
-				item: {
-					id: "industrialforegoing:range_addon3"
-					Count: 1b
-					tag: {
-						TitaniumAugment: {
-							Range: 3.0f
-						}
-					}
-				}
-				random_bonus: 2
-			}]
 		}
 		{
 			x: 11.5d
 			y: -3.0d
 			shape: "rsquare"
-			description: ["Mechanical Dirt runs off of Liquid Meat to spawn hostile mobs. This is GREAT for mob farms that you may decide to build, but to avoid lag and a huge mess, my suggestion is to build this mob farm up in a Compact Dimension using the reward from this quest :)"]
+			description: ["Mechanical Dirt runs off of Liquid Meat to spawn hostile mobs. This is GREAT for mob farms that you may decide to build, but to avoid lag and a huge mess, my suggestion is to build this mob farm up in a Compact Machine."]
 			dependencies: ["1FC26941C33948E8"]
 			optional: true
 			id: "1D655B1043B8D5F2"
@@ -485,11 +434,6 @@
 				id: "745EF6F4BA565E74"
 				type: "item"
 				item: "industrialforegoing:mechanical_dirt"
-			}]
-			rewards: [{
-				id: "101144FF85A389C0"
-				type: "item"
-				item: "compactmachines:machine_normal"
 			}]
 		}
 		{
@@ -505,18 +449,6 @@
 				type: "item"
 				item: "industrialforegoing:material_stonework_factory"
 			}]
-			rewards: [
-				{
-					id: "5761213E052D69CC"
-					type: "item"
-					item: "framedcompactdrawers:framed_full_four"
-				}
-				{
-					id: "0F8B0005DBFEE95E"
-					type: "item"
-					item: "storagedrawers:gold_storage_upgrade"
-				}
-			]
 		}
 		{
 			x: 11.5d
@@ -540,13 +472,6 @@
 					item: "industrialforegoing:mob_crusher"
 				}
 			]
-			rewards: [{
-				id: "41AD90360B072D7F"
-				type: "item"
-				item: "thermal:enderium_coin"
-				count: 3
-				random_bonus: 3
-			}]
 		}
 	]
 }

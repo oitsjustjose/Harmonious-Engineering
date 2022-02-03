@@ -5,6 +5,7 @@
 	filename: "in_the_toolbelt"
 	title: "In the Toolbelt"
 	icon: "toolbelt:belt"
+	subtitle: ["Helpful tips about this pack from one Crafter to another."]
 	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
@@ -368,7 +369,7 @@
 		{
 			title: "Reload Audio"
 			icon: "supplementaries:speaker_block"
-			x: 0.0d
+			x: -2.0d
 			y: 2.0d
 			shape: "rsquare"
 			description: ["Reload Audio Driver (RAD) prevents you from having to restart the game if you sound stops working. Just hit F3+R to reload the sound engine and fix any issues!"]
@@ -378,22 +379,10 @@
 				id: "018A2950A1073B48"
 				type: "checkmark"
 			}]
-			rewards: [
-				{
-					id: "0C11E1C9209E25D0"
-					type: "item"
-					item: "minecraft:jukebox"
-				}
-				{
-					id: "623B8CF45CEA0332"
-					type: "item"
-					item: "quark:music_disc_fire"
-				}
-			]
 		}
 		{
-			x: -2.0d
-			y: 1.0d
+			x: 0.0d
+			y: 2.0d
 			description: ["The scanner is great for finding specific mobs, blocks, ores and more in an area. It's pretty expensive because of how powerful it is, but it's worthwhile in the longterm!"]
 			id: "2EF23CBBBDF37F40"
 			tasks: [{
@@ -406,6 +395,22 @@
 				type: "item"
 				item: "scannable:module_blank"
 				random_bonus: 1
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"Something that isn't easily documented in this pack, or shown via a nice little button, is the ability to fine-tune each sound via Dynamic Surroundings."
+				""
+				"To do so, you'll need to go to Game Menu -> Options -> Controls, then search \"Individual\" in the box. There should only be one result - bind that to any key at all then press that key to individually customize and cull various game sounds!"
+			]
+			optional: true
+			id: "18956C444E5B81FE"
+			tasks: [{
+				id: "597A14B085ECB78C"
+				type: "checkmark"
+				title: "Tweaking Volumes"
 			}]
 		}
 	]
