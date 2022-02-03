@@ -1,0 +1,11 @@
+
+#General settings
+[general]
+	#Block to put underneath a bed so that it qualifies as a teleporter bed
+	specialBedBlock = "mekanism:teleporter_frame"
+
+#General settings
+[profiles]
+	selectedProfile = ""
+	selectedCustomJson = ""
+

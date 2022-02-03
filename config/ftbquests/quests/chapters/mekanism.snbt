@@ -343,8 +343,8 @@
 			}]
 		}
 		{
-			title: "Refined Obsidian Tools \\& Armor"
-			x: 1.0d
+			title: "Refined Obsidian"
+			x: -1.0d
 			y: -5.5d
 			shape: "rsquare"
 			description: ["Refined Obsidian Armor and Tools are REALLY incredible. If you're still looking for a good sword, the Refined Obsidian Sword does tons of base damage."]
@@ -390,6 +390,38 @@
 				item: "emendatusenigmatica:cobalt_ingot"
 				count: 2
 				random_bonus: 2
+			}]
+		}
+		{
+			title: "The Lost Cities"
+			x: 1.0d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"Using the power of Mekanism's Teleporters, you've found a way to control your dreams such that you can dream of some distant, lost city."
+				""
+				"To get to this city, you'll need to surround your bed with any type of Vanilla Skull (Skeleton, Zombie, Creeper, or Wither Skeleton). Below the bed goes two Mekanism Teleporter Frames."
+				""
+				"You'll need to bring a duplicate set of these items with you to the Lost Cities or else you won't have a way to get back. Once you visit it is strongly suggested to utilize Wormhole Portals to traverse this dreamland more easily."
+				"{image:kubejs:textures/gui/lost_cities.png width:100 height:100 align:1 fit:true}"
+			]
+			dependencies: ["627760518BB619C0"]
+			optional: true
+			id: "35F57AB1A5B733CA"
+			tasks: [{
+				id: "5DB9CD3EA7B50CA0"
+				type: "dimension"
+				icon: "minecraft:bricks"
+				dimension: "lostcities:lostcity"
+			}]
+			rewards: [{
+				id: "44CEC5AEBB756897"
+				type: "item"
+				item: {
+					id: "wormhole:target_device"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]
