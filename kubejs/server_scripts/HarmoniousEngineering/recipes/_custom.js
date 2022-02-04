@@ -26,7 +26,6 @@ const campfire = event => {
 
 const crafting = event => {
   event.shapeless('1x minecraft:kelp', ['2x minecraft:seagrass', 'thermal:phytogro']);
-  event.remove({output: 'create:andesite_alloy'});
   global.genAlloyingRecipe(
     event,
     {tag: 'chipped:andesite'},

@@ -11,7 +11,7 @@
 		{
 			title: "Thinking with Shafts"
 			x: 0.0d
-			y: 1.875d
+			y: 0.625d
 			shape: "diamond"
 			description: [
 				"Not only are shafts your main means of moving kinetic energy from point A to B, but they're also integral crafting components for many pieces of Create."

@@ -49,7 +49,7 @@ onEvent('jei.hide.items', event => {
     'create:copper_nugget',
     'create:copper_ore',
     'create:copper_sheet',
-    'create:gold_sheet',
+    'create:golden_sheet',
     'create:iron_sheet',
     'create:lapis_sheet',
     'create:zinc_block',

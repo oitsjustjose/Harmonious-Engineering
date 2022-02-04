@@ -17,12 +17,13 @@ onEvent('recipes', event => {
   event.remove({output: 'create:copper_ingot'});
   event.remove({output: 'create:zinc_ingot'});
 
+  event.remove({output: 'create:mechanical_saw'});
   event.remove({output: 'create:hand_crank'});
-  event.remove({output: 'create:shaft'});
   event.remove({output: 'create:water_wheel'});
   event.remove({output: 'create:white_sail'});
-  // Leave the createadditions recipe behind
-  event.remove({id: 'create:crafting/kinetics/white_sail'});
+  event.remove({id: 'create:crafting/materials/andesite_alloy'});
+  event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'});
+  event.remove({id: 'create:crafting/kinetics/shaft'});
   event.remove({id: 'create:cutting/andesite_alloy'});
 
   event.remove({output: 'steampowered:alternator'});
@@ -70,6 +71,13 @@ onEvent('recipes', event => {
     Ingredient.of('immersiveengineering:windmill_sail'),
     Item.of('create:white_sail'),
     4
+  );
+
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('create:andesite_casing'),
+    Ingredient.of('#harmeng:saw_blade'),
+    Item.of('create:mechanical_saw')
   );
 
   event.custom({

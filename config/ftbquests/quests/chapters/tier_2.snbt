@@ -691,5 +691,31 @@
 				item: "tconstruct:puny_smelting"
 			}]
 		}
+		{
+			title: "Efficient Planking"
+			x: -0.5d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"Turning your Logs into Planks has no doubt become tiresome at this point. This Saw from Create uses Kinetic Energy to get it moving. You can power this with a handcrank too!!"
+				""
+				"Additionally, when placed in front of a tree, you can hand crank it to cut down an entire tree reallly quickly!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["1FF265E2816476AB"]
+			size: 1.5d
+			id: "15F655B09496B7D2"
+			tasks: [{
+				id: "7E23B8A678CAF7C1"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "060A982A5336AD8D"
+				type: "item"
+				item: "create:belt_connector"
+				random_bonus: 2
+			}]
+		}
 	]
 }
