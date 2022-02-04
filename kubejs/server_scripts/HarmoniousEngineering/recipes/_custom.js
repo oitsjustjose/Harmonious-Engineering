@@ -25,6 +25,7 @@ const campfire = event => {
 };
 
 const crafting = event => {
+  event.shapeless('1x minecraft:kelp', ['2x minecraft:seagrass', 'thermal:phytogro']);
   event.remove({output: 'create:andesite_alloy'});
   global.genAlloyingRecipe(
     event,
@@ -74,19 +75,7 @@ const crafting = event => {
     },
   });
 
-  event.custom({
-    type: 'create:sandpaper_polishing',
-    ingredients: [
-      {
-        item: 'kubejs:crude_andesite_alloy',
-      },
-    ],
-    results: [
-      {
-        item: 'create:andesite_alloy',
-      },
-    ],
-  });
+  event.smelting('create:andesite_alloy', 'kubejs:crude_andesite_alloy');
 
   event.custom({
     type: 'natural-progression:damage_tools',
