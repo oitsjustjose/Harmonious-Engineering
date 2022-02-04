@@ -1,3 +1,9 @@
+# 1.5.1
+
+## Fixed
+
+- Some Create Crafts & Additions components being uncraftable.
+
 # 1.5.0
 
 # REFINED STORAGE HAS BEEN REMOVED IN THIS UPDATE

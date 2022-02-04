@@ -35,6 +35,11 @@ onEvent('recipes', event => {
   event.remove({output: 'createaddition:gold_spool'});
   event.remove({output: 'createaddition:gold_wire'});
   event.remove({output: 'createaddition:spool'});
+  event.replaceInput(
+    {mod: 'createaddition'},
+    'createaddition:copper_spool',
+    'immersiveengineering:wirecoil_copper'
+  );
 
   event.remove({id: 'create:mixing/chromatic_compound'});
   event.custom({
