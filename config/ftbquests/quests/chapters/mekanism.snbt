@@ -394,6 +394,7 @@
 		}
 		{
 			title: "The Lost Cities"
+			icon: "minecraft:bricks"
 			x: 1.0d
 			y: -5.5d
 			shape: "hexagon"
@@ -408,12 +409,45 @@
 			dependencies: ["627760518BB619C0"]
 			optional: true
 			id: "35F57AB1A5B733CA"
-			tasks: [{
-				id: "5DB9CD3EA7B50CA0"
-				type: "dimension"
-				icon: "minecraft:bricks"
-				dimension: "lostcities:lostcity"
-			}]
+			tasks: [
+				{
+					id: "5DB9CD3EA7B50CA0"
+					type: "dimension"
+					icon: "minecraft:bricks"
+					dimension: "lostcities:lostcity"
+				}
+				{
+					id: "48127E5E5E645717"
+					type: "item"
+					title: "Any Bed"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:beds"
+						}
+					}
+				}
+				{
+					id: "69A2D54C97CA7D24"
+					type: "item"
+					item: "mekanism:teleporter_frame"
+					count: 2L
+				}
+				{
+					id: "7649B88143D06559"
+					type: "item"
+					title: "Any 6 Skulls"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:heads"
+						}
+					}
+					count: 6L
+				}
+			]
 			rewards: [{
 				id: "44CEC5AEBB756897"
 				type: "item"
