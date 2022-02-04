@@ -1,3 +1,35 @@
+# 1.5.0
+
+# REFINED STORAGE HAS BEEN REMOVED IN THIS UPDATE
+
+This was mentioned in 1.4.0. Do not update from 1.4.0 until you have migrated any Refined Storage system to Appled Energistics or Simple Storage Networks.
+
+## Added
+
+- Dank Storage, Quest Item & Modifications
+- The Lost Cities -- Only accessible via its own dimension. New quest has been added under Mekanism to explain the process of getting there.
+- Recipe for Kelp from Seagrass & Phytogro
+
+## Updated
+
+- Removed recipes for many different Create Addon items such as Alternators, Generators, etc.. as they were known for infinite energy glitches (and also I feel like Create power shouldn't be capable of generating RF/FE)
+- Made Create Crafts & Additions Connector not placeable
+- Tweaked the last few recipes for the Wormhole mod, correctly hid items that were not hidden from this mod but should have been (namely the Coal Generator).
+- Crude Andesite Alloy Texture
+- Angel Ring Texture
+- Crude Andesite Alloy is now smelted into Andesite Alloy, rather than Sanded (to correspond to texture change)
+
+## Fixed
+
+- Furnaces not being craftable with most variants of cobblestone
+- HT's TreeChop Chopped Log Block not having a localized name
+- Angel Ring not being craftable due to the use of the wrong Brass variant
+
+## Removed
+
+- Refined Storage and All Respective Addons
+- More Create Stuff; functionality of this mod was duplicate with Emendatus Enigmatica
+
 # 1.4.0
 
 # REFINED STORAGE WILL BE REMOVED IN 1.5.0
