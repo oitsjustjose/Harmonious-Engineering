@@ -226,40 +226,6 @@ const multiservoPress = event => {
     type: 'thermal:press',
     ingredients: [
       {
-        tag: 'forge:ingots/gold',
-      },
-      {
-        item: 'immersiveengineering:mold_wire',
-      },
-    ],
-    result: [
-      {
-        item: 'createaddition:gold_wire',
-        count: 2,
-      },
-    ],
-  });
-  event.custom({
-    type: 'thermal:press',
-    ingredients: [
-      {
-        tag: 'forge:ingots/iron',
-      },
-      {
-        item: 'immersiveengineering:mold_wire',
-      },
-    ],
-    result: [
-      {
-        item: 'createaddition:iron_wire',
-        count: 2,
-      },
-    ],
-  });
-  event.custom({
-    type: 'thermal:press',
-    ingredients: [
-      {
         tag: 'forge:ingots/lead',
       },
       {

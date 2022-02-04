@@ -1,4 +1,19 @@
+/* disables CreateAddition's conenctors from being placed */
+onEvent('block.right_click', event => {
+  if (event.getItem() === 'createaddition:connector') {
+    event.cancel();
+  }
+});
+
+const createDecoDecalChanges = event => {
+  global.minecraftColors.forEach(color => {
+    event.remove({output: `createdeco:${color}_decal`});
+    event.stonecutting(`createdeco:${color}_decal`, '#forge:plates/iron');
+  });
+};
+
 onEvent('recipes', event => {
+  createDecoDecalChanges(event);
   event.remove({output: 'create:copper_ingot'});
   event.remove({output: 'create:zinc_ingot'});
 
@@ -9,6 +24,17 @@ onEvent('recipes', event => {
   // Leave the createadditions recipe behind
   event.remove({id: 'create:crafting/kinetics/white_sail'});
   event.remove({id: 'create:cutting/andesite_alloy'});
+
+  event.remove({output: 'steampowered:alternator'});
+  event.remove({output: 'createaddition:alternator'});
+  event.remove({output: 'createaddition:accumulator'});
+  event.remove({output: 'createaddition:furnace_burner'});
+  event.remove({output: 'createaddition:redstone_relay'});
+  event.remove({output: 'createaddition:overcharged_casing'});
+  event.remove({output: 'createaddition:copper_spool'});
+  event.remove({output: 'createaddition:gold_spool'});
+  event.remove({output: 'createaddition:gold_wire'});
+  event.remove({output: 'createaddition:spool'});
 
   event.remove({id: 'create:mixing/chromatic_compound'});
   event.custom({
@@ -114,4 +140,40 @@ onEvent('recipes', event => {
     '#forge:plates/iron',
     '#forge:plates/cast_iron'
   );
+
+  // Crushed Cobalt Compat
+  event.custom({
+    type: 'create:crushing',
+    ingredients: [{tag: 'forge:ores/cobalt'}],
+    results: [
+      {
+        item: 'emendatusenigmatica:cobalt_crushed',
+        count: 1,
+      },
+      {
+        item: 'emendatusenigmatica:cobalt_crushed',
+        count: 2,
+        chance: 0.3,
+      },
+    ],
+    processingTime: 900,
+  });
+
+  event.custom({
+    type: 'create:splashing',
+    ingredients: [{item: 'emendatusenigmatica:cobalt_crushed'}],
+    results: [
+      {
+        item: 'emendatusenigmatica:cobalt_nugget',
+        count: 10,
+      },
+      {
+        item: 'emendatusenigmatica:cobalt_nugget',
+        count: 5,
+        chance: 0.5,
+      },
+    ],
+  });
+
+  event.smelting('emendatusenigmatica:cobalt_ingot', 'emendatusenigmatica:cobalt_crushed');
 });

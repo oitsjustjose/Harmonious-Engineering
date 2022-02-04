@@ -181,4 +181,5 @@ onEvent('tags.items', event => {
   event.add('valhelsia_structures:axe_crafting_blacklisted', '#natural-progression:saw');
   event.add('forge:dusts/ender', 'betterendforge:ender_dust');
   event.add('forge:dusts/ender', 'appliedenergistics2:ender_dust');
+  event.add('create:crushed_ores', 'emendatusenigmatica:cobalt_crushed');
 });
