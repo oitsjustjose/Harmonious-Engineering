@@ -1,11 +1,10 @@
 {
 	id: "23630918D82F19CF"
-	group: "2F5E9821869B4E2F"
-	order_index: 4
+	group: "6F245F11B3688A37"
+	order_index: 1
 	filename: "the_beginnings_end"
 	title: "The Beginning's End"
 	icon: "minecraft:end_portal_frame"
-	subtitle: ["Completely Optional"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

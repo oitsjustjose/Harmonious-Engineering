@@ -1,3 +1,11 @@
+# 1.5.2
+
+## Added
+
+- New SideQuest Quest Category
+  - Added Extended Create Quest-Line
+  - Consolidated many QOL/Bonuys Quests to This Category
+
 # 1.5.1
 
 ## Fixed
