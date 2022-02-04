@@ -3,8 +3,15 @@
 ## Added
 
 - New SideQuest Quest Category
+
   - Added Extended Create Quest-Line
   - Consolidated many QOL/Bonuys Quests to This Category
+
+- Custom Recipe for Create's Mechanical Saw
+
+## Fixed
+
+- Create Sequenced Assembly recipes not existing
 
 # 1.5.1
 
