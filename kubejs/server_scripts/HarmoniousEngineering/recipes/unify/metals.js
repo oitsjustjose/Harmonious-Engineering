@@ -30,14 +30,14 @@ const ingotCasts = [
 ];
 
 const nuggetCasts = [
-  {tag: 'tconstruct:casts/multi_use/ingot'},
-  {tag: 'tconstruct:casts/single_use/ingot'},
+  {tag: 'tconstruct:casts/multi_use/nugget'},
+  {tag: 'tconstruct:casts/single_use/nugget'},
 ];
 
 onEvent('recipes', event => {
   allMetals.forEach(metal => {
     const ing = `emendatusenigmatica:${metal}_ingot`;
-    const nug = `emendatusenigmatica:${metal}_nigget`;
+    const nug = `emendatusenigmatica:${metal}_nugget`;
     const ingTag = `forge:ingots/${metal}`;
     const nugTag = `forge:nuggets/${metal}`;
     event.remove({type: 'tconstruct:casting_table', output: `#${ingTag}`});
