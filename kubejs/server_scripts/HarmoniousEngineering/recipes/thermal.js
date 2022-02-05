@@ -1,7 +1,6 @@
 onEvent('recipes', event => {
   event.remove({output: 'thermal:rf_coil'});
   event.remove({output: 'thermal:machine_frame'});
-  event.remove({output: 'thermal:saw_blade'});
   event.remove({output: 'thermal:latex_bucket'});
   event.remove({output: 'thermal:rubber'});
   event.remove({id: 'thermal:devices/tree_extractor/tree_extractor_jungle'});
@@ -21,10 +20,8 @@ onEvent('recipes', event => {
     T: '#forge:gears/tin',
   });
 
-  event.shaped('1x thermal:saw_blade', ['SS ', 'SCS', ' SS'], {
-    S: '#forge:ingots/steel',
-    C: '#forge:ingots/copper',
-  });
+  event.replaceInput({output: 'thermal:saw_blade'}, 'minecraft:iron_ingot', '#forge:ingots/steel');
+  event.replaceInput({output: 'thermal:drill_head'}, 'minecraft:iron_ingot', '#forge:ingots/steel');
 
   event.custom({
     type: 'thermal:tree_extractor',
