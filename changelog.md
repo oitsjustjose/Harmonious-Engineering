@@ -8,6 +8,7 @@
   - Consolidated many QOL/Bonuys Quests to This Category
 
 - Custom Recipe for Create's Mechanical Saw
+- Tooltip to warn users that Lumbering cannot go onto Tetra Tools.
 
 ## Fixed
 
