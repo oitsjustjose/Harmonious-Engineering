@@ -7,4 +7,9 @@ onEvent('item.tooltip', event => {
     '§7Forcing something so hydrophobic to fuse with water might rip the fabric of space-time...§r',
   ]);
   event.add('createaddition:connector', ['§cPlacement Disabled by Modpack Creator§r']);
+  event.addAdvanced('minecraft:enchanted_book', (item, advanced, text) => {
+    if (item.toString().includes(".enchant('vtweaks:lumbering', 1)")) {
+      text.add(Text.of('§cCannot be applied to Tetra Tools§r'));
+    }
+  });
 });
