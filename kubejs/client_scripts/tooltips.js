@@ -12,4 +12,6 @@ onEvent('item.tooltip', event => {
       text.add(Text.of('§cCannot be applied to Tetra Tools§r'));
     }
   });
+
+  event.add('immersiveengineering:transformer', ['§7Robots in disguise§r']);
 });
