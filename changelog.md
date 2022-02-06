@@ -1,3 +1,16 @@
+# 1.5.3
+
+## Changed
+
+- Thermal drill head now uses Steel.
+- Crude Andesite Alloy uses clay balls instead of blocks
+- Horses now drop more leather (3-7 instead of 0-2)
+
+## Fixed
+
+- Stoneholms being too frequent
+- Andesite Alloy's easier original recipes sneaking through int he Mixer & Thermal Induction Smelter
+
 # 1.5.2
 
 ## Added

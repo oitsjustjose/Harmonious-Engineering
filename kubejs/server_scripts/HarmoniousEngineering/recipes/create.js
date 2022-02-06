@@ -23,6 +23,9 @@ onEvent('recipes', event => {
   event.remove({output: 'create:white_sail'});
   event.remove({id: 'create:crafting/materials/andesite_alloy'});
   event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'});
+  event.remove({id: 'create:mixing/andesite_alloy'});
+  event.remove({id: 'create:mixing/andesite_alloy_from_zinc'});
+  event.remove({id: 'thermal:compat/create/smelter_create_alloy_andesite_alloy'});
   event.remove({id: 'create:crafting/kinetics/shaft'});
   event.remove({id: 'create:cutting/andesite_alloy'});
 

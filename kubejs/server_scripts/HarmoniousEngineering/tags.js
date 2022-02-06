@@ -52,6 +52,9 @@ const harmoniousEngineeringTags = event => {
   event.add('harmeng:drawer_like', 'storage_overhaul:dark_oak_storage_barrel');
   event.add('harmeng:drawer_like', 'storage_overhaul:crimson_storage_barrel');
   event.add('harmeng:drawer_like', 'storage_overhaul:warped_storage_barrel');
+
+  event.add('harmeng:zinc_or_iron_chunk', 'emendatusenigmatica:zinc_chunk');
+  event.add('harmeng:zinc_or_iron_chunk', 'emendatusenigmatica:iron_chunk');
 };
 
 const naturalProgressionTags = event => {

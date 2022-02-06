@@ -37,36 +37,11 @@ const crafting = event => {
   event.custom({
     type: 'natural-progression:damage_tools',
     ingredients: [
-      {item: 'minecraft:clay'},
+      {item: 'minecraft:clay_ball'},
       {tag: 'forge:pebbles'},
       {tag: 'forge:pebbles'},
-      {item: 'emendatusenigmatica:zinc_chunk'},
+      {tag: 'harmeng:zinc_or_iron_chunk'},
       {tag: 'natural-progression:saw'},
-    ],
-    result: {
-      item: 'kubejs:crude_andesite_alloy',
-      count: 1,
-    },
-  });
-
-  event.custom({
-    type: 'natural-progression:damage_tools',
-    ingredients: [
-      {
-        item: 'minecraft:clay',
-      },
-      {
-        tag: 'forge:pebbles',
-      },
-      {
-        tag: 'forge:pebbles',
-      },
-      {
-        item: 'emendatusenigmatica:iron_chunk',
-      },
-      {
-        tag: 'natural-progression:saw',
-      },
     ],
     result: {
       item: 'kubejs:crude_andesite_alloy',

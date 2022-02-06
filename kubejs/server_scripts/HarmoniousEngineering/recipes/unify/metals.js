@@ -8,10 +8,8 @@ const allMetals = [
   'copper',
   'electrum',
   'enderium',
-  'gold',
   'invar',
   'iridium',
-  'iron',
   'lead',
   'lumium',
   'nickel',
@@ -42,6 +40,9 @@ onEvent('recipes', event => {
     const nugTag = `forge:nuggets/${metal}`;
     event.remove({type: 'tconstruct:casting_table', output: `#${ingTag}`});
     event.remove({type: 'tconstruct:casting_table', output: `#${nugTag}`});
+
+    console.log(`Removed Tinkers Recipe for ${ingTag}`);
+    console.log(`Removed Tinkers Recipe for ${nugTag}`);
 
     ingotCasts.forEach(cast => {
       event.custom({
