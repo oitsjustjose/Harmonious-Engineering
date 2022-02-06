@@ -169,4 +169,69 @@ onEvent('server.datapack.first', _ => {
       evt.custom({type: type, pattern: pattern, key: key, result: result});
     });
   };
+
+  /**
+   * @param {IngredientJS} input
+   * @param {ItemStackJS} output
+   * @param {int | null} timeScale A scalar for how long the processing should take.
+   */
+  global.genUniversalCrushingRecipe = (evt, input, output, timeScale) => {
+    const main = JSON.parse(input.toJson());
+    const t = timeScale || 1;
+
+    evt.custom({
+      type: 'immersiveengineering:crusher',
+      input: main,
+      result: {
+        count: output.getCount(),
+        base_ingredient: {item: output.getId()},
+      },
+      energy: 1500 * t,
+    });
+
+    evt.custom({
+      type: 'create:milling',
+      ingredients: [main],
+      results: [
+        {
+          item: output.getId(),
+          count: output.getCount(),
+        },
+      ],
+      processingTime: 500 * t,
+    });
+
+    evt.custom({
+      type: 'create:crushing',
+      ingredients: [main],
+      results: [
+        {
+          item: output.getId(),
+          count: output.getCount(),
+        },
+      ],
+      processingTime: 400 * t,
+    });
+
+    evt.custom({
+      type: 'mekanism:crushing',
+      input: {ingredient: main},
+      output: {
+        item: output.getId(),
+        count: output.getCount(),
+      },
+    });
+
+    evt.custom({
+      type: 'thermal:pulverizer',
+      ingredient: main,
+      result: [
+        {
+          item: output.getId(),
+          count: output.getCount(),
+        },
+      ],
+      experience: 0,
+    });
+  };
 });

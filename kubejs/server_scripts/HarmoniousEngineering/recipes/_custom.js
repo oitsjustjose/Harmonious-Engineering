@@ -483,25 +483,18 @@ onEvent('recipes', event => {
   multiservoPress(event);
   stonecutter(event);
   woodcutter(event);
+  global.genUniversalCrushingRecipe(
+    event,
+    Ingredient.of('betternether:glowstone_stalactite'),
+    Item.of('8x minecraft:glowstone_dust'),
+    null
+  );
 
   // Ender Singularity Crafting
   event.custom({
     type: 'thermal:chiller',
-    ingredients: [
-      {
-        fluid: 'minecraft:water',
-        amount: 1000,
-      },
-      {
-        item: 'powah:ender_core',
-      },
-    ],
-    result: [
-      {
-        item: 'kubejs:ender_singularity',
-        count: 1,
-      },
-    ],
+    ingredients: [{fluid: 'minecraft:water', amount: 1000}, {item: 'powah:ender_core'}],
+    result: [{item: 'kubejs:ender_singularity', count: 1}],
     energy: 20000,
   });
 
