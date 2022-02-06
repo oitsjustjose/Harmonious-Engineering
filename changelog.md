@@ -5,11 +5,13 @@
 - Thermal drill head now uses Steel.
 - Crude Andesite Alloy uses clay balls instead of blocks
 - Horses now drop more leather (3-7 instead of 0-2)
+- Oldstone and Brokenstone no longer generate
 
 ## Fixed
 
 - Stoneholms being too frequent
 - Andesite Alloy's easier original recipes sneaking through int he Mixer & Thermal Induction Smelter
+- Natural Scoria dropping Scoria dropping Scoria Cobblestone (in other words, Natural Scoria drops Cobbled Scoria)
 
 # 1.5.2
 
