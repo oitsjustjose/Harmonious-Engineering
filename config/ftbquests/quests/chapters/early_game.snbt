@@ -268,7 +268,7 @@
 				{
 					id: "77D7572DCB17FDA9"
 					type: "stat"
-					title: "Walk/run 1000 blocks."
+					title: "Walk/run 2000 blocks."
 					icon: {
 						id: "ftbquests:custom_icon"
 						Count: 1b
