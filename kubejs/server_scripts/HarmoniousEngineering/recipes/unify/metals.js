@@ -41,9 +41,6 @@ onEvent('recipes', event => {
     event.remove({type: 'tconstruct:casting_table', output: `#${ingTag}`});
     event.remove({type: 'tconstruct:casting_table', output: `#${nugTag}`});
 
-    console.log(`Removed Tinkers Recipe for ${ingTag}`);
-    console.log(`Removed Tinkers Recipe for ${nugTag}`);
-
     ingotCasts.forEach(cast => {
       event.custom({
         type: 'tconstruct:casting_table',
