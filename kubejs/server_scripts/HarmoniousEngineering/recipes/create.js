@@ -18,6 +18,7 @@ onEvent('recipes', event => {
   event.remove({output: 'create:zinc_ingot'});
 
   event.remove({output: 'create:mechanical_saw'});
+  event.remove({output: 'create:mechanical_drill'});
   event.remove({output: 'create:hand_crank'});
   event.remove({output: 'create:water_wheel'});
   event.remove({output: 'create:white_sail'});
@@ -81,6 +82,12 @@ onEvent('recipes', event => {
     Ingredient.of('create:andesite_casing'),
     Ingredient.of('#harmeng:saw_blade'),
     Item.of('create:mechanical_saw')
+  );
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('create:andesite_casing'),
+    Ingredient.of('thermal:drill_head'),
+    Item.of('create:mechanical_drill')
   );
 
   event.custom({

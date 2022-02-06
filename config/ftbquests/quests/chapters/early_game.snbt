@@ -249,5 +249,57 @@
 				item: "immersiveengineering:craftingtable"
 			}]
 		}
+		{
+			title: "In Search of Kelp"
+			icon: "minecraft:kelp"
+			x: 12.0d
+			y: 4.5d
+			shape: "rsquare"
+			description: [
+				"If you find yourself in search of Kelp with no hope to be found, this quest has got you covered :)"
+				""
+				"Thanks to the immense size of biomes and world generation in Terraforged, you may struggle to find an ocean. This quest is here to prevent you from going on a 2 hour expedition for Kelp when you eventually need it later!"
+			]
+			dependencies: ["0AA54D344D1DC314"]
+			size: 0.8d
+			optional: true
+			id: "15DFCFD41D25EF08"
+			tasks: [
+				{
+					id: "77D7572DCB17FDA9"
+					type: "stat"
+					title: "Walk/run 1000 blocks."
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "minecraft:textures/mob_effect/speed.png"
+						}
+					}
+					stat: "minecraft:walk_one_cm"
+					value: 2000
+				}
+				{
+					id: "1FBBCDB3153BA9A4"
+					type: "stat"
+					title: "Set foot in water at least once."
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "minecraft:textures/mob_effect/water_breathing.png"
+						}
+					}
+					stat: "minecraft:walk_on_water_one_cm"
+					value: 1
+				}
+			]
+			rewards: [{
+				id: "3E89D7F3F728E1D2"
+				type: "item"
+				item: "minecraft:kelp"
+				random_bonus: 2
+			}]
+		}
 	]
 }
