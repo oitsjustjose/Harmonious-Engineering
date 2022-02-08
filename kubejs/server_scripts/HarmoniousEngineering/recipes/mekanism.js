@@ -34,7 +34,7 @@ onEvent('recipes', event => {
     O: 'mekanism:steel_casing',
   });
 
-  [('helmet', 'chestplate', 'leggings', 'boots')].forEach(armor => {
+  ['helmet', 'chestplate', 'leggings', 'boots'].forEach(armor => {
     event.remove({id: `mekanismtools:lapis_lazuli/armor/${armor}`});
     event.remove({id: `mekanismtools:osmium/armor/${armor}`});
   });
