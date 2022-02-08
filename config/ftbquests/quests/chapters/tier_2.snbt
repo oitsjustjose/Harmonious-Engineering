@@ -192,7 +192,7 @@
 				{
 					id: "1F7668E382741369"
 					type: "item"
-					item: "immersiveengineering:slag"
+					item: "thermal:slag"
 					count: 24
 					random_bonus: 40
 				}
