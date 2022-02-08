@@ -87,6 +87,7 @@ const naturalProgressionTags = event => {
 
   event.add('natural-progression:override_axes', 'industrialforegoing:infinity_drill');
   event.add('natural-progression:override_axes', 'industrialforegoing:infinity_saw');
+  event.add('natural-progression:override_axes', 'tconstruct:mattock');
 };
 
 const thermalTags = event => {
@@ -185,4 +186,5 @@ onEvent('tags.items', event => {
   event.add('forge:dusts/ender', 'betterendforge:ender_dust');
   event.add('forge:dusts/ender', 'appliedenergistics2:ender_dust');
   event.add('create:crushed_ores', 'emendatusenigmatica:cobalt_crushed');
+  event.add('curios:goggle_slot', 'create:goggles');
 });
