@@ -29,12 +29,14 @@
 			}]
 			rewards: [
 				{
-					id: "5883A98720595F9B"
-					type: "item"
-					item: "create:red_seat"
+					id: "79584CA10496F5A1"
+					type: "choice"
+					title: "Your Choice of Comfy Seat"
+					icon: "create:white_seat"
+					table_id: 6344719466285127625L
 				}
 				{
-					id: "217FB01F3C9735CF"
+					id: "6CC7C9A37C0F7403"
 					type: "item"
 					item: "minecraft:campfire"
 				}
