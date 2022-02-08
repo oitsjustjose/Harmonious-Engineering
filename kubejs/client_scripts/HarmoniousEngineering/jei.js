@@ -598,4 +598,27 @@ onEvent('jei.information', event => {
 onEvent('jei.add.items', event => {
   event.add(Item.of('customizableelytra:customizable_elytra'));
   event.add(Item.of('steampowered:pressurized_gas_container'));
+
+  [
+    'framedcompactdrawers:framed_full_one',
+    'framedcompactdrawers:framed_full_two',
+    'framedcompactdrawers:framed_full_four',
+    'framedcompactdrawers:framed_half_one',
+    'framedcompactdrawers:framed_half_two',
+    'framedcompactdrawers:framed_half_four',
+    'framedcompactdrawers:framed_trim',
+  ].forEach(drawerType => {
+    global._planks.forEach(plank => {
+      const output = Item.of(drawerType, {
+        MatT: {id: 'minecraft:air', Count: 1},
+        MatF: {id: 'minecraft:air', Count: 1},
+        MatS: {id: plank, Count: 1},
+        display: {
+          Name: `{"text": "${global.generateDrawerName(plank, drawerType)}", "italic": "false"}`,
+        },
+      });
+
+      event.add(output);
+    });
+  });
 });

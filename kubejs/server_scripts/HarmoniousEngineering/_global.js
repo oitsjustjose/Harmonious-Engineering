@@ -1,6 +1,93 @@
 // priority: 1024
 
 onEvent('server.datapack.first', _ => {
+  global._planks = [
+    'betternether:stalagnate_planks',
+    'betternether:willow_planks',
+    'betternether:wart_planks',
+    'betternether:mushroom_planks',
+    'betternether:mushroom_fir_planks',
+    'betternether:rubeus_planks',
+    'betternether:anchor_tree_planks',
+    'betterendforge:mossy_glowshroom_planks',
+    'betterendforge:lacugrove_planks',
+    'betterendforge:end_lotus_planks',
+    'betterendforge:pythadendron_planks',
+    'betterendforge:dragon_tree_planks',
+    'betterendforge:tenanea_planks',
+    'betterendforge:helix_tree_planks',
+    'betterendforge:umbrella_tree_planks',
+    'betterendforge:jellyshroom_planks',
+    'betterendforge:lucernia_planks',
+    'enhanced_mushrooms:red_mushroom_planks',
+    'enhanced_mushrooms:brown_mushroom_planks',
+    'enhanced_mushrooms:glowshroom_planks',
+    'upgrade_aquatic:driftwood_planks',
+    'upgrade_aquatic:vertical_driftwood_planks',
+    'upgrade_aquatic:river_planks',
+    'upgrade_aquatic:vertical_river_planks',
+    'tconstruct:greenheart_planks',
+    'tconstruct:skyroot_planks',
+    'tconstruct:bloodshroom_planks',
+    'atmospheric:rosewood_planks',
+    'atmospheric:morado_planks',
+    'atmospheric:yucca_planks',
+    'atmospheric:kousa_planks',
+    'atmospheric:aspen_planks',
+    'atmospheric:grimwood_planks',
+    'atmospheric:vertical_rosewood_planks',
+    'atmospheric:vertical_morado_planks',
+    'atmospheric:vertical_yucca_planks',
+    'atmospheric:vertical_kousa_planks',
+    'atmospheric:vertical_aspen_planks',
+    'atmospheric:vertical_grimwood_planks',
+    'autumnity:maple_planks',
+    'autumnity:vertical_maple_planks',
+    'quark:vertical_oak_planks',
+    'quark:vertical_spruce_planks',
+    'quark:vertical_birch_planks',
+    'quark:vertical_jungle_planks',
+    'quark:vertical_acacia_planks',
+    'quark:vertical_dark_oak_planks',
+    'quark:vertical_warped_planks',
+    'quark:vertical_crimson_planks',
+    'quark:black_stained_planks',
+    'quark:blue_stained_planks',
+    'quark:brown_stained_planks',
+    'quark:cyan_stained_planks',
+    'quark:gray_stained_planks',
+    'quark:green_stained_planks',
+    'quark:light_blue_stained_planks',
+    'quark:light_gray_stained_planks',
+    'quark:lime_stained_planks',
+    'quark:magenta_stained_planks',
+    'quark:orange_stained_planks',
+    'quark:pink_stained_planks',
+    'quark:purple_stained_planks',
+    'quark:red_stained_planks',
+    'quark:white_stained_planks',
+    'quark:yellow_stained_planks',
+    'quark:vertical_black_stained_planks',
+    'quark:vertical_blue_stained_planks',
+    'quark:vertical_brown_stained_planks',
+    'quark:vertical_cyan_stained_planks',
+    'quark:vertical_gray_stained_planks',
+    'quark:vertical_green_stained_planks',
+    'quark:vertical_light_blue_stained_planks',
+    'quark:vertical_light_gray_stained_planks',
+    'quark:vertical_lime_stained_planks',
+    'quark:vertical_magenta_stained_planks',
+    'quark:vertical_orange_stained_planks',
+    'quark:vertical_pink_stained_planks',
+    'quark:vertical_purple_stained_planks',
+    'quark:vertical_red_stained_planks',
+    'quark:vertical_white_stained_planks',
+    'quark:vertical_yellow_stained_planks',
+    'immersiveengineering:treated_wood_horizontal',
+    'immersiveengineering:treated_wood_vertical',
+    'immersiveengineering:treated_wood_packaged',
+  ];
+
   global.minecraftColors = [
     'white',
     'orange',
@@ -19,6 +106,28 @@ onEvent('server.datapack.first', _ => {
     'red',
     'black',
   ];
+
+  global.generateDrawerName = (plank, type) => {
+    const mp = {
+      'framedcompactdrawers:framed_full_one': 'Framed Drawer',
+      'framedcompactdrawers:framed_full_two': 'Framed Drawers 1x2',
+      'framedcompactdrawers:framed_full_four': 'Framed Drawers 2x2',
+      'framedcompactdrawers:framed_half_one': 'Framed Half Drawer',
+      'framedcompactdrawers:framed_half_two': 'Framed Half Drawers 1x2',
+      'framedcompactdrawers:framed_half_four': 'Framed Half Drawers 2x2',
+      'framedcompactdrawers:framed_trim': 'Framed Trim',
+    };
+    let plankName = plank
+      .split(':')[1]
+      .replace(/_planks/g, '')
+      .replace(/planks_/g, '')
+      .replace(/planks/g, '')
+      .replace(/_/g, ' ')
+      .split(' ')
+      .map(x => x.slice(0, 1).toUpperCase() + x.slice(1))
+      .join(' ');
+    return `${plankName} ${mp[type]}`;
+  };
 
   /* Creates */
   global.genNatProgRecipes = (base, stripped, planks) => {
