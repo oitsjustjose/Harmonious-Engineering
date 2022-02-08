@@ -40,6 +40,7 @@ onEvent('recipes', event => {
   event.remove({output: 'createaddition:gold_spool'});
   event.remove({output: 'createaddition:gold_wire'});
   event.remove({output: 'createaddition:spool'});
+  event.remove({mod: 'createplus'});
   event.replaceInput(
     {mod: 'createaddition'},
     'createaddition:copper_spool',

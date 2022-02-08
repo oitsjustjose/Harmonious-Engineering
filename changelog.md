@@ -1,3 +1,44 @@
+# 1.5.4
+
+## Added
+
+- CreatePlus -- allows Create's google to be put in a dedicated Curio slot
+- Recipe to Crush/Pulverize Glowstone Satalactites into Dust
+- Early-Game Quest to Help You Get Kelp
+- ResourcePacks! Thanks to CurseForge I'm able to add them finaly!
+  - Created Storage Network by Maakzzin
+  - Storage Overhaul Overhaul by Rorax
+
+## Fixed
+
+- Tinkers Construct mattocks not being able to break Wood-Material Blocks
+- Mekanism Lapis/Osmium armor not actually being disabled
+- Casting Blocks yielding mismatched Blocks
+
+## Updated
+
+### Mods:
+
+- AE2 Wireless Terminals
+- Immersive Posts
+- Library Mods
+- More Overlays
+- Project Red
+
+### Quests:
+
+- Quest with Slag reward now gives Thermal Slag
+- Quest for Peaceful Surface now lets you choose the Create Seat color
+
+### Recipes:
+
+- Many recipes now use Tanned Leather instead of Leather
+- Create Mechanical Drill uses Thermal's Drill Head
+
+## Removed
+
+- Recipe for Kelp (See Quest Added This Update)
+
 # 1.5.3
 
 ## Changed

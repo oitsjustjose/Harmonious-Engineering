@@ -18,6 +18,7 @@ onEvent('jei.hide.items', event => {
     'appliedenergistics2:nether_quartz_dust',
     'appliedenergistics2:silicon',
     'betterendforge:ender_dust',
+    '/createplus:*/',
     'corail_woodcutter:birch_woodcutter',
     'corail_woodcutter:black_stained_woodcutter',
     'corail_woodcutter:blue_stained_woodcutter',
