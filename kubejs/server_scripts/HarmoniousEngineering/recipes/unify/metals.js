@@ -36,10 +36,13 @@ onEvent('recipes', event => {
   allMetals.forEach(metal => {
     const ing = `emendatusenigmatica:${metal}_ingot`;
     const nug = `emendatusenigmatica:${metal}_nugget`;
+    const blk = `emendatusenigmatica:${metal}_block`;
     const ingTag = `forge:ingots/${metal}`;
     const nugTag = `forge:nuggets/${metal}`;
+    const blkTag = `forge:storage_blocks/${metal}`;
     event.remove({type: 'tconstruct:casting_table', output: `#${ingTag}`});
     event.remove({type: 'tconstruct:casting_table', output: `#${nugTag}`});
+    event.remove({type: 'tconstruct:casting_table', output: `#${blkTag}`});
 
     ingotCasts.forEach(cast => {
       event.custom({
@@ -65,6 +68,16 @@ onEvent('recipes', event => {
         result: {item: nug},
         cooling_time: 7,
       });
+    });
+
+    event.custom({
+      type: 'tconstruct:casting_basin',
+      fluid: {
+        tag: `forge:molten_${metal}`,
+        amount: 1296,
+      },
+      result: {item: blk},
+      cooling_time: 150,
     });
   });
 });
