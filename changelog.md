@@ -1,13 +1,16 @@
-# 1.5.4
+# 2.0.0
 
 ## Added
 
 - CreatePlus -- allows Create's google to be put in a dedicated Curio slot
+- Default Options
 - Recipe to Crush/Pulverize Glowstone Satalactites into Dust
 - Early-Game Quest to Help You Get Kelp
 - ResourcePacks! Thanks to CurseForge I'm able to add them finaly!
   - Created Storage Network by Maakzzin
   - Storage Overhaul Overhaul by Rorax
+- Convenient Woodcutting recipes for most of Framed Blocks' blocks
+- All plank recipes now have their own Storage Drawer variant
 
 ## Fixed
 
@@ -34,6 +37,14 @@
 
 - Many recipes now use Tanned Leather instead of Leather
 - Create Mechanical Drill uses Thermal's Drill Head
+
+### Other:
+
+- Bones no longer randomly drop from entities
+- **Challenger Mobs**:
+  - Only Zombie Villagers and Endermen can be challenger mobs
+  - These two mobs now have a 75% chance of becoming a challenger
+  - Tweaked loot table to only include ender pearls or enderium coins
 
 ## Removed
 
