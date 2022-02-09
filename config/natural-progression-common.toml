@@ -12,7 +12,7 @@
 	#The chance (out of 100) that a bone can drop from the entities in 'boneDropMobs'.
 	#Setting this to 0 disables this feature
 	#Range: 0 ~ 100
-	boneDropFromMobsChance = 50
+	boneDropFromMobsChance = 0
 	#A list of 'modid:block' that represent blocks that twigs can be placed on.
 	twigPlacementBlacklist = ["minecraft:ice", "minecraft:packed_ice", "minecraft:bedrock"]
 	#The chance (out of 100) for flint to be created via knapping.
