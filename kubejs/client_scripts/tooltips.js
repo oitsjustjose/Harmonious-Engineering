@@ -14,4 +14,10 @@ onEvent('item.tooltip', event => {
   });
 
   event.add('immersiveengineering:transformer', ['§7Robots in disguise§r']);
+  event.add('immersiveengineering:furnace_heater', [
+    '§7Replaced by the Induction Heater from CC&A§r',
+  ]);
+  event.add('createaddition:heater', [
+    `§7Replaces IE's Furnace Heater to Prevent Abuse w/ the Flywheel§r`,
+  ]);
 });
