@@ -55,6 +55,12 @@ const harmoniousEngineeringTags = event => {
 
   event.add('harmeng:zinc_or_iron_chunk', 'emendatusenigmatica:zinc_chunk');
   event.add('harmeng:zinc_or_iron_chunk', 'emendatusenigmatica:iron_chunk');
+
+  [1, 2, 3].forEach(tier =>
+    ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak', 'crimson', 'warped'].forEach(type =>
+      event.removeAllTagsFrom(`storage_overhaul:${type}_chest_tier_${tier}`)
+    )
+  );
 };
 
 const naturalProgressionTags = event => {
