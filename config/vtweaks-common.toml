@@ -77,7 +77,7 @@
 	#A list of dimensions (of form <modid:type>) to ignore when prevent surface mob spawns.
 	peacefulSurfaceDimBlacklist = ["minecraft:the_nether", "minecraft:the_end", "lostcities:lostcity"]
 	#A string list of form <modid:item> of possible loot items a Challenger Mob could drop
-	challengerMobsLoot = ["minecraft:ender_pearl", "thermal:enderium_coin", "minecraft:golden_carrot*4", "cofh_core:ectoplasm", "farmersdelight:egg_sandwich*9"]
+	challengerMobsLoot = ["minecraft:ender_pearl", "thermal:enderium_coin"]
 	#Allows chicken feathers to be plucked w/ shears
 	enableFeatherPlucking = true
 	#The lowest Y-level which mobs will be prevented from spawning
