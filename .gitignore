@@ -16,7 +16,7 @@ imgui.in
 manifest.json
 minecraftinstance.json
 optionsof.txt
-options.txt
+/options.txt
 optionsshaders.txt
 shaderpacks
 servers.dat
@@ -54,3 +54,10 @@ XaeroWaypoints*
 
 
 kubejs/exported
+config/dsurround/sndctrl-client.toml
+config/appliedenergistics2-client.toml
+config/blame-forge.properties
+config/xaerominimap_entities.json
+config/xaerominimap.txt
+patchouli_data.json
+TrashSlotSaveState.json
