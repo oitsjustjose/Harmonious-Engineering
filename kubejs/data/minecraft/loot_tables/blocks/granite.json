@@ -33,7 +33,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "natural-progression:cobbled_granite"
+              "name": "create:granite_cobblestone"
             }
           ]
         }

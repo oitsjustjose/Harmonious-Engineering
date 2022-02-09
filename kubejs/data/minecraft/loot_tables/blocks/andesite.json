@@ -33,7 +33,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "natural-progression:cobbled_andesite"
+              "name": "create:andesite_cobblestone"
             }
           ]
         }

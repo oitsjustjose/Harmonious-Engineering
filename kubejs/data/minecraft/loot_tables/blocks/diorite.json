@@ -33,7 +33,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "natural-progression:cobbled_diorite"
+              "name": "create:diorite_cobblestone"
             }
           ]
         }
