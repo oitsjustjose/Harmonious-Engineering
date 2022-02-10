@@ -3,6 +3,7 @@ onEvent('recipes', event => {
   event.remove({output: 'thermal:machine_frame'});
   event.remove({output: 'thermal:latex_bucket'});
   event.remove({output: 'thermal:rubber'});
+  event.remove({output: 'thermal:redstone_servo'});
   event.remove({id: 'thermal:devices/tree_extractor/tree_extractor_jungle'});
   event.remove({id: 'thermal:machine/press/press_vine_to_latex'});
   event.remove({id: 'thermal:machine/press/press_dandelion_to_latex'});
@@ -43,5 +44,71 @@ onEvent('recipes', event => {
     ],
     result: [{item: 'thermal:rubber'}],
     energy: 2000,
+  });
+
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {
+      tag: 'forge:plates/steel',
+    },
+    // item: 'kubejs:incomplete_redstone_servo',
+    transitionalItem: {item: 'minecraft:redstone'},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [
+          // item: 'kubejs:incomplete_redstone_servo',
+          {item: 'minecraft:redstone'},
+          {item: 'minecraft:piston'},
+        ],
+        results: [
+          // item: 'kubejs:incomplete_redstone_servo',
+          {item: 'minecraft:redstone'},
+        ],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          // item: 'kubejs:incomplete_redstone_servo',
+          {item: 'minecraft:redstone'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [
+          // item: 'kubejs:incomplete_redstone_servo',
+          {item: 'minecraft:redstone'},
+        ],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          // item: 'kubejs:incomplete_redstone_servo',
+          {item: 'minecraft:redstone'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [
+          // item: 'kubejs:incomplete_redstone_servo',
+          {item: 'minecraft:redstone'},
+        ],
+      },
+    ],
+    results: [
+      {
+        item: 'thermal:redstone_servo',
+        chance: 300.0,
+        count: 2,
+      },
+      {
+        item: 'emendatusenigmatica:steel_ingot',
+        chance: 8.0,
+      },
+      {
+        item: 'immersiveengineering:wirecoil_redstone',
+        chance: 80.0,
+      },
+      {
+        item: 'minecraft:piston',
+      },
+    ],
+    loops: 2,
   });
 });
