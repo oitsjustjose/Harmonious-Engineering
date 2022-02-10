@@ -94,17 +94,4 @@ onEvent('recipes', event => {
     ],
     loops: 2,
   });
-
-  event.custom({
-    type: 'mekanism:combining',
-    mainInput: {
-      tag: 'forge:plates/steel',
-    },
-    extraInput: {
-      item: 'minecraft:piston',
-    },
-    output: {
-      item: 'thermal:redstone_servo',
-    },
-  });
 });
