@@ -1,3 +1,26 @@
+# 2.0.1
+
+## Added
+
+- Extra guaranteed ender pearl drop when killing Endermen.
+- Custom, more difficult recipe for Thermal's Redstone Servo
+
+## Changed
+
+- Recipes for Create White Sail, IE Cloths and Sails, Farmer's Delight Canvas
+
+## Fixed
+
+- Storage Overhaul Tiered Chests being usable in recipes
+- IE Crates (in IE houses in Villages) having IE Nuggets/Ingots
+- TConstruct Casting resulting in non Emendatus Enigmatica ingots
+- Custom Drawers all crafting Trim instead of their actual drawer
+
+## Removed
+
+- Custom KubeJS Item for Cloth-Covered Windmill Sail
+- TConstruct recipe for Andesite Alloy, it was supposed to be removed already
+
 # 2.0.0
 
 ## Added
