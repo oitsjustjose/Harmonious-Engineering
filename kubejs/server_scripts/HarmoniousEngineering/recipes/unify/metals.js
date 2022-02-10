@@ -46,6 +46,8 @@ onEvent('recipes', event => {
     event.remove({id: `tconstruct:smeltery/casting/metal/${metal}/ingot`});
     event.remove({id: `tconstruct:smeltery/casting/metal/${metal}/nugget`});
     event.remove({id: `tconstruct:smeltery/casting/metal/${metal}/block`});
+    event.remove({id: `tconstruct:compat/create/andesite_alloy_iron`});
+    event.remove({id: `tconstruct:compat/create/andesite_alloy_zinc`});
 
     ingotCasts.forEach(cast => {
       event.custom({
