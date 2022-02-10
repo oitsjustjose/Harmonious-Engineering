@@ -505,10 +505,13 @@ onEvent('recipes', event => {
   });
 
   event.remove({output: 'improvedbackpacks:sewing_spool'});
-  global.genCombinedRecipe(
-    event,
-    Ingredient.of('minecraft:stick'),
-    Ingredient.of('minecraft:string'),
-    Item.of('improvedbackpacks:sewing_spool')
-  );
+  event.add('8x improvedbackpacks:sewing_spool', ['SSS', 'SRS', 'SSS'], {
+    S: 'minecraft:string',
+    R: 'minecraft:stick',
+  });
+
+  event.add('10x improvedbackpacks:sewing_spool', ['SSS', 'SRS', 'SSS'], {
+    S: 'immersiveengineering:hemp_fiber',
+    R: 'minecraft:stick',
+  });
 });
