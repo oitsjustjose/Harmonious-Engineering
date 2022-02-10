@@ -70,6 +70,8 @@ onEvent('recipes', event => {
     A: 'create:andesite_alloy',
   });
 
+  event.shapeless('1x create:white_sail', ['create:sail_frame', '#chipped:white_carpet']);
+
   global.genCombinedRecipeSewing(
     event,
     Ingredient.of('create:sail_frame'),

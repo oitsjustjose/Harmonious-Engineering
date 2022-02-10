@@ -51,51 +51,34 @@ onEvent('recipes', event => {
     ingredient: {
       tag: 'forge:plates/steel',
     },
-    // item: 'kubejs:incomplete_redstone_servo',
-    transitionalItem: {item: 'minecraft:redstone'},
+    transitionalItem: {item: 'kubejs:incomplete_redstone_servo'},
     sequence: [
       {
         type: 'create:deploying',
-        ingredients: [
-          // item: 'kubejs:incomplete_redstone_servo',
-          {item: 'minecraft:redstone'},
-          {item: 'minecraft:piston'},
-        ],
-        results: [
-          // item: 'kubejs:incomplete_redstone_servo',
-          {item: 'minecraft:redstone'},
-        ],
+        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston'}],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
       },
       {
         type: 'create:deploying',
         ingredients: [
-          // item: 'kubejs:incomplete_redstone_servo',
-          {item: 'minecraft:redstone'},
+          {item: 'kubejs:incomplete_redstone_servo'},
           {item: 'immersiveengineering:wirecoil_redstone'},
         ],
-        results: [
-          // item: 'kubejs:incomplete_redstone_servo',
-          {item: 'minecraft:redstone'},
-        ],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
       },
       {
         type: 'create:deploying',
         ingredients: [
-          // item: 'kubejs:incomplete_redstone_servo',
-          {item: 'minecraft:redstone'},
+          {item: 'kubejs:incomplete_redstone_servo'},
           {item: 'immersiveengineering:wirecoil_redstone'},
         ],
-        results: [
-          // item: 'kubejs:incomplete_redstone_servo',
-          {item: 'minecraft:redstone'},
-        ],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
       },
     ],
     results: [
       {
         item: 'thermal:redstone_servo',
         chance: 300.0,
-        count: 2,
       },
       {
         item: 'emendatusenigmatica:steel_ingot',
@@ -110,5 +93,18 @@ onEvent('recipes', event => {
       },
     ],
     loops: 2,
+  });
+
+  event.custom({
+    type: 'mekanism:combining',
+    mainInput: {
+      tag: 'forge:plates/steel',
+    },
+    extraInput: {
+      item: 'minecraft:piston',
+    },
+    output: {
+      item: 'thermal:redstone_servo',
+    },
   });
 });

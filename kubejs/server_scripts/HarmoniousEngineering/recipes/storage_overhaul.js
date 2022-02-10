@@ -28,7 +28,7 @@ onEvent('recipes', event => {
 
   global.genCombinedRecipe(
     event,
-    Ingredient.of('#harmeng:untiered_chests'),
+    Ingredient.of('#forge:chests/wooden'),
     Ingredient.of('#forge:ingots/iron'),
     Item.of('storage_overhaul:oak_chest_tier_1')
   );

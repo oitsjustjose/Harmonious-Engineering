@@ -503,4 +503,12 @@ onEvent('recipes', event => {
     C: 'betterendforge:crystal_shards',
     B: 'quark:blank_rune',
   });
+
+  event.remove({output: 'improvedbackpacks:sewing_spool'});
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('minecraft:stick'),
+    Ingredient.of('minecraft:string'),
+    Item.of('improvedbackpacks:sewing_spool')
+  );
 });
