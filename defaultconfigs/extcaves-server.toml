@@ -229,11 +229,11 @@
 	#
 	#Old Stone Patches Size (default=40)
 	#Range: 1 ~ 100
-	patch_size_oldstone = 40
+	patch_size_oldstone = 1
 	#
 	#Broken Stone Patches Size (default=24)
 	#Range: 1 ~ 100
-	patch_size_brokenstone = 2
+	patch_size_brokenstone = 1
 	#
 	#Sediment Stone Patches Size (default=40)
 	#Range: 1 ~ 100
