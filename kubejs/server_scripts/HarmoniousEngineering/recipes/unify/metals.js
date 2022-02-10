@@ -43,6 +43,9 @@ onEvent('recipes', event => {
     event.remove({type: 'tconstruct:casting_table', output: `#${ingTag}`});
     event.remove({type: 'tconstruct:casting_table', output: `#${nugTag}`});
     event.remove({type: 'tconstruct:casting_table', output: `#${blkTag}`});
+    event.remove({id: `tconstruct:smeltery/casting/metal/${metal}/ingot`});
+    event.remove({id: `tconstruct:smeltery/casting/metal/${metal}/nugget`});
+    event.remove({id: `tconstruct:smeltery/casting/metal/${metal}/block`});
 
     ingotCasts.forEach(cast => {
       event.custom({
