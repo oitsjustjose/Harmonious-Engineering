@@ -356,6 +356,7 @@
 				{
 					id: "03F43AB629BFC6B3"
 					type: "item"
+					title: "Wind or Water Mill"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b

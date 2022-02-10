@@ -65,25 +65,24 @@ onEvent('recipes', event => {
     R: 'immersiveengineering:hemp_fiber',
   });
 
+  event.remove({id: 'farmersdelight:canvas'});
+  event.shaped('1x farmersdelight:canvas', ['HS', 'SH'], {
+    H: 'immersiveengineering:hemp_fiber',
+    S: 'farmersdelight:straw',
+  });
+
   global.genCombinedRecipeSewing(
     event,
+    Ingredient.of('4x farmersdelight:canvas'),
     Ingredient.of(`${modid}:stick_treated`),
-    Ingredient.of(`8x ${modid}:hemp_fiber`),
     Item.of(`${modid}:hemp_fabric`),
     1
   );
   global.genCombinedRecipeSewing(
     event,
-    Ingredient.of(`6x ${modid}:hemp_fabric`),
-    Ingredient.of(`${modid}:stick_treated`),
+    Ingredient.of(`4x ${modid}:hemp_fabric`),
+    Ingredient.of(`2x #forge:treated_wood_slab`),
     Item.of(`${modid}:windmill_sail`),
-    1
-  );
-  global.genCombinedRecipeSewing(
-    event,
-    Ingredient.of(`${modid}:windmill_blade`),
-    Ingredient.of(`${modid}:windmill_sail`),
-    Item.of('kubejs:cloth_covered_windmill_blade'),
     1
   );
 
@@ -91,38 +90,32 @@ onEvent('recipes', event => {
     event,
     ['BBB', 'BSB', 'BBB'],
     {
-      B: {
-        item: 'kubejs:cloth_covered_windmill_blade',
-      },
-      S: {
-        tag: 'forge:ingots/steel',
-      },
+      B: {item: `${modid}:windmill_blade`},
+      S: {tag: 'forge:ingots/steel'},
     },
-    {
-      item: `${modid}:windmill`,
-    }
+    {item: `${modid}:windmill`}
   );
 
   global.genLargeRecipe(
     event,
     [' B ', 'BSB', ' B '],
     {
-      B: {
-        item: `${modid}:waterwheel_segment`,
-      },
-      S: {
-        tag: 'forge:ingots/steel',
-      },
+      B: {item: `${modid}:waterwheel_segment`},
+      S: {tag: 'forge:ingots/steel'},
     },
-    {
-      item: `${modid}:watermill`,
-    }
+    {item: `${modid}:watermill`}
   );
 
   event.custom({
     type: 'corail_woodcutter:woodcutting',
     ingredient: {tag: 'forge:treated_wood'},
     result: `${modid}:waterwheel_segment`,
+    count: 1,
+  });
+  event.custom({
+    type: 'corail_woodcutter:woodcutting',
+    ingredient: {tag: 'forge:treated_wood'},
+    result: `${modid}:windmill_blade`,
     count: 1,
   });
 });
