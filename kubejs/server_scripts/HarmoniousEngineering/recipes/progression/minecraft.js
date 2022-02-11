@@ -11,6 +11,21 @@ onEvent('recipes', event => {
     S: '#forge:stone',
   });
 
+  event.remove({output: 'minecraft:smithing_table'});
+  event.shapeless(
+    Item.of('minecraft:smithing_table', {
+      display: {
+        Lore: [`"§4Consumes All Tools in Recipe§r"`],
+      },
+    }),
+    [
+      '#forge:workbenches',
+      'natural-progression:improved_saw',
+      'immersiveengineering:hammer',
+      'immersiveengineering:wirecutter',
+    ]
+  );
+
   event.remove({output: 'minecraft:furnace'});
   event.shaped('1x minecraft:furnace', ['CCC', 'C C', 'CCC'], {C: '#forge:cobblestone'});
 });
