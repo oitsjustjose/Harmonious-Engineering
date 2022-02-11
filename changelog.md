@@ -1,3 +1,34 @@
+# 2.0.3
+
+## Changed
+
+- Improved Backpack's spools are cheaper and have IE hemp support
+- Fixed AE2 Quest under Storage Questline saying we have AE2... we don't anymore
+- Extcaves' Old and Broken Stone now act and look (via JEI/Inventory/Jade/WAILA) like Vanila Stone
+- AE2 quests in the Storage chapter are now ordered to make sense
+
+### Ender Cores
+
+- Ender Cores can be bartered from Piglins at a 2% chance
+- Challenger Endermen now have a 50% chance of spawning (was 70%)
+
+### Smithing Table
+
+- Retextured GUI to not have ingot outline in right slot (non-ingots can go in there, even in Vanilla w/ datapack...)
+- Re-named block to "Combining Table" due it being a basic version of the Mekanism Combiner
+- Changed recipe to reflect the bump in value to this pack
+
+### Lava
+
+Instead of disabling Create's mechanic of "Have 10000 source blocks and we consider it infinite", I just disabled Lava generation
+
+- Mycelial generators still enabled because they're so expensive I couldn't be bothered
+- Mekanism's heat generator can be crafted, but placing it has been disabled; used only for crafting other things with it
+
+### Create Mechanical Saw
+
+Since it acts like a Stonecutter too, it requires a Diamond-based Saw to craft. Its textures have been updated accordingly.
+
 # 2.0.1
 
 ## Added
