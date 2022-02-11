@@ -7,4 +7,8 @@ onEvent('block.right_click', event => {
   if (event.getItem() === 'createaddition:connector') {
     event.cancel();
   }
+
+  if (event.getItem() === 'mekanismgenerators:heat_generator') {
+    event.cancel();
+  }
 });
