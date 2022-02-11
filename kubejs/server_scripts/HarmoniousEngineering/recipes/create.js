@@ -75,7 +75,7 @@ onEvent('recipes', event => {
   global.genCombinedRecipe(
     event,
     Ingredient.of('create:andesite_casing'),
-    Ingredient.of('#harmeng:saw_blade'),
+    Ingredient.of('immersiveengineering:rockcutter'),
     Item.of('create:mechanical_saw')
   );
   global.genCombinedRecipe(
