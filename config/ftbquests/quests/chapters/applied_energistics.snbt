@@ -19,7 +19,7 @@
 				""
 				"You'll also note: there are NO AE2 meteors. Skystone can be crafted, as can the inscriber presses. I feel like in 2022 we can all agree that meteors were just a bit much, and never had that 4th press we were looking for >:I"
 			]
-			dependencies: ["7F3A8792FED32768"]
+			dependencies: ["3FD2ADCDB85B33EA"]
 			id: "3849FD4C3D7A10E1"
 			tasks: [{
 				id: "145713D02ED32F2C"
@@ -86,6 +86,8 @@
 				"Using a crushed Quartz (Fluix, Certus or Nether) and some Sand, you can create a Quartz Seed. By throwing this seed in some water and letting it sit (it will not despawn), you can grow it to become a Pure Crystal."
 				""
 				"Once grown, they can be used equivalently to their normal counterparts in most AE2 recipes, thus making your Quartz supply go twice as far as before!"
+				""
+				"FYI, these can be grown in the Mekanism Enrichment Chamber!"
 			]
 			dependencies: ["161E8A3DFFF111D2"]
 			optional: true

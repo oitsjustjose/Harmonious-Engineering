@@ -135,11 +135,11 @@
 		}
 		{
 			title: "Applying your.. Energistics?"
-			x: -3.0d
-			y: -0.75d
+			x: -2.9795918367346843d
+			y: 0.7244897959183518d
 			shape: "octagon"
 			description: ["There is an entire subquest for Applied Energistics and how to get started. Aside from this initial recipe, most other recipes are completely unchanged! Enjoy!"]
-			dependencies: ["46DDBC5F6C66BD6A"]
+			dependencies: ["3FD2ADCDB85B33EA"]
 			size: 1.5d
 			id: "7F3A8792FED32768"
 			tasks: [{
@@ -291,6 +291,20 @@
 				id: "2D48016D4E793FCC"
 				type: "item"
 				item: "dankstorage:dock"
+			}]
+		}
+		{
+			title: "Mini AE Networks"
+			x: -3.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["More info on the Energy Acceptor can be seen in its corresponding quest point in the AE2 Quest Chapter."]
+			dependencies: ["46DDBC5F6C66BD6A"]
+			id: "3FD2ADCDB85B33EA"
+			tasks: [{
+				id: "06F167796D0B0D91"
+				type: "item"
+				item: "appliedenergistics2:energy_acceptor"
 			}]
 		}
 	]
