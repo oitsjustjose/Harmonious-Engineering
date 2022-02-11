@@ -138,11 +138,7 @@
 			x: -3.0d
 			y: -0.75d
 			shape: "octagon"
-			description: [
-				"This pack has Refined Storage, but it has been made unreachable to you by all means other than Creative Mode."
-				""
-				"Anyways, most of AE2 is untouched so have fun!"
-			]
+			description: ["There is an entire subquest for Applied Energistics and how to get started. Aside from this initial recipe, most other recipes are completely unchanged! Enjoy!"]
 			dependencies: ["46DDBC5F6C66BD6A"]
 			size: 1.5d
 			id: "7F3A8792FED32768"
