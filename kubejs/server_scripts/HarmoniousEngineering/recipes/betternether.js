@@ -60,4 +60,12 @@ onEvent('recipes', event => {
       .genNatProgRecipes(woodType.wood, woodType.strippedWood, woodType.plank)
       .forEach(x => event.custom(x));
   });
+
+  event.remove({output: 'betternether:quartz_glass'});
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('#forge:glass/colorless'),
+    Ingredient.of('minecraft:quartz'),
+    Item.of('betternether:quartz_glass')
+  );
 });

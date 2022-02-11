@@ -469,6 +469,7 @@ onEvent('jei.hide.items', event => {
     'thermal:copper_plate',
     'thermal:diamond_dust',
     'thermal:diamond_gear',
+    'thermal:dynamo_magmatic',
     'thermal:electrum_block',
     'thermal:electrum_gear',
     'thermal:electrum_ingot',
@@ -589,7 +590,9 @@ onEvent('jei.hide.items', event => {
 });
 
 onEvent('jei.information', event => {
-  event.add('powah:ender_core', ['Only dropped by §5Challenger Endermen§r.']);
+  event.add('powah:ender_core', [
+    'Only dropped by §5Challenger §kEndermen§r, §0but some say the §4Piglins§r may have studied these cores.',
+  ]);
   event.add('powah:ender_core', [
     "Challenger Mobs have fancy §cc§4o§6l§eo§2r§3e§bd§r particles and prefixes like §3'Agile'§r or §1'Mighty'§r",
   ]);

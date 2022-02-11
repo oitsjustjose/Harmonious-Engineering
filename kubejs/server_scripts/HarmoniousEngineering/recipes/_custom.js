@@ -25,6 +25,12 @@ const campfire = event => {
 };
 
 const crafting = event => {
+  // Rainbow Rune crafting :)
+  event.shaped('1x quark:rainbow_rune', ['CCC', 'CBC', 'CCC'], {
+    C: 'betterendforge:crystal_shards',
+    B: 'quark:blank_rune',
+  });
+
   global.genAlloyingRecipe(
     event,
     {tag: 'chipped:andesite'},
@@ -486,7 +492,7 @@ onEvent('recipes', event => {
   global.genUniversalCrushingRecipe(
     event,
     Ingredient.of('betternether:glowstone_stalactite'),
-    Item.of('8x minecraft:glowstone_dust'),
+    Item.of('3x minecraft:glowstone_dust'),
     null
   );
 
@@ -496,22 +502,5 @@ onEvent('recipes', event => {
     ingredients: [{fluid: 'minecraft:water', amount: 1000}, {item: 'powah:ender_core'}],
     result: [{item: 'kubejs:ender_singularity', count: 1}],
     energy: 20000,
-  });
-
-  // Rainbow Rune crafting :)
-  event.shaped('1x quark:rainbow_rune', ['CCC', 'CBC', 'CCC'], {
-    C: 'betterendforge:crystal_shards',
-    B: 'quark:blank_rune',
-  });
-
-  event.remove({output: 'improvedbackpacks:sewing_spool'});
-  event.add('8x improvedbackpacks:sewing_spool', ['SSS', 'SRS', 'SSS'], {
-    S: 'minecraft:string',
-    R: 'minecraft:stick',
-  });
-
-  event.add('10x improvedbackpacks:sewing_spool', ['SSS', 'SRS', 'SSS'], {
-    S: 'immersiveengineering:hemp_fiber',
-    R: 'minecraft:stick',
   });
 });
