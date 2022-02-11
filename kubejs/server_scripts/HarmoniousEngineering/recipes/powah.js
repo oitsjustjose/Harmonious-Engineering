@@ -92,8 +92,6 @@ onEvent('entity.drops', event => {
   }
 
   const comp = entity.minecraftEntity.getPersistentData();
-  // Always add an extra enderpearl because they're rare a.f.
-  event.addDrop(Item.of('1x minecraft:ender_pearl'));
   const isChallengerMob = comp.func_74764_b('challenger_mob_data'); // contains()
   if (isChallengerMob) {
     event.addDrop(Item.of('1x powah:ender_core'));
