@@ -61,3 +61,5 @@ config/xaerominimap_entities.json
 config/xaerominimap.txt
 patchouli_data.json
 TrashSlotSaveState.json
+
+ESM
