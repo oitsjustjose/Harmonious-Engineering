@@ -1,3 +1,29 @@
+# 2.0.5
+
+## Added
+
+- Extreme Sound Muffler
+- New Custom Item: Fluxed Singularity
+  - A better-matching item for AE2's wireless stuff. Recipe isn't too masochistic
+
+## Fixed
+
+- Barrel upgrading not working with a non-tiered barrel or modded barrel
+
+## Changed
+
+- Cleaned up lots of duplicate items / info in JEI such as EE's ores, TConstruct material types, etc.
+
+### Barrels
+
+- Vanilla barrel can only be crafted using some other mod's barrel
+- Storage Overhaul's barrels now use a more vanilla-like recipe
+- Wooden barrels now have tag `forge:barrels/wooden`
+
+## Removed
+
+- Quark's vertical slabs. If you are using these, it's fine to upgrade as the blocks aren't removed simply hidden and recipes disabled. Going forward use DoubleSlab's vertical slabs :)
+
 # 2.0.3
 
 ## Changed
