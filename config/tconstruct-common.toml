@@ -4,15 +4,15 @@
 	#If true, anvils will show all metal variants. If false, shows only a variant with the default texture
 	showAllAnvilVariants = true
 	#If true, tables such as the part builder and tinker station will show all variants. If false shows only a variant with a default texture.
-	showAllTableVariants = true
+	showAllTableVariants = false
 	#Set this to false to disable new players spawning with the Tinkers' Book.
 	shouldSpawnWithTinkersBook = false
 	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
 	#If empty, all materials will show
-	showOnlyToolMaterial = ""
+	showOnlyToolMaterial = "stone"
 	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
 	#If empty, all materials will show
-	showOnlyPartMaterial = ""
+	showOnlyPartMaterial = "stone"
 
 #Options related to recipes, limited options as a datapack allows most recipes to be modified
 [recipes]
