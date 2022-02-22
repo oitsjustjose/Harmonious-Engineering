@@ -61,6 +61,39 @@ const harmoniousEngineeringTags = event => {
       event.removeAllTagsFrom(`storage_overhaul:${type}_chest_tier_${tier}`)
     )
   );
+
+  [
+    'minecraft:barrel',
+    'betternether:barrel_anchor_tree',
+    'betternether:barrel_nether_sakura',
+    'betternether:barrel_crimson',
+    'betternether:barrel_warped',
+    'betternether:barrel_stalagnate',
+    'betternether:barrel_reed',
+    'betternether:barrel_willow',
+    'betternether:barrel_wart',
+    'betternether:barrel_rubeus',
+    'betternether:barrel_mushroom',
+    'betternether:barrel_mushroom_fir',
+    'betterendforge:mossy_glowshroom_barrel',
+    'betterendforge:lacugrove_barrel',
+    'betterendforge:end_lotus_barrel',
+    'betterendforge:pythadendron_barrel',
+    'betterendforge:dragon_tree_barrel',
+    'betterendforge:tenanea_barrel',
+    'betterendforge:helix_tree_barrel',
+    'betterendforge:umbrella_tree_barrel',
+    'betterendforge:jellyshroom_barrel',
+    'betterendforge:lucernia_barrel',
+    'storage_overhaul:oak_barrel',
+    'storage_overhaul:spruce_barrel',
+    'storage_overhaul:birch_barrel',
+    'storage_overhaul:acacia_barrel',
+    'storage_overhaul:jungle_barrel',
+    'storage_overhaul:dark_oak_barrel',
+    'storage_overhaul:crimson_barrel',
+    'storage_overhaul:warped_barrel',
+  ].forEach(barrel =>  event.add('forge:barrels/wooden', barrel))
 };
 
 const naturalProgressionTags = event => {
