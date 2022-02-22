@@ -18,6 +18,7 @@ onEvent('jei.hide.items', event => {
     '/emendatusenigmatica:sapphire*/',
     '/emendatusenigmatica:source*/',
     '/enhanced_mushrooms:.*_vertical_slab/',
+    '/extcaves:*/',
     '/extendedcrafting:recipe_maker/',
     '/extendedcrafting:singularity/',
     '/ftblibrary:fluid_container/',
