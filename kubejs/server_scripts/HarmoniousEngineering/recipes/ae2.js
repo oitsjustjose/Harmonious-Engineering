@@ -13,13 +13,13 @@ onEvent('recipes', event => {
     W: 'appliedenergistics2:wireless_booster',
     I: '#forge:ingots/netherite',
     N: 'minecraft:nether_star',
-    S: 'kubejs:ender_singularity',
+    S: 'kubejs:fluxed_singularity',
   });
 
   event.shaped('1x aeinfinitybooster:dimension_card', ['WNW', 'NSN', 'WNW'], {
     W: 'aeinfinitybooster:infinity_card',
     N: 'minecraft:nether_star',
-    S: 'kubejs:ender_singularity',
+    S: 'kubejs:fluxed_singularity',
   });
 
   global.genCombinedRecipe(
@@ -44,12 +44,12 @@ onEvent('recipes', event => {
   );
 
   event.shaped('1x appliedenergistics2:wireless_receiver', [' S ', 'IFI', ' I '], {
-    S: 'kubejs:ender_singularity',
+    S: 'kubejs:fluxed_singularity',
     I: '#forge:ingots/iron',
     F: 'appliedenergistics2:quartz_fiber',
   });
   event.shaped('1x appliedenergistics2:wireless_booster', ['FSE', 'III'], {
-    S: 'kubejs:ender_singularity',
+    S: 'kubejs:fluxed_singularity',
     I: '#forge:ingots/iron',
     F: '#forge:dusts/fluix',
     E: '#forge:dusts/ender',

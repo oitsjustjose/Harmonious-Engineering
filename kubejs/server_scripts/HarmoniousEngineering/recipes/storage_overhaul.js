@@ -4,6 +4,20 @@ onEvent('recipes', event => {
   const storageTypes = ['chest', 'barrel'];
   const woodTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak', 'crimson', 'warped'];
 
+  event.remove({output: 'minecraft:barrel'});
+  event.remove({output: 'betternether:barrel_crimson'});
+  event.remove({output: 'betternether:barrel_warped'});
+  event.shapeless('minecraft:barrel', ['#forge:barrels/wooden']);
+
+  // Makes SO's barrels use a more vanilla-like recipe
+  woodTypes.forEach(wood => {
+    event.remove({output: `storage_overhaul:${wood}_barrel`});
+    event.shaped(`storage_overhaul:${wood}_barrel`, ['PSP', 'P P', 'PSP'], {
+      P: `#chipped:${wood}_planks`,
+      S: `minecraft:${wood}_slab`
+    });
+  });
+
   woodTypes.forEach(wood => {
     tiers.forEach((tier, idx) => {
       if (idx < tiers.length - 1) {
@@ -31,5 +45,12 @@ onEvent('recipes', event => {
     Ingredient.of('#forge:chests/wooden'),
     Ingredient.of('#forge:ingots/iron'),
     Item.of('storage_overhaul:oak_chest_tier_1')
+  );
+
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('#forge:barrels/wooden'),
+    Ingredient.of('#forge:ingots/iron'),
+    Item.of('storage_overhaul:oak_barrel_tier_1')
   );
 });
