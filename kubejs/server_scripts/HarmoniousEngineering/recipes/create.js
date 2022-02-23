@@ -30,6 +30,11 @@ onEvent('recipes', event => {
   event.remove({id: 'create:crafting/kinetics/shaft'});
   event.remove({id: 'create:cutting/andesite_alloy'});
 
+  event.remove({id: 'create:splashing/gravel'});
+  event.remove({id: 'create:splashing/red_sand'});
+  event.remove({id: 'create:splashing/soul_sand'});
+  event.remove({id: 'create:compat/atmospheric/splashing/red_arid_sand'});
+
   event.remove({output: 'steampowered:alternator'});
   event.remove({output: 'createaddition:alternator'});
   event.remove({output: 'createaddition:accumulator'});
