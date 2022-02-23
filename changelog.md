@@ -1,3 +1,9 @@
+# 2.0.5b
+
+## Fixed
+
+- Immersive Engineering's steel blocks not being craftable, preventing the formation of some heavy machines such as the Excavator or Arc Furnace
+
 # 2.0.5
 
 ## Added

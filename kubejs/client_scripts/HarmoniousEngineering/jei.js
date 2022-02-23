@@ -271,7 +271,6 @@ onEvent('jei.hide.items', event => {
     'immersiveengineering:storage_lead',
     'immersiveengineering:storage_nickel',
     'immersiveengineering:storage_silver',
-    'immersiveengineering:storage_steel',
     'immersiveengineering:storage_uranium',
     'immersivepetroleum:bitumen',
     'immersiveposts:stick_constantan',
@@ -638,7 +637,7 @@ onEvent('jei.hide.items', event => {
     'sulphuric_rock',
     'violecite',
     'weathered_limestone',
-  ].forEach(x => event.hide(`/emendatusenigmatica:.*_${x}_ore/`))
+  ].forEach(x => event.hide(`/emendatusenigmatica:.*_${x}_ore/`));
 
   // Hides the extended crafting book.
   event.hide(Item.of('patchouli:guide_book', '{"patchouli:book":"extendedcrafting:guide"}'));

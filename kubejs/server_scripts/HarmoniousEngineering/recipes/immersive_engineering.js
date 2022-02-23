@@ -112,10 +112,15 @@ onEvent('recipes', event => {
     result: `${modid}:waterwheel_segment`,
     count: 1,
   });
+
   event.custom({
     type: 'corail_woodcutter:woodcutting',
     ingredient: {tag: 'forge:treated_wood'},
     result: `${modid}:windmill_blade`,
     count: 1,
   });
+
+  // Fixes some IE machines not being able to be created
+  event.stonecutting('immersiveengineering:storage_steel', 'emendatusenigmatica:steel_block');
+  event.stonecutting('emendatusenigmatica:steel_block', 'immersiveengineering:storage_steel');
 });
