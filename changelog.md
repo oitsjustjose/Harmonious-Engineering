@@ -1,5 +1,7 @@
 # 2.0.6
 
+# You should delete your world's `serverconfig` folder for the latest changes!
+
 ## Changed
 
 - Added harder recipe for the Thermal RF Coil
