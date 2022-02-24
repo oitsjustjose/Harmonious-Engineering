@@ -6,35 +6,59 @@ onEvent('recipes', event => {
   event.remove({output: 'compactmachines:machine_large'});
   event.remove({output: 'compactmachines:machine_giant'});
   event.remove({output: 'compactmachines:machine_maximum'});
+  event.remove({output: 'compactmachines:personal_shrinking_device'});
+
+  const spatialCells = {
+    two: 'appliedenergistics2:2_cubed_spatial_cell_component',
+    sixteen: 'appliedenergistics2:16_cubed_spatial_cell_component',
+    onetwentyeight: 'appliedenergistics2:128_cubed_spatial_cell_component',
+  };
 
   global.genCombinedRecipe(
     event,
-    Ingredient.of('minecraft:iron_block'),
-    Ingredient.of('minecraft:redstone'),
-    Item.of('16x compactmachines:wall')
+    Ingredient.of('immersiveengineering:sheetmetal_lead'),
+    Ingredient.of('minecraft:ender_pearl'),
+    Item.of('8x compactmachines:wall')
   );
+
   global.genCombinedRecipe(
     event,
-    Ingredient.of('immersiveengineering:heavy_engineering'),
-    Ingredient.of('immersiveengineering:circuit_board'),
-    Item.of('compactmachines:machine_tiny')
+    Ingredient.of(spatialCells.two),
+    Ingredient.of('rftoolsbase:information_screen'),
+    Item.of('compactmachines:personal_shrinking_device')
   );
-  global.genCombinedRecipe(
+
+  global.genLargeRecipe(
     event,
-    Ingredient.of('compactmachines:machine_tiny'),
-    Ingredient.of('immersiveengineering:maintenance_kit'),
-    Item.of('compactmachines:machine_small')
-  );
-  global.genCombinedRecipe(
-    event,
-    Ingredient.of('compactmachines:machine_small'),
-    Ingredient.of('immersivepetroleum:projector'),
+    ['WWW', 'WGW', 'WWW'],
+    {
+      W: 'compactmachines:wall',
+      G: spatialCells.two,
+    },
     Item.of('compactmachines:machine_normal')
   );
-  global.genCombinedRecipe(
+
+  global.genLargeRecipe(
     event,
-    Ingredient.of('compactmachines:machine_normal'),
-    Ingredient.of('entangled:block'),
+    ['WWWWW', 'WOOOW', 'WOPOW', 'WOOOW', 'WWWWW'],
+    {
+      W: 'compactmachines:wall',
+      P: spatialCells.sixteen,
+      O: '#forge:obsidian',
+    },
     Item.of('compactmachines:machine_large')
+  );
+
+  global.genLargeRecipe(
+    event,
+    ['WWWWWWW', 'WBBBBBW', 'WBDEDBW', 'WBESEBW', 'WBDEDBW', 'WBBBBBW', 'WWWWWWW'],
+    {
+      W: 'compactmachines:wall',
+      S: spatialCells.onetwentyeight,
+      B: '#forge:gems/biotite',
+      D: '#forge:gems/diamond',
+      E: '#forge:gems/emerald',
+    },
+    Item.of('compactmachines:machine_giant')
   );
 });
