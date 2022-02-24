@@ -1,3 +1,113 @@
+const redstoneServoRecipes = event => {
+  // Hard recipe for these
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {tag: 'forge:plates/steel'},
+    transitionalItem: {item: 'kubejs:incomplete_redstone_servo'},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston'}],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_redstone_servo'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_redstone_servo'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
+      },
+    ],
+    results: [
+      {item: 'thermal:redstone_servo', chance: 300.0},
+      {item: 'emendatusenigmatica:steel_ingot', chance: 8.0},
+      {item: 'immersiveengineering:wirecoil_redstone', chance: 80.0},
+      {item: 'minecraft:piston'},
+    ],
+    loops: 2,
+  });
+
+  // Easier recipe
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      {tag: 'forge:plates/steel'},
+      {item: 'immersiveengineering:wirecoil_redstone', count: 4},
+    ],
+    result: [{item: 'kubejs:incomplete_redstone_servo'}],
+  });
+
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston', count: 2}],
+    result: [{item: 'thermal:redstone_servo'}],
+  });
+};
+
+const rfCoilRecipes = event => {
+  // Hard recipe for these
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {tag: 'forge:rods/gold'},
+    transitionalItem: {item: 'kubejs:incomplete_rf_coil'},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {tag: 'forge:plates/gold'}],
+        results: [{item: 'kubejs:incomplete_rf_coil'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_rf_coil'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_rf_coil'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_rf_coil'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_rf_coil'}],
+      },
+    ],
+    results: [
+      {item: 'thermal:rf_coil', chance: 300.0},
+      {tag: 'forge:ingots/gold', chance: 2.0},
+      {item: 'immersiveengineering:wirecoil_redstone', chance: 40.0},
+      {tag: 'forge:plates/gold'},
+    ],
+    loops: 2,
+  });
+
+  // Easier recipe
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      {tag: 'forge:rods/gold'},
+      {item: 'immersiveengineering:wirecoil_redstone', count: 4},
+    ],
+    result: [{item: 'kubejs:incomplete_rf_coil'}],
+  });
+
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {tag: 'forge:plates/gold'}],
+    result: [{item: 'thermal:rf_coil'}],
+  });
+};
+
 onEvent('recipes', event => {
   event.remove({output: 'thermal:rf_coil'});
   event.remove({output: 'thermal:machine_frame'});
@@ -9,11 +119,8 @@ onEvent('recipes', event => {
   event.remove({id: 'thermal:machine/press/press_dandelion_to_latex'});
   event.remove({id: 'thermal:machine/chiller/chiller_ender_to_ender_pearl'});
 
-  event.shaped('1x thermal:rf_coil', [' RG', 'RSR', 'GR '], {
-    R: 'immersiveengineering:wirecoil_redstone',
-    S: '#forge:ingots/steel',
-    G: '#forge:nuggets/gold',
-  });
+  rfCoilRecipes(event);
+  redstoneServoRecipes(event);
 
   event.shaped('1x thermal:machine_frame', ['SGS', 'GTG', 'SGS'], {
     G: 'mekanism:structural_glass',
@@ -44,54 +151,5 @@ onEvent('recipes', event => {
     ],
     result: [{item: 'thermal:rubber'}],
     energy: 2000,
-  });
-
-  event.custom({
-    type: 'create:sequenced_assembly',
-    ingredient: {
-      tag: 'forge:plates/steel',
-    },
-    transitionalItem: {item: 'kubejs:incomplete_redstone_servo'},
-    sequence: [
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston'}],
-        results: [{item: 'kubejs:incomplete_redstone_servo'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [
-          {item: 'kubejs:incomplete_redstone_servo'},
-          {item: 'immersiveengineering:wirecoil_redstone'},
-        ],
-        results: [{item: 'kubejs:incomplete_redstone_servo'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [
-          {item: 'kubejs:incomplete_redstone_servo'},
-          {item: 'immersiveengineering:wirecoil_redstone'},
-        ],
-        results: [{item: 'kubejs:incomplete_redstone_servo'}],
-      },
-    ],
-    results: [
-      {
-        item: 'thermal:redstone_servo',
-        chance: 300.0,
-      },
-      {
-        item: 'emendatusenigmatica:steel_ingot',
-        chance: 8.0,
-      },
-      {
-        item: 'immersiveengineering:wirecoil_redstone',
-        chance: 80.0,
-      },
-      {
-        item: 'minecraft:piston',
-      },
-    ],
-    loops: 2,
   });
 });

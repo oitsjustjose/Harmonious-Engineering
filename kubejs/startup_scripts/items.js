@@ -8,6 +8,10 @@ onEvent('item.registry', event => {
     .create('incomplete_redstone_servo')
     .texture('kubejs:item/incomplete_redstone_servo')
     .type('create:sequenced_assembly');
+  event
+    .create('incomplete_rf_coil')
+    .texture('kubejs:item/incomplete_rf_coil')
+    .type('create:sequenced_assembly');
 });
 
 onEvent('item.modification', event => {

@@ -2,5 +2,6 @@
   "item.kubejs.ender_singularity": "Ender Singularity",
   "item.kubejs.fluxed_singularity": "Fluxed Singularity",
   "item.kubejs.crude_andesite_alloy": "Crude Andesite Alloy",
-  "item.kubejs.incomplete_redstone_servo": "Incomplete Redstone Servo"
+  "item.kubejs.incomplete_redstone_servo": "Incomplete Redstone Servo",
+  "item.kubejs.incomplete_rf_coil": "Incomplete RF Coil"
 }
