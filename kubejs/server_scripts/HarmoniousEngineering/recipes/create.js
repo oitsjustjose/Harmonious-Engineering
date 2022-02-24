@@ -52,6 +52,10 @@ onEvent('recipes', event => {
     'immersiveengineering:wirecoil_copper'
   );
 
+  event.replaceInput({mod: 'createdeco'}, 'create:zinc_ingot', '#forge:ingots/zinc');
+  event.replaceInput({mod: 'createdeco'}, 'create:copper_ingot', '#forge:ingots/copper');
+  event.replaceInput({mod: 'createdeco'}, 'create:brass_ingot', '#forge:ingots/brass');
+
   event.remove({id: 'create:mixing/chromatic_compound'});
   event.custom({
     type: 'create:mixing',
