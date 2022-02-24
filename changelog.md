@@ -1,3 +1,21 @@
+# 2.0.6
+
+## Changed
+
+- Added harder recipe for the Thermal RF Coil
+  - All of the Thermal Recipe Changes that use the Sequenced Assembly setup now have a more easily-automatable counterpart using the Thermal Press
+- Made Compact Machines' recipes more fitting
+- Hid more unusable items in JEI such as CreateDeco's coins and many of the Compact Machines components which are unfinished
+- Removed Create's recipes for nuggets which could be done infinitely (such as washing Gravel & Red Sand)
+
+## Fixed
+
+- Some Create Deco Recipes being uncraftable due to Create's ingots being disabled
+
+## Removed
+
+- Dynamic Surroundings due to a conflict with Extreme Sound Muffler
+
 # 2.0.5b
 
 ## Fixed
