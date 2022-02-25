@@ -69,7 +69,7 @@
           ]
         },
         {
-          "name": "emendatusenigmatica:diamond_chunk_hoe",
+          "name": "minecraft:diamond_hoe",
           "type": "minecraft:item",
           "weight": 5,
           "functions": [
