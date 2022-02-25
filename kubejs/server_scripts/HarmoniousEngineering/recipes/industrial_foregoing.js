@@ -37,7 +37,7 @@ onEvent('recipes', event => {
     ingredients: [
       {
         fluid: `${modid}:pink_slime`,
-        amount: 1000,
+        amount: 144,
       },
       {
         item: 'thermal:chiller_ingot_cast',
@@ -57,7 +57,7 @@ onEvent('recipes', event => {
     ingredients: [
       {
         fluid: `${modid}:pink_slime`,
-        amount: 300,
+        amount: 576,
       },
       {
         item: 'thermal:chiller_ball_cast',
