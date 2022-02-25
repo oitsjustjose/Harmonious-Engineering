@@ -152,4 +152,26 @@ onEvent('recipes', event => {
     result: [{item: 'thermal:rubber'}],
     energy: 2000,
   });
+
+  // An alternative later game choice for creating a Mekanism Steel Casing
+  event.custom({
+    type: 'mekanism:combining',
+    mainInput: {ingredient: {item: 'mekanism:advanced_control_circuit'}},
+    extraInput: {ingredient: {tag: 'forge:gears/invar'}},
+    output: {item: 'thermal:upgrade_augment_1'},
+  });
+
+  event.custom({
+    type: 'mekanism:combining',
+    mainInput: {ingredient: {item: 'thermal:upgrade_augment_1'}},
+    extraInput: {ingredient: {tag: 'forge:gears/electrum'}},
+    output: {item: 'thermal:upgrade_augment_2'},
+  });
+
+  event.custom({
+    type: 'mekanism:combining',
+    mainInput: {ingredient: {item: 'thermal:upgrade_augment_2'}},
+    extraInput: {ingredient: {tag: 'forge:gears/enderium'}},
+    output: {item: 'thermal:upgrade_augment_3'},
+  });
 });
