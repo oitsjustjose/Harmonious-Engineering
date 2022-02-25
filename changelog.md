@@ -1,3 +1,21 @@
+# 2.0.7
+
+## Added
+
+- Demagnetize, a great set of blocks for preventing item magnets from affecting your setups!
+- Easier recipes for Thermal's integral components once you've gotten into Mekanism a good bit
+-
+
+## Changed
+
+- Turning Liquid Pink Slime into solid variants (ball or ingot) now use the same liquid amounts as TConstruct
+
+## Fixed
+
+- Many loot chests being empty due to a loot table bug I thought I fully fixed a while ago
+- IE's Coal Coke being in IE Crates in villages
+- Default config for the DoubleSlabs mod has enabled Vertical Slab placement. This should not be the case - **I suggest deleting your Saves' `serverconfig` folder.**
+
 # 2.0.6
 
 # You should delete your world's `serverconfig` folder for the latest changes!
