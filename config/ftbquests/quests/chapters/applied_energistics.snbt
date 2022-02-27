@@ -18,6 +18,8 @@
 				"Fluix is the core crafting component of most AE2 components."
 				""
 				"You'll also note: there are NO AE2 meteors. Skystone can be crafted, as can the inscriber presses. I feel like in 2022 we can all agree that meteors were just a bit much, and never had that 4th press we were looking for >:I"
+				""
+				"One last note, channels have been disabled in AE2 thanks to an addon mod that has taken care of this. Sometimes you just need a break from P2P networks."
 			]
 			dependencies: ["3FD2ADCDB85B33EA"]
 			id: "3849FD4C3D7A10E1"

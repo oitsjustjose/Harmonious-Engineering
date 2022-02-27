@@ -17,7 +17,7 @@
 		{
 			title: "Wormholes"
 			x: -9.5d
-			y: 1.0d
+			y: -0.5d
 			description: [
 				"Instead of Waystones or Portality, Wormholes are the method of isntant transport from Point A to Point B. I prefer using rails where possible but sometimes that's just unreasonable to do, so Wormholes are the way to go!"
 				""
@@ -222,6 +222,41 @@
 				id: "7B5AD307978BC7E5"
 				type: "item"
 				item: "redstone_arsenal:flux_controller"
+			}]
+		}
+		{
+			title: "Logistic Boats!"
+			icon: "littlelogistics:tug"
+			x: -9.5d
+			y: 1.0d
+			description: [
+				"Little Logistics is an insanely cute means to transport things around water."
+				""
+				"I could write a book about this mod, or I could point you to its guide book. This guide book probably isn't in your Akashic Tome so feel free to add it!"
+			]
+			id: "131A97E1189AAB89"
+			tasks: [{
+				id: "06E89DFFD67ED2D3"
+				type: "item"
+				title: "Any Little Logistics Item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "littlelogistics"
+					}
+				}
+			}]
+			rewards: [{
+				id: "661F93502521668A"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "littlelogistics:guide"
+					}
+				}
 			}]
 		}
 	]
