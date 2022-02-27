@@ -311,29 +311,18 @@ const woodcutter = event => {
       {type: 'trapdoor', qty: 2},
     ].forEach(x => {
       const {type, qty} = x;
-      event.custom({
-        type: 'corail_woodcutter:woodcutting',
-        ingredient: {
-          item: `${wood}_planks`,
-        },
-        result: `${wood}_${type}`,
-        count: qty,
-        conditions: [
-          {
-            type: 'forge:mod_loaded',
-            modid: 'corail_woodcutter',
+
+      // Checks that the generated item exists
+      if (`${Item.of(`${wood}_${type}`)}` !== 'Item.empty') {
+        event.custom({
+          type: 'corail_woodcutter:woodcutting',
+          ingredient: {
+            item: `${wood}_planks`,
           },
-          {
-            type: 'forge:mod_loaded',
-            modid: wood.split(':')[0],
-          },
-          {
-            // Check that the generated item actually exists
-            type: 'forge:item_exists',
-            item: `${wood}_${type}`,
-          },
-        ],
-      });
+          result: `${wood}_${type}`,
+          count: qty,
+        });
+      }
     });
   });
 
@@ -350,36 +339,25 @@ const woodcutter = event => {
     'upgrade_aquatic:driftwood_logs',
     'upgrade_aquatic:river_logs',
   ].forEach(wood => {
-    const [modid, path] = wood.split(':');
+    const [_, path] = wood.split(':');
     [
       {type: 'beam', qty: 1},
       {type: 'palisade', qty: 4},
     ].forEach(x => {
       const {type, qty} = x;
+
       const output = `decorative_blocks_abnormals:${path}_${type}`
         .replace('_logs', '')
         .replace('_stems', '');
-      event.custom({
-        type: 'corail_woodcutter:woodcutting',
-        ingredient: {tag: wood},
-        result: output,
-        count: qty,
-        conditions: [
-          {
-            type: 'forge:mod_loaded',
-            modid: 'corail_woodcutter',
-          },
-          {
-            type: 'forge:mod_loaded',
-            modid: modid,
-          },
-          {
-            // Check that the generated item actually exists
-            type: 'forge:item_exists',
-            item: output,
-          },
-        ],
-      });
+
+      if (`${Item.of(output)}` !== 'Item.empty') {
+        event.custom({
+          type: 'corail_woodcutter:woodcutting',
+          ingredient: {tag: wood},
+          result: output,
+          count: qty,
+        });
+      }
     });
   });
 
@@ -396,83 +374,40 @@ const woodcutter = event => {
     'upgrade_aquatic:driftwood_planks',
     'upgrade_aquatic:river_planks',
   ].forEach(wood => {
-    const [modid, path] = wood.split(':');
+    const [_, path] = wood.split(':');
     [
       {type: 'seat', qty: 1},
       {type: 'support', qty: 1},
     ].forEach(x => {
       const {type, qty} = x;
       const output = `decorative_blocks_abnormals:${path}_${type}`.replace('_planks', '');
-      event.custom({
-        type: 'corail_woodcutter:woodcutting',
-        ingredient: {item: wood},
-        result: output,
-        count: qty,
-        conditions: [
-          {
-            type: 'forge:mod_loaded',
-            modid: 'corail_woodcutter',
-          },
-          {
-            type: 'forge:mod_loaded',
-            modid: modid,
-          },
-          {
-            // Check that the generated item actually exists
-            type: 'forge:item_exists',
-            item: output,
-          },
-        ],
-      });
+
+      if (`${Item.of(output)}` !== 'Item.empty') {
+        event.custom({
+          type: 'corail_woodcutter:woodcutting',
+          ingredient: {item: wood},
+          result: output,
+          count: qty,
+        });
+      }
     });
   });
 
   /* IE Compat */
   [
-    {
-      result: 'immersiveengineering:treated_wood_horizontal',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:slab_treated_wood_horizontal',
-      count: 2,
-    },
-    {
-      result: 'immersiveengineering:stairs_treated_wood_horizontal',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:treated_wood_vertical',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:slab_treated_wood_vertical',
-      count: 2,
-    },
-    {
-      result: 'immersiveengineering:stairs_treated_wood_vertical',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:treated_wood_packaged',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:slab_treated_wood_packaged',
-      count: 2,
-    },
-    {
-      result: 'immersiveengineering:stairs_treated_wood_packaged',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:treated_fence',
-      count: 1,
-    },
-    {
-      result: 'immersiveengineering:treated_scaffold',
-      count: 1,
-    },
+    {result: 'immersiveengineering:treated_wood_horizontal', count: 1},
+    {result: 'immersiveengineering:slab_treated_wood_horizontal', count: 2},
+    {result: 'immersiveengineering:stairs_treated_wood_horizontal', count: 1},
+    {result: 'immersiveengineering:treated_wood_vertical', count: 1},
+    {result: 'immersiveengineering:slab_treated_wood_vertical', count: 2},
+    {result: 'immersiveengineering:stairs_treated_wood_vertical', count: 1},
+    {result: 'immersiveengineering:treated_wood_packaged', count: 1},
+    {result: 'immersiveengineering:slab_treated_wood_packaged', count: 2},
+    {result: 'immersiveengineering:stairs_treated_wood_packaged', count: 1},
+    {result: 'immersiveengineering:treated_fence', count: 1},
+    {result: 'immersiveengineering:treated_scaffold', count: 1},
+    {result: 'immersiveengineering:waterwheel_segment', count: 1},
+    {result: 'immersiveengineering:windmill_blade', count: 1},
   ].forEach(recipe => {
     const {result, count} = recipe;
     event.custom({
@@ -509,12 +444,12 @@ onEvent('recipes', event => {
   });
 
   event.custom({
-    type: "appliedenergistics2:inscriber",
-    mode: "press",
-    result: { item: "kubejs:fluxed_singularity" },
+    type: 'appliedenergistics2:inscriber',
+    mode: 'press',
+    result: {item: 'kubejs:fluxed_singularity'},
     ingredients: {
-      top: { item: "kubejs:ender_singularity" },
-      middle: { item: "appliedenergistics2:purified_fluix_crystal" }
-    }
+      top: {item: 'kubejs:ender_singularity'},
+      middle: {item: 'appliedenergistics2:purified_fluix_crystal'},
+    },
   });
 });
