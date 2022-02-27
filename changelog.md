@@ -1,3 +1,20 @@
+# 2.0.8
+
+## Added
+
+- [Mod] Little Logistics (and a quest for getting started with it)
+- [Mod] AE2 Additional Opportunity
+- [Recipes] More woodcutter compatibility recipes! Mostly for smaller things like Supplementaries' shelves, etc.
+
+## Removed
+
+- Towers of the Wild + Addons
+  - These were so rare you probably hadn't found one yet.
+
+## Changed
+
+- Removed AE2's channels using AE2AO (added this update)
+
 # 2.0.7
 
 ## Added
