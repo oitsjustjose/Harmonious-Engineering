@@ -12,6 +12,13 @@ onEvent('item.registry', event => {
     .create('incomplete_rf_coil')
     .texture('kubejs:item/incomplete_rf_coil')
     .type('create:sequenced_assembly');
+
+  ['logic', 'engineering', 'calculation'].forEach(x =>
+    event
+      .create(`incomplete_${x}_processor`)
+      .texture(`kubejs:item/incomplete_${x}_processor`)
+      .type('create:sequenced_assembly')
+  );
 });
 
 onEvent('item.modification', event => {

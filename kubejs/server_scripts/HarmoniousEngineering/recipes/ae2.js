@@ -1,3 +1,39 @@
+const sequencedAssembly = (material, output) => {
+  const press = `${output}_press`;
+  const incomplete = `kubejs:incomplete_${output.replace('appliedenergistics2:', '')}`;
+  return {
+    type: 'create:sequenced_assembly',
+    ingredient: {tag: 'forge:silicon'},
+    transitionalItem: {item: incomplete},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [{item: incomplete}, {item: 'appliedenergistics2:silicon_press'}],
+        results: [{item: incomplete}],
+        keepHeldItem: true,
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [{item: incomplete}, {item: 'minecraft:redstone'}],
+        results: [{item: incomplete}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [{item: incomplete}, {item: material}],
+        results: [{item: incomplete}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [{item: incomplete}, {item: press}],
+        results: [{item: incomplete}],
+        keepHeldItem: true,
+      },
+    ],
+    results: [{item: output, chance: 1.0}],
+    loops: 1,
+  };
+};
+
 onEvent('recipes', event => {
   event.remove({output: 'appliedenergistics2:grindstone'});
   event.remove({output: 'appliedenergistics2:controller'});
@@ -96,6 +132,16 @@ onEvent('recipes', event => {
     'appliedenergistics2:facade',
     'appliedenergistics2:facade',
   ]);
+
+  // Convenience recipe for AE2 circuits
+  event.custom(sequencedAssembly('minecraft:gold_ingot', 'appliedenergistics2:logic_processor'));
+  event.custom(sequencedAssembly('minecraft:diamond', 'appliedenergistics2:engineering_processor'));
+  event.custom(
+    sequencedAssembly(
+      'appliedenergistics2:purified_certus_quartz_crystal',
+      'appliedenergistics2:calculation_processor'
+    )
+  );
 });
 
 /* Replaces all thrown certus with AE2 Certus */

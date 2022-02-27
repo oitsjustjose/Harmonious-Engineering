@@ -3,5 +3,8 @@
   "item.kubejs.fluxed_singularity": "Fluxed Singularity",
   "item.kubejs.crude_andesite_alloy": "Crude Andesite Alloy",
   "item.kubejs.incomplete_redstone_servo": "Incomplete Redstone Servo",
-  "item.kubejs.incomplete_rf_coil": "Incomplete RF Coil"
+  "item.kubejs.incomplete_rf_coil": "Incomplete RF Coil",
+  "item.kubejs.incomplete_logic_processor": "Incomplete Logic Processor",
+  "item.kubejs.incomplete_engineering_processor": "Incomplete Engineering Processor",
+  "item.kubejs.incomplete_calculation_processor": "Incomplete Calculation Processor"
 }
