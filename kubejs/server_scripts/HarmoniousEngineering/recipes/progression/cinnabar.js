@@ -82,10 +82,7 @@ onEvent('recipes', event => {
   event.custom({
     type: 'thermal:pulverizer',
     ingredient: {tag: 'forge:gems/cinnabar'},
-    result: [
-      {item: 'minecraft:redstone', count: COUNTS.machine},
-      {item: 'minecraft:redstone', chance: 0.15},
-    ],
+    result: [{item: 'minecraft:redstone', count: COUNTS.machine}],
     experience: 0.0,
   });
 });
