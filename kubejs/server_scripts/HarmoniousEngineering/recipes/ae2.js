@@ -3,23 +3,12 @@ const sequencedAssembly = (material, output) => {
   const incomplete = `kubejs:incomplete_${output.replace('appliedenergistics2:', '')}`;
   return {
     type: 'create:sequenced_assembly',
-    ingredient: {tag: 'forge:silicon'},
+    ingredient: {item: 'kubejs:silicon_die'},
     transitionalItem: {item: incomplete},
     sequence: [
       {
         type: 'create:deploying',
-        ingredients: [{item: incomplete}, {item: 'appliedenergistics2:silicon_press'}],
-        results: [{item: incomplete}],
-        keepHeldItem: true,
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [{item: incomplete}, {item: 'minecraft:redstone'}],
-        results: [{item: incomplete}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [{item: incomplete}, {item: material}],
+        ingredients: [{item: 'kubejs:silicon_die'}, {item: material}],
         results: [{item: incomplete}],
       },
       {
@@ -133,7 +122,26 @@ onEvent('recipes', event => {
     'appliedenergistics2:facade',
   ]);
 
-  // Convenience recipe for AE2 circuits
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {tag: 'forge:silicon'},
+    transitionalItem: {item: 'appliedenergistics2:printed_silicon'},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [{tag: 'forge:silicon'}, {item: 'appliedenergistics2:silicon_press'}],
+        results: [{item: 'appliedenergistics2:printed_silicon'}],
+        keepHeldItem: true,
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [{item: 'appliedenergistics2:printed_silicon'}, {item: 'minecraft:redstone'}],
+        results: [{item: 'kubejs:silicon_die'}],
+      },
+    ],
+    results: [{item: 'kubejs:silicon_die', chance: 1.0}],
+    loops: 1,
+  });
   event.custom(sequencedAssembly('minecraft:gold_ingot', 'appliedenergistics2:logic_processor'));
   event.custom(sequencedAssembly('minecraft:diamond', 'appliedenergistics2:engineering_processor'));
   event.custom(

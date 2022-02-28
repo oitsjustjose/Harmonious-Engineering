@@ -6,5 +6,6 @@
   "item.kubejs.incomplete_rf_coil": "Incomplete RF Coil",
   "item.kubejs.incomplete_logic_processor": "Incomplete Logic Processor",
   "item.kubejs.incomplete_engineering_processor": "Incomplete Engineering Processor",
-  "item.kubejs.incomplete_calculation_processor": "Incomplete Calculation Processor"
+  "item.kubejs.incomplete_calculation_processor": "Incomplete Calculation Processor",
+  "item.kubejs.silicon_die": "Silicon Die"
 }

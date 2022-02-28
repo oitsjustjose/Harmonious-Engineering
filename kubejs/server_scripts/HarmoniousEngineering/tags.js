@@ -93,7 +93,7 @@ const harmoniousEngineeringTags = event => {
     'storage_overhaul:dark_oak_barrel',
     'storage_overhaul:crimson_barrel',
     'storage_overhaul:warped_barrel',
-  ].forEach(barrel =>  event.add('forge:barrels/wooden', barrel))
+  ].forEach(barrel => event.add('forge:barrels/wooden', barrel));
 };
 
 const naturalProgressionTags = event => {
