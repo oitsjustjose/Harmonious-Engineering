@@ -71,4 +71,11 @@ onEvent('recipes', event => {
     Item.of('3x minecraft:glowstone_dust'),
     null
   );
+  // A Use for Netherrack Stalactites
+  global.genUniversalCrushingRecipe(
+    event,
+    Ingredient.of('betternether:netherrack_stalactite'),
+    Item.of('1x create:cinder_flour'),
+    null
+  );
 });
