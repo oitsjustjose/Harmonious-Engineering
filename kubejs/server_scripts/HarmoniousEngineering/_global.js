@@ -258,55 +258,34 @@ onEvent('server.datapack.first', _ => {
     evt.custom({
       type: 'immersiveengineering:crusher',
       input: main,
-      result: {
-        count: output.getCount(),
-        base_ingredient: {item: output.getId()},
-      },
+      result: {count: output.getCount(), base_ingredient: {item: output.getId()}},
       energy: 1500 * t,
     });
 
     evt.custom({
       type: 'create:milling',
       ingredients: [main],
-      results: [
-        {
-          item: output.getId(),
-          count: output.getCount(),
-        },
-      ],
+      results: [{item: output.getId(), count: output.getCount()}],
       processingTime: 500 * t,
     });
 
     evt.custom({
       type: 'create:crushing',
       ingredients: [main],
-      results: [
-        {
-          item: output.getId(),
-          count: output.getCount(),
-        },
-      ],
+      results: [{item: output.getId(), count: output.getCount()}],
       processingTime: 400 * t,
     });
 
     evt.custom({
       type: 'mekanism:crushing',
       input: {ingredient: main},
-      output: {
-        item: output.getId(),
-        count: output.getCount(),
-      },
+      output: {item: output.getId(), count: output.getCount()},
     });
 
     evt.custom({
       type: 'thermal:pulverizer',
       ingredient: main,
-      result: [
-        {
-          item: output.getId(),
-          count: output.getCount(),
-        },
-      ],
+      result: [{item: output.getId(), count: output.getCount()}],
       experience: 0,
     });
   };
