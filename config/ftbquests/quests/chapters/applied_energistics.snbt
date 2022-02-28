@@ -10,7 +10,7 @@
 	quests: [
 		{
 			x: 0.0d
-			y: -4.5d
+			y: -7.5d
 			shape: "diamond"
 			description: [
 				"By throwing 1 Redstone Dust, 1 Charged Certus and 1 Nether Quartz into a pool of water, you can create Fluix."
@@ -37,8 +37,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -2.5d
+			x: -1.5d
+			y: -6.5d
 			shape: "rsquare"
 			description: ["The Charger is useful for infusing your standard Certus Quartz with RF/FE/AE Energy, thus turning it into a Charged Certus Quartz."]
 			dependencies: ["161E8A3DFFF111D2"]
@@ -59,11 +59,15 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: -3.0d
 			shape: "rsquare"
-			description: ["Growing Quartz Seeds in water no doubt takes a LONG time. By making 5 of these, you can surround the Top and 4 Sides of a block of Water and provide them with AE power from an Energy Acceptor."]
-			dependencies: ["0050052B1FC58EB6"]
+			description: [
+				"Growing Quartz Seeds in water no doubt takes a LONG time. By making 5 of these, you can surround the Top and 4 Sides of a block of Water and provide them with AE power from an Energy Acceptor."
+				""
+				"This can also be bypassed completely if you take a look at Mekanism's enrichment chamber."
+			]
+			dependencies: ["161E8A3DFFF111D2"]
 			optional: true
 			id: "10D02B9DDACF181D"
 			tasks: [{
@@ -81,8 +85,8 @@
 		}
 		{
 			title: "Quartz Seeds"
-			x: 3.0d
-			y: -2.5d
+			x: -1.5d
+			y: -3.5d
 			shape: "rsquare"
 			description: [
 				"Using a crushed Quartz (Fluix, Certus or Nether) and some Sand, you can create a Quartz Seed. By throwing this seed in some water and letting it sit (it will not despawn), you can grow it to become a Pure Crystal."
@@ -92,7 +96,6 @@
 				"FYI, these can be grown in the Mekanism Enrichment Chamber!"
 			]
 			dependencies: ["161E8A3DFFF111D2"]
-			optional: true
 			id: "0050052B1FC58EB6"
 			tasks: [{
 				id: "60955CC47414471A"
@@ -122,7 +125,7 @@
 		}
 		{
 			x: 0.0d
-			y: -3.0d
+			y: -5.0d
 			shape: "hexagon"
 			description: [
 				"The Energy Acceptor will accept any FE/RF Power, and convert it to AE power. Moreso, the acceptor can be used to act as a very crude early-game ME network, only serving a limited amount of channels (but enough to get you started!)."
@@ -146,8 +149,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
+			x: 1.5d
+			y: -6.5d
+			shape: "rsquare"
 			description: [
 				"The inscriber is the key to getting Silicon and Circuit components molded and formed to be used to make some of the more advanced components in AE2."
 				""
@@ -155,8 +159,10 @@
 				"  1. You'll need Inscriber Presses. See JEI for recipes."
 				"  2. You can rotate them and place them sideways to make automation easier."
 				"  3. You can use XNet to make automating them REALLY much easier."
+				"  4. You can bypass this altogether if you like Create's Sequenced Assembly"
 			]
 			dependencies: ["161E8A3DFFF111D2"]
+			optional: true
 			id: "288A24112A69D326"
 			tasks: [{
 				id: "63FE0D14866E2275"
@@ -172,14 +178,17 @@
 		{
 			title: "Under Control"
 			x: 0.0d
-			y: 3.0d
+			y: -0.75d
 			shape: "hexagon"
 			description: [
 				"The ME Controller can accept FE/RF just like the acceptor can, but unlike the acceptor this dedicated computational core is capable of handling many more channels in parallel. This makes the expandability of your network endless!"
 				""
 				"FYI: You can connect multiple ME Controllers to each other and they form a combined singular controller. The only thing is, a controller can only connect to up to 3 other controllers. No more than that."
 			]
-			dependencies: ["288A24112A69D326"]
+			dependencies: [
+				"0050052B1FC58EB6"
+				"01A93BFE57557124"
+			]
 			size: 1.5d
 			id: "49BB80B8831D916B"
 			tasks: [{
@@ -197,8 +206,8 @@
 		}
 		{
 			icon: "appliedenergistics2:fluix_glass_cable"
-			x: -3.0d
-			y: 0.0d
+			x: 1.5d
+			y: -3.5d
 			shape: "rsquare"
 			description: [
 				"There are several different types of cables in AE2, so I thought I'd take this time to break that down."
@@ -211,8 +220,7 @@
 				""
 				"Smart cable variants of all of these work exactly the same, but render a nice little display that tells you how many channels that particular line at that point is handling. Great for determining where a network bottleneck or overload is occurring."
 			]
-			dependencies: ["2470A2F8041AEF74"]
-			optional: true
+			dependencies: ["161E8A3DFFF111D2"]
 			id: "01A93BFE57557124"
 			tasks: [{
 				id: "4B0FE83B9F2AE4E7"
@@ -227,10 +235,11 @@
 		}
 		{
 			title: "Terminals"
-			x: -3.5d
-			y: 2.0d
+			x: -2.0d
+			y: -5.0d
+			shape: "hexagon"
 			description: ["Terminals allow you to access the contents of your ME Network, be it fluids, items, patterns, etc.."]
-			dependencies: ["288A24112A69D326"]
+			dependencies: ["161E8A3DFFF111D2"]
 			id: "12B55A07958426E9"
 			tasks: [{
 				id: "24DA412A79329CAD"
@@ -274,8 +283,9 @@
 		}
 		{
 			title: "Digital Item Access"
-			x: 3.5d
-			y: 2.0d
+			x: 2.0d
+			y: -5.0d
+			shape: "hexagon"
 			description: [
 				"At this point, you have two ways to store your items (or you can combine the two!)."
 				""
@@ -283,7 +293,7 @@
 				""
 				"The second is to use a Storage Bus to connect your existing Chests/Drawers/Crates/Barrels to the system."
 			]
-			dependencies: ["288A24112A69D326"]
+			dependencies: ["161E8A3DFFF111D2"]
 			id: "318D8C5DA5272C22"
 			tasks: [{
 				id: "6E928290D81F0D26"
@@ -316,7 +326,7 @@
 		}
 		{
 			x: 0.0d
-			y: 5.0d
+			y: 1.0d
 			shape: "octagon"
 			description: [
 				"AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here, but just know that this route you've chosen is more difficult than Refined Storage."
