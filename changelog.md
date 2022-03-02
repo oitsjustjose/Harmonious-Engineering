@@ -1,3 +1,17 @@
+# 2.0.9
+
+## Added
+
+- [Recipes] Added Sequenced Assembly recipes for AE2's Circuits. The Inscriber recipes are still in, but this gives you another option that stinks less
+- [Recipes] Recipe to crush Netherrack Stalactite into Create's Netherrack Flour
+- [Recipes] Create's Wheat Flour recipe can be created in more machines like the Crusher and Pulverizer
+
+## Changed
+
+- [Recipes] Cinnabar is so common as an ore that the Redstone crushing recipes have been nerfed heavily
+- [Quests] Storage quest chapter has been overhauled and reorganized. Mostly to be more inclusive of storage block variants like Dark Oak, etc
+- [Quests] AE2 quest chapter has been reorganized to follow a more logical flow that I think most people would take
+
 # 2.0.8
 
 ## Added

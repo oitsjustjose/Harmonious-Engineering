@@ -12,7 +12,7 @@ onEvent('recipes', event => {
   event.custom({
     type: 'immersiveengineering:crusher',
     input: {tag: 'forge:ores/cinnabar'},
-    result: {count: COUNTS.machine, base_ingredient: {item: 'minecraft:redstone'}},
+    result: {count: COUNTS.crusher, base_ingredient: {item: 'emendatusenigmatica:cinnabar_gem'}},
     secondaries: [],
     energy: 12000,
   });
@@ -34,15 +34,7 @@ onEvent('recipes', event => {
     results: [{item: 'minecraft:redstone', count: COUNTS.mill}],
     processingTime: 750,
   });
-  event.custom({
-    type: 'create:crushing',
-    ingredients: [{tag: 'forge:ores/cinnabar'}],
-    results: [
-      {item: 'minecraft:redstone', count: COUNTS.crusher},
-      {item: 'minecraft:cobblestone', chance: 0.3},
-    ],
-    processingTime: 950,
-  });
+
   event.custom({
     type: 'create:crushing',
     ingredients: [{tag: 'forge:gems/cinnabar'}],
@@ -70,15 +62,6 @@ onEvent('recipes', event => {
    **********************************/
   // Remove the cinnabar dust recipe.
   event.remove({id: 'thermal:machine/pulverizer/pulverizer_cinnabar'});
-  event.custom({
-    type: 'thermal:pulverizer',
-    ingredient: {tag: 'forge:ores/cinnabar'},
-    result: [
-      {item: 'minecraft:redstone', count: COUNTS.machine},
-      {item: 'minecraft:gravel', chance: 0.2},
-    ],
-    experience: 1.4,
-  });
   event.custom({
     type: 'thermal:pulverizer',
     ingredient: {tag: 'forge:gems/cinnabar'},
