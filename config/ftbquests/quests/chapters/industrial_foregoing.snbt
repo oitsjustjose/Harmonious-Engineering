@@ -179,7 +179,7 @@
 			x: 5.5d
 			y: -2.5d
 			shape: "rsquare"
-			description: ["The Black Hole controller can be used to store up to 16 Black Hole Tanks or Units (or a mix!). While you can't directly access the contents of the embedded Black Hole units, you can access them via automation extraction such as a Simple Storage, Refined Storage or ME Network."]
+			description: ["The Black Hole controller can be used to store up to 16 Black Hole Tanks or Units (or a mix!). While you can't directly access the contents of the embedded Black Hole units, you can access them via automation extraction such as a Simple Storage or ME Network."]
 			hide_dependency_lines: true
 			dependencies: [
 				"77021BDB7ADE594B"

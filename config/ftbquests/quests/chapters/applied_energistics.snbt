@@ -329,9 +329,7 @@
 			y: 1.0d
 			shape: "octagon"
 			description: [
-				"AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here, but just know that this route you've chosen is more difficult than Refined Storage."
-				""
-				"That said, if you find yourself frustrated at any point, it's pretty easy to change trains over to RS :)"
+				"AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here because your AE2 system can grow with your network needs."
 			]
 			hide_dependency_lines: true
 			dependencies: [
