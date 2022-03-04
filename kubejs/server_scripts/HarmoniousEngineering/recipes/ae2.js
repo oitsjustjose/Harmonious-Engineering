@@ -63,7 +63,7 @@ onEvent('recipes', event => {
 
   global.genCombinedRecipe(
     event,
-    Ingredient.of('#harmeng:presses'),
+    Ingredient.of('create:mechanical_press'),
     Ingredient.of('appliedenergistics2:purified_fluix_crystal'),
     Item.of('appliedenergistics2:inscriber')
   );

@@ -328,9 +328,7 @@
 			x: 0.0d
 			y: 1.0d
 			shape: "octagon"
-			description: [
-				"AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here because your AE2 system can grow with your network needs."
-			]
+			description: ["AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here because your AE2 system can grow with your network needs."]
 			hide_dependency_lines: true
 			dependencies: [
 				"12B55A07958426E9"

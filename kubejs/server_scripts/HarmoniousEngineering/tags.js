@@ -2,9 +2,6 @@ const harmoniousEngineeringTags = event => {
   event.add('harmeng:diamond_tier_saws', 'natural-progression:diamond_saw');
   event.add('harmeng:diamond_tier_saws', 'natural-progression:netherite_saw');
 
-  event.add('harmeng:presses', 'thermal:machine_press');
-  event.add('harmeng:presses', 'create:mechanical_press');
-
   event.add('harmeng:basic_tank', 'create:fluid_tank');
   event.add('harmeng:basic_tank', 'mekanism:basic_fluid_tank');
   event.add('harmeng:basic_tank', 'industrialforegoing:pity_black_hole_tank');

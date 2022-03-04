@@ -291,7 +291,10 @@
 			shape: "octagon"
 			description: ["Mekasuit armor has been much easier to make, because honestly there aren't many other good electrical armor sets out there in the modding scene. As such, they're still meant to be a bit of a grind, but I hope that you enjoy having access to them sooner than later!"]
 			hide_dependency_lines: true
-			dependencies: ["548FF0C4E700EFE2"]
+			dependencies: [
+				"548FF0C4E700EFE2"
+				"2E49A23E06D1505D"
+			]
 			size: 2.0d
 			optional: true
 			id: "2F7F0D0DB3F4FDD2"
@@ -346,6 +349,46 @@
 				type: "item"
 				item: "mekanism:modification_station"
 			}]
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			description: [
+				"So your reactor exploded or you have a ton of radiation in an area, huh?"
+				"Well, for some reason Mekanism's radiation no longer decays over time. This quest lets you reset it if you have an ooopsie"
+				""
+				"This can be repeated as many times as you wish."
+			]
+			id: "31398C49E0945148"
+			tasks: [{
+				id: "79139F1D160EDDCD"
+				type: "checkmark"
+				title: "Hazmat Cleanup"
+				icon: {
+					id: "mekanism:hazmat_mask"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7D4C343BC79F3445"
+					type: "command"
+					auto: "invisible"
+					command: "/mek radiation removeAll"
+					player_command: false
+				}
+				{
+					id: "0A4E40531D5F4C88"
+					type: "command"
+					team_reward: false
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 31398C49E0945148"
+					player_command: false
+				}
+			]
 		}
 	]
 }

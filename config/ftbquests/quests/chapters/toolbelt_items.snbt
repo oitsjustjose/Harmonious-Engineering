@@ -22,6 +22,8 @@
 				"Instead of Waystones or Portality, Wormholes are the method of isntant transport from Point A to Point B. I prefer using rails where possible but sometimes that's just unreasonable to do, so Wormholes are the way to go!"
 				""
 				"Recipes are unchanged because this pack encourages exploration! No need in adding that feeling of restriction to go too far from home!"
+				""
+				"Wormholes can have their portals recolored by using any Vanilla Dye. The Dye will not be consumed :)"
 			]
 			id: "06975494D76A3B03"
 			tasks: [{
