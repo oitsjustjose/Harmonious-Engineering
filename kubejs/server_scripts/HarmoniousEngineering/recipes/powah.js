@@ -83,17 +83,3 @@ onEvent('recipes', event => {
     S: '#forge:ingots/steel',
   });
 });
-
-onEvent('entity.drops', event => {
-  const entity = event.getEntity();
-
-  if (entity.getType() !== 'minecraft:enderman') {
-    return;
-  }
-
-  const comp = entity.minecraftEntity.getPersistentData();
-  const isChallengerMob = comp.func_74764_b('challenger_mob_data'); // contains()
-  if (isChallengerMob) {
-    event.addDrop(Item.of('1x powah:ender_core'));
-  }
-});

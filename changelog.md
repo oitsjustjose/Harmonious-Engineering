@@ -14,6 +14,8 @@
 ## Changed
 
 - AE2's inscriber recipe only requires Create's metal press, and no longer allows the Multiservo Press from Thermal
+- Baby Zombies now no longer spawn (VTweaks 3.6.0 feature)
+- Only two Challenger Mobs can spawn (both Endermen): Arcane and Eldritch
 
 # 2.0.9
 
