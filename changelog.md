@@ -1,3 +1,20 @@
+# 2.0.10
+
+## Added
+
+- [Mod] Notes mod, allows you to take notes as you go!
+- [Quest] A Quest for resetting the Nuclear Decay in your environment under Advanced Mekanism
+
+## Fixed
+
+- Several quests making mention of Refined Storage, which is not part of this pack anymore
+- Wormholes quest now tells you how to re-dye them!
+- Cinnabar Ore crushing recipes
+
+## Changed
+
+- AE2's inscriber recipe only requires Create's metal press, and no longer allows the Multiservo Press from Thermal
+
 # 2.0.9
 
 ## Added
