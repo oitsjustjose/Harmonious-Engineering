@@ -35,7 +35,6 @@ onEvent('jei.hide.items', event => {
     '/upgrade_aquatic:.*_vertical_slab/',
     '/wormhole:coal_generator/',
     '/wormhole:creative_energy_cell/',
-    'ae2wtlib:infinity_booster_card',
     'ae2wtlib:wireless_fluid_terminal',
     'appliedenergistics2:ender_dust',
     'appliedenergistics2:gold_dust',

@@ -1,3 +1,9 @@
+# 2.0.11a
+
+## Fixed
+
+- [KubeJS] Fixed errors thrown when executing scripts
+
 # 2.0.11
 
 ## Fixed

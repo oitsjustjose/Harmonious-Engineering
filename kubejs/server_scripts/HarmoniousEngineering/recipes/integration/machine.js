@@ -87,21 +87,21 @@ onEvent('recipes', event => {
   );
 
   // Crushing compatibility for Create Wheat Flour
-  evt.custom({
+  event.custom({
     type: 'immersiveengineering:crusher',
+    result: {count: 1, base_ingredient: {item: 'create:wheat_flour'}},
+    secondaries: [],
     input: {item: 'minecraft:wheat'},
-    result: {item: 'create:wheat_flour', count: 1},
-    secondaries: [{chance: 0.15, item: 'create:wheat_flour'}],
-    energy: 200,
+    energy: 6020000,
   });
 
-  evt.custom({
+  event.custom({
     type: 'mekanism:enriching',
     input: {ingredient: {item: 'minecraft:wheat'}},
     output: {item: 'create:wheat_flour'},
   });
 
-  evt.custom({
+  event.custom({
     type: 'thermal:pulverizer',
     ingredient: {item: 'minecraft:wheat'},
     result: [{item: 'create:wheat_flour'}],

@@ -30,19 +30,11 @@ onEvent('recipes', event => {
   event.remove({output: 'appliedenergistics2:wireless_receiver'});
   event.remove({output: 'appliedenergistics2:wireless_booster'});
   event.remove({output: 'ae2wtlib:infinity_booster_card'});
-  event.remove({output: 'aeinfinitybooster:infinity_card'});
-  event.remove({output: 'aeinfinitybooster:dimension_card'});
   event.remove({output: 'appliedenergistics2:energy_acceptor'});
 
-  event.shaped('1x aeinfinitybooster:infinity_card', ['SWS', 'WNW', 'III'], {
+  event.shaped('1x ae2wtlib:infinity_booster_card', ['SWS', 'WNW', 'III'], {
     W: 'appliedenergistics2:wireless_booster',
     I: '#forge:ingots/netherite',
-    N: 'minecraft:nether_star',
-    S: 'kubejs:fluxed_singularity',
-  });
-
-  event.shaped('1x aeinfinitybooster:dimension_card', ['WNW', 'NSN', 'WNW'], {
-    W: 'aeinfinitybooster:infinity_card',
     N: 'minecraft:nether_star',
     S: 'kubejs:fluxed_singularity',
   });

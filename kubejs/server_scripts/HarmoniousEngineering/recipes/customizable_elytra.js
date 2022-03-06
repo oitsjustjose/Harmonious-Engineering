@@ -19,12 +19,14 @@ onEvent('recipes', event => {
   });
 
   // Quark Elytra duplication via Dragon Scale
+  const inputWithTooltip = Item.of('customizableelytra:customizable_elytra', {
+    display: {
+      Lore: ['[{"text":"(Is not consumed in this process)","italic":false, "color":"dark_aqua"}]'],
+    },
+  });
   event
-    .shapeless('customizableelytra:customizable_elytra', [
-      'customizableelytra:customizable_elytra',
-      'quark:dragon_scale',
-    ])
-    .keepIngredient('customizableelytra:customizable_elytra');
+    .shapeless('customizableelytra:customizable_elytra', [inputWithTooltip, 'quark:dragon_scale'])
+    .keepIngredient(inputWithTooltip);
 
   // Tarantula Hawk Elytra
   event.shaped('alexsmobs:tarantula_hawk_elytra', ['WEW'], {
@@ -55,8 +57,13 @@ onEvent('entity.spawned', event => {
     if (!itemEntity || !itemEntity.getItem()) {
       return;
     }
+
     if (itemEntity.getItem().getId() === 'minecraft:elytra') {
-      itemEntity.setItem(Item.of('customizableelytra:customizable_elytra'));
+      const newItem = Item.of('customizableelytra:customizable_elytra');
+      if (itemEntity.getItem().getNbt()) {
+        newItem.setNbt(itemEntity.getItem().getNbt());
+      }
+      itemEntity.setItem(newItem);
     }
   }
 });
