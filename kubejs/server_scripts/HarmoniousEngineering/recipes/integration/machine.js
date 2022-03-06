@@ -85,12 +85,25 @@ onEvent('recipes', event => {
     Item.of('1x create:cinder_flour'),
     null
   );
-  // Crushing Wheat to Flour in other machines
-  event.remove({output: 'create:wheat_flour'});
-  global.genUniversalCrushingRecipe(
-    event,
-    Ingredient.of('minecraft:wheat'),
-    Item.of('1x create:wheat_flour'),
-    null
-  );
+
+  // Crushing compatibility for Create Wheat Flour
+  evt.custom({
+    type: 'immersiveengineering:crusher',
+    input: {item: 'minecraft:wheat'},
+    result: {item: 'create:wheat_flour', count: 1},
+    secondaries: [{chance: 0.15, item: 'create:wheat_flour'}],
+    energy: 200,
+  });
+
+  evt.custom({
+    type: 'mekanism:enriching',
+    input: {ingredient: {item: 'minecraft:wheat'}},
+    output: {item: 'create:wheat_flour'},
+  });
+
+  evt.custom({
+    type: 'thermal:pulverizer',
+    ingredient: {item: 'minecraft:wheat'},
+    result: [{item: 'create:wheat_flour'}],
+  });
 });

@@ -1,8 +1,22 @@
+# 2.0.11
+
+## Fixed
+
+- [KubeJS] Occasional script errors with thrown items being null
+- [KubeJS] Wheat Flour recipe conflicting with Wheat -> Biofuel recipe in Mekanism Crusher
+- [Mod Update] Server issues with V-Tweaks
+
+## Changed
+
+- [Config] Killing Raid/Patrol Captains no longer gives the Bad Omen effect. This can now be obtained by burning the banners dropped by said Captains.
+- [KubeJS] Eldritch Endermen no longer give Bad Omen effect
+
 # 2.0.10
 
 ## Added
 
 - [Mod] Notes mod, allows you to take notes as you go!
+- [Mod] Neko's Enchanted Books, adding beautiful custom textures to most enchanted book types!
 - [Quest] A Quest for resetting the Nuclear Decay in your environment under Advanced Mekanism
 
 ## Fixed

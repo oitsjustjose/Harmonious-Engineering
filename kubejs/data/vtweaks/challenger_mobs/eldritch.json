@@ -22,10 +22,6 @@
     {
       "name": "minecraft:unluck",
       "duration": 2400
-    },
-    {
-      "name": "minecraft:bad_omen",
-      "duration": 4000
     }
   ],
   "loot": [{"weight": 1, "item": {"item": "powah:ender_core"}}]

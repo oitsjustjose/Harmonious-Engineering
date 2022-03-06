@@ -52,6 +52,9 @@ onEvent('recipes', event => {
 onEvent('entity.spawned', event => {
   if (event.getEntity().getType() === 'minecraft:item') {
     const itemEntity = event.getEntity();
+    if (!itemEntity || !itemEntity.getItem()) {
+      return;
+    }
     if (itemEntity.getItem().getId() === 'minecraft:elytra') {
       itemEntity.setItem(Item.of('customizableelytra:customizable_elytra'));
     }

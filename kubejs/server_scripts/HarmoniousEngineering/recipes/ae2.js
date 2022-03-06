@@ -156,6 +156,10 @@ onEvent('recipes', event => {
 onEvent('entity.spawned', event => {
   if (event.getEntity().getType() === 'minecraft:item') {
     const itemEntity = event.getEntity();
+    if (!itemEntity || !itemEntity.getItem()) {
+      return;
+    }
+
     if (itemEntity.getItem().getId() === 'emendatusenigmatica:charged_certus_quartz_gem') {
       itemEntity.setItem(
         Item.of(
