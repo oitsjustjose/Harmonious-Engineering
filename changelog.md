@@ -1,17 +1,25 @@
 # 2.0.12
 
+# MAKE A BACKUP BEFORE UPDATING TO THIS VERSION
+
+There has been one potentially breaking change in this pack update, and unless you back up there's no guarantee that I can fix whatever issues may arise without permanently affecting your world.
+
 ## Added
 
-- AppleSkin
-- Mindful Eating
-- Diet
+- [Mod] Mindful Eating - this mod doesn't change or overhaul or punish your usual eating patterns, but as you try eating various foods and experiment with the different types of exhaustion (running, mining, swimming, jumping, etc.) you'll find that some foods reduce the amount of exhaustion you feel! If you want to get really in-depth you can learn more about the mod [here](https://youtu.be/NN8Vgj4wrFw?t=461)
+- [Mod] AppleSkin (Required for Mindful Eating)
+- [Mod] Diet (Required for Mindful Eating)
 
-## Removed
+## Swapped
 
-- [Mod] BetterNether has been causing a whole lot of issues as far as datapack and other really strange compatibility so it has been removed since it is not actively maintained. You will not need to reset your Nether unless you want to; I've re-mapped all of BetterNether's blocks to very similar variants from other places like Infernal Expansion & Vanilla Minecraft
+- [Mod] Overloaded Armor Bar and Armor Toughness Bar have been replaced with ArmorPoints++
 - [Mod] BetterEnd Reforged was ported by the same dev as BetterNether, so we have changed back to the much better port which should fix most of the issues in the end. You will not need to reset your End dimension. The fixes I'm referring to are specifically:
   - Obsidian platform generating stupid far way from the island
   - Respawning the dragon causing overlap on the main portal, main pylons
+
+## Removed
+
+- [Mod] BetterNether has been causing a whole lot of issues as far as datapack and other really strange compatibility so it has been removed since it is not actively maintained. You will not need to reset your Nether unless you want to; I've re-mapped all of BetterNether's blocks to very similar variants from other places like Infernal Expansion & Vanilla Minecraft, so you shouldn't see any major issues in your Nether.
 
 ## Fixed
 
