@@ -1,3 +1,23 @@
+# 2.0.12
+
+## Added
+
+- AppleSkin
+- Mindful Eating
+- Diet
+
+## Removed
+
+- [Mod] BetterNether has been causing a whole lot of issues as far as datapack and other really strange compatibility so it has been removed since it is not actively maintained. You will not need to reset your Nether unless you want to; I've re-mapped all of BetterNether's blocks to very similar variants from other places like Infernal Expansion & Vanilla Minecraft
+- [Mod] BetterEnd Reforged was ported by the same dev as BetterNether, so we have changed back to the much better port which should fix most of the issues in the end. You will not need to reset your End dimension. The fixes I'm referring to are specifically:
+  - Obsidian platform generating stupid far way from the island
+  - Respawning the dragon causing overlap on the main portal, main pylons
+
+## Fixed
+
+- Potential exploit to get infinite Elytra durability via a combination of converting your elytra to Minecraft's variant and then throwing it in the world.
+- Made Elytra Duplication recipe from Quark more clear as to what is happening.
+
 # 2.0.11a
 
 ## Fixed

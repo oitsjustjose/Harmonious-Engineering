@@ -61,17 +61,6 @@ const harmoniousEngineeringTags = event => {
 
   [
     'minecraft:barrel',
-    'betternether:barrel_anchor_tree',
-    'betternether:barrel_nether_sakura',
-    'betternether:barrel_crimson',
-    'betternether:barrel_warped',
-    'betternether:barrel_stalagnate',
-    'betternether:barrel_reed',
-    'betternether:barrel_willow',
-    'betternether:barrel_wart',
-    'betternether:barrel_rubeus',
-    'betternether:barrel_mushroom',
-    'betternether:barrel_mushroom_fir',
     'betterendforge:mossy_glowshroom_barrel',
     'betterendforge:lacugrove_barrel',
     'betterendforge:end_lotus_barrel',
@@ -115,8 +104,6 @@ const naturalProgressionTags = event => {
   event.add('natural-progression:axes', 'betterendforge:aeternium_axe');
   event.add('natural-progression:axes', 'betterendforge:thallasium_axe');
   event.add('natural-progression:axes', 'betterendforge:terminite_axe');
-  event.add('natural-progression:axes', 'betternether:cincinnasite_axe');
-  event.add('natural-progression:axes', 'betternether:nether_ruby_axe');
   event.add('natural-progression:axes', 'mekanismtools:refined_glowstone_paxel');
   event.add('natural-progression:axes', 'appliedenergistics2:certus_quartz_axe');
   event.add('natural-progression:axes', 'appliedenergistics2:nether_quartz_axe');

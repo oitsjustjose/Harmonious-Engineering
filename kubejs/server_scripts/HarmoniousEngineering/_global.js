@@ -2,13 +2,6 @@
 
 onEvent('server.datapack.first', _ => {
   global._planks = [
-    'betternether:stalagnate_planks',
-    'betternether:willow_planks',
-    'betternether:wart_planks',
-    'betternether:mushroom_planks',
-    'betternether:mushroom_fir_planks',
-    'betternether:rubeus_planks',
-    'betternether:anchor_tree_planks',
     'betterendforge:mossy_glowshroom_planks',
     'betterendforge:lacugrove_planks',
     'betterendforge:end_lotus_planks',

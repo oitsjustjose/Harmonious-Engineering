@@ -5,8 +5,6 @@ onEvent('recipes', event => {
   const woodTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak', 'crimson', 'warped'];
 
   event.remove({output: 'minecraft:barrel'});
-  event.remove({output: 'betternether:barrel_crimson'});
-  event.remove({output: 'betternether:barrel_warped'});
   event.shapeless('minecraft:barrel', ['#forge:barrels/wooden']);
 
   // Makes SO's barrels use a more vanilla-like recipe
@@ -14,7 +12,7 @@ onEvent('recipes', event => {
     event.remove({output: `storage_overhaul:${wood}_barrel`});
     event.shaped(`storage_overhaul:${wood}_barrel`, ['PSP', 'P P', 'PSP'], {
       P: `#chipped:${wood}_planks`,
-      S: `minecraft:${wood}_slab`
+      S: `minecraft:${wood}_slab`,
     });
   });
 
