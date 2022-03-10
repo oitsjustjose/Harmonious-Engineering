@@ -1913,7 +1913,7 @@
 		"Enable Shiny Dolphin" = true
 
 	[client.improved_tooltips]
-		"Shulker Box Require Shift" = false
+		"Shulker Box Require Shift" = true
 		"Shulker Box Use Colors" = true
 		"Attribute Tooltips" = true
 		"Enchanting Tooltips" = true
@@ -1928,8 +1928,8 @@
 		"Food Compression Threshold" = 4
 		"Map Require Shift" = false
 		"Shulker Tooltips" = true
-		"Food Tooltips" = true
-		"Show Saturation" = true
+		"Food Tooltips" = false
+		"Show Saturation" = false
 		"Map Tooltips" = true
 		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "quark:pickarang"]
 
