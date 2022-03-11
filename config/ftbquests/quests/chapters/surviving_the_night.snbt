@@ -45,7 +45,7 @@
 		{
 			title: "Not Your Usual Tree Punching"
 			icon: "natural-progression:quark_jasper_pebble"
-			x: 2.0d
+			x: 3.5d
 			y: -4.0d
 			shape: "diamond"
 			description: ["To get started, pick up at least two Pebbles and put one each in your main and off-hand. Hold down right-click and knap the two pebbles together until you hear a *click* which indicates your first pieces of Flint!"]
@@ -79,7 +79,7 @@
 		}
 		{
 			title: "Grab a Stick"
-			x: 0.0d
+			x: -1.5d
 			y: -4.0d
 			shape: "diamond"
 			description: ["All around on the ground you should see sticks. Break, or right-click, these sticks to pick some up! You'll need around 8."]
@@ -109,7 +109,7 @@
 				}
 			}
 			x: 1.0d
-			y: -2.5d
+			y: -3.0d
 			description: ["Use your Flint and Sticks to make a Flint hatchet! Strip the bark of a tree before cutting it down, then combine the stripped log(s) with your axe to craft your first planks!"]
 			dependencies: [
 				"25A47A55DD6564CA"
@@ -311,7 +311,7 @@
 		{
 			title: "Improved Backpacks"
 			x: 3.5d
-			y: -0.5d
+			y: 0.0d
 			shape: "rsquare"
 			description: ["Improved Backpacks is a greatly modular system for sewing yourself a lovely backpack. If you've made one, take a couple of pouches on us!"]
 			hide_dependency_lines: true
@@ -486,7 +486,7 @@
 		{
 			title: "Optimizing That Inv"
 			x: -1.5d
-			y: -0.5d
+			y: 0.0d
 			shape: "rsquare"
 			description: ["We know that the inventory can get cluttered SUPER quickly. The Toolbelt mod has a nicely configurable radial menu that lets you store stuff like Napsacks, Akashic Tomes, Morphing Tools and other day-to-day tools right on your belt! Give it a try if you're struggling to keep your hotbar organized!"]
 			hide_dependency_lines: true
@@ -504,6 +504,49 @@
 				item: "toolbelt:pouch"
 				random_bonus: 1
 			}]
+		}
+		{
+			title: "A Balanced Diet"
+			x: 1.0d
+			y: -4.5d
+			description: [
+				"Upon eating something you may have noticed that there's something off about the hunger bar  -- there are little icons in it now, right? Or is that just me??"
+				""
+				"These icons represent what you've been eating lately. What you eat combined with what you've been doing (running, swimming, mining, etc.) can createa synergies that make your hunger go down at a slower rate. Try different permutations of these to see which ones make the hunger bar shimmer and glow!"
+			]
+			id: "037495DD5120DAE3"
+			tasks: [{
+				id: "78164E366E8E2DD6"
+				type: "checkmark"
+				title: "A Balanced Diet"
+				icon: "farmersdelight:stuffed_potato"
+			}]
+			rewards: [
+				{
+					id: "7F6B49446D29CEE7"
+					type: "item"
+					item: "minecraft:apple"
+					random_bonus: 4
+				}
+				{
+					id: "7569325F276A4592"
+					type: "item"
+					item: "minecraft:golden_carrot"
+					random_bonus: 4
+				}
+				{
+					id: "044C20105FD27B89"
+					type: "item"
+					item: "autumnity:pumpkin_bread"
+					random_bonus: 4
+				}
+				{
+					id: "62508E22BB5370AD"
+					type: "item"
+					item: "minecraft:cooked_porkchop"
+					random_bonus: 4
+				}
+			]
 		}
 	]
 }

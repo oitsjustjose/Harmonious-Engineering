@@ -43,6 +43,8 @@ onEvent('jei.hide.items', event => {
     'appliedenergistics2:nether_quartz_dust',
     'appliedenergistics2:silicon',
     'betterendforge:ender_dust',
+    'betternether:barrel_crimson',
+    'betternether:barrel_warped',
     'compactmachines:machine_maximum',
     'compactmachines:machine_small',
     'compactmachines:machine_tiny',

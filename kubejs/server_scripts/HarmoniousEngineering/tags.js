@@ -1,54 +1,69 @@
 const harmoniousEngineeringTags = event => {
-  event.add('harmeng:diamond_tier_saws', 'natural-progression:diamond_saw');
-  event.add('harmeng:diamond_tier_saws', 'natural-progression:netherite_saw');
+  // Diamond Tier Saws
+  ['natural-progression:diamond_saw', 'natural-progression:netherite_saw'].forEach(x =>
+    event.add('harmeng:diamond_tier_saws', x)
+  );
 
-  event.add('harmeng:basic_tank', 'create:fluid_tank');
-  event.add('harmeng:basic_tank', 'mekanism:basic_fluid_tank');
-  event.add('harmeng:basic_tank', 'industrialforegoing:pity_black_hole_tank');
-  event.add('harmeng:basic_tank', 'industrialforegoing:simple_black_hole_tank');
-  event.add('harmeng:basic_tank', 'thermal:fluid_cell');
+  // Basic Tank
+  [
+    'create:fluid_tank',
+    'mekanism:basic_fluid_tank',
+    'industrialforegoing:pity_black_hole_tank',
+    'industrialforegoing:simple_black_hole_tank',
+    'thermal:fluid_cell',
+  ].forEach(x => event.add('harmeng:basic_tank', x));
 
-  event.add('harmeng:chestless_logs', '#tconstruct:greenheart_logs');
-  event.add('harmeng:chestless_logs', '#tconstruct:skyroot_logs');
-  event.add('harmeng:chestless_logs', '#tconstruct:bloodshroom_logs');
+  // Add TiCon logs to the chestless bunch
+  ['greenheart', 'skyroot', 'bloodshroom'].forEach(x =>
+    event.add('harmeng:chestless_logs', `#tconstruct:${x}_logs`)
+  );
 
-  event.add('harmeng:chestless_planks', 'quark:white_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:orange_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:magenta_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:light_blue_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:yellow_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:lime_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:pink_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:gray_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:light_gray_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:cyan_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:purple_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:blue_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:brown_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:green_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:red_stained_planks');
-  event.add('harmeng:chestless_planks', 'quark:black_stained_planks');
-  event.add('harmeng:chestless_planks', 'tconstruct:greenheart_planks');
-  event.add('harmeng:chestless_planks', 'tconstruct:skyroot_planks');
-  event.add('harmeng:chestless_planks', 'tconstruct:bloodshroom_planks');
+  // Chestless planks
+  [
+    'quark:white_stained_planks',
+    'quark:orange_stained_planks',
+    'quark:magenta_stained_planks',
+    'quark:light_blue_stained_planks',
+    'quark:yellow_stained_planks',
+    'quark:lime_stained_planks',
+    'quark:pink_stained_planks',
+    'quark:gray_stained_planks',
+    'quark:light_gray_stained_planks',
+    'quark:cyan_stained_planks',
+    'quark:purple_stained_planks',
+    'quark:blue_stained_planks',
+    'quark:brown_stained_planks',
+    'quark:green_stained_planks',
+    'quark:red_stained_planks',
+    'quark:black_stained_planks',
+    'tconstruct:greenheart_planks',
+    'tconstruct:skyroot_planks',
+    'tconstruct:bloodshroom_planks',
+  ].forEach(x => event.add('harmeng:chestless_planks', x));
 
-  event.add('harmeng:saw_blade', 'thermal:saw_blade');
-  event.add('harmeng:saw_blade', '#forge:sawblades');
+  // Saw
+  ['thermal:saw_blade', '#forge:sawblades'].forEach(x => event.add('harmeng:saw_blade', x));
 
-  event.add('harmeng:meka/mid_tier_mat', 'powah:crystal_blazing');
-  event.add('harmeng:meka/mid_tier_mat', 'industrialforegoing:pink_slime_ingot');
-  event.add('harmeng:meka/mid_tier_mat', '#forge:ingots/enderium');
-  event.add('harmeng:meka/mid_tier_mat', '#forge:ingots/refined_obsidian');
+  // Mid-Tier Crafting Ingredient
+  [
+    'powah:crystal_blazing',
+    'industrialforegoing:pink_slime_ingot',
+    '#forge:ingots/enderium',
+    '#forge:ingots/refined_obsidian',
+  ].forEach(x => event.add('harmeng:meka/mid_tier_mat', x));
 
-  event.add('harmeng:drawer_like', '#storagedrawers:drawers');
-  event.add('harmeng:drawer_like', 'storage_overhaul:oak_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:spruce_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:birch_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:acacia_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:jungle_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:dark_oak_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:crimson_storage_barrel');
-  event.add('harmeng:drawer_like', 'storage_overhaul:warped_storage_barrel');
+  // Drawer-like
+  [
+    '#storagedrawers:drawers',
+    'storage_overhaul:oak_storage_barrel',
+    'storage_overhaul:spruce_storage_barrel',
+    'storage_overhaul:birch_storage_barrel',
+    'storage_overhaul:acacia_storage_barrel',
+    'storage_overhaul:jungle_storage_barrel',
+    'storage_overhaul:dark_oak_storage_barrel',
+    'storage_overhaul:crimson_storage_barrel',
+    'storage_overhaul:warped_storage_barrel',
+  ].forEach(x => event.add('harmeng:drawer_like', x));
 
   event.add('harmeng:zinc_or_iron_chunk', 'emendatusenigmatica:zinc_chunk');
   event.add('harmeng:zinc_or_iron_chunk', 'emendatusenigmatica:iron_chunk');
@@ -60,72 +75,93 @@ const harmoniousEngineeringTags = event => {
   );
 
   [
-    'minecraft:barrel',
-    'betterendforge:mossy_glowshroom_barrel',
-    'betterendforge:lacugrove_barrel',
-    'betterendforge:end_lotus_barrel',
-    'betterendforge:pythadendron_barrel',
     'betterendforge:dragon_tree_barrel',
-    'betterendforge:tenanea_barrel',
+    'betterendforge:end_lotus_barrel',
     'betterendforge:helix_tree_barrel',
-    'betterendforge:umbrella_tree_barrel',
     'betterendforge:jellyshroom_barrel',
+    'betterendforge:lacugrove_barrel',
     'betterendforge:lucernia_barrel',
+    'betterendforge:mossy_glowshroom_barrel',
+    'betterendforge:pythadendron_barrel',
+    'betterendforge:tenanea_barrel',
+    'betterendforge:umbrella_tree_barrel',
+    'betternether:barrel_anchor_tree',
+    'betternether:barrel_crimson',
+    'betternether:barrel_mushroom_fir',
+    'betternether:barrel_mushroom',
+    'betternether:barrel_nether_sakura',
+    'betternether:barrel_reed',
+    'betternether:barrel_rubeus',
+    'betternether:barrel_stalagnate',
+    'betternether:barrel_warped',
+    'betternether:barrel_wart',
+    'betternether:barrel_willow',
+    'minecraft:barrel',
+    'storage_overhaul:acacia_barrel',
+    'storage_overhaul:birch_barrel',
+    'storage_overhaul:crimson_barrel',
+    'storage_overhaul:dark_oak_barrel',
+    'storage_overhaul:jungle_barrel',
     'storage_overhaul:oak_barrel',
     'storage_overhaul:spruce_barrel',
-    'storage_overhaul:birch_barrel',
-    'storage_overhaul:acacia_barrel',
-    'storage_overhaul:jungle_barrel',
-    'storage_overhaul:dark_oak_barrel',
-    'storage_overhaul:crimson_barrel',
     'storage_overhaul:warped_barrel',
-  ].forEach(barrel => event.add('forge:barrels/wooden', barrel));
+  ].forEach(x => event.add('forge:barrels/wooden', x));
 };
 
 const naturalProgressionTags = event => {
-  event.add('natural-progression:axes', 'immersiveengineering:axe_steel');
-  event.add('natural-progression:axes', 'mekanismtools:stone_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:iron_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:gold_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:diamond_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:netherite_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:bronze_axe');
-  event.add('natural-progression:axes', 'mekanismtools:bronze_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:osmium_axe');
-  event.add('natural-progression:axes', 'mekanismtools:osmium_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:lapis_lazuli_axe');
-  event.add('natural-progression:axes', 'mekanismtools:lapis_lazuli_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:refined_glowstone_axe');
-  event.add('natural-progression:axes', 'mekanismtools:refined_obsidian_axe');
-  event.add('natural-progression:axes', 'mekanismtools:refined_obsidian_paxel');
-  event.add('natural-progression:axes', 'mekanismtools:steel_axe');
-  event.add('natural-progression:axes', 'mekanismtools:steel_paxel');
-  event.add('natural-progression:axes', 'tconstruct:hand_axe');
-  event.add('natural-progression:axes', 'betterendforge:aeternium_axe');
-  event.add('natural-progression:axes', 'betterendforge:thallasium_axe');
-  event.add('natural-progression:axes', 'betterendforge:terminite_axe');
-  event.add('natural-progression:axes', 'mekanismtools:refined_glowstone_paxel');
-  event.add('natural-progression:axes', 'appliedenergistics2:certus_quartz_axe');
-  event.add('natural-progression:axes', 'appliedenergistics2:nether_quartz_axe');
+  [
+    'appliedenergistics2:certus_quartz_axe',
+    'appliedenergistics2:nether_quartz_axe',
+    'betterendforge:aeternium_axe',
+    'betterendforge:terminite_axe',
+    'betterendforge:thallasium_axe',
+    'betternether:cincinnasite_axe',
+    'betternether:nether_ruby_axe',
+    'immersiveengineering:axe_steel',
+    'mekanismtools:bronze_axe',
+    'mekanismtools:bronze_paxel',
+    'mekanismtools:diamond_paxel',
+    'mekanismtools:gold_paxel',
+    'mekanismtools:iron_paxel',
+    'mekanismtools:lapis_lazuli_axe',
+    'mekanismtools:lapis_lazuli_paxel',
+    'mekanismtools:netherite_paxel',
+    'mekanismtools:osmium_axe',
+    'mekanismtools:osmium_paxel',
+    'mekanismtools:refined_glowstone_axe',
+    'mekanismtools:refined_glowstone_paxel',
+    'mekanismtools:refined_obsidian_axe',
+    'mekanismtools:refined_obsidian_paxel',
+    'mekanismtools:steel_axe',
+    'mekanismtools:steel_paxel',
+    'mekanismtools:stone_paxel',
+    'tconstruct:hand_axe',
+  ].forEach(x => event.add('natural-progression:axes', x));
 
-  event.add('natural-progression:override_axes', 'industrialforegoing:infinity_drill');
-  event.add('natural-progression:override_axes', 'industrialforegoing:infinity_saw');
-  event.add('natural-progression:override_axes', 'tconstruct:mattock');
+  [
+    'industrialforegoing:infinity_drill',
+    'industrialforegoing:infinity_saw',
+    'tconstruct:mattock',
+  ].forEach(x => event.add('natural-progression:override_axes', x));
 };
 
 const thermalTags = event => {
-  event.add('thermal:crafting/dies', 'immersiveengineering:mold_plate');
-  event.add('thermal:crafting/dies', 'immersiveengineering:mold_gear');
-  event.add('thermal:crafting/dies', 'immersiveengineering:mold_rod');
-  event.add('thermal:crafting/dies', 'immersiveengineering:mold_bullet_casing');
-  event.add('thermal:crafting/dies', 'immersiveengineering:mold_wire');
+  [
+    'immersiveengineering:mold_plate',
+    'immersiveengineering:mold_gear',
+    'immersiveengineering:mold_rod',
+    'immersiveengineering:mold_bullet_casing',
+    'immersiveengineering:mold_wire',
+  ].forEach(x => event.add('thermal:crafting/dies', x));
 };
 
 const curiousElytraTags = event => {
-  event.add('curios:back', 'alexsmobs:tarantula_hawk_elytra');
-  event.add('curios:back', 'mekanism:hdpe_elytra');
-  event.add('curios:back', 'tconstruct:slime_chestplate');
-  event.add('curios:back', 'redstone_arsenal:flux_elytra');
+  [
+    'alexsmobs:tarantula_hawk_elytra',
+    'mekanism:hdpe_elytra',
+    'tconstruct:slime_chestplate',
+    'redstone_arsenal:flux_elytra',
+  ].forEach(x => event.add('curios:back', x));
 };
 
 const removePlates = event => {
@@ -144,9 +180,9 @@ const removePlates = event => {
     'signalum',
     'silver',
     'tin',
-  ].forEach(mat => {
-    event.remove(`forge:plates/${mat}`, `thermal:${mat}_plate`);
-    event.remove(`forge:plates`, `thermal:${mat}_plate`);
+  ].forEach(x => {
+    event.remove(`forge:plates/${x}`, `thermal:${x}_plate`);
+    event.remove(`forge:plates`, `thermal:${x}_plate`);
   });
 
   [
@@ -161,9 +197,9 @@ const removePlates = event => {
     'steel',
     'iron',
     'gold',
-  ].forEach(mat => {
-    event.remove(`forge:plates/${mat}`, `immersiveengineering:plate_${mat}`);
-    event.remove(`forge:plates`, `immersiveengineering:plate_${mat}`);
+  ].forEach(x => {
+    event.remove(`forge:plates/${x}`, `immersiveengineering:plate_${x}`);
+    event.remove(`forge:plates`, `immersiveengineering:plate_${x}`);
   });
 };
 
@@ -187,9 +223,9 @@ const removeGears = event => {
     'signalum',
     'silver',
     'tin',
-  ].forEach(mat => {
-    event.remove(`forge:gears/${mat}`, `thermal:${mat}_gear`);
-    event.remove(`forge:gears`, `thermal:${mat}_gear`);
+  ].forEach(x => {
+    event.remove(`forge:gears/${x}`, `thermal:${x}_gear`);
+    event.remove(`forge:gears`, `thermal:${x}_gear`);
   });
 };
 

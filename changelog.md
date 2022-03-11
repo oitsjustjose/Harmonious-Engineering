@@ -17,13 +17,9 @@ There has been one potentially breaking change in this pack update, and unless y
   - Obsidian platform generating stupid far way from the island
   - Respawning the dragon causing overlap on the main portal, main pylons
 
-## Removed
-
-- [Mod] BetterNether has been causing a whole lot of issues as far as datapack and other really strange compatibility so it has been removed since it is not actively maintained. You will not need to reset your Nether unless you want to; I've re-mapped all of BetterNether's blocks to very similar variants from other places like Infernal Expansion & Vanilla Minecraft, so you shouldn't see any major issues in your Nether.
-
 ## Fixed
 
-- Potential exploit to get infinite Elytra durability via a combination of converting your elytra to Minecraft's variant and then throwing it in the world.
+- Exploit to get infinite Elytra durability via a combination of converting your elytra to Minecraft's variant and then throwing it in the world.
 - Made Elytra Duplication recipe from Quark more clear as to what is happening.
 
 # 2.0.11a
