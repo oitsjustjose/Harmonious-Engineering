@@ -1,12 +1,12 @@
-# 2.0.12
+# 2.1.0
 
 # MAKE A BACKUP BEFORE UPDATING TO THIS VERSION
 
-There has been one potentially breaking change in this pack update, and unless you back up there's no guarantee that I can fix whatever issues may arise without permanently affecting your world.
+There has been one potentially breaking change in this pack update, and unless you back up there's no guarantee that I can fix whatever issues may arise without permanently affecting your world. Nothing _should_ happen, but better safe than sorry.
 
 ## Added
 
-- [Mod] Mindful Eating - this mod doesn't change or overhaul or punish your usual eating patterns, but as you try eating various foods and experiment with the different types of exhaustion (running, mining, swimming, jumping, etc.) you'll find that some foods reduce the amount of exhaustion you feel! If you want to get really in-depth you can learn more about the mod [here](https://youtu.be/NN8Vgj4wrFw?t=461)
+- [Mod] [Mindful Eating](https://youtu.be/NN8Vgj4wrFw?t=461)
 - [Mod] AppleSkin (Required for Mindful Eating)
 - [Mod] Diet (Required for Mindful Eating)
 - [Mod] Dave's Building Mod
@@ -15,15 +15,16 @@ There has been one potentially breaking change in this pack update, and unless y
 
 ## Swapped
 
-- [Mod] Overloaded Armor Bar and Armor Toughness Bar have been replaced with ArmorPoints++
+- [Mod] Overloaded Armor Bar and Armor Toughness Bar have been replaced with ArmorPoints++ due to compatibility issues with AppleSkin + Mindful Eating
 - [Mod] BetterEnd Reforged was ported by the same dev as BetterNether, so we have changed back to the much better port which should fix most of the issues in the end. You will not need to reset your End dimension. The fixes I'm referring to are specifically:
   - Obsidian platform generating stupid far way from the island
-  - Respawning the dragon causing overlap on the main portal, main pylons
+  - Respawning the dragon causing overlap on the main portal and main pylons
 
 ## Fixed
 
 - Exploit to get infinite Elytra durability via a combination of converting your elytra to Minecraft's variant and then throwing it in the world.
 - Made Elytra Duplication recipe from Quark more clear as to what is happening.
+- Removing items from Storage Drawers / Storage Barrels with an empty hand will no longer damage you
 
 # 2.0.11a
 

@@ -235,6 +235,14 @@ onEvent('tags.blocks', event => {
     '#storagedrawers:drawers',
     '#framedcompactdrawers:frame_double',
     '#framedcompactdrawers:frame_triple',
+    'storage_overhaul:oak_storage_barrel',
+    'storage_overhaul:spruce_storage_barrel',
+    'storage_overhaul:birch_storage_barrel',
+    'storage_overhaul:acacia_storage_barrel',
+    'storage_overhaul:jungle_storage_barrel',
+    'storage_overhaul:dark_oak_storage_barrel',
+    'storage_overhaul:crimson_storage_barrel',
+    'storage_overhaul:warped_storage_barrel',
   ].forEach(x => event.add('natural-progression:ignored_wood_blocks', x));
 
   [
