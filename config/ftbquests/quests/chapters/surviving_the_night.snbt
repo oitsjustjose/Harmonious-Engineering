@@ -46,7 +46,7 @@
 			title: "Not Your Usual Tree Punching"
 			icon: "natural-progression:quark_jasper_pebble"
 			x: 3.5d
-			y: -4.0d
+			y: -4.5d
 			shape: "diamond"
 			description: ["To get started, pick up at least two Pebbles and put one each in your main and off-hand. Hold down right-click and knap the two pebbles together until you hear a *click* which indicates your first pieces of Flint!"]
 			id: "25A47A55DD6564CA"
@@ -80,7 +80,7 @@
 		{
 			title: "Grab a Stick"
 			x: -1.5d
-			y: -4.0d
+			y: -4.5d
 			shape: "diamond"
 			description: ["All around on the ground you should see sticks. Break, or right-click, these sticks to pick some up! You'll need around 8."]
 			id: "49D70EF0D47D9161"
@@ -508,12 +508,14 @@
 		{
 			title: "A Balanced Diet"
 			x: 1.0d
-			y: -4.5d
+			y: -6.0d
+			shape: "rsquare"
 			description: [
 				"Upon eating something you may have noticed that there's something off about the hunger bar  -- there are little icons in it now, right? Or is that just me??"
 				""
 				"These icons represent what you've been eating lately. What you eat combined with what you've been doing (running, swimming, mining, etc.) can createa synergies that make your hunger go down at a slower rate. Try different permutations of these to see which ones make the hunger bar shimmer and glow!"
 			]
+			optional: true
 			id: "037495DD5120DAE3"
 			tasks: [{
 				id: "78164E366E8E2DD6"
