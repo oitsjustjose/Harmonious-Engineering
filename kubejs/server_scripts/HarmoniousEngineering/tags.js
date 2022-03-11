@@ -231,6 +231,18 @@ const removeGears = event => {
 
 onEvent('tags.blocks', event => {
   event.add('forge:stone', 'quark:deepslate');
+  [
+    '#storagedrawers:drawers',
+    '#framedcompactdrawers:frame_double',
+    '#framedcompactdrawers:frame_triple',
+  ].forEach(x => event.add('natural-progression:ignored_wood_blocks', x));
+
+  [
+    '#storagedrawers:drawers',
+    '#framedcompactdrawers:frame_double',
+    '#framedcompactdrawers:frame_triple',
+    '#framedcompactdrawers:compacting',
+  ].forEach(x => event.add('natural-progression:ignored_stone_blocks', x));
 });
 
 onEvent('tags.items', event => {

@@ -9,6 +9,9 @@ There has been one potentially breaking change in this pack update, and unless y
 - [Mod] Mindful Eating - this mod doesn't change or overhaul or punish your usual eating patterns, but as you try eating various foods and experiment with the different types of exhaustion (running, mining, swimming, jumping, etc.) you'll find that some foods reduce the amount of exhaustion you feel! If you want to get really in-depth you can learn more about the mod [here](https://youtu.be/NN8Vgj4wrFw?t=461)
 - [Mod] AppleSkin (Required for Mindful Eating)
 - [Mod] Diet (Required for Mindful Eating)
+- [Mod] Dave's Building Mod
+- [Mod] Architect's Palette
+- [Quest] Quest for showing off Mindful Eating's mechanics
 
 ## Swapped
 
