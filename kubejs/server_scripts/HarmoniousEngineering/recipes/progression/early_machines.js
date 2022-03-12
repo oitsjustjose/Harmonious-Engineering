@@ -31,6 +31,7 @@ onEvent('recipes', event => {
     'kubejs:zinc_dust_pile',
   ]);
   // STEP 3: PROFIT??
+  event.smelting('create:andesite_alloy', 'kubejs:crude_andesite_alloy');
   event.smelting('create:andesite_alloy', 'kubejs:andesite_zinc_blend');
 
   // Easier recipes for once you get some machinery going :)
