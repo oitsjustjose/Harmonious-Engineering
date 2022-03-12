@@ -1,7 +1,7 @@
 {
 	id: "4138B7896CD89F22"
 	group: "6F245F11B3688A37"
-	order_index: 5
+	order_index: 6
 	filename: "tech_stuff"
 	title: "Other Tech"
 	icon: "pipez:universal_pipe"
@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Pipes/Ducts"
-			x: -3.75d
-			y: -3.75d
+			x: -3.0d
+			y: -3.0d
 			shape: "rsquare"
 			description: [
 				"While IE Conveyors and Create Belts are GREAT for item transfer, if you want lag-free guaranteed-to-work item transfer, I can't suggest Pipez enough."
@@ -34,31 +34,9 @@
 			}]
 		}
 		{
-			title: "Powah"
-			x: -5.25d
-			y: -0.75d
-			shape: "rsquare"
-			description: ["Much of Powah is gated behind Steel, but once ou're done there you can go ham with most generators! A lot of the imbalanced generators have been disabled for the sanctity of this pack, but outside of that you can do so much with Reactors!"]
-			size: 1.5d
-			optional: true
-			id: "68EA1AC4051942A0"
-			tasks: [{
-				id: "32B7EC1591F5687F"
-				type: "item"
-				item: "powah:dielectric_paste"
-			}]
-			rewards: [{
-				id: "2C7DF9E2047E6452"
-				type: "item"
-				item: "powah:charged_snowball"
-				count: 12
-				random_bonus: 4
-			}]
-		}
-		{
 			title: "Flux Networks"
-			x: -3.75d
-			y: 2.25d
+			x: -3.0d
+			y: 1.5d
 			shape: "rsquare"
 			description: [
 				"Flux Networks is a great mod for inter-dimensional wireless power to both your own inventory and to/from other machines!"
@@ -111,7 +89,7 @@
 			title: "Other Utilities"
 			icon: { id: "chickenchunks:chunk_loader", Count: 15b }
 			x: 0.0d
-			y: 2.25d
+			y: 1.5d
 			shape: "rsquare"
 			description: [
 				"Chicken Chunks is a great chunk loading mod with lots of configuration, so if you need to leave something processing while you run off adventuring, toss a chunk loader down!"
@@ -137,7 +115,7 @@
 			title: "Torchmaster"
 			icon: "torchmaster:megatorch"
 			x: 0.0d
-			y: -3.75d
+			y: -3.0d
 			shape: "rsquare"
 			description: [
 				"Torchmaster is a lighting mod that takes all of your concerns about lighting and puts them in the backseat."
@@ -165,9 +143,9 @@
 			}]
 		}
 		{
-			title: "Automated Large Crafting"
-			x: -1.7321428571428612d
-			y: -0.7857142857142847d
+			title: "Automated Mega-Crafting"
+			x: -4.5d
+			y: -0.75d
 			description: [
 				"As you've no doubt noticed, a lot of larger blocks or more powerful creations make use of Create's Mechanical Crafting. I get that this can be tedious, so if you make the Ultimate Crafting Table you can more efficiently automate these recipes at the cost of some RF."
 				""
@@ -181,6 +159,7 @@
 			]
 			dependency_requirement: "one_completed"
 			size: 1.5d
+			optional: true
 			id: "1B07D6AE58A8A0F1"
 			tasks: [{
 				id: "0BF7025CB679E02B"
@@ -193,6 +172,49 @@
 				item: "betterendforge:mossy_glowshroom_chest"
 				count: 2
 				random_bonus: 2
+			}]
+		}
+		{
+			title: "Compact Machines"
+			x: -1.5d
+			y: -0.75d
+			description: [
+				"Compact Machines are a great way to set up laggy, noisy or dangerous builds in a nice spatial bubble all stored within a single block"
+				""
+				"Use the Shrinking Device as a guide to learn more about how the mod works, and get started!"
+			]
+			size: 1.5d
+			optional: true
+			id: "4E517C0500A7F3B0"
+			tasks: [{
+				id: "5037F426D648E10E"
+				type: "item"
+				title: "Any Compact Machine"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "compactmachines:machine_normal"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_large"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_giant"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "4414239AAE0E4001"
+				type: "item"
+				item: "compactmachines:personal_shrinking_device"
 			}]
 		}
 	]

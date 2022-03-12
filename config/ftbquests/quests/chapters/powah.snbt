@@ -1,0 +1,656 @@
+{
+	id: "2EAD9FB0D006D4F8"
+	group: "6F245F11B3688A37"
+	order_index: 5
+	filename: "powah"
+	title: "Powah"
+	icon: "powah:capacitor_niotic"
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting Started"
+			x: -16.5d
+			y: -1.5d
+			shape: "diamond"
+			description: [
+				"Welcome to Powah! For those of you familiar with this mod, you'll probably notice that much of its functionality has been removed in favor of other mods' mechanics instead."
+				""
+				"That said, there's still a lot to Powah when it comes to Reactors and you'll find a few of the items from Powah are commonly used as Ingredients for other mods too!"
+			]
+			dependencies: [
+				"5DD16A26B44A2290"
+				"4A60BF034B726C88"
+			]
+			optional: true
+			id: "6ED9AACB037FDB6C"
+			tasks: [{
+				id: "355169E5410CC8AF"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+			rewards: [{
+				id: "01F0914CB1A95542"
+				type: "item"
+				item: "powah:dielectric_paste"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			title: "Dielectric Components"
+			x: -14.5d
+			y: -1.5d
+			description: ["These components will be critical for your success going into Powah."]
+			dependencies: ["6ED9AACB037FDB6C"]
+			optional: true
+			id: "5640FD2D2222502B"
+			tasks: [
+				{
+					id: "6BF22D0060D535D9"
+					type: "item"
+					item: "powah:dielectric_rod"
+				}
+				{
+					id: "0C7FD220D446F19F"
+					type: "item"
+					item: "powah:dielectric_casing"
+				}
+			]
+			rewards: [{
+				id: "5C28598DD19FC1AF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Energizing"
+			x: -12.5d
+			y: -1.5d
+			description: [
+				"Basic Energizing is how you will manage to get the nicer materials in Powah such as Energized Steel, Niotic Crystals and more."
+				""
+				"The setup pictured below is just a sample of how you can set your system up. You can easily change this setup to fit your base as much as you want, but you will *HAVE* to use *MEKANISM UNIVERSAL CABLES* for your setup as Powah does not recognize Pipez' RF Pipes."
+				""
+				"{image:kubejs:textures/gui/energizing.png width:200 height:150 align:1}"
+			]
+			dependencies: ["5640FD2D2222502B"]
+			optional: true
+			id: "74FD88E2CFF4B84C"
+			tasks: [
+				{
+					id: "7B890CE9AF0922F1"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+				{
+					id: "692D0174236D19D0"
+					type: "item"
+					item: "powah:energizing_rod_starter"
+				}
+			]
+		}
+		{
+			title: "Hardened-Tier"
+			x: -10.5d
+			y: -1.5d
+			subtitle: "Early-Tier Powah"
+			dependencies: ["74FD88E2CFF4B84C"]
+			optional: true
+			id: "74B79F18E8C26C80"
+			tasks: [{
+				id: "41037563B18D257C"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+			rewards: [{
+				id: "114DF83A09E650C6"
+				type: "item"
+				item: "powah:steel_energized"
+				count: 2
+				random_bonus: 8
+			}]
+		}
+		{
+			title: "Blazing-Tier"
+			x: -8.5d
+			y: -1.5d
+			subtitle: "Some like it hot"
+			dependencies: ["74B79F18E8C26C80"]
+			optional: true
+			id: "3F870A789A91F255"
+			tasks: [{
+				id: "4E3DA6F35EA62EB7"
+				type: "item"
+				item: "powah:crystal_blazing"
+			}]
+			rewards: [{
+				id: "14B1CF9CCF8493DE"
+				type: "item"
+				item: "powah:crystal_blazing"
+				count: 2
+				random_bonus: 8
+			}]
+		}
+		{
+			title: "Niotic-Tier"
+			x: -6.5d
+			y: -1.5d
+			subtitle: "Extra-Crystalized"
+			dependencies: ["3F870A789A91F255"]
+			optional: true
+			id: "53A9334110253E40"
+			tasks: [{
+				id: "3A0387AD2F5EC1AB"
+				type: "item"
+				item: "powah:crystal_niotic"
+			}]
+			rewards: [{
+				id: "07BDDD1BDD8A17D7"
+				type: "item"
+				item: "powah:crystal_niotic"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Nitro-Tier"
+			x: -2.5d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "The End-Game Experience"
+			dependencies: ["3DAFE71565C96772"]
+			optional: true
+			id: "2E6338B14D253550"
+			tasks: [{
+				id: "701EF4BD9C8ED1E9"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+			rewards: [{
+				id: "540BA6C263FF99A7"
+				type: "item"
+				item: "powah:crystal_nitro"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Spirited-Tier"
+			x: -4.5d
+			y: -1.5d
+			subtitle: "Villagers Hate Him!"
+			dependencies: ["53A9334110253E40"]
+			optional: true
+			id: "3DAFE71565C96772"
+			tasks: [{
+				id: "2CE0A51871893409"
+				type: "item"
+				item: "powah:crystal_spirited"
+			}]
+			rewards: [{
+				id: "534B5F497EC9236B"
+				type: "item"
+				item: "powah:crystal_spirited"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Binding Cards"
+			x: -7.5d
+			y: -3.5d
+			description: [
+				"Next, you'll want a way to tell the Player Transmitter that *you* are the player that needs to be charged."
+				""
+				"To do this, make yourself a Blank Card and then hold it in your main hand. Once you do, right-click on it to bind the card to your player!"
+			]
+			dependencies: ["7891F31731AFF664"]
+			optional: true
+			id: "560EAB78E704C6B4"
+			tasks: [
+				{
+					id: "20C534D6D6A875A2"
+					type: "item"
+					item: "powah:blank_card"
+				}
+				{
+					id: "0EC5ACF6011A12CC"
+					type: "item"
+					item: "powah:binding_card"
+				}
+			]
+			rewards: [{
+				id: "12613285124CC375"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.5d
+			description: ["With your Binding Card, you can right-click it on an Enderman to make your Wireless Charging cross-dimensional!"]
+			dependencies: ["560EAB78E704C6B4"]
+			size: 0.5d
+			optional: true
+			id: "2318A5F6EC4837E0"
+			tasks: [{
+				id: "133318DF03F79946"
+				type: "item"
+				item: "powah:binding_card_dim"
+			}]
+			rewards: [{
+				id: "56CEE578E07256BB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Wireless Player Charging"
+			x: -12.5d
+			y: -3.5d
+			description: ["To get started with craft yourself an Aerial Pearl. Once created, hold it in your hand and Right-Click while looking at a Zombie to bind it."]
+			dependencies: ["5640FD2D2222502B"]
+			optional: true
+			id: "7891F31731AFF664"
+			tasks: [
+				{
+					id: "7859CCD3C33E2A48"
+					type: "item"
+					item: "powah:aerial_pearl"
+				}
+				{
+					id: "2E5164F3AE94E41F"
+					type: "item"
+					item: "powah:player_aerial_pearl"
+				}
+			]
+			rewards: [{
+				id: "483909424F33D7E0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Player Transmitters"
+			x: -2.5d
+			y: -3.5d
+			shape: "hexagon"
+			description: [
+				""
+				"At this point, you can craft yourself a Player Transmitter which can be connected to your RF source! These different tiers of Player Transmitter are capable of transmitting more RF based on how expensive the Player Transmitter is."
+			]
+			dependencies: ["560EAB78E704C6B4"]
+			optional: true
+			id: "1B60478B24F37F0D"
+			tasks: [{
+				id: "34FEA7E97C1725EF"
+				type: "item"
+				title: "Any Player Transmitter"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:player_transmitter_starter"
+								Count: 1b
+							}
+							{
+								id: "powah:player_transmitter_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:player_transmitter_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:player_transmitter_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:player_transmitter_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:player_transmitter_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:player_transmitter_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0644AA174DE2E19D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -10.5d
+			y: 3.0d
+			subtitle: "You'll need 36"
+			description: [
+				"Using Uraninite, Redstone, Coal, Water and [Optionally] a Solid Coolant (like Ice, Packed Ice, etc..), you can create a TON of power by burning Uraninite."
+				""
+				"Don't worry, these Reactors will *NOT* explode. I also strongly suggest turning on \"Auto\" mode using the button on the Left of the reactor GUI"
+				"{image:kubejs:textures/gui/powah_reactor_auto.png width:350 height:100 align:1 fit:true}"
+			]
+			dependencies: [
+				"68933FBF751E6439"
+				"74B79F18E8C26C80"
+			]
+			optional: true
+			id: "1FAC5DBACA8553FD"
+			tasks: [{
+				id: "47DD377FA3050FC6"
+				type: "item"
+				item: "powah:reactor_hardened"
+				count: 36L
+			}]
+			rewards: [{
+				id: "2C803B9A7176D798"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			dependencies: [
+				"68933FBF751E6439"
+				"3F870A789A91F255"
+			]
+			optional: true
+			id: "7C703A724BBA7F90"
+			tasks: [{
+				id: "1DDBCA8CEDBC9128"
+				type: "item"
+				item: "powah:reactor_blazing"
+				count: 36L
+			}]
+			rewards: [{
+				id: "7E1A815C56093DB9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.0d
+			dependencies: [
+				"68933FBF751E6439"
+				"53A9334110253E40"
+			]
+			optional: true
+			id: "32A45264ACFBD1C2"
+			tasks: [{
+				id: "43EF1E04AAF5C9BB"
+				type: "item"
+				item: "powah:reactor_niotic"
+				count: 36L
+			}]
+			rewards: [{
+				id: "36BA68B938957A79"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			dependencies: [
+				"68933FBF751E6439"
+				"3DAFE71565C96772"
+			]
+			optional: true
+			id: "75E7CE136C507AFA"
+			tasks: [{
+				id: "69F8797D075AAFEB"
+				type: "item"
+				item: "powah:reactor_spirited"
+				count: 36L
+			}]
+			rewards: [{
+				id: "3E68BD746321D041"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: [
+				"68933FBF751E6439"
+				"2E6338B14D253550"
+			]
+			optional: true
+			id: "61B5566F6DEF9266"
+			tasks: [{
+				id: "0ED66672130E1EC3"
+				type: "item"
+				item: "powah:reactor_nitro"
+				count: 36L
+			}]
+			rewards: [{
+				id: "3909402472CA7D33"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.0d
+			dependencies: ["74B79F18E8C26C80"]
+			optional: true
+			id: "7698A006A2098EE5"
+			tasks: [{
+				id: "35E5F096D73EC856"
+				type: "item"
+				item: {
+					id: "powah:battery_hardened"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "48170F6F8CE28DDF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -8.5d
+			y: 0.0d
+			dependencies: ["3F870A789A91F255"]
+			optional: true
+			id: "1288BBB7617A4D44"
+			tasks: [{
+				id: "01FDA2A46002EC07"
+				type: "item"
+				item: {
+					id: "powah:battery_blazing"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "48AE539D945ED70D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			dependencies: ["53A9334110253E40"]
+			optional: true
+			id: "3EEAB9CE3E455FAF"
+			tasks: [{
+				id: "3AD2A4128F382158"
+				type: "item"
+				item: {
+					id: "powah:battery_niotic"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6646F5988774D70F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			dependencies: ["3DAFE71565C96772"]
+			optional: true
+			id: "6A4D6BB7C1BDDBE2"
+			tasks: [{
+				id: "11748CB33D832352"
+				type: "item"
+				item: {
+					id: "powah:battery_spirited"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6D4338FB0E733914"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["2E6338B14D253550"]
+			optional: true
+			id: "1358D21E45820916"
+			tasks: [{
+				id: "67161DF91B4802CF"
+				type: "item"
+				item: {
+					id: "powah:battery_nitro"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "766087EA909B0252"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -10.5d
+			y: 1.5d
+			dependencies: ["74B79F18E8C26C80"]
+			optional: true
+			id: "5D926CBE3803475A"
+			tasks: [{
+				id: "531B069C148273EF"
+				type: "item"
+				item: "powah:furnator_hardened"
+			}]
+			rewards: [{
+				id: "00E774D32551B5E1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -8.5d
+			y: 1.5d
+			dependencies: ["3F870A789A91F255"]
+			optional: true
+			id: "48E57120E0179B5C"
+			tasks: [{
+				id: "6F82AEB0EDE16C7A"
+				type: "item"
+				item: "powah:furnator_blazing"
+			}]
+			rewards: [{
+				id: "411E662A2855FBF2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: 1.5d
+			dependencies: ["53A9334110253E40"]
+			optional: true
+			id: "6432C52C90108A4C"
+			tasks: [{
+				id: "6C65F03106D46CF7"
+				type: "item"
+				item: "powah:furnator_niotic"
+			}]
+			rewards: [{
+				id: "100033882D828CC1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			dependencies: ["3DAFE71565C96772"]
+			optional: true
+			id: "34543F400FC620E4"
+			tasks: [{
+				id: "4D191B8D3D65BFAE"
+				type: "item"
+				item: "powah:furnator_spirited"
+			}]
+			rewards: [{
+				id: "4D6399A080D5F96D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			subtitle: "The ultimate Tree-Killer"
+			dependencies: ["2E6338B14D253550"]
+			optional: true
+			id: "13C3249CDD52A1B5"
+			tasks: [{
+				id: "5F4AA73C61FF11E8"
+				type: "item"
+				item: "powah:furnator_nitro"
+			}]
+			rewards: [{
+				id: "5FAE456E5020223F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -12.5d
+			y: 3.0d
+			shape: "octagon"
+			description: ["By Metallurgically Infusing your Uranium Ingots with Redstone, you've created Uraninite. This looks like it might be able to be used in a Reactor - maybe you should look into that!"]
+			hide_dependency_lines: true
+			dependencies: ["74FD88E2CFF4B84C"]
+			optional: true
+			id: "68933FBF751E6439"
+			tasks: [{
+				id: "082A528382DCA713"
+				type: "item"
+				item: "powah:uraninite"
+			}]
+			rewards: [{
+				id: "544390D6AE7CC978"
+				type: "item"
+				item: "powah:uraninite"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+	]
+}

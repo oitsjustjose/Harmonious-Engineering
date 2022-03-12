@@ -1,4 +1,6 @@
 onEvent('recipes', event => {
+  const tiers = ['basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro'];
+
   event.remove({id: 'powah:crafting/cable_basic'});
   event.remove({id: 'powah:crafting/cable_basic_2'});
   event.remove({id: 'powah:crafting/cable_blazing'});
@@ -22,6 +24,13 @@ onEvent('recipes', event => {
   event.remove({id: 'powah:crafting/ender_gate_nitro'});
   event.remove({id: 'powah:crafting/ender_gate_spirited'});
   event.remove({id: 'powah:crafting/ender_gate_starter'});
+  event.remove({id: 'powah:crafting/ender_cell_basic'});
+  event.remove({id: 'powah:crafting/ender_cell_blazing'});
+  event.remove({id: 'powah:crafting/ender_cell_hardened'});
+  event.remove({id: 'powah:crafting/ender_cell_niotic'});
+  event.remove({id: 'powah:crafting/ender_cell_nitro'});
+  event.remove({id: 'powah:crafting/ender_cell_spirited'});
+  event.remove({id: 'powah:crafting/ender_cell_starter'});
   event.remove({id: 'powah:crafting/magmator_basic'});
   event.remove({id: 'powah:crafting/magmator_blazing'});
   event.remove({id: 'powah:crafting/magmator_hardened'});
@@ -44,42 +53,68 @@ onEvent('recipes', event => {
   event.remove({id: 'powah:crafting/thermo_generator_nitro'});
   event.remove({id: 'powah:crafting/thermo_generator_spirited'});
   event.remove({id: 'powah:crafting/thermo_generator_starter'});
-
   event.remove({id: 'powah:crafting/dielectric_paste'});
   event.remove({id: 'powah:crafting/dielectric_rod'});
-
+  event.remove({id: 'powah:crafting/dielectric_casing'});
+  event.remove({id: 'powah:energizing/energized_steel'});
   event.remove({output: 'powah:ender_core'});
 
   event.custom({
     type: 'natural-progression:damage_tools',
     ingredients: [
-      {
-        tag: 'forge:silicon',
-      },
-      {
-        tag: 'forge:dusts/coal',
-      },
-      {
-        tag: 'forge:dusts/coal',
-      },
-      {
-        tag: 'forge:dusts/coal',
-      },
-      {
-        item: 'create:super_glue',
-      },
-      {
-        tag: 'appliedenergistics2:knife',
-      },
+      {tag: 'forge:silicon'},
+      {tag: 'forge:dusts/coal'},
+      {tag: 'forge:dusts/coal'},
+      {tag: 'forge:dusts/coal'},
+      {item: 'create:super_glue'},
+      {tag: 'forge:tools/knives'},
     ],
-    result: {
-      item: 'powah:dielectric_paste',
-      count: 8,
-    },
+    result: {item: 'powah:dielectric_paste', count: 8},
+  });
+  event.custom({
+    type: 'create:mixing',
+    ingredients: [
+      {tag: 'forge:silicon'},
+      {tag: 'forge:dusts/coal'},
+      {tag: 'forge:dusts/coal'},
+      {tag: 'forge:dusts/coal'},
+      {tag: 'forge:slimeballs'},
+    ],
+    results: [{item: 'powah:dielectric_paste', count: 8}],
   });
 
-  event.shaped('64x powah:dielectric_rod', ['PSP', 'PSP', 'PSP'], {
-    P: 'powah:dielectric_paste',
-    S: '#forge:ingots/steel',
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'thermal:rf_coil'}, {item: 'powah:dielectric_paste', count: 6}],
+    result: [{item: 'powah:dielectric_rod', count: 24}],
+  });
+
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('thermal:machine_frame'),
+    Ingredient.of('powah:dielectric_paste'),
+    Item.of('powah:dielectric_casing')
+  );
+
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [{tag: 'forge:ingots/steel'}],
+    energy: 10000,
+    result: {item: 'powah:steel_energized'},
+  });
+
+  tiers.forEach((tier, idx) => {
+    const nextTier = idx === tiers.length - 1 ? null : tiers[idx + 1];
+    if (nextTier) {
+      const currReactor = `powah:reactor_${tier}`;
+      const nextReactor = `powah:reactor_${nextTier}`;
+      const nextCapacitor = `powah:capacitor_${nextTier}`;
+      global.genCombinedRecipe(
+        event,
+        Ingredient.of(currReactor),
+        Ingredient.of(nextCapacitor),
+        Item.of(nextReactor)
+      );
+    }
   });
 });

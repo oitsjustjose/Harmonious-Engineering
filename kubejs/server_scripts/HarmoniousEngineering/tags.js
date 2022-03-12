@@ -229,6 +229,32 @@ const removeGears = event => {
   });
 };
 
+const miscTags = event => {
+  event.add('forge:stone', 'quark:deepslate');
+  event.add('valhelsia_structures:axe_crafting_blacklisted', '#natural-progression:saw');
+  event.add('forge:dusts/ender', 'betterendforge:ender_dust');
+  event.add('forge:dusts/ender', 'appliedenergistics2:ender_dust');
+  event.add('create:crushed_ores', 'emendatusenigmatica:cobalt_crushed');
+  event.add('forge:wither_bones', 'architects_palette:withered_bone');
+
+  [
+    'tools_complement:iron_knife',
+    'tools_complement:gold_knife',
+    'tools_complement:diamond_knife',
+    'tools_complement:netherite_knife',
+    'tools_complement:copper_knife',
+    'tools_complement:tin_knife',
+    'tools_complement:silver_knife',
+    'tools_complement:lead_knife',
+    'tools_complement:nickel_knife',
+    'tools_complement:bronze_knife',
+    'tools_complement:electrum_knife',
+    'tools_complement:invar_knife',
+    'tools_complement:constantan_knife',
+    '#appliedenergistics2:knife',
+  ].forEach(x => event.add('forge:tools/knives', x));
+};
+
 onEvent('tags.blocks', event => {
   event.add('forge:stone', 'quark:deepslate');
   [
@@ -260,10 +286,5 @@ onEvent('tags.items', event => {
   removeGears(event);
   thermalTags(event);
   curiousElytraTags(event);
-  event.add('forge:stone', 'quark:deepslate');
-  event.add('valhelsia_structures:axe_crafting_blacklisted', '#natural-progression:saw');
-  event.add('forge:dusts/ender', 'betterendforge:ender_dust');
-  event.add('forge:dusts/ender', 'appliedenergistics2:ender_dust');
-  event.add('create:crushed_ores', 'emendatusenigmatica:cobalt_crushed');
-  event.add('forge:wither_bones', 'architects_palette:withered_bone');
+  miscTags(event);
 });
