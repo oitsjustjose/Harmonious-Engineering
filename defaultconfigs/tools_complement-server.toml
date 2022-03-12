@@ -19,7 +19,7 @@
 	#If TRUE, Nickel Tools are enabled.
 	"Nickel Tools" = true
 	#If TRUE, Bronze Tools are enabled.
-	"Bronze Tools" = false
+	"Bronze Tools" = true
 	#If TRUE, Electrum Tools are enabled.
 	"Electrum Tools" = true
 	#If TRUE, Invar Tools are enabled.
@@ -39,7 +39,7 @@
 	#If TRUE, Nickel Armor is enabled.
 	"Nickel Armor" = true
 	#If TRUE, Bronze Armor is enabled.
-	"Bronze Armor" = false
+	"Bronze Armor" = true
 	#If TRUE, Electrum Armor is enabled.
 	"Electrum Armor" = true
 	#If TRUE, Invar Armor is enabled.
