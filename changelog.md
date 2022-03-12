@@ -1,3 +1,24 @@
+# 2.1.3
+
+## Added
+
+- [Quests] Dedicated Questline for Powah
+- [Mod] MrCrayFish's Furniture Mod + Addons for Wood Variants
+- [Mod] Entity Culling
+
+## Removed
+
+- [Mod] Creeper Confetti: replaced with a datapack that does the same, but more reliably
+- [Recipe] Recipes for Mekanism Steel, Tools' Complement Bronze tools have been removed and hidden from JEI. The items still exist but will not be craftable going forward, seek other variants of the same tier :)
+
+## Changed
+
+- [Recipe] Recipe for Powah's Dielectric Paste can now be automated, manual recipe accepts all types of knives
+- [Recipe] Powah Dielectric Casing recipe has been made more fitting for the pack
+- [Recipe] Powah Dielectric Rod recipe has been made more fitting for the pack
+- [Recipe] Powah Reactors can now be upgraded via Combining
+- [Texture] Crimson/Warped Fungus have been reverted to their Vanilla models - I don't know which mod made the new ones but I didn't like it
+
 # 2.1.2
 
 ## Added
