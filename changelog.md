@@ -1,3 +1,22 @@
+# 2.1.1
+
+## Added
+
+- [KubeJS] Recipes for interchanging Limestone variants
+- [KubeJS] Integration between TConstruct's Wither Bones and Architect Palette's
+- [Quests] Overview Quest, showing you where you lie within the pack as a whole. Finishing a chapter automatically progresses this main questline.
+
+## Changed
+
+- [Progression] Andesite Alloy is now made with Andesite-Zinc blend. There's a whole questline change to represent this as well. Overall difficulty hasn't changed much, it just makes more sense. If you have Crude Andesite Alloy around, you can still smelt it into Andesite Alloy, but you won't be able to make more.
+- [Quests] Many quest chapters were reorganized, some quests removed.
+- [Texture] Red/Brown Mushrooms have been reverted to their Vanilla models - I don't know which mod made the new ones but I didn't like it
+- [Texture] Stripped Dark Oak is reverted to its Vanilla texture
+
+## Fixed
+
+- Conflict with Wooden Gear / Timber Frame / Lattice recipes
+
 # 2.1.0
 
 # MAKE A BACKUP BEFORE UPDATING TO THIS VERSION
