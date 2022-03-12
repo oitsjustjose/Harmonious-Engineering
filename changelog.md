@@ -1,3 +1,9 @@
+# 2.1.2
+
+## Added
+
+- [KubeJS] Recipe for Cincinnasite for those who wish to use it
+
 # 2.1.1
 
 ## Added

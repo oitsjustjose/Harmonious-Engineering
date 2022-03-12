@@ -68,4 +68,12 @@ onEvent('recipes', event => {
     Ingredient.of('minecraft:quartz'),
     Item.of('betternether:quartz_glass')
   );
+
+  global.genAlloyingRecipe(
+    event,
+    {item: `minecraft:gold_ingot`},
+    {item: 'minecraft:glowstone_dust'},
+    `betternether:cincinnasite_ingot`,
+    2
+  );
 });
