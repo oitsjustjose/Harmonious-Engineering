@@ -9,34 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Crude Crafting"
-			x: 12.0d
-			y: 1.5d
-			shape: "diamond"
-			description: [
-				"Without better processing, you're going to need to get some Andesite Alloy"
-				""
-				"Fortunately, with your Saw, some pebbles, some raw ferrous metal and clay as a binder you can form a very crude version of this alloy which you can smelt down to bring to a workable shape to be used in basic mechanical machinery."
-			]
-			id: "69FF3D884B1E8649"
-			tasks: [{
-				id: "6B4BDBD0FABAABA6"
-				type: "item"
-				item: "kubejs:crude_andesite_alloy"
-			}]
-			rewards: [{
-				id: "5143E6F81AFF5F05"
-				type: "item"
-				item: "natural-progression:stone_pebble"
-				count: 16
-				random_bonus: 16
-			}]
-		}
-		{
 			title: "Rotational Energy"
-			x: 12.0d
-			y: 3.0d
-			dependencies: ["69FF3D884B1E8649"]
+			x: 13.0d
+			y: 1.0d
+			dependencies: ["156744046A721BDD"]
 			id: "0AA54D344D1DC314"
 			tasks: [{
 				id: "16752C704FD68F12"
@@ -51,8 +27,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 4.5d
+			x: 13.5d
+			y: 3.0d
 			description: [
 				"This is how you'll produce rotational energy, but it's going to exhaust you and drain your hunger in the process."
 				""
@@ -76,7 +52,7 @@
 		{
 			title: "Early Ore Processing"
 			x: 13.5d
-			y: 4.5d
+			y: -1.0d
 			description: [
 				"This bad boy doesn't have a User Interface at all! To interact with it, throw items (or hopper them) into the top of the mill where you can see a chute. As it mills away you'll keep seeing particles - once you don't see any more particles of what you're milling, right-click (or use a hopper beneath) it to get your fresh grounds!"
 				""
@@ -97,8 +73,8 @@
 		}
 		{
 			title: "Crushing It!"
-			x: 12.0d
-			y: 6.0d
+			x: 16.0d
+			y: 1.0d
 			shape: "hexagon"
 			description: [
 				"Using your Manual Mill, hand crank, and extra cog(s) get yourself a comfortable setup for manually running this mill yourself, because it's all you've got!"
@@ -180,8 +156,8 @@
 		}
 		{
 			title: "Gearing Up"
-			x: 13.0d
-			y: 8.0d
+			x: 17.5d
+			y: 3.0d
 			shape: "rsquare"
 			description: ["Using a large cog, you can move your hand crank to crank directly into this large wheel, then use a small cog to down-shift the rotational energy to increase the speed of your milling. With a hand crank, you can only do this once, but it will make your work about twice as fast!"]
 			dependencies: ["557F241BD0AAA98E"]
@@ -202,8 +178,8 @@
 		}
 		{
 			icon: "immersiveengineering:conveyor_basic"
-			x: 11.0d
-			y: 8.0d
+			x: 17.5d
+			y: -1.0d
 			shape: "rsquare"
 			description: [
 				"If you so desire, you could use a Minecart, some rails, and some blast furnaces to streamline your Ore Processing line to directly smelt your resulting crushed ore."
@@ -225,10 +201,10 @@
 			}]
 		}
 		{
-			title: "End of Early-Game"
+			title: "Fin"
 			icon: "minecraft:oak_log"
-			x: 12.0d
-			y: 10.0d
+			x: 18.4952380952381d
+			y: 1.0188775510204238d
 			shape: "octagon"
 			description: [
 				"If you know Create, you know that there is SO much left to do in this mod. This pack is designed such that you'll have to step away from Create and revisit it once you have a reliable supply of Steel or Treated Wood."
@@ -243,17 +219,27 @@
 				type: "checkmark"
 				title: "Wrapping Up"
 			}]
-			rewards: [{
-				id: "368FFD6CB53F4962"
-				type: "item"
-				item: "immersiveengineering:craftingtable"
-			}]
+			rewards: [
+				{
+					id: "368FFD6CB53F4962"
+					type: "item"
+					item: "immersiveengineering:craftingtable"
+				}
+				{
+					id: "4869B48AAEA7AAAD"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 7009004B82607FD4"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "In Search of Kelp"
 			icon: "minecraft:kelp"
-			x: 12.0d
-			y: 4.5d
+			x: 14.760544217687077d
+			y: 1.0188775510204167d
 			shape: "rsquare"
 			description: [
 				"If you find yourself in search of Kelp with no hope to be found, this quest has got you covered :)"
@@ -300,6 +286,145 @@
 				item: "minecraft:kelp"
 				random_bonus: 2
 			}]
+		}
+		{
+			title: "Powdering Andesite"
+			icon: "kubejs:andesite_dust"
+			x: 11.0d
+			y: 3.0d
+			description: ["Using your Bone Hammer and a piece of Andesite Cobblestone, grab yourself some Andesite Powder to start making a blend with!"]
+			dependencies: ["2A1D4D9661103F33"]
+			id: "79EFDA6DBD159D63"
+			tasks: [
+				{
+					id: "62DE2067723A56B0"
+					type: "item"
+					item: "create:andesite_cobblestone"
+				}
+				{
+					id: "0FBE066FEF84D462"
+					type: "item"
+					item: "kubejs:andesite_dust"
+				}
+			]
+			rewards: [{
+				id: "3D0B27BADE5E89F7"
+				type: "item"
+				item: "abnormals_delight:maple_cookie"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Chipping Away at Zinc"
+			icon: "kubejs:zinc_dust_pile"
+			x: 11.0d
+			y: -1.0d
+			shape: "circle"
+			description: ["Using your Bone Hammer and a chunk of Zinc Ore, you try your hardest to break this chunk into smaller bits but only end up with some tiny piles of dust. Maybe you can still manage to use this?"]
+			dependencies: ["2A1D4D9661103F33"]
+			id: "7FB13C38A14B392C"
+			tasks: [
+				{
+					id: "627DEB49C24473DD"
+					type: "item"
+					item: "emendatusenigmatica:zinc_chunk"
+				}
+				{
+					id: "3734CD8A0823D335"
+					type: "item"
+					item: "kubejs:zinc_dust_pile"
+				}
+			]
+			rewards: [{
+				id: "524977BB8353B898"
+				type: "item"
+				item: "farmersdelight:barbecue_stick"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Bone Tools"
+			icon: {
+				id: "natural-progression:bone_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 9.0d
+			y: 1.0d
+			shape: "diamond"
+			description: [
+				"Bone chunks can be created by holding a bone in one hand, and a piece of flint in another."
+				""
+				"Once you get one, make yourself a Bone Hammer to help yourself succeed going into the next few steps!"
+			]
+			dependencies: ["5576DA257D4825D4"]
+			id: "2A1D4D9661103F33"
+			tasks: [
+				{
+					id: "267CA4481D667928"
+					type: "item"
+					item: "natural-progression:bone_shard"
+				}
+				{
+					id: "22A9364E3B212216"
+					type: "item"
+					item: {
+						id: "natural-progression:bone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1DD3188900A48DCA"
+				type: "item"
+				item: "abnormals_delight:passion_aloe_nectar"
+			}]
+		}
+		{
+			title: "Kinetically-Inclined Alloys"
+			icon: "create:andesite_alloy"
+			x: 11.5d
+			y: 1.0d
+			description: [
+				"Using this custom blend of Zinc and Andesite, you've managed to create some form of mixture that can be used to make Andesite Alloy."
+				""
+				"Andesite Alloy looks to be usefulf or some kinetic machinery, maybe that'll give you a better chance to get more alloy in the future?"
+			]
+			dependencies: [
+				"79EFDA6DBD159D63"
+				"7FB13C38A14B392C"
+			]
+			id: "156744046A721BDD"
+			tasks: [
+				{
+					id: "6233A28BDEB5F885"
+					type: "item"
+					item: "kubejs:andesite_zinc_blend"
+				}
+				{
+					id: "4CE590D3B3E434B9"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+			]
+			rewards: [
+				{
+					id: "71172D444E22A260"
+					type: "item"
+					item: "kubejs:andesite_zinc_blend"
+					random_bonus: 3
+				}
+				{
+					id: "0D24020D9B1B719E"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 	]
 }

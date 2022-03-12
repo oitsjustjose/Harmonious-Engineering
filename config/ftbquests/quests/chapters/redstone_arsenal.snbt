@@ -39,11 +39,21 @@
 					item: "redstone_arsenal:flux_obsidian_rod"
 				}
 			]
-			rewards: [{
-				id: "1DE277712813CCBF"
-				type: "xp"
-				xp: 25
-			}]
+			rewards: [
+				{
+					id: "1DE277712813CCBF"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "48CF141AD9CA26F6"
+					type: "command"
+					team_reward: false
+					auto: "no_toast"
+					command: "/ftbquests change_progress @p complete 3E1BAE54CFA4187C"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Cover me in [Flux-Infused] Diamonds"

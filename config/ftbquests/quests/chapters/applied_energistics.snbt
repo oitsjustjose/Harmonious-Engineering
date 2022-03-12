@@ -139,14 +139,23 @@
 				type: "item"
 				item: "appliedenergistics2:energy_acceptor"
 			}]
-			rewards: [{
-				id: "35CD93C05CD6AC6C"
-				type: "item"
-				title: "Combine with Most Blocks to make Covers!"
-				item: "appliedenergistics2:cable_anchor"
-				count: 16
-				random_bonus: 16
-			}]
+			rewards: [
+				{
+					id: "35CD93C05CD6AC6C"
+					type: "item"
+					title: "Combine with Most Blocks to make Covers!"
+					item: "appliedenergistics2:cable_anchor"
+					count: 16
+					random_bonus: 16
+				}
+				{
+					id: "70C7F98B4EBFF00A"
+					type: "command"
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 5144A2446C7BC8A0"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 1.5d

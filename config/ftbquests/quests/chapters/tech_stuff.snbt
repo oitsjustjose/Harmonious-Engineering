@@ -39,7 +39,6 @@
 			y: -0.75d
 			shape: "rsquare"
 			description: ["Much of Powah is gated behind Steel, but once ou're done there you can go ham with most generators! A lot of the imbalanced generators have been disabled for the sanctity of this pack, but outside of that you can do so much with Reactors!"]
-			dependencies: ["1FF265E2816476AB"]
 			size: 1.5d
 			optional: true
 			id: "68EA1AC4051942A0"
@@ -119,7 +118,6 @@
 				""
 				"On the other hand, if you need to suck up a large amount of fluid like Water or Oil, you can do so using Ranged Pumps which will self-chunk-load wherever they need to!"
 			]
-			dependencies: ["1FF265E2816476AB"]
 			size: 1.5d
 			optional: true
 			id: "1E05C31D669C7ED8"
@@ -149,7 +147,6 @@
 				"That said, if you want a build to be on the dark side but don't want to use Slabs or deal with mobs, the MegaTorch will prevent mob spawns in a huge radius around it."
 			]
 			hide_dependency_lines: true
-			dependencies: ["49BA5A4F9C83C5C4"]
 			size: 1.5d
 			optional: true
 			id: "7F744BD5EC79EEDA"

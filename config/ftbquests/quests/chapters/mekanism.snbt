@@ -51,13 +51,23 @@
 				type: "item"
 				item: "mekanism:hdpe_sheet"
 			}]
-			rewards: [{
-				id: "550C44B28A43D61B"
-				type: "item"
-				item: "mekanism:hdpe_sheet"
-				count: 8
-				random_bonus: 8
-			}]
+			rewards: [
+				{
+					id: "550C44B28A43D61B"
+					type: "item"
+					item: "mekanism:hdpe_sheet"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "759CA622B7E15E4E"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 08B270A5A7A1B9D0"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Processing Efficiency"

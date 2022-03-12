@@ -207,6 +207,14 @@
 					item: "storagenetwork:storage_kabel"
 					count: 3
 				}
+				{
+					id: "041A44295010AF97"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 7355E25F2FEF5852"
+					player_command: false
+				}
 			]
 		}
 		{
@@ -332,7 +340,6 @@
 			x: -5.0d
 			y: -15.0d
 			description: ["If you aren't familiar with Dank Storage, it's a great way to store bulk items in your inventory and void excess bulk. These are great to make before you go mining, so I strongly suggest nabbing this low-tier version to keep your inventory tidy!"]
-			dependencies: ["69FF3D884B1E8649"]
 			id: "0DCC81AEAEF4EA61"
 			tasks: [{
 				id: "6958D2A0358DB688"

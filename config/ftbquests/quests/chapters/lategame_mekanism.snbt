@@ -283,6 +283,13 @@
 				type: "item"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 			}]
+			rewards: [{
+				id: "34362173637C4B06"
+				type: "command"
+				auto: "invisible"
+				command: "/ftbquests change_progress @p complete 00B7A1A3A6ED0E8E"
+				player_command: false
+			}]
 		}
 		{
 			title: "Mekasuit Armor"

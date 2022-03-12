@@ -210,53 +210,6 @@
 			}]
 		}
 		{
-			title: "Microblocks"
-			x: -1.5d
-			y: -4.0d
-			description: ["Unlike the Saws from Natural Progression, the CBMicroBlock saws allow you to cut up most blocks into smaller pieces like slabs, corners, etc.."]
-			optional: true
-			id: "21AE5453B278CD21"
-			tasks: [{
-				id: "030A21BA7E522FB3"
-				type: "item"
-				title: "Any CBMicroBlock Saw"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "cb_microblock:stone_saw"
-								Count: 1b
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								id: "cb_microblock:iron_saw"
-								Count: 1b
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								id: "cb_microblock:diamond_saw"
-								Count: 1b
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "4BCC99C0F2A83732"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
 			x: 0.5d
 			y: -4.0d
 			description: ["The Wand of Symmetry is pretty late-game Create, but maybe this gives you a reason to get into it and learn all about the Addons this pack has such as Steam-Powered Create!"]
@@ -293,6 +246,22 @@
 				id: "3507ACA4859C751C"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			description: ["This guy is GREAT for figuring out the dimensions of some given area while you try to get yourself a base built! Give it a try!!"]
+			id: "3A585EBA11F60179"
+			tasks: [{
+				id: "504D0A1838BC5C70"
+				type: "item"
+				item: "quark:abacus"
+			}]
+			rewards: [{
+				id: "2E3E63DBA62F1764"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

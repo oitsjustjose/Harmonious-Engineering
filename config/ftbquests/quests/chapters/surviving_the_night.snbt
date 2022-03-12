@@ -12,8 +12,8 @@
 		{
 			title: "Monsters"
 			icon: "minecraft:zombie_head"
-			x: -1.5d
-			y: -2.0d
+			x: 2.0d
+			y: -3.5d
 			shape: "rsquare"
 			description: [
 				"Because of V-Tweaks, mobs will not spawn on the surface unless the moon's current phase is a new moon. Otherwise, you're safe to explore all throughout the night! If you need it, here's a campfire and a bench to take in the environment."
@@ -45,10 +45,14 @@
 		{
 			title: "Not Your Usual Tree Punching"
 			icon: "natural-progression:quark_jasper_pebble"
-			x: 3.5d
-			y: -4.5d
+			x: -2.0d
+			y: -1.0d
 			shape: "diamond"
-			description: ["To get started, pick up at least two Pebbles and put one each in your main and off-hand. Hold down right-click and knap the two pebbles together until you hear a *click* which indicates your first pieces of Flint!"]
+			description: [
+				"To get started, pick up at least two Pebbles and put one each in your main and off-hand. Hold down right-click and knap the two pebbles together until you hear a *click* which indicates your first pieces of Flint!"
+				""
+				"You'll also need to pick up sticks from the ground or leaves nearby to make it so you can actually craft some form of tool, even if it is rough."
+			]
 			id: "25A47A55DD6564CA"
 			tasks: [
 				{
@@ -69,35 +73,27 @@
 					type: "item"
 					item: "minecraft:flint"
 				}
+				{
+					id: "0949D41D9C7894ED"
+					type: "item"
+					item: "minecraft:stick"
+				}
 			]
-			rewards: [{
-				id: "1C9440CAFEE2B817"
-				type: "item"
-				item: "minecraft:flint"
-				count: 3
-			}]
-		}
-		{
-			title: "Grab a Stick"
-			x: -1.5d
-			y: -4.5d
-			shape: "diamond"
-			description: ["All around on the ground you should see sticks. Break, or right-click, these sticks to pick some up! You'll need around 8."]
-			id: "49D70EF0D47D9161"
-			tasks: [{
-				id: "277715E0D0F35514"
-				type: "item"
-				item: "minecraft:stick"
-				count: 8L
-				consume_items: false
-			}]
-			rewards: [{
-				id: "565E064E9C75B854"
-				type: "item"
-				item: "minecraft:stick"
-				count: 3
-				random_bonus: 3
-			}]
+			rewards: [
+				{
+					id: "1C9440CAFEE2B817"
+					type: "item"
+					item: "minecraft:flint"
+					count: 3
+				}
+				{
+					id: "6D47AC2857352550"
+					type: "item"
+					item: "minecraft:stick"
+					count: 3
+					random_bonus: 3
+				}
+			]
 		}
 		{
 			title: "1:1? Really??"
@@ -108,13 +104,10 @@
 					Damage: 0
 				}
 			}
-			x: 1.0d
-			y: -3.0d
+			x: 0.0d
+			y: -1.0d
 			description: ["Use your Flint and Sticks to make a Flint hatchet! Strip the bark of a tree before cutting it down, then combine the stripped log(s) with your axe to craft your first planks!"]
-			dependencies: [
-				"25A47A55DD6564CA"
-				"49D70EF0D47D9161"
-			]
+			dependencies: ["25A47A55DD6564CA"]
 			dependency_requirement: "one_started"
 			id: "7AFEA8F9BF9AFAA0"
 			tasks: [{
@@ -150,18 +143,20 @@
 			]
 		}
 		{
-			title: "Vanilla"
-			x: 1.0d
-			y: 2.0d
+			title: "Tools!"
+			x: 4.0d
+			y: -1.0d
 			shape: "rsquare"
 			description: ["Now that you've gotten yourself a crafting table, you can combine a 2x2 of those pebbles you keep finding to make your first stone tools. Tools from here are pretty much the same as usual, but this means you have a choice! Vanilla, Tinkers Construct, or Tetra! Pick your poison, as they all have their benefits and downfalls!"]
+			min_required_dependencies: 1
 			dependencies: ["0FF7D2AD65E5DE75"]
+			dependency_requirement: "one_completed"
 			optional: true
-			id: "5F04546C2125C6D2"
+			id: "438DF8E68752EC71"
 			tasks: [{
-				id: "53D2159DE9E9494C"
-				type: "item"
-				item: {
+				id: "2BB9EDA7D44A13C1"
+				type: "checkmark"
+				icon: {
 					id: "minecraft:stone_pickaxe"
 					Count: 1b
 					tag: {
@@ -170,108 +165,22 @@
 				}
 			}]
 			rewards: [{
-				id: "4A35DD53B984A3B3"
-				type: "xp"
-				xp: 300
-			}]
-		}
-		{
-			title: "Tinkers' Construct"
-			x: -1.5d
-			y: 2.0d
-			shape: "rsquare"
-			description: ["Now that you've gotten yourself a crafting table, you can combine a 2x2 of those pebbles you keep finding to make your first stone tools. Tools from here are pretty much the same as usual, but this means you have a choice! Vanilla, Tinkers Construct, or Tetra! Pick your poison, as they all have their benefits and downfalls!"]
-			dependencies: ["0FF7D2AD65E5DE75"]
-			optional: true
-			id: "438DF8E68752EC71"
-			tasks: [{
-				id: "5C49262D5E9C6B35"
+				id: "63E29924278DD2D3"
 				type: "item"
-				item: {
-					id: "tconstruct:pickaxe"
-					Count: 1b
-					tag: {
-						tic_multipliers: { }
-						tic_stats: {
-							"tconstruct:attack_speed": 1.2f
-							"tconstruct:mining_speed": 4.4f
-							"tconstruct:attack_damage": 1.0f
-							"tconstruct:harvest_level": 1.0f
-							"tconstruct:durability": 104.0f
-						}
-						tic_broken: 0b
-						HideFlags: 3
-						tic_modifiers: [
-							{
-								name: "tconstruct:piercing"
-								level: 1s
-							}
-							{
-								name: "tconstruct:stonebound"
-								level: 3s
-							}
-						]
-						tic_materials: [
-							"tconstruct:stone"
-							"tconstruct:stone"
-							"tconstruct:stone"
-						]
-						Damage: 0
-						tic_persistent_data: {
-							abilities: 1
-							upgrades: 3
-						}
-					}
-				}
-			}]
-			rewards: [{
-				id: "79896543C95D80B7"
-				type: "item"
-				item: "tconstruct:earth_cake"
-			}]
-		}
-		{
-			title: "Tetra"
-			x: 3.5d
-			y: 2.0d
-			shape: "rsquare"
-			description: ["Now that you've gotten yourself a crafting table, you can combine a 2x2 of those pebbles you keep finding to make your first stone tools. Tools from here are pretty much the same as usual, but this means you have a choice! Vanilla, Tinkers Construct, or Tetra! Pick your poison, as they all have their benefits and downfalls!"]
-			dependencies: ["0FF7D2AD65E5DE75"]
-			optional: true
-			id: "277F51B86D0AEFDE"
-			tasks: [{
-				id: "52846C892EC4DF52"
-				type: "item"
-				title: "Any Tetra Hammer"
-				item: {
-					id: "tetra:modular_double"
-					Count: 1b
-					tag: {
-						"double/handle": "double/basic_handle"
-						"double/head_left": "double/basic_hammer_left"
-						"double/head_right": "double/basic_hammer_right"
-						id: "33a412dc-9cc9-4c50-a186-85015c204e10"
-						"double/basic_hammer_right_material": "basic_hammer/oak"
-						Damage: 0
-						"double/basic_handle_material": "basic_handle/stick"
-						"double/basic_hammer_left_material": "basic_hammer/oak"
-					}
-				}
-			}]
-			rewards: [{
-				id: "7DC9165D21ED517F"
-				type: "item"
-				item: "tetra:rack"
+				item: "minecraft:cobblestone"
+				count: 32
+				random_bonus: 32
 			}]
 		}
 		{
 			title: "Expanded Crafting"
 			icon: "minecraft:crafting_table"
-			x: 1.0d
-			y: -0.5d
+			x: 1.997278911564628d
+			y: -0.9724489795918458d
 			shape: "hexagon"
 			description: ["Using your newfound unlocked crafting abilities, go ahead and treat yourself to a saw! All of them, even this flimsy flint one, can strip the bark off of a log and even more efficiently craft that log into planks!"]
 			dependencies: ["7AFEA8F9BF9AFAA0"]
+			size: 1.5d
 			id: "0FF7D2AD65E5DE75"
 			tasks: [
 				{
@@ -310,8 +219,8 @@
 		}
 		{
 			title: "Improved Backpacks"
-			x: 3.5d
-			y: 0.0d
+			x: 6.0d
+			y: -3.5d
 			shape: "rsquare"
 			description: ["Improved Backpacks is a greatly modular system for sewing yourself a lovely backpack. If you've made one, take a couple of pouches on us!"]
 			hide_dependency_lines: true
@@ -403,8 +312,8 @@
 		}
 		{
 			icon: "minecraft:wheat"
-			x: 3.5d
-			y: -2.0d
+			x: 0.0d
+			y: -3.5d
 			shape: "rsquare"
 			description: ["Just for your convenience, this pack has a right-click crop harvesting mechanic so don't hesitate to leave some behind for your friends!"]
 			optional: true
@@ -433,19 +342,14 @@
 		}
 		{
 			title: "Hit the Mines!"
-			x: 1.0d
-			y: 4.5d
+			x: 6.0d
+			y: -1.0d
 			shape: "octagon"
-			description: ["To proceed, you'll need some Iron, Copper, Coal, y'know the common resources. Go hit the mines and head on back to the next chapter when you think you're ready!"]
+			description: ["To proceed, you'll need some Iron, Copper, Coal, and DEFINITELY Zinc! Go hit the mines and head on back to the next chapter when you think you're ready!"]
 			min_required_dependencies: 1
-			dependencies: [
-				"5F04546C2125C6D2"
-				"438DF8E68752EC71"
-				"277F51B86D0AEFDE"
-			]
+			dependencies: ["438DF8E68752EC71"]
 			hide: false
 			dependency_requirement: "one_completed"
-			size: 1.5d
 			id: "5576DA257D4825D4"
 			tasks: [{
 				id: "5092DB42DFD9055D"
@@ -481,12 +385,20 @@
 					count: 6
 					random_bonus: 4
 				}
+				{
+					id: "3530BB143FEFE305"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 3EE36932952B2CF8"
+					player_command: false
+				}
 			]
 		}
 		{
 			title: "Optimizing That Inv"
-			x: -1.5d
-			y: 0.0d
+			x: 4.0d
+			y: -3.5d
 			shape: "rsquare"
 			description: ["We know that the inventory can get cluttered SUPER quickly. The Toolbelt mod has a nicely configurable radial menu that lets you store stuff like Napsacks, Akashic Tomes, Morphing Tools and other day-to-day tools right on your belt! Give it a try if you're struggling to keep your hotbar organized!"]
 			hide_dependency_lines: true
@@ -507,8 +419,8 @@
 		}
 		{
 			title: "A Balanced Diet"
-			x: 1.0d
-			y: -6.0d
+			x: -2.0d
+			y: -3.5d
 			shape: "rsquare"
 			description: [
 				"Upon eating something you may have noticed that there's something off about the hunger bar  -- there are little icons in it now, right? Or is that just me??"

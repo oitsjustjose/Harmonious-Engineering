@@ -14,7 +14,6 @@
 			y: -2.0d
 			shape: "diamond"
 			description: ["If you've been looking ahead in JEI, you no doubt know by now that you'll need a machine frame for all things Thermal. In this pack, you'll need Steel and a special kind of hardened glass to make it. Thanks to the last chapter, you should have everything you need to dive into thermal!"]
-			dependencies: ["1FF265E2816476AB"]
 			id: "5DD16A26B44A2290"
 			tasks: [{
 				id: "5666F58D47464047"
@@ -234,13 +233,23 @@
 				type: "item"
 				item: "thermal:upgrade_augment_3"
 			}]
-			rewards: [{
-				id: "7701FC8A9810CA56"
-				type: "item"
-				item: "emendatusenigmatica:enderium_ingot"
-				count: 2
-				random_bonus: 2
-			}]
+			rewards: [
+				{
+					id: "7701FC8A9810CA56"
+					type: "item"
+					item: "emendatusenigmatica:enderium_ingot"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "436952FAA2187D11"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 2E7CFAA1899F558C"
+					player_command: false
+				}
+			]
 		}
 		{
 			disable_toast: true

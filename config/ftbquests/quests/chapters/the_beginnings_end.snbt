@@ -175,13 +175,23 @@
 				entity: "alexsmobs:void_worm"
 				value: 1L
 			}]
-			rewards: [{
-				id: "6A24DA90A4E967A1"
-				type: "random"
-				title: "Random Void Worm Reward"
-				icon: "supplementaries:present"
-				table_id: 5435672958058832467L
-			}]
+			rewards: [
+				{
+					id: "6A24DA90A4E967A1"
+					type: "random"
+					title: "Random Void Worm Reward"
+					icon: "supplementaries:present"
+					table_id: 5435672958058832467L
+				}
+				{
+					id: "7AF316D87589DE0E"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 58BB42C6580343A1"
+					player_command: false
+				}
+			]
 		}
 	]
 }
