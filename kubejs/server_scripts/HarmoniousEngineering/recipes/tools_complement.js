@@ -1,4 +1,9 @@
 onEvent('recipes', event => {
+  ['sword', 'pickaxe', 'shovel', 'axe', 'hoe', 'helmet', 'chestplate', 'leggings', 'boots'].forEach(
+    x => {
+      event.remove({output: `tools_complement:bronze_${x}`});
+    }
+  );
   event.remove({id: 'tools_complement:netherite_excavator'});
   event.remove({id: 'tools_complement:netherite_hammer'});
   event.remove({id: 'tools_complement:netherite_sickle'});

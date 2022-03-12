@@ -34,13 +34,21 @@ onEvent('recipes', event => {
     O: 'mekanism:steel_casing',
   });
 
-  ['helmet', 'chestplate', 'leggings', 'boots'].forEach(armor => {
-    event.remove({id: `mekanismtools:lapis_lazuli/armor/${armor}`});
-    event.remove({id: `mekanismtools:osmium/armor/${armor}`});
-  });
-
-  ['sword', 'pickaxe', 'shovel', 'axe', 'hoe'].forEach(tool => {
-    event.remove({id: `mekanismtools:lapis_lazuli/tools/${tool}`});
-    event.remove({id: `mekanismtools:osmium/tools/${tool}`});
+  [
+    'helmet',
+    'chestplate',
+    'leggings',
+    'boots',
+    'sword',
+    'pickaxe',
+    'shovel',
+    'axe',
+    'hoe',
+    'paxel',
+    'shield',
+  ].forEach(gear => {
+    event.remove({output: `mekanismtools:lapis_lazuli_${gear}`});
+    event.remove({output: `mekanismtools:osmium_${gear}`});
+    event.remove({output: `mekanismtools:steel_${gear}`});
   });
 });

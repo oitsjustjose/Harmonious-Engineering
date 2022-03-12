@@ -584,6 +584,15 @@ onEvent('jei.hide.items', event => {
     'titanium:diamond_gear',
     'titanium:gold_gear',
     'titanium:iron_gear',
+    'tools_complement:bronze_sword',
+    'tools_complement:bronze_pickaxe',
+    'tools_complement:bronze_shovel',
+    'tools_complement:bronze_axe',
+    'tools_complement:bronze_hoe',
+    'tools_complement:bronze_helmet',
+    'tools_complement:bronze_chestplate',
+    'tools_complement:bronze_leggings',
+    'tools_complement:bronze_boots',
     'xnet:connector_upgrade',
   ].forEach(x => event.hide(x));
 
@@ -598,9 +607,11 @@ onEvent('jei.hide.items', event => {
     'axe',
     'hoe',
     'paxel',
+    'shield',
   ].forEach(gear => {
     event.hide(`mekanismtools:lapis_lazuli_${gear}`);
     event.hide(`mekanismtools:osmium_${gear}`);
+    event.hide(`mekanismtools:steel_${gear}`);
   });
 
   [
