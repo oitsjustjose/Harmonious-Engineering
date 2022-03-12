@@ -5,6 +5,7 @@
 - [Quests] Dedicated Questline for Powah
 - [Mod] MrCrayFish's Furniture Mod + Addons for Wood Variants
 - [Mod] Entity Culling
+- [Mod] Reroll - Allows you to reroll Enchantment Table enchantments
 
 ## Removed
 
