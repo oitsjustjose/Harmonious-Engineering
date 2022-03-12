@@ -265,4 +265,5 @@ onEvent('tags.items', event => {
   event.add('forge:dusts/ender', 'betterendforge:ender_dust');
   event.add('forge:dusts/ender', 'appliedenergistics2:ender_dust');
   event.add('create:crushed_ores', 'emendatusenigmatica:cobalt_crushed');
+  event.add('forge:wither_bones', 'architects_palette:withered_bone');
 });

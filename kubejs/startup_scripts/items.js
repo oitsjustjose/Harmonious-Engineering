@@ -4,6 +4,9 @@ onEvent('item.registry', event => {
   event.create('ender_singularity').texture('kubejs:item/ender_singularity');
   event.create('fluxed_singularity').texture('kubejs:item/fluxed_singularity');
   event.create('crude_andesite_alloy').texture('kubejs:item/crude_andesite_alloy');
+  event.create('andesite_dust').texture('kubejs:item/andesite_dust');
+  event.create('zinc_dust_pile').texture('kubejs:item/zinc_dust_pile');
+  event.create('andesite_zinc_blend').texture('kubejs:item/andesite_zinc_blend');
   event.create('silicon_die').texture('kubejs:item/silicon_die');
 
   event

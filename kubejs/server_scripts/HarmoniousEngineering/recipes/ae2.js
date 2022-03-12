@@ -24,6 +24,7 @@ const sequencedAssembly = (material, output) => {
 };
 
 onEvent('recipes', event => {
+  event.remove({output: 'appliedenergistics2:wooden_gear'});
   event.remove({output: 'appliedenergistics2:grindstone'});
   event.remove({output: 'appliedenergistics2:controller'});
   event.remove({output: 'appliedenergistics2:inscriber'});

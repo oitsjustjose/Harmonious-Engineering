@@ -369,6 +369,7 @@ onEvent('jei.hide.items', event => {
     'minecraft:nether_quartz_ore',
     'minecraft:redstone_ore',
     'moreminecarts:silica_steel_mix',
+    'natural-progression:bone_knife',
     'powah:ender_cell_starter',
     'powah:ender_gate_basic',
     'powah:ender_gate_blazing',

@@ -2,7 +2,7 @@
 #Client settings
 [client]
 	#Should the hunger bar have a gilded overlay when the player has the Nourishment effect?
-	nourishmentHungerOverlay = true
+	nourishmentHungerOverlay = false
 	#Should food tooltips display which effects they provide?
 	foodEffectTooltip = true
 
