@@ -1,3 +1,25 @@
+# 2.1.4
+
+## Added
+
+- [Mod] ServerConfig Updater - updates server ocnifgs from the `defaultconfigs` folder.
+- [Mod] MyServerIsCompatible - makes sure that the server checkmark is green because some client mods won't run on the server.
+- [Recipe] Saplings can be interchanged for other variants using Chipped's Botanist Workbench.
+- [Recipe] Quark Blank Runes can now be crafted
+
+## Changed
+
+- [Quests] The quest organization and grouping has been greatly revamped! Many new quests and quests rewards, and just overall more polish!!
+- [Recipe] Remade the Angel Ring recipe (much to your surprise, it's less difficult!)
+- [Recipe] Made the Modular Routers module bases less annoying to craft
+- [Recipe] Torchmaster Megatorches now use Lumium Ingots
+- [Recipe] Modular Routers upgrades use the Base Module from Mekanism to craft
+- [Recipe] Removed Cincinnasite recipes for things made of iron, like Buckets, rails, etc.
+- [Recipe] Removed Recipe to make Rails from Osmium
+
+- [Misc] BetterEnd's Amber and Ender Ore have been disabled
+- [Misc] Made Arcane Endermen less tough
+
 # 2.1.3
 
 ## Added

@@ -155,11 +155,6 @@
 			]
 			size: 1.5d
 			id: "4A42C1A07DE3C2BA"
-			tasks: [{
-				id: "618281EF1B745344"
-				type: "checkmark"
-				title: "Draconic Evolution"
-			}]
 		}
 		{
 			title: "Networking Administrator"

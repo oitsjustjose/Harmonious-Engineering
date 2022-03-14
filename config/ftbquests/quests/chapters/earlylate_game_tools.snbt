@@ -58,6 +58,7 @@
 		}
 		{
 			title: "Infinite Quarrying Potential"
+			icon: "quantumquarryplus:quantum_quarry_plus"
 			x: -5.5d
 			y: -3.5d
 			shape: "hexagon"
@@ -282,6 +283,7 @@
 		}
 		{
 			title: "ME Autocrafting"
+			icon: "appliedenergistics2:encoded_pattern"
 			x: -11.0d
 			y: -1.5d
 			description: [
@@ -357,12 +359,21 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "412E2C64FC6097FF"
-				type: "item"
-				item: "appliedenergistics2:speed_card"
-				random_bonus: 8
-			}]
+			rewards: [
+				{
+					id: "412E2C64FC6097FF"
+					type: "item"
+					item: "appliedenergistics2:speed_card"
+					random_bonus: 8
+				}
+				{
+					id: "7CEF18E65D56F4A6"
+					type: "item"
+					item: "appliedenergistics2:blank_pattern"
+					count: 16
+					random_bonus: 16
+				}
+			]
 		}
 		{
 			title: "Infinite Integrations"
@@ -406,6 +417,7 @@
 		}
 		{
 			title: "Remote Networking"
+			icon: "appliedenergistics2:singularity"
 			x: -12.5d
 			y: -3.5d
 			description: ["Using the Quantum Ring and Quantum Singularities, set yourself up with remote access to your entire AE network and even expand it using the Quantum Ring and Link Chamber! "]

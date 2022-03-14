@@ -76,4 +76,18 @@ onEvent('recipes', event => {
     `betternether:cincinnasite_ingot`,
     2
   );
+
+  ['netherrack', 'glowstone', 'blackstone', 'basalt', 'bone'].forEach(x => {
+    event.remove({output: `betternether:${x}_stalactite`});
+  });
+
+  [
+    'minecraft:minecart',
+    'minecraft:shield',
+    'minecraft:piston',
+    'minecraft:bucket',
+    'minecraft:detector_rail',
+    'minecraft:activator_rail',
+    'minecraft:rail',
+  ].forEach(x => event.remove({mod: 'betternether', output: x}));
 });

@@ -9,7 +9,7 @@ onEvent('recipes', event => {
   event.remove({output: 'torchmaster:megatorch'});
   event.shaped('1x torchmaster:megatorch', ['FFF', 'HLH', 'HLH'], {
     F: 'torchmaster:feral_flare_lantern',
-    H: '#harmeng:meka/mid_tier_mat',
+    H: '#forge:ingots/lumium',
     L: '#minecraft:logs',
   });
 });

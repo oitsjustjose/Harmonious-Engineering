@@ -350,10 +350,11 @@
 		}
 		{
 			title: "The Mighty Architect"
-			x: -7.5d
-			y: 0.0d
-			shape: "rsquare"
+			x: -4.5d
+			y: -1.5d
+			shape: "circle"
 			description: ["By pressing [G], you can start composing a beautiful new build using the Mighty Architect - when you hit [G], you'll get a full walkthrough better than anything I could ever provide!"]
+			size: 0.85d
 			optional: true
 			id: "657AD360C363DA5E"
 			tasks: [{
@@ -372,9 +373,10 @@
 			title: "Reload Audio"
 			icon: "supplementaries:speaker_block"
 			x: -7.5d
-			y: -3.0d
-			shape: "rsquare"
+			y: -1.5d
+			shape: "circle"
 			description: ["Reload Audio Driver (RAD) prevents you from having to restart the game if you sound stops working. Just hit F3+R to reload the sound engine and fix any issues!"]
+			size: 0.85d
 			optional: true
 			id: "3327426D6090926D"
 			tasks: [{
@@ -387,6 +389,7 @@
 			x: -6.0d
 			y: -1.5d
 			description: ["The scanner is great for finding specific mobs, blocks, ores and more in an area. It's pretty expensive because of how powerful it is, but it's worthwhile in the longterm!"]
+			optional: true
 			id: "2EF23CBBBDF37F40"
 			tasks: [{
 				id: "4658D93C9BD6E68A"
@@ -409,6 +412,7 @@
 				""
 				"These don't require an RF supply either, making them crazy convenient where you might not want items to be snagged."
 			]
+			optional: true
 			id: "08CA69DC40882038"
 			tasks: [{
 				id: "77BF8794F91EA448"
@@ -432,6 +436,7 @@
 			title: "Automated Mega-Crafting"
 			x: -9.0d
 			y: -1.5d
+			shape: "hexagon"
 			description: [
 				"As you've no doubt noticed, a lot of larger blocks or more powerful creations make use of Create's Mechanical Crafting. I get that this can be tedious, so if you make the Ultimate Crafting Table you can more efficiently automate these recipes at the cost of some RF."
 				""
@@ -444,6 +449,7 @@
 				"1C4C3A1431B17B77"
 			]
 			dependency_requirement: "one_completed"
+			size: 1.25d
 			optional: true
 			id: "1B07D6AE58A8A0F1"
 			tasks: [{
@@ -477,9 +483,10 @@
 				item: "fluxnetworks:flux_dust"
 			}]
 			rewards: [{
-				id: "0A70C3D4B7AF3765"
+				id: "567A81C582BE06EA"
 				type: "item"
-				item: "fluxnetworks:flux_configurator"
+				item: "fluxnetworks:flux_block"
+				random_bonus: 3
 			}]
 		}
 		{
@@ -678,6 +685,66 @@
 				count: 2
 				random_bonus: 2
 			}]
+		}
+		{
+			title: "Ranged Pumps"
+			x: -7.5d
+			y: 0.0d
+			description: ["Ranged Pumps are a great way to pump out fluids from large pools, such as Lava or Water. These are best known for gathering Lava from the Nether but you can also use Hose Pulleys for that so it's completely up to you!"]
+			optional: true
+			id: "0C3527F8F76074BD"
+			tasks: [{
+				id: "526DE10B47DCA6CD"
+				type: "item"
+				item: "rangedpumps:pump"
+			}]
+			rewards: [{
+				id: "00D6264FDF34CE0A"
+				type: "item"
+				item: "pipez:fluid_pipe"
+				count: 12
+			}]
+		}
+		{
+			title: "Modular Routers"
+			icon: "modularrouters:item_router"
+			x: -7.5d
+			y: -3.0d
+			description: [
+				"Modular Routers are the catch-all for doing the impossible, especially in tight spaces."
+				""
+				"Looking to automatically form a wither, and also looking for blast-proof blocks to confine it in? Look no further than the Blast Upgrade!"
+				""
+				"Want to make a drawbridge? Transport items wirelessly without seeing it? Keep stock of a specific amount of an item? Modular Routers is your mod!"
+			]
+			dependencies: ["40B3A14EA5AC792C"]
+			optional: true
+			id: "45CC9B1C52F3A686"
+			tasks: [{
+				id: "0D4BEE3859B5FA7B"
+				type: "item"
+				item: "modularrouters:item_router"
+			}]
+			rewards: [
+				{
+					id: "25E0DBBD9C721CF5"
+					type: "item"
+					item: "modularrouters:blank_module"
+					random_bonus: 3
+				}
+				{
+					id: "45AC6259CD763C4F"
+					type: "item"
+					item: "modularrouters:blank_upgrade"
+					random_bonus: 3
+				}
+				{
+					id: "1EDBAF1CAC5C570F"
+					type: "item"
+					item: "modularrouters:augment_core"
+					random_bonus: 3
+				}
+			]
 		}
 	]
 }
