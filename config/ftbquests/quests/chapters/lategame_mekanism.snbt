@@ -1,7 +1,7 @@
 {
 	id: "178DB76B3FA2C62F"
-	group: "2F5E9821869B4E2F"
-	order_index: 5
+	group: "3776C8DF39CEE47A"
+	order_index: 2
 	filename: "lategame_mekanism"
 	title: "Late-Game Mekanism"
 	icon: "mekanism:pellet_polonium"
@@ -360,12 +360,16 @@
 		{
 			x: 3.0d
 			y: -5.5d
+			shape: "hexagon"
 			description: [
 				"So your reactor exploded or you have a ton of radiation in an area, huh?"
 				"Well, for some reason Mekanism's radiation no longer decays over time. This quest lets you reset it if you have an ooopsie"
 				""
 				"This can be repeated as many times as you wish."
 			]
+			hide_dependency_lines: true
+			dependencies: ["4F32BEC61C124287"]
+			size: 1.25d
 			id: "31398C49E0945148"
 			tasks: [{
 				id: "79139F1D160EDDCD"

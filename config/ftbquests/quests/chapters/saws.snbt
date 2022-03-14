@@ -1,9 +1,9 @@
 {
 	id: "58BDD920A5886CEF"
-	group: "5D65BFF245310B96"
-	order_index: 2
+	group: "2DBE15AF0366896A"
+	order_index: 3
 	filename: "saws"
-	title: "Woodcutting"
+	title: "Carpentry"
 	icon: {
 		id: "natural-progression:steel_saw"
 		Count: 1b

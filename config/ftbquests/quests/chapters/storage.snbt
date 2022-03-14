@@ -3,7 +3,7 @@
 	group: "2DBE15AF0366896A"
 	order_index: 2
 	filename: "storage"
-	title: "Storage"
+	title: "Storage Opportunities"
 	icon: "storage_overhaul:oak_chest_tier_1"
 	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false

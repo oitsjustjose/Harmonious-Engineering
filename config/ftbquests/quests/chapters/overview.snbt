@@ -176,5 +176,27 @@
 			optional: true
 			id: "5144A2446C7BC8A0"
 		}
+		{
+			title: "Sidequester"
+			icon: {
+				id: "doomangelring:itemdoomangelring"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Please Nerf"
+			description: [
+				"Looking for convenience and some set-and-forget blocks? Look no further!"
+				""
+			]
+			dependencies: ["08B270A5A7A1B9D0"]
+			size: 0.85d
+			optional: true
+			id: "0FA170DBAE0EFA0B"
+		}
 	]
 }

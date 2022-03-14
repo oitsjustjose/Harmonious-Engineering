@@ -1,9 +1,9 @@
 {
 	id: "5985D794526FF230"
-	group: "6F245F11B3688A37"
-	order_index: 2
+	group: "2F5E9821869B4E2F"
+	order_index: 0
 	filename: "applied_energistics"
-	title: "Applied Energistics"
+	title: "Digital Storage"
 	icon: "appliedenergistics2:controller"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

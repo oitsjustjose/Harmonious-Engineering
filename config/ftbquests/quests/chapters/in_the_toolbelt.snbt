@@ -1,10 +1,10 @@
 {
 	id: "3C3C8A7591CF21F2"
-	group: "5D65BFF245310B96"
-	order_index: 0
+	group: "2DBE15AF0366896A"
+	order_index: 5
 	filename: "in_the_toolbelt"
-	title: "In the Toolbelt"
-	icon: "toolbelt:belt"
+	title: "Quality of Life"
+	icon: "quantumquarryplus:earth_orb"
 	subtitle: ["Helpful tips about this pack from one Crafter to another."]
 	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
@@ -12,10 +12,11 @@
 		{
 			title: "Akashic Tome"
 			icon: "akashictome:tome"
-			x: -4.0d
-			y: 0.0d
-			shape: "rsquare"
+			x: -6.0d
+			y: -3.0d
+			shape: "hexagon"
 			description: ["Every detailed mod could use a manual - we've done the work ahead of time and have gathered all of the manuals for you in one place - all we ask for is a book in return!"]
+			size: 1.25d
 			optional: true
 			id: "08C321A14FDE29DF"
 			tasks: [{
@@ -175,10 +176,11 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -6.0d
 			y: 0.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			description: ["The morphing tool will automatically switch to the right tool for the job when you look at a block that needs to be wrenched! These are great for consolidating wrenches."]
+			size: 1.25d
 			optional: true
 			id: "037321E8DA23FC10"
 			tasks: [{
@@ -348,8 +350,8 @@
 		}
 		{
 			title: "The Mighty Architect"
-			x: -4.0d
-			y: 2.0d
+			x: -7.5d
+			y: 0.0d
 			shape: "rsquare"
 			description: ["By pressing [G], you can start composing a beautiful new build using the Mighty Architect - when you hit [G], you'll get a full walkthrough better than anything I could ever provide!"]
 			optional: true
@@ -369,8 +371,8 @@
 		{
 			title: "Reload Audio"
 			icon: "supplementaries:speaker_block"
-			x: -2.0d
-			y: 2.0d
+			x: -7.5d
+			y: -3.0d
 			shape: "rsquare"
 			description: ["Reload Audio Driver (RAD) prevents you from having to restart the game if you sound stops working. Just hit F3+R to reload the sound engine and fix any issues!"]
 			optional: true
@@ -381,8 +383,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 2.0d
+			title: "Scannable"
+			x: -6.0d
+			y: -1.5d
 			description: ["The scanner is great for finding specific mobs, blocks, ores and more in an area. It's pretty expensive because of how powerful it is, but it's worthwhile in the longterm!"]
 			id: "2EF23CBBBDF37F40"
 			tasks: [{
@@ -398,19 +401,282 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.0d
+			title: "Demagnetizers"
+			x: -9.0d
+			y: -3.0d
 			description: [
-				"Something that isn't easily documented in this pack, or shown via a nice little button, is the ability to fine-tune each sound via Dynamic Surroundings."
+				"Demagnetizers are great for determining which areas should not be affected by item magnets. You can configure the range and items (white/black list) that can be affected as well!"
 				""
-				"To do so, you'll need to go to Game Menu -> Options -> Controls, then search \"Individual\" in the box. There should only be one result - bind that to any key at all then press that key to individually customize and cull various game sounds!"
+				"These don't require an RF supply either, making them crazy convenient where you might not want items to be snagged."
+			]
+			id: "08CA69DC40882038"
+			tasks: [{
+				id: "77BF8794F91EA448"
+				type: "item"
+				title: "Any Demagnetizer"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "demagnetize"
+					}
+				}
+			}]
+			rewards: [{
+				id: "298051CB8D145F61"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Automated Mega-Crafting"
+			x: -9.0d
+			y: -1.5d
+			description: [
+				"As you've no doubt noticed, a lot of larger blocks or more powerful creations make use of Create's Mechanical Crafting. I get that this can be tedious, so if you make the Ultimate Crafting Table you can more efficiently automate these recipes at the cost of some RF."
+				""
+				"You can save up to 3 recipes per table, and once saved you can put any storage block (e.g. Chest, Barrel) above the table and a hopper/importing device below."
+				""
+				"Once you select your saved recipe, it will automatically craft for you!"
+			]
+			dependencies: [
+				"2D20B2E24752725E"
+				"1C4C3A1431B17B77"
+			]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "1B07D6AE58A8A0F1"
+			tasks: [{
+				id: "0BF7025CB679E02B"
+				type: "item"
+				item: "extendedcrafting:ultimate_auto_table"
+			}]
+			rewards: [{
+				id: "2ACA235D820EBBF8"
+				type: "item"
+				item: "powah:crystal_spirited"
+				count: 2
+				random_bonus: 6
+			}]
+		}
+		{
+			title: "Flux Networks"
+			x: -4.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Flux Networks is a great mod for inter-dimensional wireless power to both your own inventory and to/from other machines!"
+				""
+				"The Flux Controller is your ticket to getting a network set up, and you can set up multiple to keep your setup organized!"
 			]
 			optional: true
-			id: "18956C444E5B81FE"
+			id: "32997A524540C21A"
 			tasks: [{
-				id: "597A14B085ECB78C"
-				type: "checkmark"
-				title: "Tweaking Volumes"
+				id: "452CB95B92AEBBE9"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+			rewards: [{
+				id: "0A70C3D4B7AF3765"
+				type: "item"
+				item: "fluxnetworks:flux_configurator"
+			}]
+		}
+		{
+			title: "Compact Machines"
+			x: -3.0d
+			y: -3.0d
+			description: [
+				"Compact Machines are a great way to set up laggy, noisy or dangerous builds in a nice spatial bubble all stored within a single block"
+				""
+				"Use the Shrinking Device as a guide to learn more about how the mod works, and get started!"
+			]
+			optional: true
+			id: "4E517C0500A7F3B0"
+			tasks: [{
+				id: "5037F426D648E10E"
+				type: "item"
+				title: "Any Compact Machine"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "compactmachines:machine_normal"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_large"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_giant"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "4414239AAE0E4001"
+				type: "item"
+				item: "compactmachines:personal_shrinking_device"
+			}]
+		}
+		{
+			title: "Pipes/Ducts"
+			x: -4.5d
+			y: -3.0d
+			shape: "rsquare"
+			description: [
+				"While IE Conveyors and Create Belts are GREAT for item transfer, if you want lag-free guaranteed-to-work item transfer, I can't suggest Pipez enough."
+				""
+				"Pipez has a Fluid, Item, Gas and RF Pipe as well, and the Universal Pipe does all three just like EnderIO!"
+			]
+			optional: true
+			id: "25E11D32A9C21DD6"
+			tasks: [{
+				id: "73454C5B4FA3ACB8"
+				type: "item"
+				title: "Any Pipez Pipe"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pipez:item_pipe"
+								Count: 1b
+							}
+							{
+								id: "pipez:fluid_pipe"
+								Count: 1b
+							}
+							{
+								id: "pipez:energy_pipe"
+								Count: 1b
+							}
+							{
+								id: "pipez:universal_pipe"
+								Count: 1b
+							}
+							{
+								id: "pipez:gas_pipe"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7883590B708AF8CC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Torchmaster"
+			icon: "torchmaster:megatorch"
+			x: -9.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Torchmaster is a lighting mod that takes all of your concerns about lighting and puts them in the backseat."
+				""
+				"If you just want to avoid mob spawns and don't care about aesthetic lighting, the Feral Flare Lantern will light up a HUGE radius around it, preventing any chances of your large builds having dark spots."
+				""
+				"That said, if you want a build to be on the dark side but don't want to use Slabs or deal with mobs, the MegaTorch will prevent mob spawns in a huge radius around it."
+			]
+			hide_dependency_lines: true
+			optional: true
+			id: "7F744BD5EC79EEDA"
+			tasks: [{
+				id: "6884D75BD6713A3A"
+				type: "item"
+				title: "Any Torchmaster Item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "torchmaster:megatorch"
+								Count: 1b
+							}
+							{
+								id: "torchmaster:dreadlamp"
+								Count: 1b
+							}
+							{
+								id: "torchmaster:feral_flare_lantern"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "31B0EFA6338A9E32"
+				type: "item"
+				icon: { id: "thermal:lumium_coin", Count: 16b }
+				random_bonus: 9
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Entangled Blocks are perfect for when you need more than 6 sides to a block, or just want to keep everything nice and tidy. "]
+			dependencies: ["5DD16A26B44A2290"]
+			optional: true
+			id: "774D9289FBF8AE7A"
+			tasks: [{
+				id: "7B9E8B1B745D1894"
+				type: "item"
+				item: {
+					id: "entangled:block"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6ECFB30BDA4FE190"
+				type: "item"
+				item: {
+					id: "entangled:item"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Chunk Loading"
+			x: -3.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["Chicken Chunks is a great chunk loading mod with lots of configuration, so if you need to leave something processing while you run off adventuring, toss a chunk loader down!"]
+			size: 1.25d
+			optional: true
+			id: "1E05C31D669C7ED8"
+			tasks: [{
+				id: "46B8428C6A15B912"
+				type: "item"
+				title: "Any Chunk Loader"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "chickenchunks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "24DFCC3C6DBD887C"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 2
+				random_bonus: 2
 			}]
 		}
 	]

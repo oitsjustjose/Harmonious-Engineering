@@ -3,7 +3,7 @@
 	group: "2DBE15AF0366896A"
 	order_index: 0
 	filename: "chipped"
-	title: "Decor"
+	title: "Aesethetics \\& Building"
 	icon: "chipped:glassblower"
 	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false

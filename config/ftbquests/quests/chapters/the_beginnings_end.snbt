@@ -1,9 +1,9 @@
 {
 	id: "23630918D82F19CF"
-	group: "6F245F11B3688A37"
-	order_index: 1
+	group: "2F5E9821869B4E2F"
+	order_index: 2
 	filename: "the_beginnings_end"
-	title: "The Beginning's End"
+	title: "Harnessing Resonance"
 	icon: "minecraft:end_portal_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -164,6 +164,7 @@
 			subtitle: "An Adventure Time reference, for those missing it."
 			description: ["If you need help summoning the void worm, take a look at your Animal Dictionary"]
 			dependencies: ["1CAD34C4A5929DC9"]
+			hide: true
 			size: 2.0d
 			optional: true
 			id: "54BFF31E096D8E93"

@@ -3,7 +3,7 @@
 	group: "2DBE15AF0366896A"
 	order_index: 1
 	filename: "gadgets"
-	title: "Gadgets"
+	title: "Building Aides"
 	icon: {
 		id: "buildinggadgets:gadget_building"
 		Count: 1b

@@ -1,16 +1,11 @@
 {
 	id: "287BDD80190D4B3D"
-	group: "5D65BFF245310B96"
-	order_index: 1
+	group: "2DBE15AF0366896A"
+	order_index: 4
 	filename: "toolbelt_items"
-	title: "Transport"
-	icon: {
-		id: "mekanism:hdpe_elytra"
-		Count: 1b
-		tag: {
-			Damage: 0
-		}
-	}
+	title: "Getting Around"
+	icon: "moreminecarts:sticky_piston_pushcart"
+	subtitle: ["Making my way downtown"]
 	default_quest_shape: "rsquare"
 	default_hide_dependency_lines: false
 	quests: [
@@ -101,7 +96,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -3.5d
 			y: -0.5d
 			dependencies: ["005C9A10267A103C"]
 			id: "61B542F5591BEB01"
@@ -151,7 +146,7 @@
 			}]
 		}
 		{
-			x: -7.0d
+			x: -6.5d
 			y: -0.5d
 			dependencies: ["005C9A10267A103C"]
 			id: "409587125AAE507E"
@@ -183,30 +178,7 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 1.0d
-			subtitle: "Can you tell I dislike Creative Flight? :P"
-			dependencies: ["005C9A10267A103C"]
-			id: "1AE84695D72E01D1"
-			tasks: [{
-				id: "1659586BDE513F33"
-				type: "item"
-				item: {
-					id: "doomangelring:itemdoomangelring"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "0C8D7F82CB0EBAE7"
-				type: "item"
-				item: "minecraft:cookie"
-			}]
-		}
-		{
-			x: -4.0d
+			x: -5.0d
 			y: 1.0d
 			description: ["Flux-infused elytra can be controlled with an Elytra Controller, and uses RF to prevent you from blasting through your Gunpowder supply."]
 			dependencies: ["005C9A10267A103C"]
