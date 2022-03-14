@@ -7,7 +7,7 @@
     "blue": 92
   },
   "unlocalizedName": "arcane",
-  "healthMultiplier": 2.0,
+  "healthMultiplier": 1.25,
   "speedMultiplier": 1.0,
   "entityFilter": {"isBlacklist": false, "entities": ["minecraft:enderman"]},
   "effectsOnAttack": [
