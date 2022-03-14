@@ -1,3 +1,9 @@
+# 2.1.6
+
+## Fixed
+
+- [Recipe] Missing recipe for Iron Dust Piles
+
 # 2.1.5
 
 ## Fixed

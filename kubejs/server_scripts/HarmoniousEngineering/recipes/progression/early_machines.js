@@ -28,9 +28,9 @@ onEvent('recipes', event => {
     type: 'natural-progression:damage_tools',
     ingredients: [
       {item: 'natural-progression:bone_pickaxe'},
-      {item: 'emendatusenigmatica:zinc_chunk'},
+      {item: 'emendatusenigmatica:iron_chunk'},
     ],
-    result: {item: 'kubejs:zinc_iron_pile'},
+    result: {item: 'kubejs:iron_dust_pile'},
   });
   // STEP 2: CREATE BLEND
   event.shapeless('1x kubejs:andesite_zinc_blend', [
