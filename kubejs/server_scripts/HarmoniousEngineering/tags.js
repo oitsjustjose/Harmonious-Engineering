@@ -44,14 +44,6 @@ const harmoniousEngineeringTags = event => {
   // Saw
   ['thermal:saw_blade', '#forge:sawblades'].forEach(x => event.add('harmeng:saw_blade', x));
 
-  // Mid-Tier Crafting Ingredient
-  [
-    'powah:crystal_blazing',
-    'industrialforegoing:pink_slime_ingot',
-    '#forge:ingots/enderium',
-    '#forge:ingots/refined_obsidian',
-  ].forEach(x => event.add('harmeng:meka/mid_tier_mat', x));
-
   // Drawer-like
   [
     '#storagedrawers:drawers',
@@ -255,6 +247,67 @@ const miscTags = event => {
   ].forEach(x => event.add('forge:tools/knives', x));
 };
 
+const saplingGroups = event => {
+  [
+    'architects_palette:twisted_sapling',
+    'atmospheric:aspen_sapling',
+    'atmospheric:grimwood_sapling',
+    'atmospheric:kousa_sapling',
+    'atmospheric:morado_sapling',
+    'atmospheric:rosewood_sapling',
+    'atmospheric:yucca_sapling',
+    'autumnity:maple_sapling',
+    'autumnity:orange_maple_sapling',
+    'autumnity:red_maple_sapling',
+    'autumnity:yellow_maple_sapling',
+    'minecraft:acacia_sapling',
+    'minecraft:birch_sapling',
+    'minecraft:dark_oak_sapling',
+    'minecraft:jungle_sapling',
+    'minecraft:oak_sapling',
+    'minecraft:spruce_sapling',
+    'upgrade_aquatic:river_sapling',
+  ].forEach(x => event.add('harmeng:overworld_saplings', x));
+
+  [
+    'betternether:anchor_tree_sapling',
+    'betternether:giant_mold_sapling',
+    'betternether:jellyfish_mushroom_sapling',
+    'betternether:mushroom_fir_sapling',
+    'betternether:nether_sakura_sapling',
+    'betternether:rubeus_sapling',
+    'betternether:soul_lily_sapling',
+    'betternether:willow_sapling',
+  ].forEach(x => event.add('harmeng:nether_saplings', x));
+
+  [
+    'betterendforge:dragon_tree_sapling',
+    'betterendforge:helix_tree_sapling',
+    'betterendforge:hydralux_sapling',
+    'betterendforge:lacugrove_sapling',
+    'betterendforge:lucernia_sapling',
+    'betterendforge:mossy_glowshroom_sapling',
+    'betterendforge:pythadendron_sapling',
+    'betterendforge:tenanea_sapling',
+    'betterendforge:umbrella_tree_sapling',
+  ].forEach(x => event.add('harmeng:end_saplings', x));
+
+  [
+    'quark:blue_blossom_sapling',
+    'quark:lavender_blossom_sapling',
+    'quark:orange_blossom_sapling',
+    'quark:pink_blossom_sapling',
+    'quark:red_blossom_sapling',
+    'quark:yellow_blossom_sapling',
+  ].forEach(x => event.add('harmeng:blossom_saplings', x));
+
+  [
+    'tconstruct:earth_slime_sapling',
+    'tconstruct:ender_slime_sapling',
+    'tconstruct:sky_slime_sapling',
+  ].forEach(x => event.add('harmeng:slime_saplings', x));
+};
+
 onEvent('tags.blocks', event => {
   event.add('forge:stone', 'quark:deepslate');
   [
@@ -280,11 +333,12 @@ onEvent('tags.blocks', event => {
 });
 
 onEvent('tags.items', event => {
-  harmoniousEngineeringTags(event);
-  naturalProgressionTags(event);
-  removePlates(event);
-  removeGears(event);
-  thermalTags(event);
   curiousElytraTags(event);
+  harmoniousEngineeringTags(event);
   miscTags(event);
+  naturalProgressionTags(event);
+  removeGears(event);
+  removePlates(event);
+  saplingGroups(event);
+  thermalTags(event);
 });
