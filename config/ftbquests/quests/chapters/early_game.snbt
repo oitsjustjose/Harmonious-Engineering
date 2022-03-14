@@ -302,7 +302,7 @@
 					item: "create:andesite_cobblestone"
 				}
 				{
-					id: "0FBE066FEF84D462"
+					id: "6D26B7A70C070D3C"
 					type: "item"
 					item: "kubejs:andesite_dust"
 				}
@@ -315,24 +315,28 @@
 			}]
 		}
 		{
-			title: "Chipping Away at Zinc"
-			icon: "kubejs:zinc_dust_pile"
+			title: "Chipping Away"
+			icon: "kubejs:iron_dust_pile"
 			x: 11.0d
 			y: -1.0d
 			shape: "circle"
-			description: ["Using your Bone Hammer and a chunk of Zinc Ore, you try your hardest to break this chunk into smaller bits but only end up with some tiny piles of dust. Maybe you can still manage to use this?"]
+			description: [
+				"Using your Bone Hammer and a chunk of Zinc Ore, you try your hardest to break this chunk into smaller bits but only end up with some tiny piles of dust. Maybe you can still manage to use this?"
+				""
+				"Note that once you get some better tools, the same can be done with Zinc to save that precious iron for other uses!"
+			]
 			dependencies: ["2A1D4D9661103F33"]
 			id: "7FB13C38A14B392C"
 			tasks: [
 				{
-					id: "627DEB49C24473DD"
+					id: "2BE5C49D988D79B9"
 					type: "item"
-					item: "emendatusenigmatica:zinc_chunk"
+					item: "emendatusenigmatica:iron_chunk"
 				}
 				{
-					id: "3734CD8A0823D335"
+					id: "0C243DF05EB1B698"
 					type: "item"
-					item: "kubejs:zinc_dust_pile"
+					item: "kubejs:iron_dust_pile"
 				}
 			]
 			rewards: [{
@@ -402,12 +406,12 @@
 			id: "156744046A721BDD"
 			tasks: [
 				{
-					id: "6233A28BDEB5F885"
+					id: "490E5FB815BAEA46"
 					type: "item"
-					item: "kubejs:andesite_zinc_blend"
+					item: "kubejs:andesite_iron_blend"
 				}
 				{
-					id: "4CE590D3B3E434B9"
+					id: "2872A23A9583F419"
 					type: "item"
 					item: "create:andesite_alloy"
 				}
@@ -416,7 +420,7 @@
 				{
 					id: "71172D444E22A260"
 					type: "item"
-					item: "kubejs:andesite_zinc_blend"
+					item: "kubejs:andesite_iron_blend"
 					random_bonus: 3
 				}
 				{

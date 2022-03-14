@@ -1,3 +1,10 @@
+# 2.1.5
+
+## Fixed
+
+- [Quests] Early-game machines being impossible because Zinc requires Iron-tier tools to mine.
+  This was fixed by adding an Iron variant of tiny piles as well as Andesite-Iron alloy. You can use Iron in place until you've gotten Iron tools
+
 # 2.1.4
 
 ## Added
@@ -16,7 +23,6 @@
 - [Recipe] Modular Routers upgrades use the Base Module from Mekanism to craft
 - [Recipe] Removed Cincinnasite recipes for things made of iron, like Buckets, rails, etc.
 - [Recipe] Removed Recipe to make Rails from Osmium
-
 - [Misc] BetterEnd's Amber and Ender Ore have been disabled
 - [Misc] Made Arcane Endermen less tough
 

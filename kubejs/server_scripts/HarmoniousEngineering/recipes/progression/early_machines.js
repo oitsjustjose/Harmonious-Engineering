@@ -24,18 +24,33 @@ onEvent('recipes', event => {
     ],
     result: {item: 'kubejs:zinc_dust_pile'},
   });
+  event.custom({
+    type: 'natural-progression:damage_tools',
+    ingredients: [
+      {item: 'natural-progression:bone_pickaxe'},
+      {item: 'emendatusenigmatica:zinc_chunk'},
+    ],
+    result: {item: 'kubejs:zinc_iron_pile'},
+  });
   // STEP 2: CREATE BLEND
   event.shapeless('1x kubejs:andesite_zinc_blend', [
     'kubejs:zinc_dust_pile',
     'kubejs:andesite_dust',
     'kubejs:zinc_dust_pile',
   ]);
+  event.shapeless('1x kubejs:andesite_iron_blend', [
+    'kubejs:iron_dust_pile',
+    'kubejs:andesite_dust',
+    'kubejs:iron_dust_pile',
+  ]);
   // STEP 3: PROFIT??
   event.smelting('create:andesite_alloy', 'kubejs:crude_andesite_alloy');
   event.smelting('create:andesite_alloy', 'kubejs:andesite_zinc_blend');
+  event.smelting('create:andesite_alloy', 'kubejs:andesite_iron_blend');
 
   // Easier recipes for once you get some machinery going :)
   event.shapeless('2x kubejs:andesite_zinc_blend', ['#forge:dusts/zinc', 'kubejs:andesite_dust']);
+  event.shapeless('2x kubejs:andesite_iron_blend', ['#forge:dusts/iron', 'kubejs:andesite_dust']);
   global.genAlloyingRecipe(
     event,
     {item: 'create:andesite_cobblestone'},
