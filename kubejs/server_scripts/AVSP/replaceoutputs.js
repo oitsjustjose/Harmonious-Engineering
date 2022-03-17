@@ -660,7 +660,6 @@ events.listen('recipes', event => {
   event.replaceOutput({}, 'mekanism:nugget_tin', 'emendatusenigmatica:tin_nugget');
   event.replaceOutput({}, 'mekanism:nugget_tin', 'emendatusenigmatica:tin_nugget');
   event.replaceOutput({}, 'mekanism:nugget_uranium', 'emendatusenigmatica:uranium_nugget');
-  event.replaceOutput({}, 'mekanism:nugget_uranium', 'emendatusenigmatica:uranium_nugget');
   event.replaceOutput({}, 'projectred-core:copper_ingot', 'emendatusenigmatica:copper_ingot');
   event.replaceOutput({}, 'projectred-core:copper_ingot', 'emendatusenigmatica:copper_ingot');
   event.replaceOutput({}, 'projectred-core:silver_ingot', 'emendatusenigmatica:silver_ingot');

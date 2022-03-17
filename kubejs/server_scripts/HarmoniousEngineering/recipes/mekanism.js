@@ -4,7 +4,14 @@ onEvent('recipes', event => {
   event.remove({output: 'mekanism:teleportation_core'});
   event.remove({output: 'mekanism:digital_miner'});
   event.remove({output: 'mekanism:cardboard_box'});
+  event.remove({output: 'mekanism:block_charcoal'});
   event.remove({id: 'mekanism:rails'});
+
+  event.smithing(
+    '1x mekanism:cardboard_box',
+    'industrialforegoing:machine_frame_pity',
+    'compactmachines:machine_normal'
+  );
 
   event.shaped('1x mekanism:teleportation_core', ['LAL', 'GSG', 'LAL'], {
     L: '#forge:gems/lapis',

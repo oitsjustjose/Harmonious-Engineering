@@ -1,5 +1,23 @@
 # 2.1.6
 
+## Added
+
+- Recipe for Mekanism's Cardboard Boxes. The recipe changes where they're placed in the progression line but they're still there which is nice :)
+
+## Fixed
+
+- Overlap across mods. The following will no longer have duplicates:
+  - Apple Crates
+  - Charcoal Blocks
+  - Potato Crates
+  - Beetroot Crates
+  - Carrot Crates
+  - Bamboo Blocks
+  - Sugar Cane Blocks
+- Overlapping sawdusts still showing up in JEI
+
+# 2.1.5b
+
 ## Fixed
 
 - [Recipe] Missing recipe for Iron Dust Piles

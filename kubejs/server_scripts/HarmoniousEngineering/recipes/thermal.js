@@ -109,6 +109,10 @@ const rfCoilRecipes = event => {
 };
 
 onEvent('recipes', event => {
+  // I just prefer the texture of Quark's 'sack' version but can't just disable Thermal's.
+  event.remove({output: 'thermal:gunpowder_block'});
+  // Same as above but I prefer Architect's Palette Version:
+  event.remove({output: 'thermal:charcoal_block'});
   event.remove({output: 'thermal:rf_coil'});
   event.remove({output: 'thermal:machine_frame'});
   event.remove({output: 'thermal:latex_bucket'});
@@ -118,6 +122,7 @@ onEvent('recipes', event => {
   event.remove({id: 'thermal:machine/press/press_vine_to_latex'});
   event.remove({id: 'thermal:machine/press/press_dandelion_to_latex'});
   event.remove({id: 'thermal:machine/chiller/chiller_ender_to_ender_pearl'});
+  event.remove({id: 'thermal:machine/pulverizer/pulverizer_diamond_tools'});
 
   rfCoilRecipes(event);
   redstoneServoRecipes(event);
@@ -173,5 +178,12 @@ onEvent('recipes', event => {
     mainInput: {ingredient: {item: 'thermal:upgrade_augment_2'}},
     extraInput: {ingredient: {tag: 'forge:gears/enderium'}},
     output: {item: 'thermal:upgrade_augment_3'},
+  });
+
+  event.custom({
+    type: 'thermal:pulverizer_recycle',
+    ingredient: {tag: 'forge:tools/diamond'},
+    result: [{item: 'minecraft:diamond'}, {item: 'emendatusenigmatica:wood_dust'}],
+    experience: 0.5,
   });
 });
