@@ -16,6 +16,8 @@ onEvent('recipes', event => {
     'particle_card_fire',
     'particle_card_campfire',
     'particle_card_smoke',
+    'particle_card_steam',
+    'particle_card_water',
   ];
 
   event.replaceInput(
@@ -52,5 +54,8 @@ onEvent('recipes', event => {
   event.remove({output: 'davebuildingmod:not_so_copper'});
   event.remove({output: 'davebuildingmod:soft_air'});
   event.remove({output: 'davebuildingmod:hard_air'});
+  event.remove({output: 'davebuildingmod:reinforced_glass'});
+  event.remove({output: 'davebuildingmod:amethyst_glass'});
   event.remove({id: 'davebuildingmod:rec_2_copper_coil'});
+  event.remove({id: 'davebuildingmod:rec_steel_ingot'});
 });
