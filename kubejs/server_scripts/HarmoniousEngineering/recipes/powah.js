@@ -106,15 +106,32 @@ onEvent('recipes', event => {
   tiers.forEach((tier, idx) => {
     const nextTier = idx === tiers.length - 1 ? null : tiers[idx + 1];
     if (nextTier) {
+      const nextCapacitor = `powah:capacitor_${nextTier}`;
+
       const currReactor = `powah:reactor_${tier}`;
       const nextReactor = `powah:reactor_${nextTier}`;
-      const nextCapacitor = `powah:capacitor_${nextTier}`;
       global.genCombinedRecipe(
         event,
         Ingredient.of(currReactor),
         Ingredient.of(nextCapacitor),
         Item.of(nextReactor)
       );
+
+      const currRod = `powah:energizing_rod_${tier}`;
+      const nextRod = `powah:energizing_rod_${nextTier}`;
+      global.genCombinedRecipe(
+        event,
+        Ingredient.of(currRod),
+        Ingredient.of(nextCapacitor),
+        Item.of(nextRod)
+      );
     }
   });
+
+  global.genCombinedRecipe(
+    event,
+    Ingredient.of('powah:energizing_rod_starter'),
+    Ingredient.of('powah:capacitor_basic_large'),
+    Item.of('powah:energizing_rod_basic')
+  );
 });
