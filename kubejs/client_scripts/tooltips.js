@@ -8,6 +8,9 @@ onEvent('item.tooltip', event => {
     if (item.toString().includes(".enchant('vtweaks:lumbering', 1)")) {
       text.add(Text.of('§cCannot be applied to Tetra Tools§r'));
     }
+    if (item.toString().includes(".enchant('minecraft:feather_falling', 4)")) {
+      text.add(Text.of('§5All fall damage is negated and applied to boots instead§r'));
+    }
   });
 
   event.add('immersiveengineering:furnace_heater', [
