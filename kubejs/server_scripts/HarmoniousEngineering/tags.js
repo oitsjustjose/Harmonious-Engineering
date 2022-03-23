@@ -147,7 +147,7 @@ const thermalTags = event => {
   ].forEach(x => event.add('thermal:crafting/dies', x));
 };
 
-const curiousElytraTags = event => {
+const curioTags = event => {
   [
     'alexsmobs:tarantula_hawk_elytra',
     'mekanism:hdpe_elytra',
@@ -333,7 +333,7 @@ onEvent('tags.blocks', event => {
 });
 
 onEvent('tags.items', event => {
-  curiousElytraTags(event);
+  curioTags(event);
   harmoniousEngineeringTags(event);
   miscTags(event);
   naturalProgressionTags(event);
