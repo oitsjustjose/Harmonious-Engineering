@@ -104,24 +104,6 @@
 					}
 				}
 				{
-					id: "345BE214346C7D80"
-					type: "item"
-					item: {
-						id: "industrialforegoing:infinity_nuke"
-						Count: 1b
-						tag: {
-							CanCharge: 1b
-							Special: 0b
-							Selected: "POOR"
-							Energy: 0L
-							Fluid: {
-								FluidName: "biofuel"
-								Amount: 0
-							}
-						}
-					}
-				}
-				{
 					id: "72608E4BF55F3D88"
 					type: "item"
 					item: {
@@ -155,6 +137,20 @@
 							Special: 0b
 							Selected: "POOR"
 							Beheading: 0
+						}
+					}
+				}
+				{
+					id: "030AECC24DDFD2BE"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_backpack"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
 						}
 					}
 				}
@@ -366,15 +362,31 @@
 			id: "53545C945E4E77FE"
 			tasks: [
 				{
-					id: "7FC09592F845E601"
-					type: "item"
-					item: "industrialforegoing:ore_laser_base"
-				}
-				{
 					id: "467545DB9758AB9E"
 					type: "item"
 					item: "industrialforegoing:laser_drill"
 					count: 4L
+				}
+				{
+					id: "0A617561D84E6E11"
+					type: "item"
+					title: "Any Laser Base"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:ore_laser_base"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:fluid_laser_base"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [{
