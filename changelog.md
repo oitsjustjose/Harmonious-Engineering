@@ -1,3 +1,65 @@
+# 2.2.0
+
+## Updated
+
+- `[Library]` Architectury
+- `[Library]` McJtyLib
+- Chipped
+- Dave's Building Extended
+- Framed Blocks
+- Improved Backpacks
+- Little Logistics
+- Lootr
+- Moving Elevators
+- RFTools Base
+- Trash Cans
+- Xaero's World Map
+
+## Removed
+
+- AppleSkin (incompatible with Farmer's Delight)
+- ExtCaves (7-month old bug has not been fixed). ExtCave stones will be replaced with Minecraft stone.
+
+## Fixed
+
+- Create Crushed Ore outputting from Thermal Pulverizer
+- Gravestone Configs not syncing - they should be forcefully synced now
+- Not all horse- or cow-like creatures dropping the increased amount of Leather
+
+# 2.1.8
+
+## Removed
+
+- Mindful Eating; refuses to load on servers so it cannot stay. Will return when this bug is fixed but the bug has been around for months...
+- Diet: Only kept for Mindful Eating.
+
+# 2.1.7
+
+## Added
+
+- Recipe to upgrade Powah's Player Transmitters in the Smithing Table
+- Tooltip to Feather Falling 4 books explaining how fall damage is negated
+
+## Changed
+
+- [Mod] Mekanism's Fluid Tanks now store a logical Base-2 amount of fluid (`[16B, 32B, 64B, 128B]` instead of `[14B, 28B, 56B, 112B]`). Your tanks should automatically update to this size, and since it's a size _increase_ no fluids should be lost.
+
+## Fixed
+
+- Infinity Tools quest requiring the Infinity Nuke - this was meant to be the backpack
+- Laser Miner quest requiring only the Laser Ore Miner, when the Fluid one should also be permitted (and makes more sense if aiming for Ether Gas)
+- Dave's Building Mod adding a stupidly easy recipe for Steel
+
+## Updated
+
+- [Library] Architectury
+- [Mod] Dave's Building Mod
+- [Mod] Framed Blocks
+- [Mod] Improved Backpacks
+- [Mod] Little Logistics
+- [Mod] Moving Elevators
+- [Mod] Trash Cans
+
 # 2.1.6
 
 ## Added
