@@ -5,10 +5,10 @@ onEvent('recipes', event => {
   event.shaped('1x farmersdelight:cooking_pot', ['B B', 'IWI', 'III'], {
     I: '#forge:ingots/cast_iron',
     W: 'minecraft:water_bucket',
-    B: 'extcaves:brick_half',
+    B: 'minecraft:brick',
   });
   event.shaped('1x farmersdelight:skillet', [' II', ' II', 'B  '], {
     I: '#forge:ingots/cast_iron',
-    B: 'extcaves:brick_half',
+    B: 'minecraft:brick',
   });
 });

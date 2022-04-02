@@ -355,7 +355,7 @@
 				id: "5092DB42DFD9055D"
 				type: "location"
 				title: "Mine to Y=50 or Lower!"
-				icon: "extcaves:rock_stalagmite_tall_stone"
+				icon: "minecraft:andesite"
 				dimension: "minecraft:overworld"
 				ignore_dimension: true
 				position: [I;
