@@ -1,3 +1,17 @@
+# 2.2.1
+
+## Updated
+
+- `[Library]` Curios
+- Xaero's Minimap
+
+## Fixed
+
+- Fixed Create Shaft quest having no dependencies
+- Fixed (Hopefully) the into fire quest breaking if you visit the nether before the quest is reachable
+- Fixed Farmer's Delight hunger bar overlays not being enabled
+- Fixed Upgrading to Storage Overhaul Tier 1 chests not keeping their original variant (i.e. `Quark Birch Chest` + `Iron Ingot` **now** outputs `Storage Overhaul Birch Chest Tier 1`)
+
 # 2.2.0
 
 ## Updated
