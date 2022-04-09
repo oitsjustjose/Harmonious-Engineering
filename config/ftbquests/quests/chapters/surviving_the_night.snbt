@@ -463,6 +463,7 @@
 			]
 		}
 		{
+			title: "Bad Omen"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -480,27 +481,20 @@
 			]
 			optional: true
 			id: "08E69AF88FEBD402"
-			tasks: [
-				{
-					id: "7EEDD1BDF03DAE42"
-					type: "checkmark"
-					title: "Raids"
-				}
-				{
-					id: "280C9E88BB4FAD92"
-					type: "kill"
-					title: "Kill a Pillager"
-					icon: {
-						id: "draconicevolution:mob_soul"
-						Count: 1b
-						tag: {
-							EntityName: "minecraft:pillager"
-						}
+			tasks: [{
+				id: "280C9E88BB4FAD92"
+				type: "kill"
+				title: "Kill a Pillager"
+				icon: {
+					id: "draconicevolution:mob_soul"
+					Count: 1b
+					tag: {
+						EntityName: "minecraft:pillager"
 					}
-					entity: "minecraft:pillager"
-					value: 1L
 				}
-			]
+				entity: "minecraft:pillager"
+				value: 1L
+			}]
 			rewards: [{
 				id: "32DFC7194EF31104"
 				type: "xp"
