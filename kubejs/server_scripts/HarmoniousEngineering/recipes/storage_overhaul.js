@@ -4,6 +4,12 @@ onEvent('recipes', event => {
   const storageTypes = ['chest', 'barrel'];
   const woodTypes = ['oak', 'spruce', 'birch', 'acacia', 'jungle', 'dark_oak', 'crimson', 'warped'];
 
+  // SO Chest -> Quark Chest
+  woodTypes.forEach(x => {
+    event.remove({output: `storage_overhaul:${x}_chest`});
+    event.shapeless(`quark:${x}_chest`, [`storage_overhaul:${x}_chest`]);
+  });
+
   event.remove({output: 'minecraft:barrel'});
   event.remove({output: 'betternether:barrel_crimson'});
   event.remove({output: 'betternether:barrel_warped'});
@@ -19,18 +25,28 @@ onEvent('recipes', event => {
   });
 
   woodTypes.forEach(wood => {
+    storageTypes.forEach(store => {
+      const l1 = store === 'barrel' && Ingredient.of(`storage_overhaul:${wood}_${store}`);
+      const l2 = store === 'chest' && wood !== 'oak' && Ingredient.of(`quark:${wood}_chest`);
+      const r = Ingredient.of('minecraft:iron_ingot');
+      const o = Item.of(`storage_overhaul:${wood}_${store}_tier_1`);
+      l1 && global.genCombinedRecipe(event, l1, r, o);
+      l2 && global.genCombinedRecipe(event, l2, r, o);
+    });
+
     tiers.forEach((tier, idx) => {
       if (idx < tiers.length - 1) {
         storageTypes.forEach(store => {
-          const left = Ingredient.of(`storage_overhaul:${wood}_${store}${tier}`);
-          const right = Ingredient.of(tierItems[idx + 1]);
-          const out = Item.of(`storage_overhaul:${wood}_${store}${tiers[idx + 1]}`);
-          global.genCombinedRecipe(event, left, right, out);
+          const l = Ingredient.of(`storage_overhaul:${wood}_${store}${tier}`);
+          const r = Ingredient.of(tierItems[idx + 1]);
+          const o = Item.of(`storage_overhaul:${wood}_${store}${tiers[idx + 1]}`);
+          global.genCombinedRecipe(event, l, r, o);
         });
       }
     });
   });
 
+  // Support for making advanced shulkers with dye
   global.minecraftColors.forEach(color => {
     global.genCombinedRecipe(
       event,
@@ -40,17 +56,18 @@ onEvent('recipes', event => {
     );
   });
 
+  // Catch-all for upgrading non-supported chests/barrels to Tier 1.
   global.genCombinedRecipe(
     event,
-    Ingredient.of('#forge:chests/wooden'),
+    Ingredient.of('minecraft:chest'),
     Ingredient.of('#forge:ingots/iron'),
     Item.of('storage_overhaul:oak_chest_tier_1')
   );
 
   global.genCombinedRecipe(
     event,
-    Ingredient.of('#forge:barrels/wooden'),
+    Ingredient.of('minecraft:barrel'),
     Ingredient.of('#forge:ingots/iron'),
-    Item.of('storage_overhaul:oak_barrel_tier_1')
+    Item.of('storage_overhaul:spruce_barrel_tier_1')
   );
 });
