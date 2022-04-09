@@ -134,17 +134,14 @@
 		{
 			title: "Into Fire"
 			icon: "minecraft:nether_brick_wall"
-			x: -3.0d
+			x: -4.5d
 			y: -14.5d
 			description: [
 				"The recipe for Blast Brick has been changed to require a literal blaze burner to keep it warm enough. Fortunately, the recipe makes all 27 which is all you'll need."
 				""
 				"While you're here, you may notice TONS of new structures thanks to Better Nether and Infernal Expansion!"
 			]
-			dependencies: [
-				"1A10E66C46D2299F"
-				"4012189A70E095DD"
-			]
+			dependencies: ["21FC24B8288F9222"]
 			id: "4EF301A720A9A759"
 			tasks: [{
 				id: "2C1598F7B903356E"
@@ -515,7 +512,7 @@
 		{
 			title: "1.5xing Ores"
 			icon: "tconstruct:seared_brick"
-			x: -4.5d
+			x: -3.0d
 			y: -14.5d
 			shape: "rsquare"
 			description: [

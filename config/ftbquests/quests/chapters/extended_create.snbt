@@ -18,6 +18,7 @@
 				""
 				"Going forward on this quest line, description of many items may be reduced because you can ponder with the [W] key."
 			]
+			dependencies: ["4A60BF034B726C88"]
 			size: 1.5d
 			optional: true
 			id: "612F010122921DD7"
