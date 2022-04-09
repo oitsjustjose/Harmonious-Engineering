@@ -12,7 +12,7 @@
 		{
 			title: "Monsters"
 			icon: "minecraft:zombie_head"
-			x: 2.0d
+			x: 1.0d
 			y: -3.5d
 			shape: "rsquare"
 			description: [
@@ -312,7 +312,7 @@
 		}
 		{
 			icon: "minecraft:wheat"
-			x: 0.0d
+			x: -0.5d
 			y: -3.5d
 			shape: "rsquare"
 			description: ["Just for your convenience, this pack has a right-click crop harvesting mechanic so don't hesitate to leave some behind for your friends!"]
@@ -397,7 +397,7 @@
 		}
 		{
 			title: "Optimizing That Inv"
-			x: 4.0d
+			x: 4.5d
 			y: -3.5d
 			shape: "rsquare"
 			description: ["We know that the inventory can get cluttered SUPER quickly. The Toolbelt mod has a nicely configurable radial menu that lets you store stuff like Napsacks, Akashic Tomes, Morphing Tools and other day-to-day tools right on your belt! Give it a try if you're struggling to keep your hotbar organized!"]
@@ -461,6 +461,51 @@
 					random_bonus: 4
 				}
 			]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "minecraft:textures/mob_effect/bad_omen.png"
+				}
+			}
+			x: 3.0d
+			y: -3.5d
+			shape: "rsquare"
+			description: [
+				"You may notice that as Pillager Patrols start, you're not getting any of the Bad Omen effects from them! There's a reason!"
+				""
+				"Bad Omen can be obtained by keeping the Ominous Banner, placing it and then lighting it ablaze using Flint and Steel. This way you only end up with the effect when you *want* it!"
+			]
+			optional: true
+			id: "08E69AF88FEBD402"
+			tasks: [
+				{
+					id: "7EEDD1BDF03DAE42"
+					type: "checkmark"
+					title: "Raids"
+				}
+				{
+					id: "280C9E88BB4FAD92"
+					type: "kill"
+					title: "Kill a Pillager"
+					icon: {
+						id: "draconicevolution:mob_soul"
+						Count: 1b
+						tag: {
+							EntityName: "minecraft:pillager"
+						}
+					}
+					entity: "minecraft:pillager"
+					value: 1L
+				}
+			]
+			rewards: [{
+				id: "32DFC7194EF31104"
+				type: "xp"
+				xp: 100
+			}]
 		}
 	]
 }
