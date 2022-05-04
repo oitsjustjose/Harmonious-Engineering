@@ -466,27 +466,27 @@
 			}]
 		}
 		{
-			title: "Flux Networks"
+			title: "Tesseracts"
 			x: -4.5d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Flux Networks is a great mod for inter-dimensional wireless power to both your own inventory and to/from other machines!"
+				"Tesseracts are a great way to interdimensionally and indefinitely transmit Fluids, Items and RF across your world(s)!"
 				""
-				"The Flux Controller is your ticket to getting a network set up, and you can set up multiple to keep your setup organized!"
+				"Tesseracts can be differentiated using Network Names, as well as can be made private for the sake of security on Multiplayer Servers!"
 			]
 			optional: true
 			id: "32997A524540C21A"
 			tasks: [{
 				id: "452CB95B92AEBBE9"
 				type: "item"
-				item: "fluxnetworks:flux_dust"
+				item: "tesseract:tesseract"
 			}]
 			rewards: [{
-				id: "567A81C582BE06EA"
+				id: "27FD0B8C361AD042"
 				type: "item"
-				item: "fluxnetworks:flux_block"
-				random_bonus: 3
+				item: "thermal:machine_frame"
+				random_bonus: 2
 			}]
 		}
 		{

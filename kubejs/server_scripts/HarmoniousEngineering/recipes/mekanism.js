@@ -7,6 +7,12 @@ onEvent('recipes', event => {
   event.remove({output: 'mekanism:block_charcoal'});
   event.remove({id: 'mekanism:rails'});
 
+  event.replaceInput(
+    {output: 'mekanism:quantum_entangloporter'},
+    'mekanism:teleportation_core',
+    'tesseract:tesseract'
+  );
+
   event.smithing(
     '1x mekanism:cardboard_box',
     'industrialforegoing:machine_frame_pity',

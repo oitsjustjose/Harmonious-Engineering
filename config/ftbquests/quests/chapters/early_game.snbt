@@ -27,7 +27,7 @@
 			}]
 		}
 		{
-			x: 13.5d
+			x: 14.5d
 			y: 3.0d
 			description: [
 				"This is how you'll produce rotational energy, but it's going to exhaust you and drain your hunger in the process."
@@ -51,7 +51,7 @@
 		}
 		{
 			title: "Early Ore Processing"
-			x: 13.5d
+			x: 14.5d
 			y: -1.0d
 			description: [
 				"This bad boy doesn't have a User Interface at all! To interact with it, throw items (or hopper them) into the top of the mill where you can see a chute. As it mills away you'll keep seeing particles - once you don't see any more particles of what you're milling, right-click (or use a hopper beneath) it to get your fresh grounds!"
@@ -238,8 +238,8 @@
 		{
 			title: "In Search of Kelp"
 			icon: "minecraft:kelp"
-			x: 14.760544217687077d
-			y: 1.0188775510204167d
+			x: 14.56649659863946d
+			y: 0.9897959183673422d
 			shape: "rsquare"
 			description: [
 				"If you find yourself in search of Kelp with no hope to be found, this quest has got you covered :)"

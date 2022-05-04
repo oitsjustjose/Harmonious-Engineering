@@ -184,8 +184,8 @@
 		}
 		{
 			title: "Baby's First Storage Network"
-			x: -5.0d
-			y: -8.0d
+			x: -6.0d
+			y: -8.5d
 			shape: "diamond"
 			description: ["Simple Storage Networks is a great mod for building a very primitive, power-free network for digital storage. It offers a fully fledged crafting grid, external storage, and even a crafting remote... if you really want to work that hard for it!"]
 			id: "46DDBC5F6C66BD6A"
@@ -240,50 +240,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: -13.0d
-			shape: "rsquare"
-			description: [
-				"Ender Chests are SUPER helpful ways to transport items across large spanses of space, and even interdimensionally!"
-				""
-				"You can apply a diamond to the lock of the chest to make the chest private to you (great for Servers), and you can dye the 3 wool tabs on the top of the chest to make \"frequencies\" that connect when they match"
-			]
-			optional: true
-			id: "2569B33BAB1DF04A"
-			tasks: [{
-				id: "1773CB32A344579A"
-				type: "item"
-				item: "enderstorage:ender_chest"
-			}]
-			rewards: [{
-				id: "0F1957B48E096382"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 0.5d
-			y: -13.0d
-			shape: "rsquare"
-			description: ["Ender Tanks are just like Ender Chests, but for Fluids."]
-			optional: true
-			id: "19BE7684C41A0E66"
-			tasks: [{
-				id: "3A8065AA8CD2A9F3"
-				type: "item"
-				item: "enderstorage:ender_tank"
-			}]
-			rewards: [{
-				id: "554ADE368F07E5EA"
-				type: "item"
-				item: "pipez:fluid_pipe"
-				count: 12
-				random_bonus: 8
-			}]
-		}
-		{
-			x: -6.5d
-			y: -10.0d
+			x: -7.0d
+			y: -11.5d
 			shape: "rsquare"
 			hide_dependency_lines: true
 			optional: true
@@ -301,8 +259,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -10.0d
+			x: 1.0d
+			y: -11.5d
 			shape: "rsquare"
 			hide_dependency_lines: true
 			optional: true
@@ -320,8 +278,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -15.0d
+			x: 0.0d
+			y: -14.5d
 			description: ["Ok show-off. If you need this much stuff in your inventory I get it, but wow that's a lot of storage!!"]
 			dependencies: ["568810B360CC78F0"]
 			id: "09DA52EA46B053D1"
@@ -337,8 +295,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -15.0d
+			x: -6.0d
+			y: -14.5d
 			description: ["If you aren't familiar with Dank Storage, it's a great way to store bulk items in your inventory and void excess bulk. These are great to make before you go mining, so I strongly suggest nabbing this low-tier version to keep your inventory tidy!"]
 			id: "0DCC81AEAEF4EA61"
 			tasks: [{
@@ -379,8 +337,8 @@
 		}
 		{
 			title: "Mini AE Networks"
-			x: -1.0d
-			y: -8.0d
+			x: 0.0d
+			y: -8.5d
 			shape: "hexagon"
 			description: ["More info on the Energy Acceptor can be seen in its corresponding quest point in the AE2 Quest Chapter."]
 			hide_dependency_lines: true

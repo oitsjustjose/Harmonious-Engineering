@@ -348,7 +348,7 @@
 			rewards: [{
 				id: "7B29D0464D436EE6"
 				type: "item"
-				item: "enderstorage:ender_chest"
+				item: "kubejs:tesseract_frame"
 				count: 2
 			}]
 		}

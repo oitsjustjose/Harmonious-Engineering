@@ -44,7 +44,6 @@ onEvent('recipes', event => {
     'kubejs:iron_dust_pile',
   ]);
   // STEP 3: PROFIT??
-  event.smelting('create:andesite_alloy', 'kubejs:crude_andesite_alloy');
   event.smelting('create:andesite_alloy', 'kubejs:andesite_zinc_blend');
   event.smelting('create:andesite_alloy', 'kubejs:andesite_iron_blend');
 

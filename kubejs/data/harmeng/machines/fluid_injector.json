@@ -4,7 +4,7 @@
     "block": "kubejs:machine/fluid_injector_idle",
     "running": {
       "block": "kubejs:machine/fluid_injector_active",
-      "lightlevel": 15
+      "lightmode": 15
     }
   },
   "gui": [
@@ -74,7 +74,7 @@
     },
     {
       "type": "custommachinery:energy",
-      "capacity": 1000000,
+      "capacity": 100000000,
       "maxInput": 100000,
       "maxOutput": 0,
       "mode": "input"

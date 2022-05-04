@@ -7,11 +7,20 @@ onEvent('recipes', event => {
   event.remove({output: `${modid}:draconium_dust`});
   event.remove({id: `${modid}:components/draconium_ingot`});
 
+  event.custom({
+    type: 'mekanism:nucleosynthesizing',
+    itemInput: {ingredient: {item: 'industrialforegoing:pink_slime_ingot'}},
+    gasInput: {amount: 20, gas: 'mekanism:antimatter'},
+    output: {item: `${modid}:draconium_ingot`},
+    duration: 10000,
+  });
+
+  // Easier recipe once you get your first piece
   event.recipes.custommachinery
-    .custom_machine('harmeng:fluid_injector', 2500)
+    .custom_machine('harmeng:fluid_injector', 100)
     .requireItem(Item.of('industrialforegoing:pink_slime_ingot'))
     .requireFluid(Fluid.of('industrialforegoing:ether_gas', 500))
-    .requireEnergyPerTick(10000)
+    .requireEnergy(1000000)
     .produceItem(Item.of(`${modid}:draconium_ingot`));
 
   // Other recripes

@@ -1,7 +1,6 @@
 {
   "item.kubejs.ender_singularity": "Ender Singularity",
   "item.kubejs.fluxed_singularity": "Fluxed Singularity",
-  "item.kubejs.crude_andesite_alloy": "Crude Andesite Alloy",
   "item.kubejs.andesite_dust": "Andesite Powder",
   "item.kubejs.zinc_dust_pile": "Tiny Pile of Zinc Dust",
   "item.kubejs.iron_dust_pile": "Tiny Pile of Iron Dust",
@@ -13,5 +12,7 @@
   "item.kubejs.incomplete_engineering_processor": "Incomplete Engineering Processor",
   "item.kubejs.incomplete_calculation_processor": "Incomplete Calculation Processor",
   "item.kubejs.silicon_die": "Silicon Die",
+  "item.kubejs.tesseract_frame": "Tesseract Frame",
+  "block.kubejs.tesseract_frame": "Tesseract Frame",
   "machine.fluid.injector": "Fluid Injector"
 }
