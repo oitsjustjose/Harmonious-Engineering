@@ -44,8 +44,6 @@ onEvent('jei.hide.items', event => {
     'betterendforge:amber_ore',
     'betterendforge:ender_dust',
     'betterendforge:ender_ore',
-    'betternether:barrel_crimson',
-    'betternether:barrel_warped',
     'compactmachines:machine_maximum',
     'compactmachines:machine_small',
     'compactmachines:machine_tiny',

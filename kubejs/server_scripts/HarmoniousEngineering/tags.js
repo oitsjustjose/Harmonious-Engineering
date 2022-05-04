@@ -77,17 +77,6 @@ const harmoniousEngineeringTags = event => {
     'betterendforge:pythadendron_barrel',
     'betterendforge:tenanea_barrel',
     'betterendforge:umbrella_tree_barrel',
-    'betternether:barrel_anchor_tree',
-    'betternether:barrel_crimson',
-    'betternether:barrel_mushroom_fir',
-    'betternether:barrel_mushroom',
-    'betternether:barrel_nether_sakura',
-    'betternether:barrel_reed',
-    'betternether:barrel_rubeus',
-    'betternether:barrel_stalagnate',
-    'betternether:barrel_warped',
-    'betternether:barrel_wart',
-    'betternether:barrel_willow',
     'minecraft:barrel',
     'storage_overhaul:acacia_barrel',
     'storage_overhaul:birch_barrel',
@@ -107,8 +96,6 @@ const naturalProgressionTags = event => {
     'betterendforge:aeternium_axe',
     'betterendforge:terminite_axe',
     'betterendforge:thallasium_axe',
-    'betternether:cincinnasite_axe',
-    'betternether:nether_ruby_axe',
     'immersiveengineering:axe_steel',
     'mekanismtools:bronze_axe',
     'mekanismtools:bronze_paxel',
@@ -268,17 +255,6 @@ const saplingGroups = event => {
     'minecraft:spruce_sapling',
     'upgrade_aquatic:river_sapling',
   ].forEach(x => event.add('harmeng:overworld_saplings', x));
-
-  [
-    'betternether:anchor_tree_sapling',
-    'betternether:giant_mold_sapling',
-    'betternether:jellyfish_mushroom_sapling',
-    'betternether:mushroom_fir_sapling',
-    'betternether:nether_sakura_sapling',
-    'betternether:rubeus_sapling',
-    'betternether:soul_lily_sapling',
-    'betternether:willow_sapling',
-  ].forEach(x => event.add('harmeng:nether_saplings', x));
 
   [
     'betterendforge:dragon_tree_sapling',

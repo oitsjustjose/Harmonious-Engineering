@@ -4,7 +4,7 @@
 	toDelete = ""
 	#Version Number. VersionNumbers are simple Integers. Use a number larger than the last version.
 	#Range: > 0
-	newVersion = 3
+	newVersion = 0
 
 ["File Deleter"]
 	#By default Folders are only deleted if they are empty. Set to true to change that.
@@ -14,5 +14,5 @@
 
 ["Version History"]
 	#Editing these values will not affect any worlds that are already on that version.
-	history = "1=buildinggadgets,cofh_core,compactmachines,create,curios,dankstorage,doubleslabs,extcaves,fastleafdecay,fluxnetworks,forge,framedblocks,gravestone,immersiveengineering,immersivepetroleum,immersiveposts,jei,lostcities,mantle,mcjtylib,pipez,rangedpumps,redstone_arsenal,reroll,rftoolsbase,scannable,steampowered,storage_overhaul,thermal,toolbelt,tools_complement,torchslabmod,xnet;2=;"
+	history = "1=buildinggadgets,cofh_core,compactmachines,create,curios,dankstorage,doubleslabs,extcaves,fastleafdecay,fluxnetworks,forge,framedblocks,gravestone,immersiveengineering,immersivepetroleum,immersiveposts,jei,lostcities,mantle,mcjtylib,pipez,rangedpumps,redstone_arsenal,reroll,rftoolsbase,scannable,steampowered,storage_overhaul,thermal,toolbelt,tools_complement,torchslabmod,xnet;2=;3=;"
 
