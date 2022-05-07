@@ -667,14 +667,14 @@
 			optional: true
 			id: "1E05C31D669C7ED8"
 			tasks: [{
-				id: "46B8428C6A15B912"
+				id: "5C6485CC16BA3E8B"
 				type: "item"
 				title: "Any Chunk Loader"
 				item: {
 					id: "itemfilters:mod"
 					Count: 1b
 					tag: {
-						value: "chickenchunks"
+						value: "chunkloaders"
 					}
 				}
 			}]
@@ -682,27 +682,8 @@
 				id: "24DFCC3C6DBD887C"
 				type: "item"
 				item: "minecraft:obsidian"
-				count: 2
-				random_bonus: 2
-			}]
-		}
-		{
-			title: "Ranged Pumps"
-			x: -7.5d
-			y: 0.0d
-			description: ["Ranged Pumps are a great way to pump out fluids from large pools, such as Lava or Water. These are best known for gathering Lava from the Nether but you can also use Hose Pulleys for that so it's completely up to you!"]
-			optional: true
-			id: "0C3527F8F76074BD"
-			tasks: [{
-				id: "526DE10B47DCA6CD"
-				type: "item"
-				item: "rangedpumps:pump"
-			}]
-			rewards: [{
-				id: "00D6264FDF34CE0A"
-				type: "item"
-				item: "pipez:fluid_pipe"
-				count: 12
+				count: 4
+				random_bonus: 4
 			}]
 		}
 		{
@@ -745,6 +726,31 @@
 					random_bonus: 3
 				}
 			]
+		}
+		{
+			title: "Smithing Table Automation!"
+			x: -7.5d
+			y: 0.0d
+			description: ["You've no doubt noticed that there are many recipes that utilize the Smithing Table to craft. For the sake of your sanity, this machine will automate that process for your convenience!"]
+			id: "13917C0134366B37"
+			tasks: [{
+				id: "66E8E3D55A2B934E"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "harmeng:auto_smither"
+					}
+				}
+			}]
+			rewards: [{
+				id: "066F3AD431FFBD6D"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+				count: 4
+				random_bonus: 4
+			}]
 		}
 	]
 }

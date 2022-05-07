@@ -7,25 +7,34 @@ onEvent('recipes', event => {
   event.remove({output: `${modid}:draconium_dust`});
   event.remove({id: `${modid}:components/draconium_ingot`});
 
+  // Turn Ether Gas + Dragon Breath into Draconic Essence
   event.custom({
-    type: 'mekanism:nucleosynthesizing',
-    itemInput: {ingredient: {item: 'industrialforegoing:pink_slime_ingot'}},
-    gasInput: {amount: 20, gas: 'mekanism:antimatter'},
-    output: {item: `${modid}:draconium_ingot`},
-    duration: 10000,
+    type: 'create:mixing',
+    ingredients: [
+      {item: 'minecraft:dragon_breath'},
+      {fluid: 'industrialforegoing:ether_gas', amount: 1000},
+    ],
+    results: [{fluid: 'kubejs:draconic_essence', amount: 1000}],
+    heatRequirement: 'superheated',
   });
 
-  // Easier recipe once you get your first piece
+  event.recipes.thermal.brewer(Fluid.of('kubejs:draconic_essence', 1000), [
+    Item.of('minecraft:dragon_breath'),
+    Fluid.of('industrialforegoing:ether_gas', 1000),
+  ]);
+
+  console.log(JSON.stringify(event.recipes.thermal.brewer));
+
   event.recipes.custommachinery
     .custom_machine('harmeng:fluid_injector', 100)
     .requireItem(Item.of('industrialforegoing:pink_slime_ingot'))
-    .requireFluid(Fluid.of('industrialforegoing:ether_gas', 500))
-    .requireEnergy(1000000)
+    .requireFluid(Fluid.of('kubejs:draconic_essence', 2000))
+    .requireEnergyPerTick(5000)
     .produceItem(Item.of(`${modid}:draconium_ingot`));
 
   // Other recripes
   event.remove({output: `${modid}:infused_obsidian`});
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {item: `${modid}:draconium_ingot`},
     {tag: 'forge:obsidian'},

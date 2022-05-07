@@ -50,7 +50,7 @@ onEvent('recipes', event => {
   // Easier recipes for once you get some machinery going :)
   event.shapeless('2x kubejs:andesite_zinc_blend', ['#forge:dusts/zinc', 'kubejs:andesite_dust']);
   event.shapeless('2x kubejs:andesite_iron_blend', ['#forge:dusts/iron', 'kubejs:andesite_dust']);
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {item: 'create:andesite_cobblestone'},
     {tag: 'forge:ingots/zinc'},

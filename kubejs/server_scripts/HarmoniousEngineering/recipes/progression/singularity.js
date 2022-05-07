@@ -1,11 +1,11 @@
 onEvent('recipes', event => {
   // Ender Singularity Crafting
-  event.custom({
-    type: 'thermal:chiller',
-    ingredients: [{fluid: 'minecraft:water', amount: 1000}, {item: 'powah:ender_core'}],
-    result: [{item: 'kubejs:ender_singularity', count: 1}],
-    energy: 20000,
-  });
+  event.recipes.custommachinery
+    .custom_machine('harmeng:fluid_injector', 250)
+    .requireItem(Item.of('powah:ender_core'))
+    .requireFluid(Fluid.of('minecraft:water', 1000))
+    .requireEnergyPerTick(1000)
+    .produceItem(Item.of(`kubejs:ender_singularity`));
 
   // Fluxed Singularity Crafting
   event.custom({

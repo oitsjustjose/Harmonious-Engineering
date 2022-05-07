@@ -64,20 +64,25 @@ onEvent('recipes', event => {
     S: 'farmersdelight:straw',
   });
 
-  global.genCombinedRecipeSewing(
-    event,
-    Ingredient.of('4x farmersdelight:canvas'),
-    Ingredient.of(`${modid}:stick_treated`),
-    Item.of(`${modid}:hemp_fabric`),
-    1
-  );
-  global.genCombinedRecipeSewing(
-    event,
-    Ingredient.of(`4x ${modid}:hemp_fabric`),
-    Ingredient.of(`2x #forge:treated_wood_slab`),
-    Item.of(`${modid}:windmill_sail`),
-    1
-  );
+  event.custom({
+    type: 'improvedbackpacks:sewing',
+    first: {item: 'farmersdelight:canvas'},
+    first_count: 4,
+    second: {item: `${modid}:stick_treated`},
+    second_count: 1,
+    spools_count: 1,
+    result: `${modid}:hemp_fabric`,
+  });
+
+  event.custom({
+    type: 'improvedbackpacks:sewing',
+    first: {item: `${modid}:hemp_fabric`},
+    first_count: 4,
+    second: {tag: 'forge:treated_wood_slab'},
+    second_count: 2,
+    spools_count: 1,
+    result: `${modid}:windmill_sail`,
+  });
 
   global.genLargeRecipe(
     event,

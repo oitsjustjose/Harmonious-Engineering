@@ -1,9 +1,8 @@
 {
-  "name": "machine.fluid.injector",
+  "name": "machine.auto.smither",
   "appearance": {
-    "block": "kubejs:machine/fluid_injector_idle",
+    "block": "kubejs:machine/auto_smither",
     "running": {
-      "block": "kubejs:machine/fluid_injector_active",
       "lightmode": 15
     }
   },
@@ -16,7 +15,7 @@
       "type": "custommachinery:texture"
     },
     {
-      "text": "machine.fluid.injector",
+      "text": "machine.auto.smither",
       "x": 39,
       "y": 5,
       "type": "custommachinery:text"
@@ -27,19 +26,19 @@
       "type": "custommachinery:player_inventory"
     },
     {
-      "id": "fluidInput",
-      "x": 47,
-      "y": 15,
-      "type": "custommachinery:fluid"
-    },
-    {
-      "id": "itemInput",
+      "id": "left",
       "x": 83,
       "y": 30,
       "type": "custommachinery:slot"
     },
     {
-      "x": 115,
+      "id": "right",
+      "x": 102,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 125,
       "y": 32,
       "type": "custommachinery:progress"
     },
@@ -57,7 +56,12 @@
   ],
   "components": [
     {
-      "id": "itemInput",
+      "id": "left",
+      "mode": "input",
+      "type": "custommachinery:item"
+    },
+    {
+      "id": "right",
       "mode": "input",
       "type": "custommachinery:item"
     },
@@ -74,8 +78,8 @@
     },
     {
       "type": "custommachinery:energy",
-      "capacity": 100000,
-      "maxInput": 100000,
+      "capacity": 10000,
+      "maxInput": 5000,
       "maxOutput": 0,
       "mode": "input"
     }

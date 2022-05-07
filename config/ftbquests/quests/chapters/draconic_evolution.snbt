@@ -28,20 +28,13 @@
 			type: "item"
 			item: "draconicevolution:draconium_ingot"
 		}]
-		rewards: [
-			{
-				id: "568704A0FBAAAF37"
-				type: "xp_levels"
-				xp_levels: 128
-			}
-			{
-				id: "4812B56865B35EF8"
-				type: "command"
-				team_reward: true
-				auto: "invisible"
-				command: "/ftbquests change_progress @p complete 4A42C1A07DE3C2BA"
-				player_command: false
-			}
-		]
+		rewards: [{
+			id: "4812B56865B35EF8"
+			type: "command"
+			team_reward: true
+			auto: "invisible"
+			command: "/ftbquests change_progress @p complete 4A42C1A07DE3C2BA"
+			player_command: false
+		}]
 	}]
 }

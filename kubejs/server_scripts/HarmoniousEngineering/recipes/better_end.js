@@ -5,14 +5,14 @@ onEvent('recipes', event => {
   event.remove({output: 'betterendforge:aeternium_ingot'});
 
   event.smelting('betterendforge:thallasium_ingot', 'betterendforge:thallasium_ore');
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {tag: 'forge:ingots/iron'},
     {tag: 'forge:dusts/ender_pearl'},
     `betterendforge:terminite_ingot`,
     1
   );
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {item: 'betterendforge:terminite_ingot'},
     {tag: 'forge:ingots/netherite'},

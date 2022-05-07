@@ -14,5 +14,6 @@
   "item.kubejs.silicon_die": "Silicon Die",
   "item.kubejs.tesseract_frame": "Tesseract Frame",
   "block.kubejs.tesseract_frame": "Tesseract Frame",
-  "machine.fluid.injector": "Fluid Injector"
+  "machine.fluid.injector": "Fluid Injector",
+  "machine.auto.smither": "Auto Smithing Table"
 }

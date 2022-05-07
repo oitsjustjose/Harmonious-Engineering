@@ -1,7 +1,7 @@
 onEvent('recipes', event => {
   event.remove({output: 'moreminecarts:silica_steel_mix'});
   event.remove({output: 'moreminecarts:silica_steel'});
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {tag: 'forge:ingots/steel'},
     {tag: 'forge:silicon'},

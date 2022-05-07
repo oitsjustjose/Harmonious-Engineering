@@ -150,41 +150,17 @@ onEvent('server.datapack.first', _ => {
    */
   global.genCombinedRecipe = (evt, left, right, output) => {
     evt.smithing(output, left, right);
-    evt.custom({
-      type: 'mekanism:combining',
-      mainInput: JSON.parse(left.toJson()),
-      extraInput: JSON.parse(right.toJson()),
-      output: output.toResultJson(),
-    });
+    evt.recipes.custommachinery
+      .custom_machine('harmeng:auto_smither', 85)
+      .requireItem(left)
+      .requireItem(right)
+      .requireEnergyPerTick(300)
+      .produceItem(output);
   };
 
-  /**
-   *
-   * @param {RecipeEventJS} evt
-   * @param {IngredientJS} left
-   * @param {IngredientJS} right
-   * @param {ItemStackJS} output
-   * @param {Number} spoolCt
-   */
-  global.genCombinedRecipeSewing = (evt, left, right, output, spoolCt) => {
-    const main = JSON.parse(left.toJson());
-    const extra = JSON.parse(right.toJson());
-
-    evt.custom({
-      type: 'improvedbackpacks:sewing',
-      first: main.ingredient || main,
-      first_count: left.getCount(),
-      second: extra.ingredient || extra,
-      second_count: right.getCount(),
-      spools_count: parseInt(spoolCt),
-      result: output.getId(),
-    });
-
-    evt.custom({
-      type: 'mekanism:combining',
-      mainInput: main,
-      extraInput: extra,
-      output: output.toResultJson(),
+  global.genLargeRecipe = (evt, pattern, key, result) => {
+    ['extendedcrafting:shaped_table', 'create:mechanical_crafting'].forEach(type => {
+      evt.custom({type: type, pattern: pattern, key: key, result: result});
     });
   };
 
@@ -196,7 +172,7 @@ onEvent('server.datapack.first', _ => {
    * @param {string} output
    * @param {number} qty
    */
-  global.genAlloyingRecipe = (evt, first, second, output, qty) => {
+  global.genUniversalAlloyingRecipe = (evt, first, second, output, qty) => {
     evt.custom({
       type: 'mekanism:combining',
       mainInput: {ingredient: first},
@@ -230,12 +206,6 @@ onEvent('server.datapack.first', _ => {
       ingredients: [first, second],
       results: [{item: output, count: qty}],
       heatRequirement: 'heated',
-    });
-  };
-
-  global.genLargeRecipe = (evt, pattern, key, result) => {
-    ['extendedcrafting:shaped_table', 'create:mechanical_crafting'].forEach(type => {
-      evt.custom({type: type, pattern: pattern, key: key, result: result});
     });
   };
 

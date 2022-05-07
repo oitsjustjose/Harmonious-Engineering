@@ -32,7 +32,7 @@ onEvent('recipes', event => {
       E: {tag: 'forge:storage_blocks/enderium'},
       S: {item: 'kubejs:ender_singularity'},
       W: {item: 'wormhole:portal_frame'},
-      C: {item: 'chickenchunks:spot_loader'},
+      C: {item: 'chunkloaders:ultimate_chunk_loader'},
       K: {item: 'moreminecarts:chunkrodite'},
       I: {item: 'mekanism:digital_miner'},
       N: {item: 'minecraft:nether_star'},
@@ -51,7 +51,7 @@ onEvent('recipes', event => {
   global.genCombinedRecipe(
     event,
     Ingredient.of('thermal:fluid_tank_augment'),
-    Ingredient.of('rangedpumps:pump'),
+    Ingredient.of('mekanism:electric_pump'),
     Item.of('quantumquarryplus:pump_upgrade')
   );
 });

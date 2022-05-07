@@ -220,8 +220,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 2.25d
+			x: -2.5d
+			y: 1.8112244897959187d
 			shape: "octagon"
 			description: ["These Resonant Components contain all of the Spatiotemporal Technology you could possibly need thanks to those Endermen. Now you can get into some pretty advanced technology as you progress into Mekanism - Nicely Done!!!"]
 			hide_dependency_lines: true
@@ -250,38 +250,6 @@
 					player_command: false
 				}
 			]
-		}
-		{
-			disable_toast: true
-			x: -0.75d
-			y: 2.25d
-			shape: "octagon"
-			description: [
-				"By subduing the Core of the Enderman to survive the harsh cold of the blast chiller, you've managed to crack the key to the ability for Endermen to teleport."
-				""
-				"By manipulating these Cores to persist in Water (regardless of their hydrophobic nature), you've managed to create a Singularity from the rift between the Electrical Machinery you used and the eldritch power of the Enderman to teleport."
-				""
-				"Maybe you can use this in some practical applications?"
-			]
-			hide_dependency_lines: true
-			dependencies: ["5DD16A26B44A2290"]
-			hide_text_until_complete: true
-			size: 1.5d
-			id: "640B69585836A6F1"
-			tasks: [{
-				id: "3D628A058F526F4A"
-				type: "item"
-				item: "kubejs:ender_singularity"
-			}]
-			rewards: [{
-				id: "5991D5FD1395365B"
-				type: "command"
-				title: "??"
-				icon: "tconstruct:enderman_head"
-				auto: "invisible"
-				command: "/msg @p You hear the distant sound of an Enderman's core being torn apart"
-				player_command: false
-			}]
 		}
 	]
 }

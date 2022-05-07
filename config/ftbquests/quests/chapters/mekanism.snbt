@@ -34,7 +34,7 @@
 		}
 		{
 			title: "Actual Plastic"
-			x: -3.75d
+			x: -5.25d
 			y: -1.5d
 			shape: "octagon"
 			description: [
@@ -376,8 +376,8 @@
 			}]
 		}
 		{
-			x: -0.2857142857142847d
-			y: -1.482142857142854d
+			x: 1.5d
+			y: -1.5d
 			shape: "octagon"
 			description: [
 				"As you've no doubt noticed, a lot of specialty devices require you to *manually* craft them in a Sewing or Smithing Table. These, unfortunately, cannot be automated - but in the spirit of \"automate all teh things!\" these recipes are also made compatible in the Mekanism Combiner."
@@ -466,6 +466,48 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0204081632653086d
+			y: -1.1109693877551052d
+			shape: "octagon"
+			description: [
+				"Using the Fluid Injector, you can combine common (or not-so-common) fluids with various items in this pack."
+				""
+				"For some reason, taking the core essence of an Enderman and injecting a constant Water into it for a few seconds seems to want to start a rift.."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5DD16A26B44A2290"]
+			size: 1.5d
+			id: "640B69585836A6F1"
+			tasks: [
+				{
+					id: "3D628A058F526F4A"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "harmeng:fluid_injector"
+						}
+					}
+				}
+				{
+					id: "13D571C78966095C"
+					type: "item"
+					item: "kubejs:ender_singularity"
+				}
+			]
+			rewards: [{
+				id: "5991D5FD1395365B"
+				type: "command"
+				title: "??"
+				icon: "tconstruct:enderman_head"
+				auto: "invisible"
+				command: "/msg @p You hear the distant sound of a million Endermen screeching"
+				player_command: false
 			}]
 		}
 	]

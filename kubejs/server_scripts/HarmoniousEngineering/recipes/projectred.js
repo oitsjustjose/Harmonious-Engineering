@@ -26,21 +26,21 @@ onEvent('recipes', event => {
   event.remove({output: `${core}:silicon`});
   event.remove({output: `${core}:woven_cloth`});
 
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {item: 'minecraft:iron_ingot'},
     {item: 'minecraft:redstone'},
     `${core}:red_ingot`,
     1
   );
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {tag: 'forge:silicon'},
     {item: 'minecraft:redstone'},
     `${core}:infused_silicon`,
     1
   );
-  global.genAlloyingRecipe(
+  global.genUniversalAlloyingRecipe(
     event,
     {tag: 'forge:silicon'},
     {item: 'minecraft:glowstone_dust'},
