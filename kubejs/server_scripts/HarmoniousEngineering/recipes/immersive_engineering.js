@@ -31,7 +31,7 @@ onEvent('recipes', event => {
   event.remove({output: `${modid}:hemp_fabric`});
   event.remove({output: `${modid}:windmill_sail`});
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('createdeco:dean_bricks'),
     Ingredient.of('minecraft:sandstone'),

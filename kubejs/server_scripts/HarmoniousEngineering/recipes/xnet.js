@@ -3,7 +3,7 @@ onEvent('recipes', event => {
   // Cables
   cableVariants.forEach(x => event.remove({id: `xnet:netcable_${x}`}));
   cableVariants.forEach(x =>
-    global.genCombinedRecipe(
+    global.genSmithingRecipe(
       event,
       Ingredient.of('pipez:universal_pipe'),
       Ingredient.of(`#forge:dyes/${x === 'routing' ? 'black' : x}`),
@@ -13,7 +13,7 @@ onEvent('recipes', event => {
   // Connectors
   cableVariants.forEach(x => event.remove({id: `xnet:connector_${x}`}));
   cableVariants.forEach(x =>
-    global.genCombinedRecipe(
+    global.genSmithingRecipe(
       event,
       Ingredient.of(`xnet:netcable_${x}`),
       Ingredient.of('#forge:ingots/gold'),
@@ -23,7 +23,7 @@ onEvent('recipes', event => {
   // Advanced Connectors
   cableVariants.forEach(x => event.remove({id: `xnet:advanced_connector_${x}`}));
   cableVariants.forEach(x =>
-    global.genCombinedRecipe(
+    global.genSmithingRecipe(
       event,
       Ingredient.of(`xnet:connector_${x}`),
       Ingredient.of('#forge:ingots/cobalt'),

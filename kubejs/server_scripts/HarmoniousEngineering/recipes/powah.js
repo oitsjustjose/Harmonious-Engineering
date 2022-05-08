@@ -89,7 +89,7 @@ onEvent('recipes', event => {
     result: [{item: 'powah:dielectric_rod', count: 24}],
   });
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('thermal:machine_frame'),
     Ingredient.of('powah:dielectric_paste'),
@@ -110,7 +110,7 @@ onEvent('recipes', event => {
 
       const currReactor = `powah:reactor_${tier}`;
       const nextReactor = `powah:reactor_${nextTier}`;
-      global.genCombinedRecipe(
+      global.genSmithingRecipe(
         event,
         Ingredient.of(currReactor),
         Ingredient.of(nextCapacitor),
@@ -119,7 +119,7 @@ onEvent('recipes', event => {
 
       const currRod = `powah:energizing_rod_${tier}`;
       const nextRod = `powah:energizing_rod_${nextTier}`;
-      global.genCombinedRecipe(
+      global.genSmithingRecipe(
         event,
         Ingredient.of(currRod),
         Ingredient.of(nextCapacitor),
@@ -128,7 +128,7 @@ onEvent('recipes', event => {
     }
   });
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('powah:energizing_rod_starter'),
     Ingredient.of('powah:capacitor_basic_large'),

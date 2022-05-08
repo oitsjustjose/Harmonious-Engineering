@@ -81,13 +81,13 @@ onEvent('recipes', event => {
 
   event.shapeless('1x create:white_sail', ['create:sail_frame', '#chipped:white_carpet']);
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('create:andesite_casing'),
     Ingredient.of('immersiveengineering:rockcutter'),
     Item.of('create:mechanical_saw')
   );
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('create:andesite_casing'),
     Ingredient.of('thermal:drill_head'),

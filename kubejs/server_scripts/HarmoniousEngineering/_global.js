@@ -148,7 +148,7 @@ onEvent('server.datapack.first', _ => {
    * @param {IngredientJS} right
    * @param {ItemStackJS} output
    */
-  global.genCombinedRecipe = (evt, left, right, output) => {
+  global.genSmithingRecipe = (evt, left, right, output) => {
     evt.smithing(output, left, right);
     evt.recipes.custommachinery
       .custom_machine('harmeng:auto_smither', 85)

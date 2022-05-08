@@ -40,21 +40,21 @@ onEvent('recipes', event => {
     S: 'kubejs:fluxed_singularity',
   });
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('storagenetwork:master'),
     Ingredient.of('#forge:gems/fluix'),
     Item.of('appliedenergistics2:energy_acceptor')
   );
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('appliedenergistics2:energy_acceptor'),
     Ingredient.of('appliedenergistics2:engineering_processor'),
     Item.of('appliedenergistics2:controller')
   );
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('create:mechanical_press'),
     Ingredient.of('appliedenergistics2:purified_fluix_crystal'),

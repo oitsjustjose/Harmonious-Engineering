@@ -9,7 +9,7 @@ onEvent('recipes', event => {
   event.stonecutting(`2x ${modid}:augment_core`, 'mekanism:module_base');
   event.stonecutting(`4x ${modid}:blank_upgrade`, 'mekanism:module_base');
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('industrialforegoing:machine_frame_simple'),
     Ingredient.of(`${modid}:blank_module`),

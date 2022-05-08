@@ -469,6 +469,8 @@
 			}]
 		}
 		{
+			title: "Ender Singularities"
+			icon: "kubejs:ender_singularity"
 			disable_toast: true
 			x: -2.0204081632653086d
 			y: -1.1109693877551052d

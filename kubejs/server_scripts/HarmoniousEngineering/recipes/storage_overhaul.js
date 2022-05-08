@@ -28,8 +28,8 @@ onEvent('recipes', event => {
       const l2 = store === 'chest' && wood !== 'oak' && Ingredient.of(`quark:${wood}_chest`);
       const r = Ingredient.of('minecraft:iron_ingot');
       const o = Item.of(`storage_overhaul:${wood}_${store}_tier_1`);
-      l1 && global.genCombinedRecipe(event, l1, r, o);
-      l2 && global.genCombinedRecipe(event, l2, r, o);
+      l1 && global.genSmithingRecipe(event, l1, r, o);
+      l2 && global.genSmithingRecipe(event, l2, r, o);
     });
 
     tiers.forEach((tier, idx) => {
@@ -38,7 +38,7 @@ onEvent('recipes', event => {
           const l = Ingredient.of(`storage_overhaul:${wood}_${store}${tier}`);
           const r = Ingredient.of(tierItems[idx + 1]);
           const o = Item.of(`storage_overhaul:${wood}_${store}${tiers[idx + 1]}`);
-          global.genCombinedRecipe(event, l, r, o);
+          global.genSmithingRecipe(event, l, r, o);
         });
       }
     });
@@ -46,7 +46,7 @@ onEvent('recipes', event => {
 
   // Support for making advanced shulkers with dye
   global.minecraftColors.forEach(color => {
-    global.genCombinedRecipe(
+    global.genSmithingRecipe(
       event,
       Ingredient.of(`minecraft:${color}_shulker_box`),
       Ingredient.of('#forge:ingots/iron'),
@@ -55,14 +55,14 @@ onEvent('recipes', event => {
   });
 
   // Catch-all for upgrading non-supported chests/barrels to Tier 1.
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('minecraft:chest'),
     Ingredient.of('#forge:ingots/iron'),
     Item.of('storage_overhaul:oak_chest_tier_1')
   );
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('minecraft:barrel'),
     Ingredient.of('#forge:ingots/iron'),

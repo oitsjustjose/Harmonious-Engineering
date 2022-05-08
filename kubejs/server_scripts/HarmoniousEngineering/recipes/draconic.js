@@ -23,14 +23,33 @@ onEvent('recipes', event => {
     Fluid.of('industrialforegoing:ether_gas', 1000),
   ]);
 
-  console.log(JSON.stringify(event.recipes.thermal.brewer));
-
   event.recipes.custommachinery
     .custom_machine('harmeng:fluid_injector', 100)
     .requireItem(Item.of('industrialforegoing:pink_slime_ingot'))
     .requireFluid(Fluid.of('kubejs:draconic_essence', 2000))
     .requireEnergyPerTick(5000)
     .produceItem(Item.of(`${modid}:draconium_ingot`));
+
+  // Once you have some Draconic, make it *slightly* easier
+  event.custom({
+    type: `${modid}:fusion_crafting`,
+    result: {item: `${modid}:draconium_ingot`, count: 12},
+    catalyst: {
+      items: [{item: 'industrialforegoing:pink_slime_ingot'}],
+      count: 12,
+      type: 'draconicevolution:ingredient_stack',
+    },
+    total_energy: 5000000,
+    tier: 'DRACONIUM',
+    ingredients: [
+      {item: 'industrialforegoing:ether_gas_bucket'},
+      {item: 'minecraft:dragon_breath'},
+      {item: 'quark:dragon_scale'},
+      {item: 'minecraft:dragon_breath'},
+      {item: 'industrialforegoing:ether_gas_bucket'},
+      {item: 'minecraft:dragon_breath'},
+    ],
+  });
 
   // Other recripes
   event.remove({output: `${modid}:infused_obsidian`});
@@ -58,7 +77,7 @@ onEvent('recipes', event => {
   });
 
   event.remove({output: `${modid}:module_core`});
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('modularrouters:augment_core'),
     Ingredient.of(`${modid}:draconium_ingot`),

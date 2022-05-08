@@ -14,14 +14,14 @@ onEvent('recipes', event => {
     onetwentyeight: 'appliedenergistics2:128_cubed_spatial_cell_component',
   };
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('immersiveengineering:sheetmetal_lead'),
     Ingredient.of('minecraft:ender_pearl'),
     Item.of('8x compactmachines:wall')
   );
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of(spatialCells.two),
     Ingredient.of('rftoolsbase:information_screen'),

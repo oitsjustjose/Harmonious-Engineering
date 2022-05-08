@@ -42,13 +42,13 @@ onEvent('recipes', event => {
     }
   );
 
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('thermal:item_filter_augment'),
     Ingredient.of('kubejs:ender_singularity'),
     Item.of('quantumquarryplus:filter_upgrade')
   );
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('thermal:fluid_tank_augment'),
     Ingredient.of('mekanism:electric_pump'),

@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-  global.genCombinedRecipe(
+  global.genSmithingRecipe(
     event,
     Ingredient.of('thermal:machine_frame'),
     Ingredient.of('#forge:ingots/enderium'),
