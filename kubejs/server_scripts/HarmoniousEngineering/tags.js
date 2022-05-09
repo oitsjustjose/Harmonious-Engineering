@@ -115,13 +115,22 @@ const naturalProgressionTags = event => {
     'mekanismtools:steel_paxel',
     'mekanismtools:stone_paxel',
     'tconstruct:hand_axe',
-  ].forEach(x => event.add('natural-progression:axes', x));
+    '#forge:tools/axes',
+  ].forEach(x => event.add('natural-progression:axe', x));
 
   [
     'industrialforegoing:infinity_drill',
     'industrialforegoing:infinity_saw',
     'tconstruct:mattock',
   ].forEach(x => event.add('natural-progression:override_axes', x));
+
+  ['cb_microblock:stone_saw', 'cb_microblock:iron_saw', 'cb_microblock:diamond_saw'].forEach(x =>
+    event.add('natural-progression:saw', x)
+  );
+
+  ['basic', 'improved', 'golden', 'diamond', 'netherite', 'copper', 'bronze', 'steel'].forEach(x =>
+    event.remove('natural-progression:saw', `natural-progression:${x}_saw`)
+  );
 };
 
 const thermalTags = event => {
@@ -232,6 +241,15 @@ const miscTags = event => {
     'tools_complement:constantan_knife',
     '#appliedenergistics2:knife',
   ].forEach(x => event.add('forge:tools/knives', x));
+
+  [
+    'minecraft:leather',
+    'improvedbackpacks:tanned_leather',
+    'alexsmobs:kangaroo_hide',
+    'minecraft:rabbit_hide',
+    '#forge:string',
+    '#minecraft:wool',
+  ].forEach(x => event.add('harmeng:bindings', x));
 };
 
 const saplingGroups = event => {

@@ -31,10 +31,11 @@ const base = event => {
     H: 'create:brass_hand',
     S: 'thermal:flux_saw',
   });
-  event.shaped('powersuits:tinkertable', ['LLL', 'HTH', 'H H'], {
+  event.shaped('powersuits:tinkertable', ['CLC', 'HTH'], {
     L: 'numina:component_laser_emitter',
+    C: 'numina:component_wiring',
     T: 'thermal:tinker_bench',
-    H: 'mekanism:hdpe_rod',
+    H: 'mekanism:hdpe_sheet',
   });
 };
 
