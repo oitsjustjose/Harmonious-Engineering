@@ -346,9 +346,9 @@
 	[tools.refined_obsidian]
 		#Protection value of Refined Obsidian chestplates.
 		#Range: > 0
-		refined_obsidianChestplateArmor = 12
+		refined_obsidianChestplateArmor = 9
 		#Attack damage modifier of Refined Obsidian axes.
-		refined_obsidianAxeDamage = 2.0
+		refined_obsidianAxeDamage = 4.0
 		#Attack speed of Refined Obsidian pickaxes.
 		refined_obsidianPickaxeAtkSpeed = -2.799999952316284
 		#Harvest level of Refined Obsidian paxels.
@@ -361,7 +361,7 @@
 		refined_obsidianHoeAtkSpeed = 7.0
 		#Base attack damage of Refined Obsidian items.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		refined_obsidianAttackDamage = 10.0
+		refined_obsidianAttackDamage = 5.5
 		#Attack speed of Refined Obsidian swords.
 		refined_obsidianSwordAtkSpeed = -2.4000000953674316
 		#Natural enchantability factor of Refined Obsidian items.
@@ -382,7 +382,7 @@
 		#Attack damage modifier of Refined Obsidian shovels.
 		refined_obsidianShovelDamage = 1.5
 		#Attack damage modifier of Refined Obsidian hoes.
-		refined_obsidianHoeDamage = -8.0
+		refined_obsidianHoeDamage = -5.0
 		#Maximum durability of Refined Obsidian boots.
 		#Range: > 1
 		refined_obsidianBootDurability = 650
@@ -411,15 +411,15 @@
 		refined_obsidianPaxelAtkSpeed = -2.4000000953674316
 		#Protection value of Refined Obsidian boots.
 		#Range: > 0
-		refined_obsidianBootArmor = 5
+		refined_obsidianBootArmor = 4
 		#Protection value of Refined Obsidian helmets.
 		#Range: > 0
-		refined_obsidianHelmetArmor = 5
+		refined_obsidianHelmetArmor = 4
 		#Attack speed of Refined Obsidian shovels.
 		refined_obsidianShovelAtkSpeed = -3.0
 		#Protection value of Refined Obsidian leggings.
 		#Range: > 0
-		refined_obsidianLeggingArmor = 8
+		refined_obsidianLeggingArmor = 7
 		#Maximum durability of Refined Obsidian helmets.
 		#Range: > 1
 		refined_obsidianHelmetDurability = 550
