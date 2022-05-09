@@ -380,9 +380,9 @@
 			y: -1.5d
 			shape: "octagon"
 			description: [
-				"As you've no doubt noticed, a lot of specialty devices require you to *manually* craft them in a Sewing or Smithing Table. These, unfortunately, cannot be automated - but in the spirit of \"automate all teh things!\" these recipes are also made compatible in the Mekanism Combiner."
+				"It's your choice whether you aim for a Sawmill from Thermal, manually sawing using the Woodcutter or making a Precision Sawmill - but there *is* a reason to go this route!"
 				""
-				"The Combiner is your *only* hope to getting these recipes automated, so if you don't like manually crafting things like Ender Chests or XNet Cables, you might want to look into this guy!"
+				"The Precision Sawmill can be upgraded to parallelize your plank production, so it'll be significantly faster than any of the aforementioned solutions."
 			]
 			hide_dependency_lines: true
 			dependencies: ["548FF0C4E700EFE2"]
@@ -392,14 +392,12 @@
 			tasks: [{
 				id: "79BD655760AEA4F6"
 				type: "item"
-				item: "mekanism:combiner"
+				item: "mekanism:precision_sawmill"
 			}]
 			rewards: [{
-				id: "58348A63D191C65C"
+				id: "670180F1D7D18F33"
 				type: "item"
-				item: "emendatusenigmatica:cobalt_ingot"
-				count: 2
-				random_bonus: 2
+				item: "mekanism:basic_tier_installer"
 			}]
 		}
 		{

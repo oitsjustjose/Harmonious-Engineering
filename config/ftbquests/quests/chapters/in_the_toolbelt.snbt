@@ -1,7 +1,7 @@
 {
 	id: "3C3C8A7591CF21F2"
 	group: "2DBE15AF0366896A"
-	order_index: 5
+	order_index: 4
 	filename: "in_the_toolbelt"
 	title: "Quality of Life"
 	icon: "quantumquarryplus:earth_orb"
@@ -349,27 +349,6 @@
 			}]
 		}
 		{
-			title: "The Mighty Architect"
-			x: -4.5d
-			y: -1.5d
-			shape: "circle"
-			description: ["By pressing [G], you can start composing a beautiful new build using the Mighty Architect - when you hit [G], you'll get a full walkthrough better than anything I could ever provide!"]
-			size: 0.85d
-			optional: true
-			id: "657AD360C363DA5E"
-			tasks: [{
-				id: "5F8F96E5BC0A2D75"
-				type: "item"
-				item: "create:schematic_table"
-			}]
-			rewards: [{
-				id: "6FBCBA1D14B49E2F"
-				type: "item"
-				item: "create:schematic_and_quill"
-				random_bonus: 2
-			}]
-		}
-		{
 			title: "Reload Audio"
 			icon: "supplementaries:speaker_block"
 			x: -7.5d
@@ -458,11 +437,9 @@
 				item: "extendedcrafting:ultimate_auto_table"
 			}]
 			rewards: [{
-				id: "2ACA235D820EBBF8"
-				type: "item"
-				item: "powah:crystal_spirited"
-				count: 2
-				random_bonus: 6
+				id: "18C60EAE2285F3D0"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -750,6 +727,31 @@
 				item: "emendatusenigmatica:steel_ingot"
 				count: 4
 				random_bonus: 4
+			}]
+		}
+		{
+			title: "Flux Networks"
+			x: -4.5d
+			y: -1.5d
+			id: "05002CD0AA538407"
+			tasks: [{
+				id: "1C439C469F74D9F7"
+				type: "item"
+				title: "Any Flux Network Item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "fluxnetworks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5A527EE25ADBE49E"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+				count: 24
+				random_bonus: 8
 			}]
 		}
 	]

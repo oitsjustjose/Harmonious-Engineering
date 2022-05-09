@@ -28,4 +28,8 @@ onEvent('item.tooltip', event => {
     '§7Bigger on the inside?§r',
     '§7Capable of moving Spawners§r',
   ]);
+
+  ['powersuits:generator_solar', 'powersuits:generator_solar_adv'].forEach(x =>
+    event.add(x, ['§cDisabled§r'])
+  );
 });

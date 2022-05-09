@@ -178,7 +178,11 @@
 			x: 1.997278911564628d
 			y: -0.9724489795918458d
 			shape: "hexagon"
-			description: ["Using your newfound unlocked crafting abilities, go ahead and treat yourself to a saw! All of them, even this flimsy flint one, can strip the bark off of a log and even more efficiently craft that log into planks!"]
+			description: [
+				"Using your newfound unlocked crafting abilities, go ahead and treat yourself to a saw! All of them, even this flimsy flint one, can strip the bark off of a log and even more efficiently craft that log into planks!"
+				""
+				"Don't stop here - once you get better resources like Iron and Diamond, make yourself nicer variants of the Saw!"
+			]
 			dependencies: ["7AFEA8F9BF9AFAA0"]
 			size: 1.5d
 			id: "0FF7D2AD65E5DE75"
@@ -192,7 +196,7 @@
 					id: "726917221AA92AD7"
 					type: "item"
 					item: {
-						id: "natural-progression:basic_saw"
+						id: "cb_microblock:stone_saw"
 						Count: 1b
 						tag: {
 							Damage: 0

@@ -4,7 +4,7 @@
 	#Use a 24h clock instead of 12h
 	use24hClock = false
 	#Use Graphical Meters
-	useGraphicalMeters = false
+	useGraphicalMeters = true
 	#Chat message when toggling module
 	toggleModuleSpam = false
 	#Display HUD

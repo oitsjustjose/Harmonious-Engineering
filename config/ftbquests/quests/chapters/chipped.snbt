@@ -296,7 +296,7 @@
 		}
 		{
 			x: -10.5d
-			y: -9.5d
+			y: -7.5d
 			description: ["Moving Elevators are great! You place down controllers at each floor you want, and you can right-click any side that doesn't have its buttons to change settings (or reskin if holding a block)."]
 			optional: true
 			id: "22CFB62947A76964"
@@ -313,31 +313,21 @@
 			}]
 		}
 		{
-			title: "Double Slabs"
-			icon: {
-				id: "doubleslabs:vertical_slab"
-				Count: 1b
-				tag: {
-					item: {
-						id: "minecraft:campfire"
-						Count: 1b
-					}
-				}
-			}
 			x: -10.5d
-			y: -7.5d
+			y: -9.5d
 			shape: "rsquare"
-			description: ["Slabs can be doubled-up and mixed-and-matched any way you wish! This makes building much easier and more cathartic. On top of that, you can craft vertical slabs (which also stack regardless if they match or not) to help with your newest builds!"]
-			optional: true
-			id: "309BD19B77B320E7"
+			description: ["This Sawmill won't improve your planking recipes, but it WILL help you use your hand-sawed planks more efficiently!"]
+			id: "3254AD20E1DA7ABC"
 			tasks: [{
-				id: "798E0D24172E2D43"
-				type: "checkmark"
+				id: "5B397028D62F37D3"
+				type: "item"
+				item: "corail_woodcutter:oak_woodcutter"
 			}]
 			rewards: [{
-				id: "6738FA82FBB23DBF"
-				type: "xp"
-				xp: 100
+				id: "3DD381C511AC902A"
+				type: "item"
+				item: "upgrade_aquatic:river_planks"
+				count: 64
 			}]
 		}
 	]

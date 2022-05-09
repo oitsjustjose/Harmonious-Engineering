@@ -38,15 +38,6 @@ const chestRecipes = event => {
     p: '#harmeng:chestless_planks',
     s: '#minecraft:wooden_slabs',
   });
-  // Chipped Carpentry Table
-  event.remove({output: 'chipped:carpenters_table'});
-  event.shaped('1x chipped:carpenters_table', ['  I', 'LWL', 'SPL'], {
-    I: '#forge:ingots/iron',
-    L: '#minecraft:logs',
-    P: '#minecraft:planks',
-    S: '#natural-progression:saw',
-    W: 'corail_woodcutter:oak_woodcutter',
-  });
 };
 
 onEvent('recipes', event => {

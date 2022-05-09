@@ -1,0 +1,592 @@
+{
+	id: "627C55C5C0B62F58"
+	group: "3776C8DF39CEE47A"
+	order_index: 0
+	filename: "modular_powersuits"
+	title: "Modular Powersuits"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "powersuits:textures/mmmpslogo_64.png"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.75d
+			y: -5.25d
+			shape: "diamond"
+			description: [
+				"In order to modify your power armor and add various components and modules to it, you'll need one of these."
+				""
+				"As you can see some of the recipes require machines like the HDPE setup from the Mekanism chapter, and a Metal Pressing device to make wire coils."
+			]
+			size: 1.5d
+			id: "01C2A0119F2E8CF2"
+			tasks: [{
+				id: "44A6E0C58CA878A3"
+				type: "item"
+				item: "powersuits:tinkertable"
+			}]
+			rewards: [
+				{
+					id: "6E7F5D5929373934"
+					type: "item"
+					item: "numina:component_wiring"
+					random_bonus: 15
+				}
+				{
+					id: "27EE4E47DC46ABE4"
+					type: "item"
+					item: "numina:component_solenoid"
+					random_bonus: 2
+				}
+			]
+		}
+		{
+			title: "Base Power Armor"
+			icon: {
+				id: "powersuits:powerarmor_head"
+				Count: 1b
+				tag: { }
+			}
+			x: -5.0d
+			y: -3.75d
+			shape: "hexagon"
+			description: [
+				"This Power Armor may look expensive, but unfortunately there's so much more for you to see."
+				""
+				"If you've never used MPS, then I suggest looking up a tutorial and preparing your patience because it *can* be finnicky at times. That said, when you do get it sorted out the types of suits you can end up with are unrivaled by others in this pack (aside from the Meka Armor of course)."
+				""
+				"To get started, you're going to want to add batteries to each of these using the Power Armor Tinker Table. You can also add these Leather Paddings to them for now, but you should upgrade soon."
+			]
+			dependencies: ["01C2A0119F2E8CF2"]
+			size: 1.25d
+			id: "762FD1541968E1D7"
+			tasks: [
+				{
+					id: "18D08FEC69ED9670"
+					type: "item"
+					item: {
+						id: "powersuits:powerarmor_head"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "51EC7BD80C682F50"
+					type: "item"
+					item: {
+						id: "powersuits:powerarmor_torso"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "080B191CB7706D0B"
+					type: "item"
+					item: {
+						id: "powersuits:powerarmor_legs"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "14CF6BC2A4329053"
+					type: "item"
+					item: {
+						id: "powersuits:powerarmor_feet"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "4EF7CBE568CEC6F2"
+				type: "item"
+				item: "powersuits:plating_leather"
+				random_bonus: 3
+			}]
+		}
+		{
+			icon: {
+				id: "powersuits:powerfist"
+				Count: 1b
+				tag: { }
+			}
+			x: -2.5d
+			y: -3.75d
+			shape: "hexagon"
+			subtitle: "Batteries Included"
+			description: [
+				"The Power Fist is an all-in-one modular multitool capable of doing incredible damage (both ranged and melee), work as a wide selection of tools."
+				""
+				"Do be warned - for right now the Power Fist has a corrupt texture so it isn't as aesthetically pleasing as you might recall. You can always modify the visuals in the Power Armor Tinker Table to make it look a bit more... paletable though."
+				""
+				"Take a look in the Power Armor Tinker Table for some inter-mod compatible modules that you can install as well! These aren't explicitly listed here but there are many!"
+			]
+			dependencies: ["01C2A0119F2E8CF2"]
+			size: 1.25d
+			id: "260D651EF006140F"
+			tasks: [
+				{
+					id: "33C18B209003B037"
+					type: "item"
+					item: {
+						id: "powersuits:powerfist"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "10E3133C32EC95C4"
+					type: "item"
+					title: "Any Compatible Module"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "powersuits:plasma_cannon"
+									Count: 1b
+								}
+								{
+									id: "powersuits:blade_launcher"
+									Count: 1b
+								}
+								{
+									id: "powersuits:aoe_pick_upgrade"
+									Count: 1b
+								}
+								{
+									id: "powersuits:dim_rift_gen"
+									Count: 1b
+								}
+								{
+									id: "powersuits:aoe_pick_upgrade2"
+									Count: 1b
+									tag: {
+										MMModModule: { }
+									}
+								}
+								{
+									id: "powersuits:fortune"
+									Count: 1b
+								}
+								{
+									id: "powersuits:silk_touch"
+									Count: 1b
+								}
+								{
+									id: "powersuits:tunnel_bore"
+									Count: 1b
+								}
+								{
+									id: "powersuits:axe"
+									Count: 1b
+								}
+								{
+									id: "powersuits:blink_drive"
+									Count: 1b
+								}
+								{
+									id: "powersuits:melee_assist"
+									Count: 1b
+								}
+								{
+									id: "powersuits:railgun"
+									Count: 1b
+								}
+								{
+									id: "powersuits:diamond_pick_upgrade"
+									Count: 1b
+								}
+								{
+									id: "powersuits:flint_and_steel"
+									Count: 1b
+								}
+								{
+									id: "powersuits:hoe"
+									Count: 1b
+								}
+								{
+									id: "powersuits:luxcapacitor_module"
+									Count: 1b
+									tag: {
+										MMModModule: { }
+									}
+								}
+								{
+									id: "powersuits:leaf_blower"
+									Count: 1b
+								}
+								{
+									id: "powersuits:pickaxe"
+									Count: 1b
+								}
+								{
+									id: "powersuits:shears"
+									Count: 1b
+								}
+								{
+									id: "powersuits:aqua_affinity"
+									Count: 1b
+								}
+								{
+									id: "powersuits:vein_miner"
+									Count: 1b
+								}
+								{
+									id: "powersuits:shovel"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "545A840DB7706454"
+				type: "item"
+				item: {
+					id: "numina:battery_basic"
+					Count: 1b
+					tag: {
+						MMModModule: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "114392677C76EF9B"
+			tasks: [{
+				id: "6A6D9263898EC6CA"
+				type: "item"
+				item: "powersuits:plating_iron"
+			}]
+			rewards: [{
+				id: "4A5093DB9D45D850"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.5d
+			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "096BE39E86E187B3"
+			tasks: [{
+				id: "5BCC6F2434890A15"
+				type: "item"
+				item: "powersuits:plating_diamond"
+			}]
+			rewards: [{
+				id: "32622C90E108D2B9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "0DFD6FF4FBF3C17D"
+			tasks: [{
+				id: "11D210AD63408B6A"
+				type: "item"
+				item: "powersuits:energy_shield"
+			}]
+			rewards: [{
+				id: "409B91BA336182D6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "7518A481222C42E2"
+			tasks: [{
+				id: "7E83CEEE1523E414"
+				type: "item"
+				item: {
+					id: "numina:battery_advanced"
+					Count: 1b
+					tag: {
+						MMModModule: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "580C703471CA9F25"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "5674C22AF81E1E95"
+			tasks: [{
+				id: "37BF74108EDC4F44"
+				type: "item"
+				item: {
+					id: "numina:battery_elite"
+					Count: 1b
+					tag: {
+						MMModModule: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "68B2A3A9A2FEEF4C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "438A6DC5B080B6E4"
+			tasks: [{
+				id: "6F6DB2770320C2B5"
+				type: "item"
+				item: {
+					id: "numina:battery_ultimate"
+					Count: 1b
+					tag: {
+						MMModModule: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "34508F1DEA019F6A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Boot Modules"
+			x: -1.5d
+			y: -1.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "2309E611E6E5932C"
+			tasks: [{
+				id: "294E26F11D0F3F32"
+				type: "item"
+				title: "Any Compatible Module"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powersuits:shock_absorber"
+								Count: 1b
+							}
+							{
+								id: "powersuits:jet_boots"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "081F235EA6961941"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Chestplate Modules"
+			x: -4.5d
+			y: -1.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "1AF53C80FAA14AA0"
+			tasks: [{
+				id: "02C3F602BE2A39D2"
+				type: "item"
+				title: "Any Compatible Module"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powersuits:fluid_tank"
+								Count: 1b
+								tag: {
+									MMModModule: { }
+								}
+							}
+							{
+								id: "powersuits:mob_repulsor"
+								Count: 1b
+							}
+							{
+								id: "powersuits:cooling_system"
+								Count: 1b
+							}
+							{
+								id: "powersuits:magnet"
+								Count: 1b
+							}
+							{
+								id: "powersuits:invisibility"
+								Count: 1b
+							}
+							{
+								id: "powersuits:piglin_pacification_module"
+								Count: 1b
+							}
+							{
+								id: "powersuits:glider"
+								Count: 1b
+							}
+							{
+								id: "powersuits:jetpack"
+								Count: 1b
+							}
+							{
+								id: "powersuits:parachute"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7CB7B7BE2BB7BE1F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Helmet Modules"
+			x: -6.0d
+			y: -1.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "65EB7DA73B362DB0"
+			tasks: [{
+				id: "51439120A237DEE3"
+				type: "item"
+				title: "Any Compatible Module"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powersuits:water_electrolyzer"
+								Count: 1b
+							}
+							{
+								id: "powersuits:flight_control"
+								Count: 1b
+							}
+							{
+								id: "powersuits:binoculars"
+								Count: 1b
+							}
+							{
+								id: "powersuits:night_vision"
+								Count: 1b
+							}
+							{
+								id: "powersuits:auto_feeder"
+								Count: 1b
+							}
+							{
+								id: "minecraft:clock"
+								Count: 1b
+								tag: {
+									"quark:clock_calculated": 1b
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "3721AC682DFFF0F2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Legging Modules"
+			x: -3.0d
+			y: -1.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["01C2A0119F2E8CF2"]
+			id: "1DC387859B0300FE"
+			tasks: [{
+				id: "31BAC6FC90FE1BA7"
+				type: "item"
+				title: "Any Compatible Module"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powersuits:climb_assist"
+								Count: 1b
+							}
+							{
+								id: "powersuits:swim_assist"
+								Count: 1b
+							}
+							{
+								id: "powersuits:sprint_assist"
+								Count: 1b
+							}
+							{
+								id: "powersuits:jump_assist"
+								Count: 1b
+							}
+							{
+								id: "powersuits:generator_kinetic"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1FB6F7C3568C5582"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+}

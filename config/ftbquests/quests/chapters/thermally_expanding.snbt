@@ -10,10 +10,11 @@
 	quests: [
 		{
 			title: "Starting Your Thermal Ascension"
-			x: -2.5d
-			y: -2.0d
+			x: -3.0d
+			y: -9.5d
 			shape: "diamond"
 			description: ["If you've been looking ahead in JEI, you no doubt know by now that you'll need a machine frame for all things Thermal. In this pack, you'll need Steel and a special kind of hardened glass to make it. Thanks to the last chapter, you should have everything you need to dive into thermal!"]
+			dependencies: ["4A60BF034B726C88"]
 			id: "5DD16A26B44A2290"
 			tasks: [{
 				id: "5666F58D47464047"
@@ -29,10 +30,11 @@
 		}
 		{
 			title: "Compact 2x Ore Processing"
-			x: -5.0d
-			y: -4.0d
+			x: -4.5d
+			y: -9.5d
 			description: ["The Pulverizer can 2x your Ore Chunks as well as provide some auxiliary outputs when provided with Flint or other catalysts!"]
 			dependencies: ["5DD16A26B44A2290"]
+			optional: true
 			id: "0A0F122B95C92B13"
 			tasks: [{
 				id: "30D6BA4303504DB8"
@@ -47,8 +49,8 @@
 		}
 		{
 			title: "Advanced Alloying"
-			x: -2.5d
-			y: 0.0d
+			x: -3.0d
+			y: -8.0d
 			dependencies: ["5DD16A26B44A2290"]
 			id: "5DEC9CCB9938781B"
 			tasks: [{
@@ -64,10 +66,11 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -2.0d
+			x: -2.0d
+			y: -10.5d
 			description: ["The Redstone Furnace is an RF-powered furnace super useful with its wonderful I/O system!"]
 			dependencies: ["5DD16A26B44A2290"]
+			optional: true
 			id: "009F3EDD5367714D"
 			tasks: [{
 				id: "5F06EFA6483F86E5"
@@ -81,8 +84,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -4.0d
+			x: -3.0d
+			y: -11.0d
 			shape: "rsquare"
 			description: ["The Multiservo Press is the most compact means by which this pack will allow you to  press metals into plates or gears!"]
 			dependencies: ["5DD16A26B44A2290"]
@@ -112,11 +115,10 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: -4.0d
+			x: -3.0d
+			y: -12.5d
 			shape: "rsquare"
 			description: ["Save yourself a lot of hassle by making yourself an extra multiservo press just for Gearworking!"]
-			hide_dependency_lines: true
 			dependencies: ["6DCDA3F80C7A9390"]
 			optional: true
 			id: "3C82A70B67C90108"
@@ -132,8 +134,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 0.0d
+			x: -3.0d
+			y: -6.5d
 			description: ["Add these components to any machine to augment its Efficiency and Speed"]
 			dependencies: ["5DEC9CCB9938781B"]
 			id: "026BB6835B11EC9D"
@@ -152,12 +154,11 @@
 		}
 		{
 			title: "Flux Trinkets"
-			x: 0.0d
-			y: 0.0d
+			x: -2.0d
+			y: -8.5d
 			shape: "rsquare"
 			description: ["Thermal Expansion adds lots of lovely tools and weapons to add to your arsenal! Do so now if you want to make your life a bunch easier in the long-run!"]
-			hide_dependency_lines: true
-			dependencies: ["41778EBFE5E05233"]
+			dependencies: ["5DD16A26B44A2290"]
 			optional: true
 			id: "21C6451BA1501DFB"
 			tasks: [{
@@ -201,8 +202,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.0d
+			x: -1.5d
+			y: -9.5d
 			shape: "rsquare"
 			description: ["The Tinkers' Workbench will allow you to charge and augment various Flux-based tools and trinkets!"]
 			dependencies: ["5DD16A26B44A2290"]
@@ -220,12 +221,11 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 1.8112244897959187d
+			x: -3.0d
+			y: -3.0d
 			shape: "octagon"
 			description: ["These Resonant Components contain all of the Spatiotemporal Technology you could possibly need thanks to those Endermen. Now you can get into some pretty advanced technology as you progress into Mekanism - Nicely Done!!!"]
-			hide_dependency_lines: true
-			dependencies: ["026BB6835B11EC9D"]
+			dependencies: ["021E39C9617A3450"]
 			size: 1.5d
 			id: "1A1191D78F17ED73"
 			tasks: [{
@@ -250,6 +250,60 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			x: -4.0d
+			y: -10.5d
+			shape: "rsquare"
+			description: ["A sawmill will open the way to moving out of the hand-saw industry and finally give those hands a break!"]
+			dependencies: ["5DD16A26B44A2290"]
+			optional: true
+			id: "69F9DACE4BCC993E"
+			tasks: [{
+				id: "458794FAA75E7CF0"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+			rewards: [{
+				id: "1B83F13135DED95C"
+				type: "item"
+				item: "thermal:sawdust_block"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -4.0d
+			y: -8.5d
+			shape: "rsquare"
+			description: ["Tired of manually having to use the Smithing Table for some of this pack's custom recipes? The Auto Smithing Table will be able to automatically handle this process for you using some RF and core components from Thermal Expansion."]
+			dependencies: ["5DD16A26B44A2290"]
+			optional: true
+			id: "3507B497B815E0EC"
+			tasks: [{
+				id: "70EDBE33756875D6"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "harmeng:auto_smither"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			description: [""]
+			dependencies: ["026BB6835B11EC9D"]
+			size: 1.25d
+			id: "021E39C9617A3450"
+			tasks: [{
+				id: "15CCAC647153F22A"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
 		}
 	]
 }

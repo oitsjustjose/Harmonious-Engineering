@@ -244,7 +244,7 @@
 		}
 		{
 			title: "Terminals"
-			x: -2.0d
+			x: -3.0d
 			y: -5.0d
 			shape: "hexagon"
 			description: ["Terminals allow you to access the contents of your ME Network, be it fluids, items, patterns, etc.."]
@@ -292,7 +292,7 @@
 		}
 		{
 			title: "Digital Item Access"
-			x: 2.0d
+			x: 3.0d
 			y: -5.0d
 			shape: "hexagon"
 			description: [
@@ -335,14 +335,13 @@
 		}
 		{
 			x: 0.0d
-			y: 1.0d
+			y: 3.5d
 			shape: "octagon"
 			description: ["AE2 has SO MUCH to it that makes it so wonderful, that I can't really sit here and list out every single perk, oddity and specificity of it. I can't really even tell you exactly what you should do from here because your AE2 system can grow with your network needs."]
-			hide_dependency_lines: true
 			dependencies: [
 				"12B55A07958426E9"
 				"318D8C5DA5272C22"
-				"49BB80B8831D916B"
+				"3F0D395B410BDD0E"
 			]
 			hide: true
 			hide_text_until_complete: true
@@ -358,6 +357,60 @@
 				auto: "invisible"
 				command: "/tellraw @p {\"text\":\"Link to the Official AE2 Wiki\",\"color\":\"aqua\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Open URL\",\"color\":\"dark_gray\"}]}}"
 				player_command: false
+			}]
+		}
+		{
+			title: "Packaged Auto"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"Packaged Auto is an AE2 Addon which provides some neat compatibility recipes and gear to perform automated mega-crafting, standard crafting, processing, and more."
+				""
+				"To get started, you'll need a Pattern Crafter, Packager, Unpackager and Package Recipe Encoder."
+				""
+				"*ALL* three of these, aside from the Package Recipe Encoder, need to be connected to your AE2 network. The encoder will write recipes to Package Recipe Holders."
+				""
+				"YOU WILL NEED TO WRITE TWO PATTERN RECIPE ENCODERS. One of them goes in the Packager, and the other in the Unpackager. Fortunately you can load and unload from the Holders into the Encoder in case you forgot or need to modify them."
+			]
+			dependencies: [
+				"568810B360CC78F0"
+				"4E517C0500A7F3B0"
+				"1DBA5BAC80801454"
+				"49BB80B8831D916B"
+			]
+			id: "3F0D395B410BDD0E"
+			tasks: [
+				{
+					id: "03BFF8709DA2D152"
+					type: "item"
+					item: "packagedauto:crafter"
+				}
+				{
+					id: "6C646A55CED93C9E"
+					type: "item"
+					item: "packagedauto:packager"
+				}
+				{
+					id: "11AA41D3046B06DD"
+					type: "item"
+					item: "packagedauto:unpackager"
+				}
+				{
+					id: "05DFBDF5AD33B9B4"
+					type: "item"
+					item: "packagedauto:encoder"
+				}
+				{
+					id: "62FABD391CA42831"
+					type: "item"
+					item: "packagedauto:recipe_holder"
+				}
+			]
+			rewards: [{
+				id: "1F32AFB287C8CD60"
+				type: "item"
+				item: "packagedauto:recipe_holder"
+				count: 4
 			}]
 		}
 	]
