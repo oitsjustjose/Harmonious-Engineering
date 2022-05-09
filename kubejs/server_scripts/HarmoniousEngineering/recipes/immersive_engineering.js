@@ -40,14 +40,14 @@ onEvent('recipes', event => {
 
   event.shaped(`27x ${modid}:blastbrick`, ['CHC', 'BSB', 'CBC'], {
     C: 'minecraft:clay',
-    B: 'minecraft:bricks',
+    B: 'infernalexp:soul_stone_bricks',
     S: 'create:blaze_burner',
     H: 'create:chute',
   });
 
   event.shaped(`27x ${modid}:cokebrick`, ['CHC', 'BSB', 'CBC'], {
     C: 'minecraft:clay',
-    B: 'minecraft:bricks',
+    B: 'tconstruct:mud_bricks',
     H: 'create:chute',
     S: 'createaddition:crude_burner',
   });

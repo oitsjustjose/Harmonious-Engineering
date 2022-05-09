@@ -115,6 +115,7 @@ const naturalProgressionTags = event => {
     'mekanismtools:steel_paxel',
     'mekanismtools:stone_paxel',
     'tconstruct:hand_axe',
+    'powersuits:powerfist',
     '#forge:tools/axes',
   ].forEach(x => event.add('natural-progression:axe', x));
 

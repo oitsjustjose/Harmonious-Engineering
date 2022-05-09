@@ -109,9 +109,9 @@
 				item: "farmersdelight:stove"
 			}]
 			rewards: [{
-				id: "2935DD2AB5BA9497"
+				id: "6CC990C9D61A4D30"
 				type: "xp"
-				xp: 700
+				xp: 100
 			}]
 		}
 		{

@@ -23,6 +23,11 @@
 				""
 				"As you can see some of the recipes require machines like the HDPE setup from the Mekanism chapter, and a Metal Pressing device to make wire coils."
 			]
+			dependencies: [
+				"6533A47E0A183A09"
+				"41778EBFE5E05233"
+				"79D0FF37CBEF39D5"
+			]
 			size: 1.5d
 			id: "01C2A0119F2E8CF2"
 			tasks: [{

@@ -565,8 +565,6 @@ events.listen('recipes', event => {
     'immersiveengineering:storage_uranium',
     'emendatusenigmatica:uranium_block'
   );
-  event.replaceOutput({}, 'immersivepetroleum:bitumen', 'emendatusenigmatica:bitumen_gem');
-  event.replaceOutput({}, 'immersivepetroleum:bitumen', 'emendatusenigmatica:bitumen_gem');
   event.replaceOutput({}, 'immersiveposts:stick_constantan', 'emendatusenigmatica:constantan_rod');
   event.replaceOutput({}, 'immersiveposts:stick_constantan', 'emendatusenigmatica:constantan_rod');
   event.replaceOutput({}, 'immersiveposts:stick_copper', 'emendatusenigmatica:copper_rod');
