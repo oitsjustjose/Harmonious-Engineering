@@ -33,21 +33,21 @@ onEvent('recipes', event => {
 
   global.genSmithingRecipe(
     event,
-    Ingredient.of('createdeco:dean_bricks'),
+    Ingredient.of('minecraft:bricks'),
     Ingredient.of('minecraft:sandstone'),
     Item.of(`${modid}:alloybrick`)
   );
 
   event.shaped(`27x ${modid}:blastbrick`, ['CHC', 'BSB', 'CBC'], {
     C: 'minecraft:clay',
-    B: 'createdeco:dusk_bricks',
+    B: 'minecraft:bricks',
     S: 'create:blaze_burner',
     H: 'create:chute',
   });
 
   event.shaped(`27x ${modid}:cokebrick`, ['CHC', 'BSB', 'CBC'], {
     C: 'minecraft:clay',
-    B: 'createdeco:blue_bricks',
+    B: 'minecraft:bricks',
     H: 'create:chute',
     S: 'createaddition:crude_burner',
   });

@@ -5,15 +5,7 @@ onEvent('block.right_click', event => {
   }
 });
 
-const createDecoDecalChanges = event => {
-  global.minecraftColors.forEach(color => {
-    event.remove({output: `createdeco:${color}_decal`});
-    event.stonecutting(`createdeco:${color}_decal`, '#forge:plates/iron');
-  });
-};
-
 onEvent('recipes', event => {
-  createDecoDecalChanges(event);
   event.remove({output: 'create:copper_ingot'});
   event.remove({output: 'create:zinc_ingot'});
 
@@ -51,10 +43,6 @@ onEvent('recipes', event => {
     'createaddition:copper_spool',
     'immersiveengineering:wirecoil_copper'
   );
-
-  event.replaceInput({mod: 'createdeco'}, 'create:zinc_ingot', '#forge:ingots/zinc');
-  event.replaceInput({mod: 'createdeco'}, 'create:copper_ingot', '#forge:ingots/copper');
-  event.replaceInput({mod: 'createdeco'}, 'create:brass_ingot', '#forge:ingots/brass');
 
   event.remove({id: 'create:mixing/chromatic_compound'});
   event.custom({
