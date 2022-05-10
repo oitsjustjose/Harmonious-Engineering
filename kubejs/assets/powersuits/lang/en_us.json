@@ -1,0 +1,6 @@
+{
+  "item.powersuits.tunnel_bore": "Tunnel Bore Module",
+  "item.powersuits.tunnel_bore.desc": "AoE but for digging - allows you to amplify your mining diameter to up to 5M",
+  "item.powersuits.aoe_pick_upgrade2": "Tier 2 AoE Module",
+  "item.powersuits.aoe_pick_upgrade2.desc": "Allows you to dig out large areas of a set block. Set the block by Sneaking while Right-Clicking the block you wish to mine out with AoE."
+}
