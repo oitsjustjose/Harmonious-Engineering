@@ -726,12 +726,9 @@
 				}
 			}]
 			rewards: [{
-				id: "5A527EE25ADBE49E"
-				type: "item"
-				auto: "invisible"
-				item: "fluxnetworks:flux_dust"
-				count: 24
-				random_bonus: 8
+				id: "34C8C0313637ADCA"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

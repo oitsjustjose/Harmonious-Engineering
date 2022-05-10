@@ -383,7 +383,7 @@
 			}]
 		}
 		{
-			title: "Draconic Tools"
+			title: "Draconic Gear"
 			x: -9.0d
 			y: 3.5d
 			shape: "rsquare"
@@ -578,7 +578,7 @@
 			}]
 		}
 		{
-			title: "Wyvern Tools"
+			title: "Wyvern Gear"
 			x: -2.0d
 			y: 1.0d
 			shape: "rsquare"
