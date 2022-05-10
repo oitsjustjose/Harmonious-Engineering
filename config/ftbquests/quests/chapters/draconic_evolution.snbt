@@ -7,34 +7,868 @@
 	icon: "draconicevolution:chaotic_core"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: -5.5d
-		y: -2.0d
-		shape: "diamond"
-		description: [
-			"As you can no-doubt tell, getting to the point where you can harness the power of the Ender Dragon required a lot of research and dedication in Physics and Chemistry."
-			""
-			"Fortunately, your research was a success - by harnessing the strange but maleable Pink Slime, its protons can be rearranged with Antimatter to form some new substance.. Draconium."
-			""
-			"Pack dev note: At this point I have only changed a very small number of recipes at this point. You'll find them as you go, but you probably won't be struggling with any recipes at this point in the pack. I hope you had fun with the quests and enjoy the crazy-powerful ending to it which is Draconic Evolution!"
-		]
-		dependencies: [
-			"3E9E8F85F668A000"
-			"1CB98DB1EF80834D"
-		]
-		id: "64B207F46287BCED"
-		tasks: [{
-			id: "10011C233EC78E2B"
-			type: "item"
-			item: "draconicevolution:draconium_ingot"
-		}]
-		rewards: [{
-			id: "4812B56865B35EF8"
-			type: "command"
-			team_reward: true
-			auto: "invisible"
-			command: "/ftbquests change_progress @p complete 4A42C1A07DE3C2BA"
-			player_command: false
-		}]
-	}]
+	quests: [
+		{
+			title: "Draconic Evolution"
+			x: -5.5d
+			y: -2.0d
+			shape: "diamond"
+			description: [
+				"Welcome to the End-Game! Draconic is known to be hilariously Over-Powered and the remainder of these recipes are mostly unchanged, so this is the \"Have Fun\" chapter where you can finally enjoy the fruits of your labor!"
+				""
+				"Inspecting JEI, there has to be a way to more easily create Draconium...."
+			]
+			dependencies: [
+				"3E9E8F85F668A000"
+				"1CB98DB1EF80834D"
+			]
+			size: 1.25d
+			id: "64B207F46287BCED"
+			tasks: [{
+				id: "10011C233EC78E2B"
+				type: "item"
+				item: "draconicevolution:draconium_ingot"
+			}]
+			rewards: [{
+				id: "54BDC31246ECC6DB"
+				type: "item"
+				item: "minecraft:dragon_breath"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Draconium Tier"
+			x: -5.5d
+			y: 0.0d
+			shape: "pentagon"
+			description: [
+				"This is the first tier of items in the Draconic Evolution progression line."
+				""
+				"You may commonly see this tier referred to as \"Draconium\". Do not mistake this with Draconic, which comes after the Wyvern tier."
+			]
+			dependencies: ["64B207F46287BCED"]
+			optional: true
+			id: "1628968F92BFA5A9"
+			tasks: [{
+				id: "041C6BD38CDC6159"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+			rewards: [{
+				id: "360A9C1859CF5A42"
+				type: "item"
+				item: "minecraft:dragon_breath"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Wyvern Tier"
+			x: -5.5d
+			y: 2.0d
+			shape: "hexagon"
+			description: [
+				"This is the natural second stage in the Draconic Evolution progression line!"
+				""
+				"It unlocks several new and improved things including the Wyvern Chestpiece!"
+				""
+				"By now, if you don't have an Ultimate Crafting Grid (and possibly have automated the process with Packaged Auto), you might want to consider it."
+			]
+			dependencies: ["1628968F92BFA5A9"]
+			size: 1.25d
+			optional: true
+			id: "46CD26810C433599"
+			tasks: [{
+				id: "305607CDAB4B737B"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+			rewards: [{
+				id: "70127FEB9C31B498"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Tier"
+			x: -5.5d
+			y: 4.5d
+			shape: "octagon"
+			subtitle: "Draconium Tier != Draconic Tier"
+			description: [""]
+			dependencies: ["46CD26810C433599"]
+			size: 1.5d
+			optional: true
+			id: "67B718549C7EB72B"
+			tasks: [{
+				id: "5B27D886FD656DCF"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+			rewards: [{
+				id: "42F76CB353B23E92"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Chaos"
+			x: -5.5d
+			y: 7.5d
+			shape: "gear"
+			description: [
+				"At this point you've no doubt got a grasp of this pack, Draconic Evolution itself and how to harness the power of Dragons."
+				""
+				"If you came this far, the pack's progression is all yours - you've harnessed the hardest parts of this pack. From here Chaotic Cores and Chaotic-Tier Tools are the only things left if you feel like going that far!"
+				""
+				"Some goals from here would definitely be to get the Chaotic Staff of Power (or tools if you prefer that) and make yourself practically unkillable with a Chaotic Chestpiece"
+			]
+			dependencies: ["67B718549C7EB72B"]
+			size: 1.75d
+			optional: true
+			id: "13FC2F210A6C76D5"
+			tasks: [{
+				id: "7288269A7C4B4C8A"
+				type: "item"
+				title: "Any Chaos Shard"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "draconicevolution:small_chaos_frag"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:medium_chaos_frag"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:large_chaos_frag"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:chaos_shard"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "36B96D787B00414F"
+					type: "command"
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 4A42C1A07DE3C2BA"
+					player_command: false
+				}
+				{
+					id: "46C5822274EADD8E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Draconium Injecting"
+			x: -9.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"These consume lots of power and are responsible for the infusing process in and of itself."
+				""
+				"As you'll see in some of the recipes in JEI, you'll need multiple of these so that you can hold each of the required items for the infusing recipe."
+			]
+			dependencies: ["525E516BEAD0301E"]
+			optional: true
+			id: "118CFBAB7C9C0D1F"
+			tasks: [{
+				id: "1F1179B044FF7929"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+			}]
+			rewards: [{
+				id: "0E366E77D316FA67"
+				type: "item"
+				item: "quark:dragon_scale"
+			}]
+		}
+		{
+			title: "Draconic Injecting"
+			x: -7.0d
+			y: 3.5d
+			shape: "rsquare"
+			dependencies: ["67B718549C7EB72B"]
+			optional: true
+			id: "15A261EFEE34ECD2"
+			tasks: [{
+				id: "38591CA466C1430C"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+			}]
+			rewards: [{
+				id: "486D460D20930BBD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Wyvern Injecting"
+			x: -4.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["46CD26810C433599"]
+			optional: true
+			id: "2104DB8505AF04C6"
+			tasks: [{
+				id: "78BFB9A216DBA1E1"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+			}]
+			rewards: [{
+				id: "3ACA874E854BFDE6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["This is the central-most block in a Fusion Crafting recipe, and is the only component and doesn't get upgraded; this should be the only one you need!"]
+			dependencies: ["1628968F92BFA5A9"]
+			optional: true
+			id: "525E516BEAD0301E"
+			tasks: [{
+				id: "158F7C36487F4419"
+				type: "item"
+				item: "draconicevolution:crafting_core"
+			}]
+			rewards: [{
+				id: "2033A38187DC2FFF"
+				type: "item"
+				item: "minecraft:dragon_breath"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Basic I/O Crystals"
+			x: -8.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["I/O Crystals are an aesthetic and efficient way of transmitting RF (also called OP in Draconic Evolution) throughout your home!"]
+			dependencies: ["1628968F92BFA5A9"]
+			optional: true
+			id: "6FDCE4F56BEDBA0A"
+			tasks: [{
+				id: "0B11070BF9789212"
+				type: "item"
+				title: "Any Basic Crystal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "draconicevolution:basic_io_crystal"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:basic_relay_crystal"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:basic_wireless_crystal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DDC1CE8A211DF3C"
+				type: "item"
+				item: "industrialforegoing:ether_gas_bucket"
+			}]
+		}
+		{
+			title: "Wyvern I/O Crystals"
+			x: -3.0d
+			y: 2.0d
+			shape: "rsquare"
+			dependencies: ["46CD26810C433599"]
+			optional: true
+			id: "7A42930376FF4BF6"
+			tasks: [{
+				id: "62E73E4A1FFA7A51"
+				type: "item"
+				title: "Any Wyvern Crystal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "draconicevolution:wyvern_io_crystal"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:wyvern_relay_crystal"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:wyvern_wireless_crystal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "475E5A9881910B5D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic I/O Crystals"
+			x: -8.0d
+			y: 4.5d
+			shape: "rsquare"
+			dependencies: ["67B718549C7EB72B"]
+			optional: true
+			id: "22192172AB7E7C81"
+			tasks: [{
+				id: "4382555172C74BB3"
+				type: "item"
+				title: "Any Draconic Crystal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "draconicevolution:draconic_io_crystal"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:draconic_relay_crystal"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:draconic_wireless_crystal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "74300873389A38AC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Tools"
+			x: -9.0d
+			y: 3.5d
+			shape: "rsquare"
+			dependencies: ["15A261EFEE34ECD2"]
+			optional: true
+			id: "19C5FB90749662D8"
+			tasks: [{
+				id: "0025FE3FFABAA46A"
+				type: "item"
+				title: "Any Draconic-Tier Tool"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												1359614442
+												91899878
+												-1209562934
+												-615328803
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_sword"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												465875352
+												-1212988045
+												-1700296743
+												59557327
+											]
+											modules: [ ]
+											properties: {
+												mining_speed: {
+													value: 1.0d
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_shovel"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-1525895600
+												128732802
+												-1581285107
+												484205327
+											]
+											modules: [ ]
+											properties: {
+												mining_speed: {
+													value: 1.0d
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_pickaxe"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-792409062
+												928729742
+												-1470260868
+												-1188180803
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_hoe"
+								Count: 1b
+							}
+							{
+								id: "draconicevolution:draconic_energy_core"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												860106609
+												-1085911096
+												-1644284452
+												588987302
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_bow"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-2059239254
+												-878623282
+												-2142738589
+												-1340578410
+											]
+											modules: [ ]
+											properties: {
+												mining_speed: {
+													value: 1.0d
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_axe"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												1612546223
+												1591427988
+												-1841988299
+												618790661
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:draconic_chestpiece"
+								Count: 1b
+								tag: { }
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "51BAC6EB35E8EE75"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Wyvern Tools"
+			x: -2.0d
+			y: 1.0d
+			shape: "rsquare"
+			description: [
+				"This quest is a catch-all for Wyvern tools! Wyvern Tools are great and very modular using the various modules you'll find in JEI."
+				""
+				"I strongly recommend making the Chestpiece and upgrading it with each tier, as it adds a buffer of additional protection *on top* of your armor!"
+			]
+			dependencies: ["2104DB8505AF04C6"]
+			optional: true
+			id: "64A94368B65A8F79"
+			tasks: [{
+				id: "7F81A051B00D61D4"
+				type: "item"
+				title: "Any Wyvern-Tier Tool"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												626944477
+												1789610023
+												-1775142479
+												831234777
+											]
+											modules: [ ]
+											properties: {
+												mining_speed: {
+													value: 1.0d
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_pickaxe"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												1917500783
+												464146305
+												-1683017401
+												-246156740
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_chestpiece"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-1330825548
+												1897679206
+												-1734344070
+												-198613789
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_bow"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-1531492029
+												-34518761
+												-1948239665
+												-426170985
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_sword"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-1413902266
+												-73514484
+												-1247173414
+												-804289610
+											]
+											modules: [ ]
+											properties: { }
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_hoe"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												732454291
+												1847741291
+												-1410042679
+												-1451707224
+											]
+											modules: [ ]
+											properties: {
+												mining_speed: {
+													value: 1.0d
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_shovel"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												814794790
+												908478505
+												-1346120054
+												703340171
+											]
+											modules: [ ]
+											properties: {
+												mining_speed: {
+													value: 1.0d
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_axe"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										module_host: {
+											provider_id: [I;
+												-1575696128
+												391924885
+												-1827940365
+												1911457548
+											]
+											modules: [ ]
+											properties: {
+												charge_main: {
+													hud: 1b
+												}
+												charge_curios: {
+													hud: 1b
+												}
+												charge_hot_bar: {
+													hud: 1b
+												}
+												charge_held_item: {
+													hud: 1b
+												}
+												charge_armor: {
+													hud: 1b
+												}
+											}
+										}
+										energy: {
+											energy: 0L
+										}
+									}
+								}
+								id: "draconicevolution:wyvern_capacitor"
+								Count: 1b
+								tag: { }
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "58AAC5B84561068F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -11.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["This thing is an insane All-In-One-Tool that can be upgraded "]
+			dependencies: ["19C5FB90749662D8"]
+			optional: true
+			id: "7A35CC03BF6518D1"
+			tasks: [{
+				id: "44754E6543F05F05"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_staff"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-126180871
+									-1922546488
+									-1738086795
+									-1501845024
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "5EC73B0996CBBA3B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Immense Storage"
+			x: -10.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["The Draconium Chest can be color customized, Smelt when given RF, and holds TONS of stuff!"]
+			dependencies: ["1628968F92BFA5A9"]
+			optional: true
+			id: "47164BC8D8799BC5"
+			tasks: [{
+				id: "6FECB7D7051467BE"
+				type: "item"
+				item: "draconicevolution:draconium_chest"
+			}]
+			rewards: [{
+				id: "75437DB54DC9009F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
 }
