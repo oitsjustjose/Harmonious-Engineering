@@ -83,32 +83,13 @@
 					item: "quantumquarryplus:earth_orb"
 				}
 			]
-			rewards: [
-				{
-					id: "3912588011E9A2D2"
-					type: "item"
-					item: "mekanism:ultimate_universal_cable"
-					count: 8
-					random_bonus: 24
-				}
-				{
-					id: "23DC567F7B9F34EB"
-					type: "item"
-					title: "Full Energy Cube"
-					item: {
-						id: "mekanism:advanced_energy_cube"
-						Count: 1b
-						tag: {
-							mekData: {
-								EnergyContainers: [{
-									Container: 0b
-									stored: "16000000"
-								}]
-							}
-						}
-					}
-				}
-			]
+			rewards: [{
+				id: "3912588011E9A2D2"
+				type: "item"
+				item: "mekanism:ultimate_universal_cable"
+				count: 8
+				random_bonus: 24
+			}]
 		}
 		{
 			title: "Creative Flight"
@@ -275,10 +256,9 @@
 				}
 			]
 			rewards: [{
-				id: "2F260AD7B549B176"
-				type: "item"
-				item: "appliedenergistics2:16k_cell_component"
-				random_bonus: 2
+				id: "04D016CBE7C827C3"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -412,7 +392,7 @@
 				icon: { id: "thermal:netherite_coin", Count: 24b }
 				item: "thermal:netherite_coin"
 				count: 8
-				random_bonus: 16
+				random_bonus: 8
 			}]
 		}
 		{

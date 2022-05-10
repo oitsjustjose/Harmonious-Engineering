@@ -45,6 +45,7 @@
 				id: "05A8CECCA33EB5DD"
 				type: "item"
 				item: "emendatusenigmatica:cinnabar_gem"
+				random_bonus: 2
 			}]
 		}
 		{
@@ -145,11 +146,9 @@
 				item: "thermal:upgrade_augment_1"
 			}]
 			rewards: [{
-				id: "06C1F6C94B352093"
-				type: "item"
-				item: "emendatusenigmatica:lumium_ingot"
-				count: 4
-				random_bonus: 4
+				id: "6224A62C8D3D87C3"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -194,11 +193,9 @@
 				}
 			}]
 			rewards: [{
-				id: "524F874583C8DCED"
-				type: "item"
-				item: "abnormals_delight:escargot"
-				count: 6
-				random_bonus: 4
+				id: "661429A060492340"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -215,9 +212,9 @@
 				item: "thermal:tinker_bench"
 			}]
 			rewards: [{
-				id: "42D47452438BA03F"
-				type: "item"
-				item: "thermal:rf_coil_xfer_augment"
+				id: "728C1E0B94EF9B09"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -265,11 +262,9 @@
 				item: "thermal:machine_sawmill"
 			}]
 			rewards: [{
-				id: "1B83F13135DED95C"
-				type: "item"
-				item: "thermal:sawdust_block"
-				count: 2
-				random_bonus: 2
+				id: "75BD57B306F1BAFD"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -291,11 +286,16 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5C3CE23913CC8D08"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -3.0d
 			y: -5.0d
-			description: [""]
+			description: ["The Reinforced Tier is the middle tier, and when used in a FluxSaw / FluxBore is capable of mining the same materials as Diamond"]
 			dependencies: ["026BB6835B11EC9D"]
 			size: 1.25d
 			id: "021E39C9617A3450"
@@ -303,6 +303,11 @@
 				id: "15CCAC647153F22A"
 				type: "item"
 				item: "thermal:upgrade_augment_2"
+			}]
+			rewards: [{
+				id: "139F8021EC8E2E63"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

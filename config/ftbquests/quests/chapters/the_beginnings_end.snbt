@@ -71,10 +71,9 @@
 				value: 1L
 			}]
 			rewards: [{
-				id: "58EABBDDC241E7B6"
-				type: "item"
-				item: "minecraft:dragon_breath"
-				random_bonus: 1
+				id: "074FF6E9B51E090E"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -91,11 +90,9 @@
 				structure: "betterstrongholds:stronghold"
 			}]
 			rewards: [{
-				id: "0661974860D50DB1"
-				type: "item"
-				item: "minecraft:torch"
-				count: 16
-				random_bonus: 16
+				id: "6384055CB5BBAA67"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{

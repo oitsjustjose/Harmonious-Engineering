@@ -29,13 +29,20 @@
 				type: "item"
 				item: "draconicevolution:draconium_ingot"
 			}]
-			rewards: [{
-				id: "54BDC31246ECC6DB"
-				type: "item"
-				item: "minecraft:dragon_breath"
-				count: 4
-				random_bonus: 4
-			}]
+			rewards: [
+				{
+					id: "54BDC31246ECC6DB"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "4D481CC6D2ED2B93"
+					type: "item"
+					item: "draconicevolution:info_tablet"
+				}
+			]
 		}
 		{
 			title: "Draconium Tier"
@@ -95,7 +102,6 @@
 			y: 4.5d
 			shape: "octagon"
 			subtitle: "Draconium Tier != Draconic Tier"
-			description: [""]
 			dependencies: ["46CD26810C433599"]
 			size: 1.5d
 			optional: true
@@ -200,6 +206,7 @@
 			x: -7.0d
 			y: 3.5d
 			shape: "rsquare"
+			subtitle: "Another Segue"
 			dependencies: ["67B718549C7EB72B"]
 			optional: true
 			id: "15A261EFEE34ECD2"
@@ -219,6 +226,7 @@
 			x: -4.0d
 			y: 1.0d
 			shape: "rsquare"
+			description: ["Wyvern Injectors are your segue into the next tier of Draconic tools"]
 			dependencies: ["46CD26810C433599"]
 			optional: true
 			id: "2104DB8505AF04C6"
@@ -299,6 +307,7 @@
 			x: -3.0d
 			y: 2.0d
 			shape: "rsquare"
+			subtitle: "Capable of even more power throughput!"
 			dependencies: ["46CD26810C433599"]
 			optional: true
 			id: "7A42930376FF4BF6"
@@ -338,6 +347,7 @@
 			x: -8.0d
 			y: 4.5d
 			shape: "rsquare"
+			subtitle: "Even more RF Throughput!"
 			dependencies: ["67B718549C7EB72B"]
 			optional: true
 			id: "22192172AB7E7C81"
@@ -377,6 +387,7 @@
 			x: -9.0d
 			y: 3.5d
 			shape: "rsquare"
+			subtitle: "Bigger, Better, Faster, Stronger"
 			dependencies: ["15A261EFEE34ECD2"]
 			optional: true
 			id: "19C5FB90749662D8"
@@ -809,7 +820,7 @@
 			x: -11.0d
 			y: 3.5d
 			shape: "rsquare"
-			description: ["This thing is an insane All-In-One-Tool that can be upgraded "]
+			subtitle: "An All-In-One Tool on Steroids!"
 			dependencies: ["19C5FB90749662D8"]
 			optional: true
 			id: "7A35CC03BF6518D1"

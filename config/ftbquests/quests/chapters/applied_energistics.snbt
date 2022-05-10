@@ -122,6 +122,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4BE0E4F4B4F62986"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 0.0d
@@ -179,9 +184,11 @@
 				item: "appliedenergistics2:inscriber"
 			}]
 			rewards: [{
-				id: "592B969284CB83FC"
+				id: "7004838C02D9D10E"
 				type: "item"
-				item: "minecraft:stonecutter"
+				item: "emendatusenigmatica:silicon_gem"
+				count: 4
+				random_bonus: 4
 			}]
 		}
 		{
@@ -206,11 +213,9 @@
 				item: "appliedenergistics2:controller"
 			}]
 			rewards: [{
-				id: "5BFCA770FEF9E019"
-				type: "item"
-				item: "minecraft:white_wool"
-				count: 16
-				random_bonus: 32
+				id: "609A6BDC2EB62A3A"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{

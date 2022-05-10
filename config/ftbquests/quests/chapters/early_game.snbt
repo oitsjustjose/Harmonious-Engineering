@@ -66,9 +66,9 @@
 				item: "create:millstone"
 			}]
 			rewards: [{
-				id: "021A119BD0ACFD5A"
+				id: "07DA0D2E3B47563A"
 				type: "item"
-				item: "minecraft:hopper"
+				item: "create:crafting_blueprint"
 			}]
 		}
 		{
@@ -193,11 +193,6 @@
 				id: "43DAD3534A8008B8"
 				type: "checkmark"
 				title: "Early Game Assembly Line"
-			}]
-			rewards: [{
-				id: "7875750B28A7232B"
-				type: "item"
-				item: "minecraft:cookie"
 			}]
 		}
 		{

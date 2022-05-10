@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Welcome to Nuclear Science!"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -20,7 +21,7 @@
 			y: -6.5d
 			shape: "rsquare"
 			description: [
-				"At this point on in the main progression quest chapter, there will be no quest rewards. This isn't because I don't love you, but because (1) it takes a lot of energy to think of good rewards, and (2) you should be able to make almost everything I could possibly give you."
+				"You'll see a quest to your right - if you make any mistakes along the way and have to clean up some nuclear waste, take a look at that repeatable quest :)"
 				""
 			]
 			dependencies: ["40B3A14EA5AC792C"]
@@ -56,6 +57,11 @@
 					count: 32L
 				}
 			]
+			rewards: [{
+				id: "34D16A639C40D926"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Hydrofluoric Acid"
@@ -79,6 +85,11 @@
 					count: 128L
 				}
 			]
+			rewards: [{
+				id: "723D6481AF084820"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Uranium Hexafluoride"
@@ -97,6 +108,11 @@
 				type: "item"
 				item: "mekanism:chemical_infuser"
 			}]
+			rewards: [{
+				id: "00BD56A6480F04C9"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Fissile Fuel"
@@ -113,6 +129,11 @@
 				id: "1D7E51B4CDBA0932"
 				type: "item"
 				item: "mekanism:isotopic_centrifuge"
+			}]
+			rewards: [{
+				id: "0395FC60DA033F3D"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -184,6 +205,11 @@
 				type: "item"
 				item: "mekanism:solar_neutron_activator"
 			}]
+			rewards: [{
+				id: "3FCDCEEFAADD5CCE"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Plutonium"
@@ -196,6 +222,11 @@
 				id: "41E0023C957691D7"
 				type: "item"
 				item: "mekanism:isotopic_centrifuge"
+			}]
+			rewards: [{
+				id: "6DC462BFF32EF41D"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -248,6 +279,11 @@
 					item: "mekanism:supercharged_coil"
 				}
 			]
+			rewards: [{
+				id: "344B7EE605EC9444"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 3.125d
@@ -261,6 +297,11 @@
 				id: "701A9080B60B6667"
 				type: "item"
 				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "32240E1BDACCE875"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -283,20 +324,31 @@
 				type: "item"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 			}]
-			rewards: [{
-				id: "34362173637C4B06"
-				type: "command"
-				auto: "invisible"
-				command: "/ftbquests change_progress @p complete 00B7A1A3A6ED0E8E"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "34362173637C4B06"
+					type: "command"
+					auto: "invisible"
+					command: "/ftbquests change_progress @p complete 00B7A1A3A6ED0E8E"
+					player_command: false
+				}
+				{
+					id: "54AE7C7F38F0C6E1"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			title: "Mekasuit Armor"
 			x: 3.0d
 			y: -3.0d
 			shape: "octagon"
-			description: ["Mekasuit armor has been much easier to make, because honestly there aren't many other good electrical armor sets out there in the modding scene. As such, they're still meant to be a bit of a grind, but I hope that you enjoy having access to them sooner than later!"]
+			description: [
+				"Mekasuit armor has been much easier to make, because honestly there aren't many other good electrical armor sets out there in the modding scene. As such, they're still meant to be a bit of a grind, but I hope that you enjoy having access to them sooner than later!"
+				""
+				"To manage Modules for this set, you'll need a Modification Table"
+			]
 			hide_dependency_lines: true
 			dependencies: [
 				"548FF0C4E700EFE2"
@@ -352,9 +404,9 @@
 				}
 			]
 			rewards: [{
-				id: "01E2E1C14EA66FAE"
-				type: "item"
-				item: "mekanism:modification_station"
+				id: "52C297ADF97CFDF1"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{

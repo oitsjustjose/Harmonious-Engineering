@@ -9,195 +9,102 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -12.5d
-			y: -5.5d
-			description: ["The Botanist's Workbench is the right tool for getting beautiful variants of all things organic - mushrooms, glowshrooms, pumpkins, melons and more!"]
-			optional: true
-			id: "4FAABE3FBDEF9E55"
-			tasks: [{
-				id: "43876E097E23C42D"
-				type: "item"
-				item: "chipped:botanist_workbench"
-			}]
-			rewards: [
-				{
-					id: "50C7EC3FB0429C43"
-					type: "item"
-					item: "minecraft:red_mushroom_block"
-					count: 32
-					random_bonus: 32
-				}
-				{
-					id: "21D3A3A87F95523C"
-					type: "item"
-					item: "minecraft:brown_mushroom_block"
-					count: 32
-					random_bonus: 32
-				}
-			]
-		}
-		{
-			x: -12.5d
+			title: "Chipped"
+			x: -12.0d
 			y: -6.5d
-			description: ["The Glass Blower can turn your glass and glass panes into wonderful and colorful variants with intricate designs and patterns!"]
-			optional: true
-			id: "18B65398AF4428DA"
-			tasks: [{
-				id: "523B571A52A84EEB"
-				type: "item"
-				item: "chipped:glassblower"
-			}]
-			rewards: [
-				{
-					id: "4CB2CC23F5DBBE9A"
-					type: "item"
-					item: "minecraft:glass_pane"
-					count: 32
-					random_bonus: 32
-				}
-				{
-					id: "7EC788A5DE83253F"
-					type: "item"
-					item: "minecraft:glass"
-					count: 16
-					random_bonus: 16
-				}
-			]
-		}
-		{
-			x: -12.5d
-			y: -10.5d
-			description: ["The Carpenter's Table is great for getting variants of woodlike blocks!"]
-			optional: true
-			id: "1224726961D49EA7"
-			tasks: [{
-				id: "351E36333FDDE330"
-				type: "item"
-				item: "chipped:carpenters_table"
-			}]
-			rewards: [
-				{
-					id: "59E08A688AEC8030"
-					type: "item"
-					item: "minecraft:oak_planks"
-					count: 32
-					random_bonus: 32
-				}
-				{
-					id: "7DF580D693534E88"
-					type: "item"
-					item: "minecraft:spruce_planks"
-					count: 32
-					random_bonus: 32
-				}
-			]
-		}
-		{
-			x: -12.5d
-			y: -7.5d
-			description: ["The Loom is great for getting variants of wool and carpet!"]
-			optional: true
-			id: "0C69B0BD4DAAD81D"
-			tasks: [{
-				id: "65D73105EDE9F8DB"
-				type: "item"
-				item: "chipped:loom_table"
-			}]
-			rewards: [{
-				id: "74575223F5B4A47B"
-				type: "item"
-				item: "minecraft:white_wool"
-				count: 32
-				random_bonus: 32
-			}]
-		}
-		{
-			x: -12.5d
-			y: -11.5d
-			description: ["The Mason's Table is great for getting variants of stone-ish blocks!"]
+			description: ["Chipped is a great mod with multiple workbenches that have a Stonecutter-like interface. This interface allows you to make various building blocks - all visible through JEI!"]
 			optional: true
 			id: "4966CFB1F399B240"
 			tasks: [{
-				id: "1D096459F93E27C2"
+				id: "7FB2E3F1F4AE60BD"
 				type: "item"
-				item: "chipped:mason_table"
+				title: "Any Chipped Workbench"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "chipped:botanist_workbench"
+								Count: 1b
+							}
+							{
+								id: "chipped:glassblower"
+								Count: 1b
+							}
+							{
+								id: "chipped:carpenters_table"
+								Count: 1b
+							}
+							{
+								id: "chipped:loom_table"
+								Count: 1b
+							}
+							{
+								id: "chipped:mason_table"
+								Count: 1b
+							}
+							{
+								id: "chipped:alchemy_bench"
+								Count: 1b
+							}
+							{
+								id: "chipped:mechanist_workbench"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
-				id: "230A64E681D9D25E"
-				type: "item"
-				item: "minecraft:stone"
-				count: 32
-				random_bonus: 32
+				id: "244389D414F3581D"
+				type: "xp"
+				xp: 100
 			}]
-		}
-		{
-			x: -12.5d
-			y: -8.5d
-			description: ["The Alchemy Bench is perfect for getting variants of more eldrich blocks like Obsidian, Crying Obsidian and Glowstone!"]
-			optional: true
-			id: "54CBC8BEA1D22F2C"
-			tasks: [{
-				id: "1F2DEED59E1F74FC"
-				type: "item"
-				item: "chipped:alchemy_bench"
-			}]
-			rewards: [{
-				id: "1442B90D69E87479"
-				type: "item"
-				item: "minecraft:sea_lantern"
-				count: 12
-			}]
-		}
-		{
-			x: -12.5d
-			y: -9.5d
-			description: ["The Mechanist's Workbench is great for getting variants of redstone components like redstone blocks, lamps, torches, and more!"]
-			optional: true
-			id: "055912225E517549"
-			tasks: [{
-				id: "6CCE6BB515C37C39"
-				type: "item"
-				item: "chipped:mechanist_workbench"
-			}]
-			rewards: [
-				{
-					id: "0CB581F61D9F4017"
-					type: "item"
-					item: "minecraft:redstone_torch"
-					count: 8
-				}
-				{
-					id: "443C53ED2EA7805D"
-					type: "item"
-					item: "minecraft:lantern"
-					count: 12
-				}
-			]
 		}
 		{
 			title: "Project: Red"
-			icon: "projectred-illumination:white_inverted_fallout_light"
-			x: -8.5d
-			y: -10.5d
+			x: -13.0d
+			y: -12.5d
 			description: ["Project Red has some really beautiful light fixtures to help get your build nicely assembled if you're going for the clean, factory feel!"]
 			optional: true
 			id: "4A08FF121FCEC379"
 			tasks: [{
-				id: "2AAE7D993EE61747"
-				type: "checkmark"
+				id: "7C2CD7D18C35EB2F"
+				type: "item"
+				title: "Any PR Lamp"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "projectred-illumination"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2E80EF57BB3F2AED"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
 			title: "Framed Blocks"
-			x: -8.5d
-			y: -11.5d
+			x: -14.0d
+			y: -7.5d
 			description: ["The Framed Blocks mod lets you turn any standard block into slabs/slopes/stairs/etc! The hammer provided will help remove the block you apply to a frame as you build!"]
 			optional: true
 			id: "0AE9A6B67DF6A705"
 			tasks: [{
 				id: "78B610ED66A90142"
 				type: "item"
-				item: "framedblocks:framed_cube"
+				title: "Any Framed Block"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "framedblocks"
+					}
+				}
 			}]
 			rewards: [{
 				id: "38091000FF9E3E10"
@@ -207,15 +114,22 @@
 		}
 		{
 			title: "Extra Lighting"
-			icon: "extlights:glowstone_bulb"
-			x: -8.5d
-			y: -9.5d
+			x: -11.0d
+			y: -12.5d
 			description: ["Extended Lights adds several really beautiful light fixtures if you're going for that really detailed look!"]
 			optional: true
 			id: "1EE24E72E6F67B82"
 			tasks: [{
-				id: "5165288F458F9515"
-				type: "checkmark"
+				id: "6B8A8DDFF4C1B5F5"
+				type: "item"
+				title: "Any Extra Light"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "extlights"
+					}
+				}
 			}]
 			rewards: [{
 				id: "31C786F895ABD2DE"
@@ -226,15 +140,37 @@
 		{
 			title: "Glass Mods"
 			icon: "glassential:glass_ethereal"
-			x: -8.5d
-			y: -8.5d
+			x: -13.0d
+			y: -6.5d
 			description: ["This modpack comes equipped with Glassential (adding dark glass, ethereal glass, etc.) as well as Connecting Glass (CTM glass + panes without Optifine)!"]
 			optional: true
 			id: "0CA2494F0A6368B6"
-			tasks: [{
-				id: "749DF8E8F3B0A1B2"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6436270A74FD46F9"
+					type: "item"
+					title: "Any Connected Glass"
+					item: {
+						id: "itemfilters:mod"
+						Count: 1b
+						tag: {
+							value: "connectedglass"
+						}
+					}
+				}
+				{
+					id: "3B9066D296776D5E"
+					type: "item"
+					title: "Any Glassential Glass"
+					item: {
+						id: "itemfilters:mod"
+						Count: 1b
+						tag: {
+							value: "glassential"
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "408D1262D433CABB"
 				type: "xp"
@@ -242,51 +178,39 @@
 			}]
 		}
 		{
-			title: "Macaw's Paintings"
-			icon: "infernalexp:infernal_painting"
-			x: -8.5d
-			y: -6.5d
-			description: ["You'll find that some paintings have been added for your home decor pleasure!"]
-			optional: true
-			id: "4014BB353F8BB01A"
-			tasks: [{
-				id: "2E48408730BE0955"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "64DE709AE1686D0C"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Macaw's Lights"
-			icon: "mcwlights:white_lamp"
-			x: -8.5d
-			y: -5.5d
-			optional: true
-			id: "339B8C929964DEFB"
-			tasks: [{
-				id: "1E832EE6D9DF466C"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "3D5549BDFF124619"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Decorative Blocks"
 			icon: "decorative_blocks:spruce_support"
-			x: -8.5d
+			x: -10.0d
 			y: -7.5d
 			description: ["The Decorative Blocks mod adds wonderful supports, braziers, chandeliers and more! It even has mod support for many wood types in this pack!!"]
 			optional: true
 			id: "0126C06A0CA05B54"
 			tasks: [{
-				id: "7958607B2F59C830"
-				type: "checkmark"
+				id: "66CB89E201AF1736"
+				type: "item"
+				title: "Any Decorative Block"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:mod"
+								Count: 1b
+								tag: {
+									value: "decorative_blocks_abnormals"
+								}
+							}
+							{
+								id: "itemfilters:mod"
+								Count: 1b
+								tag: {
+									value: "decorative_blocks"
+								}
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "6A9881A6B94BB6BD"
@@ -295,8 +219,9 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: -7.5d
+			title: "Moving Elevators"
+			x: -10.0d
+			y: -11.5d
 			description: ["Moving Elevators are great! You place down controllers at each floor you want, and you can right-click any side that doesn't have its buttons to change settings (or reskin if holding a block)."]
 			optional: true
 			id: "22CFB62947A76964"
@@ -313,21 +238,289 @@
 			}]
 		}
 		{
-			x: -10.5d
+			x: -15.0d
 			y: -9.5d
 			shape: "rsquare"
 			description: ["This Sawmill won't improve your planking recipes, but it WILL help you use your hand-sawed planks more efficiently!"]
+			optional: true
 			id: "3254AD20E1DA7ABC"
 			tasks: [{
 				id: "5B397028D62F37D3"
 				type: "item"
 				item: "corail_woodcutter:oak_woodcutter"
 			}]
-			rewards: [{
-				id: "3DD381C511AC902A"
+		}
+		{
+			icon: "corail_woodcutter:acacia_woodcutter"
+			x: -13.0d
+			y: -9.5d
+			description: ["The portable woodcutter is a portable variant that you can use without placing it down. It's a modified version made by myself in KubeJS so it's not *perfect* but it's pretty darn great considering the alternative."]
+			dependencies: ["3254AD20E1DA7ABC"]
+			optional: true
+			id: "5CBA688F12D94A9D"
+			tasks: [{
+				id: "78DA6CB99C8A8C49"
 				type: "item"
-				item: "upgrade_aquatic:river_planks"
-				count: 64
+				title: "Woodcutter (Consume Quest)"
+				item: "corail_woodcutter:oak_woodcutter"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "413415D9658AB9B4"
+				type: "item"
+				item: "corail_woodcutter:acacia_woodcutter"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -8.5d
+			description: ["This guy is GREAT for figuring out the dimensions of some given area while you try to get yourself a base built! Give it a try!!"]
+			optional: true
+			id: "3A585EBA11F60179"
+			tasks: [{
+				id: "504D0A1838BC5C70"
+				type: "item"
+				item: "quark:abacus"
+			}]
+			rewards: [{
+				id: "2E3E63DBA62F1764"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Building Gadgets"
+			x: -9.0d
+			y: -10.5d
+			description: ["Building Gadgets is a great mod full of many wonderful tools for building your houses, factories and more."]
+			optional: true
+			id: "41FBF3FA006B2CC6"
+			tasks: [
+				{
+					id: "36B24183A82A787F"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_building"
+						Count: 1b
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
+							}
+						}
+					}
+				}
+				{
+					id: "6FE840CE64A9C0C9"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_exchanging"
+						Count: 1b
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
+							}
+						}
+					}
+				}
+				{
+					id: "0E51590C66391B3F"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_copy_paste"
+						Count: 1b
+						tag: {
+							mode: 0b
+							template_id: [I;
+								1884688768
+								133121741
+								-1331949028
+								-1817349995
+							]
+						}
+					}
+				}
+				{
+					id: "12972CAE0B194763"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_destruction"
+						Count: 1b
+						tag: {
+							overlay: 1b
+							fuzzy: 1b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "02C9C88A6C129ABD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -14.0d
+			y: -11.5d
+			description: ["It's a crafting table, but portable. Not much else.."]
+			optional: true
+			id: "56DDA3E8552984E9"
+			tasks: [{
+				id: "128A55BE1DA1A52B"
+				type: "item"
+				item: "extendedcrafting:handheld_table"
+			}]
+			rewards: [{
+				id: "3507ACA4859C751C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -15.0d
+			y: -10.5d
+			description: ["The Wand of Symmetry is pretty late-game Create, but maybe this gives you a reason to get into it and learn all about the Addons this pack has such as Steam-Powered Create!"]
+			optional: true
+			id: "45F5AA40B471236A"
+			tasks: [{
+				id: "452DC7064055728D"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+			rewards: [{
+				id: "2B43E7B0B1966547"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Portable Stonecutter"
+			icon: "portable_stonecutter:portable_stonecutter"
+			x: -11.0d
+			y: -9.5d
+			description: ["The portable stonecutter is a crazy helpful tool to stonecut all the things on the go!"]
+			dependencies: ["3DF161FB78B3400C"]
+			optional: true
+			id: "4EB71C2242313276"
+			tasks: [{
+				id: "24B4D34DEB92CBDA"
+				type: "item"
+				title: "Stonecutter (Consume Quest)"
+				item: "minecraft:stonecutter"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3C25183BABE4BB36"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -9.0d
+			y: -8.5d
+			description: ["This item will place (in random order) blocks from your hotbar to make variations in your builds!"]
+			optional: true
+			id: "330D490407F53E57"
+			tasks: [{
+				id: "71881BA776EA525C"
+				type: "item"
+				item: {
+					id: "quark:trowel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7E7BD8DCC7E5CCE9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Dave's Building Extended"
+			x: -11.0d
+			y: -6.5d
+			description: ["Looking for some cool, niche decoration blocks for your high-tech base? Look no further! Though.. some recipes may have been changed or removed."]
+			optional: true
+			id: "5EF2DCCAE4A16A39"
+			tasks: [{
+				id: "768D1BF4F9841947"
+				type: "item"
+				title: "Anything from Dave's Building Extended"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "davebuildingmod"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0DCDED664ACA4AA4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -9.0d
+			y: -9.5d
+			description: ["Just the standard Stone Cutter, but chances are some of your blocks sitting around in chests can be modified by this guy! Be sure to check!"]
+			optional: true
+			id: "3DF161FB78B3400C"
+			tasks: [{
+				id: "1B09F818D0C7D2B5"
+				type: "item"
+				item: "minecraft:stonecutter"
+			}]
+		}
+		{
+			title: "MrCrayFish's Furniture"
+			x: -12.0d
+			y: -12.5d
+			description: ["Mr. CrayFish's Furniture Mod is a great mod for making a house a home. Going all out is completely optional but to me a house isn't complete without a kitchen for Farmer's Delight foods :)"]
+			optional: true
+			id: "413E2824724C6E89"
+			tasks: [{
+				id: "0CC4972101DBB74B"
+				type: "item"
+				title: "Any Furniture"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:mod"
+								Count: 1b
+								tag: {
+									value: "morecfm"
+								}
+							}
+							{
+								id: "itemfilters:mod"
+								Count: 1b
+								tag: {
+									value: "cfm"
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "74C77172C5A53F14"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

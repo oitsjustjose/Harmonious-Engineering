@@ -73,10 +73,9 @@
 				item: "immersiveengineering:hemp_fiber"
 			}]
 			rewards: [{
-				id: "051273128D1F419E"
-				type: "item"
-				item: "immersiveengineering:hemp_fiber"
-				count: 48
+				id: "1B76AB03859BC6F8"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -126,9 +125,9 @@
 				count: 27L
 			}]
 			rewards: [{
-				id: "7C680D5404053C2D"
-				type: "item"
-				item: "immersiveengineering:jerrycan"
+				id: "5AF9EA410BF3E632"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -195,32 +194,17 @@
 			]
 			rewards: [
 				{
-					id: "1F7668E382741369"
-					type: "item"
-					item: "thermal:slag"
-					count: 24
-					random_bonus: 40
-				}
-				{
-					id: "25A9F45435C03A13"
-					type: "item"
-					item: "immersiveengineering:concrete"
-					count: 512
-				}
-				{
-					id: "00C6982BB6CEA350"
-					type: "item"
-					item: "immersiveengineering:treated_wood_horizontal"
-					count: 64
-					random_bonus: 64
-				}
-				{
 					id: "30B470F52E4AA329"
 					type: "command"
 					team_reward: true
 					auto: "invisible"
 					command: "/ftbquests change_progress @p complete 7ADE05B7800470D5"
 					player_command: false
+				}
+				{
+					id: "619D5935E7B6DE39"
+					type: "xp"
+					xp: 100
 				}
 			]
 		}
@@ -240,9 +224,9 @@
 				item: "immersiveengineering:cloche"
 			}]
 			rewards: [{
-				id: "3E64EB9ECED3B366"
-				type: "item"
-				item: "thermal:device_water_gen"
+				id: "66F9DF01FE27F259"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -299,7 +283,13 @@
 		}
 		{
 			title: "Early Power Generation"
-			icon: "createdeco:yellow_decal"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "lollipop:textures/gui/container/slot/ov_energy.png"
+				}
+			}
 			x: -6.023937074829959d
 			y: -10.46692176870748d
 			shape: "hexagon"
@@ -353,11 +343,9 @@
 				}
 			]
 			rewards: [{
-				id: "356AE4A4D2EB95F1"
+				id: "72F77B3A7D069F05"
 				type: "item"
-				item: "immersiveengineering:hemp_fabric"
-				count: 32
-				random_bonus: 16
+				item: "immersiveengineering:capacitor_lv"
 			}]
 		}
 		{
@@ -402,26 +390,11 @@
 					count: 9L
 				}
 			]
-			rewards: [
-				{
-					id: "743897300C9FA8C6"
-					type: "item"
-					item: "immersiveengineering:conveyor_basic"
-					count: 24
-				}
-				{
-					id: "21EF50833637EF4C"
-					type: "item"
-					item: "immersiveengineering:conveyor_dropper"
-					count: 2
-				}
-				{
-					id: "092A60A765629821"
-					type: "item"
-					item: "immersiveengineering:conveyor_extract"
-					count: 4
-				}
-			]
+			rewards: [{
+				id: "2C5E2714EDF333F9"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "6x Log Planking"
@@ -472,11 +445,9 @@
 				}
 			]
 			rewards: [{
-				id: "6A3F830CD47772E7"
-				type: "item"
-				item: "minecraft:oak_log"
-				count: 32
-				random_bonus: 32
+				id: "58A7535606EBB5B2"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -502,11 +473,6 @@
 				id: "766E7D088F996EDA"
 				type: "checkmark"
 				title: "A Reminder"
-			}]
-			rewards: [{
-				id: "7AA9FAA9E512A8AA"
-				type: "xp"
-				xp: 1100
 			}]
 		}
 		{

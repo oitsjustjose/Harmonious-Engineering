@@ -1,7 +1,7 @@
 {
 	id: "287BDD80190D4B3D"
 	group: "2DBE15AF0366896A"
-	order_index: 3
+	order_index: 2
 	filename: "toolbelt_items"
 	title: "Getting Around"
 	icon: "moreminecarts:sticky_piston_pushcart"
@@ -129,21 +129,21 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "71AC7977BD90D21D"
-				type: "item"
-				item: {
-					id: "minecraft:firework_rocket"
-					Count: 1b
-					tag: {
-						Fireworks: {
-							Flight: 1b
-						}
-					}
+			rewards: [
+				{
+					id: "16BE7B60FEA4DE72"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 12
+					random_bonus: 12
 				}
-				count: 32
-				random_bonus: 32
-			}]
+				{
+					id: "094695E1F8040CCC"
+					type: "item"
+					item: "minecraft:paper"
+					count: 12
+				}
+			]
 		}
 		{
 			x: -6.5d
@@ -161,26 +161,30 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "76D60A7D9CD0989E"
-				type: "item"
-				item: {
-					id: "minecraft:firework_rocket"
-					Count: 1b
-					tag: {
-						Fireworks: {
-							Flight: 1b
-						}
-					}
+			rewards: [
+				{
+					id: "1D63E1CF14A6544D"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 12
+					random_bonus: 12
 				}
-				count: 32
-				random_bonus: 32
-			}]
+				{
+					id: "189180AB9E8EA8A6"
+					type: "item"
+					item: "minecraft:paper"
+					count: 12
+				}
+			]
 		}
 		{
 			x: -5.0d
 			y: 1.0d
-			description: ["Flux-infused elytra can be controlled with an Elytra Controller, and uses RF to prevent you from blasting through your Gunpowder supply."]
+			description: [
+				"Flux-infused elytra can be controlled with an Elytra Controller, and uses RF to prevent you from blasting through your Gunpowder supply."
+				""
+				"You should *definitely* look into the Fluxed Elytra Controller to save yourself MANY fireworks!!"
+			]
 			dependencies: ["005C9A10267A103C"]
 			id: "53AD34D95F764D3F"
 			tasks: [{
@@ -193,9 +197,9 @@
 				}
 			}]
 			rewards: [{
-				id: "7B5AD307978BC7E5"
-				type: "item"
-				item: "redstone_arsenal:flux_controller"
+				id: "4BFB6D582EFE2C67"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{

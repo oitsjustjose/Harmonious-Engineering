@@ -42,9 +42,7 @@
 			description: [
 				"Normally Create users like to start off with a Water Wheel (mostly because original versions of Create forced you to)."
 				""
-				"While Sail Frames do work in your windmill, you will see that the output Stress is significantly lower because the frames don't have as much surface for wind to catch."
-				""
-				"Wind Mills can be set up in various ways, both Vertically and Horizontally."
+				"Wind Mills can be set up in various ways, both Vertically and Horizontally. Oh and FYI: Sails with Fabric aren't any more efficient than those without :("
 			]
 			dependencies: ["612F010122921DD7"]
 			hide: false
@@ -77,13 +75,6 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "26974035ECAE41FE"
-				type: "item"
-				item: "immersiveengineering:hemp_fiber"
-				count: 16
-				random_bonus: 16
-			}]
 		}
 		{
 			title: "Mega-Crafting"
@@ -245,6 +236,7 @@
 				{
 					id: "203EA36E3FE47278"
 					type: "item"
+					title: "Any Boiler"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -269,6 +261,7 @@
 				{
 					id: "598B165DC1389513"
 					type: "item"
+					title: "Any Steam Engine"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -293,6 +286,7 @@
 				{
 					id: "5A6685B3E2ED3842"
 					type: "item"
+					title: "Any Flywheel"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -317,6 +311,7 @@
 				{
 					id: "48FE77F7698286D4"
 					type: "item"
+					title: "Any Burning Chamber"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
