@@ -28,6 +28,10 @@ onEvent('recipes', event => {
   event.remove({id: 'create:compat/atmospheric/splashing/red_arid_sand'});
 
   event.remove({output: 'steampowered:alternator'});
+  event.remove({output: 'steampowered:steel_ingot'});
+  event.remove({output: 'steampowered:steel_sheet'});
+  event.remove({output: 'steampowered:cast_iron_ingot'});
+  event.remove({output: 'steampowered:cast_iron_sheet'});
   event.remove({output: 'createaddition:alternator'});
   event.remove({output: 'createaddition:accumulator'});
   event.remove({output: 'createaddition:furnace_burner'});
