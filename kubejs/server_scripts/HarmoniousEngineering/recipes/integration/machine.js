@@ -13,7 +13,7 @@ onEvent('recipes', event => {
     result: [{item: 'immersiveengineering:wire_aluminum', count: 2}],
   });
 
-  // AlCopperuminum Wire in Thermal Multiservo Press
+  // Copper Wire in Thermal Multiservo Press
   event.custom({
     type: 'thermal:press',
     ingredients: [{tag: 'forge:ingots/copper'}, {item: 'immersiveengineering:mold_wire'}],

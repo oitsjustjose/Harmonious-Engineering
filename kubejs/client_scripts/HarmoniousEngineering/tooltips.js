@@ -1,6 +1,6 @@
 onEvent('item.tooltip', event => {
   event.add('moreminecarts:chunkrodite', [
-    '§7Created by destroying a §5Chunk Loader§7 that still has time remaining.§r',
+    '§7Created by destroying a §5More Minecarts Chunk Loader§7 that still has time remaining.§r',
   ]);
   event.add('kubejs:fluxed_singularity', ['§7Concerningly Unstable...§r']);
   event.addAdvanced('minecraft:enchanted_book', (item, advanced, text) => {
