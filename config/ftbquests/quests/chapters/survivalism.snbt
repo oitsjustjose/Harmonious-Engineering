@@ -1,0 +1,361 @@
+{
+	id: "5D5445CDBDB01295"
+	group: "1E070728CA22FA34"
+	order_index: 0
+	filename: "survivalism"
+	title: "Vanilla+"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tetra"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "432011f8-b31a-46c7-acb9-121932573382"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					Damage: 0
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+				}
+			}
+			x: -5.5d
+			y: -4.5d
+			shape: "hexagon"
+			description: [
+				"Vanilla tools are totally fine, but if you ever get bored of the selection and want to start tinkering, check out Tetra!"
+				""
+				"To get started, check out the Tetra Hammer, then right-click a Crafting Table with this hammer to get the Holosphere which is the built-in \"Guide\"."
+				""
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "168040ABEC1FBB22"
+			tasks: [
+				{
+					id: "6DC7938100C8815C"
+					type: "observation"
+					title: "Create a Basic Workbench"
+					icon: "tetra:basic_workbench"
+					timer: 0L
+					observe_type: 0
+					to_observe: "tetra:basic_workbench"
+				}
+				{
+					id: "4A3ED64C64B86128"
+					type: "item"
+					item: {
+						id: "tetra:modular_double"
+						Count: 1b
+						tag: {
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "432011f8-b31a-46c7-acb9-121932573382"
+							"double/basic_hammer_right_material": "basic_hammer/oak"
+							Damage: 0
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/basic_hammer_left_material": "basic_hammer/oak"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "42E9253E7C8FC0EB"
+					type: "command"
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"Click For an In-Depth Tutorial by yorkmouseModz!\",\"color\":\"#00BEE0\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=cItN9k-9eFw\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[]}}"
+					player_command: false
+				}
+				{
+					id: "61507112A5C867DA"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Apathetic Mobs"
+			icon: "minecraft:creeper_head"
+			x: -1.5d
+			y: -4.5d
+			shape: "hexagon"
+			description: [
+				"You'll find that most mobs aren't attacking you (unless you're in Hard mode) - what's up with that?"
+				""
+				"Well, I believe that being able to enjoy night-time without being mutilated or afraid is important, so you'll find that Mobs care as much about you as you do them!"
+				""
+				"Oh also! Creepers of all variants will **not** do any block griefing, but rather will explode in a party of fireworks!"
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "381F31ADDF309239"
+			tasks: [{
+				id: "2F582D186704F184"
+				type: "checkmark"
+				title: " "
+			}]
+			rewards: [{
+				id: "492844B0AEA6F4A2"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 2
+			}]
+		}
+		{
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "rebornstorage:rs_book"
+				}
+			}
+			x: -3.5d
+			y: -4.5d
+			shape: "diamond"
+			description: [
+				"This pack utilizes Shapes and Sizes to differentiate types of quests."
+				""
+				"Diamond-shaped Quests are the starts to a chapter, and Octagonal quests are the ends. These are also indicated by size."
+				""
+				"Hexagonal quests are pretty big points in the pack that you might want to avoid missing, and circular quests are completely optional, though completionists may disagree."
+				""
+				"You have a lot to see, so here's a lunchbag to keep you filled for now while you run around and see all the beauty in this world! Anyways, welcome and have fun!"
+			]
+			size: 1.25d
+			id: "5477EA198509D2E0"
+			tasks: [{
+				id: "4E8CB65A4F3934A3"
+				type: "checkmark"
+				title: "Getting Started"
+			}]
+			rewards: [{
+				id: "4BCBBE2ACE09D220"
+				type: "item"
+				item: {
+					id: "thermal:satchel"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						ItemInv: {
+							ItemInv: [
+								{
+									Slot: 0b
+									id: "minecraft:sweet_berries"
+									Count: 57b
+								}
+								{
+									Slot: 1b
+									id: "create:honeyed_apple"
+									Count: 9b
+								}
+								{
+									Slot: 2b
+									id: "nethersdelight:hoglin_ear"
+									Count: 30b
+								}
+								{
+									Slot: 3b
+									id: "farmersdelight:sweet_berry_cookie"
+									Count: 5b
+								}
+								{
+									Slot: 4b
+									id: "farmersdelight:hamburger"
+									Count: 1b
+								}
+								{
+									Slot: 5b
+									id: "farmersdelight:sweet_berry_cookie"
+									Count: 2b
+								}
+								{
+									Slot: 6b
+									id: "create:honeyed_apple"
+									Count: 19b
+								}
+								{
+									Slot: 7b
+									id: "farmersdelight:hamburger"
+									Count: 1b
+								}
+								{
+									Slot: 8b
+									id: "farmersdelight:sweet_berry_cookie"
+									Count: 6b
+								}
+							]
+						}
+						display: {
+							color: 4105094
+							Name: "{\"text\":\"Lunchbag\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			description: ["Backpacks are a useful way to keep a clean inventory in this item-dense world! You can put these in your back slot and access with the \"B\" key (by default) for easy storage expansion!"]
+			dependencies: ["5477EA198509D2E0"]
+			id: "1584AF5297253E8D"
+			tasks: [{
+				id: "0EB061AFB09D2C18"
+				type: "item"
+				item: "backpacked:backpack"
+			}]
+			rewards: [{
+				id: "35BC85CEEF30EB2E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: ["These are a wonderful way to get yourself started with a bit of portable storage. If you start wanting more, be sure to check out the Toolbelts from Tetra later down the line!"]
+			dependencies: ["5477EA198509D2E0"]
+			id: "5CF194746A4A9952"
+			tasks: [{
+				id: "768576A1275F3963"
+				type: "item"
+				item: "toolbelt:belt"
+			}]
+			rewards: [{
+				id: "3B672EB1E591DDCF"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Compact Books \\& Wrenches"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "akashictome:textures/items/tome.png"
+				}
+			}
+			x: -3.5d
+			y: -2.5d
+			description: [
+				"The Akashic Tome and Morphing Tool are both great ways to consolidate all the manuals, books, wrenches, and hammers. "
+				""
+				"The first two would go into your Akashic Tome by shapelessly crafting the tome with the manual, and the same can be said for the latter two and the Morph-o-Tool!"
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "5A71245B65B23A66"
+			tasks: [
+				{
+					id: "1E2AF94F13AB2D46"
+					type: "item"
+					item: "akashictome:tome"
+				}
+				{
+					id: "0EB3B96A87EF8E34"
+					type: "item"
+					item: "morphtool:tool"
+				}
+			]
+			rewards: [{
+				id: "19C1F95C1D6F2E90"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Effortless Building"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "effortlessbuilding:textures/icons/cube.png"
+				}
+			}
+			x: -3.5d
+			y: -6.5d
+			description: [
+				"Effortless Building allows you to build as if using Building Gadgets, but by modifying yourself with reach upgrades and using the Radial Menu (default key: Alt)."
+				""
+				"You can also randomize building blocks with the various Randomizer Bags! Hope you enjoy this mod for building as much as I do <3"
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "6731C4FA009EB87D"
+			tasks: [{
+				id: "0F3363212B2A99CD"
+				type: "checkmark"
+				title: " "
+			}]
+			rewards: [{
+				id: "47813C0CD2B8447A"
+				type: "item"
+				item: "create:experience_nugget"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Ore Processing?"
+			icon: "architects_palette:nether_brass_nugget"
+			x: -2.0d
+			y: -6.0d
+			description: [
+				"You find yourself with some new Raw Ores, and after smelting you find yourself with a handful of nuggets... What happened?"
+				""
+				"Maybe some further research into processing would be helpful, but for now these nuggets are the best you can do."
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "75C355F05B693DD4"
+			tasks: [{
+				id: "5390D00421B4B8AB"
+				type: "checkmark"
+				title: " "
+			}]
+			rewards: [{
+				id: "1B2FC7F14645C707"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 3
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Mini/World Maps?"
+			icon: "simplemaps:minimap"
+			x: -5.0d
+			y: -6.0d
+			description: [
+				""
+				"You might have noticed that you've got all this exploring to do but no way to track your progress!"
+				""
+				"For now, this is true, but while you go about your explorations you'll find some neat loot, some of which may unlock some skills in mapping both on the go (minimap) and across a whole screen (world map)!"
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "09963D1411C40210"
+			tasks: [{
+				id: "66C2931A4BA67992"
+				type: "checkmark"
+				title: " "
+			}]
+			rewards: [{
+				id: "6E2734D91519AD88"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 3
+				random_bonus: 1
+			}]
+		}
+	]
+}

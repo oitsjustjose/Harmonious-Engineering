@@ -1,0 +1,11 @@
+{
+	id: "2820FF07C21533D1"
+	group: "1E070728CA22FA34"
+	order_index: 5
+	filename: "thermal"
+	title: "Thermally Expanding"
+	icon: "thermal:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

@@ -1,0 +1,242 @@
+{
+	id: "5BD67CB57E044F56"
+	group: ""
+	order_index: 0
+	filename: "progression_line"
+	title: "Progression Line"
+	icon: "create:experience_nugget"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Vanilla+"
+			icon: "minecraft:grass_block"
+			x: -3.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "Only Slightly Spiced -- Like Chai?"
+			description: [
+				"Explore through the Vanilla game with all these fun new additions, including new structures, world gen, ores and creatures!"
+				""
+				"By "
+			]
+			id: "14E668FC6B54906E"
+			tasks: [{
+				id: "2F4904660CB27133"
+				type: "observation"
+				title: "Look at a Log"
+				icon: "minecraft:oak_log"
+				timer: 0L
+				observe_type: 1
+				to_observe: "minecraft:logs"
+			}]
+			rewards: [
+				{
+					id: "52C466F2DA552769"
+					type: "command"
+					auto: "invisible"
+					command: "/say Hi @p, we are running some Chunk Pregeneration for you so your exploration process is more enjoyable!"
+					player_command: false
+				}
+				{
+					id: "24B84EBA5691ECD3"
+					type: "command"
+					auto: "invisible"
+					command: "/chunky start minecraft:overworld square 0 0 1024"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Pneumatics"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "pneumaticcraft:textures/gui/jei/explosion.png"
+				}
+			}
+			x: -1.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "TNT Not Included"
+			description: ["Dive into the world of pneumatics by studying how you can use some of your resources to manipulate and force air around!"]
+			dependencies: ["14E668FC6B54906E"]
+			id: "13C43E580440DB7D"
+			tasks: [{
+				id: "61783800AED837F4"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			title: "Create: Andesite Age"
+			icon: "create:andesite_alloy"
+			x: 0.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "You Spin Me Right 'Round"
+			description: [
+				"Looks like you've mastered pneumatics, nicely done!"
+				""
+				"Now you can get started with some fun mechanisms for maximal enjoyment! Though it seems like there's this mysterious material stopping you from progressing further.."
+			]
+			dependencies: ["13C43E580440DB7D"]
+			id: "3CFDD30F06BA9031"
+			tasks: [{
+				id: "5E7BDB62FE8B9F5F"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Fluxical Evolution"
+			icon: "immersiveengineering:wirecoil_copper"
+			x: 2.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "Time for a Faraday Suit"
+			description: [
+				"After refining yourself the nicest hammer in the West, it's time to put it to work."
+				""
+				"At this point you've been getting a good grasp of Currents and Amperage, maybe Redstone Flux is reasonably safe to delve into?"
+			]
+			dependencies: ["3CFDD30F06BA9031"]
+			id: "562B62D11786ACFC"
+			tasks: [{
+				id: "7D7844D135581EBE"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Create: Brass Age"
+			x: 4.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "Contraptions Bigger than Life"
+			description: [
+				""
+				"Somehow tossing Copper and Zinc into an Arc Furnace was able to produce some sort of alloy. It does look pretty promising, maybe you can take advantage of it for some advanced mechanisms in Create!"
+			]
+			dependencies: ["562B62D11786ACFC"]
+			id: "444D4F959AE3FA7E"
+			tasks: [{
+				id: "26C108579C28C6A3"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			title: "Thermally Expanding"
+			icon: "thermal:machine_frame"
+			x: 6.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "Compressed Machinery"
+			description: ["By utilizing these giant mechanical crafters, I've been able to create some pretty nice machines that are similar to their huge counterparts, but take only 1 block in space."]
+			dependencies: [
+				"562B62D11786ACFC"
+				"444D4F959AE3FA7E"
+			]
+			id: "1C914DA40E420AEB"
+			tasks: [{
+				id: "048E6E3799BF0DD4"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:machine_smelter"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_insolator"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_centrifuge"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_pyrolyzer"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_brewer"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_crafter"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_refinery"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_pulverizer"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_sawmill"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_furnace"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_press"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_crucible"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_bottler"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_chiller"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "To Industry, and Beyond!"
+			icon: {
+				id: "industrialforegoing:range_addon10"
+				Count: 1b
+				tag: {
+					TitaniumAugment: {
+						Range: 10.0f
+					}
+				}
+			}
+			x: 8.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "I'm sorry, I've got nothing"
+			description: [
+				"Using your expertise in \"Compacting\", you've been able to harness Brass Tech with Compact Machinery to create some pretty convoluted machines that don't take up too much space."
+				""
+				"These machines seem to be able to produce some incredible tools and machines, perhaps those are worth looking into?"
+			]
+			dependencies: ["1C914DA40E420AEB"]
+			id: "4C2EF6EC5CCF37FC"
+		}
+	]
+}

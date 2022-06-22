@@ -1,0 +1,19 @@
+{
+	id: "7BE5E955B4AEA22D"
+	group: "1E070728CA22FA34"
+	order_index: 6
+	filename: "to_industry_and_beyond"
+	title: "To Industry, And Beyond!"
+	icon: {
+		id: "industrialforegoing:range_addon10"
+		Count: 1b
+		tag: {
+			TitaniumAugment: {
+				Range: 10.0f
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

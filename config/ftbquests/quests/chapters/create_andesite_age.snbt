@@ -1,0 +1,11 @@
+{
+	id: "0D0CDF08B01B134F"
+	group: "1E070728CA22FA34"
+	order_index: 2
+	filename: "create_andesite_age"
+	title: "Create: Andesite Age"
+	icon: "create:andesite_alloy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

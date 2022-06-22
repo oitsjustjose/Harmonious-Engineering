@@ -1,0 +1,11 @@
+{
+	id: "703D802335C58BFC"
+	group: "1E070728CA22FA34"
+	order_index: 4
+	filename: "create_brass_age"
+	title: "Create: Brass Age"
+	icon: "create:brass_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

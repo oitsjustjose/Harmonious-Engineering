@@ -1,0 +1,11 @@
+{
+	id: "3E7196254140871F"
+	group: "1E070728CA22FA34"
+	order_index: 3
+	filename: "immersive_engineering"
+	title: "Fluxical Evolution"
+	icon: "immersiveengineering:wirecoil_copper"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
