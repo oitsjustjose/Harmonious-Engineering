@@ -34,4 +34,15 @@ onEvent('recipes', event => {
     results: [{item: global.ie('hammer')}],
     loops: 2,
   });
+
+  event.remove({output: global.ie('sawblade')});
+  event.shaped(global.ie('sawblade'), ['PIP', 'I I', 'PIP'], {
+    P: '#forge:plates/iron',
+    I: '#forge:ingots/compressed_iron',
+  });
+  event.replaceInput(
+    {output: global.ie('drillhead_iron')},
+    'minecraft:iron_block',
+    '#forge:storage_blocks/compressed_iron'
+  );
 });

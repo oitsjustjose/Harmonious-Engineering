@@ -11,4 +11,10 @@ onEvent('recipes', event => {
     [{item: 'create:andesite_alloy', count: 3}],
     6.0
   );
+
+  event.remove({output: 'create:mechanical_drill'});
+  event.remove({output: 'create:mechanical_saw'});
+
+  event.smithing('create:mechanical_saw', 'create:andesite_casing', global.ie('sawblade'));
+  event.smithing('create:mechanical_drill', 'create:andesite_casing', global.ie('drillhead_steel'));
 });
