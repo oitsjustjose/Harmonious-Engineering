@@ -69,3 +69,5 @@ config/Mekanism/client.toml
 knownkeys.txt
 config/xaeroworldmap.txt
 config/spark/activity.json
+
+hs_err*
