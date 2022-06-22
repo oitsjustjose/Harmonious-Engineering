@@ -1,27 +1,133 @@
 // Gate Thermal behind IE and Brass Age
 
-const Items = {
-  furnace: {item: 'minecraft:furnace'},
-  furnaceHeater: {item: 'immersiveengineering:furnace_heater'},
-  hopper: {item: 'minecraft:hopper'},
-  lightEngineering: {item: 'immersiveengineering:light_engineering'},
-  heavyEngineering: {item: 'immersiveengineering:heavy_engineering'},
-  machineFrame: {item: 'thermal:machine_frame'},
-  rsEngineering: {item: 'immersiveengineering:rs_engineering'},
-  steelFence: {item: 'immersiveengineering:steel_fence'},
-  steelScaffold: {tag: 'immersiveengineering:scaffoldings/steel'},
-  kilnBrick: {item: 'immersiveengineering:alloybrick'},
-  blastFurnace: {item: 'minecraft:blast_furnace'},
-  ironSheetmetal: {item: 'immersiveengineering:sheetmetal_iron'},
-  conveyor: {item: 'immersiveengineering:conveyor_basic'},
-  piston: {item: 'minecraft:piston'},
+const redstoneServoRecipes = event => {
+  // Hard recipe for these
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {tag: 'forge:plates/steel'},
+    transitionalItem: {item: 'kubejs:incomplete_redstone_servo'},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston'}],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_redstone_servo'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_redstone_servo'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_redstone_servo'}],
+      },
+    ],
+    results: [
+      {item: 'thermal:redstone_servo', chance: 300.0},
+      {tag: 'forge:ingots/steel', chance: 8.0},
+      {item: 'immersiveengineering:wirecoil_redstone', chance: 80.0},
+      {item: 'minecraft:piston'},
+    ],
+    loops: 2,
+  });
+
+  // Easier recipe
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      {tag: 'forge:plates/steel'},
+      {item: 'immersiveengineering:wirecoil_redstone', count: 4},
+    ],
+    result: [{item: 'kubejs:incomplete_redstone_servo'}],
+  });
+
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston', count: 2}],
+    result: [{item: 'thermal:redstone_servo'}],
+  });
 };
 
-onEvent('recipes', event => {
-  const CustomRecipeHandler = global.recipes(event);
-  // Remove cheeky recipes for alloys
-  event.remove({input: 'minecraft:fire_charge', mod: 'thermal'});
+const rfCoilRecipes = event => {
+  // Hard recipe for these
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {tag: 'forge:rods/blaze'},
+    transitionalItem: {item: 'kubejs:incomplete_rf_coil'},
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {tag: 'forge:plates/gold'}],
+        results: [{item: 'kubejs:incomplete_rf_coil'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_rf_coil'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_rf_coil'}],
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          {item: 'kubejs:incomplete_rf_coil'},
+          {item: 'immersiveengineering:wirecoil_redstone'},
+        ],
+        results: [{item: 'kubejs:incomplete_rf_coil'}],
+      },
+    ],
+    results: [
+      {item: 'thermal:rf_coil', chance: 300.0},
+      {tag: 'forge:ingots/gold', chance: 2.0},
+      {item: 'immersiveengineering:wirecoil_redstone', chance: 40.0},
+      {tag: 'forge:plates/gold'},
+    ],
+    loops: 2,
+  });
 
+  // Easier recipe
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [
+      {tag: 'forge:rods/blaze'},
+      {item: 'immersiveengineering:wirecoil_redstone', count: 4},
+    ],
+    result: [{item: 'kubejs:incomplete_rf_coil'}],
+  });
+
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {tag: 'forge:plates/gold'}],
+    result: [{item: 'thermal:rf_coil'}],
+  });
+};
+
+const machineRecipes = event => {
+  const CustomRecipeHandler = global.recipes(event);
+  const Items = {
+    furnace: {item: 'minecraft:furnace'},
+    furnaceHeater: {item: 'immersiveengineering:furnace_heater'},
+    hopper: {item: 'minecraft:hopper'},
+    lightEngineering: {item: 'immersiveengineering:light_engineering'},
+    heavyEngineering: {item: 'immersiveengineering:heavy_engineering'},
+    machineFrame: {item: 'thermal:machine_frame'},
+    rsEngineering: {item: 'immersiveengineering:rs_engineering'},
+    steelFence: {item: 'immersiveengineering:steel_fence'},
+    steelScaffold: {tag: 'immersiveengineering:scaffoldings/steel'},
+    kilnBrick: {item: 'immersiveengineering:alloybrick'},
+    blastFurnace: {item: 'minecraft:blast_furnace'},
+    ironSheetmetal: {item: 'immersiveengineering:sheetmetal_iron'},
+    conveyor: {item: 'immersiveengineering:conveyor_basic'},
+    piston: {item: 'minecraft:piston'},
+  };
   // Pulverizer
   event.remove({output: 'thermal:machine_pulverizer'});
   CustomRecipeHandler.giant(
@@ -248,4 +354,21 @@ onEvent('recipes', event => {
       S: Items.steelScaffold,
     }
   );
+};
+
+const itemRecipes = event => {
+  // Remove cheeky recipes for alloys
+  event.remove({input: 'minecraft:fire_charge', mod: 'thermal'});
+  event.replaceInput({}, 'thermal:saw_blade', global.ie('sawblade'));
+  event.replaceInput({}, 'thermal:drill_head', global.ie('drillhead_steel'));
+
+  event.remove({output: 'thermal:redstone_servo'});
+  event.remove({output: 'thermal:rf_coil'});
+  redstoneServoRecipes(event);
+  rfCoilRecipes(event);
+};
+
+onEvent('recipes', event => {
+  machineRecipes(event);
+  itemRecipes(event);
 });
