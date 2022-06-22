@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "corail_woodcutter:item/portable_woodcutter"
-  }
-}

@@ -1,9 +1,0 @@
-{
-	chapter_groups: [
-		{ id: "769C812A47F269AA", title: "Early Game" }
-		{ id: "1F84D6714EFCC708", title: "Kinetic Tech" }
-		{ id: "2F5E9821869B4E2F", title: "Resonant Tech" }
-		{ id: "3776C8DF39CEE47A", title: "High Tech" }
-		{ id: "2DBE15AF0366896A", title: "The Rest of the Pack" }
-	]
-}
