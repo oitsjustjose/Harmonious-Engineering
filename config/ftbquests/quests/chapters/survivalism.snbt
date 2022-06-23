@@ -128,7 +128,7 @@
 				""
 				"You have a lot to see, so here's a lunchbag to keep you filled for now while you run around and see all the beauty in this world! Anyways, welcome and have fun!"
 			]
-			size: 1.25d
+			size: 1.5d
 			id: "5477EA198509D2E0"
 			tasks: [{
 				id: "4E8CB65A4F3934A3"

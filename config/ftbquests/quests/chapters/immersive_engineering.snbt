@@ -7,5 +7,110 @@
 	icon: "immersiveengineering:wirecoil_copper"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Like a True Engineer"
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["562B62D11786ACFC"]
+			size: 1.5d
+			id: "5F646DB5AE4274E5"
+			tasks: [{
+				id: "29629A1CF8662AFB"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "65EA4195861E41E3"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			title: "Coking"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Using a 3x3x3 block of Coke Bricks, you can activate some sort of giant coking setup to slowly break down coal into a more combustive form."
+				""
+				"This process seems to produce an interesting, oily byproduct called Creosote. This has some neat implications, but first you need to find a better way to store this stuff!"
+			]
+			dependencies: ["5F646DB5AE4274E5"]
+			id: "77E2FCACB9256D69"
+			tasks: [
+				{
+					id: "78593C6092836C88"
+					type: "observation"
+					title: "Form a Coke Oven"
+					icon: "immersiveengineering:coke_oven"
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:coke_oven"
+				}
+				{
+					id: "1AB0239CE5B9FC68"
+					type: "item"
+					item: "thermal:coal_coke"
+				}
+			]
+			rewards: [{
+				id: "5E0CA20725461CD1"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Blasting"
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["77E2FCACB9256D69"]
+			id: "5227E2C7EFD9686F"
+			tasks: [
+				{
+					id: "168EF19B71527300"
+					type: "observation"
+					title: "Form a Blast Furnace"
+					icon: "immersiveengineering:blast_furnace"
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:blast_furnace"
+				}
+				{
+					id: "076FD7196A5BA25F"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+				}
+			]
+		}
+		{
+			title: "Brassification"
+			x: 0.0d
+			y: 6.5d
+			dependencies: ["5227E2C7EFD9686F"]
+			id: "4E9BFC9573DF2929"
+			tasks: [
+				{
+					id: "3DFF15094E13BAC8"
+					type: "observation"
+					title: "Form an Arc Furnace"
+					icon: "immersiveengineering:arc_furnace"
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:arc_furnace"
+				}
+				{
+					id: "5B319C2A3FD87FB4"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+			]
+		}
+	]
 }

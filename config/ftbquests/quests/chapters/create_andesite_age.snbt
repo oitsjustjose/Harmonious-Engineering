@@ -7,5 +7,462 @@
 	icon: "create:andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Creative Tinkering"
+			icon: "create:andesite_alloy"
+			x: 0.0d
+			y: -1.0d
+			shape: "diamond"
+			description: [
+				"In your studies of pneumatic sciences, you notice that there's some possibility to create an even stronger alloy out of the robust Compressed Iron and Andesitic Rock."
+				""
+				"This material looks to be capable of handling torsion and rotation better than anything you've seen thusfar. This has significant potential for some impressive creations!"
+				""
+				"Very strangely, you notice that you've been getting visions here lately, anytime you inspect these rotational items and hold the [w] key..."
+			]
+			dependencies: ["3CFDD30F06BA9031"]
+			size: 1.5d
+			id: "219C4BC25CEF2579"
+			tasks: [{
+				id: "551D082251443229"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "781F67763C6813D3"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			title: "Fluidic Rotation"
+			x: 0.5d
+			y: 1.5d
+			description: [
+				"Taking notes of some of the rivers around you, you begin to notice ways to harness the flow of water to create a decently fast rotational source."
+				""
+				"Unfortunately, this source doesn't seem to produce a lot of torque. Fortunately, you can combine many of these in-line to create more."
+			]
+			dependencies: ["219C4BC25CEF2579"]
+			id: "6290FB308AEC8170"
+			tasks: [{
+				id: "0D2EE4F395605B40"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "3133FCCE39B1B9EA"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 9
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Waker of Winds"
+			icon: "create:white_sail"
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"Using some pretty advanced mechanisms, you find that you can create a significant amount of torque by creating a large structure with a base of a Windmill Bearing."
+				""
+				"Unexpectedly, the type of sail you use has been found to be unimportant as the sailcloth inside the empty sail frame does not generate more speed or torque.. Huh, guess you can save some resources there!"
+			]
+			dependencies: ["219C4BC25CEF2579"]
+			id: "421F10DDB0FB7DE7"
+			tasks: [
+				{
+					id: "014C9997C870C91B"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "5FDFED5B8CFF781F"
+					type: "item"
+					title: "Any Sail"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:sail_frame"
+									Count: 1b
+								}
+								{
+									id: "create:white_sail"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6A73EC395E2FB301"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 5
+				random_bonus: 6
+			}]
+		}
+		{
+			title: "Elbow Grease"
+			x: -0.5d
+			y: 1.5d
+			description: ["When all else fails, you find that your own body can create a pretty small amount of speed and stress. That said, this isn't the worst, especially for quick testing.."]
+			dependencies: ["219C4BC25CEF2579"]
+			id: "1645224A06F94731"
+			tasks: [{
+				id: "566567C03E761D44"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "6AEB627007F4E4DD"
+				type: "item"
+				item: "farmersdelight:hamburger"
+				count: 3
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Thermal Convection"
+			icon: "create:encased_fan"
+			x: -1.5d
+			y: 1.5d
+			description: ["These creative visions you've been having have shown you that you're able to harness the properties of convection to create an insignificant amount of speed \\& torque."]
+			dependencies: ["219C4BC25CEF2579"]
+			id: "006AD64CE7322E6B"
+			tasks: [
+				{
+					id: "40E5400EE6C7188D"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "3F3F2BD4E43899E6"
+					type: "item"
+					title: "Any Lever"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:lever"
+									Count: 1b
+								}
+								{
+									id: "framedblocks:framed_lever"
+									Count: 1b
+								}
+								{
+									id: "create:analog_lever"
+									Count: 1b
+								}
+								{
+									id: "supplementaries:sconce_lever"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "64869CBC11FEC9BE"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Pressing Matters"
+			icon: "create:mechanical_press"
+			x: 0.0d
+			y: 3.75d
+			shape: "hexagon"
+			description: [
+				"As you further your research, you find that the ability to create durable, thin plating out of the clunky ingots you've made thusfar is becoming pretty critical."
+				""
+				"Perhaps this press will be greatly helpful for pressing durable materials to their flatter counterparts!"
+			]
+			dependencies: [
+				"421F10DDB0FB7DE7"
+				"6290FB308AEC8170"
+				"006AD64CE7322E6B"
+				"1645224A06F94731"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.25d
+			id: "04CD02F5D3E4C75E"
+			tasks: [
+				{
+					id: "2E300EA5A0687BA6"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "5A6FB464DB00DA70"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+			rewards: [
+				{
+					id: "710772B1E7674FAE"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "1D6DCF898153C078"
+					type: "item"
+					item: "create:wrench"
+				}
+			]
+		}
+		{
+			title: "Fluid Management"
+			x: -1.5d
+			y: 5.0d
+			description: ["You find that plated copper is reasonably fluid-tight. This might be usefult to you for managing lots of different fluids!"]
+			dependencies: ["04CD02F5D3E4C75E"]
+			id: "499426D28F7004A8"
+			tasks: [
+				{
+					id: "10F2271AE9E07E2A"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "7D91F4BE05BB194E"
+					type: "item"
+					item: "create:smart_fluid_pipe"
+				}
+				{
+					id: "7C2BF63A499D4D4A"
+					type: "item"
+					item: "create:fluid_valve"
+				}
+			]
+			rewards: [{
+				id: "4A456D18769803D5"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 5
+				random_bonus: 14
+			}]
+		}
+		{
+			title: "Lumbermill"
+			x: 0.0d
+			y: 5.5d
+			shape: "hexagon"
+			description: [
+				"You find that you can harness rotation to propel an incredibly sharp saw blade."
+				""
+				"While deadly, this can still be useful between in many ways, from an automated slaughter house to trimming down wooden edges."
+			]
+			dependencies: ["04CD02F5D3E4C75E"]
+			id: "681411CF9577B311"
+			tasks: [{
+				id: "3603C9E446B4E3B3"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "11C1786137F42595"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 17
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Creative Pneumatics"
+			x: 2.5d
+			y: 4.0d
+			description: [
+				"The Air Blower allows you to combine your studies in pneumatics with the similar mechanics you've seen through torque and rotation. You might be able to more efficiently create a fan-like mechanism using pneumatics rather than rotation."
+				""
+				"The Compressor allows you to take the rotational force you've been creating to produce air pressure - it may be worth exploring this in detail.."
+			]
+			dependencies: ["27B85BEE7CE3474D"]
+			id: "5E2D189A12129245"
+			tasks: [{
+				id: "0723319FDCC31995"
+				type: "item"
+				title: "Any Pneumatic Device"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "compressedcreativity:rotational_compressor"
+								Count: 1b
+							}
+							{
+								id: "compressedcreativity:air_blower"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "42D0392AB4CDDE8F"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 7
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "A Big Straw"
+			x: -2.5d
+			y: 4.0d
+			description: [
+				"Through your studies of gantries, you realize that hose can be dangled down into a pool of fluid and used to pull the fluids out of the pool."
+				""
+				"Perhaps something like this is particularly helpful in large pools."
+			]
+			dependencies: ["499426D28F7004A8"]
+			id: "6239FE26C7ED8F0A"
+			tasks: [{
+				id: "7AC230FEE353CBFF"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+			rewards: [{
+				id: "56EC6A24921E3BF0"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Scalable Fluid Storage"
+			x: -2.5d
+			y: 6.0d
+			description: ["With the amount of fluid you've amassed, perhaps some fluid tank would be helpful. Unfortunately you can't just insert directly into it, so you'll need some mechanisms to help get it out too."]
+			dependencies: ["499426D28F7004A8"]
+			id: "31CCD637F2992A5B"
+			tasks: [
+				{
+					id: "79B84AAB42376E82"
+					type: "item"
+					item: "create:fluid_tank"
+				}
+				{
+					id: "08159745256F40BB"
+					type: "item"
+					item: "create:item_drain"
+				}
+				{
+					id: "64819E9C60900906"
+					type: "item"
+					item: "create:spout"
+				}
+			]
+		}
+		{
+			title: "Dead End..?"
+			x: 0.0d
+			y: 7.5d
+			shape: "octagon"
+			description: [
+				"Well, it seems you've hit a bit of a dead end as far as this andesitic alloy goes - you've done what you can with it, but it's hard to progress any further with the technology at hand."
+				""
+				"Maybe some better equipment will make it easier to dive into higher technologies. This hammer doesn't look complete, but maybe some refinement will help it out."
+			]
+			dependencies: ["681411CF9577B311"]
+			size: 1.5d
+			id: "577C1F2636037346"
+			tasks: [{
+				id: "24F87F5B2013E48B"
+				type: "item"
+				item: "kubejs:crude_hammer"
+			}]
+			rewards: [{
+				id: "4C73875ED865FAA5"
+				type: "item"
+				item: "create:experience_nugget"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Factorycraft"
+			x: 1.5d
+			y: 5.0d
+			description: ["It seems as though rotation can also be used to power conveyor belts, and chutes / funnels / tunnels can help route, insert and extract items in and out of belts, chests, and more."]
+			dependencies: ["04CD02F5D3E4C75E"]
+			id: "27B85BEE7CE3474D"
+			tasks: [
+				{
+					id: "6B268656DD0F4F61"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "2096A4F5D2CB0059"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+				{
+					id: "14F1FE329F8CA331"
+					type: "item"
+					item: "create:andesite_tunnel"
+				}
+				{
+					id: "0313713A4F9FA42D"
+					type: "item"
+					item: "create:chute"
+				}
+			]
+			rewards: [{
+				id: "01DC957A539BB17E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+				random_bonus: 6
+			}]
+		}
+		{
+			title: "KitchenAid, Eat Your Heart Out"
+			x: 2.5d
+			y: 6.0d
+			description: ["Using rotational energy, you've found a way to reproduce a stand mixer but in large scale. This mixer seems to really enjoy some extra heat, so perhaps you can harness properties of the Nether's Blaze to reach these temperatures?"]
+			dependencies: ["27B85BEE7CE3474D"]
+			id: "374CD208978EA56D"
+			tasks: [
+				{
+					id: "1ECB53F2AAD87725"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "63D513CA391DA2BB"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "7C7DB3CFE342EE36"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+			rewards: [{
+				id: "690EDD7766B1BC26"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 12
+				random_bonus: 14
+			}]
+		}
+	]
 }

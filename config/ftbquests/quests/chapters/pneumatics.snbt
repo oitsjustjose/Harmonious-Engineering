@@ -18,7 +18,7 @@
 			title: "Ferrous Thoughts"
 			icon: "create:crushed_iron_ore"
 			x: 0.0d
-			y: -2.5d
+			y: -1.875d
 			shape: "diamond"
 			description: [
 				"After hitting the mines and spending hours at the forge waiting for your raw ores to smelt, you use this time to think about ways to improve your current technological innovations (or lack thereof)."
@@ -28,7 +28,7 @@
 				"Maybe some TNT will do the job.."
 			]
 			dependencies: ["14E668FC6B54906E"]
-			size: 1.25d
+			size: 1.5d
 			id: "0995DFA3EBC4BDB9"
 			tasks: [
 				{
@@ -53,7 +53,7 @@
 		{
 			title: "Successful Compression"
 			x: 0.0d
-			y: -0.5d
+			y: 0.0d
 			shape: "hexagon"
 			description: ["Huh, that worked! It might be worth exploring how many iron ingots I can convert with a single explosion, and what this incredibly durable material can be used for."]
 			dependencies: ["0995DFA3EBC4BDB9"]
@@ -78,15 +78,13 @@
 		{
 			title: "Impressive Compression"
 			icon: "pneumaticcraft:pressure_chamber_wall"
-			x: 4.0d
-			y: -0.5d
+			x: 0.0d
+			y: 3.75d
 			shape: "octagon"
 			description: [
 				"You notice that the rate at which air pressure is coming through this compression is quite incredible. Maybe you can reproduce that same explosive energy with this?"
 				""
 				"The book seems to have a lot of useful info for building this monolithic structure."
-				""
-				""
 			]
 			dependencies: ["7DFD575B7AB66CA9"]
 			size: 1.5d
@@ -141,9 +139,10 @@
 					Icon: "pneumaticcraft:textures/item/upgrades/security.png"
 				}
 			}
-			x: 2.0d
-			y: -0.5d
+			x: 0.0d
+			y: 1.5d
 			shape: "hexagon"
+			subtitle: "I'm Sorry"
 			description: [
 				"Since this Compressed Iron is so incredibly durable, it seems to be leak-proof when applied in crafting recipes. Maybe it can be used to create a positive air-pressure system?"
 				""
@@ -169,6 +168,410 @@
 				item: "create:experience_nugget"
 				count: 4
 				random_bonus: 4
+			}]
+		}
+		{
+			title: "Refined Dino-Goop"
+			icon: "pneumaticcraft:refinery"
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"In your adventuring, you've been noticing these black sludgy puddles of some mysterious fluid. "
+				""
+				"Perhaps refining this fluid might yield some form of malleable and versatile material?"
+			]
+			dependencies: ["7DFD575B7AB66CA9"]
+			id: "2E9458D3C90B51FA"
+			tasks: [
+				{
+					id: "103AA060B3B081B8"
+					type: "item"
+					item: "pneumaticcraft:oil_bucket"
+				}
+				{
+					id: "3F64FF7C5BEEBAD1"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 2L
+				}
+				{
+					id: "34DCDC678775A9F5"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+			]
+			rewards: [{
+				id: "21B531D044B5B112"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 11
+			}]
+		}
+		{
+			title: "Mechanical Avians"
+			x: 6.0d
+			y: -0.5d
+			shape: "gear"
+			description: ["These flying machines seem to be easily programmable using some puzzle-piece mechanism. Maybe that age-old book I got a bit ago has some helpful advice for getting this drone to do my bidding!"]
+			hide_dependency_lines: true
+			dependencies: ["611A75C2035E6810"]
+			size: 1.5d
+			id: "354304C086656EBD"
+			tasks: [{
+				id: "29FEC29817A4BF7A"
+				type: "item"
+				item: "pneumaticcraft:drone"
+			}]
+			rewards: [{
+				id: "116B72CE67ED195E"
+				type: "item"
+				item: "pneumaticcraft:programming_puzzle"
+				count: 4
+				random_bonus: 12
+			}]
+		}
+		{
+			title: "Pressurized Gear"
+			x: 3.0d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"Wow, looks like the Charging Station and all these PCBs can be used to program a really neat and modular set of armor."
+				""
+				"Perhaps this set is good enough to last me for a bit - I'm not sure if there's much else for armor as of yet anyways!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["611A75C2035E6810"]
+			size: 1.5d
+			id: "18C898BC1BBFAF64"
+			tasks: [
+				{
+					id: "0EF1680D95F51ECA"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "36E8AEF928D9C110"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A84EC769C25EEF0"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77BD0BA6CD74D5EB"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3FBE639471B166AD"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "Aeration Station"
+			x: 1.5d
+			y: 3.5d
+			description: ["By harnessing this pneumatic pressure you've become so proficient in creating, you might be able to fill other items' pressurized canisters with some of this to use for later."]
+			dependencies: ["7DFD575B7AB66CA9"]
+			id: "70B030689AC57CFC"
+			tasks: [{
+				id: "5D49080973E5A141"
+				type: "item"
+				item: "pneumaticcraft:charging_station"
+			}]
+			rewards: [{
+				id: "38FF5DBFEE56E24B"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 7
+				random_bonus: 9
+			}]
+		}
+		{
+			title: "Thermopneumatic Processing"
+			icon: "pneumaticcraft:thermopneumatic_processing_plant"
+			x: 3.0d
+			y: 1.5d
+			description: ["Looks like refining that oil yielded you quite a bit! This LPG looks to be useful under heat and pressure, maybe it can be further processed with an additive or two?"]
+			dependencies: ["2E9458D3C90B51FA"]
+			id: "7923834775CE0204"
+			tasks: [
+				{
+					id: "000B2CB13A38F1FE"
+					type: "item"
+					item: "pneumaticcraft:lpg_bucket"
+				}
+				{
+					id: "32A28720F1A29885"
+					type: "item"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+				}
+			]
+			rewards: [{
+				id: "583E8858F1C2F329"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 3
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Solidified Dino-Goop"
+			icon: "pneumaticcraft:plastic"
+			x: 4.5d
+			y: 1.5d
+			description: [
+				"Looks like this bucket of plastic can be cooled to a solid form, and that can be done more easily by making use of a heat frame to dissipate heat."
+				""
+				"This material looks incredibly versatile - some of these uses also include materials beyond your abilities now, but it looks as though this process will continue to be useful for a while."
+			]
+			dependencies: ["7923834775CE0204"]
+			id: "35609EF505EDF5CF"
+			tasks: [
+				{
+					id: "1F9F08DFAF97ACBB"
+					type: "item"
+					item: "pneumaticcraft:heat_frame"
+				}
+				{
+					id: "7691C1F721B2C81B"
+					type: "item"
+					item: "pneumaticcraft:plastic_bucket"
+				}
+				{
+					id: "081F8AFA7351EC2C"
+					type: "item"
+					item: "pneumaticcraft:plastic"
+				}
+			]
+			rewards: [{
+				id: "3A1495BEE527A8B3"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 11
+				random_bonus: 13
+			}]
+		}
+		{
+			title: "Printing Circuits"
+			icon: "pneumaticcraft:uv_light_box"
+			x: 6.0d
+			y: 2.5d
+			description: [
+				"Plastic seems to contain enough silicon to be able to press it into a circuit board. This is nice and all, but the board is blank and needs to be finished."
+				""
+				"Looks like some refining is due - maybe some time in a UV Lightbox will help."
+			]
+			dependencies: [
+				"35609EF505EDF5CF"
+				"74AE866805379316"
+			]
+			id: "4859BA79660BC50F"
+			tasks: [
+				{
+					id: "476668E9E4C53128"
+					type: "item"
+					item: "pneumaticcraft:empty_pcb"
+				}
+				{
+					id: "32D26C860875101E"
+					type: "item"
+					item: "pneumaticcraft:uv_light_box"
+				}
+			]
+			rewards: [{
+				id: "12FB34E0E1A66F76"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Etching Circuits"
+			icon: "pneumaticcraft:etching_tank"
+			x: 7.5d
+			y: 2.5d
+			description: [
+				"Well that's weird - I guess all the malice from these poor monsters is actually quite.. acidic?"
+				""
+				"This looks to be useful for etching traces into a blank circuit board, so let's keep that around (and maybe see about automating this process!)."
+			]
+			dependencies: ["4859BA79660BC50F"]
+			id: "4109AB48D2BAD8A0"
+			tasks: [
+				{
+					id: "7DFD60715C269AAF"
+					type: "item"
+					item: "pneumaticcraft:etching_tank"
+				}
+				{
+					id: "0BCDD3D763A0DFBF"
+					type: "item"
+					item: "pneumaticcraft:etching_acid_bucket"
+				}
+			]
+			rewards: [{
+				id: "7D24965C20C87418"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			description: [
+				"Looks like all that hard work paid off - not without a few broken eggs though. No matter, those failed PCBs can still be salvaged!"
+				""
+				"Now that you've managed to create a board capable of computational digital logic, you might be able to dive into some richer technology!"
+			]
+			dependencies: ["4109AB48D2BAD8A0"]
+			id: "611A75C2035E6810"
+			tasks: [{
+				id: "133516FF3087063E"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+			rewards: [{
+				id: "5E37D9A0F3271728"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: [
+				"This tablet looks familiar... anyways - the UI is really intuitive, so you should be able to fill that itch for shopping pretty quickly!"
+				""
+				"One quick tip that may be unclear - when selecting an item to add to basket, *LEFT* click it first, then begin clicking to add/remove from basket."
+			]
+			dependencies: ["70B030689AC57CFC"]
+			id: "7B7D0E3AD3395CC9"
+			tasks: [{
+				id: "466DEB342B435DF5"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+			rewards: [{
+				id: "375511ADA9D3C60C"
+				type: "item"
+				item: "create:experience_nugget"
+				random_bonus: 5
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			subtitle: "Wow! Thanks Geoff Blazos!"
+			description: [
+				"Thanks to the power of .. mega-corporations I guess? .. you were able to finally get that blueprint you've been needing."
+				""
+				"Good thing too, this looks complicated."
+			]
+			dependencies: ["7B7D0E3AD3395CC9"]
+			id: "74AE866805379316"
+			tasks: [{
+				id: "3BDF8E33240A3227"
+				type: "item"
+				item: "pneumaticcraft:pcb_blueprint"
+			}]
+			rewards: [{
+				id: "0D12C20586D008F6"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 9
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Automated Assembly"
+			x: 9.0d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"With some special instrumentation, those pesky PCBs can be made with higher precision and a lower fail-over rate if you applied some logistical and computational measures to this issue."
+				""
+				"This suite of mechanical arms should be pretty helpful, though you will likely need to show them *what* to do using some sort of program.."
+			]
+			hide_dependency_lines: true
+			dependencies: ["611A75C2035E6810"]
+			size: 1.5d
+			id: "48BFB63919C23F6D"
+			tasks: [
+				{
+					id: "4D3CC8689FC8EE09"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "06AE975BA8651C2B"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+				{
+					id: "70286C6F56BFF4A3"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "6BA7B4637E7C58AD"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "049DFFF9429CCBC9"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+				{
+					id: "7E40BFD416CF514C"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+			]
+			rewards: [{
+				id: "3EB82AC65B573001"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+				random_bonus: 16
 			}]
 		}
 	]
