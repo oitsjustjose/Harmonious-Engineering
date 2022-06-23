@@ -30,22 +30,6 @@
 				observe_type: 1
 				to_observe: "minecraft:logs"
 			}]
-			rewards: [
-				{
-					id: "52C466F2DA552769"
-					type: "command"
-					auto: "invisible"
-					command: "/say Hi @p, we are running some Chunk Pregeneration for you so your exploration process is more enjoyable!"
-					player_command: false
-				}
-				{
-					id: "24B84EBA5691ECD3"
-					type: "command"
-					auto: "invisible"
-					command: "/chunky start minecraft:overworld square 0 0 1024"
-					player_command: false
-				}
-			]
 		}
 		{
 			title: "Pneumatics"

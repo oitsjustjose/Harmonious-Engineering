@@ -13,5 +13,163 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Ferrous Thoughts"
+			icon: "create:crushed_iron_ore"
+			x: 0.0d
+			y: -2.5d
+			shape: "diamond"
+			description: [
+				"After hitting the mines and spending hours at the forge waiting for your raw ores to smelt, you use this time to think about ways to improve your current technological innovations (or lack thereof)."
+				""
+				"One thought crossed your mind - maybe there's some way to harden iron, almost as if like steel, but using a shock of energy instead of intense heat?"
+				""
+				"Maybe some TNT will do the job.."
+			]
+			dependencies: ["14E668FC6B54906E"]
+			size: 1.25d
+			id: "0995DFA3EBC4BDB9"
+			tasks: [
+				{
+					id: "000B3D840BEBCF90"
+					type: "item"
+					item: "minecraft:tnt"
+				}
+				{
+					id: "77873F198AA598D7"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+			]
+			rewards: [{
+				id: "65E937E99D4A31CD"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 3
+				random_bonus: 6
+			}]
+		}
+		{
+			title: "Successful Compression"
+			x: 0.0d
+			y: -0.5d
+			shape: "hexagon"
+			description: ["Huh, that worked! It might be worth exploring how many iron ingots I can convert with a single explosion, and what this incredibly durable material can be used for."]
+			dependencies: ["0995DFA3EBC4BDB9"]
+			id: "1180C4A43309EC2B"
+			tasks: [{
+				id: "0BDFCF96E48E3F88"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+			rewards: [{
+				id: "4323DFF9E572A95E"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+			}]
+		}
+		{
+			title: "Impressive Compression"
+			icon: "pneumaticcraft:pressure_chamber_wall"
+			x: 4.0d
+			y: -0.5d
+			shape: "octagon"
+			description: [
+				"You notice that the rate at which air pressure is coming through this compression is quite incredible. Maybe you can reproduce that same explosive energy with this?"
+				""
+				"The book seems to have a lot of useful info for building this monolithic structure."
+				""
+				""
+			]
+			dependencies: ["7DFD575B7AB66CA9"]
+			size: 1.5d
+			id: "1C02FDF771A7D920"
+			tasks: [
+				{
+					id: "5F8A68E3F5C36F6E"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 22L
+				}
+				{
+					id: "1BF6B0E5F61994A2"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_glass"
+				}
+				{
+					id: "1C1F0D4DE7E564B9"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+				{
+					id: "2EC509D0F017B4C4"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "10EDE6208427DBE2"
+					type: "command"
+					auto: "invisible"
+					command: "/open-patchouli-book @p pneumaticcraft:book pneumaticcraft:manufacturing/pressure_chamber 2"
+					player_command: false
+				}
+				{
+					id: "35FF457D23719417"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 7
+					random_bonus: 9
+				}
+			]
+		}
+		{
+			title: "Under Pressure"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "pneumaticcraft:textures/item/upgrades/security.png"
+				}
+			}
+			x: 2.0d
+			y: -0.5d
+			shape: "hexagon"
+			description: [
+				"Since this Compressed Iron is so incredibly durable, it seems to be leak-proof when applied in crafting recipes. Maybe it can be used to create a positive air-pressure system?"
+				""
+				"Feeling lost? That PNCR Manual handed down to you seems to be a wealth of useful knowledge.."
+			]
+			dependencies: ["1180C4A43309EC2B"]
+			id: "7DFD575B7AB66CA9"
+			tasks: [
+				{
+					id: "7A48FD608631D659"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
+				}
+				{
+					id: "37629C06FD8A9D2F"
+					type: "item"
+					item: "pneumaticcraft:air_compressor"
+				}
+			]
+			rewards: [{
+				id: "4F53791F79E74A15"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+	]
 }
