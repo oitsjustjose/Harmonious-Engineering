@@ -38,7 +38,6 @@ onEvent('jei.hide.items', event => {
     global.ie('ingot_lead'),
     global.ie('ingot_nickel'),
     global.ie('ingot_silver'),
-    global.ie('ingot_steel'),
     global.ie('ingot_uranium'),
     global.ie('nugget_constantan'),
     global.ie('nugget_electrum'),
