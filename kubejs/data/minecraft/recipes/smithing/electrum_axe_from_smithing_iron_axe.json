@@ -1,0 +1,1 @@
+{"type": "minecraft:smithing", "base": {"item": "minecraft:iron_axe"}, "addition": {"tag": "forge:ingots/electrum"}, "result": {"item": "tools_complement:electrum_axe"}}

@@ -1,0 +1,1 @@
+{"type": "minecraft:smithing", "base": {"item": "minecraft:iron_hoe"}, "addition": {"tag": "forge:ingots/gold"}, "result": {"item": "minecraft:golden_hoe"}}

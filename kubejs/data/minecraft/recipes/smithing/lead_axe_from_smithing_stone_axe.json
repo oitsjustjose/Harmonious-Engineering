@@ -1,0 +1,1 @@
+{"type": "minecraft:smithing", "base": {"item": "minecraft:stone_axe"}, "addition": {"tag": "forge:ingots/lead"}, "result": {"item": "tools_complement:lead_axe"}}

@@ -1,0 +1,1 @@
+{"type": "minecraft:smithing", "base": {"item": "minecraft:iron_helmet"}, "addition": {"tag": "forge:ingots/constantan"}, "result": {"item": "tools_complement:constantan_helmet"}}

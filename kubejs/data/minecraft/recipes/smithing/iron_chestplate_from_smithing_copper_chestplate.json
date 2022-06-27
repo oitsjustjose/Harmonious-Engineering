@@ -1,0 +1,1 @@
+{"type": "minecraft:smithing", "base": {"item": "tools_complement:copper_chestplate"}, "addition": {"tag": "forge:ingots/iron"}, "result": {"item": "minecraft:iron_chestplate"}}
