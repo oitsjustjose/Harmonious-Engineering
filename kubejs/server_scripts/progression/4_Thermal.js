@@ -22,17 +22,15 @@ const redstoneServoRecipes = event => {
       },
       {
         type: 'create:deploying',
-        ingredients: [
-          {item: 'kubejs:incomplete_redstone_servo'},
-          {item: 'immersiveengineering:wirecoil_redstone'},
-        ],
+        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'create:electron_tube'}],
         results: [{item: 'kubejs:incomplete_redstone_servo'}],
       },
     ],
     results: [
       {item: 'thermal:redstone_servo', chance: 300.0},
       {tag: 'forge:ingots/steel', chance: 8.0},
-      {item: 'immersiveengineering:wirecoil_redstone', chance: 80.0},
+      {item: 'immersiveengineering:wirecoil_redstone', chance: 40.0},
+      {item: 'create:electron_tube', chance: 40.0},
       {item: 'minecraft:piston'},
     ],
     loops: 2,
@@ -77,17 +75,15 @@ const rfCoilRecipes = event => {
       },
       {
         type: 'create:deploying',
-        ingredients: [
-          {item: 'kubejs:incomplete_rf_coil'},
-          {item: 'immersiveengineering:wirecoil_redstone'},
-        ],
+        ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {item: 'create:electron_tube'}],
         results: [{item: 'kubejs:incomplete_rf_coil'}],
       },
     ],
     results: [
       {item: 'thermal:rf_coil', chance: 300.0},
       {tag: 'forge:ingots/gold', chance: 2.0},
-      {item: 'immersiveengineering:wirecoil_redstone', chance: 40.0},
+      {item: 'immersiveengineering:wirecoil_redstone', chance: 20.0},
+      {item: 'create:electron_tube', chance: 20.0},
       {tag: 'forge:plates/gold'},
     ],
     loops: 2,
