@@ -15,9 +15,25 @@ const unifyMaterials = event => {
   event.add('forge:hides', 'minecraft:rabbit_hide');
 };
 
+const clearTags = event => {
+  [
+    'createaddition:brass_rod',
+    'createaddition:copper_rod',
+    'createaddition:copper_spool',
+    'createaddition:copper_wire',
+    'createaddition:diamond_grit',
+    'createaddition:gold_rod',
+    'createaddition:gold_spool',
+    'createaddition:gold_wire',
+    'createaddition:iron_rod',
+    'createaddition:iron_wire',
+    'createaddition:zinc_sheet',
+  ].forEach(x => event.removeAllTagsFrom(x));
+};
+
 onEvent('item.tags', event => {
   unifyMaterials(event);
-
+  clearTags(event);
   event.add('thermal:crafting/dies', global.ie('mold_wire'));
   event.add('thermal:crafting/dies', global.ie('mold_bullet_casing'));
 });
