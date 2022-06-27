@@ -7,5 +7,568 @@
 	icon: "thermal:machine_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "Thermal Frameworks"
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			description: [
+				"You've made it incredibly far in your research! Well done - perhaps you're looking for a way to consolidate and clean up around the base!"
+				""
+				"As such, take your time working through this chapter of your research as a lot of these components may be difficult to create, so don't be too hard on yourself!"
+			]
+			dependencies: ["2678E4C051AD94DD"]
+			size: 1.25d
+			id: "451E8202B0FF4FDD"
+			tasks: [{
+				id: "18373CB074CA3B2F"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+			rewards: [{
+				id: "4F7F9F3A338D1498"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+			}]
+		}
+		{
+			title: "Miniaturized Crushing"
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "41020ABCC20659D6"
+			tasks: [{
+				id: "21ED50FCF1086EE7"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "102F9F784BA0D389"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Smelting"
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "7AB599D4DB092194"
+			tasks: [{
+				id: "320131C0F8A53D91"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+			rewards: [{
+				id: "790018A026727D9E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Sawmill"
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "313F7CC5F7592A85"
+			tasks: [{
+				id: "076EE15108D41780"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+			rewards: [{
+				id: "664670FFEF24E62E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Alloying"
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "20E8E8B5A3664F1B"
+			tasks: [{
+				id: "18E67A130BB1B41F"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "69DEE9688601EB1F"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Cloche"
+			x: 0.5d
+			y: 4.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "2257254B85034896"
+			tasks: [{
+				id: "1CAAD67B7BCC3319"
+				type: "item"
+				item: "thermal:machine_insolator"
+			}]
+			rewards: [{
+				id: "59D5E66E980D51BF"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "3244E10FCB6D6D98"
+			tasks: [{
+				id: "7C8867F71D048005"
+				type: "item"
+				item: "thermal:machine_centrifuge"
+			}]
+			rewards: [{
+				id: "0C796BA15E3B77B5"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Pressing"
+			x: -4.5d
+			y: 0.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "1BB99687EECA2753"
+			tasks: [{
+				id: "5598B5167FB85C1B"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+			rewards: [{
+				id: "0634DBDD37AD827E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Melting"
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "77A515079D0DB9B5"
+			tasks: [{
+				id: "070DA2A0310C2285"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "1BD2C5C09DBDCB78"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Chilling"
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "55F1E9DA9F0EAEDF"
+			tasks: [{
+				id: "42D1F952E62F8F45"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+			rewards: [{
+				id: "1F64B57AF92E9CFA"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Refining"
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "673BF607197A78E9"
+			tasks: [{
+				id: "54BE214058CC7AA8"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+			rewards: [{
+				id: "1CFE9AC29E4A8B32"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Brewing"
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "382825F9DEF7D1A6"
+			tasks: [{
+				id: "3664C01562ADDDC1"
+				type: "item"
+				item: "thermal:machine_brewer"
+			}]
+			rewards: [{
+				id: "09FF038FF691D955"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Coking"
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "3FBB6958D8188938"
+			tasks: [{
+				id: "4F7B637B21702068"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+			rewards: [{
+				id: "6B3D05726051D017"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Miniaturized Bottling"
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "3C62E707411BBF27"
+			tasks: [{
+				id: "714CD6012C49081E"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+			rewards: [{
+				id: "27665D3DCC1D7EBF"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Auto-Crafting"
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "62985371434FBBA0"
+			tasks: [{
+				id: "112BDB896A34FC54"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+			rewards: [{
+				id: "0865BEC6205F05E7"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			description: [
+				"You've managed to find some sort augmentable bore that can replace your shovel and pickaxe and consumes Flux instead of durability / experience."
+				""
+				"It looks as if you can augment this device's integral components and other capabilities using a type of tinkering workbench?"
+			]
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "62A8B1C2D2B0ECA2"
+			tasks: [{
+				id: "7766013A6393D60C"
+				type: "item"
+				item: {
+					id: "thermal:flux_drill"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7A6211324A82009C"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: [
+				"Similar to the Flux Bore, you've found that you can also afix a Sawblade to the end end of a fluxed coil receptacle to make an electrically-powered axe replacement."
+				""
+				"It looks as if you can augment this device's integral components and other capabilities using a type of tinkering workbench?"
+			]
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "03D2BA169639DCB4"
+			tasks: [{
+				id: "56BC201EDD4CA979"
+				type: "item"
+				item: {
+					id: "thermal:flux_saw"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "52830260ECF842F8"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "3600AA7C9B7D324A"
+			tasks: [{
+				id: "65FBF11671384D7F"
+				type: "item"
+				item: {
+					id: "thermal:flux_capacitor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "73CDEF882FC02F98"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["451E8202B0FF4FDD"]
+			id: "563101EE395EB7B7"
+			tasks: [{
+				id: "0541AA72C8D6B331"
+				type: "item"
+				item: {
+					id: "thermal:flux_magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "770670041187C9E0"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Augmenting"
+			x: 0.625d
+			y: -4.375d
+			shape: "octagon"
+			description: [
+				"You're beginning to get a grasp on the mechanisms you've started learning about in this chapter, but you're finding them to be a bit lackluster in speed, throughput and performance."
+				""
+				"Integral Components can be installed into any device to improve base statistics of that device (such as mining speed, processing time, etc.)."
+				""
+				"Augments can be installed to modify certain aspects such as Energy Throughput, Working Radius, etc."
+			]
+			dependencies: ["451E8202B0FF4FDD"]
+			size: 1.25d
+			id: "6CABA96D40F5EA37"
+			tasks: [
+				{
+					id: "3A77CE7C33CB766B"
+					type: "item"
+					title: "Any Integral Component"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "thermal:upgrade_augment_1"
+									Count: 1b
+								}
+								{
+									id: "thermal:upgrade_augment_2"
+									Count: 1b
+								}
+								{
+									id: "thermal:upgrade_augment_3"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "21BF7840214D0F44"
+					type: "item"
+					title: "Any Augment"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "thermal:xp_storage_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:rf_coil_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:rf_coil_storage_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:rf_coil_xfer_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:fluid_tank_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:item_filter_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:machine_speed_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:machine_efficiency_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:machine_output_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:machine_catalyst_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:machine_cycle_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:machine_null_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:dynamo_output_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:dynamo_fuel_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:area_radius_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:potion_amplifier_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:potion_duration_augment"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "135CDA621E2B4963"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+		{
+			title: "Dynamo"
+			x: -0.625d
+			y: -4.375d
+			shape: "octagon"
+			description: ["As you continue moving from torque to flux, it may be a bit helpful to improve this using a combination of dynamo, augments, \\& integral components. These dynamo come in many different shapes and sizes and take different types of fuel, so you may need to further your research before making a choice!"]
+			dependencies: ["451E8202B0FF4FDD"]
+			size: 1.25d
+			id: "3309A2A5278B652B"
+			tasks: [{
+				id: "604EC344A326201D"
+				type: "item"
+				title: "Any Dynamo"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:dynamo_stirling"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_compression"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_magmatic"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_numismatic"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_lapidary"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_disenchantment"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_gourmand"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "66AE64160E43B52C"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+	]
 }

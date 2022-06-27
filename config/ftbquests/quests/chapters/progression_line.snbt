@@ -130,74 +130,18 @@
 				"444D4F959AE3FA7E"
 			]
 			id: "1C914DA40E420AEB"
-			tasks: [{
-				id: "048E6E3799BF0DD4"
-				type: "item"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "thermal:machine_smelter"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_insolator"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_centrifuge"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_pyrolyzer"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_brewer"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_crafter"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_refinery"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_pulverizer"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_sawmill"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_furnace"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_press"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_crucible"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_bottler"
-								Count: 1b
-							}
-							{
-								id: "thermal:machine_chiller"
-								Count: 1b
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "03DF1A6C74812B7A"
+					type: "item"
+					item: "thermal:machine_frame"
 				}
-			}]
+				{
+					id: "068BA5B0FEFA0E90"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+			]
 		}
 		{
 			title: "To Industry, and Beyond!"
@@ -221,6 +165,11 @@
 			]
 			dependencies: ["1C914DA40E420AEB"]
 			id: "4C2EF6EC5CCF37FC"
+			tasks: [{
+				id: "580F342C72F0D5B6"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
 		}
 	]
 }

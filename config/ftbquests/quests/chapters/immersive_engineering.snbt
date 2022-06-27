@@ -35,8 +35,10 @@
 		}
 		{
 			title: "Coking"
+			icon: "immersiveengineering:coke_oven"
 			x: 0.0d
-			y: 2.0d
+			y: 1.5d
+			shape: "hexagon"
 			description: [
 				"Using a 3x3x3 block of Coke Bricks, you can activate some sort of giant coking setup to slowly break down coal into a more combustive form."
 				""
@@ -64,12 +66,17 @@
 				id: "5E0CA20725461CD1"
 				type: "item"
 				item: "create:experience_nugget"
+				count: 11
+				random_bonus: 5
 			}]
 		}
 		{
 			title: "Blasting"
+			icon: "immersiveengineering:blast_furnace"
 			x: 0.0d
-			y: 4.0d
+			y: 3.0d
+			shape: "hexagon"
+			description: ["You find that the high amounts of heat that Coked Coal produces can be used to infuse Iron with Carbon to produce Steel."]
 			dependencies: ["77E2FCACB9256D69"]
 			id: "5227E2C7EFD9686F"
 			tasks: [
@@ -88,12 +95,22 @@
 					item: "immersiveengineering:ingot_steel"
 				}
 			]
+			rewards: [{
+				id: "23793ECCA794C661"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 13
+				random_bonus: 17
+			}]
 		}
 		{
 			title: "Brassification"
-			x: 0.0d
-			y: 6.5d
-			dependencies: ["5227E2C7EFD9686F"]
+			icon: "immersiveengineering:arc_furnace"
+			x: 2.0d
+			y: 5.5d
+			shape: "octagon"
+			dependencies: ["0F1F21514ED30727"]
+			size: 1.25d
 			id: "4E9BFC9573DF2929"
 			tasks: [
 				{
@@ -111,6 +128,447 @@
 					item: "create:brass_ingot"
 				}
 			]
+			rewards: [{
+				id: "25B3A0016BE277D3"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+		{
+			title: "Low Voltage"
+			icon: "immersiveengineering:wirecoil_copper"
+			x: 0.0d
+			y: 4.5d
+			description: ["By utilizing a dynamo, you've found a way to hrness rotational energy through charging a copper coil. Unfortunately your existing rotational energy doesn't seem to be durable enouh to handle the amount of torque needed."]
+			dependencies: ["5227E2C7EFD9686F"]
+			id: "686B8A3E779BCF3D"
+			tasks: [
+				{
+					id: "67D633ADE1BCA15D"
+					type: "item"
+					title: "Water or Wind Mill"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:windmill"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:watermill"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "0715031DEB363913"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+				{
+					id: "3A6F076F754F7764"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "6380E333BE155BCB"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "1A0EBA6A7931CD70"
+					type: "item"
+					title: "Any LV Wire Coil"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:wirecoil_copper"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:wirecoil_copper_ins"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7E22F5F58363988D"
+					type: "item"
+					item: "immersiveengineering:capacitor_lv"
+				}
+			]
+			rewards: [{
+				id: "2BDC4B69C4825D18"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Ore Processing"
+			icon: "immersiveengineering:crusher"
+			x: -2.0d
+			y: 5.5d
+			shape: "octagon"
+			description: [
+				"You find that various engineering blocks in a specific configuration have allowed you to form a structure capable of crushing ores."
+				""
+				"The ability to crush ores has proven to be an incredibly useful way to sift out impurities from the Raw Ore and more efficiently process it, finally yielding a 1:1 ratio of Raw Ores to Ingots."
+				""
+				"This large machine seems to take in items from the top in the large hopper, and spits them out in the front unless there's some sort of storage in that place."
+			]
+			dependencies: ["5C9EC459800B1D00"]
+			size: 1.25d
+			id: "76695500DD40840A"
+			tasks: [
+				{
+					id: "6D17E2B840CA5FC8"
+					type: "observation"
+					title: "Create a Crusher"
+					icon: "immersiveengineering:crusher"
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:crusher"
+				}
+				{
+					id: "38C56AB28477EF93"
+					type: "item"
+					title: "Any Dust"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:crushed_zinc_ore"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:dust_aluminum"
+									Count: 1b
+								}
+								{
+									id: "thermal:iron_dust"
+									Count: 1b
+								}
+								{
+									id: "thermal:gold_dust"
+									Count: 1b
+								}
+								{
+									id: "thermal:copper_dust"
+									Count: 1b
+								}
+								{
+									id: "thermal:tin_dust"
+									Count: 1b
+								}
+								{
+									id: "thermal:lead_dust"
+									Count: 1b
+								}
+								{
+									id: "thermal:silver_dust"
+									Count: 1b
+								}
+								{
+									id: "thermal:nickel_dust"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5EC72997E66760D6"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+		{
+			title: "Medium Voltage"
+			icon: "immersiveengineering:wirecoil_electrum"
+			x: -2.0d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"You find that by applying your studies in physics, accumulators and transformers, you're able to step up the voltage of your power production and throughput to a Medium-tier, which might be enough to power some interesting machines."
+				""
+				"You may also find some other forms of generators in the hand-me-down manual you received previously, which may produce enough flux to validate needing Medium Voltage."
+			]
+			dependencies: ["5227E2C7EFD9686F"]
+			id: "5C9EC459800B1D00"
+			tasks: [
+				{
+					id: "324F538999A8F1C8"
+					type: "item"
+					title: "Any MV Wire Coil"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:wirecoil_electrum"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:wirecoil_electrum_ins"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1BD0A23B02994BB0"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "3BEF42748CC7ADDD"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+				{
+					id: "5EF10AAC18BB57CB"
+					type: "item"
+					item: "immersiveengineering:capacitor_mv"
+				}
+			]
+			rewards: [{
+				id: "7A831FB8B0D23C99"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "High Voltage"
+			icon: "immersiveengineering:wirecoil_steel"
+			x: 2.0d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"Finally, enough research with Steel has taught you that it can in fact be used for high-throughput wiring, assuming that it's combined with Aluminum in some of its uses."
+				""
+				"You may need to revisit the concept of combusion to create greater amounts of energy - perhaps some sort of engine can be fashioned out of heavy machine blocks?"
+			]
+			dependencies: ["5227E2C7EFD9686F"]
+			id: "0F1F21514ED30727"
+			tasks: [
+				{
+					id: "0738EB88BF7D5891"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "22C55EB3AB84AE92"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "75ED201A41514CB2"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+				{
+					id: "763526A448F8D4C7"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+				}
+			]
+			rewards: [{
+				id: "1C2C303B43AE32E9"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["686B8A3E779BCF3D"]
+			id: "02B38F5283455BE9"
+			tasks: [{
+				id: "64648D7FF3E3592D"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "0B5F357A6938AD6E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Automated Hydroponics"
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"In your research, you have found a way to fix together a mini greenhouse of sorts. Such a structure capable of emitting light, hydrating and fertilizing the soil, this cloche you've fashioned together is even able to automatically harvest these crops!"
+				""
+				"You may have to resort to other methods of pulling water into a cloche, such as a Pump or Hose Pulley."
+			]
+			dependencies: ["02B38F5283455BE9"]
+			id: "09BF9F4B87E64FA1"
+			tasks: [{
+				id: "7DD20ABE71536A6C"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+			rewards: [{
+				id: "179FB023D5F27161"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 5
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Metal Pressing"
+			icon: "immersiveengineering:metal_press"
+			x: 1.5d
+			y: 7.5d
+			description: [
+				"You're finding that there are certain materials, such as gears and rods, that you simply cannot craft efficiently enough using rotational energy alone."
+				""
+				"This metal press is an easily automated device capable of quickly processing several different types of metals and gems into gears, plates, rods and more."
+			]
+			dependencies: ["02B38F5283455BE9"]
+			id: "4B3F996C7BABD3D2"
+			tasks: [
+				{
+					id: "59AF2DE67EEBB573"
+					type: "observation"
+					title: "Form a Metal Press"
+					icon: "immersiveengineering:metal_press"
+					timer: 0L
+					observe_type: 0
+					to_observe: "immersiveengineering:metal_press"
+				}
+				{
+					id: "3C4631567B95FCC3"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "molds"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4DBD6586A3CEE505"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 14
+				random_bonus: 17
+			}]
+		}
+		{
+			title: "Immersive Arsenal"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"As a saavy engineer, you may be finding the process of repairing and your gear to be a tiresome process."
+				""
+				"Fortunately for you, with some work (and some fuel or ammo) you can create some really powerful and useful tools!"
+			]
+			dependencies: ["02B38F5283455BE9"]
+			id: "4204A5A94F2EAAC5"
+			tasks: [{
+				id: "2DBDB2DAE3D89398"
+				type: "item"
+				title: "Your Choice of Arsenal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									Parent: {
+										Size: 21
+										Items: [ ]
+									}
+								}
+								id: "immersiveengineering:revolver"
+								Count: 1b
+								tag: {
+									bullets: {
+										Items: [ ]
+									}
+								}
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										Size: 5
+										Items: [ ]
+									}
+								}
+								id: "immersiveengineering:buzzsaw"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										Size: 5
+										Items: [ ]
+									}
+								}
+								id: "immersiveengineering:drill"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										Size: 3
+										Items: [ ]
+									}
+								}
+								id: "immersiveengineering:railgun"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										Size: 4
+										Items: [ ]
+									}
+								}
+								id: "immersiveengineering:chemthrower"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "442432B3B45ADA17"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+				random_bonus: 24
+			}]
 		}
 	]
 }

@@ -15,5 +15,15 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		x: -0.5d
+		y: -1.5d
+		dependencies: ["2678E4C051AD94DD"]
+		id: "1708778CA9290B8E"
+		tasks: [{
+			id: "1C8AA7AA2ACD401C"
+			type: "item"
+			item: "industrialforegoing:machine_frame_pity"
+		}]
+	}]
 }
