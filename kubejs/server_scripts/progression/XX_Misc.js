@@ -220,9 +220,45 @@ const torchmaster = event => {
   event.smithing('torchmaster:dreadlamp', 'minecraft:obsidian', 'rftoolsbase:infused_diamond');
 };
 
+const expandedstorage = event => {
+  event.replaceInput({}, 'minecraft:chest', '#forge:chests/wooden');
+  event.replaceOutput({}, 'minecraft:chest', 'expandedstorage:wood_chest');
+
+  [
+    'expandedstorage:candy_cane_mini_present_with_sparrow',
+    'expandedstorage:candy_cane_mini_present',
+    'expandedstorage:green_mini_present_with_sparrow',
+    'expandedstorage:green_mini_present',
+    'expandedstorage:lavender_mini_present_with_sparrow',
+    'expandedstorage:lavender_mini_present',
+    'expandedstorage:old_diamond_chest',
+    'expandedstorage:old_gold_chest',
+    'expandedstorage:old_iron_chest',
+    'expandedstorage:old_netherite_chest',
+    'expandedstorage:old_obsidian_chest',
+    'expandedstorage:old_wood_chest',
+    'expandedstorage:pink_amethyst_mini_present_with_sparrow',
+    'expandedstorage:pink_amethyst_mini_present',
+    'expandedstorage:pumpkin_chest',
+    'expandedstorage:pumpkin_mini_chest_with_sparrow',
+    'expandedstorage:pumpkin_mini_chest',
+    'expandedstorage:red_mini_present_with_sparrow',
+    'expandedstorage:red_mini_present',
+    'expandedstorage:vanilla_wood_mini_chest_with_sparrow',
+    'expandedstorage:vanilla_wood_mini_chest',
+    'expandedstorage:white_mini_present_with_sparrow',
+    'expandedstorage:white_mini_present',
+    'expandedstorage:wood_mini_chest_with_sparrow',
+  ].forEach(x => {
+    event.remove({output: x});
+    event.remove({input: x});
+  });
+};
+
 onEvent('recipes', event => {
   compactMachines(event);
   enderChests(event);
+  expandedstorage(event);
   fluxNetworks(event);
   pipez(event);
   refinedStorage(event);
