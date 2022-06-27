@@ -19,6 +19,7 @@
 				"Continue learning more about these structures and items using [w] if you ever forget!"
 			]
 			dependencies: ["444D4F959AE3FA7E"]
+			hide: true
 			size: 1.5d
 			id: "19AB43B2BEF954F5"
 			tasks: [{

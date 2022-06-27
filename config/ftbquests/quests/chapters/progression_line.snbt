@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 0
 	filename: "progression_line"
-	title: "Progression Line"
+	title: "Research Progress"
 	icon: "create:experience_nugget"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -46,6 +46,7 @@
 			subtitle: "TNT Not Included"
 			description: ["Dive into the world of pneumatics by studying how you can use some of your resources to manipulate and force air around!"]
 			dependencies: ["14E668FC6B54906E"]
+			hide: true
 			id: "13C43E580440DB7D"
 			tasks: [{
 				id: "61783800AED837F4"
@@ -66,6 +67,7 @@
 				"Now you can get started with some fun mechanisms for maximal enjoyment! Though it seems like there's this mysterious material stopping you from progressing further.."
 			]
 			dependencies: ["13C43E580440DB7D"]
+			hide: true
 			id: "3CFDD30F06BA9031"
 			tasks: [{
 				id: "5E7BDB62FE8B9F5F"
@@ -86,6 +88,7 @@
 				"At this point you've been getting a good grasp of Currents and Amperage, maybe Redstone Flux is reasonably safe to delve into?"
 			]
 			dependencies: ["3CFDD30F06BA9031"]
+			hide: true
 			id: "562B62D11786ACFC"
 			tasks: [{
 				id: "7D7844D135581EBE"
@@ -110,6 +113,7 @@
 				"Somehow tossing Copper and Zinc into an Arc Furnace was able to produce some sort of alloy. It does look pretty promising, maybe you can take advantage of it for some advanced mechanisms in Create!"
 			]
 			dependencies: ["562B62D11786ACFC"]
+			hide: true
 			id: "444D4F959AE3FA7E"
 			tasks: [{
 				id: "26C108579C28C6A3"
@@ -129,6 +133,7 @@
 				"562B62D11786ACFC"
 				"444D4F959AE3FA7E"
 			]
+			hide: true
 			id: "1C914DA40E420AEB"
 			tasks: [
 				{
@@ -164,6 +169,7 @@
 				"These machines seem to be able to produce some incredible tools and machines, perhaps those are worth looking into?"
 			]
 			dependencies: ["1C914DA40E420AEB"]
+			hide: true
 			id: "4C2EF6EC5CCF37FC"
 			tasks: [{
 				id: "580F342C72F0D5B6"

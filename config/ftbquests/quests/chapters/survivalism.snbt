@@ -9,106 +9,6 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Tetra"
-			icon: {
-				id: "tetra:modular_double"
-				Count: 1b
-				tag: {
-					"double/handle": "double/basic_handle"
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					id: "432011f8-b31a-46c7-acb9-121932573382"
-					"double/basic_hammer_right_material": "basic_hammer/oak"
-					Damage: 0
-					"double/basic_handle_material": "basic_handle/stick"
-					"double/basic_hammer_left_material": "basic_hammer/oak"
-				}
-			}
-			x: -5.5d
-			y: -4.5d
-			shape: "hexagon"
-			description: [
-				"Vanilla tools are totally fine, but if you ever get bored of the selection and want to start tinkering, check out Tetra!"
-				""
-				"To get started, check out the Tetra Hammer, then right-click a Crafting Table with this hammer to get the Holosphere which is the built-in \"Guide\"."
-				""
-			]
-			dependencies: ["5477EA198509D2E0"]
-			id: "168040ABEC1FBB22"
-			tasks: [
-				{
-					id: "6DC7938100C8815C"
-					type: "observation"
-					title: "Create a Basic Workbench"
-					icon: "tetra:basic_workbench"
-					timer: 0L
-					observe_type: 0
-					to_observe: "tetra:basic_workbench"
-				}
-				{
-					id: "4A3ED64C64B86128"
-					type: "item"
-					item: {
-						id: "tetra:modular_double"
-						Count: 1b
-						tag: {
-							"double/handle": "double/basic_handle"
-							"double/head_left": "double/basic_hammer_left"
-							"double/head_right": "double/basic_hammer_right"
-							id: "432011f8-b31a-46c7-acb9-121932573382"
-							"double/basic_hammer_right_material": "basic_hammer/oak"
-							Damage: 0
-							"double/basic_handle_material": "basic_handle/stick"
-							"double/basic_hammer_left_material": "basic_hammer/oak"
-						}
-					}
-				}
-			]
-			rewards: [
-				{
-					id: "42E9253E7C8FC0EB"
-					type: "command"
-					auto: "invisible"
-					command: "/tellraw @p {\"text\":\"Click For an In-Depth Tutorial by yorkmouseModz!\",\"color\":\"#00BEE0\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=cItN9k-9eFw\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[]}}"
-					player_command: false
-				}
-				{
-					id: "61507112A5C867DA"
-					type: "item"
-					item: "create:experience_nugget"
-					count: 4
-					random_bonus: 4
-				}
-			]
-		}
-		{
-			title: "Apathetic Mobs"
-			icon: "minecraft:creeper_head"
-			x: -1.5d
-			y: -4.5d
-			shape: "hexagon"
-			description: [
-				"You'll find that most mobs aren't attacking you (unless you're in Hard mode) - what's up with that?"
-				""
-				"Well, I believe that being able to enjoy night-time without being mutilated or afraid is important, so you'll find that Mobs care as much about you as you do them!"
-				""
-				"Oh also! Creepers of all variants will **not** do any block griefing, but rather will explode in a party of fireworks!"
-			]
-			dependencies: ["5477EA198509D2E0"]
-			id: "381F31ADDF309239"
-			tasks: [{
-				id: "2F582D186704F184"
-				type: "checkmark"
-				title: " "
-			}]
-			rewards: [{
-				id: "492844B0AEA6F4A2"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 2
-			}]
-		}
-		{
 			icon: {
 				id: "patchouli:guide_book"
 				Count: 1b
@@ -120,13 +20,18 @@
 			y: -4.5d
 			shape: "diamond"
 			description: [
-				"This pack utilizes Shapes and Sizes to differentiate types of quests."
+				"As you start off with rather crude technologies, you begin to wonder how to start researching into greater technologies in the hopes of improving your life and automating monotonous tasks."
 				""
-				"Diamond-shaped Quests are the starts to a chapter, and Octagonal quests are the ends. These are also indicated by size."
+				"You begin to notice several research entries alongside this one, divided into chapters. Each entry seems to have a different shape. After some digging, you've sorted this much out:"
 				""
-				"Hexagonal quests are pretty big points in the pack that you might want to avoid missing, and circular quests are completely optional, though completionists may disagree."
+				"- Diamond Entries seem to be the start of a new research train"
+				"- Octagonal entries seem to be the ends of these trains"
+				"- Hexagonal entries seem to be critical junctures for the current train you're studying"
+				"- Circular entries seem to be optional, but are likely useful anyways."
 				""
-				"You have a lot to see, so here's a lunchbag to keep you filled for now while you run around and see all the beauty in this world! Anyways, welcome and have fun!"
+				"It seems as if you gain more and more knowledge and *experience* each time you master one of these entries and the concepts thereof. That might be helpful for later, perhaps in some magical applications.."
+				""
+				"You notice that there is a ridiculous amount to explore around you. Perhaps you should head off - don't forget to bring a lunchbag with you!"
 			]
 			size: 1.5d
 			id: "5477EA198509D2E0"
@@ -222,7 +127,7 @@
 		{
 			x: -2.0d
 			y: -3.0d
-			description: ["These are a wonderful way to get yourself started with a bit of portable storage. If you start wanting more, be sure to check out the Toolbelts from Tetra later down the line!"]
+			description: ["You have fashioned yourself a nice belt out of leather and string - perhaps you can fashion some additional storage pouches and add them somehow?"]
 			dependencies: ["5477EA198509D2E0"]
 			id: "5CF194746A4A9952"
 			tasks: [{
@@ -239,7 +144,7 @@
 			}]
 		}
 		{
-			title: "Compact Books \\& Wrenches"
+			title: "Consolidation"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -355,6 +260,45 @@
 				item: "create:experience_nugget"
 				count: 3
 				random_bonus: 1
+			}]
+		}
+		{
+			title: "Needy Tastebuds"
+			icon: "minecraft:golden_carrot"
+			x: -5.5d
+			y: -4.5d
+			description: ["As you've started exploring, you find that unlike usual you're getting *really* tired of the same old foods. Perhaps you should take a look at different types of foods and see about varying your diet from day to day?"]
+			dependencies: ["5477EA198509D2E0"]
+			id: "2783202C1BFFEEC4"
+			tasks: [{
+				id: "0ADD8DDD552D6365"
+				type: "checkmark"
+				title: " "
+			}]
+			rewards: [{
+				id: "468F9EDDB3D610F9"
+				type: "item"
+				item: "solcarrot:food_book"
+			}]
+		}
+		{
+			title: "Mob Spawning"
+			x: -1.5d
+			y: -4.5d
+			description: ["You find that for some reason, these tortured souls that stalk you at night are deathly afraid of bright lights. Perhaps some sort of infused lighting can help to keep them further away to prevent distraction from your work?"]
+			dependencies: ["5477EA198509D2E0"]
+			id: "633B6F1CE20CFB2C"
+			tasks: [{
+				id: "3F74E7D3A4922ABA"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+			rewards: [{
+				id: "1945DE388B0CB1DE"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 4
 			}]
 		}
 	]

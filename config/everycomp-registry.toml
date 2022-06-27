@@ -49,3 +49,8 @@
 	[wood_type.architects_palette]
 		twisted = true
 
+	[wood_type.nourished_end]
+		verdant = true
+		cerulean = true
+		seldge = true
+

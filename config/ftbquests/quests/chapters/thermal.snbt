@@ -19,6 +19,7 @@
 				"As such, take your time working through this chapter of your research as a lot of these components may be difficult to create, so don't be too hard on yourself!"
 			]
 			dependencies: ["2678E4C051AD94DD"]
+			hide: true
 			size: 1.25d
 			id: "451E8202B0FF4FDD"
 			tasks: [{

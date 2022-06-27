@@ -255,9 +255,20 @@ const expandedstorage = event => {
   });
 };
 
+const enlightenedEnd = event => {
+  event.remove({id: 'nourished_end:voidsteel_ingot'});
+  event.remove({id: 'nourished_end:smelt_voidsteel_gear'});
+  event.recipes.thermal.smelter(Item.of('1x nourished_end:voidsteel_ingot'), [
+    Item.of('2x minecraft:copper_ingot'),
+    Item.of('4x nourished_end:malachite'),
+    Item.of('4x nourished_end:raw_voidsteel'),
+  ]);
+};
+
 onEvent('recipes', event => {
   compactMachines(event);
   enderChests(event);
+  enlightenedEnd(event);
   expandedstorage(event);
   fluxNetworks(event);
   pipez(event);

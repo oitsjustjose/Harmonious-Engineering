@@ -360,6 +360,8 @@ const itemRecipes = event => {
 
   event.remove({output: 'thermal:redstone_servo'});
   event.remove({output: 'thermal:rf_coil'});
+  event.remove({input: 'thermal:earth_charge'});
+
   redstoneServoRecipes(event);
   rfCoilRecipes(event);
 };

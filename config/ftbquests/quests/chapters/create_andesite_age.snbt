@@ -22,6 +22,7 @@
 				"Very strangely, you notice that you've been getting visions here lately, anytime you inspect these rotational items and hold the [w] key..."
 			]
 			dependencies: ["3CFDD30F06BA9031"]
+			hide: true
 			size: 1.5d
 			id: "219C4BC25CEF2579"
 			tasks: [{

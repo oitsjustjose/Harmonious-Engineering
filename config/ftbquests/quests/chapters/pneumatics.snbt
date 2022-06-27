@@ -28,6 +28,7 @@
 				"Maybe some TNT will do the job.."
 			]
 			dependencies: ["14E668FC6B54906E"]
+			hide: true
 			size: 1.5d
 			id: "0995DFA3EBC4BDB9"
 			tasks: [
