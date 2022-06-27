@@ -214,6 +214,12 @@ const supermartijn = event => {
   });
 };
 
+const torchmaster = event => {
+  event.remove({mod: 'torchmaster'});
+  event.smithing('torchmaster:megatorch', 'minecraft:torch', 'rftoolsbase:infused_diamond');
+  event.smithing('torchmaster:dreadlamp', 'minecraft:obsidian', 'rftoolsbase:infused_diamond');
+};
+
 onEvent('recipes', event => {
   compactMachines(event);
   enderChests(event);
@@ -223,5 +229,6 @@ onEvent('recipes', event => {
   routers(event);
   supermartijn(event);
   tempad(event);
+  torchmaster(event);
   xnet(event);
 });
