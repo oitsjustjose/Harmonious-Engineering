@@ -13,10 +13,10 @@ vanilla = [
     ("minecraft:leather_leggings", "#forge:ingots/iron", "minecraft:iron_leggings"),
     ("minecraft:leather_boots", "#forge:ingots/iron", "minecraft:iron_boots"),
     # Leather -> Chainmail
-    ("minecraft:leather_helmet", "tetra:forged_mesh", "minecraft:chainmail_helmet"),
-    ("minecraft:leather_chestplate", "tetra:forged_mesh", "minecraft:chainmail_chestplate"),
-    ("minecraft:leather_leggings", "tetra:forged_mesh", "minecraft:chainmail_leggings"),
-    ("minecraft:leather_boots", "tetra:forged_mesh", "minecraft:chainmail_boots"),
+    ("minecraft:leather_helmet", "minecraft:chain", "minecraft:chainmail_helmet"),
+    ("minecraft:leather_chestplate", "minecraft:chain", "minecraft:chainmail_chestplate"),
+    ("minecraft:leather_leggings", "minecraft:chain", "minecraft:chainmail_leggings"),
+    ("minecraft:leather_boots", "minecraft:chain", "minecraft:chainmail_boots"),
     # Wood -> Stone
     ("minecraft:wooden_sword", "#minecraft:stone_crafting_materials", "minecraft:stone_sword"),
     ("minecraft:wooden_pickaxe", "#minecraft:stone_crafting_materials", "minecraft:stone_pickaxe"),
@@ -128,6 +128,8 @@ for t in tc_adv_tiers:
     tools_complement.append(("minecraft:iron_boots", f"#forge:ingots/{t}", f"tools_complement:{t}_boots"))
     tools_complement.append(("tools_complement:iron_sickle", f"#forge:ingots/{t}", f"tools_complement:{t}_sickle"))
     tools_complement.append(("tools_complement:iron_knife", f"#forge:ingots/{t}", f"tools_complement:{t}_knife"))
+    tools_complement.append(("tools_complement:iron_hammer", f"#forge:storage_blocks/{t}", f"tools_complement:{t}_hammer"))
+    tools_complement.append(("tools_complement:iron_excavator", f"#forge:storage_blocks/{t}", f"tools_complement:{t}_excavator"))
     # {MAT} -> Diamond
     tools_complement.append((f"tools_complement:{t}_sword", "minecraft:diamond", "minecraft:diamond_sword"))
     tools_complement.append((f"tools_complement:{t}_pickaxe", "minecraft:diamond", "minecraft:diamond_pickaxe"))
