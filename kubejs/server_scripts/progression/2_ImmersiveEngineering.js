@@ -40,9 +40,16 @@ onEvent('recipes', event => {
     P: '#forge:plates/iron',
     I: '#forge:ingots/compressed_iron',
   });
+
   event.replaceInput(
     {output: global.ie('drillhead_iron')},
     'minecraft:iron_block',
     '#forge:storage_blocks/compressed_iron'
   );
+
+  event.remove({id: '/immersiveengineering:arcfurnace/ore_*/'});
+  event.remove({id: '/immersiveengineering:arcfurnace/raw_ore_*/'});
+  event.remove({id: 'immersiveengineering:arcfurnace/dust_uranium'});
+  event.remove({id: 'immersiveengineering:alloysmelter/invar'});
+  event.remove({id: 'immersiveengineering:alloysmelter/electrum'});
 });
