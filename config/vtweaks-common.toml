@@ -72,10 +72,10 @@
 	#Allows chicken feathers to be plucked w/ shears
 	enableFeatherPlucking = true
 	#Prevents mobs from spawning above sea level unless it's a new moon
-	enablePeacefulSurface = false
+	enablePeacefulSurface = true
 	#The lowest Y-level which mobs will be prevented from spawning
 	#Range: > -2147483648
-	peacefulSurfaceMinY = 60
+	peacefulSurfaceMinY = 48
 	#This controls the overall chance for V-Tweaks to attempt converting a monster to a Challenger.
 	#This chance is applied before any Challenger Mob weights or entity filters.
 	#Range: 0.0 ~ 1.0
