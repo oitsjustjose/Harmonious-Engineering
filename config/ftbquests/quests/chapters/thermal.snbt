@@ -344,6 +344,11 @@
 		{
 			x: -1.5d
 			y: -3.0d
+			description: [
+				"So you've found yourself wanting to create a battery to keep extra flux around in your pockets, huh? Well, I can't say I would do the same - that does sound pretty unsafe after all.. but do what you want!"
+				""
+				"It looks as if you can augment this device's integral components and other capabilities using a type of tinkering workbench?"
+			]
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "3600AA7C9B7D324A"
 			tasks: [{
@@ -365,6 +370,11 @@
 		{
 			x: 1.5d
 			y: -3.0d
+			description: [
+				"You've manipulated the gravity of items around you .. how the heck did you manage that?"
+				""
+				"Wait, it too is augmentable in a tinkering workbench? Wow, well done!"
+			]
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "563101EE395EB7B7"
 			tasks: [{
