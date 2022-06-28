@@ -5,13 +5,13 @@
 
     # In what radius should the Advanced Chunk Loader be able to load chunks?
     # Allowed range: 1 ~ 8 - Default: 3
-    advancedChunkLoaderRadius = 3
+    advancedChunkLoaderRadius = 6
 
     # In what radius should the Basic Chunk Loader be able to load chunks?
     # Allowed range: 1 ~ 8 - Default: 2
-    basicChunkLoaderRadius = 2
+    basicChunkLoaderRadius = 4
 
     # In what radius should the Ultimate Chunk Loader be able to load chunks?
     # Allowed range: 1 ~ 8 - Default: 4
-    ultimateChunkLoaderRadius = 4
+    ultimateChunkLoaderRadius = 8
 
