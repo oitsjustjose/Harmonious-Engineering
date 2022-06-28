@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {"type": "minecraft:item", "name": "thermal:silver_ingot"},
+        {"type": "minecraft:item", "name": "immersiveengineering:dragons_breath"},
+        {"type": "minecraft:item", "name": "immersiveengineering:homing"},
+        {"type": "minecraft:item", "name": "immersiveengineering:toolupgrade_revolver_magazine"}
+      ]
+    }
+  ]
+}

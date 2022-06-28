@@ -72,7 +72,7 @@
 	#Allows chicken feathers to be plucked w/ shears
 	enableFeatherPlucking = true
 	#Prevents mobs from spawning above sea level unless it's a new moon
-	enablePeacefulSurface = true
+	enablePeacefulSurface = false
 	#The lowest Y-level which mobs will be prevented from spawning
 	#Range: > -2147483648
 	peacefulSurfaceMinY = 60
