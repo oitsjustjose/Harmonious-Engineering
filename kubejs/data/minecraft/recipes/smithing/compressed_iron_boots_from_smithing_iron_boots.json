@@ -1,1 +1,0 @@
-{"type": "minecraft:smithing", "base": {"item": "minecraft:iron_boots"}, "addition": {"tag": "forge:ingots/compressed_iron"}, "result": {"item": "pneumaticcraft:compressed_iron_boots"}}

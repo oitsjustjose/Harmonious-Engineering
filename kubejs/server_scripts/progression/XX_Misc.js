@@ -63,42 +63,6 @@ const routers = event => {
   );
 };
 
-const enderChests = event => {
-  event.remove({mod: 'enderchests'});
-  event.shaped('enderchests:ender_chest', ['BWB', 'OCO', 'BEB'], {
-    B: 'minecraft:blaze_rod',
-    O: 'minecraft:obsidian',
-    E: '#forge:dusts/ender_pearl',
-    W: '#minecraft:wool',
-    C: 'expandedstorage:diamond_chest',
-  });
-
-  event.shaped('enderchests:ender_bag', ['BWB', 'OLO', 'BEB'], {
-    B: 'minecraft:blaze_powder',
-    O: 'create:powdered_obsidian',
-    E: '#forge:dusts/ender_pearl',
-    W: '#minecraft:wool',
-    L: '#forge:hides',
-  });
-
-  event.remove({mod: 'endertanks'});
-  event.shaped('endertanks:ender_tank', ['BWB', 'OTO', 'BEB'], {
-    B: 'minecraft:blaze_rod',
-    O: 'minecraft:obsidian',
-    E: '#forge:dusts/ender_pearl',
-    W: '#minecraft:wool',
-    T: 'moreminecarts:transport_tank',
-  });
-
-  event.shaped('endertanks:ender_bucket', ['BWB', 'OUO', 'BEB'], {
-    B: 'minecraft:blaze_powder',
-    O: 'create:powdered_obsidian',
-    E: '#forge:dusts/ender_pearl',
-    W: '#minecraft:wool',
-    U: 'minecraft:bucket',
-  });
-};
-
 const compactMachines = event => {
   const CustomRecipeHandler = global.recipes(event);
   event.remove({mod: 'compactmachines'});
@@ -247,9 +211,21 @@ const expandedstorage = event => {
   });
 };
 
+const dimStorage = event => {
+  event.remove({mod: 'dimstorage'});
+
+  event.smithing('dimstorage:dimensional_chest', 'thermal:machine_frame', '#forge:ingots/enderium');
+  event.smithing(
+    'dimstorage:dimensional_tank',
+    'thermal:fluid_cell_frame',
+    '#forge:ingots/enderium'
+  );
+  event.smithing('dimstorage:dimensional_tablet', 'tempad:tempad', '#forge:ingots/enderium');
+};
+
 onEvent('recipes', event => {
   compactMachines(event);
-  enderChests(event);
+  dimStorage(event);
   expandedstorage(event);
   fluxNetworks(event);
   pipez(event);
