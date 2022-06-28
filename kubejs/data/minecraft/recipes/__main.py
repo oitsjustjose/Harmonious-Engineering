@@ -75,11 +75,11 @@ immersive = [
 ]
 
 pnc = [
-    # Iron -> Compressed Iron
-    ("minecraft:iron_helmet", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_helmet"),
-    ("minecraft:iron_chestplate", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_chestplate"),
-    ("minecraft:iron_leggings", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_leggings"),
-    ("minecraft:iron_boots", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_boots"),
+    # Leather -> Compressed Iron
+    ("minecraft:leather_helmet", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_helmet"),
+    ("minecraft:leather_chestplate", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_chestplate"),
+    ("minecraft:leather_leggings", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_leggings"),
+    ("minecraft:leather_boots", "#forge:ingots/compressed_iron", "pneumaticcraft:compressed_iron_boots"),
     # Compressed Iron -> Diamond
     ("pneumaticcraft:compressed_iron_helmet", "minecraft:diamond", "minecraft:diamond_helmet"),
     ("pneumaticcraft:compressed_iron_chestplate", "minecraft:diamond", "minecraft:diamond_chestplate"),
