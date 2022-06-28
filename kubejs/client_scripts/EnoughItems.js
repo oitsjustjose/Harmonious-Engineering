@@ -68,6 +68,7 @@ global.hideItems = [
   'industrialforegoing:tinydryrubber',
   'minecraft:chest',
   'pipez:gas_pipe',
+  'rftoolsbase:crafting_card',
   'thermal:drill_head',
   'thermal:emerald_gear',
   'thermal:lapis_gear',
@@ -133,6 +134,10 @@ global.hideItems = [
   global.ie('watermill'),
   global.ie('waterwheel_segment'),
   global.ie('windmill'),
+  'rftoolsbase:filter_module',
+  'rftoolsbase:infused_enderpearl',
+  'rftoolsbase:tablet_filled',
+  'rftoolsbase:tablet',
 ];
 
 onEvent('jei.hide.items', event => {

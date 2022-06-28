@@ -30,9 +30,14 @@ const fluxNetworks = event => {
   );
 };
 
-const xnet = event => {
+const mcjty = event => {
   event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
   event.replaceInput({output: '#xnet:connectors'}, 'minecraft:gold_ingot', 'pipez:universal_pipe');
+  event.remove({output: 'rftoolsbase:crafting_card'});
+  event.remove({output: 'rftoolsbase:filter_module'});
+  event.remove({output: 'rftoolsbase:tablet'});
+  event.remove({output: 'rftoolsbase:tablet_filled'});
+  event.remove({output: 'rftoolsbase:infused_enderpearl'});
 };
 
 const tempad = event => {
@@ -213,7 +218,6 @@ const expandedstorage = event => {
 
 const dimStorage = event => {
   event.remove({mod: 'dimstorage'});
-
   event.smithing('dimstorage:dimensional_chest', 'thermal:machine_frame', '#forge:ingots/enderium');
   event.smithing(
     'dimstorage:dimensional_tank',
@@ -228,11 +232,13 @@ onEvent('recipes', event => {
   dimStorage(event);
   expandedstorage(event);
   fluxNetworks(event);
+  mcjty(event);
   pipez(event);
   refinedStorage(event);
   routers(event);
   supermartijn(event);
   tempad(event);
   torchmaster(event);
-  xnet(event);
+
+  event.remove({output: 'rftoolsbase:dimensionalshard'});
 });
