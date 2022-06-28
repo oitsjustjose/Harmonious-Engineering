@@ -198,19 +198,11 @@ const compactMachines = event => {
 
 const supermartijn = event => {
   event.remove({output: 'entangled:block'});
-  event.remove({output: 'tesseract:tesseract'});
-
   event.shaped('entangled:block', ['LDL', 'ESE', 'LDL'], {
     D: 'rftoolsbase:dimensionalshard',
     E: 'minecraft:ender_pearl',
     L: '#forge:ingots/lead',
     S: '#immersiveengineering:scaffoldings/steel',
-  });
-
-  event.shaped('tesseract:tesseract', ['RUR', 'UEU', 'RUR'], {
-    E: 'entangled:block',
-    R: '#forge:ingots/enderium',
-    U: 'pipez:universal_pipe',
   });
 };
 
@@ -255,20 +247,9 @@ const expandedstorage = event => {
   });
 };
 
-const enlightenedEnd = event => {
-  event.remove({id: 'nourished_end:voidsteel_ingot'});
-  event.remove({id: 'nourished_end:smelt_voidsteel_gear'});
-  event.recipes.thermal.smelter(Item.of('1x nourished_end:voidsteel_ingot'), [
-    Item.of('2x minecraft:copper_ingot'),
-    Item.of('4x nourished_end:malachite'),
-    Item.of('4x nourished_end:raw_voidsteel'),
-  ]);
-};
-
 onEvent('recipes', event => {
   compactMachines(event);
   enderChests(event);
-  enlightenedEnd(event);
   expandedstorage(event);
   fluxNetworks(event);
   pipez(event);
