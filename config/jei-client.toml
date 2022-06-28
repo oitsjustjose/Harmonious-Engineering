@@ -3,7 +3,7 @@
 	#Debug mode enabled
 	DebugMode = false
 	#Display search bar in the center
-	CenterSearch = false
+	CenterSearch = true
 	#Set low-memory mode (makes search very slow, but uses less RAM)
 	LowMemorySlowSearchEnabled = false
 	#Enable cheating items into the hotbar by using the shift+number keys.
@@ -29,7 +29,7 @@
 	ModNameSearchMode = "REQUIRE_PREFIX"
 	#Search mode for Tooltips (prefix: #)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	TooltipSearchMode = "ENABLED"
+	TooltipSearchMode = "REQUIRE_PREFIX"
 	#Search mode for Tag Names (prefix: $)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
 	TagSearchMode = "REQUIRE_PREFIX"
@@ -41,7 +41,7 @@
 	ColorSearchMode = "DISABLED"
 	#Search mode for resources locations (prefix: &)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	ResourceLocationSearchMode = "DISABLED"
+	ResourceLocationSearchMode = "REQUIRE_PREFIX"
 	#Search advanced tooltips (visible with F3+H)
 	SearchAdvancedTooltips = false
 
@@ -75,10 +75,10 @@
 [BookmarkList]
 	#Max number of rows shown
 	#Range: 1 ~ 100
-	MaxRows = 16
+	MaxRows = 32
 	#Max number of columns shown
 	#Range: 4 ~ 100
-	MaxColumns = 9
+	MaxColumns = 18
 	#Horizontal alignment of the ingredient grid inside the available area
 	#Allowed Values: LEFT, CENTER, RIGHT
 	HorizontalAlignment = "LEFT"
