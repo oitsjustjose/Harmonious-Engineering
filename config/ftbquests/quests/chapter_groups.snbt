@@ -1,6 +1,3 @@
 {
-	chapter_groups: [
-		{ id: "1E070728CA22FA34", title: "Research" }
-		{ id: "385F4DF2AEEA0971", title: "Sidelines" }
-	]
+	chapter_groups: [{ id: "1E070728CA22FA34", title: "Research" }]
 }

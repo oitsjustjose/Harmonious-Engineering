@@ -581,5 +581,142 @@
 				count: 32
 			}]
 		}
+		{
+			title: "Dimensional Storage"
+			x: 3.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"On your search for ways to easily transmit items interdimensionally, you stumble upon Enderium"
+				""
+				"Enderium looks to have eldritch properties which allow you to transfer items and fluids across infinite ranges of space (and across dimensions). "
+				""
+				"You find that you can make up to 999 distinct frequencies within the waveband of these devices."
+			]
+			hide_dependency_lines: true
+			dependencies: ["20E8E8B5A3664F1B"]
+			optional: true
+			id: "3F8EFB444A1F7C62"
+			tasks: [
+				{
+					id: "12343B08CD348037"
+					type: "item"
+					item: "dimstorage:dimensional_chest"
+				}
+				{
+					id: "055C529D6200B6FF"
+					type: "item"
+					item: "dimstorage:dimensional_tank"
+				}
+				{
+					id: "23CE5DFF0A9286FA"
+					type: "item"
+					item: "dimstorage:dimensional_tablet"
+				}
+			]
+			rewards: [{
+				id: "3E29EF63F627BF73"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+		{
+			title: "Digitized Storage"
+			x: -3.0d
+			y: -1.5d
+			shape: "octagon"
+			description: [
+				"Your research has led you to notice that you *can* in fact force Quartz to melt. This process takes very powerful equipment, but once done it can be alloyed with Iron to create a new alloy."
+				""
+				"This alloy seems to be capable of creating digitized storage, whatever that means..."
+				""
+				"Wherever this leads you, we don't have any journal entries to guide you - you'll be going on your own.."
+			]
+			hide_dependency_lines: true
+			dependencies: ["20E8E8B5A3664F1B"]
+			id: "54647DA171ED3BA1"
+			tasks: [{
+				id: "038A2FCC1720FF2A"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [{
+				id: "5657C5D0AF987B11"
+				type: "item"
+				item: "refinedstorage:wrench"
+			}]
+		}
+		{
+			title: "Enlarged Autocrafting"
+			x: -4.5d
+			y: -1.5d
+			description: ["Taking the same principles that you've become so familiar with, you realize that you can make a 3D Matrix of crafting processors to form a monolithic structure capable of storing a significant number of crafting patterns."]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "120B1829538924E1"
+			tasks: [
+				{
+					id: "535FA093FC2B835A"
+					type: "item"
+					item: "rebornstorage:multiblock_frame"
+				}
+				{
+					id: "14C1BD25569C66CA"
+					type: "item"
+					item: "rebornstorage:multiblock_heat"
+				}
+				{
+					id: "61AB320080AA599C"
+					type: "item"
+					item: "rebornstorage:multiblock_cpu"
+				}
+				{
+					id: "177AA4BEEE215953"
+					type: "item"
+					item: "rebornstorage:multiblock_storage"
+				}
+			]
+			rewards: [{
+				id: "3ACFAF2FE5B179BB"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "rebornstorage:rs_book"
+					}
+				}
+			}]
+		}
+		{
+			title: "Inter-dim Flux"
+			x: 4.5d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"Somehow you've come to the thought that Redstone may be durable enough to be subjected to high amounts of weight and pressure."
+				""
+				"By doing so, it seems to have reached some strange quantum state capable of avoiding the laws of Space \\& Time."
+				""
+				"That said, this field of research is a no man's land, and we do not have any journal entries to offer you guidance from here."
+				""
+				"Best of luck (and please report back with your findings!)"
+			]
+			dependencies: ["1C914DA40E420AEB"]
+			optional: true
+			id: "1C9451BE455E7B98"
+			tasks: [{
+				id: "2A3EB4683B51E42F"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+			rewards: [{
+				id: "12606AC112E9937F"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+				random_bonus: 32
+			}]
+		}
 	]
 }

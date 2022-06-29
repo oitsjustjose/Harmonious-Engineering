@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Rocky Footing"
 			icon: {
 				id: "patchouli:guide_book"
 				Count: 1b
@@ -106,6 +107,7 @@
 			}]
 		}
 		{
+			title: "Inventory Management I"
 			x: -5.0d
 			y: -3.0d
 			description: ["Backpacks are a useful way to keep a clean inventory in this item-dense world! You can put these in your back slot and access with the \"B\" key (by default) for easy storage expansion!"]
@@ -125,6 +127,7 @@
 			}]
 		}
 		{
+			title: "Inventory Management II"
 			x: -2.0d
 			y: -3.0d
 			description: ["You have fashioned yourself a nice belt out of leather and string - perhaps you can fashion some additional storage pouches and add them somehow?"]
@@ -282,23 +285,35 @@
 			}]
 		}
 		{
-			title: "Mob Spawning"
+			title: "Gear Upgrading"
+			icon: {
+				id: "immersiveengineering:pickaxe_steel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: -1.5d
 			y: -4.5d
-			description: ["You find that for some reason, these tortured souls that stalk you at night are deathly afraid of bright lights. Perhaps some sort of infused lighting can help to keep them further away to prevent distraction from your work?"]
+			description: [
+				"You've been staring down your next tool upgrade with sharp eyes, but wait - you've noticed something!"
+				""
+				"You might be able to salvage the existing enchantments and features of your tools and armor if you just apply the upgrade in a Smithing Table instead of crafting a new tool! This could be pretty useful though it seems some upgrades aren't completely compatible with others.."
+			]
 			dependencies: ["5477EA198509D2E0"]
-			id: "633B6F1CE20CFB2C"
+			id: "4ED0A09D2DD0CA0A"
 			tasks: [{
-				id: "3F74E7D3A4922ABA"
-				type: "item"
-				item: "torchmaster:megatorch"
+				id: "3F6013D1D42F984E"
+				type: "checkmark"
+				title: "You Investigate Smithing Table Uses.."
+				icon: "minecraft:stone"
 			}]
 			rewards: [{
-				id: "1945DE388B0CB1DE"
+				id: "7001645022CE9E40"
 				type: "item"
 				item: "create:experience_nugget"
-				count: 4
-				random_bonus: 4
+				count: 2
+				random_bonus: 2
 			}]
 		}
 	]

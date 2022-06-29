@@ -571,5 +571,38 @@
 				random_bonus: 24
 			}]
 		}
+		{
+			title: "Entangling"
+			icon: {
+				id: "entangled:block"
+				Count: 1b
+				tag: { }
+			}
+			x: -2.0d
+			y: 2.0d
+			shape: "gear"
+			description: ["What's this? Somehow you've manipulated space-time itself by utilizing dimensional shards and ender pearls. Looks like this device can be bound to existing machines in your world - I wonder what kinds of trouble you can get into with this?"]
+			dependencies: ["076FD7196A5BA25F"]
+			optional: true
+			id: "4FBC3C7AC2ADCFF6"
+			tasks: [{
+				id: "4151AE1A7E2B6E1D"
+				type: "item"
+				item: {
+					id: "entangled:block"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "450F33B54F63DE35"
+				type: "item"
+				item: {
+					id: "entangled:item"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
 	]
 }

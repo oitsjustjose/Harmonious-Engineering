@@ -303,7 +303,7 @@
 		{
 			title: "Aeration Station"
 			x: 1.5d
-			y: 3.5d
+			y: 3.0d
 			description: ["By harnessing this pneumatic pressure you've become so proficient in creating, you might be able to fill other items' pressurized canisters with some of this to use for later."]
 			dependencies: ["7DFD575B7AB66CA9"]
 			id: "70B030689AC57CFC"
@@ -389,7 +389,7 @@
 			title: "Printing Circuits"
 			icon: "pneumaticcraft:uv_light_box"
 			x: 6.0d
-			y: 2.5d
+			y: 1.5d
 			description: [
 				"Plastic seems to contain enough silicon to be able to press it into a circuit board. This is nice and all, but the board is blank and needs to be finished."
 				""
@@ -424,7 +424,7 @@
 			title: "Etching Circuits"
 			icon: "pneumaticcraft:etching_tank"
 			x: 7.5d
-			y: 2.5d
+			y: 1.5d
 			description: [
 				"Well that's weird - I guess all the malice from these poor monsters is actually quite.. acidic?"
 				""
@@ -454,7 +454,7 @@
 		}
 		{
 			x: 9.0d
-			y: 2.5d
+			y: 1.5d
 			description: [
 				"Looks like all that hard work paid off - not without a few broken eggs though. No matter, those failed PCBs can still be salvaged!"
 				""
@@ -477,7 +477,7 @@
 		}
 		{
 			x: 3.0d
-			y: 3.5d
+			y: 3.0d
 			description: [
 				"This tablet looks familiar... anyways - the UI is really intuitive, so you should be able to fill that itch for shopping pretty quickly!"
 				""
@@ -499,7 +499,7 @@
 		}
 		{
 			x: 4.5d
-			y: 3.5d
+			y: 3.0d
 			subtitle: "Wow! Thanks Geoff Blazos!"
 			description: [
 				"Thanks to the power of .. mega-corporations I guess? .. you were able to finally get that blueprint you've been needing."

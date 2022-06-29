@@ -15,16 +15,422 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: -0.5d
-		y: -1.5d
-		dependencies: ["2678E4C051AD94DD"]
-		hide: true
-		id: "1708778CA9290B8E"
-		tasks: [{
-			id: "1C8AA7AA2ACD401C"
-			type: "item"
-			item: "industrialforegoing:machine_frame_pity"
-		}]
-	}]
+	quests: [
+		{
+			title: "Pitiful Machinery"
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			description: [
+				"You find that taking a machine that is bigger on the inside is your only means to continue turning large industrial devices into single-block solutions."
+				""
+				"As such, you've invented the Pitiful Machine frame, the first tier (of four) that are bigger on the inside, making it easy to fit large structures inside."
+				""
+				"With it, many journal entries are loaned to you to learn how this pitiful machinery can be used - perhaps it isn't nearly as pitiful as its name implies?"
+			]
+			dependencies: ["2678E4C051AD94DD"]
+			hide: true
+			size: 1.5d
+			id: "1708778CA9290B8E"
+			tasks: [{
+				id: "1C8AA7AA2ACD401C"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [
+				{
+					id: "6C15AC43FA9D7386"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "industrialforegoing:industrial_foregoing"
+						}
+					}
+				}
+				{
+					id: "5DA364233590D0A8"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 8
+					random_bonus: 32
+				}
+			]
+		}
+		{
+			title: "Well-Oiled"
+			x: 1.5d
+			y: 2.0d
+			description: ["You've found that Latex is a great lubricant for optimal machine efficiency. This might allow you to run some heavier machinery."]
+			dependencies: ["300A46D98133D980"]
+			id: "277798DC2786A6F2"
+			tasks: [{
+				id: "20F2AFC253D9410C"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+			rewards: [{
+				id: "4CE519DFF42DEAC2"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Is it... Alive?"
+			x: 1.5d
+			y: 4.0d
+			description: ["The Pink Slime seems to be willing to occupy the interior of this machine frame -- let's hope it doesn't get too hungry in there..."]
+			dependencies: ["0C44756098FBB868"]
+			id: "08601583306BEB26"
+			tasks: [{
+				id: "455F7EEA4BE85553"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			title: "Ether-Infused Frames"
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["5571B245334AE7D4"]
+			id: "4C08F9B8CF327FD9"
+			tasks: [{
+				id: "2C1D69519BE1A366"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: ["Like other infinity tools, you find that this drill is also has an insatiable thurst for Flux - and with every few billion flux you give it, the larger your max mining radius becomes...."]
+			dependencies: ["0C44756098FBB868"]
+			id: "578948D723C29E16"
+			tasks: [{
+				id: "1073795BD4EF8EED"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_drill"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Special: 0b
+						Selected: "POOR"
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "617FD90A12429E99"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			description: ["Just other Infinity Tools, this saw has an insatiable thirst for Flux - with each large step in Flux this tool is given, the larger the forest it can devour.."]
+			dependencies: ["0C44756098FBB868"]
+			id: "678BBFD796F93ADD"
+			tasks: [{
+				id: "0F3AE12E2CC1A0DE"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_saw"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Special: 0b
+						Selected: "POOR"
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "7C9B1AA7C34485BB"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			description: [
+				"You've discovered that covering high-quality, reinforced materials with Pink Slime will yield you a mighty weapon."
+				""
+				"There's something odd about the Pink Slime on this tool.. no matter how much you try, this hammer doesn't seem to ever have \"enough\" Flux to satiate it - and.... is the attack damage increasing??"
+			]
+			dependencies: ["0C44756098FBB868"]
+			id: "0B051C46DBB5FCA8"
+			tasks: [{
+				id: "2BE197A8FA9516DB"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_hammer"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+						Special: 0b
+						Selected: "POOR"
+						Beheading: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "68445AF855B4CBA3"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Pink Slime"
+			icon: "industrialforegoing:pink_slime_bucket"
+			x: 0.0d
+			y: 4.5d
+			shape: "hexagon"
+			description: [
+				"Well that was unexpected - you were just looking for a way to automatically harvest mob drops from your mob farm, but it looks like you've been gifted with liquid meat and pink slime?"
+				""
+				"What is this stuff? Surely it has some potential for additional machinery as you go, but to what extent is still left to be seen."
+			]
+			dependencies: ["300A46D98133D980"]
+			id: "0C44756098FBB868"
+			tasks: [
+				{
+					id: "1D1CD4AB2365A8B3"
+					type: "item"
+					item: "industrialforegoing:mob_slaughter_factory"
+				}
+				{
+					id: "4F66C79B9BDBC767"
+					type: "item"
+					item: "industrialforegoing:pink_slime_bucket"
+				}
+			]
+			rewards: [{
+				id: "1C894A9ED7C03750"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+		{
+			title: "Latex Extraction"
+			icon: "industrialforegoing:latex_bucket"
+			x: 0.0d
+			y: 2.5d
+			shape: "hexagon"
+			description: [
+				"That's interesting, all this time and only now have you realized that there might be some sort of way to pull the latex from Logs."
+				""
+				"You feel pretty confident that with some fiddly machinery, you can actually get this set up with automation and never have to touch it again.."
+			]
+			dependencies: ["1708778CA9290B8E"]
+			id: "300A46D98133D980"
+			tasks: [
+				{
+					id: "2E9A785EAC0DD6D9"
+					type: "item"
+					item: "industrialforegoing:fluid_extractor"
+				}
+				{
+					id: "6E9DBA490FAAB592"
+					type: "item"
+					item: "industrialforegoing:latex_bucket"
+				}
+			]
+			rewards: [{
+				id: "236CB41CFF3F38A1"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "GI Relief for Withers"
+			icon: "industrialforegoing:ether_gas_bucket"
+			x: 0.0d
+			y: 6.5d
+			shape: "hexagon"
+			description: [
+				"I'm not sure you can explain this any better than I can - it appears that by keeping a Wither in a Stasis Chamber, you've been able to harvest Ether Gas from inside the Wither using a Fluid Laser..."
+				""
+				"As odd as this is, you have to wonder what sorts of insanely neat technology this unlocks - nothing of this caliber has been seen before!"
+			]
+			dependencies: ["0C44756098FBB868"]
+			id: "5571B245334AE7D4"
+			tasks: [
+				{
+					id: "2EEDE04167638C3A"
+					type: "item"
+					item: "industrialforegoing:stasis_chamber"
+				}
+				{
+					id: "58D53C981C92B925"
+					type: "item"
+					item: "industrialforegoing:ether_gas_bucket"
+				}
+			]
+			rewards: [{
+				id: "4017030A08AEB940"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 48
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			description: [
+				"You've found that Ether-infused Machine Frames adds the ability to nest other Black Hole Tanks/Units within one block. For this, you've invented the Black Hole Controller!"
+				""
+				"This allows you to spatially consolidate a bunch of Black Hole Units / Tanks into a single block space - up to 16 can fit inside!"
+			]
+			dependencies: ["4C08F9B8CF327FD9"]
+			id: "102B111AE2A7B055"
+			tasks: [{
+				id: "6668029F6695B5C3"
+				type: "item"
+				item: "industrialforegoing:black_hole_controller"
+			}]
+		}
+		{
+			title: "Supreme Black Holes"
+			x: 4.5d
+			y: 6.0d
+			description: ["Ether-infused machine frames seem to be capable of mimicking the insatiable property of Pink Slime, but for Items and Fluids? Interesting.."]
+			dependencies: ["4C08F9B8CF327FD9"]
+			id: "2C8403B43A2D807D"
+			tasks: [{
+				id: "6C0076B56F5A095B"
+				type: "item"
+				title: "Supreme Black Hole Unit or Tank"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:supreme_black_hole_tank"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:supreme_black_hole_unit"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Lasers"
+			x: 3.0d
+			y: 4.0d
+			description: [
+				"You're research may have lead you astray here and there, but you've somehow managed to land on a method of harvesting ores and fluids by manipulating light itself."
+				""
+				"This process does seem to require a significant amount of energy, so it looks like 4 Lasers will be needed to power this setup."
+				""
+				"It also appears as though colored filters can be applied to the laser to more narrowly define what subset of items / fluids you wish for this contraption to gather."
+			]
+			dependencies: ["08601583306BEB26"]
+			id: "5AEF80CE4986E624"
+			tasks: [
+				{
+					id: "2AFE5BAD75EE7C4A"
+					type: "item"
+					title: "Any Laser Base"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:ore_laser_base"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:fluid_laser_base"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "657C66D354D8A1C2"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			description: ["Seems as though your encounters with vague magiks are not over. By forcing the Pink Slime inside these frames to your bidding, you're able to manipulate and apply enchantments using Flux alone.."]
+			dependencies: ["08601583306BEB26"]
+			id: "235084018E06156B"
+			tasks: [{
+				id: "0EB66D09AE31348C"
+				type: "item"
+				title: "Any Enchant Device"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:enchantment_sorter"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:enchantment_applicator"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:enchantment_extractor"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:enchantment_factory"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			description: ["It seems you're able to apply this new machine frame variant towards a lovely plant fertilizer, taking the stress off of you for once!"]
+			dependencies: ["277798DC2786A6F2"]
+			id: "335DCBB33D9F9B15"
+			tasks: [{
+				id: "34C6EECC709C7ADE"
+				type: "item"
+				item: "industrialforegoing:plant_fertilizer"
+			}]
+		}
+	]
 }
