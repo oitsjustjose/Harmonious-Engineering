@@ -34,10 +34,11 @@ const mcjty = event => {
   event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
   event.replaceInput({output: '#xnet:connectors'}, 'minecraft:gold_ingot', 'pipez:universal_pipe');
   event.remove({output: 'rftoolsbase:crafting_card'});
+  event.remove({output: 'rftoolsbase:dimensionalshard'});
   event.remove({output: 'rftoolsbase:filter_module'});
-  event.remove({output: 'rftoolsbase:tablet'});
-  event.remove({output: 'rftoolsbase:tablet_filled'});
   event.remove({output: 'rftoolsbase:infused_enderpearl'});
+  event.remove({output: 'rftoolsbase:tablet_filled'});
+  event.remove({output: 'rftoolsbase:tablet'});
 };
 
 const tempad = event => {
@@ -239,6 +240,4 @@ onEvent('recipes', event => {
   supermartijn(event);
   tempad(event);
   torchmaster(event);
-
-  event.remove({output: 'rftoolsbase:dimensionalshard'});
 });
