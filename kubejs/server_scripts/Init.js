@@ -8,6 +8,9 @@ global.ie = x => {
 };
 
 global.duplicateResources = [
+  {tag: 'forge:gears/diamond', item: 'industrialforegoing:diamond_gear'},
+  {tag: 'forge:gears/gold', item: 'industrialforegoing:gold_gear'},
+  {tag: 'forge:gears/iron', item: 'industrialforegoing:iron_gear'},
   {tag: 'forge:coal_coke', item: global.ie('coal_coke')},
   {tag: 'forge:dusts/constantan', item: global.ie('dust_constantan')},
   {tag: 'forge:dusts/copper', item: global.ie('dust_copper')},
@@ -59,6 +62,27 @@ global.metals = ['iron', 'gold', 'copper', 'tin', 'silver', 'lead', 'aluminum', 
 
 global.recipes = event => {
   return {
+    /**
+     * @param {ItemStackJS|string} result
+     * @param {ItemStackJS[]} items
+     * @param {FluidStackJS} fluid
+     */
+    dissolution: (result, items, fluid, processingTime) => {
+      if (items.length > 8) {
+        console.error(
+          `Received ${items.length} items for a dissolution chamber recipe - max permitted is 8`
+        );
+        return;
+      }
+
+      event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: items.map(x => x.toJson()),
+        inputFluid: `{FluidName:"${fluid.getId()}",Amount:${fluid.getAmount()}}`,
+        processingTime: processingTime || 400,
+        output: result.toResultJson(),
+      });
+    },
     giant: (result, pattern, ingredients) => {
       event.custom({
         type: 'create:mechanical_crafting',
