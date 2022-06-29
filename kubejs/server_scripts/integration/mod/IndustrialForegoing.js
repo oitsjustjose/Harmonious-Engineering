@@ -13,6 +13,164 @@ onEvent('recipes', event => {
   event.remove({output: 'industrialforegoing:tinydryrubber'});
   event.remove({output: 'industrialforegoing:latex_processing_unit'});
 
+  event.remove({output: 'industrialforegoing:infinity_drill'});
+  CustomRecipeHandler.dissolution(
+    Item.of('industrialforegoing:infinity_drill'),
+    [
+      // Top Left
+      Item.of('#forge:gears/diamond'),
+      // Top Middle
+      Item.of('#forge:storage_blocks/steel'),
+      // Top Right
+      Item.of('pneumaticcraft:drill_bit_netherite'),
+
+      // Middle Left
+      Item.of('immersiveengineering:rockcutter'),
+      // Middle Right
+      Item.of('#forge:storage_blocks/steel'),
+
+      // Bottom Left
+      Item.of('#forge:gears/netherite'),
+      // Bottom Middle
+      Item.of('immersiveengineering:rockcutter'),
+      // Bottom Right
+      Item.of('#forge:gears/diamond'),
+    ],
+    Fluid.of('industrialforegoing:pink_slime', 2000)
+  );
+
+  event.remove({output: 'industrialforegoing:infinity_saw'});
+  CustomRecipeHandler.dissolution(
+    Item.of('industrialforegoing:infinity_saw'),
+    [
+      // Top Left
+      Item.of('#forge:gears/diamond'),
+      // Top Middle
+      Item.of('#forge:storage_blocks/steel'),
+      // Top Right
+      Item.of('immersiveengineering:sawblade'),
+
+      // Middle Left
+      Item.of('minecraft:diamond_axe'),
+      // Middle Right
+      Item.of('#forge:storage_blocks/steel'),
+
+      // Bottom Left
+      Item.of('#forge:gears/netherite'),
+      // Bottom Middle
+      Item.of('minecraft:diamond_axe'),
+      // Bottom Right
+      Item.of('#forge:gears/diamond'),
+    ],
+    Fluid.of('industrialforegoing:pink_slime', 2000)
+  );
+
+  event.remove({output: 'industrialforegoing:infinity_hammer'});
+  CustomRecipeHandler.dissolution(
+    Item.of('industrialforegoing:infinity_hammer'),
+    [
+      // Top Left
+      Item.of('#forge:gears/diamond'),
+      // Top Middle
+      Item.of('#forge:storage_blocks/steel'),
+      // Top Right
+      Item.of('immersiveengineering:sword_steel'),
+
+      // Middle Left
+      Item.of('tools_complement:invar_hammer'),
+      // Middle Right
+      Item.of('#forge:storage_blocks/steel'),
+
+      // Bottom Left
+      Item.of('#forge:gears/netherite'),
+      // Bottom Middle
+      Item.of('tools_complement:invar_hammer'),
+      // Bottom Right
+      Item.of('#forge:gears/diamond'),
+    ],
+    Fluid.of('industrialforegoing:pink_slime', 2000)
+  );
+
+  event.remove({output: 'industrialforegoing:infinity_backpack'});
+  CustomRecipeHandler.dissolution(
+    Item.of('industrialforegoing:infinity_backpack'),
+    [
+      // Top Left
+      Item.of('#forge:gears/diamond'),
+      // Top Middle
+      Item.of('#forge:storage_blocks/steel'),
+      // Top Right
+      Item.of('backpacked:backpack'),
+
+      // Middle Left
+      Item.of('thermal:fluid_cell_frame'),
+      // Middle Right
+      Item.of('#forge:storage_blocks/steel'),
+
+      // Bottom Left
+      Item.of('#forge:gears/netherite'),
+      // Bottom Middle
+      Item.of('thermal:fluid_cell_frame'),
+      // Bottom Right
+      Item.of('#forge:gears/diamond'),
+    ],
+    Fluid.of('industrialforegoing:pink_slime', 2000)
+  );
+
+  event.remove({output: 'industrialforegoing:infinity_launcher'});
+  CustomRecipeHandler.dissolution(
+    Item.of('industrialforegoing:infinity_launcher'),
+    [
+      // Top Left
+      Item.of('#forge:gears/diamond'),
+      // Top Middle
+      Item.of('#forge:storage_blocks/steel'),
+      // Top Right
+      Item.of('minecraft:crossbow'),
+
+      // Middle Left
+      Item.of('industrialforegoing:mob_imprisonment_tool'),
+      // Middle Right
+      Item.of('#forge:storage_blocks/steel'),
+
+      // Bottom Left
+      Item.of('#forge:gears/netherite'),
+      // Bottom Middle
+      Item.of('industrialforegoing:mob_imprisonment_tool'),
+      // Bottom Right
+      Item.of('#forge:gears/diamond'),
+    ],
+    Fluid.of('industrialforegoing:pink_slime', 2000)
+  );
+
+  event.remove({output: 'industrialforegoing:infinity_trident'});
+  CustomRecipeHandler.dissolution(
+    Item.of('industrialforegoing:infinity_trident'),
+    [
+      // Top Left
+      Item.of('#forge:gears/diamond'),
+      // Top Middle
+      Item.of('#forge:storage_blocks/steel'),
+      // Top Right
+      Item.of('minecraft:trident'),
+
+      // Middle Left
+      Item.of('/minecraft:firework_rocket/'),
+      // Middle Right
+      Item.of('#forge:storage_blocks/steel'),
+
+      // Bottom Left
+      Item.of('#forge:gears/netherite'),
+      // Bottom Middle
+      Item.of('/minecraft:firework_rocket/'),
+      // Bottom Right
+      Item.of('#forge:gears/diamond'),
+    ],
+    Fluid.of('industrialforegoing:pink_slime', 2000)
+  );
+
+  event.remove({output: 'industrialforegoing:infinity_nuke'});
+
   // Progression
   event.remove({output: 'industrialforegoing:machine_frame_pity'});
   // Automatable recipe using the Mechanical Crafting
@@ -20,18 +178,10 @@ onEvent('recipes', event => {
     F: 'compactmachines:machine_normal',
     B: '#forge:storage_blocks/brass',
   });
+
   event.smithing(
     'industrialforegoing:machine_frame_pity',
     'compactmachines:machine_normal',
     '#forge:storage_blocks/brass'
   );
-});
-
-onEvent('item.tags', event => {
-  event.remove('forge:gears', 'industrialforegoing:diamond_gear');
-  event.remove('forge:gears', 'industrialforegoing:gold_gear');
-  event.remove('forge:gears', 'industrialforegoing:iron_gear');
-  event.remove('forge:gears/diamond', 'industrialforegoing:diamond_gear');
-  event.remove('forge:gears/gold', 'industrialforegoing:gold_gear');
-  event.remove('forge:gears/iron', 'industrialforegoing:iron_gear');
 });
