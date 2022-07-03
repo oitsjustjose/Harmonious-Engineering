@@ -15,7 +15,10 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_drill'});
   CustomRecipeHandler.dissolution(
-    Item.of('industrialforegoing:infinity_drill'),
+    Item.of(
+      'industrialforegoing:infinity_drill',
+      '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+    ),
     [
       // Top Left
       Item.of('#forge:gears/diamond'),
@@ -41,7 +44,10 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_saw'});
   CustomRecipeHandler.dissolution(
-    Item.of('industrialforegoing:infinity_saw'),
+    Item.of(
+      'industrialforegoing:infinity_saw',
+      '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+    ),
     [
       // Top Left
       Item.of('#forge:gears/diamond'),
@@ -67,7 +73,10 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_hammer'});
   CustomRecipeHandler.dissolution(
-    Item.of('industrialforegoing:infinity_hammer'),
+    Item.of(
+      'industrialforegoing:infinity_hammer',
+      '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+    ),
     [
       // Top Left
       Item.of('#forge:gears/diamond'),
@@ -93,7 +102,10 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_backpack'});
   CustomRecipeHandler.dissolution(
-    Item.of('industrialforegoing:infinity_backpack'),
+    Item.of(
+      'industrialforegoing:infinity_backpack',
+      '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b,Tanks:{}}'
+    ),
     [
       // Top Left
       Item.of('#forge:gears/diamond'),
@@ -119,7 +131,10 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_launcher'});
   CustomRecipeHandler.dissolution(
-    Item.of('industrialforegoing:infinity_launcher'),
+    Item.of(
+      'industrialforegoing:infinity_launcher',
+      '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"POOR",Special:0b}'
+    ),
     [
       // Top Left
       Item.of('#forge:gears/diamond'),
@@ -145,7 +160,10 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_trident'});
   CustomRecipeHandler.dissolution(
-    Item.of('industrialforegoing:infinity_trident'),
+    Item.of(
+      'industrialforegoing:infinity_trident',
+      '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'
+    ),
     [
       // Top Left
       Item.of('#forge:gears/diamond'),
