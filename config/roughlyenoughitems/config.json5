@@ -1,17 +1,59 @@
 {
 	"basics": {
-		"favorites": [		],
+		"favorites": [],
 		"hiddenFavorites": [],
 		"displayHistory": [],
 		// Declares whether cheating mode is on.
-		"cheating": false,
+		"cheating": true,
 		"favoritesEnabled": true,
 		"keyBindings": {
+			"recipeKeybind": {
+				"keyCode": "key.keyboard.r",
+				"modifier": 0
+			},
+			"usageKeybind": {
+				"keyCode": "key.keyboard.u",
+				"modifier": 0
+			},
+			"hideKeybind": {
+				"keyCode": "key.keyboard.o",
+				"modifier": 2
+			},
+			"previousPageKeybind": {
+				"keyCode": "key.keyboard.unknown",
+				"modifier": 0
+			},
+			"nextPageKeybind": {
+				"keyCode": "key.keyboard.unknown",
+				"modifier": 0
+			},
 			"focusSearchFieldKeybind": {
 				"keyCode": "key.keyboard.f",
 				"modifier": 2
 			},
+			"copyRecipeIdentifierKeybind": {
+				"keyCode": "key.keyboard.n",
+				"modifier": 2
+			},
+			"favoriteKeybind": {
+				"keyCode": "key.keyboard.a",
+				"modifier": 0
+			},
+			"exportImageKeybind": {
+				"keyCode": "key.keyboard.f8",
+				"modifier": 0
+			},
+			"previousScreenKeybind": {
+				"keyCode": "key.keyboard.backspace",
+				"modifier": 0
+			}
 		},
+		// Declares whether REI is visible.
+		"overlayVisible": true,
+		"cheatingStyle": "GRAB",
+		"motion": {
+			"favoritesAnimation": true
+		}
 	},
 	"advanced": {
 		"filtering": {
