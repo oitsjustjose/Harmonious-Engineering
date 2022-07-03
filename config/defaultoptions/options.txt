@@ -1,3 +1,1 @@
 mipmapLevels:0
-resourcePacks:["vanilla","mod_resources","Immersive Weathering Generated Pack","Supplementaries Generated Pack","Everycomp Generated Pack","file/Pretty_Pipez.zip","quark:emote_resources","file/Xaero\u0027s Minimap - Mod Icons.zip","file/Updated_Engineering_v1.5.1.zip"]
-incompatibleResourcePacks:["quark:emote_resources"]
