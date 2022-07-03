@@ -1,6 +1,7 @@
 // priority: 0
 global.hideItems = [
   '/expandedstorage:*_present/',
+  '/libraryferret:*/',
   'create:copper_sheet',
   'create:crushed_aluminum_ore',
   'create:crushed_copper_ore',
@@ -69,6 +70,10 @@ global.hideItems = [
   'minecraft:chest',
   'pipez:gas_pipe',
   'rftoolsbase:crafting_card',
+  'rftoolsbase:filter_module',
+  'rftoolsbase:infused_enderpearl',
+  'rftoolsbase:tablet_filled',
+  'rftoolsbase:tablet',
   'thermal:drill_head',
   'thermal:emerald_gear',
   'thermal:lapis_gear',
@@ -119,6 +124,9 @@ global.hideItems = [
   global.ie('plate_silver'),
   global.ie('plate_uranium'),
   global.ie('raw_block_uranium'),
+  global.ie('raw_lead'),
+  global.ie('raw_nickel'),
+  global.ie('raw_silver'),
   global.ie('raw_uranium'),
   global.ie('sheetmetal_uranium'),
   global.ie('slab_sheetmetal_uranium'),
@@ -134,16 +142,12 @@ global.hideItems = [
   global.ie('watermill'),
   global.ie('waterwheel_segment'),
   global.ie('windmill'),
-  'rftoolsbase:filter_module',
-  'rftoolsbase:infused_enderpearl',
-  'rftoolsbase:tablet_filled',
-  'rftoolsbase:tablet',
 ];
 
-onEvent('jei.hide.items', event => {
+onEvent('rei.hide.items', event => {
   global.hideItems.forEach(x => event.hide(x));
 });
 
-onEvent('rei.hide.items', event => {
+onEvent('jei.hide.items', event => {
   global.hideItems.forEach(x => event.hide(x));
 });
