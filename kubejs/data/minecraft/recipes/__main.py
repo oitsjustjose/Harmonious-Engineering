@@ -144,6 +144,10 @@ for t in tc_adv_tiers:
     tools_complement.append((f"tools_complement:{t}_knife", "minecraft:diamond", "tools_complement:diamond_knife"))
     tools_complement.append((f"tools_complement:{t}_hammer", "minecraft:diamond_block", "tools_complement:diamond_hammer"))
     tools_complement.append((f"tools_complement:{t}_excavator", "minecraft:diamond_block", "tools_complement:diamond_excavator"))
+    tools_complement.append(("tools_complement:iron_sickle", "minecraft:diamond", f"tools_complement:diamond_sickle"))
+    tools_complement.append(("tools_complement:iron_knife", "minecraft:diamond", f"tools_complement:diamond_knife"))
+    tools_complement.append(("tools_complement:iron_hammer", "minecraft:diamond_block", f"tools_complement:diamond_hammer"))
+    tools_complement.append(("tools_complement:iron_excavator", "minecraft:diamond_block", f"tools_complement:diamond_excavator"))
 
 recipe = {
   "type": "minecraft:smithing",
