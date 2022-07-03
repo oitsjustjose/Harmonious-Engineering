@@ -503,6 +503,12 @@
 					tag: {
 						items: [
 							{
+								tag: {
+									bullets: {
+										Items: [ ]
+									}
+								}
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 21
@@ -510,14 +516,10 @@
 									}
 								}
 								id: "immersiveengineering:revolver"
-								Count: 1b
-								tag: {
-									bullets: {
-										Items: [ ]
-									}
-								}
 							}
 							{
+								tag: { }
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
@@ -525,10 +527,10 @@
 									}
 								}
 								id: "immersiveengineering:buzzsaw"
-								Count: 1b
-								tag: { }
 							}
 							{
+								tag: { }
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
@@ -536,28 +538,26 @@
 									}
 								}
 								id: "immersiveengineering:drill"
-								Count: 1b
-								tag: { }
 							}
 							{
+								id: "immersiveengineering:railgun"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 3
 										Items: [ ]
 									}
 								}
-								id: "immersiveengineering:railgun"
-								Count: 1b
 							}
 							{
+								id: "immersiveengineering:chemthrower"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 4
 										Items: [ ]
 									}
 								}
-								id: "immersiveengineering:chemthrower"
-								Count: 1b
 							}
 						]
 					}
@@ -578,11 +578,11 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -2.0d
-			y: 2.0d
+			x: 0.0d
+			y: 9.5d
 			shape: "gear"
 			description: ["What's this? Somehow you've manipulated space-time itself by utilizing dimensional shards and ender pearls. Looks like this device can be bound to existing machines in your world - I wonder what kinds of trouble you can get into with this?"]
-			dependencies: ["076FD7196A5BA25F"]
+			dependencies: ["5227E2C7EFD9686F"]
 			optional: true
 			id: "4FBC3C7AC2ADCFF6"
 			tasks: [{
