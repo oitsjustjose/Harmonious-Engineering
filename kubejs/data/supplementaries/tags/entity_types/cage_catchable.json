@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "naturalist:bluejay",
+    "naturalist:canary",
+    "naturalist:cardinal",
+    "naturalist:robin",
+    "naturalist:butterfly",
+    "naturalist:caterpillar",
+    "naturalist:firefly",
+    "naturalist:snail"
+  ]
+}
