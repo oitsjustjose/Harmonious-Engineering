@@ -1,13 +1,10 @@
 {
 	"basics": {
-		"favorites": [
-			"{data:{Count:1b,id:\"refinedstorage:silicon\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
-			"{data:{Count:1b,id:\"thermal:quartz_dust\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
-		],
+		"favorites": [],
 		"hiddenFavorites": [],
 		"displayHistory": [],
 		// Declares whether cheating mode is on.
-		"cheating": true,
+		"cheating": false,
 		"favoritesEnabled": true,
 		"keyBindings": {
 			"recipeKeybind": {
