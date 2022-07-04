@@ -11,6 +11,12 @@ onEvent('recipes', event => {
   event.remove({id: 'minecraft:leather'});
   event.shaped('minecraft:leather', ['XX', 'XX'], {X: 'minecraft:rabbit_hide'});
 
+  event.smelting('1x minecraft:slime_ball', 'naturalist:glow_goop');
+  event.recipes.thermal.centrifuge(
+    ['minecraft:slime_ball', 'minecraft:glowstone_dust'],
+    'naturalist:glow_goop'
+  );
+
   event.remove({output: 'decorative_blocks:rocky_dirt'});
   event.shapeless('2x decorative_blocks:rocky_dirt', ['verdure:pebbles', 'minecraft:dirt']);
   event.shapeless('4x decorative_blocks:rocky_dirt', [
