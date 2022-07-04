@@ -212,18 +212,11 @@
 					item: "create:depot"
 				}
 			]
-			rewards: [
-				{
-					id: "710772B1E7674FAE"
-					type: "item"
-					item: "create:goggles"
-				}
-				{
-					id: "1D6DCF898153C078"
-					type: "item"
-					item: "create:wrench"
-				}
-			]
+			rewards: [{
+				id: "1D6DCF898153C078"
+				type: "item"
+				item: "create:wrench"
+			}]
 		}
 		{
 			title: "Fluid Management"
