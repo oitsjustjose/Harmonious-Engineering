@@ -35,6 +35,32 @@ onEvent('recipes', event => {
     loops: 2,
   });
 
+  event.remove({id: 'immersiveengineering:crafting/redstone_acid'});
+  event.custom({
+    type: 'pneumaticcraft:thermo_plant',
+    item_input: {tag: 'forge:dusts/redstone'},
+    fluid_input: {
+      type: 'pneumaticcraft:fluid',
+      tag: 'pneumaticcraft:etching_acid',
+      amount: 1000,
+    },
+    fluid_output: {
+      fluid: 'immersiveengineering:redstone_acid',
+      amount: 1000,
+    },
+    temperature: {min_temp: 373},
+    exothermic: false,
+  });
+
+  event.remove({id: 'immersiveengineering:mixer/redstone_acid'});
+  event.custom({
+    type: 'immersiveengineering:mixer',
+    inputs: [{tag: 'forge:dusts/redstone'}],
+    result: {fluid: 'immersiveengineering:redstone_acid', amount: 250},
+    fluid: {tag: 'pneumaticcraft:etching_acid', amount: 250},
+    energy: 1600,
+  });
+
   event.remove({output: global.ie('sawblade')});
   event.shaped(global.ie('sawblade'), ['PIP', 'I I', 'PIP'], {
     P: '#forge:plates/iron',
