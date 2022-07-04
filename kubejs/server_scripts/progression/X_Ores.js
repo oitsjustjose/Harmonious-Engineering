@@ -1,3 +1,17 @@
+const resourceFromName = (metal, type, qty) => {
+  const mc = Item.of(`${qty || 1}x minecraft:${metal}_${type}`);
+  const thermal = Item.of(`${qty || 1}x thermal:${metal}_${type}`);
+  const create = Item.of(`${qty || 1}x create:${metal}_${type}`);
+  const ie = Item.of(`${qty || 1}x immersiveengineering:${type}_${metal}`);
+  if (mc !== Item.empty) return mc;
+  if (thermal !== Item.empty) return thermal;
+  if (create !== Item.empty) return create;
+  if (ie !== Item.empty) return ie;
+
+  console.error(`FAILED TO GUESS ${metal} ${type}`);
+  return Item.empty;
+};
+
 const remove = event => {
   // Remove Raw Ore -> Dusts and all Create Crushing Recipes
   event.remove({input: '#forge:raw_materials', output: '#forge:dusts'});
@@ -26,11 +40,11 @@ const remove = event => {
 const toNuggets = event => {
   global.metals.forEach(metal => {
     // Raw Ore to Nuggets
-    event.smelting(`3x #forge:nuggets/${metal}`, `#forge:raw_materials/${metal}`);
-    event.blasting(`4x #forge:nuggets/${metal}`, `#forge:raw_materials/${metal}`);
+    event.smelting(resourceFromName(metal, 'nugget', 3), `#forge:raw_materials/${metal}`);
+    event.blasting(resourceFromName(metal, 'nugget', 4), `#forge:raw_materials/${metal}`);
     // Ore to Nuggets
-    event.smelting(`1x #forge:ingots/${metal}`, `#forge:ores/${metal}`);
-    event.blasting(`11x #forge:nuggets/${metal}`, `#forge:ores/${metal}`);
+    event.smelting(resourceFromName(metal, 'ingot', 1), `#forge:ores/${metal}`);
+    event.blasting(resourceFromName(metal, 'nugget', 11), `#forge:ores/${metal}`);
   });
 };
 
@@ -51,8 +65,8 @@ const toDust = event => {
 
 const toIngots = event => {
   global.metals.forEach(metal => {
-    event.smelting(`#forge:ingots/${metal}`, `#forge:dusts/${metal}`);
-    event.blasting(`#forge:ingots/${metal}`, `#forge:dusts/${metal}`);
+    event.smelting(resourceFromName(metal, 'ingot'), `#forge:dusts/${metal}`);
+    event.blasting(resourceFromName(metal, 'ingot'), `#forge:dusts/${metal}`);
   });
 };
 
