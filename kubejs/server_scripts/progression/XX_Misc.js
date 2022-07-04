@@ -1,88 +1,35 @@
-const pipez = event => {
-  event.remove({output: 'pipez:item_pipe'});
-  event.remove({output: 'pipez:fluid_pipe'});
-  event.remove({output: 'pipez:energy_pipe'});
+const buildingGadgets = event => {
+  event.remove({mod: 'buildinggadgets'});
 
-  event.shaped('24x pipez:item_pipe', ['PPP', 'GUG', 'PPP'], {
-    U: 'prettypipes:low_extraction_module',
-    P: 'prettypipes:pipe',
-    G: '#forge:glass/yellow',
+  event.shaped('buildinggadgets:gadget_building', ['BHB', 'BWB', 'BEB'], {
+    B: '#forge:ingots/brass',
+    E: global.ie('toolupgrade_revolver_electro'),
+    H: 'create:brass_hand',
+    W: global.ie('wirecoil_electrum'),
   });
 
-  event.shaped('24x pipez:fluid_pipe', ['PPP', 'GUG', 'PPP'], {
-    U: 'create:mechanical_pump',
-    P: 'create:fluid_pipe',
-    G: '#forge:glass/light_blue',
+  event.shaped('buildinggadgets:gadget_exchanging', ['BGB', 'BWB', 'BEB'], {
+    B: '#forge:ingots/brass',
+    E: global.ie('toolupgrade_revolver_electro'),
+    G: 'thermal:ender_grenade',
+    W: global.ie('wirecoil_electrum'),
   });
 
-  event.shaped('24x pipez:energy_pipe', ['PPP', 'GUG', 'PPP'], {
-    U: global.ie('connector_lv'),
-    P: global.ie('wirecoil_copper'),
-    G: '#forge:glass/red',
+  event.shaped('buildinggadgets:gadget_copy_paste', ['BCB', 'BWB', 'BEB'], {
+    B: '#forge:ingots/brass',
+    C: 'create:schematicannon',
+    E: global.ie('toolupgrade_revolver_electro'),
+    W: global.ie('wirecoil_electrum'),
   });
-};
 
-const fluxNetworks = event => {
-  event.replaceInput(
-    {output: 'fluxnetworks:flux_core'},
-    'minecraft:obsidian',
-    'architects_palette:unobtanium'
-  );
-};
-
-const moreMinecarts = event => {
-  event.remove({output: 'moreminecarts:silica_steel'});
-  event.remove({output: 'moreminecarts:silica_steel_mix'});
-  event.recipes.immersiveengineeringArcFurnace(
-    ['4x moreminecarts:silica_steel'],
-    '3x #forge:ingots/steel',
-    ['3x minecraft:quartz']
-  );
-};
-
-const mcjty = event => {
-  event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
-  event.replaceInput({output: '#xnet:connectors'}, 'minecraft:gold_ingot', 'pipez:universal_pipe');
-  event.remove({output: 'rftoolsbase:crafting_card'});
-  event.remove({output: 'rftoolsbase:dimensionalshard'});
-  event.remove({output: 'rftoolsbase:filter_module'});
-  event.remove({output: 'rftoolsbase:infused_enderpearl'});
-  event.remove({output: 'rftoolsbase:tablet_filled'});
-  event.remove({output: 'rftoolsbase:tablet'});
-};
-
-const tempad = event => {
-  event.remove({output: 'tempad:tempad'});
-  event.shaped('tempad:tempad', ['BBB', 'RSE', 'BBB'], {
-    B: 'architects_palette:nether_brass_ingot',
-    S: 'rftoolsbase:information_screen',
-    R: 'minecraft:redstone_lamp',
-    E: '#forge:dusts/ender_pearl',
+  event.shaped('buildinggadgets:gadget_destruction', ['BDB', 'BWB', 'BEB'], {
+    B: '#forge:ingots/brass',
+    D: 'pneumaticcraft:drill_bit_netherite',
+    E: global.ie('toolupgrade_revolver_electro'),
+    W: global.ie('wirecoil_electrum'),
   });
-};
 
-const refinedStorage = event => {
-  event.remove({output: '#forge:silicon'});
-  event.recipes.immersiveengineeringArcFurnace(
-    ['refinedstorage:silicon'],
-    '2x #forge:dusts/quartz'
-  );
-
-  event.remove({id: 'refinedstorage:quartz_enriched_iron'});
-  event.recipes.thermal.smelter(Item.of('4x refinedstorage:quartz_enriched_iron'), [
-    Item.of('3x #forge:ingots/iron'),
-    Item.of('#forge:dusts/quartz'),
-  ]);
-};
-
-const routers = event => {
-  event.replaceInput({output: 'modularrouters:blank_module'}, 'minecraft:paper', '#forge:plastic');
-  event.replaceInput({output: 'modularrouters:blank_upgrade'}, 'minecraft:paper', '#forge:plastic');
-  event.replaceInput(
-    {output: 'modularrouters:modular_router'},
-    'minecraft:iron_ingot',
-    'architects_palette:unobtanium'
-  );
+  event.smithing('buildinggadgets:template_manager', 'create:schematic_table', '#forge:plastic');
 };
 
 const compactMachines = event => {
@@ -182,26 +129,20 @@ const compactMachines = event => {
   );
 };
 
-const supermartijn = event => {
-  event.remove({output: 'entangled:block'});
-  event.shaped('entangled:block', ['LDL', 'ESE', 'LDL'], {
-    D: 'rftoolsbase:dimensionalshard',
-    E: 'minecraft:ender_pearl',
-    L: '#forge:ingots/lead',
-    S: '#immersiveengineering:scaffoldings/steel',
-  });
-};
-
-const torchmaster = event => {
-  event.remove({mod: 'torchmaster'});
-  event.smithing('torchmaster:megatorch', 'minecraft:torch', 'rftoolsbase:infused_diamond');
-  event.smithing('torchmaster:dreadlamp', 'minecraft:obsidian', 'rftoolsbase:infused_diamond');
+const dimStorage = event => {
+  event.remove({mod: 'dimstorage'});
+  event.smithing('dimstorage:dimensional_chest', 'thermal:machine_frame', '#forge:ingots/enderium');
+  event.smithing(
+    'dimstorage:dimensional_tank',
+    'thermal:fluid_cell_frame',
+    '#forge:ingots/enderium'
+  );
+  event.smithing('dimstorage:dimensional_tablet', 'tempad:tempad', '#forge:ingots/enderium');
 };
 
 const expandedstorage = event => {
   event.replaceInput({}, 'minecraft:chest', '#forge:chests/wooden');
   event.replaceOutput({}, 'minecraft:chest', 'expandedstorage:wood_chest');
-
   [
     'expandedstorage:candy_cane_mini_present_with_sparrow',
     'expandedstorage:candy_cane_mini_present',
@@ -233,18 +174,111 @@ const expandedstorage = event => {
   });
 };
 
-const dimStorage = event => {
-  event.remove({mod: 'dimstorage'});
-  event.smithing('dimstorage:dimensional_chest', 'thermal:machine_frame', '#forge:ingots/enderium');
-  event.smithing(
-    'dimstorage:dimensional_tank',
-    'thermal:fluid_cell_frame',
-    '#forge:ingots/enderium'
+const fluxNetworks = event => {
+  event.replaceInput(
+    {output: 'fluxnetworks:flux_core'},
+    'minecraft:obsidian',
+    'architects_palette:unobtanium'
   );
-  event.smithing('dimstorage:dimensional_tablet', 'tempad:tempad', '#forge:ingots/enderium');
+};
+
+const mcjty = event => {
+  event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
+  event.replaceInput({output: '#xnet:connectors'}, 'minecraft:gold_ingot', 'pipez:universal_pipe');
+  event.remove({output: 'rftoolsbase:crafting_card'});
+  event.remove({output: 'rftoolsbase:dimensionalshard'});
+  event.remove({output: 'rftoolsbase:filter_module'});
+  event.remove({output: 'rftoolsbase:infused_enderpearl'});
+  event.remove({output: 'rftoolsbase:tablet_filled'});
+  event.remove({output: 'rftoolsbase:tablet'});
+};
+
+const moreMinecarts = event => {
+  event.remove({output: 'moreminecarts:silica_steel'});
+  event.remove({output: 'moreminecarts:silica_steel_mix'});
+  event.recipes.immersiveengineeringArcFurnace(
+    ['4x moreminecarts:silica_steel'],
+    '3x #forge:ingots/steel',
+    ['3x minecraft:quartz']
+  );
+};
+
+const pipez = event => {
+  event.remove({output: 'pipez:item_pipe'});
+  event.remove({output: 'pipez:fluid_pipe'});
+  event.remove({output: 'pipez:energy_pipe'});
+
+  event.shaped('24x pipez:item_pipe', ['PPP', 'GUG', 'PPP'], {
+    U: 'prettypipes:low_extraction_module',
+    P: 'prettypipes:pipe',
+    G: '#forge:glass/yellow',
+  });
+
+  event.shaped('24x pipez:fluid_pipe', ['PPP', 'GUG', 'PPP'], {
+    U: 'create:mechanical_pump',
+    P: 'create:fluid_pipe',
+    G: '#forge:glass/light_blue',
+  });
+
+  event.shaped('24x pipez:energy_pipe', ['PPP', 'GUG', 'PPP'], {
+    U: global.ie('connector_lv'),
+    P: global.ie('wirecoil_copper'),
+    G: '#forge:glass/red',
+  });
+};
+
+const refinedStorage = event => {
+  event.remove({output: '#forge:silicon'});
+  event.recipes.immersiveengineeringArcFurnace(
+    ['refinedstorage:silicon'],
+    '2x #forge:dusts/quartz'
+  );
+
+  event.remove({id: 'refinedstorage:quartz_enriched_iron'});
+  event.recipes.thermal.smelter(Item.of('4x refinedstorage:quartz_enriched_iron'), [
+    Item.of('3x #forge:ingots/iron'),
+    Item.of('#forge:dusts/quartz'),
+  ]);
+};
+
+const routers = event => {
+  event.replaceInput({output: 'modularrouters:blank_module'}, 'minecraft:paper', '#forge:plastic');
+  event.replaceInput({output: 'modularrouters:blank_upgrade'}, 'minecraft:paper', '#forge:plastic');
+  event.replaceInput(
+    {output: 'modularrouters:modular_router'},
+    'minecraft:iron_ingot',
+    'architects_palette:unobtanium'
+  );
+};
+
+const supermartijn = event => {
+  event.remove({output: 'entangled:block'});
+  event.shaped('entangled:block', ['LDL', 'ESE', 'LDL'], {
+    D: 'rftoolsbase:dimensionalshard',
+    E: 'minecraft:ender_pearl',
+    L: '#forge:ingots/lead',
+    S: '#immersiveengineering:scaffoldings/steel',
+  });
+};
+
+const tempad = event => {
+  event.remove({output: 'tempad:tempad'});
+  event.shaped('tempad:tempad', ['BBB', 'RSE', 'BBB'], {
+    B: 'architects_palette:nether_brass_ingot',
+    S: 'rftoolsbase:information_screen',
+    R: 'minecraft:redstone_lamp',
+    E: '#forge:dusts/ender_pearl',
+  });
+};
+
+const torchmaster = event => {
+  event.remove({mod: 'torchmaster'});
+  event.smithing('torchmaster:megatorch', 'minecraft:torch', 'rftoolsbase:infused_diamond');
+  event.smithing('torchmaster:dreadlamp', 'minecraft:obsidian', 'rftoolsbase:infused_diamond');
 };
 
 onEvent('recipes', event => {
+  buildingGadgets(event);
   compactMachines(event);
   dimStorage(event);
   expandedstorage(event);
