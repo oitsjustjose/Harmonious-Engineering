@@ -1,5 +1,32 @@
 # Harmonious Engineering 3 Changelog
 
+## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
+
+# 3.0.2
+
+## Added:
+
+- Building Gadgets w/ Custom Recipes and Textures (credits to [Lavundel](https://www.curseforge.com/minecraft/texture-packs/building-gadgets-create-like/)!)
+- [RECIPE] Smelting Recipe for Glow Goop -> Slime
+- [RECIPE] Centrifuging Recipe for Glow Goop -> Slime + Glowstone
+
+## Updated:
+
+- PneumaticCraft
+- PrettyPipes
+
+## Removed:
+
+- Effortless Building - conflicts with Rubidium rendering 😭
+
+## Changed:
+
+- Redstone Acid from IE now requires etching acid, can be made in a Thermo-Pneumatic Processing Plant
+- Map Atlases can be put in the Akashic Tome
+- [QUEST] Quest for Simply Maps has been swapped for Map Atlases
+- [QUEST] Quest for Supplementaries
+- [QUEST] Fixed duplicate Engineer's Goggle quest reward
+
 # 3.0.1
 
 ## Added:
