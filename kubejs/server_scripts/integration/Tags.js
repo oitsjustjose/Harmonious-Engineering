@@ -31,18 +31,7 @@ const clearTags = event => {
   ].forEach(x => event.removeAllTagsFrom(x));
 };
 
-const mapAtlasesTags = event => {
-  [
-    'naturalist:glow_goop',
-    'pneumaticcraft:glycerol',
-    'thermal:tar',
-    '#forge:slimeballs',
-    'ecologics:surface_moss',
-  ].forEach(x => event.add('map_atlases:sticky_crafting_items', x));
-};
-
 onEvent('item.tags', event => {
-  mapAtlasesTags(event);
   unifyMaterials(event);
   clearTags(event);
   event.add('thermal:crafting/dies', global.ie('mold_wire'));
