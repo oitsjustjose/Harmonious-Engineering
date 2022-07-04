@@ -30,6 +30,16 @@ const fluxNetworks = event => {
   );
 };
 
+const moreMinecarts = event => {
+  event.remove({output: 'moreminecarts:silica_steel'});
+  event.remove({output: 'moreminecarts:silica_steel_mix'});
+  event.recipes.immersiveengineeringArcFurnace(
+    ['4x moreminecarts:silica_steel'],
+    '3x #forge:ingots/steel',
+    ['3x minecraft:quartz']
+  );
+};
+
 const mcjty = event => {
   event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
   event.replaceInput({output: '#xnet:connectors'}, 'minecraft:gold_ingot', 'pipez:universal_pipe');
@@ -52,6 +62,12 @@ const tempad = event => {
 };
 
 const refinedStorage = event => {
+  event.remove({output: '#forge:silicon'});
+  event.recipes.immersiveengineeringArcFurnace(
+    ['refinedstorage:silicon'],
+    '2x #forge:dusts/quartz'
+  );
+
   event.remove({id: 'refinedstorage:quartz_enriched_iron'});
   event.recipes.thermal.smelter(Item.of('4x refinedstorage:quartz_enriched_iron'), [
     Item.of('3x #forge:ingots/iron'),
@@ -234,6 +250,7 @@ onEvent('recipes', event => {
   expandedstorage(event);
   fluxNetworks(event);
   mcjty(event);
+  moreMinecarts(event);
   pipez(event);
   refinedStorage(event);
   routers(event);
