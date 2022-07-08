@@ -9,4 +9,8 @@ onEvent('recipes', event => {
 
   event.remove({input: '#forge:nuggets/copper', output: '#forge:ingots/copper'});
   event.shaped('minecraft:copper_ingot', ['XXX', 'XXX', 'XXX'], {X: '#forge:nuggets/copper'});
+
+  event.remove({output: 'thermal:carrot_block'});
+  event.remove({output: 'thermal:potato_block'});
+  event.remove({output: 'thermal:beetroot_block'});
 });
