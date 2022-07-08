@@ -110,7 +110,7 @@
 			x: 2.0d
 			y: 5.5d
 			shape: "octagon"
-			dependencies: ["0F1F21514ED30727"]
+			dependencies: ["686B8A3E779BCF3D"]
 			size: 1.25d
 			id: "4E9BFC9573DF2929"
 			tasks: [
@@ -141,36 +141,14 @@
 			icon: "immersiveengineering:wirecoil_copper"
 			x: 0.0d
 			y: 4.5d
-			description: ["By utilizing a dynamo, you've found a way to hrness rotational energy through charging a copper coil. Unfortunately your existing rotational energy doesn't seem to be durable enouh to handle the amount of torque needed."]
+			description: [
+				"By utilizing a dynamo, you've found a way to hrness rotational energy through charging a copper coil."
+				""
+				"Using a series of connectors (to insert and extract Flux), relays (to relay Flux), you can connect wiring from your alternator to a machine!"
+			]
 			dependencies: ["5227E2C7EFD9686F"]
 			id: "686B8A3E779BCF3D"
 			tasks: [
-				{
-					id: "67D633ADE1BCA15D"
-					type: "item"
-					title: "Water or Wind Mill"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "immersiveengineering:windmill"
-									Count: 1b
-								}
-								{
-									id: "immersiveengineering:watermill"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "0715031DEB363913"
-					type: "item"
-					item: "immersiveengineering:dynamo"
-				}
 				{
 					id: "3A6F076F754F7764"
 					type: "item"
@@ -203,16 +181,16 @@
 					}
 				}
 				{
-					id: "7E22F5F58363988D"
+					id: "46A1CB2E64853F88"
 					type: "item"
-					item: "immersiveengineering:capacitor_lv"
+					item: "createaddition:alternator"
 				}
 			]
 			rewards: [{
 				id: "2BDC4B69C4825D18"
 				type: "item"
 				item: "create:experience_nugget"
-				count: 16
+				count: 42
 			}]
 		}
 		{
@@ -228,7 +206,7 @@
 				""
 				"This large machine seems to take in items from the top in the large hopper, and spits them out in the front unless there's some sort of storage in that place."
 			]
-			dependencies: ["5C9EC459800B1D00"]
+			dependencies: ["686B8A3E779BCF3D"]
 			size: 1.25d
 			id: "76695500DD40840A"
 			tasks: [
@@ -310,6 +288,7 @@
 				"You may also find some other forms of generators in the hand-me-down manual you received previously, which may produce enough flux to validate needing Medium Voltage."
 			]
 			dependencies: ["5227E2C7EFD9686F"]
+			optional: true
 			id: "5C9EC459800B1D00"
 			tasks: [
 				{
@@ -343,56 +322,9 @@
 					type: "item"
 					item: "immersiveengineering:connector_mv_relay"
 				}
-				{
-					id: "5EF10AAC18BB57CB"
-					type: "item"
-					item: "immersiveengineering:capacitor_mv"
-				}
 			]
 			rewards: [{
 				id: "7A831FB8B0D23C99"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 16
-			}]
-		}
-		{
-			title: "High Voltage"
-			icon: "immersiveengineering:wirecoil_steel"
-			x: 2.0d
-			y: 4.0d
-			shape: "hexagon"
-			description: [
-				"Finally, enough research with Steel has taught you that it can in fact be used for high-throughput wiring, assuming that it's combined with Aluminum in some of its uses."
-				""
-				"You may need to revisit the concept of combusion to create greater amounts of energy - perhaps some sort of engine can be fashioned out of heavy machine blocks?"
-			]
-			dependencies: ["5227E2C7EFD9686F"]
-			id: "0F1F21514ED30727"
-			tasks: [
-				{
-					id: "0738EB88BF7D5891"
-					type: "item"
-					item: "immersiveengineering:wirecoil_steel"
-				}
-				{
-					id: "22C55EB3AB84AE92"
-					type: "item"
-					item: "immersiveengineering:connector_hv"
-				}
-				{
-					id: "75ED201A41514CB2"
-					type: "item"
-					item: "immersiveengineering:connector_hv_relay"
-				}
-				{
-					id: "763526A448F8D4C7"
-					type: "item"
-					item: "immersiveengineering:capacitor_hv"
-				}
-			]
-			rewards: [{
-				id: "1C2C303B43AE32E9"
 				type: "item"
 				item: "create:experience_nugget"
 				count: 16
@@ -503,61 +435,61 @@
 					tag: {
 						items: [
 							{
-								id: "immersiveengineering:revolver"
+								tag: {
+									bullets: {
+										Items: [ ]
+									}
+								}
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 21
 										Items: [ ]
 									}
 								}
+								id: "immersiveengineering:revolver"
+							}
+							{
+								tag: { }
 								Count: 1b
-								tag: {
-									bullets: {
+								ForgeCaps: {
+									Parent: {
+										Size: 5
 										Items: [ ]
 									}
 								}
-							}
-							{
 								id: "immersiveengineering:buzzsaw"
-								ForgeCaps: {
-									Parent: {
-										Size: 5
-										Items: [ ]
-									}
-								}
-								Count: 1b
-								tag: { }
 							}
 							{
-								id: "immersiveengineering:drill"
+								tag: { }
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
 										Items: [ ]
 									}
 								}
-								Count: 1b
-								tag: { }
+								id: "immersiveengineering:drill"
 							}
 							{
 								id: "immersiveengineering:railgun"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 3
 										Items: [ ]
 									}
 								}
-								Count: 1b
 							}
 							{
 								id: "immersiveengineering:chemthrower"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 4
 										Items: [ ]
 									}
 								}
-								Count: 1b
 							}
 						]
 					}
@@ -603,6 +535,33 @@
 					tag: { }
 				}
 			}]
+		}
+		{
+			title: "High Voltage"
+			icon: "immersiveengineering:wirecoil_steel"
+			x: 2.0d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["5227E2C7EFD9686F"]
+			optional: true
+			id: "46B8B243ED855467"
+			tasks: [
+				{
+					id: "239B715389521383"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "2F219AA481DEB48B"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+				{
+					id: "296C23042F5AF4D0"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+			]
 		}
 	]
 }
