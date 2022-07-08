@@ -8,6 +8,10 @@
     "naturalist:butterfly",
     "naturalist:caterpillar",
     "naturalist:firefly",
-    "naturalist:snail"
+    "naturalist:snail",
+    "infernalexp:voline",
+    "infernalexp:glowsilk_moth",
+    "infernalexp:glowsquito",
+    "infernalexp:blindsight"
   ]
 }
