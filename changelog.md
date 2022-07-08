@@ -2,6 +2,26 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.0.3
+
+## Added:
+
+- Hex (New enchantments)
+- Infernal Expansion
+
+## Changed:
+
+- Increased Bauxite drops slightly
+- Increased **Deepslate** Iron drops slightly
+- Crushed Zinc Ore has been retextured to look like dust
+
+## Fixed:
+
+- Two types of carrot/beetroot/potato crates
+- LV/MV/HV quests gating progression, requiring accumulators
+- LV quest requiring wrong items
+- Wrong pipe required in Create Fluid Management quest
+
 # 3.0.2
 
 ## Added:
