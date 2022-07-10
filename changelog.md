@@ -6,14 +6,15 @@
 
 ## Fixed:
 
-- Quest ordering not making sense, some quests needing to be changed due to new/removed items
+- Many items not being hidden in REI that should have been
 - Morphing Tool not activating the Create Wrench for Create Additions, Compressed Creativity mod
+- Quest ordering not making sense, some quests needing to be changed due to new/removed items
 - Thermal Drill Head & Saw Blade still being _craftable_, albeit hidden and unusable.
 
 ## Changed:
 
-- Made Graphite Electrodes tolerable, preventing new ones from taking durability damage
 - Disabled Infernal Expansion's Shroomloin mob
+- Made Graphite Electrodes tolerable, preventing new ones from taking durability damage
 
 ## Removed:
 
@@ -23,9 +24,9 @@
 ## Updated:
 
 - Create
-- Flywheel
 - CreateAddition
   - This update removes the External Heater substitute, so you will find that these blocks have been reverted to their Immersive Engineering counterparts for your convenience.
+- Flywheel
 
 # 3.0.3
 
