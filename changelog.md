@@ -2,6 +2,30 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.0.4
+
+## Fixed:
+
+- Morphing Tool not activating the Create Wrench for Create Additions, Compressed Creativity mod
+- Thermal Drill Head & Saw Blade still being _craftable_, albeit hidden and unusable.
+
+## Changed:
+
+- Made Graphite Electrodes tolerable, preventing new ones from taking durability damage
+- Disabled Infernal Expansion's Shroomloin mob
+
+## Removed:
+
+- _Some_ custom textures for Create's copper blocks
+- Paper from mushrooms recipe
+
+## Updated:
+
+- Create
+- Flywheel
+- CreateAddition
+  - This update removes the External Heater substitute, so you will find that these blocks have been reverted to their Immersive Engineering counterparts for your convenience.
+
 # 3.0.3
 
 ## Added:
