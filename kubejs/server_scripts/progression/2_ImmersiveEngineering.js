@@ -2,7 +2,16 @@
 
 onEvent('recipes', event => {
   // Uncraft preheaters
-  event.shapeless(global.ie('furnace_heater'), [global.ie('blasefurnace_preheater')]);
+  event.shapeless(global.ie('furnace_heater'), [global.ie('blastfurnace_preheater')]);
+
+  // Make electron tubes tolerable
+  event.remove({id: 'immersiveengineering:blueprint/graphite_electrode'});
+  event.remove({id: 'immersiveengineering:metalpress/electrode'});
+  event.recipes.immersiveengineeringMetalPress(
+    Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0, Unbreakable:1}'),
+    `4x #forge:ingots/hop_graphite`,
+    global.ie('mold_rod')
+  );
 
   event.remove({output: global.ie('hammer')});
   event.shaped('kubejs:crude_hammer', [' A ', 'ASA', 'SA '], {

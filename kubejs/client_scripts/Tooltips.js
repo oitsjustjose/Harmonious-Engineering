@@ -25,9 +25,17 @@ onEvent('item.tooltip', event => {
   event.add('moreminecarts:chunkrodite', [
     '§7Created by destroying a §5Chunk Loader§7 that still has time remaining.§r',
   ]);
+
   event.addAdvanced('minecraft:enchanted_book', (item, _advanced, text) => {
     if (item.toString().includes(".enchant('minecraft:feather_falling', 4)")) {
       text.add(Text.of('§5All fall damage is negated and applied to boots instead§r'));
     }
+  });
+
+  event.addAdvanced('immersiveengineering:graphite_electrode', (_item, _advanced, text) => {
+    // Remove Integrity tooltip
+    text.remove(1);
+    // Remove "Unbreakable" tooltip
+    text.remove(1);
   });
 });
