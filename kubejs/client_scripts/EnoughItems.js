@@ -436,6 +436,7 @@ const items = [
   'titanium:machine_test',
   'torchmaster:feral_flare_lantern',
   'torchmaster:frozen_pearl',
+  Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'),
   Item.of('minecraft:lingering_potion', '{Potion:"ecologics:long_sliding"}'),
   Item.of('minecraft:lingering_potion', '{Potion:"ecologics:sliding"}'),
   Item.of('minecraft:lingering_potion', '{Potion:"infernalexp:infection"}'),
