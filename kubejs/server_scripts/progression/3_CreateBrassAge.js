@@ -5,6 +5,7 @@ onEvent('recipes', event => {
   event.remove({id: 'immersiveengineering:alloysmelter/brass'});
   event.remove({id: 'create:mixing/brass_ingot'});
   event.remove({output: 'create:electron_tube'});
+  event.replaceInput({output: 'create:steam_engine'}, '#forge:plates/gold', '#forge:plates/brass');
 
   event.shaped('2x create:electron_tube', ['R', 'T', 'P'], {
     R: 'create:polished_rose_quartz',
