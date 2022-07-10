@@ -3,7 +3,7 @@
     {
       "biome": "default",
       "spawn_info": {
-        "spawn_rate": 5,
+        "spawn_rate": 0,
         "min_count": 1,
         "max_count": 1
       }
@@ -11,7 +11,7 @@
     {
       "biome": "minecraft:crimson_forest",
       "spawn_info": {
-        "spawn_rate": 1,
+        "spawn_rate": 0,
         "min_count": 1,
         "max_count": 1,
         "energy_budget": 2.0,
