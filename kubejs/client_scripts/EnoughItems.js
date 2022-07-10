@@ -27,6 +27,7 @@ const items = [
   'create:incomplete_precision_mechanism',
   'create:incomplete_track',
   'create:iron_sheet',
+  'create:unprocessed_obsidian_sheet',
   'createaddition:accumulator',
   'createaddition:brass_rod',
   'createaddition:capacitor',
