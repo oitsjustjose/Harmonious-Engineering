@@ -1,6 +1,9 @@
 // Gate IE behind Create Contraptions
 
 onEvent('recipes', event => {
+  // Uncraft preheaters
+  event.shapeless(global.ie('furnace_heater'), [global.ie('blasefurnace_preheater')]);
+
   event.remove({output: global.ie('hammer')});
   event.shaped('kubejs:crude_hammer', [' A ', 'ASA', 'SA '], {
     A: 'create:andesite_alloy',
@@ -78,9 +81,6 @@ onEvent('recipes', event => {
   event.remove({id: 'immersiveengineering:arcfurnace/dust_uranium'});
   event.remove({id: 'immersiveengineering:alloysmelter/invar'});
   event.remove({id: 'immersiveengineering:alloysmelter/electrum'});
-  event.remove({id: 'immersiveengineering:crafting/furnace_heater'});
-  event.remove({id: 'createaddition:crafting/heater_exchange'});
-  event.remove({id: 'createaddition:compat/immersiveengineering/blastfurnace_preheater'});
 
   event.replaceInput(
     {output: 'createaddition:heater'},
