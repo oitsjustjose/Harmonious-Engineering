@@ -107,6 +107,9 @@ const rfCoilRecipes = event => {
 };
 
 const machineRecipes = event => {
+  event.remove({output: 'thermal:drill_head'});
+  event.remove({output: 'thermal:saw_blade'});
+
   const CustomRecipeHandler = global.recipes(event);
   const Items = {
     furnace: {item: 'minecraft:furnace'},
