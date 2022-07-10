@@ -2,7 +2,31 @@
 
 onEvent('recipes', event => {
   // Uncraft preheaters
-  event.shapeless(global.ie('furnace_heater'), [global.ie('blastfurnace_preheater')]);
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: {item: global.ie('blastfurnace_preheater')},
+    transitionalItem: {item: global.ie('blastfurnace_preheater')},
+    sequence: [
+      {
+        type: 'create:pressing',
+        ingredients: [{item: global.ie('blastfurnace_preheater')}],
+        results: [{item: global.ie('blastfurnace_preheater')}],
+        processingTime: 50,
+      },
+      {
+        type: 'create:cutting',
+        ingredients: [{item: global.ie('blastfurnace_preheater')}],
+        results: [{item: global.ie('blastfurnace_preheater')}],
+        processingTime: 50,
+      },
+    ],
+    results: [
+      {item: global.ie('furnace_heater'), chance: 75},
+      {item: global.ie('sheetmetal_iron'), chance: 20},
+      {tag: 'forge:plates/iron', chance: 5},
+    ],
+    loops: 3,
+  });
 
   // Make electron tubes tolerable
   event.remove({id: 'immersiveengineering:blueprint/graphite_electrode'});
