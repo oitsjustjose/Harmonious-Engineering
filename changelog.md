@@ -6,6 +6,7 @@
 
 ## Fixed:
 
+- Quest ordering not making sense, some quests needing to be changed due to new/removed items
 - Morphing Tool not activating the Create Wrench for Create Additions, Compressed Creativity mod
 - Thermal Drill Head & Saw Blade still being _craftable_, albeit hidden and unusable.
 
