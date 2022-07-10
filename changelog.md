@@ -6,6 +6,7 @@
 
 ## Fixed:
 
+- Create devices not rendering outlines, special features correctly
 - Many items not being hidden in REI that should have been
 - Morphing Tool not activating the Create Wrench for Create Additions, Compressed Creativity mod
 - Quest ordering not making sense, some quests needing to be changed due to new/removed items
