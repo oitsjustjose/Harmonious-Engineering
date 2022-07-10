@@ -59,27 +59,43 @@
 			x: 1.5d
 			y: 0.0d
 			description: [
-				"Your experience with rotational energy and flux has led you to come up with some interesting hybrids for generating torque. "
+				"Upon further pondering, you realize that with a sufficient source of heat and water, you can create an ongoing source of Steam!"
 				""
-				"Perhaps an external heater set to keep a furnace burning can produce enough heat output to harness?"
+				"Seems that some of these mechanical arms and engines can produce a huge amount of torque, capable of powering several alternators!"
 			]
 			dependencies: ["19AB43B2BEF954F5"]
 			id: "3F3DEB8E883444E5"
 			tasks: [
 				{
-					id: "593C1BE1A0E57699"
+					id: "4907C35005FD4036"
 					type: "item"
-					item: "create:flywheel"
+					item: "create:fluid_tank"
 				}
 				{
-					id: "141E172E97CA4977"
+					id: "0846A37F0FDDB733"
 					type: "item"
-					item: "create:furnace_engine"
+					title: "Suitable Heat Source"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:blaze_burner"
+									Count: 1b
+								}
+								{
+									id: "minecraft:campfire"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
-					id: "64CAFD23993E56E1"
+					id: "189064DFFBDBA429"
 					type: "item"
-					item: "immersiveengineering:furnace_heater"
+					item: "create:steam_engine"
 				}
 			]
 			rewards: [{

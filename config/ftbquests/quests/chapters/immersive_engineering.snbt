@@ -110,6 +110,11 @@
 			x: 2.0d
 			y: 5.5d
 			shape: "octagon"
+			description: [
+				"You find that you can create a furnace capable of harnessing Graphite Rods to produce large amounts of heat from Flux. This heat seems to be sufficient enough to melt most metals."
+				""
+				"Perhaps you can combine these molten metals to form some new alloys which you haven't yet explored?"
+			]
 			dependencies: ["686B8A3E779BCF3D"]
 			size: 1.25d
 			id: "4E9BFC9573DF2929"
@@ -124,9 +129,16 @@
 					to_observe: "immersiveengineering:arc_furnace"
 				}
 				{
-					id: "5B319C2A3FD87FB4"
+					id: "4DB4BEFDE931278F"
 					type: "item"
-					item: "create:brass_ingot"
+					item: {
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
+						tag: {
+							graphDmg: 0
+						}
+					}
+					count: 3L
 				}
 			]
 			rewards: [{
@@ -333,6 +345,11 @@
 		{
 			x: 0.0d
 			y: 6.0d
+			description: [
+				"After enough research, you finally decide that you need a better space to more optimally create industrial contrpations and ocmponents."
+				""
+				"This workbench seems to have plenty of space and drawers to get the job done, and even some space for blueprints!"
+			]
 			dependencies: ["686B8A3E779BCF3D"]
 			id: "02B38F5283455BE9"
 			tasks: [{

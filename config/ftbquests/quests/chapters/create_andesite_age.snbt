@@ -221,7 +221,7 @@
 		{
 			title: "Fluid Management"
 			x: -1.5d
-			y: 5.0d
+			y: 5.5d
 			description: ["You find that plated copper is reasonably fluid-tight. This might be usefult to you for managing lots of different fluids!"]
 			dependencies: ["04CD02F5D3E4C75E"]
 			id: "499426D28F7004A8"
@@ -278,13 +278,13 @@
 		{
 			title: "Creative Pneumatics"
 			x: 2.5d
-			y: 4.0d
+			y: 3.0d
 			description: [
 				"The Air Blower allows you to combine your studies in pneumatics with the similar mechanics you've seen through torque and rotation. You might be able to more efficiently create a fan-like mechanism using pneumatics rather than rotation."
 				""
 				"The Compressor allows you to take the rotational force you've been creating to produce air pressure - it may be worth exploring this in detail.."
 			]
-			dependencies: ["27B85BEE7CE3474D"]
+			dependencies: ["04CD02F5D3E4C75E"]
 			id: "5E2D189A12129245"
 			tasks: [{
 				id: "0723319FDCC31995"
@@ -318,13 +318,13 @@
 		{
 			title: "A Big Straw"
 			x: -2.5d
-			y: 4.0d
+			y: 4.5d
 			description: [
 				"Through your studies of gantries, you realize that hose can be dangled down into a pool of fluid and used to pull the fluids out of the pool."
 				""
 				"Perhaps something like this is particularly helpful in large pools."
 			]
-			dependencies: ["499426D28F7004A8"]
+			dependencies: ["04CD02F5D3E4C75E"]
 			id: "6239FE26C7ED8F0A"
 			tasks: [{
 				id: "7AC230FEE353CBFF"
@@ -342,9 +342,9 @@
 		{
 			title: "Scalable Fluid Storage"
 			x: -2.5d
-			y: 6.0d
+			y: 3.0d
 			description: ["With the amount of fluid you've amassed, perhaps some fluid tank would be helpful. Unfortunately you can't just insert directly into it, so you'll need some mechanisms to help get it out too."]
-			dependencies: ["499426D28F7004A8"]
+			dependencies: ["04CD02F5D3E4C75E"]
 			id: "31CCD637F2992A5B"
 			tasks: [
 				{
@@ -391,8 +391,8 @@
 		}
 		{
 			title: "Factorycraft"
-			x: 1.5d
-			y: 5.0d
+			x: 2.5d
+			y: 4.5d
 			description: ["It seems as though rotation can also be used to power conveyor belts, and chutes / funnels / tunnels can help route, insert and extract items in and out of belts, chests, and more."]
 			dependencies: ["04CD02F5D3E4C75E"]
 			id: "27B85BEE7CE3474D"
@@ -428,10 +428,10 @@
 		}
 		{
 			title: "KitchenAid, Eat Your Heart Out"
-			x: 2.5d
-			y: 6.0d
+			x: 1.5d
+			y: 5.5d
 			description: ["Using rotational energy, you've found a way to reproduce a stand mixer but in large scale. This mixer seems to really enjoy some extra heat, so perhaps you can harness properties of the Nether's Blaze to reach these temperatures?"]
-			dependencies: ["27B85BEE7CE3474D"]
+			dependencies: ["04CD02F5D3E4C75E"]
 			id: "374CD208978EA56D"
 			tasks: [
 				{
