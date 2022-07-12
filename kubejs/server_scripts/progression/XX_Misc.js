@@ -141,8 +141,11 @@ const dimStorage = event => {
 };
 
 const expandedstorage = event => {
-  event.replaceInput({}, 'minecraft:chest', '#forge:chests/wooden');
+  event.remove({id: 'expandedstorage:wood_chest'});
+  event.replaceInput({}, '#forge:chests/wooden', 'expandedstorage:wood_chest');
+  event.replaceInput({}, 'minecraft:chest', 'expandedstorage:wood_chest');
   event.replaceOutput({}, 'minecraft:chest', 'expandedstorage:wood_chest');
+
   [
     'expandedstorage:candy_cane_mini_present_with_sparrow',
     'expandedstorage:candy_cane_mini_present',

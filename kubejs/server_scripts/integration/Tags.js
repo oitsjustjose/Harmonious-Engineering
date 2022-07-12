@@ -36,4 +36,5 @@ onEvent('item.tags', event => {
   clearTags(event);
   event.add('thermal:crafting/dies', global.ie('mold_wire'));
   event.add('thermal:crafting/dies', global.ie('mold_bullet_casing'));
+  event.removeAllTagsFrom('minecraft:chest');
 });
