@@ -64,8 +64,8 @@ const toDust = event => {
     event.recipes.createCrushing([dust], [raw]);
     event.recipes.immersiveengineeringCrusher(`2x ${dust}`, ore);
     event.recipes.immersiveengineeringCrusher(dust, raw);
-    event.recipes.thermal.pulverizer(`2x ${dust}`, ore);
-    event.recipes.thermal.pulverizer(dust, raw);
+    event.recipes.thermal.pulverizer(Item.of(dust).withChance(2.0), ore);
+    event.recipes.thermal.pulverizer(Item.of(dust).withChance(1.025), raw);
   });
 };
 
@@ -81,7 +81,4 @@ onEvent('recipes', event => {
   toNuggets(event);
   toDust(event);
   toIngots(event);
-  // global.metals.forEach(x => {
-  //   event.remove
-  // })
 });
