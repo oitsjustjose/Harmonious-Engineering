@@ -168,6 +168,8 @@ const items = [
   'kubejs:incomplete_rf_coil',
   'minecraft:barrier',
   'minecraft:chest',
+  'minecraft:debug_stick',
+  'minecraft:knowledge_book',
   'minecraft:light',
   'minecraft:sculk_sensor',
   'moreminecarts:silica_steel_mix',
