@@ -18,14 +18,14 @@
 		base_production = 10.0
 		#Pressure Tier of the machine
 		#Allowed Values: TIER_ONE, TIER_ONE_HALF, TIER_TWO, CUSTOM
-		pressure_tier = "TIER_ONE"
+		pressure_tier = "TIER_TWO"
 
 		#Values from Custom Air Pressure for this machine
 		[machines.rotational_compressor.custom_pressure]
 			#Danger Pressure of the machine
 			#Default value: 5.0
 			#Range: 0.0 ~ 20.0
-			danger_pressure = 5.0
+			danger_pressure = 20.0
 			#Additional Critical Pressure of the machine.
 			#Actual Critical Pressure is the sum of this value and Danger Pressure
 			#Default value: 2.0
