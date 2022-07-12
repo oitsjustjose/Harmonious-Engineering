@@ -43,7 +43,7 @@
 	#e.g. if you're in a forest with mixed woods touching, should lumbering only break the same type of wood that was initially broken?
 	lumberingIsStrictAboutWood = true
 	#Enable the Imperishable enchantment for any breakable item
-	enableImperishable = true
+	enableImperishable = false
 	#The maximum amount of logs lumbering can destroy
 	#Range: > 1
 	maxLumberCount = 1024
@@ -61,7 +61,7 @@
 	#Allowed Values: DISABLED, OWNER, ALL
 	enablePetFriendlyFireTweak = "OWNER"
 	#Any time a Baby Zombie (or Zombie Piglin) spawns, it will be replaced with an adult
-	enableBabyZombieTweak = true
+	enableBabyZombieTweak = false
 	#A list of dimensions (of form <modid:type>) to ignore when prevent surface mob spawns.
 	peacefulSurfaceDimBlacklist = ["minecraft:the_nether", "minecraft:the_end"]
 	#The amount of time (in Milliseconds) between plucks. Defaults to 10 minutes.
