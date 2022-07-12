@@ -702,7 +702,8 @@
 				""
 				"Best of luck (and please report back with your findings!)"
 			]
-			dependencies: ["1C914DA40E420AEB"]
+			hide_dependency_lines: true
+			dependencies: ["451E8202B0FF4FDD"]
 			optional: true
 			id: "1C9451BE455E7B98"
 			tasks: [{
