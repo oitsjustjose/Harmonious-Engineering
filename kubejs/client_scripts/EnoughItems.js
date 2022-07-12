@@ -20,6 +20,9 @@ const items = [
   'create:crushed_iron_ore',
   'create:crushed_lead_ore',
   'create:crushed_nickel_ore',
+  'create:crushed_osmium_ore',
+  'create:crushed_platinum_ore',
+  'create:crushed_quicksilver_ore',
   'create:crushed_silver_ore',
   'create:crushed_tin_ore',
   'create:crushed_uranium_ore',
@@ -597,7 +600,6 @@ const items = [
 onEvent('jei.hide.items', event => {
   items.forEach(x => {
     try {
-      console.log(x);
       event.hide(x);
     } catch (e) {
       console.error(e);
@@ -608,7 +610,6 @@ onEvent('jei.hide.items', event => {
 onEvent('rei.hide.items', event => {
   items.forEach(x => {
     try {
-      console.log(x);
       event.hide(x);
     } catch (e) {
       console.error(e);
@@ -617,6 +618,5 @@ onEvent('rei.hide.items', event => {
 });
 
 onEvent('rei.remove.categories', event => {
-  console.log(event.getCategoryIds());
   event.remove('minecraft:plugins/tag');
 });
