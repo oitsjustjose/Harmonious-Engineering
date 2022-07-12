@@ -124,4 +124,13 @@ onEvent('recipes', event => {
   event.remove({output: global.ie('windmill')});
   event.remove({output: global.ie('watermill')});
   event.remove({output: global.ie('waterwheel_segment')});
+
+  /* Coke Dust Recipes for other machines */
+  event.recipes.createCrushing(global.ie('dust_coke'), ['#forge:coal_coke']);
+  event.recipes.createCrushing(`9x ${global.ie('dust_coke')}`, ['#forge:storage_blocks/coal_coke']);
+  event.recipes.thermal.pulverizer(global.ie('dust_coke'), '#forge:coal_coke');
+  event.recipes.thermal.pulverizer(
+    `9x ${global.ie('dust_coke')}`,
+    '#forge:storage_blocks/coal_coke'
+  );
 });
