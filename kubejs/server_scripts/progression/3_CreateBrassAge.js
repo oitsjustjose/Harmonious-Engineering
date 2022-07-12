@@ -15,7 +15,7 @@ onEvent('recipes', event => {
 
   CustomRecipeHandler.warping(
     Item.of('#forge:ingots/brass'),
-    Item.of('4x architects_palette:nether_brass_ingot')
+    Item.of('architects_palette:nether_brass_ingot')
   );
 
   // Re-add precision mech recipe because it was removed by its inclusion in global.duplicateResources
