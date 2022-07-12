@@ -2,6 +2,7 @@
 const items = [
   '/expandedstorage:*_present/',
   '/libraryferret:*/',
+  '/lootr:*/',
   'buildinggadgets:construction_block_dense',
   'buildinggadgets:construction_block_powder',
   'buildinggadgets:construction_block',
