@@ -14,7 +14,13 @@ const resourceFromName = (metal, type, qty) => {
 
 const remove = event => {
   // Remove Raw Ore -> Dusts and all Create Crushing Recipes
+  event.remove({input: '#forge:ores', output: '#forge:dusts'});
+  event.remove({input: '#forge:ores', output: '#forge:ingots'});
+  event.remove({input: '#forge:ores', output: '#forge:nuggets'});
   event.remove({input: '#forge:raw_materials', output: '#forge:dusts'});
+  event.remove({input: '#forge:raw_materials', output: '#forge:ingots'});
+  event.remove({input: '#forge:raw_materials', output: '#forge:nuggets'});
+
   event.remove({output: '#create:crushed_ores'});
 
   global.metals.forEach(metal => {
@@ -75,4 +81,7 @@ onEvent('recipes', event => {
   toNuggets(event);
   toDust(event);
   toIngots(event);
+  // global.metals.forEach(x => {
+  //   event.remove
+  // })
 });
