@@ -2,6 +2,22 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.0.5
+
+## Changed:
+
+- Hid Lootr's items from [J|R]EI as they're not survivally-acquirable
+- Coke Dust can be created in other crushing machines
+- Ores processed in Thermal's Pulverizer may now be boosted as they should've been
+- Pneumaticcraft Gasoline & Diesel can be used as fuels for IE's Tools
+- Rotational Compressors are now considered Tier 2, produce up to 20bar instead of 5bar
+- Vanilla Lush Cave Items now have a 2D Inventory Model (Courtesy of [`u/thepotatoking55/`](https://reddit.com/u/thepotatoking55/))
+
+## Removed:
+
+- Chest Texture overrides
+- Some duplicate ore processing recipes that were meant to be caught by another script
+
 # 3.0.4
 
 ## Fixed:
