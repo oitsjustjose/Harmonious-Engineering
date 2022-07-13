@@ -4,6 +4,16 @@
 
 # 3.0.5
 
+## Updated:
+
+- Compressed Creativity
+- Create
+- Create Crafts & Additions
+- Ecologics
+- Every Compat
+- Roughly Enough Items
+- Supplementaries
+
 ## Changed:
 
 - Hid Lootr's items from [J|R]EI as they're not survivally-acquirable
@@ -17,6 +27,7 @@
 
 - Chest Texture overrides
 - Some duplicate ore processing recipes that were meant to be caught by another script
+- Imperishable Enchantment (See "Affection" enchant from `Hex`)
 
 # 3.0.4
 
