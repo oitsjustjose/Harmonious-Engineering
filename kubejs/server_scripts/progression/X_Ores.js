@@ -8,7 +8,7 @@ const resourceFromName = (metal, type, qty) => {
   if (create !== Item.empty) return create;
   if (ie !== Item.empty) return ie;
 
-  console.error(`FAILED TO GUESS ${metal} ${type}`);
+  console.log(`FAILED TO GUESS ${metal} ${type}`);
   return Item.empty;
 };
 
