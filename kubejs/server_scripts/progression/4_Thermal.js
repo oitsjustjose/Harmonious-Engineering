@@ -370,6 +370,8 @@ const itemRecipes = event => {
 };
 
 onEvent('recipes', event => {
+  event.remove({id: 'thermal:machines/pulverizer/pulverizer_diamond_armor'});
+  event.recipes.thermal.pulverizer('minecraft:diamond', '#forge:armor/diamond');
   machineRecipes(event);
   itemRecipes(event);
 });
