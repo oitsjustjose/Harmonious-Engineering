@@ -1,4 +1,12 @@
 onEvent('item.tooltip', event => {
+  const optionalRemove = (t, f) => {
+    let idx = 0;
+    for (const x of t) {
+      if (`${x}`.includes(f)) t.remove(idx);
+      idx++;
+    }
+  };
+
   event.add(
     [
       'refinedstorage:controller',
@@ -21,10 +29,10 @@ onEvent('item.tooltip', event => {
   );
 
   event.add('naturalist:glow_goop', '§7Dropped from §eFireflies§7§r');
-
-  event.add('moreminecarts:chunkrodite', [
-    '§7Created by destroying a §5Chunk Loader§7 that still has time remaining.§r',
-  ]);
+  event.add(
+    'moreminecarts:chunkrodite',
+    '§7Created by destroying a §5Chunk Loader§7 that still has time remaining.§r'
+  );
 
   event.addAdvanced('minecraft:enchanted_book', (item, _advanced, text) => {
     if (item.toString().includes(".enchant('minecraft:feather_falling', 4)")) {
@@ -32,10 +40,28 @@ onEvent('item.tooltip', event => {
     }
   });
 
-  event.addAdvanced('immersiveengineering:graphite_electrode', (_item, _advanced, text) => {
-    // Remove Integrity tooltip
-    text.remove(1);
-    // Remove "Unbreakable" tooltip
-    text.remove(1);
+  event.addAdvanced('minecraft:stick', (item, advanced, text) => {
+    try {
+      optionalRemove(text, 'message.supplementaries.placeable');
+    } catch (ex) {
+      console.log(ex);
+    }
+  });
+
+  event.addAdvanced('minecraft:blaze_rod', (item, advanced, text) => {
+    try {
+      optionalRemove(text, 'message.supplementaries.placeable');
+    } catch (ex) {
+      console.log(ex);
+    }
+  });
+
+  event.addAdvanced('immersiveengineering:graphite_electrode', (item, advanced, text) => {
+    try {
+      optionalRemove(text, 'desc.immersiveengineering.info.electrodeIntegrity');
+      optionalRemove(text, 'item.unbreakable');
+    } catch (ex) {
+      console.log(ex);
+    }
   });
 });
