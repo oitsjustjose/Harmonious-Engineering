@@ -61,9 +61,12 @@
 		{
 			title: "Well-Oiled"
 			x: 1.5d
-			y: 2.0d
+			y: 1.5d
 			description: ["You've found that Latex is a great lubricant for optimal machine efficiency. This might allow you to run some heavier machinery."]
-			dependencies: ["300A46D98133D980"]
+			dependencies: [
+				"300A46D98133D980"
+				"72FC80C533A66E62"
+			]
 			id: "277798DC2786A6F2"
 			tasks: [{
 				id: "20F2AFC253D9410C"
@@ -80,7 +83,7 @@
 		{
 			title: "Is it... Alive?"
 			x: 1.5d
-			y: 4.0d
+			y: 5.0d
 			description: ["The Pink Slime seems to be willing to occupy the interior of this machine frame -- let's hope it doesn't get too hungry in there..."]
 			dependencies: ["0C44756098FBB868"]
 			id: "08601583306BEB26"
@@ -93,7 +96,7 @@
 		{
 			title: "Ether-Infused Frames"
 			x: 1.5d
-			y: 6.0d
+			y: 7.0d
 			dependencies: ["5571B245334AE7D4"]
 			id: "4C08F9B8CF327FD9"
 			tasks: [{
@@ -104,9 +107,10 @@
 		}
 		{
 			x: -1.5d
-			y: 4.0d
+			y: 5.0d
 			description: ["Like other infinity tools, you find that this drill is also has an insatiable thurst for Flux - and with every few billion flux you give it, the larger your max mining radius becomes...."]
 			dependencies: ["0C44756098FBB868"]
+			optional: true
 			id: "578948D723C29E16"
 			tasks: [{
 				id: "1073795BD4EF8EED"
@@ -134,10 +138,11 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 6.0d
+			x: -3.0d
+			y: 5.0d
 			description: ["Just other Infinity Tools, this saw has an insatiable thirst for Flux - with each large step in Flux this tool is given, the larger the forest it can devour.."]
 			dependencies: ["0C44756098FBB868"]
+			optional: true
 			id: "678BBFD796F93ADD"
 			tasks: [{
 				id: "0F3AE12E2CC1A0DE"
@@ -165,14 +170,15 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 2.0d
+			x: -4.5d
+			y: 5.0d
 			description: [
 				"You've discovered that covering high-quality, reinforced materials with Pink Slime will yield you a mighty weapon."
 				""
 				"There's something odd about the Pink Slime on this tool.. no matter how much you try, this hammer doesn't seem to ever have \"enough\" Flux to satiate it - and.... is the attack damage increasing??"
 			]
 			dependencies: ["0C44756098FBB868"]
+			optional: true
 			id: "0B051C46DBB5FCA8"
 			tasks: [{
 				id: "2BE197A8FA9516DB"
@@ -204,7 +210,7 @@
 			title: "Pink Slime"
 			icon: "industrialforegoing:pink_slime_bucket"
 			x: 0.0d
-			y: 4.5d
+			y: 5.0d
 			shape: "hexagon"
 			description: [
 				"Well that was unexpected - you were just looking for a way to automatically harvest mob drops from your mob farm, but it looks like you've been gifted with liquid meat and pink slime?"
@@ -236,7 +242,7 @@
 			title: "Latex Extraction"
 			icon: "industrialforegoing:latex_bucket"
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 			shape: "hexagon"
 			description: [
 				"That's interesting, all this time and only now have you realized that there might be some sort of way to pull the latex from Logs."
@@ -268,7 +274,7 @@
 			title: "GI Relief for Withers"
 			icon: "industrialforegoing:ether_gas_bucket"
 			x: 0.0d
-			y: 6.5d
+			y: 7.0d
 			shape: "hexagon"
 			description: [
 				"I'm not sure you can explain this any better than I can - it appears that by keeping a Wither in a Stasis Chamber, you've been able to harvest Ether Gas from inside the Wither using a Fluid Laser..."
@@ -298,7 +304,7 @@
 		}
 		{
 			x: 3.0d
-			y: 6.0d
+			y: 7.0d
 			description: [
 				"You've found that Ether-infused Machine Frames adds the ability to nest other Black Hole Tanks/Units within one block. For this, you've invented the Black Hole Controller!"
 				""
@@ -315,7 +321,7 @@
 		{
 			title: "Supreme Black Holes"
 			x: 4.5d
-			y: 6.0d
+			y: 7.0d
 			description: ["Ether-infused machine frames seem to be capable of mimicking the insatiable property of Pink Slime, but for Items and Fluids? Interesting.."]
 			dependencies: ["4C08F9B8CF327FD9"]
 			id: "2C8403B43A2D807D"
@@ -344,7 +350,7 @@
 		{
 			title: "Lasers"
 			x: 3.0d
-			y: 4.0d
+			y: 5.0d
 			description: [
 				"You're research may have lead you astray here and there, but you've somehow managed to land on a method of harvesting ores and fluids by manipulating light itself."
 				""
@@ -386,7 +392,7 @@
 		}
 		{
 			x: 4.5d
-			y: 4.0d
+			y: 5.0d
 			description: ["Seems as though your encounters with vague magiks are not over. By forcing the Pink Slime inside these frames to your bidding, you're able to manipulate and apply enchantments using Flux alone.."]
 			dependencies: ["08601583306BEB26"]
 			id: "235084018E06156B"
@@ -422,7 +428,7 @@
 		}
 		{
 			x: 3.0d
-			y: 2.0d
+			y: 2.5d
 			description: ["It seems you're able to apply this new machine frame variant towards a lovely plant fertilizer, taking the stress off of you for once!"]
 			dependencies: ["277798DC2786A6F2"]
 			id: "335DCBB33D9F9B15"
@@ -430,6 +436,229 @@
 				id: "34C6EECC709C7ADE"
 				type: "item"
 				item: "industrialforegoing:plant_fertilizer"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Through your research with interactions between fluids and items, you find that you can finally electrify items enough to allow given fluids to merge with these items, dissolving the items and forming them into an entirely new creation."
+				""
+				"Where will this discovery take you?"
+			]
+			dependencies: ["1708778CA9290B8E"]
+			id: "72FC80C533A66E62"
+			tasks: [{
+				id: "5C9B298541803ACB"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "4F943B4E0B2E4A6F"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 48
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Mekanistic Armory"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "mekanism:textures/item/mekasuit_bodyarmor.png"
+				}
+			}
+			x: -1.5d
+			y: 7.0d
+			description: [
+				"You've finally done it - you've found a way to integrate the gaseous extract from Withers to satisfy the pressure needs of Pneumatic Armor."
+				""
+				"It took some modification, but this new set seems capable of much more - though now it's going to need Flux to maintain its internal systems and modules."
+			]
+			dependencies: ["5571B245334AE7D4"]
+			optional: true
+			id: "7F6AE2AE17626E67"
+			tasks: [
+				{
+					id: "23F6C27A1ACAFC2D"
+					type: "item"
+					item: "mekanism:mekasuit_helmet"
+				}
+				{
+					id: "14C7C5D71DE3C34F"
+					type: "item"
+					item: "mekanism:mekasuit_bodyarmor"
+				}
+				{
+					id: "3637CAA3D69ACA60"
+					type: "item"
+					item: "mekanism:mekasuit_pants"
+				}
+				{
+					id: "546F220E3A60CF20"
+					type: "item"
+					item: "mekanism:mekasuit_boots"
+				}
+				{
+					id: "333ECC0D17C3FF12"
+					type: "item"
+					item: "mekanism:modification_station"
+				}
+			]
+			rewards: [{
+				id: "777591DBCF0FBBF5"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 48
+			}]
+		}
+		{
+			title: "Modularity Aplenty!"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "mekanism:textures/item/module_generic_unit.png"
+				}
+			}
+			x: -4.5d
+			y: 7.0d
+			description: [
+				"The way by which you outfitted Ether Gas to the Pneumatic Suit has forced you to integrate a panel which allows for modular units to be installed. "
+				""
+				"Perhaps you should investigate some of these units to see how they may assist you in the Modification Station?"
+			]
+			dependencies: ["5571B245334AE7D4"]
+			optional: true
+			id: "6CC8F4BDA5D608BD"
+			tasks: [
+				{
+					id: "6DB6C5B00F9DEDA9"
+					type: "item"
+					item: "mekanism:module_base"
+				}
+				{
+					id: "4FF689178E989E30"
+					type: "item"
+					title: "Any Meka-Module"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:module_energy_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_excavation_escalation_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_attack_amplification_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_farming_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_shearing_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_silk_touch_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_fortune_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_blasting_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_teleportation_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_electrolytic_breathing_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_vision_enhancement_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_jetpack_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_elytra_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_gyroscopic_stabilization_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_hydrostatic_repulsor_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_locomotive_boosting_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_hydraulic_propulsion_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_magnetic_attraction_unit"
+									Count: 1b
+								}
+								{
+									id: "mekanism:module_frost_walker_unit"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "One Powertool to Rule them All"
+			icon: {
+				id: "mekanism:meka_tool"
+				Count: 1b
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
+			x: -3.0d
+			y: 7.0d
+			shape: "circle"
+			description: [
+				"You've been able to apply your studies and experience used to form the Mekasuit to augment the Jackhammer to a similar potential."
+				""
+				"This new Powertool seems highly augmentable and capable of much by means of utility, mining and more"
+			]
+			dependencies: ["5571B245334AE7D4"]
+			id: "0326C087320DD5C4"
+			tasks: [{
+				id: "4D68BC799D7B6693"
+				type: "item"
+				item: "mekanism:meka_tool"
 			}]
 		}
 	]

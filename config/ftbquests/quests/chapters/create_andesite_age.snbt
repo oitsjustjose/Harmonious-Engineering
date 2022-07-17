@@ -38,8 +38,8 @@
 		}
 		{
 			title: "Fluidic Rotation"
-			x: 0.5d
-			y: 1.5d
+			x: 0.0d
+			y: 1.0d
 			description: [
 				"Taking notes of some of the rivers around you, you begin to notice ways to harness the flow of water to create a decently fast rotational source."
 				""
@@ -110,7 +110,7 @@
 		}
 		{
 			title: "Elbow Grease"
-			x: -0.5d
+			x: -1.5d
 			y: 1.5d
 			description: ["When all else fails, you find that your own body can create a pretty small amount of speed and stress. That said, this isn't the worst, especially for quick testing.."]
 			dependencies: ["219C4BC25CEF2579"]
@@ -129,58 +129,6 @@
 			}]
 		}
 		{
-			title: "Thermal Convection"
-			icon: "create:encased_fan"
-			x: -1.5d
-			y: 1.5d
-			description: ["These creative visions you've been having have shown you that you're able to harness the properties of convection to create an insignificant amount of speed \\& torque."]
-			dependencies: ["219C4BC25CEF2579"]
-			id: "006AD64CE7322E6B"
-			tasks: [
-				{
-					id: "40E5400EE6C7188D"
-					type: "item"
-					item: "create:encased_fan"
-				}
-				{
-					id: "3F3F2BD4E43899E6"
-					type: "item"
-					title: "Any Lever"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "minecraft:lever"
-									Count: 1b
-								}
-								{
-									id: "framedblocks:framed_lever"
-									Count: 1b
-								}
-								{
-									id: "create:analog_lever"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:sconce_lever"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "64869CBC11FEC9BE"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 8
-				random_bonus: 5
-			}]
-		}
-		{
 			title: "Pressing Matters"
 			icon: "create:mechanical_press"
 			x: 0.0d
@@ -194,7 +142,6 @@
 			dependencies: [
 				"421F10DDB0FB7DE7"
 				"6290FB308AEC8170"
-				"006AD64CE7322E6B"
 				"1645224A06F94731"
 			]
 			dependency_requirement: "one_completed"
@@ -253,7 +200,7 @@
 		{
 			title: "Lumbermill"
 			x: 0.0d
-			y: 5.5d
+			y: 6.0d
 			shape: "hexagon"
 			description: [
 				"You find that you can harness rotation to propel an incredibly sharp saw blade."
