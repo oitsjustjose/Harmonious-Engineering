@@ -637,5 +637,8 @@ onEvent('item.tags', event => {
     'mekanism:uranium_ore',
     'mekanism:uranium_oxide_bucket',
     'mekanism:yellow_cake_uranium',
-  ].forEach(x => event.removeAllTagsFrom(`/${x}/`));
+  ].forEach(x => {
+    event.removeAllTagsFrom(x);
+    event.removeAllTagsFrom(`/${x}/`);
+  });
 });
