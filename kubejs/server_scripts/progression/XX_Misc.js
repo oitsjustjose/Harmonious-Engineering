@@ -186,6 +186,7 @@ const fluxNetworks = event => {
 };
 
 const mcjty = event => {
+  const CustomRecipeHandler = global.recipes(event);
   event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
   event.replaceInput({output: '#xnet:connectors'}, 'minecraft:gold_ingot', 'pipez:universal_pipe');
   event.remove({output: 'rftoolsbase:crafting_card'});
@@ -194,6 +195,11 @@ const mcjty = event => {
   event.remove({output: 'rftoolsbase:infused_enderpearl'});
   event.remove({output: 'rftoolsbase:tablet_filled'});
   event.remove({output: 'rftoolsbase:tablet'});
+
+  CustomRecipeHandler.warping(
+    Item.of('minecraft:amethyst_shard'),
+    Item.of('rftoolsbase:dimensionalshard')
+  );
 };
 
 const moreMinecarts = event => {
