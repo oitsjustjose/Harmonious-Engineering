@@ -28,6 +28,48 @@ onEvent('item.tooltip', event => {
     '§7Can be combined with any §4d§2y§9e§7 to re-color!§r'
   );
 
+  event.add(
+    [
+      'mekanism:brine_bucket',
+      'mekanism:brine',
+      'mekanism:chlorine_bucket',
+      'mekanism:chlorine',
+      'mekanism:ethene_bucket',
+      'mekanism:ethene',
+      'mekanism:heavy_water_bucket',
+      'mekanism:heavy_water',
+      'mekanism:hydrofluoric_acid_bucket',
+      'mekanism:hydrofluoric_acid',
+      'mekanism:hydrogen_bucket',
+      'mekanism:hydrogen_chloride_bucket',
+      'mekanism:hydrogen_chloride',
+      'mekanism:hydrogen',
+      'mekanism:lithium_bucket',
+      'mekanism:lithium',
+      'mekanism:nutritional_paste_bucket',
+      'mekanism:nutritional_paste',
+      'mekanism:oxygen_bucket',
+      'mekanism:oxygen',
+      'mekanism:sodium_bucket',
+      'mekanism:sodium',
+      'mekanism:steam_bucket',
+      'mekanism:steam',
+      'mekanism:sulfur_dioxide_bucket',
+      'mekanism:sulfur_dioxide',
+      'mekanism:sulfur_trioxide_bucket',
+      'mekanism:sulfur_trioxide',
+      'mekanism:sulfuric_acid_bucket',
+      'mekanism:sulfuric_acid',
+      'mekanism:superheated_sodium_bucket',
+      'mekanism:superheated_sodium',
+      'mekanism:uranium_hexafluoride_bucket',
+      'mekanism:uranium_hexafluoride',
+      'mekanism:uranium_oxide_bucket',
+      'mekanism:uranium_oxide',
+    ],
+    '§4Disabled§r'
+  );
+
   event.add('naturalist:glow_goop', '§7Dropped from §eFireflies§7§r');
   event.add(
     'moreminecarts:chunkrodite',
