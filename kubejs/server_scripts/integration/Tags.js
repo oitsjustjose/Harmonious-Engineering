@@ -13,6 +13,19 @@ const unifyMaterials = event => {
 
   event.add('forge:hides', 'minecraft:leather');
   event.add('forge:hides', 'minecraft:rabbit_hide');
+
+  event.add('forge:tools/knives', 'tools_complement:iron_knife');
+  event.add('forge:tools/knives', 'tools_complement:gold_knife');
+  event.add('forge:tools/knives', 'tools_complement:diamond_knife');
+  event.add('forge:tools/knives', 'tools_complement:netherite_knife');
+  event.add('forge:tools/knives', 'tools_complement:copper_knife');
+  event.add('forge:tools/knives', 'tools_complement:tin_knife');
+  event.add('forge:tools/knives', 'tools_complement:lead_knife');
+  event.add('forge:tools/knives', 'tools_complement:silver_knife');
+  event.add('forge:tools/knives', 'tools_complement:nickel_knife');
+  event.add('forge:tools/knives', 'tools_complement:bronze_knife');
+  event.add('forge:tools/knives', 'tools_complement:electrum_knife');
+  event.add('forge:tools/knives', 'tools_complement:invar_knife');
 };
 
 const clearTags = event => {
