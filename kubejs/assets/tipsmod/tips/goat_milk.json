@@ -1,0 +1,4 @@
+{
+  "tip": {"translate": "tipsmod.tip.goat_milk"},
+  "conditions": [{"type": "forge:mod_loaded", "modid": "impossible_mod_disable"}]
+}

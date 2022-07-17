@@ -1,0 +1,4 @@
+{
+  "tip": {"translate": "tipsmod.tip.poison_immune"},
+  "conditions": [{"type": "forge:mod_loaded", "modid": "impossible_mod_disable"}]
+}
