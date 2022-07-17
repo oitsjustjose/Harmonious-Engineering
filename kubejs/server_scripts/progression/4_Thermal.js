@@ -111,6 +111,8 @@ const rfCoilRecipes = event => {
  * @param {Internal.RecipeEventJS} event
  */
 const machineRecipes = event => {
+  const CustomRecipeHandler = global.recipes(event);
+
   /* Rubber */
   event.remove({output: 'thermal:rubber'});
   // Latex -> Rubber recipe using IF
@@ -119,8 +121,12 @@ const machineRecipes = event => {
 
   event.remove({output: 'thermal:drill_head'});
   event.remove({output: 'thermal:saw_blade'});
+  event.replaceInput(
+    {output: 'thermal:enderium_dust'},
+    '#forge:ender_pearls',
+    '#forge:dusts/ender_pearl'
+  );
 
-  const CustomRecipeHandler = global.recipes(event);
   const Items = {
     furnace: {item: 'minecraft:furnace'},
     furnaceHeater: {item: 'immersiveengineering:furnace_heater'},

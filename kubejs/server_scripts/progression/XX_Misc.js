@@ -1,3 +1,23 @@
+/**
+ *
+ * @param {Internal.RecipeEventJS} event
+ */
+const archPalette = event => {
+  const CustomRecipeHandler = global.recipes(event);
+  event.remove({id: 'architects_palette:warping/unobtanium_from_netherite_ingot_warping'});
+  event.remove({id: 'architects_palette:unobtanium'});
+  CustomRecipeHandler.warping(
+    Item.of('thermal:enderium_ingot'),
+    Item.of('architects_palette:unobtanium')
+  );
+  event.recipes.immersiveengineering.arc_furnace(
+    '5x architects_palette:unobtanium',
+    Item.of('architects_palette:unobtanium_block', {
+      display: {Lore: ['[{"text":"This Recipe Wasn\'t an Accident ;)","italic":false}]']},
+    })
+  );
+};
+
 const buildingGadgets = event => {
   event.remove({mod: 'buildinggadgets'});
 
@@ -127,6 +147,42 @@ const compactMachines = event => {
     'tempad:tempad',
     'compactmachines:wall'
   );
+};
+
+const dave = event => {
+  [
+    'davebuildingmod:amethyst_glass',
+    'davebuildingmod:black_chair',
+    'davebuildingmod:blue_chair',
+    'davebuildingmod:book_1',
+    'davebuildingmod:book_2',
+    'davebuildingmod:brown_chair',
+    'davebuildingmod:copper_coil',
+    'davebuildingmod:cyan_chair',
+    'davebuildingmod:gray_chair',
+    'davebuildingmod:green_chair',
+    'davebuildingmod:hard_air',
+    'davebuildingmod:light_blue_chair',
+    'davebuildingmod:light_gray_chair',
+    'davebuildingmod:lime_chair',
+    'davebuildingmod:magenta_chair',
+    'davebuildingmod:orange_chair',
+    'davebuildingmod:pink_chair',
+    'davebuildingmod:purple_chair',
+    'davebuildingmod:red_chair',
+    'davebuildingmod:reinforced_glass',
+    'davebuildingmod:rocky_dirt',
+    'davebuildingmod:rubber_duck',
+    'davebuildingmod:soft_air',
+    'davebuildingmod:steel_ingot',
+    'davebuildingmod:track_end',
+    'davebuildingmod:tungsten_carbite',
+    'davebuildingmod:white_chair',
+    'davebuildingmod:yellow_chair',
+  ].forEach(x => event.remove({output: x}));
+
+  event.replaceInput({}, 'davebuildingmod:steel_ingot', '#forge:ingots/steel');
+  event.smithing('2x davebuildingmod:track_end', 'create:track', '#forge:rods/all_metal');
 };
 
 const dimStorage = event => {
@@ -287,8 +343,10 @@ const torchmaster = event => {
 };
 
 onEvent('recipes', event => {
+  archPalette(event);
   buildingGadgets(event);
   compactMachines(event);
+  dave(event);
   dimStorage(event);
   expandedstorage(event);
   fluxNetworks(event);
