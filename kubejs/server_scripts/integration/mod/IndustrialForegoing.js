@@ -4,10 +4,6 @@ onEvent('recipes', event => {
   event.remove({output: 'industrialforegoing:diamond_gear'});
   event.remove({output: 'industrialforegoing:gold_gear'});
   event.remove({output: 'industrialforegoing:iron_gear'});
-  event.remove({output: 'industrialforegoing:diamond_gear'});
-  event.remove({output: 'industrialforegoing:gold_gear'});
-  event.remove({output: 'industrialforegoing:iron_gear'});
-
   event.remove({output: 'industrialforegoing:plastic'});
   event.remove({output: 'industrialforegoing:dryrubber'});
   event.remove({output: 'industrialforegoing:tinydryrubber'});

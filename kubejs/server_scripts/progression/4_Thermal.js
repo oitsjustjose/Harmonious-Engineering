@@ -106,7 +106,17 @@ const rfCoilRecipes = event => {
   });
 };
 
+/**
+ *
+ * @param {Internal.RecipeEventJS} event
+ */
 const machineRecipes = event => {
+  /* Rubber */
+  event.remove({output: 'thermal:rubber'});
+  // Latex -> Rubber recipe using IF
+  event.recipes.thermal.chiller('thermal:rubber', [Fluid.of('industrialforegoing:latex', 100)]);
+  event.recipes.thermal.press('pneumaticcraft:plastic', ['3x thermal:rubber']);
+
   event.remove({output: 'thermal:drill_head'});
   event.remove({output: 'thermal:saw_blade'});
 
@@ -127,6 +137,7 @@ const machineRecipes = event => {
     conveyor: {item: 'immersiveengineering:conveyor_basic'},
     piston: {item: 'minecraft:piston'},
   };
+
   // Pulverizer
   event.remove({output: 'thermal:machine_pulverizer'});
   CustomRecipeHandler.giant(
