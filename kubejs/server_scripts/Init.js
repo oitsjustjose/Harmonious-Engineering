@@ -60,6 +60,9 @@ global.duplicateResources = [
 
 global.metals = ['iron', 'gold', 'copper', 'tin', 'silver', 'lead', 'aluminum', 'zinc', 'nickel'];
 
+/**
+ * @param {Internal.RecipeEventJS} event
+ */
 global.recipes = event => {
   return {
     /**
@@ -69,12 +72,11 @@ global.recipes = event => {
      */
     dissolution: (result, items, fluid, processingTime) => {
       if (items.length > 8) {
-        console.error(
+        console.log(
           `Received ${items.length} items for a dissolution chamber recipe - max permitted is 8`
         );
         return;
       }
-
       event.custom({
         type: 'industrialforegoing:dissolution_chamber',
         input: items.map(x => x.toJson()),
@@ -92,12 +94,12 @@ global.recipes = event => {
         acceptMirrored: false,
       });
     },
-    warping: (input, output) => {
+    warping: (input, output, dimension) => {
       event.custom({
         type: 'architects_palette:warping',
         ingredient: [Item.of(input).toJson()],
         result: output.toResultJson(),
-        dimension: 'minecraft:the_nether',
+        dimension: dimension ? dimension : 'minecraft:the_nether',
       });
     },
     pressurizing: (inputs, results, pressure) => {
