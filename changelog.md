@@ -2,6 +2,47 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.0.8
+
+## Added
+
+### Mods
+
+- Mekanism
+
+  - Most content here is permantenly disabled - I really wanted a powersuit that didn't use Air Pressure, so here we are. You also get to keep the Bins, but they've been renamed & retextured.
+  - Custom Recipes & Quests for the Meka-Suit, Meka-Tool & Modules
+
+- Tips mod
+
+  - I wanted to disable Vanilla Tips, but I couldn't without breaking everything - so you'll also get tips on the Vanilla game
+  - Tips on this modpack have been added to include some of the more obscure facts and things that I've integrated
+
+- Dave's Building Extended
+
+  - Heavily modified to remove some of the... less polished items
+
+### Other
+
+- Dimensional Shards can now be crafted via Warping
+- Compatibility for Tools Complement Knives & Farmer's Delight Knives - they should now work as one
+
+## Changed
+
+- Windmill Sails / Sailcloth have been removed & hidden - good catch by [Elder Sign](https://www.youtube.com/channel/UCOEUUMU8Q9Gt7umqQL4wsgQ)
+- Thermal's Rubber can now be crafted through Blast Chilling Latex
+- Plastic can be made slightly easier once you get into Thermal, via Multiservo-Pressing 3 Rubber
+- Unobtanium is now made with Enderium Ingots, can only be cyclically crafted via Arc Furnace
+
+## Fixed
+
+- REI Search not working / stopping working
+- Fixed Supplementaries bug with Placeable tooltip showing up but not actually being placeable
+
+# 3.0.6
+
+- Downgraded Chunk Loaders version
+
 # 3.0.5
 
 ## Updated:
