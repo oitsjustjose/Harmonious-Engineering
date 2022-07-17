@@ -1,4 +1,0 @@
-{
-  "tip": {"translate": "tipsmod.tip.coarse_to_dirt"},
-  "conditions": [{"type": "forge:mod_loaded", "modid": "impossible_mod_disable"}]
-}

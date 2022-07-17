@@ -1,4 +1,0 @@
-{
-  "tip": {"translate": "tipsmod.tip.mean_goats"},
-  "conditions": [{"type": "forge:mod_loaded", "modid": "impossible_mod_disable"}]
-}

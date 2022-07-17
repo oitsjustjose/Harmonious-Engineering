@@ -1,4 +1,0 @@
-{
-  "tip": {"translate": "tipsmod.tip.bucket_rename"},
-  "conditions": [{"type": "forge:mod_loaded", "modid": "impossible_mod_disable"}]
-}
