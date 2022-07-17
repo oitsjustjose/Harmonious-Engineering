@@ -34,11 +34,19 @@
     "redstone": true,
     "fe": true
   },
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true
+  },
   "jade": {
     "block_states": false,
     "entity_armor": true,
     "registry_name": false,
-    "item_mod_name": false,
+    "item_mod_name": true,
     "mod_name": false,
     "entity_hp": true
   }
