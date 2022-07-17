@@ -1,4 +1,4 @@
-const mekanismItems = [
+const MekanismItems = [
   'mekanism:advanced_bin',
   'mekanism:advanced_chemical_tank',
   'mekanism:advanced_combining_factory',
@@ -378,377 +378,475 @@ const mekanismItems = [
   'mekanism:yellow_cake_uranium',
 ];
 
-const mekanismFluids = [
-  'mekanism:brine',
-  'mekanism:chlorine',
-  'mekanism:ethene',
-  'mekanism:flowing_brine',
-  'mekanism:heavy_water',
-  'mekanism:hydrofluoric_acid',
-  'mekanism:hydrogen_chloride',
-  'mekanism:hydrogen',
-  'mekanism:lithium',
-  'mekanism:nutritional_paste',
-  'mekanism:oxygen',
-  'mekanism:sodium',
-  'mekanism:steam',
-  'mekanism:sulfur_dioxide',
-  'mekanism:sulfur_trioxide',
-  'mekanism:sulfuric_acid',
-  'mekanism:superheated_sodium',
-  'mekanism:uranium_hexafluoride',
-  'mekanism:uranium_oxide',
-  'mekanism:flowing_chlorine',
-  'mekanism:flowing_ethene',
-  'mekanism:flowing_heavy_water',
-  'mekanism:flowing_hydrofluoric_acid',
-  'mekanism:flowing_hydrogen_chloride',
-  'mekanism:flowing_hydrogen',
-  'mekanism:flowing_lithium',
-  'mekanism:flowing_nutritional_paste',
-  'mekanism:flowing_oxygen',
-  'mekanism:flowing_sodium',
-  'mekanism:flowing_steam',
-  'mekanism:flowing_sulfur_dioxide',
-  'mekanism:flowing_sulfur_trioxide',
-  'mekanism:flowing_sulfuric_acid',
-  'mekanism:flowing_superheated_sodium',
-  'mekanism:flowing_uranium_hexafluoride',
-  'mekanism:flowing_uranium_oxide',
-];
-
-const mekanismMisc = [
-  'mekanism:activating',
-  'mekanism:alloys',
-  'mekanism:antimatter',
-  'mekanism:aqua',
-  'mekanism:atomic_disassembler_ore',
-  'mekanism:bin',
-  'mekanism:bin_extract',
-  'mekanism:bin_insert',
-  'mekanism:bio',
-  'mekanism:black',
-  'mekanism:blue',
-  'mekanism:brine',
-  'mekanism:brown',
-  'mekanism:carbon',
-  'mekanism:cardboard_blacklist',
-  'mekanism:centrifuging',
-  'mekanism:charcoal',
-  'mekanism:chemical_infusing',
-  'mekanism:chemical_tank',
-  'mekanism:chlorine',
-  'mekanism:clean',
-  'mekanism:clean_copper',
-  'mekanism:clean_gold',
-  'mekanism:clean_iron',
-  'mekanism:clean_lead',
-  'mekanism:clean_osmium',
-  'mekanism:clean_tin',
-  'mekanism:clean_uranium',
-  'mekanism:clumps',
-  'mekanism:colorable',
-  'mekanism:combining',
-  'mekanism:compressing',
-  'mekanism:configurators',
-  'mekanism:control_circuit',
-  'mekanism:crushing',
-  'mekanism:crystallizing',
-  'mekanism:crystals',
-  'mekanism:cyan',
-  'mekanism:dark_red',
-  'mekanism:diamond',
-  'mekanism:dirty',
-  'mekanism:dirty_copper',
-  'mekanism:dirty_dusts',
-  'mekanism:dirty_gold',
-  'mekanism:dirty_iron',
-  'mekanism:dirty_lead',
-  'mekanism:dirty_osmium',
-  'mekanism:dirty_tin',
-  'mekanism:dirty_uranium',
-  'mekanism:dissolution',
-  'mekanism:energy_conversion',
-  'mekanism:energy_cube',
-  'mekanism:enriched',
-  'mekanism:enriching',
-  'mekanism:ethene',
-  'mekanism:evaporating',
-  'mekanism:factory',
-  'mekanism:fissile_fuel',
-  'mekanism:flame',
-  'mekanism:fluid_tank',
-  'mekanism:fungi',
-  'mekanism:gas_conversion',
-  'mekanism:gold',
-  'mekanism:gray',
-  'mekanism:green',
-  'mekanism:heavy_water',
-  'mekanism:hurtable_vehicles',
-  'mekanism:hydrofluoric_acid',
-  'mekanism:hydrogen',
-  'mekanism:hydrogen_chloride',
-  'mekanism:induction',
-  'mekanism:infusion_conversion',
-  'mekanism:injecting',
-  'mekanism:light_blue',
-  'mekanism:light_gray',
-  'mekanism:lime',
-  'mekanism:lithium',
-  'mekanism:magenta',
-  'mekanism:mek_data',
-  'mekanism:metallurgic_infusing',
-  'mekanism:miner_blacklist',
-  'mekanism:nuclear_waste',
-  'mekanism:nucleosynthesizing',
-  'mekanism:nuggets',
-  'mekanism:nutritional_paste',
-  'mekanism:orange',
-  'mekanism:osmium',
-  'mekanism:oxidizing',
-  'mekanism:oxygen',
-  'mekanism:painting',
-  'mekanism:paper',
-  'mekanism:personal_storage',
-  'mekanism:pigment_extracting',
-  'mekanism:pigment_mixing',
-  'mekanism:pink',
-  'mekanism:plutonium',
-  'mekanism:polonium',
-  'mekanism:processing',
-  'mekanism:purifying',
-  'mekanism:purple',
-  'mekanism:rails',
-  'mekanism:reaction',
-  'mekanism:red',
-  'mekanism:redstone',
-  'mekanism:refined_obsidian',
-  'mekanism:rotary',
-  'mekanism:sawing',
-  'mekanism:separating',
-  'mekanism:separator',
-  'mekanism:shards',
-  'mekanism:sodium',
-  'mekanism:spent_nuclear_waste',
-  'mekanism:steam',
-  'mekanism:storage_blocks',
-  'mekanism:sulfur_dioxide',
-  'mekanism:sulfur_trioxide',
-  'mekanism:sulfuric_acid',
-  'mekanism:superheated_sodium',
-  'mekanism:thermal_evaporation',
-  'mekanism:tier_installer',
-  'mekanism:tin',
-  'mekanism:transmitter',
-  'mekanism:upgrade',
-  'mekanism:uranium_hexafluoride',
-  'mekanism:uranium_oxide',
-  'mekanism:washing',
-  'mekanism:waste_barrel_decay_blacklist',
-  'mekanism:water_vapor',
-  'mekanism:white',
-  'mekanism:yellow'
-];
-
-/**
- * @param {Internal.RecipeEventJS} event 
- */
-const gear = event => {
-  const CustomRecipeHandler = global.recipes(event);
-
-  CustomRecipeHandler.dissolution(
-    Item.of('mekanism:mekasuit_helmet'),
-    [
-      Item.of('thermal:hazmat_fabric'),
-      Item.of('pneumaticcraft:pneumatic_helmet'),
-      Item.of('thermal:hazmat_fabric'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:diving_fabric'),
-      Item.of('thermal:rf_coil'),
-      Item.of('thermal:diving_fabric'),
-    ],
-    Fluid.of('industrialforegoing:ether_gas', 2000)
-  );
-
-  CustomRecipeHandler.dissolution(
-    Item.of('mekanism:mekasuit_bodyarmor'),
-    [
-      Item.of('create:sturdy_sheet'),
-      Item.of('pneumaticcraft:pneumatic_chestplate'),
-      Item.of('create:sturdy_sheet'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('#forge:plates/netherite'),
-      Item.of('thermal:rf_coil'),
-      Item.of('#forge:plates/netherite'),
-    ],
-    Fluid.of('industrialforegoing:ether_gas', 2000)
-  );
-
-  CustomRecipeHandler.dissolution(
-    Item.of('mekanism:mekasuit_pants'),
-    [
-      Item.of('pneumaticcraft:pneumatic_cylinder'),
-      Item.of('pneumaticcraft:pneumatic_leggings'),
-      Item.of('pneumaticcraft:pneumatic_cylinder'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:redstone_servo'),
-      Item.of('thermal:rf_coil'),
-      Item.of('thermal:redstone_servo'),
-    ],
-    Fluid.of('industrialforegoing:ether_gas', 2000)
-  );
-
-  CustomRecipeHandler.dissolution(
-    Item.of('mekanism:mekasuit_boots'),
-    [
-      Item.of('architects_palette:unobtanium'),
-      Item.of('pneumaticcraft:pneumatic_boots'),
-      Item.of('architects_palette:unobtanium'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('compressedcreativity:air_blower'),
-      Item.of('thermal:rf_coil'),
-      Item.of('compressedcreativity:air_blower'),
-    ],
-    Fluid.of('industrialforegoing:ether_gas', 2000)
-  );
-
-  CustomRecipeHandler.dissolution(
-    Item.of('mekanism:meka_tool'),
-    [
-      Item.of('thermal:redstone_servo'),
-      Item.of('pneumaticcraft:jackhammer'),
-      Item.of('thermal:redstone_servo'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('thermal:upgrade_augment_3'),
-      Item.of('industrialforegoing:pink_slime_ingot'),
-      Item.of('thermal:rf_coil'),
-      Item.of('industrialforegoing:pink_slime_ingot'),
-    ],
-    Fluid.of('industrialforegoing:ether_gas', 2000)
-  );
-
-  CustomRecipeHandler.dissolution(
-    Item.of('3x mekanism:module_base'),
-    [
-      Item.of('#forge:plastic'),
-      Item.of('pneumaticcraft:printed_circuit_board'),
-      Item.of('#forge:plastic')
-    ],
-    Fluid.of('industrialforegoing:ether_gas', 200)
-  );
-
-  [{
-    items: [Item.of('pneumaticcraft:jumping_upgrade_4')],
-    output: Item.of('mekanism:module_hydraulic_propulsion_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:magnet_upgrade')],
-    output: Item.of('mekanism:module_magnetic_attraction_unit')
-  }, {
-    items: [Item.of('blue_ice'), Item.of('thermal:ice_grenade'), Item.of('thermal:ice_charge'), Item.of('blue_ice')],
-    output: Item.of('mekanism:module_frost_walker_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:night_vision_upgrade')],
-    output: Item.of('mekanism:module_vision_enhancement_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:speed_upgrade')],
-    output: Item.of('mekanism:module_excavation_escalation_unit')
-  }, {
-    items: [Item.of('minecraft:diamond_sword'), Item.of('minecraft:diamond_sword')],
-    output: Item.of('mekanism:module_attack_amplification_unit')
-  }, {
-    items: [Item.of('minecraft:diamond_hoe'), Item.of('minecraft:diamond_hoe')],
-    output: Item.of('mekanism:module_farming_unit')
-  }, {
-    items: [Item.of('minecraft:shears')],
-    output: Item.of('mekanism:module_shearing_unit')
-  }, {
-    items: [Item.of('infernalexp:glowsilk'), Item.of('refinedstorage:silk_touch_upgrade'), Item.of('infernalexp:glowsilk')],
-    output: Item.of('mekanism:module_silk_touch_unit')
-  }, {
-    items: [Item.of('minecraft:lapis_block'), Item.of('refinedstorage:fortune_3_upgrade'), Item.of('minecraft:lapis_block')],
-    output: Item.of('mekanism:module_fortune_unit')
-  }, {
-    items: [Item.of('minecraft:tnt'), Item.of('minecraft:tnt'), Item.of('minecraft:tnt'), Item.of('thermal:ender_tnt'), Item.of('thermal:ender_tnt'), Item.of('thermal:ender_tnt'), Item.of('thermal:ender_tnt')],
-    output: Item.of('mekanism:module_blasting_unit')
-  }, {
-    items: [Item.of('tempad:tempad')],
-    output: Item.of('mekanism:module_teleportation_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:scuba_upgrade')],
-    output: Item.of('mekanism:module_electrolytic_breathing_unit')
-  }, {
-    items: [Item.of('thermal:energy_cell')],
-    output: Item.of('mekanism:module_energy_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:stomp_upgrade')],
-    output: Item.of('mekanism:module_gyroscopic_stabilization_unit'),
-  }, {
-    items: [Item.of('pneumaticcraft:speed_upgrade'), Item.of('pneumaticcraft:speed_upgrade'), Item.of('pneumaticcraft:speed_upgrade')],
-    output: Item.of('mekanism:module_locomotive_boosting_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:flippers_upgrade')],
-    output: Item.of('mekanism:module_hydrostatic_repulsor_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:jet_boots_upgrade_3')],
-    output: Item.of('mekanism:module_jetpack_unit')
-  }, {
-    items: [Item.of('pneumaticcraft:elytra_upgrade')],
-    output: Item.of('mekanism:module_elytra_unit')
-  }].forEach(x => {
-    CustomRecipeHandler.dissolution(
-      x.output,
-      x.items.concat([Item.of('mekanism:module_base')]),
-      Fluid.of('industrialforegoing:pink_slime', 500)
-    );
-  });
-};
-
 onEvent('recipes', event => {
-  const CustomRecipeHandler = global.recipes(event);
+  // const fluids = [
+  //   'mekanism:brine',
+  //   'mekanism:chlorine',
+  //   'mekanism:ethene',
+  //   'mekanism:flowing_brine',
+  //   'mekanism:heavy_water',
+  //   'mekanism:hydrofluoric_acid',
+  //   'mekanism:hydrogen_chloride',
+  //   'mekanism:hydrogen',
+  //   'mekanism:lithium',
+  //   'mekanism:nutritional_paste',
+  //   'mekanism:oxygen',
+  //   'mekanism:sodium',
+  //   'mekanism:steam',
+  //   'mekanism:sulfur_dioxide',
+  //   'mekanism:sulfur_trioxide',
+  //   'mekanism:sulfuric_acid',
+  //   'mekanism:superheated_sodium',
+  //   'mekanism:uranium_hexafluoride',
+  //   'mekanism:uranium_oxide',
+  //   'mekanism:flowing_chlorine',
+  //   'mekanism:flowing_ethene',
+  //   'mekanism:flowing_heavy_water',
+  //   'mekanism:flowing_hydrofluoric_acid',
+  //   'mekanism:flowing_hydrogen_chloride',
+  //   'mekanism:flowing_hydrogen',
+  //   'mekanism:flowing_lithium',
+  //   'mekanism:flowing_nutritional_paste',
+  //   'mekanism:flowing_oxygen',
+  //   'mekanism:flowing_sodium',
+  //   'mekanism:flowing_steam',
+  //   'mekanism:flowing_sulfur_dioxide',
+  //   'mekanism:flowing_sulfur_trioxide',
+  //   'mekanism:flowing_sulfuric_acid',
+  //   'mekanism:flowing_superheated_sodium',
+  //   'mekanism:flowing_uranium_hexafluoride',
+  //   'mekanism:flowing_uranium_oxide',
+  // ];
 
-  event.remove({ mod: 'mekanism' });
-  mekanismItems.concat(mekanismMisc).forEach(x => {
-    event.remove({ type: x });
-    event.remove({ input: x });
-    event.remove({ input: `/${x}/` });
-    event.remove({ output: x });
-    event.remove({ output: `/${x}/` });
-  });
-  mekanismFluids.forEach(x => {
-    const fluid = Fluid.of(x);
-    const fluidOneBucket = Fluid.of(x, 1000);
-    event.remove({ input: fluid });
-    event.remove({ input: fluidOneBucket });
-    event.remove({ output: fluid });
-    event.remove({ output: fluidOneBucket });
-  });
+  // const infuse = [
+  //   'mekanism:bio',
+  //   'mekanism:carbon',
+  //   'mekanism:diamond',
+  //   'mekanism:empty',
+  //   'mekanism:fungi',
+  //   'mekanism:gold',
+  //   'mekanism:redstone',
+  //   'mekanism:refined_obsidian',
+  //   'mekanism:tin',
+  // ];
+
+  // const slurries = [
+  //   'mekanism:clean_copper',
+  //   'mekanism:clean_gold',
+  //   'mekanism:clean_iron',
+  //   'mekanism:clean_lead',
+  //   'mekanism:clean_osmium',
+  //   'mekanism:clean_tin',
+  //   'mekanism:clean_uranium',
+  //   'mekanism:dirty_copper',
+  //   'mekanism:dirty_gold',
+  //   'mekanism:dirty_iron',
+  //   'mekanism:dirty_lead',
+  //   'mekanism:dirty_osmium',
+  //   'mekanism:dirty_tin',
+  //   'mekanism:dirty_uranium',
+  //   'mekanism:empty',
+  // ];
+
+  // const pigments = [
+  //   'mekanism:aqua',
+  //   'mekanism:black',
+  //   'mekanism:blue',
+  //   'mekanism:brown',
+  //   'mekanism:cyan',
+  //   'mekanism:dark_red',
+  //   'mekanism:empty',
+  //   'mekanism:gray',
+  //   'mekanism:green',
+  //   'mekanism:light_blue',
+  //   'mekanism:light_gray',
+  //   'mekanism:lime',
+  //   'mekanism:magenta',
+  //   'mekanism:orange',
+  //   'mekanism:pink',
+  //   'mekanism:purple',
+  //   'mekanism:red',
+  //   'mekanism:white',
+  //   'mekanism:yellow',
+  // ];
+
+  // const gases = [
+  //   'mekanism:antimatter',
+  //   'mekanism:brine',
+  //   'mekanism:chlorine',
+  //   'mekanism:empty',
+  //   'mekanism:ethene',
+  //   'mekanism:fissile_fuel',
+  //   'mekanism:hydrofluoric_acid',
+  //   'mekanism:hydrogen_chloride',
+  //   'mekanism:hydrogen',
+  //   'mekanism:lithium',
+  //   'mekanism:nuclear_waste',
+  //   'mekanism:osmium',
+  //   'mekanism:oxygen',
+  //   'mekanism:plutonium',
+  //   'mekanism:polonium',
+  //   'mekanism:sodium',
+  //   'mekanism:spent_nuclear_waste',
+  //   'mekanism:steam',
+  //   'mekanism:sulfur_dioxide',
+  //   'mekanism:sulfur_trioxide',
+  //   'mekanism:sulfuric_acid',
+  //   'mekanism:superheated_sodium',
+  //   'mekanism:uranium_hexafluoride',
+  //   'mekanism:uranium_oxide',
+  //   'mekanism:water_vapor',
+  // ];
+
+  // const serializers = [
+  //   'mekanism:crushing',
+  //   'mekanism:enriching',
+  //   'mekanism:smelting',
+  //   'mekanism:chemical_infusing',
+  //   'mekanism:combining',
+  //   'mekanism:separating',
+  //   'mekanism:washing',
+  //   'mekanism:evaporating',
+  //   'mekanism:activating',
+  //   'mekanism:centrifuging',
+  //   'mekanism:crystallizing',
+  //   'mekanism:dissolution',
+  //   'mekanism:compressing',
+  //   'mekanism:purifying',
+  //   'mekanism:injecting',
+  //   'mekanism:nucleosynthesizing',
+  //   'mekanism:energy_conversion',
+  //   'mekanism:gas_conversion',
+  //   'mekanism:oxidizing',
+  //   'mekanism:infusion_conversion',
+  //   'mekanism:pigment_extracting',
+  //   'mekanism:pigment_mixing',
+  //   'mekanism:metallurgic_infusing',
+  //   'mekanism:painting',
+  //   'mekanism:reaction',
+  //   'mekanism:rotary',
+  //   'mekanism:sawing',
+  //   'mekanism:mek_data',
+  //   'mekanism:bin_insert',
+  //   'mekanism:bin_extract',
+  // ];
+
+  // const misc = [
+  //   'mekanism:alloys',
+  //   'mekanism:atomic_disassembler_ore',
+  //   'mekanism:bin',
+  //   'mekanism:cardboard_blacklist',
+  //   'mekanism:charcoal',
+  //   'mekanism:chemical_tank',
+  //   'mekanism:clean',
+  //   'mekanism:clumps',
+  //   'mekanism:colorable',
+  //   'mekanism:configurators',
+  //   'mekanism:control_circuit',
+  //   'mekanism:crystals',
+  //   'mekanism:dirty',
+  //   'mekanism:dirty_dusts',
+  //   'mekanism:energy_cube',
+  //   'mekanism:enriched',
+  //   'mekanism:factory',
+  //   'mekanism:flame',
+  //   'mekanism:fluid_tank',
+  //   'mekanism:heavy_water',
+  //   'mekanism:hurtable_vehicles',
+  //   'mekanism:induction',
+  //   'mekanism:miner_blacklist',
+  //   'mekanism:nuggets',
+  //   'mekanism:nutritional_paste',
+  //   'mekanism:paper',
+  //   'mekanism:personal_storage',
+  //   'mekanism:processing',
+  //   'mekanism:rails',
+  //   'mekanism:separator',
+  //   'mekanism:shards',
+  //   'mekanism:storage_blocks',
+  //   'mekanism:thermal_evaporation',
+  //   'mekanism:tier_installer',
+  //   'mekanism:transmitter',
+  //   'mekanism:upgrade',
+  //   'mekanism:waste_barrel_decay_blacklist',
+  // ];
 
   /**
-   * @param {Internal.ItemStackJS} out 
-   * @param {Internal.IngredientJS} left 
-   * @param {Internal.IngredientJS} right 
+   * @param {Internal.RecipeEventJS} event
+   */
+  const gear = event => {
+    const CustomRecipeHandler = global.recipes(event);
+
+    CustomRecipeHandler.dissolution(
+      Item.of('mekanism:mekasuit_helmet'),
+      [
+        Item.of('thermal:hazmat_fabric'),
+        Item.of('pneumaticcraft:pneumatic_helmet'),
+        Item.of('thermal:hazmat_fabric'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:diving_fabric'),
+        Item.of('thermal:rf_coil'),
+        Item.of('thermal:diving_fabric'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 2000)
+    );
+
+    CustomRecipeHandler.dissolution(
+      Item.of('mekanism:mekasuit_bodyarmor'),
+      [
+        Item.of('create:sturdy_sheet'),
+        Item.of('pneumaticcraft:pneumatic_chestplate'),
+        Item.of('create:sturdy_sheet'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('#forge:plates/netherite'),
+        Item.of('thermal:rf_coil'),
+        Item.of('#forge:plates/netherite'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 2000)
+    );
+
+    CustomRecipeHandler.dissolution(
+      Item.of('mekanism:mekasuit_pants'),
+      [
+        Item.of('pneumaticcraft:pneumatic_cylinder'),
+        Item.of('pneumaticcraft:pneumatic_leggings'),
+        Item.of('pneumaticcraft:pneumatic_cylinder'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:redstone_servo'),
+        Item.of('thermal:rf_coil'),
+        Item.of('thermal:redstone_servo'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 2000)
+    );
+
+    CustomRecipeHandler.dissolution(
+      Item.of('mekanism:mekasuit_boots'),
+      [
+        Item.of('architects_palette:unobtanium'),
+        Item.of('pneumaticcraft:pneumatic_boots'),
+        Item.of('architects_palette:unobtanium'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('compressedcreativity:air_blower'),
+        Item.of('thermal:rf_coil'),
+        Item.of('compressedcreativity:air_blower'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 2000)
+    );
+
+    CustomRecipeHandler.dissolution(
+      Item.of('mekanism:meka_tool'),
+      [
+        Item.of('thermal:redstone_servo'),
+        Item.of('pneumaticcraft:jackhammer'),
+        Item.of('thermal:redstone_servo'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('thermal:upgrade_augment_3'),
+        Item.of('industrialforegoing:pink_slime_ingot'),
+        Item.of('thermal:rf_coil'),
+        Item.of('industrialforegoing:pink_slime_ingot'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 2000)
+    );
+
+    CustomRecipeHandler.dissolution(
+      Item.of('3x mekanism:module_base'),
+      [
+        Item.of('#forge:plastic'),
+        Item.of('pneumaticcraft:printed_circuit_board'),
+        Item.of('#forge:plastic'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 200)
+    );
+
+    [
+      {
+        items: [Item.of('pneumaticcraft:jumping_upgrade_4')],
+        output: Item.of('mekanism:module_hydraulic_propulsion_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:magnet_upgrade')],
+        output: Item.of('mekanism:module_magnetic_attraction_unit'),
+      },
+      {
+        items: [
+          Item.of('blue_ice'),
+          Item.of('thermal:ice_grenade'),
+          Item.of('thermal:ice_charge'),
+          Item.of('blue_ice'),
+        ],
+        output: Item.of('mekanism:module_frost_walker_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:night_vision_upgrade')],
+        output: Item.of('mekanism:module_vision_enhancement_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:speed_upgrade')],
+        output: Item.of('mekanism:module_excavation_escalation_unit'),
+      },
+      {
+        items: [Item.of('minecraft:diamond_sword'), Item.of('minecraft:diamond_sword')],
+        output: Item.of('mekanism:module_attack_amplification_unit'),
+      },
+      {
+        items: [Item.of('minecraft:diamond_hoe'), Item.of('minecraft:diamond_hoe')],
+        output: Item.of('mekanism:module_farming_unit'),
+      },
+      {
+        items: [Item.of('minecraft:shears')],
+        output: Item.of('mekanism:module_shearing_unit'),
+      },
+      {
+        items: [
+          Item.of('infernalexp:glowsilk'),
+          Item.of('refinedstorage:silk_touch_upgrade'),
+          Item.of('infernalexp:glowsilk'),
+        ],
+        output: Item.of('mekanism:module_silk_touch_unit'),
+      },
+      {
+        items: [
+          Item.of('minecraft:lapis_block'),
+          Item.of('refinedstorage:fortune_3_upgrade'),
+          Item.of('minecraft:lapis_block'),
+        ],
+        output: Item.of('mekanism:module_fortune_unit'),
+      },
+      {
+        items: [
+          Item.of('minecraft:tnt'),
+          Item.of('minecraft:tnt'),
+          Item.of('minecraft:tnt'),
+          Item.of('thermal:ender_tnt'),
+          Item.of('thermal:ender_tnt'),
+          Item.of('thermal:ender_tnt'),
+          Item.of('thermal:ender_tnt'),
+        ],
+        output: Item.of('mekanism:module_blasting_unit'),
+      },
+      {
+        items: [Item.of('tempad:tempad')],
+        output: Item.of('mekanism:module_teleportation_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:scuba_upgrade')],
+        output: Item.of('mekanism:module_electrolytic_breathing_unit'),
+      },
+      {
+        items: [Item.of('thermal:energy_cell')],
+        output: Item.of('mekanism:module_energy_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:stomp_upgrade')],
+        output: Item.of('mekanism:module_gyroscopic_stabilization_unit'),
+      },
+      {
+        items: [
+          Item.of('pneumaticcraft:speed_upgrade'),
+          Item.of('pneumaticcraft:speed_upgrade'),
+          Item.of('pneumaticcraft:speed_upgrade'),
+        ],
+        output: Item.of('mekanism:module_locomotive_boosting_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:flippers_upgrade')],
+        output: Item.of('mekanism:module_hydrostatic_repulsor_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:jet_boots_upgrade_3')],
+        output: Item.of('mekanism:module_jetpack_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:elytra_upgrade')],
+        output: Item.of('mekanism:module_elytra_unit'),
+      },
+    ].forEach(x => {
+      CustomRecipeHandler.dissolution(
+        x.output,
+        x.items.concat([Item.of('mekanism:module_base')]),
+        Fluid.of('industrialforegoing:pink_slime', 500)
+      );
+    });
+  };
+
+  /**
+   * @param {Internal.RecipeEventJS} event
+   */
+  const remove = event => {
+    event.remove({mod: 'mekanism'});
+    event.remove({id: 'createaddition:compat/mekanism/rose_quartz_enriching'});
+
+    // serializers.forEach(x => event.remove({type: x}));
+    // items.forEach(x => {
+    //   event.remove({input: `/${x}/`});
+    //   event.remove({output: `/${x}/`});
+    // });
+
+    // fluids.forEach(x => {
+    //   const f = Fluid.of(x);
+    //   event.remove({input: f});
+    //   event.remove({output: f});
+    // });
+
+    // gases
+    //   .concat(slurries)
+    //   .concat(pigments)
+    //   .concat(infuse)
+    //   .forEach(x => {
+    //     event.remove({input: `/${x}/`});
+    //     event.remove({output: `/${x}/`});
+    //   });
+  };
+
+  const CustomRecipeHandler = global.recipes(event);
+  /**
+   * @param {Internal.ItemStackJS} out
+   * @param {Internal.IngredientJS} left
+   * @param {Internal.IngredientJS} right
    */
   const automatableSmithing = (out, left, right) => {
     event.smithing(out, left, right);
-    CustomRecipeHandler.giant(out, ['LR'], { L: left, R: right });
+    CustomRecipeHandler.giant(out, ['LR'], {L: left, R: right});
   };
 
-  automatableSmithing(Item.of('mekanism:basic_bin'), Item.of('minecraft:barrel'), Item.of('pneumaticcraft:ingot_iron_compressed'));
-  automatableSmithing(Item.of('mekanism:advanced_bin'), Item.of('minecraft:barrel'), Item.of('create:andesite_alloy'));
-  automatableSmithing(Item.of('mekanism:elite_bin'), Item.of('minecraft:barrel'), Item.of('create:brass_ingot'));
-  automatableSmithing(Item.of('mekanism:ultimate_bin'), Item.of('minecraft:barrel'), Item.of('thermal:signalum_ingot'));
+  remove(event);
 
-  event.smithing(Item.of('mekanism:modification_station'), Item.of('immersiveengineering:workbench'), Item.of('thermal:machine_frame'));
+  automatableSmithing(
+    Item.of('mekanism:basic_bin'),
+    Item.of('minecraft:barrel'),
+    Item.of('pneumaticcraft:ingot_iron_compressed')
+  );
+  automatableSmithing(
+    Item.of('mekanism:advanced_bin'),
+    Item.of('minecraft:barrel'),
+    Item.of('create:andesite_alloy')
+  );
+  automatableSmithing(
+    Item.of('mekanism:elite_bin'),
+    Item.of('minecraft:barrel'),
+    Item.of('create:brass_ingot')
+  );
+  automatableSmithing(
+    Item.of('mekanism:ultimate_bin'),
+    Item.of('minecraft:barrel'),
+    Item.of('thermal:signalum_ingot')
+  );
+
+  event.smithing(
+    Item.of('mekanism:modification_station'),
+    Item.of('immersiveengineering:workbench'),
+    Item.of('thermal:machine_frame')
+  );
 
   gear(event);
 });
 
 onEvent('item.tags', event => {
-  mekanismItems.forEach(x => {
+  MekanismItems.forEach(x => {
     event.removeAllTagsFrom(x);
     event.removeAllTagsFrom(`/${x}/`);
   });
