@@ -122,6 +122,8 @@ onEvent('recipes', event => {
   );
 
   event.remove({output: global.ie('windmill')});
+  event.remove({output: global.ie('windmill_sail')});
+  event.remove({output: global.ie('windmill_blade')});
   event.remove({output: global.ie('watermill')});
   event.remove({output: global.ie('waterwheel_segment')});
 
