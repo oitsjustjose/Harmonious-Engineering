@@ -12,9 +12,7 @@ const archPalette = event => {
   );
   event.recipes.immersiveengineering.arc_furnace(
     '5x architects_palette:unobtanium',
-    Item.of('architects_palette:unobtanium_block', {
-      display: {Lore: ['[{"text":"This Recipe Wasn\'t an Accident ;)","italic":false}]']},
-    })
+    'architects_palette:unobtanium_block'
   );
 };
 
