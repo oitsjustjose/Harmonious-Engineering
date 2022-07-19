@@ -188,14 +188,10 @@ onEvent('recipes', event => {
   // Progression
   event.remove({output: 'industrialforegoing:machine_frame_pity'});
   // Automatable recipe using the Mechanical Crafting
-  CustomRecipeHandler.giant(Item.of('industrialforegoing:machine_frame_pity'), ['FB'], {
-    F: 'compactmachines:machine_normal',
-    B: '#forge:storage_blocks/brass',
+  event.shaped('industrialforegoing:machine_frame_pity', ['PEP', 'CFC', 'PEP'], {
+    F: 'thermal:machine_frame',
+    P: '#forge:plastic',
+    E: 'thermal:ender_bucket',
+    C: '#forge:cobblestone',
   });
-
-  event.smithing(
-    'industrialforegoing:machine_frame_pity',
-    'compactmachines:machine_normal',
-    '#forge:storage_blocks/brass'
-  );
 });
