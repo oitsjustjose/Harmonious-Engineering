@@ -1,12 +1,4 @@
 onEvent('item.tooltip', event => {
-  const optionalRemove = (t, f) => {
-    let idx = 0;
-    for (const x of t) {
-      if (`${x}`.includes(f)) t.remove(idx);
-      idx++;
-    }
-  };
-
   event.add(
     [
       'refinedstorage:controller',
@@ -79,31 +71,6 @@ onEvent('item.tooltip', event => {
   event.addAdvanced('minecraft:enchanted_book', (item, _advanced, text) => {
     if (item.toString().includes(".enchant('minecraft:feather_falling', 4)")) {
       text.add(Text.of('§5All fall damage is negated and applied to boots instead§r'));
-    }
-  });
-
-  event.addAdvanced('minecraft:stick', (item, advanced, text) => {
-    try {
-      optionalRemove(text, 'message.supplementaries.placeable');
-    } catch (ex) {
-      console.log(ex);
-    }
-  });
-
-  event.addAdvanced('minecraft:blaze_rod', (item, advanced, text) => {
-    try {
-      optionalRemove(text, 'message.supplementaries.placeable');
-    } catch (ex) {
-      console.log(ex);
-    }
-  });
-
-  event.addAdvanced('immersiveengineering:graphite_electrode', (item, advanced, text) => {
-    try {
-      optionalRemove(text, 'desc.immersiveengineering.info.electrodeIntegrity');
-      optionalRemove(text, 'item.unbreakable');
-    } catch (ex) {
-      console.log(ex);
     }
   });
 });
