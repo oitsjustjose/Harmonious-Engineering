@@ -2,6 +2,28 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.0.9
+
+## Added
+
+- Arboreal Extractor can now extract Latex from **Jungle** trees
+- New textures for Bins, now resembling Item Vaults and actually looking good in a wall/grid :)
+
+### Team Abnormals Mods:
+
+- Personality
+- Savage & Ravage
+
+## Changed
+
+- Recipe for Pity Machine Casing from Industrial Foregoing - this was supposed to be a part of 3.0.8 but was forgotten D:
+- Thermal's Latex is basically unobtainable now, as was intended.
+- Unobtainium recycling recipe not working because of the tooltip
+
+## Removed
+
+- RubIE: a compat layer for IE and Rubidium. Rubidium has updated to include this by default!
+
 # 3.0.8
 
 ## Added
