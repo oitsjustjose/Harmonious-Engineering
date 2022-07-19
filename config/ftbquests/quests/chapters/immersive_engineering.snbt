@@ -452,61 +452,61 @@
 					tag: {
 						items: [
 							{
-								tag: {
-									bullets: {
-										Items: [ ]
-									}
-								}
-								Count: 1b
+								id: "immersiveengineering:revolver"
 								ForgeCaps: {
 									Parent: {
 										Size: 21
 										Items: [ ]
 									}
 								}
-								id: "immersiveengineering:revolver"
-							}
-							{
-								tag: { }
 								Count: 1b
-								ForgeCaps: {
-									Parent: {
-										Size: 5
+								tag: {
+									bullets: {
 										Items: [ ]
 									}
 								}
+							}
+							{
 								id: "immersiveengineering:buzzsaw"
-							}
-							{
-								tag: { }
-								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
 										Items: [ ]
 									}
 								}
+								Count: 1b
+								tag: { }
+							}
+							{
 								id: "immersiveengineering:drill"
+								ForgeCaps: {
+									Parent: {
+										Size: 5
+										Items: [ ]
+									}
+								}
+								Count: 1b
+								tag: { }
 							}
 							{
 								id: "immersiveengineering:railgun"
-								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 3
 										Items: [ ]
 									}
 								}
+								Count: 1b
 							}
 							{
 								id: "immersiveengineering:chemthrower"
-								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 4
 										Items: [ ]
 									}
 								}
+								Count: 1b
 							}
 						]
 					}

@@ -57,48 +57,48 @@
 							ItemInv: [
 								{
 									Slot: 0b
-									Count: 57b
 									id: "minecraft:sweet_berries"
+									Count: 57b
 								}
 								{
 									Slot: 1b
-									Count: 9b
 									id: "create:honeyed_apple"
+									Count: 9b
 								}
 								{
 									Slot: 2b
-									Count: 30b
 									id: "nethersdelight:hoglin_ear"
+									Count: 30b
 								}
 								{
 									Slot: 3b
-									Count: 5b
 									id: "farmersdelight:sweet_berry_cookie"
+									Count: 5b
 								}
 								{
 									Slot: 4b
-									Count: 1b
 									id: "farmersdelight:hamburger"
+									Count: 1b
 								}
 								{
 									Slot: 5b
-									Count: 2b
 									id: "farmersdelight:sweet_berry_cookie"
+									Count: 2b
 								}
 								{
 									Slot: 6b
-									Count: 19b
 									id: "create:honeyed_apple"
+									Count: 19b
 								}
 								{
 									Slot: 7b
-									Count: 1b
 									id: "farmersdelight:hamburger"
+									Count: 1b
 								}
 								{
 									Slot: 8b
-									Count: 6b
 									id: "farmersdelight:sweet_berry_cookie"
+									Count: 6b
 								}
 							]
 						}
@@ -130,7 +130,11 @@
 			title: "Inventory Management II"
 			x: -2.0d
 			y: -3.0d
-			description: ["You have fashioned yourself a nice belt out of leather and string - perhaps you can fashion some additional storage pouches and add them somehow?"]
+			description: [
+				"You have fashioned yourself a nice belt out of leather and string - perhaps you can fashion some additional storage pouches and add them somehow?"
+				""
+				"Belt Pouches can be added to the Toolbelt one at a time in an Anvil."
+			]
 			dependencies: ["5477EA198509D2E0"]
 			id: "5CF194746A4A9952"
 			tasks: [{
