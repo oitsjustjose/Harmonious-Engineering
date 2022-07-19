@@ -1,0 +1,12 @@
+{
+  "parent": "mekanism:block/machine",
+  "textures": {
+    "sides": "mekanism:block/bin/ultimate_lr",
+    "front": "mekanism:block/bin/ultimate_front",
+    "west": "mekanism:block/bin/ultimate_lr",
+    "east": "mekanism:block/bin/ultimate_lr",
+    "south": "mekanism:block/bin/ultimate_back",
+    "up": "mekanism:block/bin/ultimate_tb",
+    "down": "mekanism:block/bin/ultimate_tb"
+  }
+}
