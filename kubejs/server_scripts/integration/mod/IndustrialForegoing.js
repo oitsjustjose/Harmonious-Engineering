@@ -185,13 +185,25 @@ onEvent('recipes', event => {
 
   event.remove({output: 'industrialforegoing:infinity_nuke'});
 
-  // Progression
   event.remove({output: 'industrialforegoing:machine_frame_pity'});
-  // Automatable recipe using the Mechanical Crafting
-  event.shaped('industrialforegoing:machine_frame_pity', ['PEP', 'CFC', 'PEP'], {
+  event.shaped('industrialforegoing:machine_frame_pity', ['PPP', 'RFR', 'PPP'], {
     F: 'thermal:machine_frame',
-    P: '#forge:plastic',
-    E: 'thermal:ender_bucket',
-    C: '#forge:cobblestone',
+    R: 'thermal:cured_rubber',
+    P: '#minecraft:planks',
+  });
+
+  // Integration with Thermal Latex
+  event.remove({id: 'create:empty_thermal_latex_bucket_of_thermal_latex'});
+  event.remove({id: 'create:fill_minecraft_bucket_with_thermal_latex'});
+  event.remove({id: 'immersiveengineering:jei_bucket_latex'});
+  event.remove({id: 'thermal:bottler_bucket'});
+  event.remove({id: 'thermal:devices/tree_extractor/tree_extractor_jungle'});
+  event.remove({id: 'thermal:machines/press/press_dandelion_to_latex'});
+  event.remove({id: 'thermal:machines/press/press_vine_to_latex'});
+  event.custom({
+    type: 'thermal:tree_extractor',
+    trunk: 'minecraft:jungle_log',
+    leaves: 'minecraft:jungle_leaves',
+    result: Fluid.of('industrialforegoing:latex', 25).toJson(),
   });
 });

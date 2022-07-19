@@ -51,3 +51,7 @@ onEvent('item.tags', event => {
   event.add('thermal:crafting/dies', global.ie('mold_bullet_casing'));
   event.removeAllTagsFrom('minecraft:chest');
 });
+
+onEvent('fluid.tags', event => {
+  event.remove('forge:latex', 'thermal:latex');
+});
