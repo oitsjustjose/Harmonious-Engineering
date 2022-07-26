@@ -146,7 +146,7 @@
 				id: "34F75EAD9EE0757D"
 				type: "item"
 				item: {
-					id: "customizableelytra:customizable_elytra"
+					id: "minecraft:elytra"
 					Count: 1b
 					tag: {
 						Damage: 0

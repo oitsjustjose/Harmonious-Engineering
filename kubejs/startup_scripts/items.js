@@ -9,6 +9,7 @@ onEvent('item.registry', event => {
   event.create('andesite_iron_blend').texture('kubejs:item/andesite_iron_blend');
   event.create('zinc_dust_pile').texture('kubejs:item/zinc_dust_pile');
   event.create('iron_dust_pile').texture('kubejs:item/iron_dust_pile');
+  event.create('ender_core').texture('kubejs:item/ender_core');
 
   event
     .create('incomplete_redstone_servo')

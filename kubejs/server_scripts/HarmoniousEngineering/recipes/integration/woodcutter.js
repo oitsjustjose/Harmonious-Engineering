@@ -21,9 +21,11 @@ onEvent('recipes', event => {
     'enhanced_mushrooms:brown_mushroom',
     'enhanced_mushrooms:glowshroom',
     'enhanced_mushrooms:red_mushroom',
+    'outer_end:azure',
     'tconstruct:bloodshroom',
     'tconstruct:greenheart',
     'tconstruct:skyroot',
+    'traverse:fir',
     'upgrade_aquatic:driftwood',
     'upgrade_aquatic:river',
   ].forEach(wood => {

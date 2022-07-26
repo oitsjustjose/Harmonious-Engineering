@@ -98,7 +98,6 @@ onEvent('jei.hide.items', event => {
     'createaddition:redstone_relay',
     'createaddition:spool',
     'createaddition:zinc_sheet',
-    'customizableelytra:elytra_wing',
     'custommachinery:box_creator_item',
     'custommachinery:machine_creator_item',
     '/custommachinery:structure_creator/',
@@ -396,56 +395,6 @@ onEvent('jei.hide.items', event => {
     'packagedexcrafting:elite_crafter',
     'packagedexcrafting:ender_crafter',
     'packagedexcrafting:marked_pedestal',
-    'powah:ender_cell_basic',
-    'powah:ender_cell_blazing',
-    'powah:ender_cell_hardened',
-    'powah:ender_cell_niotic',
-    'powah:ender_cell_nitro',
-    'powah:ender_cell_spirited',
-    'powah:ender_cell_starter',
-    'powah:ender_cell_starter',
-    'powah:ender_gate_basic',
-    'powah:ender_gate_blazing',
-    'powah:ender_gate_hardened',
-    'powah:ender_gate_niotic',
-    'powah:ender_gate_nitro',
-    'powah:ender_gate_spirited',
-    'powah:ender_gate_starter',
-    'powah:energy_cable_basic',
-    'powah:energy_cable_blazing',
-    'powah:energy_cable_hardened',
-    'powah:energy_cable_niotic',
-    'powah:energy_cable_nitro',
-    'powah:energy_cable_spirited',
-    'powah:energy_cable_starter',
-    'powah:magmator_basic',
-    'powah:magmator_blazing',
-    'powah:magmator_hardened',
-    'powah:magmator_niotic',
-    'powah:magmator_nitro',
-    'powah:magmator_spirited',
-    'powah:magmator_starter',
-    'powah:reactor_starter',
-    'powah:solar_panel_basic',
-    'powah:solar_panel_blazing',
-    'powah:solar_panel_hardened',
-    'powah:solar_panel_niotic',
-    'powah:solar_panel_nitro',
-    'powah:solar_panel_spirited',
-    'powah:solar_panel_starter',
-    'powah:thermo_generator_basic',
-    'powah:thermo_generator_blazing',
-    'powah:thermo_generator_hardened',
-    'powah:thermo_generator_niotic',
-    'powah:thermo_generator_nitro',
-    'powah:thermo_generator_spirited',
-    'powah:thermo_generator_starter',
-    'powah:uraninite_ore_dense',
-    'powah:uraninite_ore_poor',
-    'powah:uraninite_ore',
-    'powah:uraninite_raw_dense',
-    'powah:uraninite_raw_poor',
-    'powah:uraninite_raw',
     'powersuits:generator_solar_adv',
     'powersuits:generator_solar',
     'projectred-core:boule',
@@ -709,16 +658,13 @@ onEvent('jei.hide.items', event => {
 });
 
 onEvent('jei.information', event => {
-  event.add('powah:ender_core', [
     'Only dropped by §5Challenger §kEndermen§r, §0but some say the §4Piglins§r may have studied these cores.',
   ]);
-  event.add('powah:ender_core', [
     "Challenger Mobs have fancy §cc§4o§6l§eo§2r§3e§bd§r particles and prefixes like §3'Agile'§r or §1'Mighty'§r",
   ]);
 });
 
 onEvent('jei.add.items', event => {
-  event.add(Item.of('customizableelytra:customizable_elytra'));
   event.add(Item.of('steampowered:pressurized_gas_container'));
 
   [

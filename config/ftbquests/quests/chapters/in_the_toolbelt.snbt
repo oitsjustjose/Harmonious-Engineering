@@ -107,19 +107,6 @@
 									"holo/frame_material": "core/ancient"
 								}
 							}
-							powah: {
-								id: "powah:book"
-								Count: 1b
-								tag: {
-									"akashictome:displayName": {
-										text: "Manual (Powah!)"
-									}
-									"akashictome:is_morphing": 1b
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Manual (Powah!)\"}]}"
-									}
-								}
-							}
 							immersiveengineering: {
 								id: "immersiveengineering:manual"
 								Count: 1b
@@ -210,20 +197,6 @@
 									}
 									display: {
 										Name: "{\"translate\":\"morphtool.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Framed Wrench\"}]}"
-									}
-								}
-							}
-							powah: {
-								id: "powah:wrench"
-								Count: 1b
-								tag: {
-									"morphtool:is_morphing": 1b
-									"morphtool:displayName": {
-										text: "Wrench"
-									}
-									PowahWrenchNBT: { }
-									display: {
-										Name: "{\"translate\":\"morphtool.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Wrench\"}]}"
 									}
 								}
 							}

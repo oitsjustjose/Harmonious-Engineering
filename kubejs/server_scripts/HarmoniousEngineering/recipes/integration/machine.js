@@ -48,22 +48,6 @@ onEvent('recipes', event => {
     result: [{item: 'immersiveengineering:empty_casing', count: 2}],
   });
 
-  // Urananite Block from Uranium Block
-  event.custom({
-    type: 'mekanism:metallurgic_infusing',
-    itemInput: {ingredient: {tag: 'forge:storage_blocks/uranium'}},
-    infusionInput: {amount: 90, tag: 'mekanism:redstone'},
-    output: {item: 'powah:uraninite_block'},
-  });
-
-  // Urananite from Uranium Ingot
-  event.custom({
-    type: 'mekanism:metallurgic_infusing',
-    itemInput: {ingredient: {tag: 'forge:ingots/uranium'}},
-    infusionInput: {amount: 10, tag: 'mekanism:redstone'},
-    output: {item: 'powah:uraninite'},
-  });
-
   // A Use for Glowstone Stalactites
   event.remove({output: 'create:cinder_flour'});
   // A Use for Netherrack Stalactites

@@ -27,5 +27,5 @@
       "amplifier": 0
     }
   ],
-  "loot": [{"weight": 1, "item": {"item": "powah:ender_core"}}]
+  "loot": [{"weight": 1, "item": {"item": "kubejs:ender_core"}}]
 }

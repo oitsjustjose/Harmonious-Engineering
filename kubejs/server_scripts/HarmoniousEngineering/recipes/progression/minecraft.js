@@ -4,6 +4,12 @@ onEvent('recipes', event => {
   event.remove({id: 'minecraft:wooden_pickaxe'});
   event.remove({id: 'minecraft:wooden_shovel'});
   event.remove({id: 'minecraft:wooden_sword'});
+  event.remove({output: 'minecraft:end_crystal'});
+  event.shaped('1x minecraft:end_crystal', ['PPP', 'PRP', 'PGP'], {
+    P: '#forge:glass/colorless',
+    G: 'minecraft:ghast_tear',
+    R: 'outer_end:rose_crystal',
+  });
 
   event.remove({id: 'minecraft:stonecutter'});
   event.shaped('1x minecraft:stonecutter', [' B ', 'SSS'], {

@@ -427,9 +427,10 @@
 			y: -3.5d
 			shape: "rsquare"
 			description: [
-				"Upon eating something you may have noticed that there's something off about the hunger bar  -- there are little icons in it now, right? Or is that just me??"
+				"Upon eating something you may have noticed that there's something off about the hunger bar... is it glowing?"
 				""
-				"These icons represent what you've been eating lately. What you eat combined with what you've been doing (running, swimming, mining, etc.) can createa synergies that make your hunger go down at a slower rate. Try different permutations of these to see which ones make the hunger bar shimmer and glow!"
+				""
+				"Turns out, these glowy outlines represent Saturation, a buffer of food that is built up by eating filling foods. Keep this in mind before you eat, because if you save a really filling food for last it may fill your Saturation bar more!"
 			]
 			optional: true
 			id: "037495DD5120DAE3"

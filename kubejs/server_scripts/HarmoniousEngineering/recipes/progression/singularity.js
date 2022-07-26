@@ -2,7 +2,7 @@ onEvent('recipes', event => {
   // Ender Singularity Crafting
   event.recipes.custommachinery
     .custom_machine('harmeng:fluid_injector', 250)
-    .requireItem(Item.of('powah:ender_core'))
+    .requireItem(Item.of('kubejs:ender_core'))
     .requireFluid(Fluid.of('minecraft:water', 1000))
     .requireEnergyPerTick(1000)
     .produceItem(Item.of(`kubejs:ender_singularity`));

@@ -80,7 +80,7 @@
 				id: "0AD7557C8CE6AFDB"
 				type: "item"
 				item: {
-					id: "customizableelytra:customizable_elytra"
+					id: "minecraft:elytra"
 					Count: 1b
 					tag: {
 						Damage: 0

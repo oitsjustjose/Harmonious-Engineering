@@ -237,7 +237,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "powah:ender_core"
+          "name": "kubejs:ender_core"
         }
       ]
     }
