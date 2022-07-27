@@ -122,7 +122,7 @@ onEvent('recipes', event => {
     );
 
     CustomRecipeHandler.automatableSmithing(
-      'compactmachines:wall',
+      Item.of('compactmachines:wall'),
       Item.of('immersiveengineering:sheetmetal_lead'),
       Item.of('minecraft:ender_pearl')
     );
@@ -146,7 +146,7 @@ onEvent('recipes', event => {
     );
 
     CustomRecipeHandler.automatableSmithing(
-      'compactmachines:personal_shrinking_device',
+      Item.of('compactmachines:personal_shrinking_device'),
       Item.of('tempad:tempad'),
       Item.of('compactmachines:wall')
     );
@@ -209,6 +209,34 @@ onEvent('recipes', event => {
       Item.of('tempad:tempad'),
       Item.of('#forge:ingots/enderium')
     );
+  };
+
+  const engineersDecor = () => {
+    /* Old industrial wood intg */
+    event.remove({id: 'engineersdecor:dependent/old_industrial_planks_recipe'});
+    event.remove({id: 'engineersdecor:dependent/old_industrial_planks_recipe_vmirrored'});
+    event.recipes.create.splashing(
+      [Item.of('engineersdecor:old_industrial_wood_planks')],
+      Item.of('#forge:treated_wood')
+    );
+
+    /* Outright remove things */
+    event.remove({output: 'engineersdecor:metal_bar'});
+    event.replaceInput({}, 'engineersdecor:metal_bar', '#forge:rods/all_metal');
+
+    event.remove({output: 'engineersdecor:factory_hopper'});
+    event.remove({output: 'engineersdecor:factory_placer'});
+    event.remove({output: 'engineersdecor:fluid_barrel'});
+    event.remove({output: 'engineersdecor:small_block_breaker'});
+    event.remove({output: 'engineersdecor:small_electrical_furnace'});
+    event.remove({output: 'engineersdecor:small_fluid_funnel'});
+    event.remove({output: 'engineersdecor:small_freezer'});
+    event.remove({output: 'engineersdecor:small_solar_panel'});
+    event.remove({output: 'engineersdecor:small_tree_cutter'});
+    event.remove({output: 'engineersdecor:small_waste_incinerator'});
+    event.remove({output: 'engineersdecor:straight_pipe_valve_redstone_analog'});
+    event.remove({output: 'engineersdecor:straight_pipe_valve_redstone'});
+    event.remove({output: 'engineersdecor:straight_pipe_valve'});
   };
 
   const expandedstorage = () => {
@@ -381,6 +409,7 @@ onEvent('recipes', event => {
   compactMachines();
   dave();
   dimStorage();
+  engineersDecor();
   expandedstorage();
   fluxNetworks();
   mcjty();

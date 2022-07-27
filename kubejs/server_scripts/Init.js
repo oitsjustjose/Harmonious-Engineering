@@ -152,8 +152,14 @@ global.recipes = event => ({
    * @param {Internal.ItemStackJS} left
    * @param {Internal.ItemStackJS} right
    */
-  automatableSmithing: function (out, left, right) {
+  automatableSmithing: (out, left, right) => {
     event.smithing(out, left, right);
-    global.recipes(event).giant(out, ['LR'], {L: left, R: right});
+    event.custom({
+      type: 'create:mechanical_crafting',
+      pattern: ['LR'],
+      key: {L: left, R: right},
+      result: out.toResultJson(),
+      acceptMirrored: false,
+    });
   },
 });
