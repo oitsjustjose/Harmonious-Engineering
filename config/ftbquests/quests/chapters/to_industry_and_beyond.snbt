@@ -906,10 +906,9 @@
 			y: 11.0d
 			shape: "octagon"
 			description: [
-				"Rockets will require Refined Fuel, an output of processing Crude Oil in a Fractionating Still. To add it, Shift+Right-Click the rocket while on the launchpad to open its UI, at which points you can add them buckets at a time."
+				"Rockets will require Refined Fuel, an output of processing Crude Oil in a Fractionating Still. To add it, Shift+Right-Click the rocket while on the launchpad to open its UI, at which point you can add them buckets at a time."
 				""
 				"You can fill your newly created Space Suit in an Oxygen Loader, which requires Flux and Water. You can also make them work in an AoE using the Bubble Distributor."
-				""
 				""
 				"When visiting new planets you can choose to orbit them if you'd like, or even create a space station to set yourself up with a nice space-base!!"
 				""
