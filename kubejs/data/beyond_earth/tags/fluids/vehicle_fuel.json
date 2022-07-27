@@ -1,0 +1,4 @@
+{
+  "replace": true,
+  "values": ["thermal:refined_fuel", "thermal:refined_fuel_flowing"]
+}
