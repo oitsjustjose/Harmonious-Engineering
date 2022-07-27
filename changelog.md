@@ -2,6 +2,28 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.0 - The Space Update!
+
+## Added
+
+- Beyond Earth: See the galaxy and beyond using spacecrafts! Quests have also been created for these
+- Engineer's Decor: Not much has been modified via recipes, but a few things have been disabled and hidden as they mess with the balance of the pack
+- Xaero's Maps: Map Atlases were being very annoying to use since they only work in the overworld, so I decided to go this route.
+
+## Updated
+
+- Dave's Building Extended
+- Extreme Sound Muffler
+- Flux Networks
+- Immersive Engineering
+- Lootr
+- REI
+- Yung's Better Desert Temples
+
+## Removed
+
+- Map Atlases, since they don't work across dimensions and planets
+
 # 3.0.8
 
 ## Added
