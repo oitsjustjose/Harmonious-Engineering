@@ -14,4 +14,8 @@ onEvent('item.registry', event => {
   event
     .create('incomplete_rf_coil', 'create:sequenced_assembly')
     .texture('kubejs:item/incomplete_rf_coil');
+
+  event.create('calorite_dust').texture('kubejs:item/calorite_dust');
+  event.create('desh_dust').texture('kubejs:item/desh_dust');
+  event.create('ostrum_dust').texture('kubejs:item/ostrum_dust');
 });
