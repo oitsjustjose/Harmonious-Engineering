@@ -1,0 +1,22 @@
+{
+	id: "73847AB970E1E8F9"
+	order_index: 0
+	title: "Space Flags"
+	loot_size: 1
+	rewards: [
+		{ item: "beyond_earth:flag" }
+		{ item: "beyond_earth:flag_blue" }
+		{ item: "beyond_earth:flag_brown" }
+		{ item: "beyond_earth:flag_cyan" }
+		{ item: "beyond_earth:flag_gray" }
+		{ item: "beyond_earth:flag_green" }
+		{ item: "beyond_earth:flag_light_blue" }
+		{ item: "beyond_earth:flag_lime" }
+		{ item: "beyond_earth:flag_magenta" }
+		{ item: "beyond_earth:flag_orange" }
+		{ item: "beyond_earth:flag_pink" }
+		{ item: "beyond_earth:flag_purple" }
+		{ item: "beyond_earth:flag_red" }
+		{ item: "beyond_earth:flag_yellow" }
+	]
+}

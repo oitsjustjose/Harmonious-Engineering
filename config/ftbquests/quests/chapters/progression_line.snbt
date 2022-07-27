@@ -151,18 +151,14 @@
 		{
 			title: "To Industry, and Beyond!"
 			icon: {
-				id: "industrialforegoing:range_addon10"
+				id: "beyond_earth:rocket_t1"
 				Count: 1b
-				tag: {
-					TitaniumAugment: {
-						Range: 10.0f
-					}
-				}
+				tag: { }
 			}
 			x: 8.5d
 			y: -2.5d
 			shape: "hexagon"
-			subtitle: "I'm sorry, I've got nothing"
+			subtitle: "Fine, don't live on this planet anymore!"
 			description: [
 				"Using your expertise in \"Compacting\", you've been able to harness Brass Tech with Compact Machinery to create some pretty convoluted machines that don't take up too much space."
 				""

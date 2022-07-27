@@ -57,48 +57,48 @@
 							ItemInv: [
 								{
 									Slot: 0b
-									id: "minecraft:sweet_berries"
 									Count: 57b
+									id: "minecraft:sweet_berries"
 								}
 								{
 									Slot: 1b
-									id: "create:honeyed_apple"
 									Count: 9b
+									id: "create:honeyed_apple"
 								}
 								{
 									Slot: 2b
-									id: "nethersdelight:hoglin_ear"
 									Count: 30b
+									id: "nethersdelight:hoglin_ear"
 								}
 								{
 									Slot: 3b
-									id: "farmersdelight:sweet_berry_cookie"
 									Count: 5b
+									id: "farmersdelight:sweet_berry_cookie"
 								}
 								{
 									Slot: 4b
-									id: "farmersdelight:hamburger"
 									Count: 1b
+									id: "farmersdelight:hamburger"
 								}
 								{
 									Slot: 5b
-									id: "farmersdelight:sweet_berry_cookie"
 									Count: 2b
+									id: "farmersdelight:sweet_berry_cookie"
 								}
 								{
 									Slot: 6b
-									id: "create:honeyed_apple"
 									Count: 19b
+									id: "create:honeyed_apple"
 								}
 								{
 									Slot: 7b
-									id: "farmersdelight:hamburger"
 									Count: 1b
+									id: "farmersdelight:hamburger"
 								}
 								{
 									Slot: 8b
-									id: "farmersdelight:sweet_berry_cookie"
 									Count: 6b
+									id: "farmersdelight:sweet_berry_cookie"
 								}
 							]
 						}

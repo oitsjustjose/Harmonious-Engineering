@@ -661,5 +661,315 @@
 				item: "mekanism:meka_tool"
 			}]
 		}
+		{
+			title: "Moonlander"
+			icon: {
+				id: "beyond_earth:rocket_t1"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.5d
+			y: 8.5d
+			shape: "hexagon"
+			description: [
+				"With steel and the surgical precision of robotic crafting, you find yourself able to create a space ship with enough fuel tank space for a trip to the moon.. but not back."
+				""
+				"Previous astronauts have reported that the moon is iron-rich, and has a material you've possibly never seen called Desh. This material could be used to fashion an improved ship..."
+				""
+				"Some mention signs of life on the moon too.."
+			]
+			dependencies: ["701832B356A5E78F"]
+			id: "2560F9C72CF52872"
+			tasks: [
+				{
+					id: "567349286059E196"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t1"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "79A25212C39405B8"
+					type: "dimension"
+					title: "Visit the Moon"
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "beyond_earth:textures/sky/moon.png"
+						}
+					}
+					dimension: "beyond_earth:moon"
+				}
+			]
+			rewards: [{
+				id: "504A79DA0BA32D0F"
+				type: "item"
+				item: "beyond_earth:moon_globe"
+			}]
+		}
+		{
+			title: "Martian"
+			icon: {
+				id: "beyond_earth:rocket_t2"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.5d
+			y: 10.0d
+			shape: "hexagon"
+			description: [
+				"Using Desh and improved fuel storage, you think you can craft a ship capable of visiting and orbiting Mars."
+				""
+				"Based on samples from Surface Rovers, we suspect that Mars will be Iron-rich (which is where much of its color comes from), but there are also traces of Diamonds and even a new material named Ostrum."
+				""
+				"There are also some signs of water, which may allow for biological lifeforms in this planet, so just be warned."
+			]
+			dependencies: ["701832B356A5E78F"]
+			id: "4845D0961FAEBA86"
+			tasks: [
+				{
+					id: "24AFF1B540504B0B"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t2"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "05B08C7FF019724B"
+					type: "dimension"
+					title: "Visit Mars"
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "beyond_earth:textures/sky/gui/mars.png"
+						}
+					}
+					dimension: "beyond_earth:mars"
+				}
+			]
+			rewards: [{
+				id: "628E55169494D09B"
+				type: "item"
+				item: "beyond_earth:mars_globe"
+			}]
+		}
+		{
+			title: "Closer to the Sun"
+			icon: {
+				id: "beyond_earth:rocket_t3"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.5d
+			y: 10.0d
+			shape: "hexagon"
+			description: [
+				"Venus is an incredibly hot and unsafe environment. Most of our Rovers melted upon arrival due to the large amounts of lava, but the few moments they did survive they were able to report back deposits of a new resource - Calorite."
+				""
+				"Mercury, being so close to the sun, was not capable of being navigated by our Rovers at all - you're on your own here, good luck and godspeed."
+			]
+			dependencies: ["701832B356A5E78F"]
+			id: "0F658A4DDDA5DEE2"
+			tasks: [
+				{
+					id: "0E18FB917217A5CB"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t3"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4109AE5E19827232"
+					type: "dimension"
+					title: "Visit Venus"
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "beyond_earth:textures/sky/gui/venus.png"
+						}
+					}
+					dimension: "beyond_earth:venus"
+				}
+				{
+					id: "4B4239209F7CD3EA"
+					type: "dimension"
+					title: "Visit Mercury"
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "beyond_earth:textures/sky/gui/mercury.png"
+						}
+					}
+					dimension: "beyond_earth:mercury"
+				}
+			]
+			rewards: [
+				{
+					id: "402A5E3173192889"
+					type: "item"
+					item: "beyond_earth:mercury_globe"
+				}
+				{
+					id: "31ADDBD86BA35D37"
+					type: "item"
+					item: "beyond_earth:venus_globe"
+				}
+			]
+		}
+		{
+			title: "Beyond the Solar System!"
+			icon: {
+				id: "beyond_earth:rocket_t4"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.5d
+			y: 8.5d
+			shape: "hexagon"
+			description: ["You're the first thing to get as far as Glacio - we don't have any data on this tundra planet at all -- well, aside from it being a frozen tundra.."]
+			dependencies: ["701832B356A5E78F"]
+			id: "14CEB454F4E6C783"
+			tasks: [
+				{
+					id: "43033751AF2C730F"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t4"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "29D5570613226097"
+					type: "dimension"
+					title: "Visit Glacio"
+					icon: {
+						id: "ftbquests:custom_icon"
+						Count: 1b
+						tag: {
+							Icon: "beyond_earth:textures/sky/gui/glacio.png"
+						}
+					}
+					dimension: "beyond_earth:glacio"
+				}
+			]
+			rewards: [{
+				id: "60FAF20A8F6ABE9A"
+				type: "item"
+				item: "beyond_earth:glacio_globe"
+			}]
+		}
+		{
+			title: "Intergalactic Travel"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "beyond_earth:textures/sky/gui/milky_way.png"
+				}
+			}
+			x: 0.0d
+			y: 9.0d
+			shape: "octagon"
+			description: [
+				"You've come so far - just look at the progress you've made! At this point you've been confident enough in your understanding of Space and Time that you might like to go out and visit space for yourself."
+				""
+				"To get started, you're going to need a pretty large scale construction - maybe you can borrow this blueprint from NASA, just don't tell anyone you got this from us."
+			]
+			dependencies: ["5571B245334AE7D4"]
+			size: 1.5d
+			id: "701832B356A5E78F"
+			tasks: [{
+				id: "10C5B1057F747EAF"
+				type: "item"
+				item: "beyond_earth:nasa_workbench"
+			}]
+			rewards: [{
+				id: "78A3D9EC44CC51AC"
+				type: "item"
+				item: "beyond_earth:earth_globe"
+			}]
+		}
+		{
+			title: "Basics of Rocket Science"
+			x: 0.0d
+			y: 11.0d
+			shape: "octagon"
+			description: [
+				"Rockets will require Refined Fuel, an output of processing Crude Oil in a Fractionating Still. To add it, Shift+Right-Click the rocket while on the launchpad to open its UI, at which points you can add them buckets at a time."
+				""
+				"You can fill your newly created Space Suit in an Oxygen Loader, which requires Flux and Water. You can also make them work in an AoE using the Bubble Distributor."
+				""
+				""
+				"When visiting new planets you can choose to orbit them if you'd like, or even create a space station to set yourself up with a nice space-base!!"
+				""
+				"Lastly, any time you visit a new planet, your lander will contain your ship but you will need to bring Launch Pads to make your way back home... Or just use a Tempad. Don't forget Fuel!"
+			]
+			dependencies: ["701832B356A5E78F"]
+			id: "7C8CCA7A869A5944"
+			tasks: [
+				{
+					id: "767EE6BC47CB809C"
+					type: "item"
+					item: {
+						id: "beyond_earth:oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A1D9BB53CF9EBD2"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "766B43646F0E93C4"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7F8F1BE3A9A2929D"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "57972C0A2F6C854B"
+				type: "choice"
+				title: "Your Choice of Flag"
+				icon: "beyond_earth:flag_light_blue"
+				table_id: 8323912948168911097L
+			}]
+		}
 	]
 }
