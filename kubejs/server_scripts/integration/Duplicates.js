@@ -3,7 +3,7 @@ onEvent('recipes', event => {
     event.remove({output: x.item});
   });
 
-  event.replaceInput({}, global.ie('slag'), '#forge:slag');
+  event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
   event.replaceInput({}, 'industrialforegoing:plastic', '#forge:plastic');
   event.replaceInput({}, 'pneumaticcraft:plastic', '#forge:plastic');
 

@@ -330,7 +330,7 @@ const machineRecipes = event => {
     Item.of('thermal:machine_pyrolyzer'),
     ['SCCCS', 'SRFLS', 'SCCCS', 'SMMMS'],
     {
-      C: {item: global.ie('cokebrick')},
+      C: {item: 'immersiveengineering:cokebrick'},
       F: Items.machineFrame,
       L: Items.lightEngineering,
       M: Items.ironSheetmetal,
@@ -375,8 +375,8 @@ const machineRecipes = event => {
 const itemRecipes = event => {
   // Remove cheeky recipes for alloys
   event.remove({input: 'minecraft:fire_charge', mod: 'thermal'});
-  event.replaceInput({}, 'thermal:saw_blade', global.ie('sawblade'));
-  event.replaceInput({}, 'thermal:drill_head', global.ie('drillhead_steel'));
+  event.replaceInput({}, 'thermal:saw_blade', 'immersiveengineering:sawblade');
+  event.replaceInput({}, 'thermal:drill_head', 'immersiveengineering:drillhead_steel');
 
   event.remove({output: 'thermal:redstone_servo'});
   event.remove({output: 'thermal:rf_coil'});

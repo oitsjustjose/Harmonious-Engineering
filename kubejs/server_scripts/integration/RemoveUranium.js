@@ -1,18 +1,18 @@
 onEvent('recipes', event => {
   [
     'create:crushed_uranium_ore',
-    global.ie('sheetmetal_uranium'),
-    global.ie('slab_sheetmetal_uranium'),
-    global.ie('ore_uranium'),
-    global.ie('deepslate_ore_uranium'),
-    global.ie('raw_block_uranium'),
-    global.ie('slab_storage_uranium'),
-    global.ie('raw_uranium'),
-    global.ie('plate_uranium'),
-    global.ie('dust_uranium'),
-    global.ie('ingot_uranium'),
-    global.ie('nugget_uranium'),
-    global.ie('storage_uranium'),
+    'immersiveengineering:sheetmetal_uranium',
+    'immersiveengineering:slab_sheetmetal_uranium',
+    'immersiveengineering:ore_uranium',
+    'immersiveengineering:deepslate_ore_uranium',
+    'immersiveengineering:raw_block_uranium',
+    'immersiveengineering:slab_storage_uranium',
+    'immersiveengineering:raw_uranium',
+    'immersiveengineering:plate_uranium',
+    'immersiveengineering:dust_uranium',
+    'immersiveengineering:ingot_uranium',
+    'immersiveengineering:nugget_uranium',
+    'immersiveengineering:storage_uranium',
   ].forEach(x => {
     event.remove({input: x});
     event.remove({output: x});
@@ -20,12 +20,12 @@ onEvent('recipes', event => {
 });
 
 onEvent('item.tags', event => {
-  event.remove('forge:dusts', global.ie('dust_uranium'));
-  event.remove('forge:dusts/uranium', global.ie('dust_uranium'));
-  event.remove('forge:ingots', global.ie('ingot_uranium'));
-  event.remove('forge:ingots/uranium', global.ie('ingot_uranium'));
-  event.remove('forge:nuggets', global.ie('nugget_uranium'));
-  event.remove('forge:nuggets/uranium', global.ie('nugget_uranium'));
-  event.remove('forge:storage_blocks', global.ie('storage_uranium'));
-  event.remove('forge:storage_blocks/uranium', global.ie('storage_uranium'));
+  event.remove('forge:dusts', 'immersiveengineering:dust_uranium');
+  event.remove('forge:dusts/uranium', 'immersiveengineering:dust_uranium');
+  event.remove('forge:ingots', 'immersiveengineering:ingot_uranium');
+  event.remove('forge:ingots/uranium', 'immersiveengineering:ingot_uranium');
+  event.remove('forge:nuggets', 'immersiveengineering:nugget_uranium');
+  event.remove('forge:nuggets/uranium', 'immersiveengineering:nugget_uranium');
+  event.remove('forge:storage_blocks', 'immersiveengineering:storage_uranium');
+  event.remove('forge:storage_blocks/uranium', 'immersiveengineering:storage_uranium');
 });

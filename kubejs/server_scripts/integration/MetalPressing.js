@@ -65,8 +65,8 @@ const plates = event => {
     'thermal:lumium_plate',
     'thermal:enderium_plate',
     'create:brass_sheet',
-    global.ie('plate_steel'),
-    global.ie('plate_aluminum'),
+    'immersiveengineering:plate_steel',
+    'immersiveengineering:plate_aluminum',
   ].forEach(x => {
     const ingot = x.split(':')[1].replace(/plate/g, '').replace(/sheet/g, '').replace(/_/g, '');
     event.remove({output: x});
@@ -76,7 +76,7 @@ const plates = event => {
     event.recipes.immersiveengineeringMetalPress(
       x,
       `#forge:ingots/${ingot}`,
-      global.ie('mold_plate')
+      'immersiveengineering:mold_plate'
     );
   });
 };
@@ -107,7 +107,7 @@ const gears = event => {
     event.recipes.immersiveengineeringMetalPress(
       x,
       `4x #forge:ingots/${ingot}`,
-      global.ie('mold_gear')
+      'immersiveengineering:mold_gear'
     );
   });
 
@@ -126,7 +126,7 @@ const gears = event => {
   event.recipes.immersiveengineeringMetalPress(
     'thermal:diamond_gear',
     `4x minecraft:diamond`,
-    global.ie('mold_gear')
+    'immersiveengineering:mold_gear'
   );
 };
 
@@ -134,37 +134,37 @@ const wires = event => {
   // Aluminum Wire in Thermal Multiservo Press
   event.recipes.thermal.press('2x immersiveengineering:wire_aluminum', [
     '#forge:ingots/aluminum',
-    global.ie('mold_wire'),
+    'immersiveengineering:mold_wire',
   ]);
 
   // Copper Wire in Thermal Multiservo Press
   event.recipes.thermal.press('2x immersiveengineering:wire_copper', [
     '#forge:ingots/copper',
-    global.ie('mold_wire'),
+    'immersiveengineering:mold_wire',
   ]);
 
   // Electrum Wire in Thermal Multiservo Press
   event.recipes.thermal.press('2x immersiveengineering:wire_electrum', [
     '#forge:ingots/electrum',
-    global.ie('mold_wire'),
+    'immersiveengineering:mold_wire',
   ]);
 
   // Lead Wire in Thermal Multiservo Press
   event.recipes.thermal.press('2x immersiveengineering:wire_lead', [
     '#forge:ingots/lead',
-    global.ie('mold_wire'),
+    'immersiveengineering:mold_wire',
   ]);
 
   // Steel Wire in Thermal Multiservo Press
   event.recipes.thermal.press('2x immersiveengineering:wire_steel', [
     '#forge:ingots/steel',
-    global.ie('mold_wire'),
+    'immersiveengineering:mold_wire',
   ]);
 
   // Bullet Casing in Thermal Multiservo Press
   event.recipes.thermal.press('2x immersiveengineering:empty_casing', [
     '#forge:ingots/copper',
-    global.ie('mold_bullet_casing'),
+    'immersiveengineering:mold_bullet_casing',
   ]);
 };
 

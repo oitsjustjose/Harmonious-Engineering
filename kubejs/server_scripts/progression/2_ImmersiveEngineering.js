@@ -4,25 +4,25 @@ onEvent('recipes', event => {
   // Uncraft preheaters
   event.custom({
     type: 'create:sequenced_assembly',
-    ingredient: {item: global.ie('blastfurnace_preheater')},
-    transitionalItem: {item: global.ie('blastfurnace_preheater')},
+    ingredient: {item: 'immersiveengineering:blastfurnace_preheater'},
+    transitionalItem: {item: 'immersiveengineering:blastfurnace_preheater'},
     sequence: [
       {
         type: 'create:pressing',
-        ingredients: [{item: global.ie('blastfurnace_preheater')}],
-        results: [{item: global.ie('blastfurnace_preheater')}],
+        ingredients: [{item: 'immersiveengineering:blastfurnace_preheater'}],
+        results: [{item: 'immersiveengineering:blastfurnace_preheater'}],
         processingTime: 50,
       },
       {
         type: 'create:cutting',
-        ingredients: [{item: global.ie('blastfurnace_preheater')}],
-        results: [{item: global.ie('blastfurnace_preheater')}],
+        ingredients: [{item: 'immersiveengineering:blastfurnace_preheater'}],
+        results: [{item: 'immersiveengineering:blastfurnace_preheater'}],
         processingTime: 50,
       },
     ],
     results: [
-      {item: global.ie('furnace_heater'), chance: 75},
-      {item: global.ie('sheetmetal_iron'), chance: 20},
+      {item: 'immersiveengineering:furnace_heater', chance: 75},
+      {item: 'immersiveengineering:sheetmetal_iron', chance: 20},
       {tag: 'forge:plates/iron', chance: 5},
     ],
     loops: 3,
@@ -34,10 +34,10 @@ onEvent('recipes', event => {
   event.recipes.immersiveengineeringMetalPress(
     Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0, Unbreakable:1}'),
     `4x #forge:ingots/hop_graphite`,
-    global.ie('mold_rod')
+    'immersiveengineering:mold_rod'
   );
 
-  event.remove({output: global.ie('hammer')});
+  event.remove({output: 'immersiveengineering:hammer'});
   event.shaped('kubejs:crude_hammer', [' A ', 'ASA', 'SA '], {
     A: 'create:andesite_alloy',
     S: 'minecraft:stick',
@@ -67,7 +67,7 @@ onEvent('recipes', event => {
         processingTime: 50,
       },
     ],
-    results: [{item: global.ie('hammer')}],
+    results: [{item: 'immersiveengineering:hammer'}],
     loops: 2,
   });
 
@@ -97,14 +97,14 @@ onEvent('recipes', event => {
     energy: 1600,
   });
 
-  event.remove({output: global.ie('sawblade')});
-  event.shaped(global.ie('sawblade'), ['PIP', 'I I', 'PIP'], {
+  event.remove({output: 'immersiveengineering:sawblade'});
+  event.shaped('immersiveengineering:sawblade', ['PIP', 'I I', 'PIP'], {
     P: '#forge:plates/iron',
     I: '#forge:ingots/compressed_iron',
   });
 
   event.replaceInput(
-    {output: global.ie('drillhead_iron')},
+    {output: 'immersiveengineering:drillhead_iron'},
     'minecraft:iron_block',
     '#forge:storage_blocks/compressed_iron'
   );
@@ -114,25 +114,20 @@ onEvent('recipes', event => {
   event.remove({id: 'immersiveengineering:arcfurnace/dust_uranium'});
   event.remove({id: 'immersiveengineering:alloysmelter/invar'});
   event.remove({id: 'immersiveengineering:alloysmelter/electrum'});
-
-  event.replaceInput(
-    {output: 'createaddition:heater'},
-    '#forge:ingots/brass',
-    '#forge:ingots/steel'
-  );
-
-  event.remove({output: global.ie('windmill')});
-  event.remove({output: global.ie('windmill_sail')});
-  event.remove({output: global.ie('windmill_blade')});
-  event.remove({output: global.ie('watermill')});
-  event.remove({output: global.ie('waterwheel_segment')});
+  event.remove({output: 'immersiveengineering:windmill'});
+  event.remove({output: 'immersiveengineering:windmill_sail'});
+  event.remove({output: 'immersiveengineering:windmill_blade'});
+  event.remove({output: 'immersiveengineering:watermill'});
+  event.remove({output: 'immersiveengineering:waterwheel_segment'});
 
   /* Coke Dust Recipes for other machines */
-  event.recipes.createCrushing(global.ie('dust_coke'), ['#forge:coal_coke']);
-  event.recipes.createCrushing(`9x ${global.ie('dust_coke')}`, ['#forge:storage_blocks/coal_coke']);
-  event.recipes.thermal.pulverizer(global.ie('dust_coke'), '#forge:coal_coke');
+  event.recipes.createCrushing('immersiveengineering:dust_coke', ['#forge:coal_coke']);
+  event.recipes.createCrushing(`9x ${'immersiveengineering:dust_coke'}`, [
+    '#forge:storage_blocks/coal_coke',
+  ]);
+  event.recipes.thermal.pulverizer('immersiveengineering:dust_coke', '#forge:coal_coke');
   event.recipes.thermal.pulverizer(
-    `9x ${global.ie('dust_coke')}`,
+    `9x ${'immersiveengineering:dust_coke'}`,
     '#forge:storage_blocks/coal_coke'
   );
 });

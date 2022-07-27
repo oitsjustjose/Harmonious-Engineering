@@ -111,6 +111,7 @@ const MekanismModuleRecipes = CustomRecipeHandler => {
 };
 
 onEvent('recipes', event => {
+  // const CustomRecipeHandler = global.recipes(event);
   const CustomRecipeHandler = global.recipes(event);
 
   /* Remove recipes for Mekanism */
@@ -213,41 +214,31 @@ onEvent('recipes', event => {
   /** MODULES **/
   MekanismModuleRecipes(CustomRecipeHandler);
 
-  /**
-   * @param {Internal.ItemStackJS} out
-   * @param {Internal.IngredientJS} left
-   * @param {Internal.IngredientJS} right
-   */
-  const automatableSmithing = (out, left, right) => {
-    event.smithing(out, left, right);
-    CustomRecipeHandler.giant(out, ['LR'], {L: left, R: right});
-  };
-
-  automatableSmithing(
+  CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:basic_bin'),
     Item.of('minecraft:barrel'),
     Item.of('pneumaticcraft:ingot_iron_compressed')
   );
 
-  automatableSmithing(
+  CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:advanced_bin'),
     Item.of('minecraft:barrel'),
     Item.of('create:andesite_alloy')
   );
 
-  automatableSmithing(
+  CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:elite_bin'),
     Item.of('minecraft:barrel'),
     Item.of('create:brass_ingot')
   );
 
-  automatableSmithing(
+  CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:ultimate_bin'),
     Item.of('minecraft:barrel'),
     Item.of('thermal:signalum_ingot')
   );
 
-  event.smithing(
+  CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:modification_station'),
     Item.of('immersiveengineering:workbench'),
     Item.of('thermal:machine_frame')

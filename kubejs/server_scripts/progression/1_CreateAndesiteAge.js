@@ -44,31 +44,39 @@ onEvent('recipes', event => {
   event.remove({output: 'createaddition:tesla_coil'});
   event.remove({output: 'createaddition:zinc_sheet'});
 
-  event.replaceInput({}, 'createaddition:copper_spool', global.ie('wirecoil_copper'));
-  event.replaceInput({}, 'createaddition:gold_spool', global.ie('wirecoil_electrum'));
+  event.replaceInput({}, 'createaddition:copper_spool', 'immersiveengineering:wirecoil_copper');
+  event.replaceInput({}, 'createaddition:gold_spool', 'immersiveengineering:wirecoil_electrum');
   event.replaceInput({}, 'createaddition:capacitor', 'pneumaticcraft:capacitor');
 
   event.remove({output: 'createaddition:alternator'});
   event.shaped('createaddition:alternator', ['WSA', 'CDH', 'WST'], {
     A: 'pneumaticcraft:capacitor',
-    C: global.ie('connector_lv'),
-    D: global.ie('dynamo'),
+    C: 'immersiveengineering:connector_lv',
+    D: 'immersiveengineering:dynamo',
     H: 'create:shaft',
     S: '#forge:ingots/steel',
     T: 'pneumaticcraft:transistor',
-    W: global.ie('wirecoil_copper'),
+    W: 'immersiveengineering:wirecoil_copper',
   });
 
   event.remove({output: 'createaddition:electric_motor'});
   event.shaped('createaddition:electric_motor', ['PBW', 'HDC', 'PBW'], {
     B: '#forge:ingots/brass',
-    D: global.ie('dynamo'),
-    C: global.ie('connector_lv'),
-    W: global.ie('wirecoil_copper'),
+    D: 'immersiveengineering:dynamo',
+    C: 'immersiveengineering:connector_lv',
+    W: 'immersiveengineering:wirecoil_copper',
     P: 'pneumaticcraft:printed_circuit_board',
     H: 'create:shaft',
   });
 
-  event.smithing('create:mechanical_saw', 'create:andesite_casing', global.ie('sawblade'));
-  event.smithing('create:mechanical_drill', 'create:andesite_casing', global.ie('drillhead_steel'));
+  CustomRecipeHandler.automatableSmithing(
+    Item.of('create:mechanical_saw'),
+    Item.of('create:andesite_casing'),
+    Item.of('immersiveengineering:sawblade')
+  );
+  CustomRecipeHandler.automatableSmithing(
+    Item.of('create:mechanical_drill'),
+    Item.of('create:andesite_casing'),
+    Item.of('immersiveengineering:drillhead_steel')
+  );
 });

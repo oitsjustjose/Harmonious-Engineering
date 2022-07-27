@@ -1,6 +1,6 @@
 onEvent('recipes', event => {
   // Remove sawdust flooring -- not progression but :shrug:
-  event.remove({output: global.ie('sawdust')});
+  event.remove({output: 'immersiveengineering:sawdust'});
   event.remove({id: 'infernalexp:crafting/crafting_shaped/paper_from_mushrooms'});
 
   event.shapeless('1x minecraft:experience_bottle', [

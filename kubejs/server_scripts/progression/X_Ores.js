@@ -4,10 +4,12 @@ onEvent('recipes', event => {
     const thermal = Item.of(`${qty || 1}x thermal:${metal}_${type}`);
     const create = Item.of(`${qty || 1}x create:${metal}_${type}`);
     const ie = Item.of(`${qty || 1}x immersiveengineering:${type}_${metal}`);
+    const be = Item.of(`${qty || 1}x beyond_earth:${metal}_${type}`);
     if (mc !== Item.empty) return mc;
     if (thermal !== Item.empty) return thermal;
     if (create !== Item.empty) return create;
     if (ie !== Item.empty) return ie;
+    if (be !== Item.empty) return be;
 
     console.log(`FAILED TO GUESS ${metal} ${type}`);
     return Item.empty;
