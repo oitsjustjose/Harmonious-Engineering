@@ -2,7 +2,7 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
-# 3.0.9
+# 3.0.8
 
 ## Added
 
@@ -24,7 +24,7 @@
 
 - RubIE: a compat layer for IE and Rubidium. Rubidium has updated to include this by default!
 
-# 3.0.8
+# 3.0.7
 
 ## Added
 

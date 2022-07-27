@@ -28,6 +28,7 @@ global.duplicateResources = [
   {tag: 'forge:ingots/lead', item: global.ie('ingot_lead')},
   {tag: 'forge:ingots/nickel', item: global.ie('ingot_nickel')},
   {tag: 'forge:ingots/silver', item: global.ie('ingot_silver')},
+  {tag: 'forge:ingots/steel', item: 'beyond_earth:steel_ingot'},
   {tag: 'forge:ingots/steel', item: 'davebuildingmod:steel_ingot'},
   {tag: 'forge:ingots/steel', item: 'mekanism:ingot_steel'},
   {tag: 'forge:ingots/tin', item: 'mekanism:ingot_tin'},
@@ -39,6 +40,7 @@ global.duplicateResources = [
   {tag: 'forge:nuggets/lead', item: global.ie('nugget_lead')},
   {tag: 'forge:nuggets/nickel', item: global.ie('nugget_nickel')},
   {tag: 'forge:nuggets/silver', item: global.ie('nugget_silver')},
+  {tag: 'forge:nuggets/steel', item: 'beyond_earth:steel_nugget'},
   {tag: 'forge:plastic', item: 'industrialforegoing:plastic'},
   {tag: 'forge:plates/constantan', item: global.ie('plate_constantan')},
   {tag: 'forge:plates/copper', item: 'create:copper_sheet'},
@@ -62,6 +64,7 @@ global.duplicateResources = [
   {tag: 'forge:storage_blocks/lead', item: global.ie('storage_lead')},
   {tag: 'forge:storage_blocks/nickel', item: global.ie('storage_nickel')},
   {tag: 'forge:storage_blocks/silver', item: global.ie('storage_silver')},
+  {tag: 'forge:storage_blocks/steel', item: 'beyond_earth:steel_block'},
 ];
 
 global.metals = ['iron', 'gold', 'copper', 'tin', 'silver', 'lead', 'aluminum', 'zinc', 'nickel'];
