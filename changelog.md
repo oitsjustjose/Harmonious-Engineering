@@ -2,6 +2,13 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.1
+
+## Changed
+
+- Meteorite loot table no longer includes steel
+- Some Engineer's Decor machines being left in that weren't meant to be
+
 # 3.1.0 - The Space Update!
 
 ## Added

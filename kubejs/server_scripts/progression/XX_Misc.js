@@ -231,6 +231,8 @@ onEvent('recipes', event => {
     event.remove({output: 'engineersdecor:small_electrical_furnace'});
     event.remove({output: 'engineersdecor:small_fluid_funnel'});
     event.remove({output: 'engineersdecor:small_freezer'});
+    event.remove({output: 'engineersdecor:small_milking_machine'});
+    event.remove({output: 'engineersdecor:small_mineral_smelter'});
     event.remove({output: 'engineersdecor:small_solar_panel'});
     event.remove({output: 'engineersdecor:small_tree_cutter'});
     event.remove({output: 'engineersdecor:small_waste_incinerator'});

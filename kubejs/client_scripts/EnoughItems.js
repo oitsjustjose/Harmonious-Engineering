@@ -125,6 +125,8 @@ const items = [
   'engineersdecor:small_electrical_furnace',
   'engineersdecor:small_fluid_funnel',
   'engineersdecor:small_freezer',
+  'engineersdecor:small_milking_machine',
+  'engineersdecor:small_mineral_smelter',
   'engineersdecor:small_solar_panel',
   'engineersdecor:small_tree_cutter',
   'engineersdecor:small_waste_incinerator',
