@@ -1,32 +1,23 @@
 // Gate IE behind Create Contraptions
 
 onEvent('recipes', event => {
+  const preheater = Item.of('immersiveengineering:blastfurnace_preheater');
   // Uncraft preheaters
-  event.custom({
-    type: 'create:sequenced_assembly',
-    ingredient: {item: 'immersiveengineering:blastfurnace_preheater'},
-    transitionalItem: {item: 'immersiveengineering:blastfurnace_preheater'},
-    sequence: [
-      {
-        type: 'create:pressing',
-        ingredients: [{item: 'immersiveengineering:blastfurnace_preheater'}],
-        results: [{item: 'immersiveengineering:blastfurnace_preheater'}],
-        processingTime: 50,
-      },
-      {
-        type: 'create:cutting',
-        ingredients: [{item: 'immersiveengineering:blastfurnace_preheater'}],
-        results: [{item: 'immersiveengineering:blastfurnace_preheater'}],
-        processingTime: 50,
-      },
-    ],
-    results: [
-      {item: 'immersiveengineering:furnace_heater', chance: 75},
-      {item: 'immersiveengineering:sheetmetal_iron', chance: 20},
-      {tag: 'forge:plates/iron', chance: 5},
-    ],
-    loops: 3,
-  });
+  event.recipes.create
+    .sequenced_assembly(
+      [
+        Item.of('immersiveengineering:furnace_heater').withChance(0.75),
+        Item.of('immersiveengineering:sheetmetal_iron').withChance(0.2),
+        Item.of('#forge:plates/iron').withChance(0.05),
+      ],
+      preheater,
+      [
+        event.recipes.create.pressing(preheater, preheater).processingTime(75),
+        event.recipes.create.cutting(preheater, preheater).processingTime(100),
+      ]
+    )
+    .transitionalItem(preheater)
+    .loops(3);
 
   // Make electron tubes tolerable
   event.remove({id: 'immersiveengineering:blueprint/graphite_electrode'});
@@ -43,33 +34,14 @@ onEvent('recipes', event => {
     S: 'minecraft:stick',
   });
 
-  event.custom({
-    type: 'create:sequenced_assembly',
-    ingredient: {item: 'kubejs:crude_hammer'},
-    transitionalItem: {item: 'kubejs:incomplete_hammer'},
-    sequence: [
-      {
-        type: 'create:pressing',
-        ingredients: [{item: 'kubejs:incomplete_hammer'}],
-        results: [{item: 'kubejs:incomplete_hammer'}],
-        processingTime: 50,
-      },
-      {
-        type: 'create:pressing',
-        ingredients: [{item: 'kubejs:incomplete_hammer'}],
-        results: [{item: 'kubejs:incomplete_hammer'}],
-        processingTime: 50,
-      },
-      {
-        type: 'create:cutting',
-        ingredients: [{item: 'kubejs:incomplete_hammer'}],
-        results: [{item: 'kubejs:incomplete_hammer'}],
-        processingTime: 50,
-      },
-    ],
-    results: [{item: 'immersiveengineering:hammer'}],
-    loops: 2,
-  });
+  event.recipes.create
+    .sequenced_assembly(Item.of('immersiveengineering:hammer'), 'kubejs:crude_hammer', [
+      event.recipes.create.pressing('kubejs:incomplete_hammer', 'kubejs:incomplete_hammer'),
+      event.recipes.create.pressing('kubejs:incomplete_hammer', 'kubejs:incomplete_hammer'),
+      event.recipes.create.cutting('kubejs:incomplete_hammer', 'kubejs:incomplete_hammer'),
+    ])
+    .transitionalItem('kubejs:incomplete_hammer')
+    .loops(2);
 
   event.remove({id: 'immersiveengineering:crafting/redstone_acid'});
   event.custom({

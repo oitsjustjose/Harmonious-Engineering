@@ -19,41 +19,13 @@ onEvent('recipes', event => {
   );
 
   // Re-add precision mech recipe because it was removed by its inclusion in global.duplicateResources
-  event.custom({
-    type: 'create:sequenced_assembly',
-    ingredient: {tag: 'forge:plates/gold'},
-    transitionalItem: {item: 'create:incomplete_precision_mechanism'},
-    sequence: [
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'create:incomplete_precision_mechanism'}, {item: 'create:cogwheel'}],
-        results: [{item: 'create:incomplete_precision_mechanism'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [
-          {item: 'create:incomplete_precision_mechanism'},
-          {item: 'create:large_cogwheel'},
-        ],
-        results: [{item: 'create:incomplete_precision_mechanism'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'create:incomplete_precision_mechanism'}, {tag: 'forge:nuggets/iron'}],
-        results: [{item: 'create:incomplete_precision_mechanism'}],
-      },
-    ],
-    results: [
-      {item: 'create:precision_mechanism', chance: 120.0},
-      {item: 'thermal:gold_plate', chance: 8.0},
-      {item: 'create:andesite_alloy', chance: 8.0},
-      {item: 'create:cogwheel', chance: 5.0},
-      {item: 'create:shaft', chance: 2.0},
-      {item: 'thermal:gold_dust', chance: 2.0},
-      {item: 'minecraft:gold_nugget', chance: 2.0},
-      {item: 'minecraft:iron_ingot'},
-      {item: 'minecraft:clock'},
-    ],
-    loops: 5,
-  });
+  const icpm = Item.of('create:incomplete_precision_mechanism');
+  event.recipes.create
+    .sequenced_assembly([Item.of('create:precision_mechanism')], '#forge:plates/gold', [
+      event.recipes.create.deploying(icpm, [icpm, 'create:cogwheel']),
+      event.recipes.create.deploying(icpm, [icpm, 'create:large_cogwheel']),
+      event.recipes.create.deploying(icpm, [icpm, '#forge:nuggets/iron']),
+    ])
+    .transitionalItem(icpm)
+    .loops(5);
 });

@@ -200,10 +200,9 @@ onEvent('recipes', event => {
   event.remove({id: 'thermal:devices/tree_extractor/tree_extractor_jungle'});
   event.remove({id: 'thermal:machines/press/press_dandelion_to_latex'});
   event.remove({id: 'thermal:machines/press/press_vine_to_latex'});
-  event.custom({
-    type: 'thermal:tree_extractor',
-    trunk: 'minecraft:jungle_log',
-    leaves: 'minecraft:jungle_leaves',
-    result: Fluid.of('industrialforegoing:latex', 25).toJson(),
-  });
+  event.recipes.thermal.tree_extractor(
+    Fluid.of('industrialforegoing:latex', 25),
+    'minecraft:jungle_log',
+    'minecraft:jungle_leaves'
+  );
 });

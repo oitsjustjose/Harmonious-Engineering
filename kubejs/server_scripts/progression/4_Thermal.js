@@ -1,109 +1,68 @@
 // Gate Thermal behind IE and Brass Age
 
+/**
+ * @param {Internal.RecipeEventJS} event
+ */
 const redstoneServoRecipes = event => {
+  const ins = Item.of('kubejs:incomplete_redstone_servo');
   // Hard recipe for these
-  event.custom({
-    type: 'create:sequenced_assembly',
-    ingredient: {tag: 'forge:plates/steel'},
-    transitionalItem: {item: 'kubejs:incomplete_redstone_servo'},
-    sequence: [
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston'}],
-        results: [{item: 'kubejs:incomplete_redstone_servo'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [
-          {item: 'kubejs:incomplete_redstone_servo'},
-          {item: 'immersiveengineering:wirecoil_redstone'},
-        ],
-        results: [{item: 'kubejs:incomplete_redstone_servo'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'create:electron_tube'}],
-        results: [{item: 'kubejs:incomplete_redstone_servo'}],
-      },
-    ],
-    results: [
-      {item: 'thermal:redstone_servo', chance: 300.0},
-      {tag: 'forge:ingots/steel', chance: 8.0},
-      {item: 'immersiveengineering:wirecoil_redstone', chance: 40.0},
-      {item: 'create:electron_tube', chance: 40.0},
-      {item: 'minecraft:piston'},
-    ],
-    loops: 2,
-  });
+  event.recipes.create
+    .sequenced_assembly(
+      [
+        Item.of('thermal:redstone_servo').withChance(3.0),
+        Item.of('#forge:ingots/steel').withChance(0.8),
+        Item.of('immersiveengineering:wirecoil_redstone').withChance(0.4),
+        Item.of('minecraft:piston').withChance(0.1),
+        Item.of('create:electron_tube'),
+      ],
+      '#forge:plates/steel',
+      [
+        event.recipes.create.deploying(ins, [ins, 'minecraft:piston']),
+        event.recipes.create.deploying(ins, [ins, 'immersiveengineering:wirecoil_redstone']),
+        event.recipes.create.deploying(ins, [ins, 'create:electron_tube']),
+      ]
+    )
+    .transitionalItem(ins)
+    .loops(2);
 
   // Easier recipe
-  event.custom({
-    type: 'thermal:press',
-    ingredients: [
-      {tag: 'forge:plates/steel'},
-      {item: 'immersiveengineering:wirecoil_redstone', count: 4},
-    ],
-    result: [{item: 'kubejs:incomplete_redstone_servo'}],
-  });
-
-  event.custom({
-    type: 'thermal:press',
-    ingredients: [{item: 'kubejs:incomplete_redstone_servo'}, {item: 'minecraft:piston', count: 2}],
-    result: [{item: 'thermal:redstone_servo'}],
-  });
+  event.recipes.thermal.press(ins, [
+    '#forge:plates/steel',
+    Item.of('4x immersiveengineering:wirecoil_redstone'),
+  ]);
+  event.recipes.thermal.press('thermal:redstone_servo', [ins, '2x minecraft:piston']);
 };
 
+/**
+ * @param {Internal.RecipeEventJS} event
+ */
 const rfCoilRecipes = event => {
-  // Hard recipe for these
-  event.custom({
-    type: 'create:sequenced_assembly',
-    ingredient: {tag: 'forge:rods/blaze'},
-    transitionalItem: {item: 'kubejs:incomplete_rf_coil'},
-    sequence: [
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {tag: 'forge:plates/gold'}],
-        results: [{item: 'kubejs:incomplete_rf_coil'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [
-          {item: 'kubejs:incomplete_rf_coil'},
-          {item: 'immersiveengineering:wirecoil_redstone'},
-        ],
-        results: [{item: 'kubejs:incomplete_rf_coil'}],
-      },
-      {
-        type: 'create:deploying',
-        ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {item: 'create:electron_tube'}],
-        results: [{item: 'kubejs:incomplete_rf_coil'}],
-      },
-    ],
-    results: [
-      {item: 'thermal:rf_coil', chance: 300.0},
-      {tag: 'forge:ingots/gold', chance: 2.0},
-      {item: 'immersiveengineering:wirecoil_redstone', chance: 20.0},
-      {item: 'create:electron_tube', chance: 20.0},
-      {tag: 'forge:plates/gold'},
-    ],
-    loops: 2,
-  });
+  const irc = Item.of('kubejs:incomplete_rf_coil');
+  event.recipes.create
+    .sequenced_assembly(
+      [
+        Item.of('thermal:rf_coil').withChance(3.0),
+        Item.of('#forge:ingots/gold').withChance(0.2),
+        Item.of('immersiveengineering:wirecoil_redstone').withChance(0.2),
+        Item.of('#forge:plates/gold').withChance(0.1),
+        Item.of('create:electron_tube'),
+      ],
+      '#forge:rods/blaze',
+      [
+        event.recipes.create.deploying(irc, [irc, '#forge:plates/gold']),
+        event.recipes.create.deploying(irc, [irc, 'immersiveengineering:wirecoil_redstone']),
+        event.recipes.create.deploying(irc, [irc, 'create:electron_tube']),
+      ]
+    )
+    .transitionalItem(irc)
+    .loops(2);
 
   // Easier recipe
-  event.custom({
-    type: 'thermal:press',
-    ingredients: [
-      {tag: 'forge:rods/blaze'},
-      {item: 'immersiveengineering:wirecoil_redstone', count: 4},
-    ],
-    result: [{item: 'kubejs:incomplete_rf_coil'}],
-  });
-
-  event.custom({
-    type: 'thermal:press',
-    ingredients: [{item: 'kubejs:incomplete_rf_coil'}, {tag: 'forge:plates/gold'}],
-    result: [{item: 'thermal:rf_coil'}],
-  });
+  event.recipes.thermal.press(irc, [
+    '#forge:rods/blaze',
+    '4x immersiveengineering:wirecoil_redstone',
+  ]);
+  event.recipes.thermal.press('thermal:redstone_servo', [irc, '2x #forge:plates/gold']);
 };
 
 /**
