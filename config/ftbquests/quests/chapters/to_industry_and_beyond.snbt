@@ -5,13 +5,9 @@
 	filename: "to_industry_and_beyond"
 	title: "To Industry, And Beyond!"
 	icon: {
-		id: "industrialforegoing:range_addon10"
+		id: "beyond_earth:rocket_t1"
 		Count: 1b
-		tag: {
-			TitaniumAugment: {
-				Range: 10.0f
-			}
-		}
+		tag: { }
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -92,6 +88,12 @@
 				type: "item"
 				item: "industrialforegoing:machine_frame_advanced"
 			}]
+			rewards: [{
+				id: "6D75D8B24C20B0A4"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
 		}
 		{
 			title: "Ether-Infused Frames"
@@ -103,6 +105,12 @@
 				id: "2C1D69519BE1A366"
 				type: "item"
 				item: "industrialforegoing:machine_frame_supreme"
+			}]
+			rewards: [{
+				id: "36321328192F8F4B"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 48
 			}]
 		}
 		{
@@ -317,6 +325,12 @@
 				type: "item"
 				item: "industrialforegoing:black_hole_controller"
 			}]
+			rewards: [{
+				id: "27DC0712CBB9F391"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 48
+			}]
 		}
 		{
 			title: "Supreme Black Holes"
@@ -345,6 +359,12 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "3C4864CC4838B39B"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 48
 			}]
 		}
 		{
@@ -389,6 +409,12 @@
 					count: 4L
 				}
 			]
+			rewards: [{
+				id: "5261D0C07598465C"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
 		}
 		{
 			x: 4.5d
@@ -425,6 +451,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5642D1DF7BE9867B"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
 		}
 		{
 			x: 3.0d
@@ -436,6 +468,12 @@
 				id: "34C6EECC709C7ADE"
 				type: "item"
 				item: "industrialforegoing:plant_fertilizer"
+			}]
+			rewards: [{
+				id: "1773687E5314B727"
+				type: "item"
+				item: "industrialforegoing:fertilizer"
+				count: 16
 			}]
 		}
 		{
@@ -630,6 +668,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "08F557B5E1FDAABB"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
 		}
 		{
 			title: "One Powertool to Rule them All"
@@ -659,6 +703,12 @@
 				id: "4D68BC799D7B6693"
 				type: "item"
 				item: "mekanism:meka_tool"
+			}]
+			rewards: [{
+				id: "612DBCCC7B454AD4"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
 			}]
 		}
 		{

@@ -36,7 +36,7 @@
 		}
 		{
 			title: "A Mechanical Touch"
-			x: -1.5d
+			x: -2.0d
 			y: 0.0d
 			description: ["By now, you've run into a few situations where you've wanted to automatically activate something that is usually not automated and requires you to directly interact with it. These interactions can only really be done with a human touch, right...?"]
 			dependencies: ["19AB43B2BEF954F5"]
@@ -56,7 +56,7 @@
 		{
 			title: "Industrial Torque"
 			icon: "create:flywheel"
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 			description: [
 				"Upon further pondering, you realize that with a sufficient source of heat and water, you can create an ongoing source of Steam!"
@@ -153,7 +153,7 @@
 		{
 			title: "Stress-o-Vision"
 			x: 0.0d
-			y: -1.5d
+			y: -2.0d
 			description: ["Using the flexibility and resilience of Brass, you've been able to find a way to fashion yourself an upgrade for your pneumatic suit that allows you to view detailed specs of your rotational structures, such as torque/speed consumption/production."]
 			dependencies: ["19AB43B2BEF954F5"]
 			id: "46A308369113A8B1"
@@ -172,7 +172,7 @@
 		{
 			title: "Monolithic Crafting"
 			x: 0.0d
-			y: 1.5d
+			y: 2.0d
 			shape: "octagon"
 			description: [
 				"Perhaps you've gotten too curious for your own good... you've started becoming a bit inquisitive of the crafting process you've grown so familiar with, and at this point that has led you down quite the rabbit hole."

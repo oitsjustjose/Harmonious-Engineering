@@ -340,6 +340,7 @@
 				type: "item"
 				item: "create:experience_nugget"
 				count: 16
+				random_bonus: 24
 			}]
 		}
 		{
@@ -579,6 +580,13 @@
 					item: "immersiveengineering:connector_hv"
 				}
 			]
+			rewards: [{
+				id: "571B145E36E3E4B4"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+				random_bonus: 24
+			}]
 		}
 	]
 }

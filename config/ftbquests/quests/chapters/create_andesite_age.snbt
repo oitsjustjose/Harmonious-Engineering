@@ -310,6 +310,13 @@
 					item: "create:spout"
 				}
 			]
+			rewards: [{
+				id: "622CA6FA65ECE7D2"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+				random_bonus: 8
+			}]
 		}
 		{
 			title: "Dead End..?"

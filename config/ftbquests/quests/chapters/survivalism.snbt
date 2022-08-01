@@ -214,30 +214,48 @@
 			}]
 		}
 		{
-			title: "Mapping"
+			title: "Coal-Based Propulsion"
+			icon: "littlelogistics:seater_car"
 			x: -5.0d
 			y: -6.0d
 			description: [
+				"As you start mining, exploring, or overall getting a sense of the world around you, you decide to see what viable options for moving around exist."
 				""
-				"You might have noticed that you've got all this exploring to do but no way to track your progress!"
-				""
-				"For now, this is true, but while you go about your explorations you'll find various creatures that can provide you with the materials needed to make yourself an Atlas."
-				""
-				"Atlases serve as a collection of Vanilla maps and you will need to refill your atlas with Blank Maps as you explore. Like Vanilla maps, you can right click on various markers (such as Banners, Beds, etc. -- see Supplementaries' journal entry) to add them to your map!"
+				"You've discovered that Coal can be turned into Steam pretty easily in some of these locomotives, making for a great way to get yourself and your stuff around with some chain links and various barges / carts."
 			]
 			dependencies: ["5477EA198509D2E0"]
 			id: "09963D1411C40210"
 			tasks: [{
-				id: "0E47334151E10B6E"
+				id: "4677E87B3BC54FFD"
 				type: "item"
-				item: "map_atlases:atlas"
+				title: "Steam Tug Boat or Locomotive"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "littlelogistics:steam_locomotive"
+								Count: 1b
+							}
+							{
+								id: "littlelogistics:tug"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
-				id: "7972497F9BFBE4AA"
+				id: "7EEED322C6523479"
 				type: "item"
-				item: "minecraft:map"
-				count: 16
-				random_bonus: 32
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "littlelogistics:guide"
+					}
+				}
 			}]
 		}
 		{
