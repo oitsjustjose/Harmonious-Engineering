@@ -7,6 +7,9 @@ onEvent('recipes', event => {
   event.replaceInput({}, 'industrialforegoing:plastic', '#forge:plastic');
   event.replaceInput({}, 'pneumaticcraft:plastic', '#forge:plastic');
 
+  event.replaceInput({}, 'immersiveengineering:dust_saltpeter', 'thermal:niter_dust');
+  event.replaceOutput({}, 'immersiveengineering:dust_saltpeter', 'thermal:niter_dust');
+
   event.remove({input: '#forge:nuggets/copper', output: '#forge:ingots/copper'});
   event.shaped('minecraft:copper_ingot', ['XXX', 'XXX', 'XXX'], {X: '#forge:nuggets/copper'});
 
