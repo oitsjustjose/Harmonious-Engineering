@@ -1,1 +1,3 @@
 mipmapLevels:0
+key_key.inventorysorter.itemout:key.keyboard.unknown
+key_key.inventorysorter.itemin:key.keyboard.unknown
