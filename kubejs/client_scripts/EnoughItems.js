@@ -4,8 +4,14 @@ const items = [
   '/libraryferret:*/',
   '/lootr:*/',
   '/mekanism:(?!.*_bin)(?!meka.*)(?!modification_station.*)(?!module_.*).*/',
-  'beyond_earth:alien_spawn_egg',
-  'beyond_earth:alien_zombie_spawn_egg',
+  '/.*:.*_spawn_egg/',
+  '/industrialforegoing:infinity_backpack/',
+  '/industrialforegoing:infinity_drill/',
+  '/industrialforegoing:infinity_hammer/',
+  '/industrialforegoing:infinity_launcher/',
+  '/industrialforegoing:infinity_nuke/',
+  '/industrialforegoing:infinity_saw/',
+  '/industrialforegoing:infinity_trident/',
   'beyond_earth:coal_generator',
   'beyond_earth:coal_lantern',
   'beyond_earth:coal_torch',
@@ -20,14 +26,9 @@ const items = [
   'beyond_earth:hammer',
   'beyond_earth:iron_plate',
   'beyond_earth:iron_stick',
-  'beyond_earth:martian_raptor_spawn_egg',
-  'beyond_earth:mogler_spawn_egg',
   'beyond_earth:oil_bucket',
-  'beyond_earth:pygro_brute_spawn_egg',
-  'beyond_earth:pygro_spawn_egg',
   'beyond_earth:rover',
   'beyond_earth:solar_panel',
-  'beyond_earth:star_crawler_spawn_egg',
   'beyond_earth:steel_block',
   'beyond_earth:steel_ingot',
   'beyond_earth:steel_nugget',
@@ -177,6 +178,7 @@ const items = [
   'immersiveengineering:dust_iron',
   'immersiveengineering:dust_lead',
   'immersiveengineering:dust_nickel',
+  'immersiveengineering:dust_saltpeter',
   'immersiveengineering:dust_silver',
   'immersiveengineering:dust_uranium',
   'immersiveengineering:dust_wood',
@@ -246,15 +248,6 @@ const items = [
   'industrialforegoing:plastic',
   'industrialforegoing:tinydryrubber',
   'industrialforegoing:transporter',
-  'infernalexp:basalt_giant_spawn_egg',
-  'infernalexp:blackstone_dwarf_spawn_egg',
-  'infernalexp:blindsight_spawn_egg',
-  'infernalexp:embody_spawn_egg',
-  'infernalexp:glowsilk_moth_spawn_egg',
-  'infernalexp:glowsquito_spawn_egg',
-  'infernalexp:shroomloin_spawn_egg',
-  'infernalexp:voline_spawn_egg',
-  'infernalexp:warpbeetle_spawn_egg',
   'kubejs:incomplete_hammer',
   'kubejs:incomplete_redstone_servo',
   'kubejs:incomplete_rf_coil',
@@ -531,11 +524,6 @@ const items = [
   'rftoolsbase:infused_enderpearl',
   'rftoolsbase:tablet_filled',
   'rftoolsbase:tablet',
-  'savage_and_ravage:executioner_spawn_egg',
-  'savage_and_ravage:griefer_spawn_egg',
-  'savage_and_ravage:iceologer_spawn_egg',
-  'savage_and_ravage:skeleton_villager_spawn_egg',
-  'savage_and_ravage:trickster_spawn_egg',
   'supplementaries:bomb_blue_projectile',
   'supplementaries:bomb_projectile',
   'supplementaries:bomb_spiky_projectile',
@@ -546,6 +534,7 @@ const items = [
   'thermal:drill_head',
   'thermal:emerald_gear',
   'thermal:lapis_gear',
+  'thermal:latex_bucket',
   'thermal:potato_block',
   'thermal:quartz_gear',
   'thermal:ruby_block',
@@ -723,6 +712,18 @@ const items = [
   Item.of('minecraft:tipped_arrow', '{Potion:"naturalist:strong_forest_dasher"}'),
 ];
 
+const categories = [
+  'beyond_earth:coal_generator',
+  'beyond_earth:compressor',
+  'beyond_earth:fuel_refinery',
+  'beyond_earth:rover',
+  'mekanism:boiler_casing',
+  'mekanism:energized_smelter',
+  'mekanism:nutritional_liquifier',
+  'mekanism:sps_casing',
+  'minecraft:plugins/tag',
+];
+
 onEvent('jei.hide.items', event => {
   items.forEach(x => {
     try {
@@ -731,6 +732,39 @@ onEvent('jei.hide.items', event => {
       console.log(e);
     }
   });
+});
+
+onEvent('jei.add.items', event => {
+  [
+    Item.of(
+      'industrialforegoing:infinity_drill',
+      '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+    ),
+    Item.of(
+      'industrialforegoing:infinity_saw',
+      '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+    ),
+    Item.of(
+      'industrialforegoing:infinity_hammer',
+      '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+    ),
+    Item.of(
+      'industrialforegoing:infinity_backpack',
+      '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b,Tanks:{}}'
+    ),
+    Item.of(
+      'industrialforegoing:infinity_launcher',
+      '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"POOR",Special:0b}'
+    ),
+    Item.of(
+      'industrialforegoing:infinity_trident',
+      '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'
+    ),
+  ].forEach(x => event.add(x));
+});
+
+onEvent('jei.remove.categories', event => {
+  categories.forEach(x => event.remove(x));
 });
 
 onEvent('rei.hide.items', event => {
@@ -744,15 +778,5 @@ onEvent('rei.hide.items', event => {
 });
 
 onEvent('rei.remove.categories', event => {
-  [
-    'beyond_earth:coal_generator',
-    'beyond_earth:compressor',
-    'beyond_earth:fuel_refinery',
-    'beyond_earth:rover',
-    'mekanism:boiler_casing',
-    'mekanism:energized_smelter',
-    'mekanism:nutritional_liquifier',
-    'mekanism:sps_casing',
-    'minecraft:plugins/tag',
-  ].forEach(x => event.remove(x));
+  categories.forEach(x => event.remove(x));
 });
