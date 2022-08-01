@@ -181,6 +181,7 @@ const items = [
   'immersiveengineering:dust_nickel',
   'immersiveengineering:dust_saltpeter',
   'immersiveengineering:dust_silver',
+  'immersiveengineering:dust_sulfur',
   'immersiveengineering:dust_uranium',
   'immersiveengineering:dust_wood',
   'immersiveengineering:fake_icon_birthday',
