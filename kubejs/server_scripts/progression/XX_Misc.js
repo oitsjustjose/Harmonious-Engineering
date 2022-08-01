@@ -309,10 +309,15 @@ onEvent('recipes', event => {
   const moreMinecarts = () => {
     event.remove({output: 'moreminecarts:silica_steel'});
     event.remove({output: 'moreminecarts:silica_steel_mix'});
+
+    event.recipes.thermal.smelter(Item.of('4x moreminecarts:silica_steel'), [
+      Item.of('3x #forge:ingots/steel'),
+      Item.of('#forge:dusts/quartz'),
+    ]);
     event.recipes.immersiveengineeringArcFurnace(
       ['4x moreminecarts:silica_steel'],
       '3x #forge:ingots/steel',
-      ['3x minecraft:quartz']
+      ['1x #forge:dusts/quartz']
     );
   };
 
@@ -342,6 +347,9 @@ onEvent('recipes', event => {
 
   const refinedStorage = () => {
     event.remove({output: '#forge:silicon'});
+    event.recipes.thermal.smelter(Item.of('refinedstorage:silicon'), [
+      Item.of('2x #forge:dusts/quartz'),
+    ]);
     event.recipes.immersiveengineeringArcFurnace(
       ['refinedstorage:silicon'],
       '2x #forge:dusts/quartz'
