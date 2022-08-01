@@ -4,10 +4,47 @@
 
 # 3.1.1
 
+## Note:
+
+If you're having issues with scrolling items into your Refined Storage grid and items going into the Filter slot, go to `Options` -> `Controls` -> `Key Binds` and remove the keybind for `Wheel item from cursor` and `Wheel item to cursor`.
+
+## Added
+
+- [Critters & Companions](https://www.curseforge.com/minecraft/mc-mods/critters-and-companions)
+- Easier recipes for Silicon & Silica Steel via Induction Smelter
+  - This should help with FPS for those players whose bases are overcrowded with multiblocks.
+- Integration between IE's Nitrate Dust & Thermal's Niter
+- Jade Addons - will assist Jade in showing you things correctly, such as Create's Curved Tracks, Lootr chest contents, etc.
+- JEI and More Overlays
+
+## Updated
+
+- Compact Machines (if you had issues with the Tunnels, try again now 😊)
+- Dave's Building Extended (yay, new train building blocks!)
+- Misc Libraries including McJty Lib & GeckoLib.
+
 ## Changed
 
 - Meteorite loot table no longer includes steel
 - Some Engineer's Decor machines being left in that weren't meant to be
+- Added Silicon recipe for the Induction Smelter
+
+## Fixed
+
+- Lootr chests dropping Vanilla chests instead of Expanded Storage's
+- Minimap quest existing still -- this has been placed with a reminder that Little Logistics exists :)
+- Some quest chapters not appearing even though they look to be unlocked in the main `Research Progress` quest
+- Some quests not having rewards
+- Ultimate Chunk Loader only loading a 7x7x7 -- this was completely an accident.
+
+## Removed
+
+- Roughly Enough Items, for many reasons:
+  - Fluid and Flux amounts not being shown in recipes
+  - Hiding items being inconsistent and buggy
+  - Recipes (such as for the infinity tools) outright not working unless viewed by looking at uses for the Dissolution Chamber
+  - Occasional crashes and oddities
+  - Quest book wanting to bookmark itself constantly, even though no one really ever did that
 
 # 3.1.0 - The Space Update!
 
