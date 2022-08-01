@@ -1,7 +1,7 @@
 // priority: 512
 
 onEvent('item.tags', event => {
-  const unifyMaterials = event => {
+  const unifyMaterials = () => {
     global.duplicateResources.forEach(x => {
       const tag = x.tag;
       const item = x.item;
@@ -28,9 +28,11 @@ onEvent('item.tags', event => {
     event.add('forge:tools/knives', 'tools_complement:bronze_knife');
     event.add('forge:tools/knives', 'tools_complement:electrum_knife');
     event.add('forge:tools/knives', 'tools_complement:invar_knife');
+
+    event.add('forge:dusts/saltpeter', 'thermal:niter_dust');
   };
 
-  const clearTags = event => {
+  const clearTags = () => {
     [
       'createaddition:brass_rod',
       'createaddition:copper_rod',
@@ -46,8 +48,8 @@ onEvent('item.tags', event => {
     ].forEach(x => event.removeAllTagsFrom(x));
   };
 
-  unifyMaterials(event);
-  clearTags(event);
+  unifyMaterials();
+  clearTags();
 
   event.add('thermal:crafting/dies', 'immersiveengineering:mold_wire');
   event.add('thermal:crafting/dies', 'immersiveengineering:mold_bullet_casing');
