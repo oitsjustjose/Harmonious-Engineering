@@ -73,4 +73,13 @@ onEvent('item.tooltip', event => {
       text.add(Text.of('§5All fall damage is negated and applied to boots instead§r'));
     }
   });
+
+  ['minecraft:stick', 'minecraft:blaze_rod'].forEach(x => {
+    event.addAdvanced(x, (item, adv, txt) => {
+      txt.add('§8(Not actually placeable)§r');
+      if (event.shift) {
+        txt.add('§8This feature is disabled but the tooltip is still here.§r');
+      }
+    });
+  });
 });
