@@ -1,5 +1,6 @@
 // priority: 0
 const items = [
+  '/beyond_earth:rover/',
   '/expandedstorage:*_present/',
   '/libraryferret:*/',
   '/lootr:*/',
@@ -12,6 +13,7 @@ const items = [
   '/industrialforegoing:infinity_nuke/',
   '/industrialforegoing:infinity_saw/',
   '/industrialforegoing:infinity_trident/',
+  '/itemfilters:*/',
   'beyond_earth:coal_generator',
   'beyond_earth:coal_lantern',
   'beyond_earth:coal_torch',
@@ -27,7 +29,6 @@ const items = [
   'beyond_earth:iron_plate',
   'beyond_earth:iron_stick',
   'beyond_earth:oil_bucket',
-  'beyond_earth:rover',
   'beyond_earth:solar_panel',
   'beyond_earth:steel_block',
   'beyond_earth:steel_ingot',
