@@ -2,6 +2,13 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.1a
+
+## Fixed
+
+- Redstone Coils not being craftable in the Multiservo Press
+- Redstone Servos having two recipes (related to above - got them switched up)
+
 # 3.1.1
 
 ## Note:
@@ -45,6 +52,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
   - Recipes (such as for the infinity tools) outright not working unless viewed by looking at uses for the Dissolution Chamber
   - Occasional crashes and oddities
   - Quest book wanting to bookmark itself constantly, even though no one really ever did that
+- Chunk Pregenerator:
+  - Dev keeps removing old versions of their mod on their page, breaking many of my updates to this pack
 
 # 3.1.0 - The Space Update!
 

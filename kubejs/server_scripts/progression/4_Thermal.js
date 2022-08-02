@@ -62,7 +62,7 @@ const rfCoilRecipes = event => {
     '#forge:rods/blaze',
     '4x immersiveengineering:wirecoil_redstone',
   ]);
-  event.recipes.thermal.press('thermal:redstone_servo', [irc, '2x #forge:plates/gold']);
+  event.recipes.thermal.press('thermal:rf_coil', [irc, '2x #forge:plates/gold']);
 };
 
 /**
