@@ -119,6 +119,9 @@ onEvent('jei.hide.items', event => {
     'davebuildingmod:reinforced_glass',
     'davebuildingmod:soft_air',
     'davebuildingmod:steel_ingot',
+    'dimstorage:dim_core',
+    'dimstorage:dim_wall',
+    'dimstorage:solid_dim_core',
     'draconicevolution:awakened_draconium_dust',
     'draconicevolution:draconium_dust',
     'draconicevolution:end_draconium_ore',
@@ -133,7 +136,6 @@ onEvent('jei.hide.items', event => {
     'emendatusenigmatica:molten_charged_certus_quartz_bucket',
     'emendatusenigmatica:molten_fluix_bucket',
     'emendatusenigmatica:quartz_gear',
-    'enderchests:ender_pouch',
     'extendedcrafting:advanced_auto_table',
     'extendedcrafting:advanced_catalyst',
     'extendedcrafting:advanced_component',
@@ -363,7 +365,6 @@ onEvent('jei.hide.items', event => {
     'mekanism:uranium_ore',
     'minecraft:coal_ore',
     'minecraft:diamond_ore',
-    'minecraft:elytra',
     'minecraft:emerald_ore',
     'minecraft:gold_ore',
     'minecraft:iron_ore',
@@ -585,7 +586,13 @@ onEvent('jei.hide.items', event => {
     'tools_complement:bronze_shovel',
     'tools_complement:bronze_sword',
     'xnet:connector_upgrade',
-  ].forEach(x => event.hide(x));
+  ].forEach(x => {
+    try {
+      event.hide(x);
+    } catch (ex) {
+      console.log(ex);
+    }
+  });
 
   [
     'helmet',
@@ -655,13 +662,6 @@ onEvent('jei.hide.items', event => {
 
   // Hides the extended crafting book.
   event.hide(Item.of('patchouli:guide_book', '{"patchouli:book":"extendedcrafting:guide"}'));
-});
-
-onEvent('jei.information', event => {
-    'Only dropped by §5Challenger §kEndermen§r, §0but some say the §4Piglins§r may have studied these cores.',
-  ]);
-    "Challenger Mobs have fancy §cc§4o§6l§eo§2r§3e§bd§r particles and prefixes like §3'Agile'§r or §1'Mighty'§r",
-  ]);
 });
 
 onEvent('jei.add.items', event => {

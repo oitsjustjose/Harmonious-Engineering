@@ -27,7 +27,7 @@ onEvent('recipes', event => {
     C: 'moreminecarts:chunkrodite',
     F: 'fluxnetworks:flux_dust',
     I: '#forge:ingots/gold',
-    P: 'powah:dielectric_casing',
+    P: 'projectred-core:energized_silicon',
   });
 
   event.shaped(loaders.ultimate, ['DCD', 'IEI', 'DCD'], {

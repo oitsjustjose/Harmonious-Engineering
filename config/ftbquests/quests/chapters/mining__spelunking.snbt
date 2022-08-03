@@ -123,24 +123,6 @@
 			}]
 		}
 		{
-			icon: "powah:uraninite"
-			x: 0.0d
-			y: -4.5d
-			description: ["Yep, Uraninite has been removed as an ore, but if you keep picking up that Uranium ore and those Uranium ore chunks, you can Metallurgically Infuse them with Redstone to get some for your reactor!"]
-			dependencies: ["75C685BA3AC15524"]
-			id: "22126D2038C558A8"
-			tasks: [{
-				id: "545DA549E5ED726A"
-				type: "checkmark"
-				title: "Uraninite Too?"
-			}]
-			rewards: [{
-				id: "4E5CE80E8E0379DB"
-				type: "xp"
-				xp: 300
-			}]
-		}
-		{
 			title: "ALL THE CHUNKS"
 			x: -1.5d
 			y: -9.0d
@@ -217,68 +199,6 @@
 				id: "19BE1C868AA644FA"
 				type: "item"
 				item: "immersiveengineering:crate"
-			}]
-		}
-		{
-			title: "Silk Touchist"
-			x: 0.0d
-			y: -10.5d
-			shape: "octagon"
-			description: ["Wow you really managed to silk touch every ore, huh! Nice!! I'm very impressed. If you need to turn those back into blocks so you can break them, just shapelessly craft a chunk to get its block form. If you want to decorate with them, head over to your local stonecutter!"]
-			dependencies: ["75C685BA3AC15524"]
-			id: "7C2B64C4A87CB87B"
-			tasks: [
-				{
-					id: "3C525CED79D08A5F"
-					type: "item"
-					item: "emendatusenigmatica:coal_chunk"
-				}
-				{
-					id: "4042C4AAE704BF3D"
-					type: "item"
-					item: "emendatusenigmatica:diamond_chunk"
-				}
-				{
-					id: "4C8D5F48413ABB66"
-					type: "item"
-					item: "emendatusenigmatica:emerald_chunk"
-				}
-				{
-					id: "237DFFBD856CAD91"
-					type: "item"
-					item: "emendatusenigmatica:lapis_chunk"
-				}
-				{
-					id: "3B394608376AAFE7"
-					type: "item"
-					item: "emendatusenigmatica:certus_quartz_chunk"
-				}
-				{
-					id: "5C9DEAF785489BB3"
-					type: "item"
-					item: "emendatusenigmatica:fluorite_chunk"
-				}
-				{
-					id: "22C289C9B8483163"
-					type: "item"
-					item: "emendatusenigmatica:cinnabar_chunk"
-				}
-				{
-					id: "648C6972A768D5CE"
-					type: "item"
-					item: "emendatusenigmatica:apatite_chunk"
-				}
-				{
-					id: "137D365E9F12D9E8"
-					type: "item"
-					item: "emendatusenigmatica:potassium_nitrate_chunk"
-				}
-			]
-			rewards: [{
-				id: "40B6969D5F159FCC"
-				type: "item"
-				item: "farmersdelight:sweet_berry_cookie"
-				count: 13
 			}]
 		}
 		{

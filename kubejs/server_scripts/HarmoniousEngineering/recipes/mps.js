@@ -7,22 +7,22 @@ const base = event => {
   event.remove({output: 'powersuits:tinkertable'});
 
   event.shaped('powersuits:powerarmor_head', ['PPP', 'CHC'], {
-    C: 'powah:capacitor_niotic',
+    C: 'mekanism:ultimate_induction_cell',
     H: 'redstone_arsenal:flux_helmet',
     P: 'mekanism:hdpe_sheet',
   });
   event.shaped('powersuits:powerarmor_torso', ['P P', 'CHC', 'PPP'], {
-    C: 'powah:capacitor_niotic',
+    C: 'mekanism:ultimate_induction_cell',
     H: 'redstone_arsenal:flux_chestplate',
     P: 'mekanism:hdpe_sheet',
   });
   event.shaped('powersuits:powerarmor_legs', ['PHP', 'C C', 'P P'], {
-    C: 'powah:capacitor_niotic',
+    C: 'mekanism:ultimate_induction_cell',
     H: 'redstone_arsenal:flux_leggings',
     P: 'mekanism:hdpe_sheet',
   });
   event.shaped('powersuits:powerarmor_feet', ['CHC', 'P P'], {
-    C: 'powah:capacitor_niotic',
+    C: 'mekanism:ultimate_induction_cell',
     H: 'redstone_arsenal:flux_boots',
     P: 'mekanism:hdpe_sheet',
   });

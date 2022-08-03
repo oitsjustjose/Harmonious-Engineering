@@ -1,8 +1,5 @@
 onEvent('recipes', event => {
-  //   event.replaceInput({}, '#forge:dusts/wood', 'emendatusenigmatica:wood_dust');
   [
-    'alexsmobs:falconry_glove',
-    'alexsmobs:falconry_hood',
     'create:brown_toolbox',
     'supplementaries:bellows',
     'tconstruct:travelers_boots',
@@ -20,4 +17,6 @@ onEvent('recipes', event => {
   ].forEach(x =>
     event.replaceInput({output: x}, 'minecraft:leather', 'improvedbackpacks:tanned_leather')
   );
+
+  event.shapeless('8x minecraft:leather', ['1x cnb:yeti_hide']);
 });

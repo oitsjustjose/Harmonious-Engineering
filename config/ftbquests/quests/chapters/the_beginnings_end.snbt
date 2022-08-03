@@ -1,7 +1,7 @@
 {
 	id: "23630918D82F19CF"
 	group: "2F5E9821869B4E2F"
-	order_index: 3
+	order_index: 2
 	filename: "the_beginnings_end"
 	title: "Harnessing Resonance"
 	icon: "minecraft:end_portal_frame"
@@ -156,40 +156,27 @@
 		}
 		{
 			x: 0.0d
-			y: 4.0d
-			shape: "hexagon"
-			subtitle: "An Adventure Time reference, for those missing it."
-			description: ["If you need help summoning the void worm, take a look at your Animal Dictionary"]
+			y: 3.0d
 			dependencies: ["1CAD34C4A5929DC9"]
-			hide: true
-			size: 2.0d
-			optional: true
-			id: "54BFF31E096D8E93"
+			id: "47A11189A1A9F0EE"
 			tasks: [{
-				id: "0E813203384FA59C"
-				type: "kill"
-				title: "I SAID NO WORMS IN THE BED"
-				icon: "alexsmobs:mysterious_worm"
-				entity: "alexsmobs:void_worm"
-				value: 1L
+				id: "6167E7240DDCB481"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
-			rewards: [
-				{
-					id: "6A24DA90A4E967A1"
-					type: "random"
-					title: "Random Void Worm Reward"
-					icon: "supplementaries:present"
-					table_id: 5435672958058832467L
-				}
-				{
-					id: "7AF316D87589DE0E"
-					type: "command"
-					team_reward: true
-					auto: "invisible"
-					command: "/ftbquests change_progress @p complete 58BB42C6580343A1"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "163B2370659F5326"
+				type: "item"
+				item: "minecraft:firework_rocket"
+				count: 32
+				random_bonus: 32
+			}]
 		}
 	]
 }

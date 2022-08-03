@@ -23,7 +23,6 @@ onEvent('item.tooltip', event => {
     event.add(x, ['§cUsed for Crafting Only§r'])
   );
 
-  event.add('minecraft:elytra', ['§7Throw in world to convert to a Customizable Elytra.§r']);
   event.add('mekanism:cardboard_box', [
     '§7Bigger on the inside?§r',
     '§7Capable of moving Spawners§r',

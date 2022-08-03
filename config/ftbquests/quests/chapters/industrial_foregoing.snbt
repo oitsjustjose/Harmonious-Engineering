@@ -500,7 +500,7 @@
 					id: "4F555C66F7A41471"
 					type: "item"
 					title: "Ender Core Automation"
-					item: "powah:ender_core"
+					item: "kubejs:ender_core"
 					count: 256L
 				}
 				{

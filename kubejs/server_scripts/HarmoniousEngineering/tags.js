@@ -145,12 +145,9 @@ const thermalTags = event => {
 };
 
 const curioTags = event => {
-  [
-    'alexsmobs:tarantula_hawk_elytra',
-    'mekanism:hdpe_elytra',
-    'tconstruct:slime_chestplate',
-    'redstone_arsenal:flux_elytra',
-  ].forEach(x => event.add('curios:back', x));
+  ['mekanism:hdpe_elytra', 'tconstruct:slime_chestplate', 'redstone_arsenal:flux_elytra'].forEach(
+    x => event.add('curios:back', x)
+  );
 };
 
 const removePlates = event => {
@@ -246,7 +243,6 @@ const miscTags = event => {
   [
     'minecraft:leather',
     'improvedbackpacks:tanned_leather',
-    'alexsmobs:kangaroo_hide',
     'minecraft:rabbit_hide',
     '#forge:string',
     '#minecraft:wool',
