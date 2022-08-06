@@ -240,8 +240,8 @@ onEvent('recipes', event => {
 
   CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:modification_station'),
-    Item.of('immersiveengineering:workbench'),
-    Item.of('thermal:machine_frame')
+    Item.of('thermal:machine_frame'),
+    Item.of('immersiveengineering:workbench')
   );
 });
 
