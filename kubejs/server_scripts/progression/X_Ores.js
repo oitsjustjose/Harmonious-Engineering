@@ -15,7 +15,7 @@ onEvent('recipes', event => {
     return Item.empty;
   };
 
-  const remove = event => {
+  const remove = () => {
     // Remove Raw Ore -> Dusts and all Create Crushing Recipes
     event.remove({input: '#forge:ores', output: '#forge:dusts'});
     event.remove({input: '#forge:ores', output: '#forge:ingots'});
@@ -46,7 +46,7 @@ onEvent('recipes', event => {
     });
   };
 
-  const toNuggets = event => {
+  const toNuggets = () => {
     global.metals.forEach(metal => {
       // Raw Ore to Nuggets
       event.smelting(resourceFromName(metal, 'nugget', 3), `#forge:raw_materials/${metal}`);
@@ -57,7 +57,7 @@ onEvent('recipes', event => {
     });
   };
 
-  const toDust = event => {
+  const toDust = () => {
     global.metals.forEach(metal => {
       const raw = `#forge:raw_materials/${metal}`;
       const dust = `#forge:dusts/${metal}`;
@@ -72,15 +72,15 @@ onEvent('recipes', event => {
     });
   };
 
-  const toIngots = event => {
+  const toIngots = () => {
     global.metals.forEach(metal => {
       event.smelting(resourceFromName(metal, 'ingot'), `#forge:dusts/${metal}`);
       event.blasting(resourceFromName(metal, 'ingot'), `#forge:dusts/${metal}`);
     });
   };
 
-  remove(event);
-  toNuggets(event);
-  toDust(event);
-  toIngots(event);
+  remove();
+  toNuggets();
+  toDust();
+  toIngots();
 });
