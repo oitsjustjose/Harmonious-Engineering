@@ -752,7 +752,7 @@ onEvent('jei.add.items', event => {
     ),
     Item.of(
       'industrialforegoing:infinity_backpack',
-      '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b,Tanks:{}}'
+      '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b}'
     ),
     Item.of(
       'industrialforegoing:infinity_launcher',

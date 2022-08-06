@@ -100,7 +100,7 @@ onEvent('recipes', event => {
   CustomRecipeHandler.dissolution(
     Item.of(
       'industrialforegoing:infinity_backpack',
-      '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b,Tanks:{}}'
+      '{CanCharge:1b,Energy:0L,Selected:"POOR",Special:0b}'
     ),
     [
       // Top Left
