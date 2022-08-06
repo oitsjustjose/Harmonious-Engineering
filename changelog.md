@@ -2,6 +2,36 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.2
+
+## Added
+
+- Induction Smelter recipes to recycle Netherite gear back into Netherite
+- Recipes for IE Colored Sheetmetal variants
+- Savage & Ravage compatibility pack for Repurposed Structures
+- Smithing table recipes to upgrade bins - bins will keep their settings and contents when upgraded
+
+## Changed
+
+- Modification Station recipe has been flipped to make Shift-Click behavior work as expected
+- Recipes for Thermal Machines now use a template so that it's easier to automate, making only four slots dynamic
+
+## Fixed
+
+- Infinity Backpack not showing its recipe when clicked in JEI
+
+## Updated
+
+- Dave's Building Extended
+- Ecologics
+- Framed Blocks
+- KubeJS
+- Pneumaticcraft
+- RFTools (Base)
+- Tempad
+- Xaero's World Map
+- Library Mods
+
 # 3.1.1a
 
 ## Fixed
