@@ -407,6 +407,36 @@ onEvent('recipes', event => {
     );
   };
 
+  const ieSheetmetal = () => {
+    [
+      'white',
+      'orange',
+      'magenta',
+      'light_blue',
+      'yellow',
+      'lime',
+      'pink',
+      'gray',
+      'light_gray',
+      'cyan',
+      'purple',
+      'blue',
+      'brown',
+      'green',
+      'red',
+      'black',
+    ].forEach(color => {
+      event.shaped(
+        Item.of(`1x immersiveengineering:sheetmetal_colored_${color}`),
+        ['SSS', 'SDS', 'SSS'],
+        {
+          S: '#forge:sheetmetals',
+          D: `#forge:dyes/${color}`,
+        }
+      );
+    });
+  };
+
   const supermartijn = () => {
     event.remove({output: 'entangled:block'});
     event.shaped('entangled:block', ['LDL', 'ESE', 'LDL'], {
@@ -449,6 +479,7 @@ onEvent('recipes', event => {
   engineersDecor();
   expandedstorage();
   fluxNetworks();
+  ieSheetmetal();
   mcjty();
   moreMinecarts();
   pipez();
