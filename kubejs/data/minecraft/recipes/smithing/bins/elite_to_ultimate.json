@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smithing",
+  "base": {"item": "mekanism:elite_bin"},
+  "addition": {"item": "thermal:signalum_ingot"},
+  "result": {"item": "mekanism:ultimate_bin"}
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smithing",
+  "base": {"item": "mekanism:advanced_bin"},
+  "addition": {"item": "create:brass_ingot"},
+  "result": {"item": "mekanism:elite_bin"}
+}

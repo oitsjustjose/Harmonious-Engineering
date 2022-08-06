@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smithing",
+  "base": {"item": "mekanism:basic_bin"},
+  "addition": {"item": "create:andesite_alloy"},
+  "result": {"item": "mekanism:advanced_bin"}
+}
