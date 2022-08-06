@@ -345,6 +345,33 @@ onEvent('recipes', event => {
     });
   };
 
+  const recycling = () => {
+    const items = [
+      'beyond_earth:netherite_oxygen_mask',
+      'beyond_earth:netherite_space_boots',
+      'beyond_earth:netherite_space_pants',
+      'beyond_earth:netherite_space_suit',
+      'farmersdelight:netherite_knife',
+      'minecraft:netherite_axe',
+      'minecraft:netherite_boots',
+      'minecraft:netherite_chestplate',
+      'minecraft:netherite_helmet',
+      'minecraft:netherite_hoe',
+      'minecraft:netherite_leggings',
+      'minecraft:netherite_pickaxe',
+      'minecraft:netherite_shovel',
+      'minecraft:netherite_sword',
+      'pneumaticcraft:drill_bit_netherite',
+      'pneumaticcraft:unassembled_netherite_drill_bit',
+      'tools_complement:netherite_excavator',
+      'tools_complement:netherite_hammer',
+      'tools_complement:netherite_knife',
+      'tools_complement:netherite_sickle',
+    ].map(x => Item.of(x));
+
+    event.recipes.thermal.smelter(Item.of('6x thermal:netherite_nugget'), [items]);
+  };
+
   const refinedStorage = () => {
     event.remove({output: '#forge:silicon'});
     event.recipes.thermal.smelter(Item.of('refinedstorage:silicon'), [
@@ -425,6 +452,7 @@ onEvent('recipes', event => {
   mcjty();
   moreMinecarts();
   pipez();
+  recycling();
   refinedStorage();
   routers();
   supermartijn();
