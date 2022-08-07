@@ -57,6 +57,22 @@ onEvent('item.tags', event => {
   event.add('forge:dusts/desh', 'kubejs:desh_dust');
   event.add('forge:dusts/ostrum', 'kubejs:ostrum_dust');
   event.removeAllTagsFrom('minecraft:chest');
+
+  /* Remove tags from Ruby & Sapphire */
+  /* This prevents them appearing in the Ore Laser */
+  event.removeAllTagsFrom('thermal:ruby_ore');
+  event.removeAllTagsFrom('thermal:sapphire_ore');
+  event.removeAllTagsFrom('thermal:deepslate_ruby_ore');
+  event.removeAllTagsFrom('thermal:deepslate_sapphire_ore');
+});
+
+onEvent('block.tags', event => {
+  /* Remove tags from Ruby & Sapphire */
+  /* This prevents them appearing in the Ore Laser */
+  event.removeAllTagsFrom('thermal:ruby_ore');
+  event.removeAllTagsFrom('thermal:sapphire_ore');
+  event.removeAllTagsFrom('thermal:deepslate_ruby_ore');
+  event.removeAllTagsFrom('thermal:deepslate_sapphire_ore');
 });
 
 onEvent('fluid.tags', event => {
