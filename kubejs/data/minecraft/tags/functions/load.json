@@ -5,6 +5,7 @@
     "confetti_creepers:tick",
     "confetti_creepers:check_trigger",
     "confetti_creepers:give_effects",
-    "#load:_private/load"
+    "#load:_private/load",
+    "kubejs:tick"
   ]
 }
