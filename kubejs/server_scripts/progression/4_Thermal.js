@@ -113,9 +113,9 @@ onEvent('recipes', event => {
 
     // Induction Smelter
     fromTemplate(Item.of('thermal:machine_smelter'), [
-      Item.of('immersiveengineering:graphite_electrode'),
-      Item.of('immersiveengineering:graphite_electrode'),
-      Item.of('immersiveengineering:graphite_electrode'),
+      Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0, Unbreakable:1}'),
+      Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0, Unbreakable:1}'),
+      Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0, Unbreakable:1}'),
       Item.of('immersiveengineering:alloybrick'),
       Item.of('immersiveengineering:heavy_engineering'),
       Item.of('immersiveengineering:alloybrick'),

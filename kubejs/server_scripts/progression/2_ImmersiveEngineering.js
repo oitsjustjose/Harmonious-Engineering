@@ -27,6 +27,12 @@ onEvent('recipes', event => {
     `4x #forge:ingots/hop_graphite`,
     'immersiveengineering:mold_rod'
   );
+  event.custom({
+    type: 'immersiveengineering:blueprint',
+    inputs: [{count: 4, base_ingredient: {tag: 'forge:ingots/hop_graphite'}}],
+    category: 'electrode',
+    result: {item: 'immersiveengineering:graphite_electrode', nbt: '{graphDmg:0, Unbreakable:1}'},
+  });
 
   event.remove({output: 'immersiveengineering:hammer'});
   event.shaped('kubejs:crude_hammer', [' A ', 'ASA', 'SA '], {

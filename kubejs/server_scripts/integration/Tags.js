@@ -53,6 +53,7 @@ onEvent('item.tags', event => {
 
   event.add('thermal:crafting/dies', 'immersiveengineering:mold_wire');
   event.add('thermal:crafting/dies', 'immersiveengineering:mold_bullet_casing');
+  event.add('thermal:crafting/dies', 'immersiveengineering:mold_rod');
   event.add('forge:dusts/calorite', 'kubejs:calorite_dust');
   event.add('forge:dusts/desh', 'kubejs:desh_dust');
   event.add('forge:dusts/ostrum', 'kubejs:ostrum_dust');
