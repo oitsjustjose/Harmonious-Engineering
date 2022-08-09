@@ -16,6 +16,11 @@ onEvent('recipes', event => {
   };
 
   const remove = () => {
+    event.remove({input: 'thermal:apatite_ore'});
+    event.remove({input: 'thermal:deepslate_apatite_ore'});
+    event.remove({input: 'thermal:apatite'});
+    event.remove({output: 'thermal:apatite'});
+
     // Remove Raw Ore -> Dusts and all Create Crushing Recipes
     event.remove({input: '#forge:ores', output: '#forge:dusts'});
     event.remove({input: '#forge:ores', output: '#forge:ingots'});
