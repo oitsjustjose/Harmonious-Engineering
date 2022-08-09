@@ -319,6 +319,63 @@ onEvent('recipes', event => {
       '3x #forge:ingots/steel',
       ['1x #forge:dusts/quartz']
     );
+
+    event.remove({id: 'moreminecarts:phantom_levitation_powder'});
+    event.remove({id: 'moreminecarts:chorus_levitation_powder'});
+    event.remove({id: 'moreminecarts:shulker_levitation_powder'});
+
+    event.recipes.thermal.pulverizer(Item.of('4x moreminecarts:levitation_powder'), [
+      'minecraft:phantom_membrane',
+    ]);
+    event.recipes.thermal.pulverizer(Item.of('2x moreminecarts:levitation_powder'), [
+      'minecraft:popped_chorus_fruit',
+    ]);
+    event.recipes.thermal.pulverizer(Item.of('32x moreminecarts:levitation_powder'), [
+      'minecraft:shulker_shell',
+    ]);
+
+    /* Earlier game recipe */
+    event.recipes.create.milling(
+      ['1x moreminecarts:levitation_powder'],
+      'minecraft:phantom_membrane'
+    );
+
+    /* TPPP recipes */
+    event.custom({
+      type: 'pneumaticcraft:thermo_plant',
+      item_input: {item: 'minecraft:phantom_membrane'},
+      fluid_input: {type: 'pneumaticcraft:fluid', tag: 'forge:lubricant', amount: 100},
+      item_output: {item: 'moreminecarts:levitation_powder', count: 16},
+      temperature: {min_temp: 773},
+      pressure: 7.5,
+      speed: 0.1,
+      air_use_multiplier: 10.0,
+      exothermic: false,
+    });
+
+    event.custom({
+      type: 'pneumaticcraft:thermo_plant',
+      item_input: {item: 'minecraft:popped_chorus_fruit'},
+      fluid_input: {type: 'pneumaticcraft:fluid', tag: 'forge:lubricant', amount: 100},
+      item_output: {item: 'moreminecarts:levitation_powder', count: 4},
+      temperature: {min_temp: 773},
+      pressure: 7.5,
+      speed: 0.1,
+      air_use_multiplier: 10.0,
+      exothermic: false,
+    });
+
+    event.custom({
+      type: 'pneumaticcraft:thermo_plant',
+      item_input: {item: 'minecraft:shulker_shell'},
+      fluid_input: {type: 'pneumaticcraft:fluid', tag: 'forge:lubricant', amount: 100},
+      item_output: {item: 'moreminecarts:levitation_powder', count: 64},
+      temperature: {min_temp: 773},
+      pressure: 7.5,
+      speed: 0.1,
+      air_use_multiplier: 10.0,
+      exothermic: false,
+    });
   };
 
   const pipez = () => {

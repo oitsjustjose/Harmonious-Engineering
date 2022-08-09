@@ -2,6 +2,21 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.3
+
+## Added
+
+- Multiservo Press recipes for Rods & Graphite Electrodes
+- Neat new recipes for Levitation Lubricant!
+
+## Fixed
+
+- Fixed Apatite appearing - Thermal itself has not yet reimplemented Apatite Ore generation so I removed and culled all Apatite-based items and recipes
+- Graphite Electrodes in the Induction Smelter recipe not working
+- Graphite Electrodes via the Engineer's Workbench not crafting as unbreakable
+- Some ores being tagged that shouldn't be - this should have no apparent change unless you were using the Laser Ore Miner, in which case you'll notice that Ruby & Sapphire are no longer generated
+- Wrote custom MCFunction to disable misfitting mobs / entities on anoxic planets. Since it's a tick-based Function, you _may_ still see these mobs for 1-2 frames, but then they'll be warped away :)
+
 # 3.1.2
 
 ## Added
