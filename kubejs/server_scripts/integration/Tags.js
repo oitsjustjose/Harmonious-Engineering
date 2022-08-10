@@ -78,4 +78,8 @@ onEvent('block.tags', event => {
 
 onEvent('fluid.tags', event => {
   event.remove('forge:latex', 'thermal:latex');
+
+  /* Unf**k the state of minecraft's "water" */
+  event.removeAll('minecraft:water');
+  event.add('minecraft:water', ['minecraft:water', 'minecraft:flowing_water']);
 });
