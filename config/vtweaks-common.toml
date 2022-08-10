@@ -60,8 +60,6 @@
 	#If set to "OWNER", this will prevent owners of pets from attacking their own pet. If set to "ALL", this prevents all players from attacking anyone's pet
 	#Allowed Values: DISABLED, OWNER, ALL
 	enablePetFriendlyFireTweak = "OWNER"
-	#Any time a Baby Zombie (or Zombie Piglin) spawns, it will be replaced with an adult
-	enableBabyZombieTweak = false
 	#A list of dimensions (of form <modid:type>) to ignore when prevent surface mob spawns.
 	peacefulSurfaceDimBlacklist = ["minecraft:the_nether", "minecraft:the_end"]
 	#The amount of time (in Milliseconds) between plucks. Defaults to 10 minutes.
@@ -73,15 +71,17 @@
 	enableFeatherPlucking = true
 	#Prevents mobs from spawning above sea level unless it's a new moon
 	enablePeacefulSurface = false
-	#The lowest Y-level which mobs will be prevented from spawning
-	#Range: > -2147483648
-	peacefulSurfaceMinY = 60
 	#This controls the overall chance for V-Tweaks to attempt converting a monster to a Challenger.
 	#This chance is applied before any Challenger Mob weights or entity filters.
 	#Range: 0.0 ~ 1.0
 	challengerMobGlobalChance = 0.25
+	#The lowest Y-level which mobs will be prevented from spawning
+	#Range: > -2147483648
+	peacefulSurfaceMinY = 60
 	#Allows you to gear up tamed pets any armor and/or weapon. Doesn't render, but DOES work!
 	enablePetArmory = false
+	#When any Creeper (or entity with EntityType tag #forge:creepers) explodes, all blocks destroyed will plop back into place after a few seconds!
+	ungriefCreepers = true
 
 #Item Tweaks
 ["item tweaks"]
