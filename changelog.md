@@ -2,7 +2,29 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
-# 3.1.3
+# 3.1.4
+
+## Added
+
+- Borderless Window
+- Ok Zoomer
+
+## Removed
+
+- Magnesium/Rubidium Extras
+  Repo & Dev are inactive and current buld is breaking newer releases of JEI (thus holding back lots of important mod updates from other mods such as Refined Storage)
+
+## Changed
+
+- Creeper Confetti is now replaced by V-Tweak's Ungriefed Creepers feature -- creepers still explode, but blocks destroyed will plop right back into place (including tile entities!)
+
+## Fixed
+
+- Entities going missing in overworld and high TPS usage
+- Beyond Earth's Oil Wells generating unnecessarily
+- Non-water buckets showing up as water buckets in recipes in JEI
+
+# 3.1.3 WAS REMOVED -- The custom MCFunction caused TPS issues and entities to go missing from the overworld somehow
 
 ## Added
 
