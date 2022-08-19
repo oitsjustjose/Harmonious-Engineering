@@ -19,3 +19,28 @@ onEvent('item.registry', event => {
   event.create('desh_dust').texture('kubejs:item/desh_dust');
   event.create('ostrum_dust').texture('kubejs:item/ostrum_dust');
 });
+
+onEvent('item.modification', event => {
+  const minecarts = [
+    'immersiveengineering:minecart_metalbarrel',
+    'immersiveengineering:minecart_reinforcedcrate',
+    'immersiveengineering:minecart_woodenbarrel',
+    'immersiveengineering:minecart_woodencrate',
+    'minecraft:chest_minecart',
+    'minecraft:furnace_minecart',
+    'minecraft:hopper_minecart',
+    'minecraft:minecart',
+    'minecraft:tnt_minecart',
+    'moreminecarts:battery_cart',
+    'moreminecarts:flag_cart',
+    'moreminecarts:minecart_with_chunk_loader',
+    'moreminecarts:minecart_with_net',
+    'moreminecarts:pearl_stasis_minecart',
+    'moreminecarts:tank_cart',
+    'supplementaries:dispenser_minecart',
+  ];
+
+  minecarts.forEach(cart => {
+    event.modify(cart, item => item.setMaxStackSize(16));
+  });
+});
