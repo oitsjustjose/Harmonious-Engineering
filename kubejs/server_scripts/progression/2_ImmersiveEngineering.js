@@ -108,4 +108,12 @@ onEvent('recipes', event => {
     `9x ${'immersiveengineering:dust_coke'}`,
     '#forge:storage_blocks/coal_coke'
   );
+
+  // Restore Plant Oil recipe that somehow went missing....
+  event.custom({
+    type: 'immersiveengineering:squeezer',
+    fluid: {fluid: 'immersiveengineering:plantoil', amount: 20},
+    input: {tag: 'forge:seeds'},
+    energy: 6400,
+  });
 });
