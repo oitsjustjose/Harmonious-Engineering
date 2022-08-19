@@ -2,6 +2,40 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.5
+
+## Added
+
+- Configured & Catalogue
+- Functional Storage (Yes I _finally_ gave in - I've received lots of feedback on this!)
+- Oculus for Shaderpacks if desired (Included Oculus compatibility for Create / Flywheel 🙂)
+
+## Updated
+
+- Compressed Creativity
+- Create + Flywheel
+- Create Crafts & Additions
+- Critters & Companions
+- Dave's Building Extended
+- Decorative Blocks
+- Flux Networks
+- Immersive Engineering
+- Little Logistics + Contraptions
+- Naturalist
+- Supplementaries
+- Tips
+- V-Tweaks
+- X-Net
+
+## Changed / Fixed
+
+- All Minecarts now stack to 16
+- Chest Minecarts (or anything that happens to drop a `minecraft:chest`) will now correctly drop Expanded Storage's chests
+- Chest Minecarts not having the right Chest texture
+- Creeper Confetti Tip - this has been replaced with an updated tip for Ungriefed Creepers
+- Ender Dust can be dropped by Urns, though _very_ rarely
+- Immersive Engineering's Plant Oil recipe being missing
+
 # 3.1.4
 
 ## Added
