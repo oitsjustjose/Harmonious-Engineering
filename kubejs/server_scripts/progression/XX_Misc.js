@@ -183,8 +183,15 @@ onEvent('recipes', event => {
       'davebuildingmod:white_chair',
       'davebuildingmod:yellow_chair',
     ].forEach(x => event.remove({output: x}));
-
+    event.remove({input: '#minecraft:ingots/steel'});
     event.replaceInput({}, 'davebuildingmod:steel_ingot', '#forge:ingots/steel');
+
+    CustomRecipeHandler.automatableSmithing(
+      Item.of('davebuildingmod:computer_terminal_steel'),
+      Item.of('davebuildingmod:computer_terminal'),
+      Item.of('#forge:ingots/steel')
+    );
+
     CustomRecipeHandler.automatableSmithing(
       Item.of('2x davebuildingmod:track_end'),
       Item.of('create:track'),
