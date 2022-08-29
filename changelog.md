@@ -2,6 +2,24 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.6
+
+## Added:
+
+- Villagers Sell Animals
+- Magnesium / Rubidium Extras
+- Simple Backups
+
+## Removed:
+
+- Oculus (and Flywheel Compat) - caused lots of visual issues with the Pressure Chamber. Do let me know if you disagree with this change, but even with shaders off I noticed several new artifacts not previously present.
+- OK Zoomer - Redundant with Rubidium Extras
+- Borderless Window - Redundant with Rubidium Extras
+
+## Changed:
+
+- All Deepslate Ores now have a chance of dropping a bonus raw ore (even without Fortune). This is to incentivise mining down at Deepslate as well as to give the impression that Deepslate Ores are "Dense". This incentive does not get passed on to those who silk touch ores -- silk touched ores cannot be processed to have this bonus as the tagging system in KubeJS isn't capable of subtractive tagging (i.e. "Every `forge:ores/iron` except `minecraft:deepslate_iron_ore`). If they offered this that'd be great but that's not the case 😔
+
 # 3.1.5
 
 ## Added
