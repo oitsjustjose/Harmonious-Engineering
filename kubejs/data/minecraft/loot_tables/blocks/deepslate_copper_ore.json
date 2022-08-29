@@ -14,11 +14,18 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "enchantments": [{"enchantment": "minecraft:silk_touch", "levels": {"min": 1}}]
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
                   }
                 }
               ],
-              "name": "immersiveengineering:ore_aluminum"
+              "name": "minecraft:deepslate_copper_ore"
             },
             {
               "type": "minecraft:item",
@@ -27,8 +34,8 @@
                   "function": "minecraft:set_count",
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 1.0,
-                    "max": 2.0
+                    "min": 2.0,
+                    "max": 5.0
                   },
                   "add": false
                 },
@@ -37,9 +44,11 @@
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
                 },
-                {"function": "minecraft:explosion_decay"}
+                {
+                  "function": "minecraft:explosion_decay"
+                }
               ],
-              "name": "immersiveengineering:raw_aluminum"
+              "name": "minecraft:raw_copper"
             }
           ]
         }
