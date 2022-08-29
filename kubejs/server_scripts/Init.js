@@ -64,6 +64,7 @@ global.duplicateResources = [
   {tag: 'forge:storage_blocks/nickel', item: 'immersiveengineering:storage_nickel'},
   {tag: 'forge:storage_blocks/silver', item: 'immersiveengineering:storage_silver'},
   {tag: 'forge:storage_blocks/steel', item: 'beyond_earth:steel_block'},
+  {tag: 'forge:storage_blocks/steel', item: 'davebuildingmod:steel_block'},
 ];
 
 global.metals = [
