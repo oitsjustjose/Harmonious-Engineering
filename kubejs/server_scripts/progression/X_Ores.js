@@ -16,6 +16,9 @@ onEvent('recipes', event => {
   };
 
   const remove = () => {
+    // remove uraninite mineral from excavator
+    event.remove({id: 'immersiveengineering:mineral/uraninite'});
+
     event.remove({input: 'thermal:apatite_ore'});
     event.remove({input: 'thermal:deepslate_apatite_ore'});
     event.remove({input: 'thermal:apatite'});
