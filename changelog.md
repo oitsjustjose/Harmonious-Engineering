@@ -16,6 +16,11 @@
 - OK Zoomer - Redundant with Rubidium Extras
 - Borderless Window - Redundant with Rubidium Extras
 
+## Fixed:
+
+- Bad Omen _should_ have been disabled unless obtained by burning an Ominous Banner. This wasn't the case, but should be fixed now
+- Uraninite deposits shouldn't exist, so that's been resolved (thanks Elder Sign 🙂)
+
 ## Changed:
 
 - All Deepslate Ores now have a chance of dropping a bonus raw ore (even without Fortune). This is to incentivise mining down at Deepslate as well as to give the impression that Deepslate Ores are "Dense". This incentive does not get passed on to those who silk touch ores -- silk touched ores cannot be processed to have this bonus as the tagging system in KubeJS isn't capable of subtractive tagging (i.e. "Every `forge:ores/iron` except `minecraft:deepslate_iron_ore`). If they offered this that'd be great but that's not the case 😔
