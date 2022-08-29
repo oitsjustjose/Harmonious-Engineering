@@ -65,6 +65,18 @@ onEvent('item.tags', event => {
   event.removeAllTagsFrom('thermal:sapphire_ore');
   event.removeAllTagsFrom('thermal:deepslate_ruby_ore');
   event.removeAllTagsFrom('thermal:deepslate_sapphire_ore');
+
+  event.add('forge:deepslate_denseish_ores', [
+    'create:deepslate_zinc_ore',
+    'immersiveengineering:deepslate_ore_aluminum',
+    'minecraft:deepslate_copper_ore',
+    'minecraft:deepslate_gold_ore',
+    'minecraft:deepslate_iron_ore',
+    'thermal:deepslate_lead_ore',
+    'thermal:deepslate_nickel_ore',
+    'thermal:deepslate_silver_ore',
+    'thermal:deepslate_tin_ore',
+  ]);
 });
 
 onEvent('block.tags', event => {

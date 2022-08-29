@@ -62,6 +62,11 @@ onEvent('item.tooltip', event => {
     '§4Disabled§r'
   );
 
+  event.add(
+    '#forge:deepslate_denseish_ores',
+    '§7Drops more §eRaw Ore§7 than their stone counterparts§r'
+  );
+
   event.add('naturalist:glow_goop', '§7Dropped from §eFireflies§7§r');
   event.add(
     'moreminecarts:chunkrodite',

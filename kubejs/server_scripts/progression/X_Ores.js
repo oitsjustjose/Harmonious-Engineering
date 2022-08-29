@@ -32,6 +32,7 @@ onEvent('recipes', event => {
     event.remove({input: '#forge:raw_materials', output: '#forge:ingots'});
     event.remove({input: '#forge:raw_materials', output: '#forge:nuggets'});
 
+    event.remove({input: '#create:crushed_ores'});
     event.remove({output: '#create:crushed_ores'});
 
     global.metals.forEach(metal => {
