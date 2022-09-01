@@ -491,7 +491,7 @@ onEvent('recipes', event => {
       'black',
     ].forEach(color => {
       event.shaped(
-        Item.of(`1x immersiveengineering:sheetmetal_colored_${color}`),
+        Item.of(`8x immersiveengineering:sheetmetal_colored_${color}`),
         ['SSS', 'SDS', 'SSS'],
         {
           S: '#forge:sheetmetals',
