@@ -116,4 +116,45 @@ onEvent('recipes', event => {
     input: {tag: 'forge:seeds'},
     energy: 6400,
   });
+
+  // Make the mining drill enchantable, sort of...
+  event.shapeless(
+    Item.of('1x immersiveengineering:drill', {
+      Enchantments: [{id: 'minecraft:silk_touch', lvl: 1}],
+    }),
+    [
+      Item.of('1x immersiveengineering:drill'),
+      Item.of('minecraft:enchanted_book').enchant('minecraft:silk_touch', 1),
+    ]
+  );
+
+  event.shapeless(
+    Item.of('1x immersiveengineering:drill', {
+      Enchantments: [{id: 'minecraft:fortune', lvl: 1}],
+    }),
+    [
+      Item.of('1x immersiveengineering:drill'),
+      Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 1),
+    ]
+  );
+
+  event.shapeless(
+    Item.of('1x immersiveengineering:drill', {
+      Enchantments: [{id: 'minecraft:fortune', lvl: 2}],
+    }),
+    [
+      Item.of('1x immersiveengineering:drill'),
+      Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 2),
+    ]
+  );
+
+  event.shapeless(
+    Item.of('1x immersiveengineering:drill', {
+      Enchantments: [{id: 'minecraft:fortune', lvl: 3}],
+    }),
+    [
+      Item.of('1x immersiveengineering:drill'),
+      Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 3),
+    ]
+  );
 });
