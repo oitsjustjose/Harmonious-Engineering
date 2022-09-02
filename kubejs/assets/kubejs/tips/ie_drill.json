@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "Immersive Engineering Drill Cores can be enchanted!",
+    "bold": true,
+    "color": "green"
+  },
+  "tip": {
+    "text": "Using an anvil, you can apply any Enchanted Book with Silk Touch or Fortune (other enchantments are ignored) to your drill core!"
+  }
+}

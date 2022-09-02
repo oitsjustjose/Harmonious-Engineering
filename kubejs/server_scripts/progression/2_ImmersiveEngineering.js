@@ -117,44 +117,31 @@ onEvent('recipes', event => {
     energy: 6400,
   });
 
-  // Make the mining drill enchantable, sort of...
-  event.shapeless(
-    Item.of('1x immersiveengineering:drill', {
-      Enchantments: [{id: 'minecraft:silk_touch', lvl: 1}],
-    }),
+  [
+    {id: 'minecraft:silk_touch', lvl: 1, cost: 16},
+    {id: 'minecraft:fortune', lvl: 1, cost: 6},
+    {id: 'minecraft:fortune', lvl: 2, cost: 12},
+    {id: 'minecraft:fortune', lvl: 3, cost: 18},
+  ].forEach(enchantment =>
     [
-      Item.of('1x immersiveengineering:drill'),
-      Item.of('minecraft:enchanted_book').enchant('minecraft:silk_touch', 1),
-    ]
-  );
-
-  event.shapeless(
-    Item.of('1x immersiveengineering:drill', {
-      Enchantments: [{id: 'minecraft:fortune', lvl: 1}],
-    }),
-    [
-      Item.of('1x immersiveengineering:drill'),
-      Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 1),
-    ]
-  );
-
-  event.shapeless(
-    Item.of('1x immersiveengineering:drill', {
-      Enchantments: [{id: 'minecraft:fortune', lvl: 2}],
-    }),
-    [
-      Item.of('1x immersiveengineering:drill'),
-      Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 2),
-    ]
-  );
-
-  event.shapeless(
-    Item.of('1x immersiveengineering:drill', {
-      Enchantments: [{id: 'minecraft:fortune', lvl: 3}],
-    }),
-    [
-      Item.of('1x immersiveengineering:drill'),
-      Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 3),
-    ]
+      {item: 'immersiveengineering:drill'},
+      // {item: 'immersiveengineering:drill', nbt: {}},
+      // {item: 'immersiveengineering:drill', nbt: {singleBlockMode: 0}},
+      // {item: 'immersiveengineering:drill', nbt: {singleBlockMode: 1}},
+    ].forEach(drill => {
+      event.custom({
+        type: 'vtweaks:anvil',
+        left: drill,
+        right: {
+          item: 'minecraft:enchanted_book',
+          nbt: {StoredEnchantments: [{id: enchantment.id, lvl: enchantment.lvl}]},
+        },
+        cost: enchantment.cost,
+        result: {
+          item: 'immersiveengineering:drill',
+          nbt: {Enchantments: [{id: enchantment.id, lvl: enchantment.lvl}]},
+        },
+      });
+    })
   );
 });
