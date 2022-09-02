@@ -2,6 +2,12 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.7
+
+## Changed:
+
+- IE Drill Cores can be enchanted! This is done via Anvil, and regardless of what JEI says if your book has other enchantments _other_ than Fortune (I-III) or Silk Touch, it'll still work!
+
 # 3.1.6
 
 ## Added:
