@@ -1,7 +1,6 @@
 # @s: marker
 #> structure
-
-execute positioned ~ 52 ~ align xyz unless entity @e[type=marker,distance=..20,tag=ns.nullscape_gateway] run summon marker ~0.5 52 ~0.5 {Tags:['ns.nullscape_gateway'],CustomName:'"Nullscape Gateway"'}
+execute positioned ~ 52 ~ align xyz unless entity @e[type=marker,distance=..20,tag=ns.nullscape_gateway] run summon marker ~0.5 52 ~0.5 {Tags: ["ns.nullscape_gateway"], CustomName: '"Nullscape Gateway"'}
 
 #setblock ~ 50 ~ minecraft:structure_block{mode: "LOAD", posX: -2, posY: -1, posZ: -2, name: "nullscape:gateway_platform", ignoreEntities:1b}
 

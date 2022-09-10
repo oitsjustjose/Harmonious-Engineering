@@ -1,0 +1,6 @@
+PipeNetwork{
+graph=([], []),
+nodeToConnectedNodes={},
+tileCache=[],
+pipeItems={},
+networkLocks={}}

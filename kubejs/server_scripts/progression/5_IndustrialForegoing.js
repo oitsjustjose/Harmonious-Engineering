@@ -1,6 +1,18 @@
 onEvent('recipes', event => {
   const CustomRecipeHandler = global.recipes(event);
 
+  event.replaceInput(
+    {id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame'},
+    'minecraft:netherite_scrap',
+    'architects_palette:unobtanium'
+  );
+
+  event.replaceInput(
+    {id: 'industrialforegoing:dissolution_chamber/supreme_machine_frame'},
+    'minecraft:netherite_ingot',
+    'minecraft:netherite_scrap'
+  );
+
   event.remove({output: 'industrialforegoing:diamond_gear'});
   event.remove({output: 'industrialforegoing:gold_gear'});
   event.remove({output: 'industrialforegoing:iron_gear'});

@@ -2,11 +2,47 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.8
+
+## Updated:
+
+- Critters & Companions
+- Decorative Blocks
+- Framed Blocks
+- Immersive Engineering
+- Jade
+- Simple Backups
+- Snow Real Magic
+- Supplementaries
+- V-Tweaks
+
+## Added:
+
+- Compatibility Recipes for Thermal & IE Sawmill
+  - Cocounut, Azalea, Walnut & Twisted Planks can be crafted via Sawmill.
+  - Flowering Azalea can only be crafted via Thermal's Sawmill due to it not having a Stripped
+    variant which is flowering (which makes sense -- once the log is stripped, the flowers come off
+    too..)
+
+## Changed:
+
+- Recipes for the Advanced & Supreme Machine Frames are now cheaper
+
+## Fixed:
+
+- Exploit where you could Arc Furnace Recycle Metal Tools to get 3 ingots, when upgrading to that
+  Metal Tier only took 1 ingot.
+  - Unfortunately, IE does not properly support recipe handling for Recycling recipes, so I had to
+    resort to disabling Arc Furnace recycling entirely. I'm really annoyed by this but for the
+    foreseeable future there's not a better fitting fix.
+- Issue where the wrong Steel Block showed up in JEI
+
 # 3.1.7
 
 ## Changed:
 
-- IE Drill Cores can be enchanted! This is done via Anvil, and regardless of what JEI says if your book has other enchantments _other_ than Fortune (I-III) or Silk Touch, it'll still work!
+- IE Drill Cores can be enchanted! This is done via Anvil, and regardless of what JEI says if your
+  book has other enchantments _other_ than Fortune (I-III) or Silk Touch, it'll still work!
 
 # 3.1.6
 
@@ -18,18 +54,26 @@
 
 ## Removed:
 
-- Oculus (and Flywheel Compat) - caused lots of visual issues with the Pressure Chamber. Do let me know if you disagree with this change, but even with shaders off I noticed several new artifacts not previously present.
+- Oculus (and Flywheel Compat) - caused lots of visual issues with the Pressure Chamber. Do let me
+  know if you disagree with this change, but even with shaders off I noticed several new artifacts
+  not previously present.
 - OK Zoomer - Redundant with Rubidium Extras
 - Borderless Window - Redundant with Rubidium Extras
 
 ## Fixed:
 
-- Bad Omen _should_ have been disabled unless obtained by burning an Ominous Banner. This wasn't the case, but should be fixed now
+- Bad Omen _should_ have been disabled unless obtained by burning an Ominous Banner. This wasn't the
+  case, but should be fixed now
 - Uraninite deposits shouldn't exist, so that's been resolved (thanks Elder Sign 🙂)
 
 ## Changed:
 
-- All Deepslate Ores now have a chance of dropping a bonus raw ore (even without Fortune). This is to incentivise mining down at Deepslate as well as to give the impression that Deepslate Ores are "Dense". This incentive does not get passed on to those who silk touch ores -- silk touched ores cannot be processed to have this bonus as the tagging system in KubeJS isn't capable of subtractive tagging (i.e. "Every `forge:ores/iron` except `minecraft:deepslate_iron_ore`). If they offered this that'd be great but that's not the case 😔
+- All Deepslate Ores now have a chance of dropping a bonus raw ore (even without Fortune). This is
+  to incentivise mining down at Deepslate as well as to give the impression that Deepslate Ores are
+  "Dense". This incentive does not get passed on to those who silk touch ores -- silk touched ores
+  cannot be processed to have this bonus as the tagging system in KubeJS isn't capable of
+  subtractive tagging (i.e. "Every `forge:ores/iron` except `minecraft:deepslate_iron_ore`). If they
+  offered this that'd be great but that's not the case 😔
 
 # 3.1.5
 
@@ -59,7 +103,8 @@
 ## Changed / Fixed
 
 - All Minecarts now stack to 16
-- Chest Minecarts (or anything that happens to drop a `minecraft:chest`) will now correctly drop Expanded Storage's chests
+- Chest Minecarts (or anything that happens to drop a `minecraft:chest`) will now correctly drop
+  Expanded Storage's chests
 - Chest Minecarts not having the right Chest texture
 - Creeper Confetti Tip - this has been replaced with an updated tip for Ungriefed Creepers
 - Ender Dust can be dropped by Urns, though _very_ rarely
@@ -74,12 +119,13 @@
 
 ## Removed
 
-- Magnesium/Rubidium Extras
-  Repo & Dev are inactive and current buld is breaking newer releases of JEI (thus holding back lots of important mod updates from other mods such as Refined Storage)
+- Magnesium/Rubidium Extras Repo & Dev are inactive and current buld is breaking newer releases of
+  JEI (thus holding back lots of important mod updates from other mods such as Refined Storage)
 
 ## Changed
 
-- Creeper Confetti is now replaced by V-Tweak's Ungriefed Creepers feature -- creepers still explode, but blocks destroyed will plop right back into place (including tile entities!)
+- Creeper Confetti is now replaced by V-Tweak's Ungriefed Creepers feature -- creepers still
+  explode, but blocks destroyed will plop right back into place (including tile entities!)
 
 ## Fixed
 
@@ -96,11 +142,16 @@
 
 ## Fixed
 
-- Fixed Apatite appearing - Thermal itself has not yet reimplemented Apatite Ore generation so I removed and culled all Apatite-based items and recipes
+- Fixed Apatite appearing - Thermal itself has not yet reimplemented Apatite Ore generation so I
+  removed and culled all Apatite-based items and recipes
 - Graphite Electrodes in the Induction Smelter recipe not working
 - Graphite Electrodes via the Engineer's Workbench not crafting as unbreakable
-- Some ores being tagged that shouldn't be - this should have no apparent change unless you were using the Laser Ore Miner, in which case you'll notice that Ruby & Sapphire are no longer generated
-- Wrote custom MCFunction to disable misfitting mobs / entities on anoxic planets. Since it's a tick-based Function, you _may_ still see these mobs for 1-2 frames, but then they'll be warped away :)
+- Some ores being tagged that shouldn't be - this should have no apparent change unless you were
+  using the Laser Ore Miner, in which case you'll notice that Ruby & Sapphire are no longer
+  generated
+- Wrote custom MCFunction to disable misfitting mobs / entities on anoxic planets. Since it's a
+  tick-based Function, you _may_ still see these mobs for 1-2 frames, but then they'll be warped
+  away :)
 
 # 3.1.2
 
@@ -114,7 +165,8 @@
 ## Changed
 
 - Modification Station recipe has been flipped to make Shift-Click behavior work as expected
-- Recipes for Thermal Machines now use a template so that it's easier to automate, making only four slots dynamic
+- Recipes for Thermal Machines now use a template so that it's easier to automate, making only four
+  slots dynamic
 
 ## Fixed
 
@@ -143,7 +195,9 @@
 
 ## Note:
 
-If you're having issues with scrolling items into your Refined Storage grid and items going into the Filter slot, go to `Options` -> `Controls` -> `Key Binds` and remove the keybind for `Wheel item from cursor` and `Wheel item to cursor`.
+If you're having issues with scrolling items into your Refined Storage grid and items going into the
+Filter slot, go to `Options` -> `Controls` -> `Key Binds` and remove the keybind for
+`Wheel item from cursor` and `Wheel item to cursor`.
 
 ## Added
 
@@ -151,7 +205,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 - Easier recipes for Silicon & Silica Steel via Induction Smelter
   - This should help with FPS for those players whose bases are overcrowded with multiblocks.
 - Integration between IE's Nitrate Dust & Thermal's Niter
-- Jade Addons - will assist Jade in showing you things correctly, such as Create's Curved Tracks, Lootr chest contents, etc.
+- Jade Addons - will assist Jade in showing you things correctly, such as Create's Curved Tracks,
+  Lootr chest contents, etc.
 - JEI and More Overlays
 
 ## Updated
@@ -169,8 +224,10 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 ## Fixed
 
 - Lootr chests dropping Vanilla chests instead of Expanded Storage's
-- Minimap quest existing still -- this has been placed with a reminder that Little Logistics exists :)
-- Some quest chapters not appearing even though they look to be unlocked in the main `Research Progress` quest
+- Minimap quest existing still -- this has been placed with a reminder that Little Logistics exists
+  :)
+- Some quest chapters not appearing even though they look to be unlocked in the main
+  `Research Progress` quest
 - Some quests not having rewards
 - Ultimate Chunk Loader only loading a 7x7x7 -- this was completely an accident.
 
@@ -179,19 +236,23 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 - Roughly Enough Items, for many reasons:
   - Fluid and Flux amounts not being shown in recipes
   - Hiding items being inconsistent and buggy
-  - Recipes (such as for the infinity tools) outright not working unless viewed by looking at uses for the Dissolution Chamber
+  - Recipes (such as for the infinity tools) outright not working unless viewed by looking at uses
+    for the Dissolution Chamber
   - Occasional crashes and oddities
   - Quest book wanting to bookmark itself constantly, even though no one really ever did that
 - Chunk Pregenerator:
-  - Dev keeps removing old versions of their mod on their page, breaking many of my updates to this pack
+  - Dev keeps removing old versions of their mod on their page, breaking many of my updates to this
+    pack
 
 # 3.1.0 - The Space Update!
 
 ## Added
 
 - Beyond Earth: See the galaxy and beyond using spacecrafts! Quests have also been created for these
-- Engineer's Decor: Not much has been modified via recipes, but a few things have been disabled and hidden as they mess with the balance of the pack
-- Xaero's Maps: Map Atlases were being very annoying to use since they only work in the overworld, so I decided to go this route.
+- Engineer's Decor: Not much has been modified via recipes, but a few things have been disabled and
+  hidden as they mess with the balance of the pack
+- Xaero's Maps: Map Atlases were being very annoying to use since they only work in the overworld,
+  so I decided to go this route.
 
 ## Updated
 
@@ -221,7 +282,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 
 ## Changed
 
-- Recipe for Pity Machine Casing from Industrial Foregoing - this was supposed to be a part of 3.0.8 but was forgotten D:
+- Recipe for Pity Machine Casing from Industrial Foregoing - this was supposed to be a part of 3.0.8
+  but was forgotten D:
 - Thermal's Latex is basically unobtainable now, as was intended.
 - Unobtainium recycling recipe not working because of the tooltip
 
@@ -237,13 +299,16 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 
 - Mekanism
 
-  - Most content here is permantenly disabled - I really wanted a powersuit that didn't use Air Pressure, so here we are. You also get to keep the Bins, but they've been renamed & retextured.
+  - Most content here is permantenly disabled - I really wanted a powersuit that didn't use Air
+    Pressure, so here we are. You also get to keep the Bins, but they've been renamed & retextured.
   - Custom Recipes & Quests for the Meka-Suit, Meka-Tool & Modules
 
 - Tips mod
 
-  - I wanted to disable Vanilla Tips, but I couldn't without breaking everything - so you'll also get tips on the Vanilla game
-  - Tips on this modpack have been added to include some of the more obscure facts and things that I've integrated
+  - I wanted to disable Vanilla Tips, but I couldn't without breaking everything - so you'll also
+    get tips on the Vanilla game
+  - Tips on this modpack have been added to include some of the more obscure facts and things that
+    I've integrated
 
 - Dave's Building Extended
 
@@ -256,7 +321,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 
 ## Changed
 
-- Windmill Sails / Sailcloth have been removed & hidden - good catch by [Elder Sign](https://www.youtube.com/channel/UCOEUUMU8Q9Gt7umqQL4wsgQ)
+- Windmill Sails / Sailcloth have been removed & hidden - good catch by
+  [Elder Sign](https://www.youtube.com/channel/UCOEUUMU8Q9Gt7umqQL4wsgQ)
 - Thermal's Rubber can now be crafted through Blast Chilling Latex
 - Plastic can be made slightly easier once you get into Thermal, via Multiservo-Pressing 3 Rubber
 - Unobtanium is now made with Enderium Ingots, can only be cyclically crafted via Arc Furnace
@@ -289,7 +355,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 - Ores processed in Thermal's Pulverizer may now be boosted as they should've been
 - Pneumaticcraft Gasoline & Diesel can be used as fuels for IE's Tools
 - Rotational Compressors are now considered Tier 2, produce up to 20bar instead of 5bar
-- Vanilla Lush Cave Items now have a 2D Inventory Model (Courtesy of [`u/thepotatoking55/`](https://reddit.com/u/thepotatoking55/))
+- Vanilla Lush Cave Items now have a 2D Inventory Model (Courtesy of
+  [`u/thepotatoking55/`](https://reddit.com/u/thepotatoking55/))
 
 ## Removed:
 
@@ -321,7 +388,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 
 - Create
 - CreateAddition
-  - This update removes the External Heater substitute, so you will find that these blocks have been reverted to their Immersive Engineering counterparts for your convenience.
+  - This update removes the External Heater substitute, so you will find that these blocks have been
+    reverted to their Immersive Engineering counterparts for your convenience.
 - Flywheel
 
 # 3.0.3
@@ -348,7 +416,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 
 ## Added:
 
-- Building Gadgets w/ Custom Recipes and Textures (credits to [Lavundel](https://www.curseforge.com/minecraft/texture-packs/building-gadgets-create-like/)!)
+- Building Gadgets w/ Custom Recipes and Textures (credits to
+  [Lavundel](https://www.curseforge.com/minecraft/texture-packs/building-gadgets-create-like/)!)
 - [RECIPE] Smelting Recipe for Glow Goop -> Slime
 - [RECIPE] Centrifuging Recipe for Glow Goop -> Slime + Glowstone
 
@@ -363,7 +432,8 @@ If you're having issues with scrolling items into your Refined Storage grid and 
 
 ## Changed:
 
-- Redstone Acid from IE now requires etching acid, can be made in a Thermo-Pneumatic Processing Plant
+- Redstone Acid from IE now requires etching acid, can be made in a Thermo-Pneumatic Processing
+  Plant
 - Map Atlases can be put in the Akashic Tome
 - [QUEST] Quest for Simply Maps has been swapped for Map Atlases
 - [QUEST] Quest for Supplementaries
