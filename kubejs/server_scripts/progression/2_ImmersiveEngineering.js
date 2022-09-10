@@ -35,8 +35,9 @@ onEvent('recipes', event => {
   });
 
   event.remove({output: 'immersiveengineering:hammer'});
-  event.shaped('kubejs:crude_hammer', [' A ', 'ASA', 'SA '], {
+  event.shaped('kubejs:crude_hammer', [' AC', ' SA', 'S  '], {
     A: 'create:andesite_alloy',
+    C: '#forge:ingots/compressed_iron',
     S: 'minecraft:stick',
   });
 
