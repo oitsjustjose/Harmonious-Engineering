@@ -55,6 +55,7 @@ global.duplicateResources = [
   {tag: 'forge:raw_materials/lead', item: 'immersiveengineering:raw_lead'},
   {tag: 'forge:raw_materials/nickel', item: 'immersiveengineering:raw_nickel'},
   {tag: 'forge:raw_materials/silver', item: 'immersiveengineering:raw_silver'},
+  {tag: 'forge:raw_materials/uranium', item: 'immersiveengineering:raw_uranium'},
   {tag: 'forge:slag', item: 'immersiveengineering:slag'},
   {tag: 'forge:storage_blocks', item: 'immersiveengineering:coke'},
   {tag: 'forge:storage_blocks/coal_coke', item: 'immersiveengineering:coke'},
