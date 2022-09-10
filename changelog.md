@@ -27,6 +27,8 @@
 ## Changed:
 
 - Recipes for the Advanced & Supreme Machine Frames are now cheaper
+- Quest structures - most quests have been improved a bit :)
+- Backpacked Backpack is now 5x11 rather than 9x4 - enjoy 19 more slots!
 
 ## Fixed:
 
