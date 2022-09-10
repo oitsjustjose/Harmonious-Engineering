@@ -15,49 +15,17 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Ferrous Thoughts"
-			icon: "create:crushed_iron_ore"
+			title: "Reinforced Metal"
 			x: 0.0d
-			y: -1.875d
+			y: -0.5d
 			shape: "diamond"
+			subtitle: "Compression Success"
 			description: [
-				"After hitting the mines and spending hours at the forge waiting for your raw ores to smelt, you use this time to think about ways to improve your current technological innovations (or lack thereof)."
+				"You've finally gotten some Iron together, and now you're finding that it isn't all that useful of a material for industrial practices."
 				""
-				"One thought crossed your mind - maybe there's some way to harden iron, almost as if like steel, but using a shock of energy instead of intense heat?"
-				""
-				"Maybe some TNT will do the job.."
+				"There may be some way to subject Iron to large amounts of pressure without any existing machinery - perhaps TNT can do something here, but it might be a little impractical and a slight bit destructive.."
 			]
-			dependencies: ["14E668FC6B54906E"]
-			hide: true
 			size: 1.5d
-			id: "0995DFA3EBC4BDB9"
-			tasks: [
-				{
-					id: "000B3D840BEBCF90"
-					type: "item"
-					item: "minecraft:tnt"
-				}
-				{
-					id: "77873F198AA598D7"
-					type: "item"
-					item: "minecraft:iron_ingot"
-				}
-			]
-			rewards: [{
-				id: "65E937E99D4A31CD"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 3
-				random_bonus: 6
-			}]
-		}
-		{
-			title: "Successful Compression"
-			x: 0.0d
-			y: 0.0d
-			shape: "hexagon"
-			description: ["Huh, that worked! It might be worth exploring how many iron ingots I can convert with a single explosion, and what this incredibly durable material can be used for."]
-			dependencies: ["0995DFA3EBC4BDB9"]
 			id: "1180C4A43309EC2B"
 			tasks: [{
 				id: "0BDFCF96E48E3F88"
@@ -77,11 +45,12 @@
 			}]
 		}
 		{
-			title: "Impressive Compression"
+			title: "Less Explosive Compression"
 			icon: "pneumaticcraft:pressure_chamber_wall"
 			x: 0.0d
 			y: 3.75d
 			shape: "octagon"
+			subtitle: "It can be automated too!"
 			description: [
 				"You notice that the rate at which air pressure is coming through this compression is quite incredible. Maybe you can reproduce that same explosive energy with this?"
 				""
@@ -132,18 +101,12 @@
 			]
 		}
 		{
-			title: "Under Pressure"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "pneumaticcraft:textures/item/upgrades/security.png"
-				}
-			}
+			title: "Basic Air Pressurization"
+			icon: "pneumaticcraft:air_compressor"
 			x: 0.0d
-			y: 1.5d
+			y: 2.25d
 			shape: "hexagon"
-			subtitle: "I'm Sorry"
+			subtitle: "Powered by Coal"
 			description: [
 				"Since this Compressed Iron is so incredibly durable, it seems to be leak-proof when applied in crafting recipes. Maybe it can be used to create a positive air-pressure system?"
 				""
@@ -172,10 +135,11 @@
 			}]
 		}
 		{
-			title: "Refined Dino-Goop"
+			title: "Oil Refinery"
 			icon: "pneumaticcraft:refinery"
-			x: 1.5d
+			x: 2.5d
 			y: 1.5d
+			subtitle: "Refined Dino-Goop"
 			description: [
 				"In your adventuring, you've been noticing these black sludgy puddles of some mysterious fluid. "
 				""
@@ -210,10 +174,11 @@
 			}]
 		}
 		{
-			title: "Mechanical Avians"
+			title: "Drones"
 			x: 6.0d
 			y: -0.5d
 			shape: "gear"
+			subtitle: "Quite the expensive hobby"
 			description: ["These flying machines seem to be easily programmable using some puzzle-piece mechanism. Maybe that age-old book I got a bit ago has some helpful advice for getting this drone to do my bidding!"]
 			hide_dependency_lines: true
 			dependencies: ["611A75C2035E6810"]
@@ -237,6 +202,7 @@
 			x: 3.0d
 			y: -0.5d
 			shape: "gear"
+			subtitle: "Modularity Aplenty!"
 			description: [
 				"Wow, looks like the Charging Station and all these PCBs can be used to program a really neat and modular set of armor."
 				""
@@ -301,9 +267,10 @@
 			}]
 		}
 		{
-			title: "Aeration Station"
-			x: 1.5d
+			title: "Charging Up"
+			x: 2.5d
 			y: 3.0d
+			subtitle: "Aeration Station"
 			description: ["By harnessing this pneumatic pressure you've become so proficient in creating, you might be able to fill other items' pressurized canisters with some of this to use for later."]
 			dependencies: ["7DFD575B7AB66CA9"]
 			id: "70B030689AC57CFC"
@@ -321,10 +288,11 @@
 			}]
 		}
 		{
-			title: "Thermopneumatic Processing"
+			title: "Heat \\& Pressure"
 			icon: "pneumaticcraft:thermopneumatic_processing_plant"
-			x: 3.0d
+			x: 4.0d
 			y: 1.5d
+			subtitle: "From Oil to Plastic"
 			description: ["Looks like refining that oil yielded you quite a bit! This LPG looks to be useful under heat and pressure, maybe it can be further processed with an additive or two?"]
 			dependencies: ["2E9458D3C90B51FA"]
 			id: "7923834775CE0204"
@@ -349,10 +317,11 @@
 			}]
 		}
 		{
-			title: "Solidified Dino-Goop"
+			title: "Baby's First Plastic"
 			icon: "pneumaticcraft:plastic"
-			x: 4.5d
+			x: 5.5d
 			y: 1.5d
+			subtitle: "Use By Year 2040"
 			description: [
 				"Looks like this bucket of plastic can be cooled to a solid form, and that can be done more easily by making use of a heat frame to dissipate heat."
 				""
@@ -386,19 +355,17 @@
 			}]
 		}
 		{
-			title: "Printing Circuits"
+			title: "PCB Treating"
 			icon: "pneumaticcraft:uv_light_box"
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 3.0d
+			subtitle: "I hope you're treating them well"
 			description: [
 				"Plastic seems to contain enough silicon to be able to press it into a circuit board. This is nice and all, but the board is blank and needs to be finished."
 				""
 				"Looks like some refining is due - maybe some time in a UV Lightbox will help."
 			]
-			dependencies: [
-				"35609EF505EDF5CF"
-				"74AE866805379316"
-			]
+			dependencies: ["74AE866805379316"]
 			id: "4859BA79660BC50F"
 			tasks: [
 				{
@@ -421,16 +388,17 @@
 			}]
 		}
 		{
-			title: "Etching Circuits"
+			title: "PCB Etching"
 			icon: "pneumaticcraft:etching_tank"
-			x: 7.5d
+			x: 7.0d
 			y: 1.5d
+			subtitle: "Don't forget your PPE"
 			description: [
 				"Well that's weird - I guess all the malice from these poor monsters is actually quite.. acidic?"
 				""
 				"This looks to be useful for etching traces into a blank circuit board, so let's keep that around (and maybe see about automating this process!)."
 			]
-			dependencies: ["4859BA79660BC50F"]
+			dependencies: ["35609EF505EDF5CF"]
 			id: "4109AB48D2BAD8A0"
 			tasks: [
 				{
@@ -454,13 +422,19 @@
 		}
 		{
 			x: 9.0d
-			y: 1.5d
+			y: 2.25d
+			shape: "octagon"
+			subtitle: "Your Gateway to Automation"
 			description: [
 				"Looks like all that hard work paid off - not without a few broken eggs though. No matter, those failed PCBs can still be salvaged!"
 				""
 				"Now that you've managed to create a board capable of computational digital logic, you might be able to dive into some richer technology!"
 			]
-			dependencies: ["4109AB48D2BAD8A0"]
+			dependencies: [
+				"4109AB48D2BAD8A0"
+				"4859BA79660BC50F"
+			]
+			size: 1.5d
 			id: "611A75C2035E6810"
 			tasks: [{
 				id: "133516FF3087063E"
@@ -476,8 +450,9 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 4.0d
 			y: 3.0d
+			subtitle: "E-Commerce In Your Hands"
 			description: [
 				"This tablet looks familiar... anyways - the UI is really intuitive, so you should be able to fill that itch for shopping pretty quickly!"
 				""
@@ -498,9 +473,9 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 5.5d
 			y: 3.0d
-			subtitle: "Wow! Thanks Geoff Blazos!"
+			subtitle: "Prime Shipping Available!"
 			description: [
 				"Thanks to the power of .. mega-corporations I guess? .. you were able to finally get that blueprint you've been needing."
 				""
@@ -526,6 +501,7 @@
 			x: 9.0d
 			y: -0.5d
 			shape: "gear"
+			subtitle: "Simplifying PCB Production Since 2012"
 			description: [
 				"With some special instrumentation, those pesky PCBs can be made with higher precision and a lower fail-over rate if you applied some logistical and computational measures to this issue."
 				""

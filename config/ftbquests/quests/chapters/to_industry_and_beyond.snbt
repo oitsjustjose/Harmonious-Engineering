@@ -17,6 +17,7 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "diamond"
+			subtitle: "Don't be so sad!"
 			description: [
 				"You find that taking a machine that is bigger on the inside is your only means to continue turning large industrial devices into single-block solutions."
 				""
@@ -55,14 +56,11 @@
 			]
 		}
 		{
-			title: "Well-Oiled"
-			x: 1.5d
-			y: 1.5d
+			x: -1.5d
+			y: 3.0d
+			subtitle: "Well-Oiled Machinery"
 			description: ["You've found that Latex is a great lubricant for optimal machine efficiency. This might allow you to run some heavier machinery."]
-			dependencies: [
-				"300A46D98133D980"
-				"72FC80C533A66E62"
-			]
+			dependencies: ["1708778CA9290B8E"]
 			id: "277798DC2786A6F2"
 			tasks: [{
 				id: "20F2AFC253D9410C"
@@ -77,9 +75,10 @@
 			}]
 		}
 		{
-			title: "Is it... Alive?"
+			title: "Advanced Machinery"
 			x: 1.5d
 			y: 5.0d
+			subtitle: "Is it... Alive?"
 			description: ["The Pink Slime seems to be willing to occupy the interior of this machine frame -- let's hope it doesn't get too hungry in there..."]
 			dependencies: ["0C44756098FBB868"]
 			id: "08601583306BEB26"
@@ -99,6 +98,7 @@
 			title: "Ether-Infused Frames"
 			x: 1.5d
 			y: 7.0d
+			subtitle: "This doesn't smell great.."
 			dependencies: ["5571B245334AE7D4"]
 			id: "4C08F9B8CF327FD9"
 			tasks: [{
@@ -114,8 +114,10 @@
 			}]
 		}
 		{
+			title: "The World Eater"
 			x: -1.5d
 			y: 5.0d
+			subtitle: "Easily hollows out the earth's core"
 			description: ["Like other infinity tools, you find that this drill is also has an insatiable thurst for Flux - and with every few billion flux you give it, the larger your max mining radius becomes...."]
 			dependencies: ["0C44756098FBB868"]
 			optional: true
@@ -146,8 +148,10 @@
 			}]
 		}
 		{
+			title: "The Deforester"
 			x: -3.0d
 			y: 5.0d
+			subtitle: "No really, that forest is gone"
 			description: ["Just other Infinity Tools, this saw has an insatiable thirst for Flux - with each large step in Flux this tool is given, the larger the forest it can devour.."]
 			dependencies: ["0C44756098FBB868"]
 			optional: true
@@ -178,8 +182,10 @@
 			}]
 		}
 		{
+			title: "The Executioner"
 			x: -4.5d
 			y: 5.0d
+			subtitle: "Combat with range and .. evoker fangs?"
 			description: [
 				"You've discovered that covering high-quality, reinforced materials with Pink Slime will yield you a mighty weapon."
 				""
@@ -220,6 +226,7 @@
 			x: 0.0d
 			y: 5.0d
 			shape: "hexagon"
+			subtitle: "Did this bucket of juice just blink?"
 			description: [
 				"Well that was unexpected - you were just looking for a way to automatically harvest mob drops from your mob farm, but it looks like you've been gifted with liquid meat and pink slime?"
 				""
@@ -252,6 +259,7 @@
 			x: 0.0d
 			y: 3.0d
 			shape: "hexagon"
+			subtitle: "Extract latex from *any* wood!"
 			description: [
 				"That's interesting, all this time and only now have you realized that there might be some sort of way to pull the latex from Logs."
 				""
@@ -279,11 +287,12 @@
 			}]
 		}
 		{
-			title: "GI Relief for Withers"
+			title: "Ether Gas"
 			icon: "industrialforegoing:ether_gas_bucket"
 			x: 0.0d
 			y: 7.0d
 			shape: "hexagon"
+			subtitle: "GI Relief for Withers"
 			description: [
 				"I'm not sure you can explain this any better than I can - it appears that by keeping a Wither in a Stasis Chamber, you've been able to harvest Ether Gas from inside the Wither using a Fluid Laser..."
 				""
@@ -313,6 +322,7 @@
 		{
 			x: 3.0d
 			y: 7.0d
+			subtitle: "The biggest, baddest storage"
 			description: [
 				"You've found that Ether-infused Machine Frames adds the ability to nest other Black Hole Tanks/Units within one block. For this, you've invented the Black Hole Controller!"
 				""
@@ -336,6 +346,7 @@
 			title: "Supreme Black Holes"
 			x: 4.5d
 			y: 7.0d
+			subtitle: "Bigger than a Drawer"
 			description: ["Ether-infused machine frames seem to be capable of mimicking the insatiable property of Pink Slime, but for Items and Fluids? Interesting.."]
 			dependencies: ["4C08F9B8CF327FD9"]
 			id: "2C8403B43A2D807D"
@@ -371,6 +382,7 @@
 			title: "Lasers"
 			x: 3.0d
 			y: 5.0d
+			subtitle: "Protective glasses not included"
 			description: [
 				"You're research may have lead you astray here and there, but you've somehow managed to land on a method of harvesting ores and fluids by manipulating light itself."
 				""
@@ -417,8 +429,10 @@
 			}]
 		}
 		{
+			title: "Enchantment Manipulation"
 			x: 4.5d
 			y: 5.0d
+			subtitle: "The most magic you'll ever see"
 			description: ["Seems as though your encounters with vague magiks are not over. By forcing the Pink Slime inside these frames to your bidding, you're able to manipulate and apply enchantments using Flux alone.."]
 			dependencies: ["08601583306BEB26"]
 			id: "235084018E06156B"
@@ -459,27 +473,10 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 2.5d
-			description: ["It seems you're able to apply this new machine frame variant towards a lovely plant fertilizer, taking the stress off of you for once!"]
-			dependencies: ["277798DC2786A6F2"]
-			id: "335DCBB33D9F9B15"
-			tasks: [{
-				id: "34C6EECC709C7ADE"
-				type: "item"
-				item: "industrialforegoing:plant_fertilizer"
-			}]
-			rewards: [{
-				id: "1773687E5314B727"
-				type: "item"
-				item: "industrialforegoing:fertilizer"
-				count: 16
-			}]
-		}
-		{
-			x: 3.0d
-			y: 0.0d
+			x: 1.5d
+			y: 3.0d
 			shape: "hexagon"
+			subtitle: "Half-dissolved item soup!"
 			description: [
 				"Through your research with interactions between fluids and items, you find that you can finally electrify items enough to allow given fluids to merge with these items, dissolving the items and forming them into an entirely new creation."
 				""
@@ -511,6 +508,7 @@
 			}
 			x: -1.5d
 			y: 7.0d
+			subtitle: "A flux-based take on powersuits"
 			description: [
 				"You've finally done it - you've found a way to integrate the gaseous extract from Withers to satisfy the pressure needs of Pneumatic Armor."
 				""
@@ -554,7 +552,7 @@
 			}]
 		}
 		{
-			title: "Modularity Aplenty!"
+			title: "Meka Modules"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -564,6 +562,7 @@
 			}
 			x: -4.5d
 			y: 7.0d
+			subtitle: "Tweak and tinker to your delight!"
 			description: [
 				"The way by which you outfitted Ether Gas to the Pneumatic Suit has forced you to integrate a panel which allows for modular units to be installed. "
 				""
@@ -676,7 +675,7 @@
 			}]
 		}
 		{
-			title: "One Powertool to Rule them All"
+			title: "The Meka-Tool"
 			icon: {
 				id: "mekanism:meka_tool"
 				Count: 1b
@@ -692,6 +691,7 @@
 			x: -3.0d
 			y: 7.0d
 			shape: "circle"
+			subtitle: "One Powertool to Rule them All"
 			description: [
 				"You've been able to apply your studies and experience used to form the Mekasuit to augment the Jackhammer to a similar potential."
 				""
@@ -721,6 +721,7 @@
 			x: -1.5d
 			y: 8.5d
 			shape: "hexagon"
+			subtitle: "Mmmmmm, space cheese"
 			description: [
 				"With steel and the surgical precision of robotic crafting, you find yourself able to create a space ship with enough fuel tank space for a trip to the moon.. but not back."
 				""
@@ -770,6 +771,7 @@
 			x: -1.5d
 			y: 10.0d
 			shape: "hexagon"
+			subtitle: "Please don't feed the Raptors!"
 			description: [
 				"Using Desh and improved fuel storage, you think you can craft a ship capable of visiting and orbiting Mars."
 				""
@@ -819,6 +821,7 @@
 			x: 1.5d
 			y: 10.0d
 			shape: "hexagon"
+			subtitle: "Netherite Suit needed... seriously"
 			description: [
 				"Venus is an incredibly hot and unsafe environment. Most of our Rovers melted upon arrival due to the large amounts of lava, but the few moments they did survive they were able to report back deposits of a new resource - Calorite."
 				""
@@ -886,6 +889,7 @@
 			x: 1.5d
 			y: 8.5d
 			shape: "hexagon"
+			subtitle: "Don't forget a coat!"
 			description: ["You're the first thing to get as far as Glacio - we don't have any data on this tundra planet at all -- well, aside from it being a frozen tundra.."]
 			dependencies: ["701832B356A5E78F"]
 			id: "14CEB454F4E6C783"
@@ -931,6 +935,7 @@
 			x: 0.0d
 			y: 9.0d
 			shape: "octagon"
+			subtitle: "SpaceX would like to know your location"
 			description: [
 				"You've come so far - just look at the progress you've made! At this point you've been confident enough in your understanding of Space and Time that you might like to go out and visit space for yourself."
 				""
@@ -955,6 +960,7 @@
 			x: 0.0d
 			y: 11.0d
 			shape: "octagon"
+			subtitle: "It's not that hard, I think?"
 			description: [
 				"Rockets will require Refined Fuel, an output of processing Crude Oil in a Fractionating Still. To add it, Shift+Right-Click the rocket while on the launchpad to open its UI, at which point you can add them buckets at a time."
 				""

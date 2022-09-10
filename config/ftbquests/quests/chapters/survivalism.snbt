@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Rocky Footing"
+			title: "How Research Works"
 			icon: {
 				id: "patchouli:guide_book"
 				Count: 1b
@@ -17,9 +17,10 @@
 					"patchouli:book": "rebornstorage:rs_book"
 				}
 			}
-			x: -3.5d
-			y: -4.5d
+			x: 0.0d
+			y: 0.0d
 			shape: "diamond"
+			subtitle: "Intro to Academics"
 			description: [
 				"As you start off with rather crude technologies, you begin to wonder how to start researching into greater technologies in the hopes of improving your life and automating monotonous tasks."
 				""
@@ -57,48 +58,48 @@
 							ItemInv: [
 								{
 									Slot: 0b
-									id: "minecraft:sweet_berries"
 									Count: 57b
+									id: "minecraft:sweet_berries"
 								}
 								{
 									Slot: 1b
-									id: "create:honeyed_apple"
 									Count: 9b
+									id: "create:honeyed_apple"
 								}
 								{
 									Slot: 2b
-									id: "nethersdelight:hoglin_ear"
 									Count: 30b
+									id: "nethersdelight:hoglin_ear"
 								}
 								{
 									Slot: 3b
-									id: "farmersdelight:sweet_berry_cookie"
 									Count: 5b
+									id: "farmersdelight:sweet_berry_cookie"
 								}
 								{
 									Slot: 4b
-									id: "farmersdelight:hamburger"
 									Count: 1b
+									id: "farmersdelight:hamburger"
 								}
 								{
 									Slot: 5b
-									id: "farmersdelight:sweet_berry_cookie"
 									Count: 2b
+									id: "farmersdelight:sweet_berry_cookie"
 								}
 								{
 									Slot: 6b
-									id: "create:honeyed_apple"
 									Count: 19b
+									id: "create:honeyed_apple"
 								}
 								{
 									Slot: 7b
-									id: "farmersdelight:hamburger"
 									Count: 1b
+									id: "farmersdelight:hamburger"
 								}
 								{
 									Slot: 8b
-									id: "farmersdelight:sweet_berry_cookie"
 									Count: 6b
+									id: "farmersdelight:sweet_berry_cookie"
 								}
 							]
 						}
@@ -107,9 +108,10 @@
 			}]
 		}
 		{
-			title: "Inventory Management I"
-			x: -5.0d
-			y: -3.0d
+			title: "Backpacks"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "One Per Person, Please!"
 			description: ["Backpacks are a useful way to keep a clean inventory in this item-dense world! You can put these in your back slot and access with the \"B\" key (by default) for easy storage expansion!"]
 			dependencies: ["5477EA198509D2E0"]
 			id: "1584AF5297253E8D"
@@ -127,9 +129,10 @@
 			}]
 		}
 		{
-			title: "Inventory Management II"
-			x: -2.0d
-			y: -3.0d
+			title: "Toolbelts"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Waste-ing Away"
 			description: [
 				"You have fashioned yourself a nice belt out of leather and string - perhaps you can fashion some additional storage pouches and add them somehow?"
 				""
@@ -142,13 +145,21 @@
 				type: "item"
 				item: "toolbelt:belt"
 			}]
-			rewards: [{
-				id: "3B672EB1E591DDCF"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 4
-				random_bonus: 4
-			}]
+			rewards: [
+				{
+					id: "3B672EB1E591DDCF"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "1D69E1A32946461A"
+					type: "item"
+					item: "toolbelt:pouch"
+					count: 2
+				}
+			]
 		}
 		{
 			title: "Consolidation"
@@ -159,8 +170,9 @@
 					Icon: "akashictome:textures/items/tome.png"
 				}
 			}
-			x: -3.5d
-			y: -2.5d
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Book of Books, Wrench of Wrenches"
 			description: [
 				"The Akashic Tome and Morphing Tool are both great ways to consolidate all the manuals, books, wrenches, and hammers. "
 				""
@@ -191,8 +203,9 @@
 		{
 			title: "Poor Ore"
 			icon: "architects_palette:nether_brass_nugget"
-			x: -2.0d
-			y: -6.0d
+			x: 1.5d
+			y: 1.5d
+			subtitle: "The Prospects Aren't Good.. Yet"
 			description: [
 				"You find yourself with some new Raw Ores, and after smelting you find yourself with a handful of nuggets... What happened?"
 				""
@@ -201,9 +214,16 @@
 			dependencies: ["5477EA198509D2E0"]
 			id: "75C355F05B693DD4"
 			tasks: [{
-				id: "5390D00421B4B8AB"
-				type: "checkmark"
-				title: " "
+				id: "4A10867158C873D7"
+				type: "item"
+				title: "Any Raw Ore"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
 			}]
 			rewards: [{
 				id: "1B2FC7F14645C707"
@@ -214,55 +234,11 @@
 			}]
 		}
 		{
-			title: "Coal-Based Propulsion"
-			icon: "littlelogistics:seater_car"
-			x: -5.0d
-			y: -6.0d
-			description: [
-				"As you start mining, exploring, or overall getting a sense of the world around you, you decide to see what viable options for moving around exist."
-				""
-				"You've discovered that Coal can be turned into Steam pretty easily in some of these locomotives, making for a great way to get yourself and your stuff around with some chain links and various barges / carts."
-			]
-			dependencies: ["5477EA198509D2E0"]
-			id: "09963D1411C40210"
-			tasks: [{
-				id: "4677E87B3BC54FFD"
-				type: "item"
-				title: "Steam Tug Boat or Locomotive"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "littlelogistics:steam_locomotive"
-								Count: 1b
-							}
-							{
-								id: "littlelogistics:tug"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "7EEED322C6523479"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "littlelogistics:guide"
-					}
-				}
-			}]
-		}
-		{
-			title: "Needy Tastebuds"
+			title: "Variated Cuisine"
 			icon: "minecraft:golden_carrot"
-			x: -5.5d
-			y: -4.5d
+			x: -1.5d
+			y: 1.5d
+			subtitle: "The Spice is Nice"
 			description: ["As you've started exploring, you find that unlike usual you're getting *really* tired of the same old foods. Perhaps you should take a look at different types of foods and see about varying your diet from day to day?"]
 			dependencies: ["5477EA198509D2E0"]
 			id: "2783202C1BFFEEC4"
@@ -286,14 +262,17 @@
 					Damage: 0
 				}
 			}
-			x: -1.5d
-			y: -4.5d
+			x: 0.0d
+			y: 1.875d
+			shape: "hexagon"
+			subtitle: "Saving the Planet One Pick at a Time"
 			description: [
 				"You've been staring down your next tool upgrade with sharp eyes, but wait - you've noticed something!"
 				""
 				"You might be able to salvage the existing enchantments and features of your tools and armor if you just apply the upgrade in a Smithing Table instead of crafting a new tool! This could be pretty useful though it seems some upgrades aren't completely compatible with others.."
 			]
 			dependencies: ["5477EA198509D2E0"]
+			size: 1.25d
 			id: "4ED0A09D2DD0CA0A"
 			tasks: [{
 				id: "54D2CE1EFD58CE45"
@@ -309,27 +288,111 @@
 			}]
 		}
 		{
-			title: "Supplementaries"
-			x: -3.5d
-			y: -6.5d
+			title: "Animal Crates"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Barnyard Companions ToGo!"
 			description: [
-				"As you begin exploring the primitive technologies available to you, you notice that you can create Bellows to increase the speed of adjacent Furnaces, Blast Furnaces and Smokers (when powered w/ redstone)."
+				"Some of the local villagers seem to have been breeding their favorite animals in their spare time, and now are trying to help their excess find a new home."
 				""
-				"You feel as though there may be other utilities - perhaps some individual research can assist you here."
+				"Check out a local villager (or use the Amadron tablet) to find yourself any of the animals you may have been struggling to find!"
 			]
 			dependencies: ["5477EA198509D2E0"]
-			id: "5F2A4940B5145200"
+			id: "3774570B98A1E8A1"
 			tasks: [{
-				id: "694164F618B000E3"
+				id: "595D7B5996C4E7D8"
 				type: "item"
-				item: "supplementaries:bellows"
+				title: "Any Baby Animal Crate"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "villagersellanimals:crate_piglet"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_goatlet"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_rabbit_cub"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_fox_pup"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_chick"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_wolf_pup"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_kitten"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_foal"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_calf"
+								Count: 1b
+							}
+							{
+								id: "villagersellanimals:crate_lamb"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
-				id: "42A702B815E4D9BC"
-				type: "command"
-				auto: "invisible"
-				command: "/tellraw @p {\"text\":\"Supplementaries Journal Entry\",\"color\":\"#B48EAD\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/MehVahdJukaar/Supplementaries/wiki/\"}}"
-				player_command: false
+				id: "5B5FF4B5E3E5E11B"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Functional Storage"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Truly functional"
+			description: [
+				"As you've started your mining expeditions, you may have found yourself with bulk amounts of some items. Functional Storage's Drawers allow you to store up to 2.1 billion of a single item in 1 block."
+				""
+				"Drawers can be upgraded and augmented, and if you want to further configure them then use this Configuration tool we're providing."
+			]
+			dependencies: ["5477EA198509D2E0"]
+			id: "23356CD7A9D7BD63"
+			tasks: [{
+				id: "017C9559FE8115A7"
+				type: "item"
+				title: "Any Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2B5342F2F7D913A3"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
 			}]
 		}
 	]

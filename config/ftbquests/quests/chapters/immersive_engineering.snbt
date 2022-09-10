@@ -9,10 +9,12 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Like a True Engineer"
+			title: "Factory Ready"
 			x: 0.0d
 			y: 0.0d
 			shape: "diamond"
+			subtitle: "Like a True Engineer"
+			description: ["Our research indicates that you could use a hammer - perhaps one of Andesite Alloy will suffice?"]
 			dependencies: ["562B62D11786ACFC"]
 			hide: true
 			size: 1.5d
@@ -35,11 +37,12 @@
 			}]
 		}
 		{
-			title: "Coking"
+			title: "Coke Ovens"
 			icon: "immersiveengineering:coke_oven"
 			x: 0.0d
 			y: 1.5d
 			shape: "hexagon"
+			subtitle: "Extracting Impurities from Coal"
 			description: [
 				"Using a 3x3x3 block of Coke Bricks, you can activate some sort of giant coking setup to slowly break down coal into a more combustive form."
 				""
@@ -77,6 +80,7 @@
 			x: 0.0d
 			y: 3.0d
 			shape: "hexagon"
+			subtitle: "Imbuing Iron with Carbon"
 			description: ["You find that the high amounts of heat that Coked Coal produces can be used to infuse Iron with Carbon to produce Steel."]
 			dependencies: ["77E2FCACB9256D69"]
 			id: "5227E2C7EFD9686F"
@@ -105,11 +109,12 @@
 			}]
 		}
 		{
-			title: "Brassification"
+			title: "Alloys via Arc"
 			icon: "immersiveengineering:arc_furnace"
 			x: 2.0d
-			y: 5.5d
+			y: 4.5d
 			shape: "octagon"
+			subtitle: "Brassification"
 			description: [
 				"You find that you can create a furnace capable of harnessing Graphite Rods to produce large amounts of heat from Flux. This heat seems to be sufficient enough to melt most metals."
 				""
@@ -153,6 +158,7 @@
 			icon: "immersiveengineering:wirecoil_copper"
 			x: 0.0d
 			y: 4.5d
+			subtitle: "Crudely transfer of electricity"
 			description: [
 				"By utilizing a dynamo, you've found a way to hrness rotational energy through charging a copper coil."
 				""
@@ -206,11 +212,12 @@
 			}]
 		}
 		{
-			title: "Ore Processing"
+			title: "Viable Crushing"
 			icon: "immersiveengineering:crusher"
 			x: -2.0d
-			y: 5.5d
+			y: 4.5d
 			shape: "octagon"
+			subtitle: "Optimal Ore Processing"
 			description: [
 				"You find that various engineering blocks in a specific configuration have allowed you to form a structure capable of crushing ores."
 				""
@@ -292,8 +299,9 @@
 			title: "Medium Voltage"
 			icon: "immersiveengineering:wirecoil_electrum"
 			x: -2.0d
-			y: 4.0d
+			y: 3.0d
 			shape: "hexagon"
+			subtitle: "Zips and zaps, but faster"
 			description: [
 				"You find that by applying your studies in physics, accumulators and transformers, you're able to step up the voltage of your power production and throughput to a Medium-tier, which might be enough to power some interesting machines."
 				""
@@ -344,14 +352,15 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 6.0d
+			x: -2.0d
+			y: 1.5d
 			description: [
 				"After enough research, you finally decide that you need a better space to more optimally create industrial contrpations and ocmponents."
 				""
 				"This workbench seems to have plenty of space and drawers to get the job done, and even some space for blueprints!"
 			]
-			dependencies: ["686B8A3E779BCF3D"]
+			hide_dependency_lines: true
+			dependencies: ["5F646DB5AE4274E5"]
 			id: "02B38F5283455BE9"
 			tasks: [{
 				id: "64648D7FF3E3592D"
@@ -368,14 +377,15 @@
 		}
 		{
 			title: "Automated Hydroponics"
-			x: -1.5d
-			y: 7.5d
+			x: -2.0d
+			y: 6.0d
+			subtitle: "Cloches are alsy very pretty!"
 			description: [
 				"In your research, you have found a way to fix together a mini greenhouse of sorts. Such a structure capable of emitting light, hydrating and fertilizing the soil, this cloche you've fashioned together is even able to automatically harvest these crops!"
 				""
 				"You may have to resort to other methods of pulling water into a cloche, such as a Pump or Hose Pulley."
 			]
-			dependencies: ["02B38F5283455BE9"]
+			dependencies: ["686B8A3E779BCF3D"]
 			id: "09BF9F4B87E64FA1"
 			tasks: [{
 				id: "7DD20ABE71536A6C"
@@ -393,14 +403,15 @@
 		{
 			title: "Metal Pressing"
 			icon: "immersiveengineering:metal_press"
-			x: 1.5d
-			y: 7.5d
+			x: 2.0d
+			y: 6.0d
+			subtitle: "Good for more than plates!"
 			description: [
 				"You're finding that there are certain materials, such as gears and rods, that you simply cannot craft efficiently enough using rotational energy alone."
 				""
 				"This metal press is an easily automated device capable of quickly processing several different types of metals and gems into gears, plates, rods and more."
 			]
-			dependencies: ["02B38F5283455BE9"]
+			dependencies: ["686B8A3E779BCF3D"]
 			id: "4B3F996C7BABD3D2"
 			tasks: [
 				{
@@ -435,13 +446,14 @@
 		{
 			title: "Immersive Arsenal"
 			x: 0.0d
-			y: 8.0d
+			y: 7.0d
+			subtitle: "Steampunk enough for you?"
 			description: [
 				"As a saavy engineer, you may be finding the process of repairing and your gear to be a tiresome process."
 				""
 				"Fortunately for you, with some work (and some fuel or ammo) you can create some really powerful and useful tools!"
 			]
-			dependencies: ["02B38F5283455BE9"]
+			dependencies: ["686B8A3E779BCF3D"]
 			id: "4204A5A94F2EAAC5"
 			tasks: [{
 				id: "2DBDB2DAE3D89398"
@@ -453,61 +465,61 @@
 					tag: {
 						items: [
 							{
-								id: "immersiveengineering:revolver"
+								tag: {
+									bullets: {
+										Items: [ ]
+									}
+								}
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 21
 										Items: [ ]
 									}
 								}
+								id: "immersiveengineering:revolver"
+							}
+							{
+								tag: { }
 								Count: 1b
-								tag: {
-									bullets: {
+								ForgeCaps: {
+									Parent: {
+										Size: 5
 										Items: [ ]
 									}
 								}
-							}
-							{
 								id: "immersiveengineering:buzzsaw"
-								ForgeCaps: {
-									Parent: {
-										Size: 5
-										Items: [ ]
-									}
-								}
-								Count: 1b
-								tag: { }
 							}
 							{
-								id: "immersiveengineering:drill"
+								tag: { }
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
 										Items: [ ]
 									}
 								}
-								Count: 1b
-								tag: { }
+								id: "immersiveengineering:drill"
 							}
 							{
 								id: "immersiveengineering:railgun"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 3
 										Items: [ ]
 									}
 								}
-								Count: 1b
 							}
 							{
 								id: "immersiveengineering:chemthrower"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 4
 										Items: [ ]
 									}
 								}
-								Count: 1b
 							}
 						]
 					}
@@ -528,10 +540,12 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 0.0d
-			y: 9.5d
+			x: 2.0d
+			y: 1.5d
 			shape: "gear"
+			subtitle: "Basically a proxy :)"
 			description: ["What's this? Somehow you've manipulated space-time itself by utilizing dimensional shards and ender pearls. Looks like this device can be bound to existing machines in your world - I wonder what kinds of trouble you can get into with this?"]
+			hide_dependency_lines: true
 			dependencies: ["5227E2C7EFD9686F"]
 			optional: true
 			id: "4FBC3C7AC2ADCFF6"
@@ -558,8 +572,9 @@
 			title: "High Voltage"
 			icon: "immersiveengineering:wirecoil_steel"
 			x: 2.0d
-			y: 4.0d
+			y: 3.0d
 			shape: "hexagon"
+			subtitle: "DO NOT TOUCH"
 			dependencies: ["5227E2C7EFD9686F"]
 			optional: true
 			id: "46B8B243ED855467"

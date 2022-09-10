@@ -13,6 +13,7 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "diamond"
+			subtitle: "Time to shrink your machinery!"
 			description: [
 				"You've made it incredibly far in your research! Well done - perhaps you're looking for a way to consolidate and clean up around the base!"
 				""
@@ -27,22 +28,30 @@
 				type: "item"
 				item: "thermal:machine_frame"
 			}]
-			rewards: [{
-				id: "4F7F9F3A338D1498"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "thermal:guidebook"
+			rewards: [
+				{
+					id: "4F7F9F3A338D1498"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "thermal:guidebook"
+						}
 					}
 				}
-			}]
+				{
+					id: "2BB60BD070627132"
+					type: "item"
+					item: "thermal:wrench"
+				}
+			]
 		}
 		{
-			title: "Miniaturized Crushing"
-			x: -1.5d
-			y: 0.0d
+			title: "Pulverization"
+			x: -3.5d
+			y: 1.0d
+			subtitle: "Replaces the Crusher"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "41020ABCC20659D6"
 			tasks: [{
@@ -58,9 +67,10 @@
 			}]
 		}
 		{
-			title: "Miniaturized Smelting"
-			x: 1.5d
-			y: 0.0d
+			title: "Fluxical Smelting"
+			x: -3.5d
+			y: -0.5d
+			subtitle: "Single-block cooking for all needs!"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "7AB599D4DB092194"
 			tasks: [{
@@ -76,9 +86,10 @@
 			}]
 		}
 		{
-			title: "Miniaturized Sawmill"
-			x: -3.0d
-			y: 0.0d
+			title: "Lumbermill To-Go"
+			x: -2.5d
+			y: -1.5d
+			subtitle: "Small-Scale Sawmill"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "313F7CC5F7592A85"
 			tasks: [{
@@ -94,9 +105,11 @@
 			}]
 		}
 		{
-			title: "Miniaturized Alloying"
-			x: 3.0d
-			y: 0.0d
+			title: "Inductive Melting"
+			x: 0.0d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "Nearly Replaces the Arc Furnace"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "20E8E8B5A3664F1B"
 			tasks: [{
@@ -112,9 +125,10 @@
 			}]
 		}
 		{
-			title: "Miniaturized Cloche"
-			x: 0.5d
-			y: 4.0d
+			title: "Insolated Hydroponics"
+			x: 2.5d
+			y: -1.5d
+			subtitle: "Replaces Garden Cloches"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "2257254B85034896"
 			tasks: [{
@@ -130,26 +144,10 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 4.0d
-			dependencies: ["451E8202B0FF4FDD"]
-			id: "3244E10FCB6D6D98"
-			tasks: [{
-				id: "7C8867F71D048005"
-				type: "item"
-				item: "thermal:machine_centrifuge"
-			}]
-			rewards: [{
-				id: "0C796BA15E3B77B5"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 16
-			}]
-		}
-		{
-			title: "Miniaturized Pressing"
-			x: -4.5d
-			y: 0.0d
+			title: "Multiservo Pressing"
+			x: -2.5d
+			y: 2.0d
+			subtitle: "Small-Scale Metal Pressing"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "1BB99687EECA2753"
 			tasks: [{
@@ -165,27 +163,10 @@
 			}]
 		}
 		{
-			title: "Melting"
+			title: "Supercooling"
 			x: 3.5d
-			y: 1.5d
-			dependencies: ["451E8202B0FF4FDD"]
-			id: "77A515079D0DB9B5"
-			tasks: [{
-				id: "070DA2A0310C2285"
-				type: "item"
-				item: "thermal:machine_crucible"
-			}]
-			rewards: [{
-				id: "1BD2C5C09DBDCB78"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 16
-			}]
-		}
-		{
-			title: "Chilling"
-			x: -3.5d
-			y: 1.5d
+			y: 1.0d
+			subtitle: "Make Plastic more easily!"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "55F1E9DA9F0EAEDF"
 			tasks: [{
@@ -201,9 +182,10 @@
 			}]
 		}
 		{
-			title: "Miniaturized Refining"
-			x: -1.5d
-			y: 3.0d
+			title: "Heavy Fuel Refinery"
+			x: 2.5d
+			y: 2.0d
+			subtitle: "Your ticket to SPACE!"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "673BF607197A78E9"
 			tasks: [{
@@ -219,27 +201,10 @@
 			}]
 		}
 		{
-			title: "Miniaturized Brewing"
-			x: 1.5d
-			y: 3.0d
-			dependencies: ["451E8202B0FF4FDD"]
-			id: "382825F9DEF7D1A6"
-			tasks: [{
-				id: "3664C01562ADDDC1"
-				type: "item"
-				item: "thermal:machine_brewer"
-			}]
-			rewards: [{
-				id: "09FF038FF691D955"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 16
-			}]
-		}
-		{
-			title: "Miniaturized Coking"
-			x: 4.5d
-			y: 0.0d
+			title: "Pyrolyzing"
+			x: 3.5d
+			y: -0.5d
+			subtitle: "Replaces the Coke Oven"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "3FBB6958D8188938"
 			tasks: [{
@@ -255,44 +220,11 @@
 			}]
 		}
 		{
-			title: "Miniaturized Bottling"
-			x: 1.5d
-			y: 1.5d
-			dependencies: ["451E8202B0FF4FDD"]
-			id: "3C62E707411BBF27"
-			tasks: [{
-				id: "714CD6012C49081E"
-				type: "item"
-				item: "thermal:machine_bottler"
-			}]
-			rewards: [{
-				id: "27665D3DCC1D7EBF"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 16
-			}]
-		}
-		{
-			title: "Auto-Crafting"
-			x: -1.5d
-			y: 1.5d
-			dependencies: ["451E8202B0FF4FDD"]
-			id: "62985371434FBBA0"
-			tasks: [{
-				id: "112BDB896A34FC54"
-				type: "item"
-				item: "thermal:machine_crafter"
-			}]
-			rewards: [{
-				id: "0865BEC6205F05E7"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 16
-			}]
-		}
-		{
-			x: -1.5d
-			y: -1.5d
+			title: "Electric Drilling"
+			x: 1.0d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "BYOB: Bring your own Batteries"
 			description: [
 				"You've managed to find some sort augmentable bore that can replace your shovel and pickaxe and consumes Flux instead of durability / experience."
 				""
@@ -317,8 +249,11 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -1.5d
+			title: "Electrical Lumbering"
+			x: -1.0d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "Watch your fingers!"
 			description: [
 				"Similar to the Flux Bore, you've found that you can also afix a Sawblade to the end end of a fluxed coil receptacle to make an electrically-powered axe replacement."
 				""
@@ -343,13 +278,16 @@
 			}]
 		}
 		{
-			x: -1.5d
+			title: "Flux Capacitance"
+			x: -2.0d
 			y: -3.0d
+			subtitle: "Portable flux battery"
 			description: [
 				"So you've found yourself wanting to create a battery to keep extra flux around in your pockets, huh? Well, I can't say I would do the same - that does sound pretty unsafe after all.. but do what you want!"
 				""
 				"It looks as if you can augment this device's integral components and other capabilities using a type of tinkering workbench?"
 			]
+			hide_dependency_lines: true
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "3600AA7C9B7D324A"
 			tasks: [{
@@ -369,13 +307,16 @@
 			}]
 		}
 		{
-			x: 1.5d
+			title: "Item Magnetry"
+			x: 2.0d
 			y: -3.0d
+			subtitle: "Fluxical Magnesis"
 			description: [
 				"You've manipulated the gravity of items around you .. how the heck did you manage that?"
 				""
 				"Wait, it too is augmentable in a tinkering workbench? Wow, well done!"
 			]
+			hide_dependency_lines: true
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "563101EE395EB7B7"
 			tasks: [{
@@ -396,9 +337,10 @@
 		}
 		{
 			title: "Augmenting"
-			x: 0.625d
-			y: -4.375d
+			x: 0.0d
+			y: -3.125d
 			shape: "octagon"
+			subtitle: "Making all things Thermal run better!"
 			description: [
 				"You're beginning to get a grasp on the mechanisms you've started learning about in this chapter, but you're finding them to be a bit lackluster in speed, throughput and performance."
 				""
@@ -525,13 +467,13 @@
 			}]
 		}
 		{
-			title: "Dynamo"
-			x: -0.625d
-			y: -4.375d
-			shape: "octagon"
+			title: "Flux Engines"
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "Creating flux in a whole new way!"
 			description: ["As you continue moving from torque to flux, it may be a bit helpful to improve this using a combination of dynamo, augments, \\& integral components. These dynamo come in many different shapes and sizes and take different types of fuel, so you may need to further your research before making a choice!"]
 			dependencies: ["451E8202B0FF4FDD"]
-			size: 1.25d
 			id: "3309A2A5278B652B"
 			tasks: [{
 				id: "604EC344A326201D"
@@ -583,9 +525,10 @@
 		}
 		{
 			title: "Dimensional Storage"
-			x: 3.0d
-			y: -1.5d
+			x: 1.0d
+			y: 2.5d
 			shape: "hexagon"
+			subtitle: "Interdimensional Item \\& Fluids"
 			description: [
 				"On your search for ways to easily transmit items interdimensionally, you stumble upon Enderium"
 				""
@@ -593,7 +536,6 @@
 				""
 				"You find that you can make up to 999 distinct frequencies within the waveband of these devices."
 			]
-			hide_dependency_lines: true
 			dependencies: ["20E8E8B5A3664F1B"]
 			optional: true
 			id: "3F8EFB444A1F7C62"
@@ -623,9 +565,10 @@
 		}
 		{
 			title: "Digitized Storage"
-			x: -3.0d
-			y: -1.5d
+			x: 0.0d
+			y: 3.75d
 			shape: "octagon"
+			subtitle: "Faster than a 3D Printer!"
 			description: [
 				"Your research has led you to notice that you *can* in fact force Quartz to melt. This process takes very powerful equipment, but once done it can be alloyed with Iron to create a new alloy."
 				""
@@ -633,8 +576,8 @@
 				""
 				"Wherever this leads you, we don't have any journal entries to guide you - you'll be going on your own.."
 			]
-			hide_dependency_lines: true
 			dependencies: ["20E8E8B5A3664F1B"]
+			size: 1.25d
 			id: "54647DA171ED3BA1"
 			tasks: [{
 				id: "038A2FCC1720FF2A"
@@ -649,8 +592,9 @@
 		}
 		{
 			title: "Enlarged Autocrafting"
-			x: -4.5d
-			y: -1.5d
+			x: 0.0d
+			y: 5.5d
+			subtitle: "Warning: The manual isn't too helpful"
 			description: ["Taking the same principles that you've become so familiar with, you realize that you can make a 3D Matrix of crafting processors to form a monolithic structure capable of storing a significant number of crafting patterns."]
 			dependencies: ["54647DA171ED3BA1"]
 			id: "120B1829538924E1"
@@ -689,10 +633,11 @@
 			}]
 		}
 		{
-			title: "Inter-dim Flux"
-			x: 4.5d
-			y: -1.5d
+			title: "Flux Networks"
+			x: -1.0d
+			y: 2.5d
 			shape: "hexagon"
+			subtitle: "Range-free Wireless Flux"
 			description: [
 				"Somehow you've come to the thought that Redstone may be durable enough to be subjected to high amounts of weight and pressure."
 				""
@@ -702,8 +647,7 @@
 				""
 				"Best of luck (and please report back with your findings!)"
 			]
-			hide_dependency_lines: true
-			dependencies: ["451E8202B0FF4FDD"]
+			dependencies: ["20E8E8B5A3664F1B"]
 			optional: true
 			id: "1C9451BE455E7B98"
 			tasks: [{

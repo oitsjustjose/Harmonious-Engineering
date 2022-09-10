@@ -12,8 +12,9 @@
 			title: "Creative Tinkering"
 			icon: "create:andesite_alloy"
 			x: 0.0d
-			y: -1.0d
+			y: -0.75d
 			shape: "diamond"
+			subtitle: "Do the Twist"
 			description: [
 				"In your studies of pneumatic sciences, you notice that there's some possibility to create an even stronger alloy out of the robust Compressed Iron and Andesitic Rock."
 				""
@@ -39,7 +40,7 @@
 		{
 			title: "Fluidic Rotation"
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 			description: [
 				"Taking notes of some of the rivers around you, you begin to notice ways to harness the flow of water to create a decently fast rotational source."
 				""
@@ -61,10 +62,11 @@
 			}]
 		}
 		{
-			title: "Waker of Winds"
+			title: "Windmills \\& Bearings"
 			icon: "create:white_sail"
 			x: 1.5d
-			y: 1.5d
+			y: 1.0d
+			subtitle: "Waker of Winds"
 			description: [
 				"Using some pretty advanced mechanisms, you find that you can create a significant amount of torque by creating a large structure with a base of a Windmill Bearing."
 				""
@@ -109,9 +111,10 @@
 			}]
 		}
 		{
-			title: "Elbow Grease"
+			title: "Torque By Hand"
 			x: -1.5d
-			y: 1.5d
+			y: 1.0d
+			subtitle: "Bring Your Own Elbow Grease"
 			description: ["When all else fails, you find that your own body can create a pretty small amount of speed and stress. That said, this isn't the worst, especially for quick testing.."]
 			dependencies: ["219C4BC25CEF2579"]
 			id: "1645224A06F94731"
@@ -129,11 +132,12 @@
 			}]
 		}
 		{
-			title: "Pressing Matters"
+			title: "The Mechanical Press"
 			icon: "create:mechanical_press"
 			x: 0.0d
-			y: 3.75d
+			y: 4.0d
 			shape: "hexagon"
+			subtitle: "These Are Pressing Matters"
 			description: [
 				"As you further your research, you find that the ability to create durable, thin plating out of the clunky ingots you've made thusfar is becoming pretty critical."
 				""
@@ -159,15 +163,23 @@
 					item: "create:depot"
 				}
 			]
-			rewards: [{
-				id: "1D6DCF898153C078"
-				type: "item"
-				item: "create:wrench"
-			}]
+			rewards: [
+				{
+					id: "1D6DCF898153C078"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "26AF4A7323E08CEE"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 24
+				}
+			]
 		}
 		{
-			title: "Fluid Management"
-			x: -1.5d
+			title: "Fluid Mobility"
+			x: -2.0d
 			y: 5.5d
 			description: ["You find that plated copper is reasonably fluid-tight. This might be usefult to you for managing lots of different fluids!"]
 			dependencies: ["04CD02F5D3E4C75E"]
@@ -179,14 +191,29 @@
 					item: "create:fluid_pipe"
 				}
 				{
-					id: "7C2BF63A499D4D4A"
+					id: "2CB88D27A18F2262"
 					type: "item"
-					item: "create:fluid_valve"
-				}
-				{
-					id: "5CDFA56D70820B2B"
-					type: "item"
-					item: "create:mechanical_pump"
+					title: "Any Augmented Pipe"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:smart_fluid_pipe"
+									Count: 1b
+								}
+								{
+									id: "create:fluid_valve"
+									Count: 1b
+								}
+								{
+									id: "create:mechanical_pump"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [{
@@ -198,16 +225,18 @@
 			}]
 		}
 		{
-			title: "Lumbermill"
+			title: "The Mechanical Saw"
 			x: 0.0d
 			y: 6.0d
-			shape: "hexagon"
+			shape: "octagon"
+			subtitle: "Automated Lumbercraft"
 			description: [
 				"You find that you can harness rotation to propel an incredibly sharp saw blade."
 				""
 				"While deadly, this can still be useful between in many ways, from an automated slaughter house to trimming down wooden edges."
 			]
 			dependencies: ["04CD02F5D3E4C75E"]
+			size: 1.5d
 			id: "681411CF9577B311"
 			tasks: [{
 				id: "3603C9E446B4E3B3"
@@ -223,49 +252,10 @@
 			}]
 		}
 		{
-			title: "Creative Pneumatics"
-			x: 2.5d
-			y: 3.0d
-			description: [
-				"The Air Blower allows you to combine your studies in pneumatics with the similar mechanics you've seen through torque and rotation. You might be able to more efficiently create a fan-like mechanism using pneumatics rather than rotation."
-				""
-				"The Compressor allows you to take the rotational force you've been creating to produce air pressure - it may be worth exploring this in detail.."
-			]
-			dependencies: ["04CD02F5D3E4C75E"]
-			id: "5E2D189A12129245"
-			tasks: [{
-				id: "0723319FDCC31995"
-				type: "item"
-				title: "Any Pneumatic Device"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "compressedcreativity:rotational_compressor"
-								Count: 1b
-							}
-							{
-								id: "compressedcreativity:air_blower"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "42D0392AB4CDDE8F"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 7
-				random_bonus: 4
-			}]
-		}
-		{
-			title: "A Big Straw"
+			title: "Large-Scale Draining"
 			x: -2.5d
-			y: 4.5d
+			y: 4.0d
+			subtitle: "Sometimes Infinite Fluids"
 			description: [
 				"Through your studies of gantries, you realize that hose can be dangled down into a pool of fluid and used to pull the fluids out of the pool."
 				""
@@ -287,9 +277,10 @@
 			}]
 		}
 		{
-			title: "Scalable Fluid Storage"
-			x: -2.5d
-			y: 3.0d
+			title: "Fluid Storage \\& Retrieval"
+			x: -2.0d
+			y: 2.5d
+			subtitle: "Draining, Filling \\& Storing"
 			description: ["With the amount of fluid you've amassed, perhaps some fluid tank would be helpful. Unfortunately you can't just insert directly into it, so you'll need some mechanisms to help get it out too."]
 			dependencies: ["04CD02F5D3E4C75E"]
 			id: "31CCD637F2992A5B"
@@ -319,34 +310,10 @@
 			}]
 		}
 		{
-			title: "Dead End..?"
-			x: 0.0d
-			y: 7.5d
-			shape: "octagon"
-			description: [
-				"Well, it seems you've hit a bit of a dead end as far as this andesitic alloy goes - you've done what you can with it, but it's hard to progress any further with the technology at hand."
-				""
-				"Maybe some better equipment will make it easier to dive into higher technologies. This hammer doesn't look complete, but maybe some refinement will help it out."
-			]
-			dependencies: ["681411CF9577B311"]
-			size: 1.5d
-			id: "577C1F2636037346"
-			tasks: [{
-				id: "24F87F5B2013E48B"
-				type: "item"
-				item: "kubejs:crude_hammer"
-			}]
-			rewards: [{
-				id: "4C73875ED865FAA5"
-				type: "item"
-				item: "create:experience_nugget"
-				random_bonus: 3
-			}]
-		}
-		{
-			title: "Factorycraft"
-			x: 2.5d
-			y: 4.5d
+			title: "On the Move"
+			x: 2.0d
+			y: 2.5d
+			subtitle: "All the Ways Items can Move"
 			description: ["It seems as though rotation can also be used to power conveyor belts, and chutes / funnels / tunnels can help route, insert and extract items in and out of belts, chests, and more."]
 			dependencies: ["04CD02F5D3E4C75E"]
 			id: "27B85BEE7CE3474D"
@@ -381,9 +348,10 @@
 			}]
 		}
 		{
-			title: "KitchenAid, Eat Your Heart Out"
-			x: 1.5d
+			title: "Mixing \\& Melting"
+			x: 2.0d
 			y: 5.5d
+			subtitle: "KitchenAid, Eat Your Heart Out"
 			description: ["Using rotational energy, you've found a way to reproduce a stand mixer but in large scale. This mixer seems to really enjoy some extra heat, so perhaps you can harness properties of the Nether's Blaze to reach these temperatures?"]
 			dependencies: ["04CD02F5D3E4C75E"]
 			id: "374CD208978EA56D"
@@ -410,6 +378,38 @@
 				item: "create:experience_nugget"
 				count: 12
 				random_bonus: 14
+			}]
+		}
+		{
+			title: "Toolboxes"
+			x: 2.5d
+			y: 4.0d
+			subtitle: "Another Box for Trinkets"
+			description: [
+				"We've noticed you're really struggling with inventory management with all of these different components."
+				""
+				"We advise that you procure yourself a few Toolboxes, which are capable of storing up to 8 different items in stacks up to 256, making it ideal for storing various rotational components, or whatever you need really!"
+			]
+			dependencies: ["04CD02F5D3E4C75E"]
+			id: "06D91ED4F07A17D9"
+			tasks: [{
+				id: "0DB789B505A80CD7"
+				type: "item"
+				title: "Any Toolbox"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+			}]
+			rewards: [{
+				id: "746E118C64E5BCF0"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 4
+				random_bonus: 8
 			}]
 		}
 	]

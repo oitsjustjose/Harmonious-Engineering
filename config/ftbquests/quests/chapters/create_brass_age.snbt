@@ -13,6 +13,7 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "diamond"
+			subtitle: "More automation and machinery"
 			description: [
 				"You still have much experimenting to do, but this new alloy you recently discovered seems to be incredibly durable and capable of doing a lot of highly technical stuff!"
 				""
@@ -35,9 +36,9 @@
 			}]
 		}
 		{
-			title: "A Mechanical Touch"
 			x: -2.0d
 			y: 0.0d
+			subtitle: "A Mechanical Touch"
 			description: ["By now, you've run into a few situations where you've wanted to automatically activate something that is usually not automated and requires you to directly interact with it. These interactions can only really be done with a human touch, right...?"]
 			dependencies: ["19AB43B2BEF954F5"]
 			id: "143B42C21C598A69"
@@ -56,8 +57,9 @@
 		{
 			title: "Industrial Torque"
 			icon: "create:flywheel"
-			x: 2.0d
-			y: 0.0d
+			x: 1.5d
+			y: 1.5d
+			subtitle: "Insane amounts of torque from steam"
 			description: [
 				"Upon further pondering, you realize that with a sufficient source of heat and water, you can create an ongoing source of Steam!"
 				""
@@ -102,13 +104,13 @@
 				id: "1C43BFF602414161"
 				type: "item"
 				item: "create:experience_nugget"
-				count: 16
+				count: 32
 			}]
 		}
 		{
-			title: "Programmatic Rotation"
-			x: 1.0d
-			y: -1.0d
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Programmatic Rotation"
 			description: [
 				"You've found that some strange contraptions such as extended pistons \\& gantry carriages are pretty limited without any form of automation."
 				""
@@ -129,8 +131,10 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -1.0d
+			title: "The Mechanical Arm"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "Robotic Prosthetics"
 			description: [
 				"Have you found that sometimes you just can't get items to move in and out of conveyor belts without hassle? Tired of janky pipe setups and want to have a cool steam punk setup?"
 				""
@@ -151,29 +155,11 @@
 			}]
 		}
 		{
-			title: "Stress-o-Vision"
-			x: 0.0d
-			y: -2.0d
-			description: ["Using the flexibility and resilience of Brass, you've been able to find a way to fashion yourself an upgrade for your pneumatic suit that allows you to view detailed specs of your rotational structures, such as torque/speed consumption/production."]
-			dependencies: ["19AB43B2BEF954F5"]
-			id: "46A308369113A8B1"
-			tasks: [{
-				id: "79363248958C701F"
-				type: "item"
-				item: "compressedcreativity:mechanical_visor_upgrade"
-			}]
-			rewards: [{
-				id: "6E79284E5B971252"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 12
-			}]
-		}
-		{
 			title: "Monolithic Crafting"
 			x: 0.0d
-			y: 2.0d
+			y: -2.0d
 			shape: "octagon"
+			subtitle: "Literally a giant crafting table"
 			description: [
 				"Perhaps you've gotten too curious for your own good... you've started becoming a bit inquisitive of the crafting process you've grown so familiar with, and at this point that has led you down quite the rabbit hole."
 				""
@@ -196,15 +182,14 @@
 		}
 		{
 			title: "Pocket Machines"
-			x: 1.0d
-			y: 1.0d
+			x: 0.0d
+			y: 2.0d
 			shape: "gear"
 			description: [
 				"It looks like the ability to perform large-scale crafting has caused you to dive deeper into vacuous space."
 				""
 				"You find that you may be able to compress physical space into a single block by utilizing vacuum technology with Mechanical Crafting's ability to compress items.."
 			]
-			hide_dependency_lines: true
 			dependencies: ["2678E4C051AD94DD"]
 			optional: true
 			id: "41FBDA1609612D3F"
@@ -245,25 +230,61 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7BE033E6E61E6D75"
+				type: "item"
+				auto: "invisible"
+				item: "create:experience_nugget"
+				count: 16
+			}]
 		}
 		{
 			title: "Grinding Gears"
-			x: -1.0d
-			y: 1.0d
-			shape: "gear"
+			x: -1.5d
+			y: 1.5d
+			subtitle: "Mechanistic "
 			description: [
 				"After a significant amount of research into sequenced assembly, you've found the right timing and ingredients to be able to fashion yourself a Precision Mechanism."
 				""
 				"This mechanism may be difficult to craft, but its few uses seem to be rather impressive!"
 			]
-			hide_dependency_lines: true
 			dependencies: ["19AB43B2BEF954F5"]
-			optional: true
 			id: "6C957BD07E437B6F"
 			tasks: [{
 				id: "12460C423761FCB1"
 				type: "item"
 				item: "create:precision_mechanism"
+			}]
+			rewards: [{
+				id: "2896DD54A7428302"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 64
+			}]
+		}
+		{
+			title: "Rotational Compression"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Renewable air pressure!"
+			description: [
+				"The Air Blower allows you to combine your studies in pneumatics with the similar mechanics you've seen through torque and rotation. You might be able to more efficiently create a fan-like mechanism using pneumatics rather than rotation."
+				""
+				"The Compressor allows you to take the rotational force you've been creating to produce air pressure - it may be worth exploring this in detail.."
+			]
+			dependencies: ["19AB43B2BEF954F5"]
+			id: "5E2D189A12129245"
+			tasks: [{
+				id: "7C788FDA3462A6EE"
+				type: "item"
+				item: "compressedcreativity:rotational_compressor"
+			}]
+			rewards: [{
+				id: "42D0392AB4CDDE8F"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 7
+				random_bonus: 4
 			}]
 		}
 	]
