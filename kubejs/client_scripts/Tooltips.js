@@ -87,4 +87,46 @@ onEvent('item.tooltip', event => {
       }
     });
   });
+
+  event.add(
+    [
+      'davebuildingmod:black_guilded_boiler',
+      'davebuildingmod:black_boiler',
+      'davebuildingmod:red_boiler',
+      'davebuildingmod:red_guilded_boiler',
+      'davebuildingmod:green_gilded_boiler',
+      'davebuildingmod:green_boiler',
+      'davebuildingmod:purple_gilded_boiler',
+      'davebuildingmod:blue_boiler',
+      'davebuildingmod:blue_gilded_boiler',
+      'davebuildingmod:brown_boiler',
+      'davebuildingmod:brown_gilded_boiler',
+      'davebuildingmod:purple_boiler',
+      'davebuildingmod:cyan_gilded_boiler',
+      'davebuildingmod:cyan_boiler',
+      'davebuildingmod:light_gray_gilded_boiler',
+      'davebuildingmod:light_gray_boiler',
+      'davebuildingmod:lime_gilded_boiler',
+      'davebuildingmod:pink_boiler',
+      'davebuildingmod:pink_gilded_boiler',
+      'davebuildingmod:gray_boiler',
+      'davebuildingmod:gray_gilded_boiler',
+      'davebuildingmod:lime_boiler',
+      'davebuildingmod:yellow_gilded_boiler',
+      'davebuildingmod:yellow_boiler',
+      'davebuildingmod:light_blue_gilded_boiler',
+      'davebuildingmod:light_blue_boiler',
+      'davebuildingmod:magenta_gilded_boiler',
+      'davebuildingmod:magenta_boiler',
+      'davebuildingmod:orange_gilded_boiler',
+      'davebuildingmod:orange_boiler',
+      'davebuildingmod:white_gilded_boiler',
+      'davebuildingmod:white_boiler',
+      'davebuildingmod:brass_boiler',
+      'davebuildingmod:zinc_boiler',
+      'davebuildingmod:copper_boiler',
+      'davebuildingmod:create_boiler',
+    ],
+    '§1For Decoration Only§r'
+  );
 });
