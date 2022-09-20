@@ -2,6 +2,45 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.9
+
+## Added:
+
+- [`Mod`] Model Gap Fix
+- [`Mod`] TexTrue's Rubidium Options
+
+- [`Quest Chapter`] **Palettes Aplenty**: _All About Building_
+- [`Quest Chapter`] **The Dining Hall**: _Keep Yourself Full_
+
+## Fixed:
+
+- [Inordinate amount of Husk spawners](https://www.curseforge.com/minecraft/texture-packs/repurposed-structures-better-dungeons-datapack)
+
+## Changed:
+
+- Andesite Alloy now uses Zinc, because Zinc is overabundant when compared to how frequently it was
+  needed
+- Some structures from Rex's Additional Structures were culled:
+  - End structures didn't generate propertly
+  - Spawn Alters included some .. interesting choices in spawners, such as Zombie Villagers and Vex
+  - Silverfish clusters were apparently added? Well, that was removed - no need to add that much
+    malace 😋
+
+## Updated:
+
+- Compressed Creativity
+- Create Crafts & Additions
+- Dave's Building Extended
+- FTB Teams
+- Lootr
+- PneumaticCraft
+- Xaero's Minimap
+
+## Removed:
+
+- Shut Up Experimental Settings: Apparently Blueprint already does this!
+- Personality: Confused players more than it helped
+
 # 3.1.8
 
 ## Updated:
