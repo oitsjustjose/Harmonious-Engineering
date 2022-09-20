@@ -1,3 +1,6 @@
 {
-	chapter_groups: [{ id: "1E070728CA22FA34", title: "Research" }]
+	chapter_groups: [
+		{ id: "1E070728CA22FA34", title: "Research" }
+		{ id: "0B5829561DBF0AB5", title: "Extra-Curricular" }
+	]
 }

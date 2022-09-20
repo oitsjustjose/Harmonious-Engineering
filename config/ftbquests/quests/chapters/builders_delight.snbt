@@ -1,0 +1,346 @@
+{
+	id: "54406EBA7ACB2205"
+	group: "0B5829561DBF0AB5"
+	order_index: 0
+	filename: "builders_delight"
+	title: "Palettes Aplenty"
+	icon: "buildersdelight:oak_furniture_kit"
+	subtitle: ["All About Building!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Time to Build"
+			icon: "minecraft:scaffolding"
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			description: [
+				"So you're finally settling down and getting set up with a base? Great!"
+				""
+				"We'd like to direct your attention to a few of the finest building blocks around - feel free to skim through these tasks and try out something new!"
+			]
+			optional: true
+			id: "1556ECC2680A001E"
+			tasks: [{
+				id: "138F126C407E4A85"
+				type: "checkmark"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "ftblibrary:textures/icons/check.png"
+					}
+				}
+			}]
+		}
+		{
+			title: "Builder's Delight"
+			icon: "buildersdelight:iron_chisel"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "It's Off The Chain! ... hehehe"
+			description: ["Interested in some Vanilla+ building blocks, simple furniture or some tech/laboratory blocks? Builder's Delight is your place to go! Get started with this mod using JEI and the Chisel from this mod!"]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "6209C26D757B9109"
+			tasks: [{
+				id: "350158DEE421FC4B"
+				type: "item"
+				title: "Anything from Builder's Delight"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "buildersdelight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "38487C8F4014669D"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Architect's Palette"
+			icon: "architects_palette:algal_blend"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "Try the Cut of Salmon!"
+			description: ["Architects Palette is another Vanilla+ building mod, with several fun mechanics within as well as some of the nicest looking blocks!"]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "2A0E8AB6C084E67F"
+			tasks: [{
+				id: "398111C661E2F019"
+				type: "item"
+				title: "Anything from Architect's Palette"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "architects_palette"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1C73609C64759C77"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Engineer's Decor"
+			icon: "engineersdecor:clinker_brick_block"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Now with Variated Textures!"
+			description: ["Looking to really dig into that industrial / engineering vibe? Look no further! Engineer's Decor adds several blocks that are perfect for your industrial area"]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "0E419B869A3E6D22"
+			tasks: [{
+				id: "2AF927ADB9637008"
+				type: "item"
+				title: "Anything from Engineer's Decor"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "engineersdecor"
+					}
+				}
+			}]
+			rewards: [{
+				id: "30EF990CF08BB4E3"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Expanded Storage"
+			icon: "expandedstorage:diamond_chest"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Not the Cursed Chests!!"
+			description: [
+				"Looking for a better way to store up your items? Look no further than Expanded Storage! It'll let you create upgradable storage, as well as combine chests in all sorts of wacky and cursed ways!"
+				""
+				"{image:kubejs:textures/quest_images/expanded_storage_chests.png width:100 height:100 align:1}"
+			]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "68C97BD16F3695FE"
+			tasks: [{
+				id: "011708CD34A702BB"
+				type: "item"
+				title: "Anything from Expanded Storage"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "expandedstorage"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B9DEEB8DFAC7190"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Decorative Blocks"
+			icon: "decorative_blocks:brazier"
+			x: 1.5d
+			y: 1.5d
+			subtitle: "2 supports can make a table!"
+			description: ["Looking for beams, seats, chandeliers, or anything else decorative? Check out Decorative Blocks (or Every Compat for some materials) for all the best decor!"]
+			dependencies: ["1556ECC2680A001E"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "43944FC9366FB52D"
+			tasks: [{
+				id: "3F166CE471D5158B"
+				type: "item"
+				title: "Anything from Decorative Blocks"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "decorative_blocks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0C4AE1EDBBD1516E"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Every Compat"
+			icon: "everycomp:fd/architects_palette/twisted_cabinet"
+			x: -1.5d
+			y: 1.5d
+			subtitle: "Filling in the gaps"
+			description: ["Every Compat is a mod that automatically generates blocks to fill in gaps between mods. For example, this mod adds in Coconut Railing, which is Railing from Architect's Palette, but made from Coconut Wood from the Ecologics Mod."]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "286AAFB86D788144"
+			tasks: [{
+				id: "2F0C95F6B3B35464"
+				type: "item"
+				title: "Anything from Every Compat"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "everycomp"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1281E97054DD2CE3"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Building Gadgets"
+			x: 0.0d
+			y: 3.5d
+			subtitle: "Go Big or Go Home!"
+			description: ["Building Gadgets are great for large-scale builds, allowing you to build in huge areas, destroy hills, duplicate your favorite builds and more!"]
+			dependencies: [
+				"19AB43B2BEF954F5"
+				"1556ECC2680A001E"
+			]
+			optional: true
+			id: "2C6FACB612E45D0C"
+			tasks: [{
+				id: "69E951B4CA19FA22"
+				type: "item"
+				title: "Any Gadget"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "buildinggadgets:gadget_building"
+								Count: 1b
+								tag: {
+									state: {
+										state: {
+											Name: "minecraft:air"
+										}
+										data: { }
+										serializer: "buildinggadgets:dummy_serializer"
+									}
+								}
+							}
+							{
+								id: "buildinggadgets:gadget_exchanging"
+								Count: 1b
+								tag: {
+									state: {
+										state: {
+											Name: "minecraft:air"
+										}
+										data: { }
+										serializer: "buildinggadgets:dummy_serializer"
+									}
+								}
+							}
+							{
+								id: "buildinggadgets:gadget_copy_paste"
+								Count: 1b
+								tag: {
+									template_id: [I;
+										-444425108
+										1379027172
+										-1341039523
+										722872372
+									]
+									mode: 0b
+								}
+							}
+							{
+								id: "buildinggadgets:gadget_destruction"
+								Count: 1b
+								tag: {
+									overlay: 1b
+									fuzzy: 1b
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "737F5676990AC204"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+		{
+			title: "Dave's Building Extended"
+			icon: "davebuildingmod:pc_setup"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "Computers for Display Only!"
+			description: ["Looking for some of the best blocks for Create Trains and more! DBE adds in plenty of lab/tech blocks as well as some fun decorations!"]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "5CA581828D453290"
+			tasks: [{
+				id: "0F336196903B7D77"
+				type: "item"
+				title: "Anything from DBE"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "davebuildingmod"
+					}
+				}
+			}]
+			rewards: [{
+				id: "313EF780D1FBB8EE"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+		{
+			title: "Supplementaries"
+			icon: "supplementaries:globe"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "&oNot a Mod by Vazkii&r"
+			description: ["Supplementaries offers a great deal of decorative blocks and buildling supplies that you might find useful, as well as a plethora of other utility items and blocks!"]
+			dependencies: ["1556ECC2680A001E"]
+			optional: true
+			id: "27FE4BEC2B435843"
+			tasks: [{
+				id: "295C1E5BBB832F70"
+				type: "item"
+				title: "Anything from Supplementaries"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "supplementaries"
+					}
+				}
+			}]
+			rewards: [{
+				id: "24E4C596C68889B5"
+				type: "item"
+				item: "create:experience_nugget"
+			}]
+		}
+	]
+}

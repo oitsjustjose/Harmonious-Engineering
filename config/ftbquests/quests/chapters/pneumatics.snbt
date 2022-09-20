@@ -17,7 +17,7 @@
 		{
 			title: "Reinforced Metal"
 			x: 0.0d
-			y: -0.5d
+			y: 0.0d
 			shape: "diamond"
 			subtitle: "Compression Success"
 			description: [
@@ -104,7 +104,7 @@
 			title: "Basic Air Pressurization"
 			icon: "pneumaticcraft:air_compressor"
 			x: 0.0d
-			y: 2.25d
+			y: 1.75d
 			shape: "hexagon"
 			subtitle: "Powered by Coal"
 			description: [
@@ -137,8 +137,8 @@
 		{
 			title: "Oil Refinery"
 			icon: "pneumaticcraft:refinery"
-			x: 2.5d
-			y: 1.5d
+			x: 2.0d
+			y: 0.5d
 			subtitle: "Refined Dino-Goop"
 			description: [
 				"In your adventuring, you've been noticing these black sludgy puddles of some mysterious fluid. "
@@ -174,33 +174,9 @@
 			}]
 		}
 		{
-			title: "Drones"
-			x: 6.0d
-			y: -0.5d
-			shape: "gear"
-			subtitle: "Quite the expensive hobby"
-			description: ["These flying machines seem to be easily programmable using some puzzle-piece mechanism. Maybe that age-old book I got a bit ago has some helpful advice for getting this drone to do my bidding!"]
-			hide_dependency_lines: true
-			dependencies: ["611A75C2035E6810"]
-			size: 1.5d
-			id: "354304C086656EBD"
-			tasks: [{
-				id: "29FEC29817A4BF7A"
-				type: "item"
-				item: "pneumaticcraft:drone"
-			}]
-			rewards: [{
-				id: "116B72CE67ED195E"
-				type: "item"
-				item: "pneumaticcraft:programming_puzzle"
-				count: 4
-				random_bonus: 12
-			}]
-		}
-		{
 			title: "Pressurized Gear"
 			x: 3.0d
-			y: -0.5d
+			y: 1.75d
 			shape: "gear"
 			subtitle: "Modularity Aplenty!"
 			description: [
@@ -268,7 +244,7 @@
 		}
 		{
 			title: "Charging Up"
-			x: 2.5d
+			x: 2.0d
 			y: 3.0d
 			subtitle: "Aeration Station"
 			description: ["By harnessing this pneumatic pressure you've become so proficient in creating, you might be able to fill other items' pressurized canisters with some of this to use for later."]
@@ -290,8 +266,8 @@
 		{
 			title: "Heat \\& Pressure"
 			icon: "pneumaticcraft:thermopneumatic_processing_plant"
-			x: 4.0d
-			y: 1.5d
+			x: 3.5d
+			y: 0.5d
 			subtitle: "From Oil to Plastic"
 			description: ["Looks like refining that oil yielded you quite a bit! This LPG looks to be useful under heat and pressure, maybe it can be further processed with an additive or two?"]
 			dependencies: ["2E9458D3C90B51FA"]
@@ -320,7 +296,7 @@
 			title: "Baby's First Plastic"
 			icon: "pneumaticcraft:plastic"
 			x: 5.5d
-			y: 1.5d
+			y: 0.5d
 			subtitle: "Use By Year 2040"
 			description: [
 				"Looks like this bucket of plastic can be cooled to a solid form, and that can be done more easily by making use of a heat frame to dissipate heat."
@@ -391,7 +367,7 @@
 			title: "PCB Etching"
 			icon: "pneumaticcraft:etching_tank"
 			x: 7.0d
-			y: 1.5d
+			y: 0.5d
 			subtitle: "Don't forget your PPE"
 			description: [
 				"Well that's weird - I guess all the malice from these poor monsters is actually quite.. acidic?"
@@ -422,7 +398,7 @@
 		}
 		{
 			x: 9.0d
-			y: 2.25d
+			y: 1.75d
 			shape: "octagon"
 			subtitle: "Your Gateway to Automation"
 			description: [
@@ -450,7 +426,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 3.5d
 			y: 3.0d
 			subtitle: "E-Commerce In Your Hands"
 			description: [
@@ -498,8 +474,8 @@
 		}
 		{
 			title: "Automated Assembly"
-			x: 9.0d
-			y: -0.5d
+			x: 6.0d
+			y: 1.75d
 			shape: "gear"
 			subtitle: "Simplifying PCB Production Since 2012"
 			description: [

@@ -210,6 +210,8 @@
 				"You find yourself with some new Raw Ores, and after smelting you find yourself with a handful of nuggets... What happened?"
 				""
 				"Maybe some further research into processing would be helpful, but for now these nuggets are the best you can do."
+				""
+				"We would like to advise that Deepslate Ores are more rich than Standard Ores, dropping more Raw Ore than their Stone-based counterparts.."
 			]
 			dependencies: ["5477EA198509D2E0"]
 			id: "75C355F05B693DD4"

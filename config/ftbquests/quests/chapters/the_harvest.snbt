@@ -1,0 +1,345 @@
+{
+	id: "0A06F1E279D54276"
+	group: "0B5829561DBF0AB5"
+	order_index: 1
+	filename: "the_harvest"
+	title: "The Dining Hall"
+	icon: "farmersdelight:cooking_pot"
+	subtitle: ["Keep yourself full!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Rice"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "&rWon't fix your iPhone&o"
+			description: ["Rice is an incredibly versatile food to keep around, allowing you to make bowls of rice and put plenty of other foods in said bowls as well!"]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "2FBA1639F64B82E8"
+			tasks: [
+				{
+					id: "64AC3D4C92FF7CDB"
+					type: "item"
+					item: "farmersdelight:rice_panicle"
+				}
+				{
+					id: "385A058A93A54500"
+					type: "item"
+					item: "farmersdelight:rice"
+				}
+			]
+			rewards: [{
+				id: "47227EC6ACC0B84E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			subtitle: "Great for 'Wiches, Salads \\& Sauces!"
+			description: ["Tomatos are a juicy fruit that add a lot of nutrition and flavor to some of your favorite sandwiches, and can even be stewed down into sauce for pasta!"]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "4DAF7ADCE47CAA67"
+			tasks: [
+				{
+					id: "04FB1C588A55E5F6"
+					type: "item"
+					item: "farmersdelight:tomato"
+				}
+				{
+					id: "17E508CD40E47127"
+					type: "item"
+					item: "farmersdelight:tomato_seeds"
+				}
+			]
+			rewards: [{
+				id: "07C49D7EBB724E75"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			subtitle: "Inedible but Highly Durable"
+			description: ["Industrial Hemp is a must-have for those looking to dive deep into Immersive Engineering - its durability makes it unusable as a cloth like some Hemps. Fortunately, this very property makes it a great insulator and even durable enough to make a flooring with!"]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "6894FC38D4B0ABA4"
+			tasks: [
+				{
+					id: "5B4F7117495C8623"
+					type: "item"
+					item: "immersiveengineering:hemp_fiber"
+				}
+				{
+					id: "46F9A36B73E67398"
+					type: "item"
+					item: "immersiveengineering:seed"
+				}
+			]
+			rewards: [{
+				id: "451DEF5F318E53AA"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			subtitle: "Great for Salads \\& Wraps!"
+			description: ["Cabbage is a generally useful vegetable capable of wrapping many types of foods or just adding a bunch of extra nutrition to your meals!"]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "723ECE24FB1DBDD2"
+			tasks: [
+				{
+					id: "43D8809F89541845"
+					type: "item"
+					item: "farmersdelight:cabbage"
+				}
+				{
+					id: "22EC76C38679FDE7"
+					type: "item"
+					item: "farmersdelight:cabbage_seeds"
+				}
+			]
+			rewards: [{
+				id: "59F7CE2EEF128697"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+			}]
+		}
+		{
+			title: "Mushroom Colonies"
+			x: -3.0d
+			y: -2.0d
+			description: ["You've found that planting a brown mushroom on Rich Soil in a dark environment willl allow these "]
+			dependencies: ["6A243C5DCD8A4CA9"]
+			optional: true
+			id: "2C7823612349D65E"
+			tasks: [
+				{
+					id: "2F7D5CA09CE7F04B"
+					type: "item"
+					item: "farmersdelight:brown_mushroom_colony"
+				}
+				{
+					id: "58B71F725D1D6875"
+					type: "item"
+					item: "farmersdelight:red_mushroom_colony"
+				}
+			]
+			rewards: [{
+				id: "0EC2B9F13662448E"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 12
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "Not &oBill Gates&r rich though"
+			description: ["You've discovered that you can embue soil with compost and other detritus to form Rich Soil. It seems like planting your crops on the tilled rich soil increases its growth &osignificantly&r!"]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "6A243C5DCD8A4CA9"
+			tasks: [{
+				id: "50E3978E4813925E"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+			}]
+			rewards: [{
+				id: "29EF933DFDA1AE46"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 12
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			subtitle: "Good for more than Bread!"
+			description: ["Sure, it's wheat - you know it, you love it, but have you seen what else you can do with it?! Try your hand at making Sourdough Bread using Yeast Cultures, or even Dough or Pasta!"]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "2A5FC4EBEB39F1BA"
+			tasks: [
+				{
+					id: "4AA61AD9E37378B9"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "289E9FE35C729EE8"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+			]
+			rewards: [{
+				id: "314C7F55B7EBF1D5"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 8
+			}]
+		}
+		{
+			title: "Slice n Dice"
+			icon: {
+				id: "farmersdelight:diamond_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "Remember When?"
+			description: [
+				"You've found that you can fashion together a nice cutting instrument, and when used against several different crops and meats, can refine them into a finer cooking ingredient."
+				""
+				"You may find that some blocks (such as Propel Plant and Tall Grass) and entities (such as Pigs and Hoglins) drop different things when broken or killed with a knife. If you don't know where to get something, give that a try!"
+			]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "722B56336C3E9FDC"
+			tasks: [
+				{
+					id: "374C8B5265F8BDBE"
+					type: "item"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "farmersdelight:tools/knives"
+						}
+					}
+				}
+				{
+					id: "48E08BBACAFA18F3"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+			]
+			rewards: [{
+				id: "10A731BC6DDC73DD"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			title: "Proper Cookware"
+			x: 3.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "&oAlso a great weapon - no really!&r"
+			description: [
+				"Skillets serve as a cleaner, interior-friendly alternative to campfires. Skillets are capable of making the same recipes that campfires are, but don't fill your house up with smoke!!"
+				""
+				"Pots are perfect for making large dishes or dishes that might be a bit too soupy to be made in a skillet. Some dishes are too big to eat on the go, so you may need to place the dish down and take one serving at a time!"
+			]
+			dependencies: ["1948204ACCAE8EA3"]
+			optional: true
+			id: "791428ABE759D9C0"
+			tasks: [
+				{
+					id: "106FDB01A0D0B314"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3DBD553FB9F83F9A"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+				}
+			]
+			rewards: [{
+				id: "0D4E679C790084A9"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 12
+			}]
+		}
+		{
+			title: "Stoves"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "Hands Off!"
+			description: [
+				"You've found a way to prevent smoke, easy burns and other risks associated with campfires by enclosing one with some highly insulating blocks."
+				""
+				"While you &ocould&r just use a campfire, what fun is that?"
+			]
+			dependencies: ["4655CC059BD8ECA4"]
+			optional: true
+			id: "1948204ACCAE8EA3"
+			tasks: [{
+				id: "1D4BCF148D70AFCE"
+				type: "item"
+				title: "Any Stove"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "farmersdelight:stove"
+								Count: 1b
+							}
+							{
+								id: "nethersdelight:blackstone_stove"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "564DBCEC8CF1E489"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 12
+			}]
+		}
+		{
+			title: "The Harvest"
+			icon: {
+				id: "tools_complement:lead_hoe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "Not as good as a Farmer's Almanac"
+			description: ["As you traverse your world, you will find that there are many new kinds of vegetation around! We've already researched a lot of these for you, but first-hand experience is the best!"]
+			optional: true
+			id: "4655CC059BD8ECA4"
+			tasks: [{
+				id: "7DE608D94E5272DA"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+	]
+}
