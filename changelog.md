@@ -2,6 +2,40 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.10
+
+## Added:
+
+- [`Mod`] Go Prone
+- [`Mod`] Stack Refill
+
+## Updated:
+
+- Create
+- Dave's Building Extended
+- Elytra Physitcs
+- Farmer's Delight
+- Model Gap Fix
+- Rex's Additional Structures
+- Supplementaries
+- Terralith
+- X-Net
+
+## Fixed:
+
+- Redstone Ore not being processable in machines - this was my bad, I always forget that Redstone
+  Dust is considered a `#forge:dust` when removing recipes in bulk..
+
+## Changed
+
+- Refactored the whole dang Ore processing cleanup script to be WAY more flexible. This may mean
+  that some form of Ore/Raw Ore -> Dust/Ingot recipe was accidentally removed or left in. If you see
+  anything suspicious, please report it
+  [here!](https://github.com/oitsjustjose/Harmonious-Engineering/issues). This _also_ means that
+  **Whole Deepslate Ore Variants now process into 3 dusts!!**. This was something previously
+  difficult to implement but is much easier with my new system. Shame it still involves lots of
+  manual entry, but `¯\_(ツ)_/¯` what can I do.
+
 # 3.1.9
 
 ## Added:
