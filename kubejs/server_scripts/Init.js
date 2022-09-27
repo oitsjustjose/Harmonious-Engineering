@@ -68,19 +68,241 @@ global.duplicateResources = [
   {tag: 'forge:storage_blocks/steel', item: 'davebuildingmod:steel_block'},
 ];
 
-global.metals = [
-  'iron',
-  'gold',
-  'copper',
-  'tin',
-  'silver',
-  'lead',
-  'aluminum',
-  'zinc',
-  'nickel',
-  'calorite',
-  'desh',
-  'ostrum',
+global.ores = [
+  {
+    resourceName: 'iron',
+    dropsRaw: true,
+    variants: {
+      stone: 'minecraft:iron_ore',
+      deepslate: 'minecraft:deepslate_iron_ore',
+      others: [
+        'beyond_earth:glacio_iron_ore',
+        'beyond_earth:mercury_iron_ore',
+        'beyond_earth:mars_iron_ore',
+        'beyond_earth:moon_iron_ore',
+      ],
+    },
+  },
+  {
+    resourceName: 'copper',
+    dropsRaw: true,
+    variants: {
+      stone: 'beyond_earth:glacio_copper_ore',
+      deepslate: 'minecraft:deepslate_copper_ore',
+      others: ['minecraft:copper_ore'],
+    },
+  },
+  {
+    resourceName: 'gold',
+    dropsRaw: true,
+    variants: {
+      stone: 'minecraft:gold_ore',
+      deepslate: 'minecraft:deepslate_gold_ore',
+      others: ['beyond_earth:venus_gold_ore', 'minecraft:nether_gold_ore'],
+    },
+  },
+  {
+    resourceName: 'tin',
+    dropsRaw: true,
+    variants: {
+      stone: 'thermal:tin_ore',
+      deepslate: 'thermal:deepslate_tin_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'silver',
+    dropsRaw: true,
+    variants: {
+      stone: 'thermal:silver_ore',
+      deepslate: 'thermal:deepslate_silver_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'lead',
+    dropsRaw: true,
+    variants: {
+      stone: 'thermal:lead_ore',
+      deepslate: 'thermal:deepslate_lead_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'nickel',
+    dropsRaw: true,
+    variants: {
+      stone: 'thermal:nickel_ore',
+      deepslate: 'thermal:deepslate_nickel_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'aluminum',
+    dropsRaw: true,
+    variants: {
+      stone: 'immersiveengineering:ore_aluminum',
+      deepslate: 'immersiveengineering:deepslate_ore_aluminum',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'zinc',
+    dropsRaw: true,
+    variants: {
+      stone: 'create:zinc_ore',
+      deepslate: 'create:deepslate_zinc_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'desh',
+    dropsRaw: true,
+    variants: {
+      stone: null,
+      deepslate: null,
+      others: ['beyond_earth:moon_desh_ore'],
+    },
+  },
+  {
+    resourceName: 'ostrum',
+    dropsRaw: true,
+    variants: {
+      stone: null,
+      deepslate: null,
+      others: ['beyond_earth:mars_ostrum_ore'],
+    },
+  },
+  {
+    resourceName: 'calorite',
+    dropsRaw: true,
+    variants: {
+      stone: null,
+      deepslate: null,
+      others: ['beyond_earth:venus_calorite_ore'],
+    },
+  },
+  {
+    resourceName: 'coal',
+    dropsRaw: false,
+    variants: {
+      stone: 'minecraft:coal_ore',
+      deepslate: 'minecraft:deepslate_coal_ore',
+      others: ['beyond_earth:venus_coal_ore', 'beyond_earth:glacio_coal_ore'],
+    },
+  },
+  {
+    resourceName: 'redstone',
+    dropsRaw: false,
+    variants: {
+      stone: 'minecraft:redstone_ore',
+      deepslate: 'minecraft:deepslate_redstone_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'lapis',
+    dropsRaw: false,
+    variants: {
+      stone: 'minecraft:lapis_ore',
+      deepslate: 'minecraft:deepslate_lapis_ore',
+      others: ['beyond_earth:glacio_lapis_ore'],
+    },
+  },
+  {
+    resourceName: 'diamond',
+    dropsRaw: false,
+    variants: {
+      stone: 'minecraft:diamond_ore',
+      deepslate: 'minecraft:deepslate_diamond_ore',
+      others: ['beyond_earth:venus_diamond_ore', 'beyond_earth:mars_diamond_ore'],
+    },
+  },
+  {
+    resourceName: 'diamond',
+    dropsRaw: false,
+    variants: {
+      stone: 'minecraft:diamond_ore',
+      deepslate: 'minecraft:deepslate_diamond_ore',
+      others: ['beyond_earth:venus_diamond_ore', 'beyond_earth:mars_diamond_ore'],
+    },
+  },
+  {
+    resourceName: 'emerald',
+    dropsRaw: false,
+    variants: {
+      stone: 'minecraft:emerald_ore',
+      deepslate: 'minecraft:deepslate_emerald_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'quartz',
+    dropsRaw: false,
+    variants: {
+      stone: null,
+      deepslate: null,
+      others: ['minecraft:nether_quartz_ore'],
+    },
+  },
+  {
+    resourceName: 'cinnabar',
+    dropsRaw: false,
+    variants: {
+      stone: 'thermal:cinnabar_ore',
+      deepslate: 'thermal:deepslate_cinnabar_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'sulfur',
+    dropsRaw: false,
+    variants: {
+      stone: 'thermal:sulfur_ore',
+      deepslate: 'thermal:deepslate_sulfur_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'niter',
+    dropsRaw: false,
+    variants: {
+      stone: 'thermal:niter_ore',
+      deepslate: 'thermal:deepslate_niter_ore',
+      others: [],
+    },
+  },
+  {
+    resourceName: 'dimensional_shard',
+    dropsRaw: false,
+    variants: {
+      stone: 'rftoolsbase:dimensionalshard_overworld',
+      deepslate: null,
+      others: ['rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'],
+    },
+  },
+  {
+    resourceName: 'ice_shard',
+    dropsRaw: false,
+    variants: {
+      stone: null,
+      deepslate: null,
+      others: [
+        'beyond_earth:moon_ice_shard_ore',
+        'beyond_earth:mars_ice_shard_ore',
+        'beyond_earth:glacio_ice_shard_ore',
+      ],
+    },
+  },
+  {
+    resourceName: 'moon_cheese',
+    dropsRaw: false,
+    variants: {
+      stone: null,
+      deepslate: null,
+      others: ['beyond_earth:moon_cheese_ore'],
+    },
+  },
 ];
 
 /**

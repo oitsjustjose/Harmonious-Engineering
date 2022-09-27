@@ -48,8 +48,23 @@ onEvent('item.tags', event => {
     ].forEach(x => event.removeAllTagsFrom(x));
   };
 
+  const oreItemTags = () => {
+    global.ores.forEach(ore => {
+      const allOtherOres = [ore.variants.stone].concat(ore.variants.others).filter(x => !!x);
+      event.add(`forge:non_deepslate_ores`, allOtherOres);
+      event.add(`forge:non_deepslate_ores/${ore.resourceName}`, allOtherOres);
+    });
+
+    const deepslateOres = global.ores
+      .filter(x => !!x.variants.deepslate)
+      .filter(x => x.dropsRaw)
+      .map(x => x.variants.deepslate);
+    event.add('forge:deepslate_ores', deepslateOres);
+  };
+
   unifyMaterials();
   clearTags();
+  oreItemTags();
 
   event.add('thermal:crafting/dies', 'immersiveengineering:mold_wire');
   event.add('thermal:crafting/dies', 'immersiveengineering:mold_bullet_casing');
@@ -65,18 +80,6 @@ onEvent('item.tags', event => {
   event.removeAllTagsFrom('thermal:sapphire_ore');
   event.removeAllTagsFrom('thermal:deepslate_ruby_ore');
   event.removeAllTagsFrom('thermal:deepslate_sapphire_ore');
-
-  event.add('forge:deepslate_denseish_ores', [
-    'create:deepslate_zinc_ore',
-    'immersiveengineering:deepslate_ore_aluminum',
-    'minecraft:deepslate_copper_ore',
-    'minecraft:deepslate_gold_ore',
-    'minecraft:deepslate_iron_ore',
-    'thermal:deepslate_lead_ore',
-    'thermal:deepslate_nickel_ore',
-    'thermal:deepslate_silver_ore',
-    'thermal:deepslate_tin_ore',
-  ]);
 });
 
 onEvent('block.tags', event => {
