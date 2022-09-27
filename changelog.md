@@ -13,7 +13,7 @@
 
 - Create
 - Dave's Building Extended
-- Elytra Physitcs
+- Elytra Physics
 - Farmer's Delight
 - Model Gap Fix
 - Rex's Additional Structures
