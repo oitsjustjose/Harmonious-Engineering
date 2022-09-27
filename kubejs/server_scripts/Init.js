@@ -219,15 +219,6 @@ global.ores = [
     },
   },
   {
-    resourceName: 'diamond',
-    dropsRaw: false,
-    variants: {
-      stone: 'minecraft:diamond_ore',
-      deepslate: 'minecraft:deepslate_diamond_ore',
-      others: ['beyond_earth:venus_diamond_ore', 'beyond_earth:mars_diamond_ore'],
-    },
-  },
-  {
     resourceName: 'emerald',
     dropsRaw: false,
     variants: {
