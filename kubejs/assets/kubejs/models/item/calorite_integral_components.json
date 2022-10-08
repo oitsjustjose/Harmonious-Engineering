@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/calorite_integral_components",
+    "layer1": "kubejs:item/integral_componet_lights",
+    "layer2": "kubejs:item/integral_components_anim"
+  }
+}
