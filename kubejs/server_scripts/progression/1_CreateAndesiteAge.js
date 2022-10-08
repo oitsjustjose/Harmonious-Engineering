@@ -12,7 +12,7 @@ onEvent('recipes', event => {
   event.remove({output: 'create:andesite_alloy'});
   CustomRecipeHandler.pressurizing(
     [
-      {type: 'pneumaticcraft:stacked_item', item: 'create:zinc_ingot', count: 3},
+      {type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/zinc', count: 3},
       {type: 'pneumaticcraft:stacked_item', item: 'minecraft:andesite', count: 1},
     ],
     [{item: 'create:andesite_alloy', count: 4}],

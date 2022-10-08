@@ -18,6 +18,10 @@ onEvent('item.registry', event => {
   event.create('calorite_dust').texture('kubejs:item/calorite_dust');
   event.create('desh_dust').texture('kubejs:item/desh_dust');
   event.create('ostrum_dust').texture('kubejs:item/ostrum_dust');
+
+  event.create('calorite_integral_components');
+  event.create('desh_integral_components');
+  event.create('ostrum_integral_components');
 });
 
 onEvent('item.modification', event => {
