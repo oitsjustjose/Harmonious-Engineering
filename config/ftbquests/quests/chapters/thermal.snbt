@@ -4,7 +4,7 @@
 	order_index: 5
 	filename: "thermal"
 	title: "Thermally Expanding"
-	icon: "thermal:machine_frame"
+	icon: "thermal:upgrade_augment_3"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -49,8 +49,8 @@
 		}
 		{
 			title: "Pulverization"
-			x: -3.5d
-			y: 1.0d
+			x: -2.5d
+			y: 0.5d
 			subtitle: "Replaces the Crusher"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "41020ABCC20659D6"
@@ -68,7 +68,7 @@
 		}
 		{
 			title: "Fluxical Smelting"
-			x: -3.5d
+			x: -2.5d
 			y: -0.5d
 			subtitle: "Single-block cooking for all needs!"
 			dependencies: ["451E8202B0FF4FDD"]
@@ -87,8 +87,8 @@
 		}
 		{
 			title: "Lumbermill To-Go"
-			x: -2.5d
-			y: -1.5d
+			x: -1.5d
+			y: -1.0d
 			subtitle: "Small-Scale Sawmill"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "313F7CC5F7592A85"
@@ -126,8 +126,8 @@
 		}
 		{
 			title: "Insolated Hydroponics"
-			x: 2.5d
-			y: -1.5d
+			x: 1.5d
+			y: -1.0d
 			subtitle: "Replaces Garden Cloches"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "2257254B85034896"
@@ -145,8 +145,8 @@
 		}
 		{
 			title: "Multiservo Pressing"
-			x: -2.5d
-			y: 2.0d
+			x: -2.0d
+			y: 1.5d
 			subtitle: "Small-Scale Metal Pressing"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "1BB99687EECA2753"
@@ -164,8 +164,8 @@
 		}
 		{
 			title: "Supercooling"
-			x: 3.5d
-			y: 1.0d
+			x: 2.5d
+			y: 0.5d
 			subtitle: "Make Plastic more easily!"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "55F1E9DA9F0EAEDF"
@@ -183,8 +183,8 @@
 		}
 		{
 			title: "Heavy Fuel Refinery"
-			x: 2.5d
-			y: 2.0d
+			x: 2.0d
+			y: 1.5d
 			subtitle: "Your ticket to SPACE!"
 			dependencies: ["451E8202B0FF4FDD"]
 			id: "673BF607197A78E9"
@@ -202,7 +202,7 @@
 		}
 		{
 			title: "Pyrolyzing"
-			x: 3.5d
+			x: 2.5d
 			y: -0.5d
 			subtitle: "Replaces the Coke Oven"
 			dependencies: ["451E8202B0FF4FDD"]
@@ -279,8 +279,8 @@
 		}
 		{
 			title: "Flux Capacitance"
-			x: -2.0d
-			y: -3.0d
+			x: -2.5d
+			y: -2.0d
 			subtitle: "Portable flux battery"
 			description: [
 				"So you've found yourself wanting to create a battery to keep extra flux around in your pockets, huh? Well, I can't say I would do the same - that does sound pretty unsafe after all.. but do what you want!"
@@ -308,8 +308,8 @@
 		}
 		{
 			title: "Item Magnetry"
-			x: 2.0d
-			y: -3.0d
+			x: 2.5d
+			y: -2.0d
 			subtitle: "Fluxical Magnesis"
 			description: [
 				"You've manipulated the gravity of items around you .. how the heck did you manage that?"
@@ -526,7 +526,7 @@
 		{
 			title: "Dimensional Storage"
 			x: 1.0d
-			y: 2.5d
+			y: 2.0d
 			shape: "hexagon"
 			subtitle: "Interdimensional Item \\& Fluids"
 			description: [
@@ -536,7 +536,7 @@
 				""
 				"You find that you can make up to 999 distinct frequencies within the waveband of these devices."
 			]
-			dependencies: ["20E8E8B5A3664F1B"]
+			dependencies: ["451E8202B0FF4FDD"]
 			optional: true
 			id: "3F8EFB444A1F7C62"
 			tasks: [
@@ -565,25 +565,35 @@
 		}
 		{
 			title: "Digitized Storage"
+			icon: "refinedstorage:purple_creative_controller"
 			x: 0.0d
-			y: 3.75d
-			shape: "octagon"
-			subtitle: "Faster than a 3D Printer!"
+			y: 4.0d
+			shape: "hexagon"
+			subtitle: "Better than a 3D Printer"
 			description: [
-				"Your research has led you to notice that you *can* in fact force Quartz to melt. This process takes very powerful equipment, but once done it can be alloyed with Iron to create a new alloy."
+				"We have begun research on how to materialize and dematerialize items to and from bytes. While in their byte form, they can be much more easily (and compactly) stored, and querying for items requires much less effort this way as the bytes can be indexed."
 				""
-				"This alloy seems to be capable of creating digitized storage, whatever that means..."
+				"If you didn't understand the very nerdy sentence above, our leading researchers wrote that in one of their papers and had to pad out for space to make the minimum word requirement."
 				""
-				"Wherever this leads you, we don't have any journal entries to guide you - you'll be going on your own.."
+				"In short, you might be able to implement the researcher's findings and make some mechanism that can interact and store your items in a much more compact way that you can access over a network."
+				""
+				"It seems this controller will be the root of your network, and you can only have one. We have other entries on the various peripherals you might want or need."
 			]
 			dependencies: ["20E8E8B5A3664F1B"]
 			size: 1.25d
 			id: "54647DA171ED3BA1"
-			tasks: [{
-				id: "038A2FCC1720FF2A"
-				type: "item"
-				item: "refinedstorage:controller"
-			}]
+			tasks: [
+				{
+					id: "038A2FCC1720FF2A"
+					type: "item"
+					item: "refinedstorage:controller"
+				}
+				{
+					id: "5CABCF7829E3AE19"
+					type: "item"
+					item: "refinedstorage:cable"
+				}
+			]
 			rewards: [{
 				id: "5657C5D0AF987B11"
 				type: "item"
@@ -592,11 +602,14 @@
 		}
 		{
 			title: "Enlarged Autocrafting"
-			x: 0.0d
-			y: 5.5d
-			subtitle: "Warning: The manual isn't too helpful"
+			x: -2.55d
+			y: 7.225d
+			shape: "gear"
+			subtitle: "Includes a pretty unhelpful manual!"
 			description: ["Taking the same principles that you've become so familiar with, you realize that you can make a 3D Matrix of crafting processors to form a monolithic structure capable of storing a significant number of crafting patterns."]
-			dependencies: ["54647DA171ED3BA1"]
+			dependencies: ["230A005C9C7386FA"]
+			size: 0.85d
+			optional: true
 			id: "120B1829538924E1"
 			tasks: [
 				{
@@ -620,22 +633,30 @@
 					item: "rebornstorage:multiblock_storage"
 				}
 			]
-			rewards: [{
-				id: "3ACFAF2FE5B179BB"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "rebornstorage:rs_book"
+			rewards: [
+				{
+					id: "3ACFAF2FE5B179BB"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "rebornstorage:rs_book"
+						}
 					}
 				}
-			}]
+				{
+					id: "0343E293D700B9FB"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 24
+				}
+			]
 		}
 		{
 			title: "Flux Networks"
 			x: -1.0d
-			y: 2.5d
+			y: 2.0d
 			shape: "hexagon"
 			subtitle: "Range-free Wireless Flux"
 			description: [
@@ -647,7 +668,7 @@
 				""
 				"Best of luck (and please report back with your findings!)"
 			]
-			dependencies: ["20E8E8B5A3664F1B"]
+			dependencies: ["451E8202B0FF4FDD"]
 			optional: true
 			id: "1C9451BE455E7B98"
 			tasks: [{
@@ -661,6 +682,407 @@
 				item: "create:experience_nugget"
 				count: 16
 				random_bonus: 32
+			}]
+		}
+		{
+			icon: "refinedstorage:purple_grid"
+			x: 1.5d
+			y: 3.0d
+			subtitle: "Everything In One Place"
+			description: [
+				"To access your items from within your network, you'll need to create a Grid that can display all of your items."
+				""
+				"The grid is highly configurable, not only allowing you to query for items but also sort depending on your preference."
+			]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "1D7D9B670B468A0A"
+			tasks: [{
+				id: "463A57EC87DBD4A4"
+				type: "item"
+				item: "refinedstorage:grid"
+			}]
+			rewards: [{
+				id: "0B3E893C21B1BC01"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			icon: "refinedstorage:purple_crafting_grid"
+			x: 1.5d
+			y: 4.5d
+			subtitle: "A Required Upgrade for Many"
+			description: ["You've discovered a way to automatically feed deserialized items into a crafting grid, making crafting in bulk or in a chain much easier due to the Crafting Grid's auto-refilling implementation."]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "3893B8CD40A4184A"
+			tasks: [{
+				id: "606469EBF5ECB4CA"
+				type: "item"
+				item: "refinedstorage:crafting_grid"
+			}]
+			rewards: [{
+				id: "0ECAEA8665FFBB31"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			title: "Basic Automatic Crafting"
+			icon: "refinedstorage:purple_crafter"
+			x: -1.4500000000000002d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "Just the Beginning"
+			description: [
+				"You've discovered a way to automatically craft recipes in a crafting table or a machine using the Crafter. This powerful device seems to require training though - perhaps you can use a Pattern and Pattern Grid to train a single recipe, and then place that written Pattern within a crafter?"
+				""
+				"If you need more slots for patterns in a specific machine, you can put two crafters back to back (facing the same direction) and they will pass through the auto-crafting mechanic to the crafters behind the primary one."
+			]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "230A005C9C7386FA"
+			tasks: [
+				{
+					id: "5C153C784B6D9972"
+					type: "item"
+					item: "refinedstorage:crafter"
+				}
+				{
+					id: "4AFCEC2342C85DB6"
+					type: "item"
+					item: "refinedstorage:pattern_grid"
+				}
+				{
+					id: "3580E3C63C963DC9"
+					type: "item"
+					item: "refinedstorage:pattern"
+				}
+			]
+			rewards: [{
+				id: "244258C080527E33"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			icon: "refinedstorage:purple_crafter_manager"
+			x: -0.85d
+			y: 7.225d
+			subtitle: "Remote Crafter Access"
+			description: ["As you grow tired of running around your base inserting, removing or updating patterns from your various crafters, you decide to look into some of the same abilities your Network itself uses to tranceive items as bytes. As you research, you discover a way to remotely access &oall&r of your crafters and with that, can now remotely manage your patterns!"]
+			dependencies: ["230A005C9C7386FA"]
+			size: 0.85d
+			id: "2D5E2E5DF410A14D"
+			tasks: [{
+				id: "65B334ABD894140C"
+				type: "item"
+				item: "refinedstorage:crafter_manager"
+			}]
+			rewards: [{
+				id: "7468DF9C8830D50D"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			title: "NBT nVME"
+			icon: "refinedstorage:disk_drive"
+			x: -1.5d
+			y: 4.5d
+			subtitle: "Storage has never been cheaper!"
+			description: [
+				"You've discovered that the controller will route your items around your network, but it won't actually &ostore&r any of your items."
+				""
+				"That's where the Drive and Disks come in. The Drive will store your disk in a way that your network can access (think of it as a drive controller)."
+				""
+				"Within it, you can put up to 8 drives of varying sizes within. The sizes (1k, 4k, etc.) represents how many items (regardless of stack size) it can store."
+				""
+				"You can have multiple Drives per network."
+			]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "792A623C9FC8B2AB"
+			tasks: [
+				{
+					id: "70EC0E23D1636FAD"
+					type: "item"
+					item: "refinedstorage:disk_drive"
+				}
+				{
+					id: "4F28217A71F80D59"
+					type: "item"
+					title: "Any Disk"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "refinedstorage:1k_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:4k_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:16k_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:64k_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:small_item_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:medium_item_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:large_item_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:larger_item_disk"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3BEAA20C3013E979"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "Like an External Hard Drive"
+			description: [
+				"As you begin looking for a solution to hook other storage interfaces (like Drawer Controllers or Black Hole Storage) to your network."
+				""
+				"You think you may have sorted out a priority and filtering system that will allow you to input and output from storage that &oisn't&r digital."
+			]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "2226C4F0642FC1DB"
+			tasks: [{
+				id: "33C72200061681F2"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+			rewards: [{
+				id: "30A83021201C7C31"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			icon: "refinedstorage:purple_crafting_monitor"
+			x: -2.975d
+			y: 5.95d
+			subtitle: "For the Curious"
+			description: [
+				"You find that staying in the dark while your Crafters work away is beginning to be unsettling, so perhaps you break open that black box and see what's inside?"
+				""
+				"As you consider such a notion, you decide that a monitor showing the existing crafting jobs and their statuses should do the job."
+			]
+			dependencies: ["230A005C9C7386FA"]
+			size: 0.85d
+			id: "45FF7472C3AC9E34"
+			tasks: [{
+				id: "1AB683FD0F5D0DA0"
+				type: "item"
+				item: "refinedstorage:crafting_monitor"
+			}]
+			rewards: [{
+				id: "44EC85D90F6F22BA"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			icon: "refinedstorage:purple_wireless_transmitter"
+			x: 1.5499999999999998d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "Items Over WiFi"
+			description: [
+				"You begin to theorize that there may be a way to transmit bytes over the air - perhaps the WiFi protocol was worth referencing, but you've ended up with your own protocol that actually works so that's nice!"
+				""
+				"Regardless, this transmitter should allow you remote access to your network in a pinch."
+			]
+			dependencies: ["54647DA171ED3BA1"]
+			id: "4E5682A4DA6AFE95"
+			tasks: [{
+				id: "38D28FD4C0A8F1A3"
+				type: "item"
+				item: "refinedstorage:wireless_transmitter"
+			}]
+			rewards: [{
+				id: "0EF2AE304DEA1F5A"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			icon: "refinedstorage:range_upgrade"
+			x: 2.55d
+			y: 7.225d
+			shape: "gear"
+			subtitle: "Never Worry about Range Again"
+			description: ["Through a significant amount of study and technological improvements, you've created a wideband network that can be connected to from up to 4000 blocks away. Nicely done, we will continue to keep an eye on your progress.."]
+			dependencies: ["4E5682A4DA6AFE95"]
+			size: 0.85d
+			optional: true
+			id: "286A0633128DD517"
+			tasks: [
+				{
+					id: "532B0C72E0144ABE"
+					type: "item"
+					item: "rebornstorage:advanced_wireless_transmitter"
+				}
+				{
+					id: "2AF3AC24BBB09E01"
+					type: "item"
+					item: "refinedstorage:range_upgrade"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "1192B423E9B6DFE4"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			x: 1.275d
+			y: 7.225d
+			subtitle: "Your Own PDA"
+			description: ["This works exactly as you might expect - just hook up a wireless transmitter, then go to your Controller and Shift+RClick the controller with your wireless terminal in hand, then profit from the wireless access!"]
+			dependencies: ["4E5682A4DA6AFE95"]
+			size: 0.85d
+			id: "016810175EB36A80"
+			tasks: [{
+				id: "1308AAF54AD50204"
+				type: "item"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+			rewards: [{
+				id: "4B32722C56C36EAF"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			x: 2.975d
+			y: 5.95d
+			subtitle: "There's an App for That.."
+			description: ["You discover that you can emulate the same functionality as many other grid types, such as the Fluid Grid and Crafting Monitor, but wirelessly!"]
+			dependencies: ["4E5682A4DA6AFE95"]
+			size: 0.85d
+			id: "0270396305411733"
+			tasks: [{
+				id: "5377BAFE2357FB94"
+				type: "item"
+				item: {
+					id: "rebornstorage:super_wireless_crafting_grid"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2D42F99A8F2BC602"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
+			}]
+		}
+		{
+			title: "Fluid Management"
+			icon: "rebornstorage:larger_fluid_disk_part"
+			x: 0.0d
+			y: 6.0d
+			shape: "octagon"
+			subtitle: "Too much honey? No problem!"
+			description: [
+				"As you've gotten accustomed to the concept of item [de]serialization, you decide to investigate the potential of doing the same for fluids. Because of their different composition, the fluid to byte conversion is incompatible with existing disks, but a new disk will allow you to still use your existing Disk Drive tech."
+				""
+				"Likewise, your existing grid cannot be re-used, and many management interfaces (namely the Importer, Exporter, Interface and External Storage) will need to be reconfigured to support Fluids."
+			]
+			dependencies: ["54647DA171ED3BA1"]
+			size: 1.15d
+			id: "151C42D852358457"
+			tasks: [
+				{
+					id: "7F08C4D78662B77D"
+					type: "item"
+					title: "Any Fluid Disk"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "refinedstorage:64k_fluid_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:256k_fluid_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:1024k_fluid_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:4096k_fluid_storage_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:small_fluid_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:medium_fluid_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:large_fluid_disk"
+									Count: 1b
+								}
+								{
+									id: "rebornstorage:larger_fluid_disk"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "77F9F72CE221CAD6"
+					type: "item"
+					item: "refinedstorage:fluid_grid"
+				}
+			]
+			rewards: [{
+				id: "5769CC6330082C76"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 24
 			}]
 		}
 	]

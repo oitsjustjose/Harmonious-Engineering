@@ -4,7 +4,7 @@
 	order_index: 1
 	filename: "the_harvest"
 	title: "The Dining Hall"
-	icon: "farmersdelight:cooking_pot"
+	icon: "farmersdelight:roast_chicken_block"
 	subtitle: ["Keep yourself full!"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

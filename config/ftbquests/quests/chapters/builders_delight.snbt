@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "builders_delight"
 	title: "Palettes Aplenty"
-	icon: "buildersdelight:oak_furniture_kit"
+	icon: "buildersdelight:iron_chisel"
 	subtitle: ["All About Building!"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

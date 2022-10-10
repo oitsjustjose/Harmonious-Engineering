@@ -1,0 +1,368 @@
+{
+	id: "250656886375E99F"
+	group: "1E070728CA22FA34"
+	order_index: 7
+	filename: "advanced_generation"
+	title: "High-Flux Generation"
+	icon: "kubejs:calorite_integral_components"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "Free-Form Flux Foundations"
+			description: [
+				"Welcome to the final chapter of your research - I hope you're ready to write a Thesis! Just kidding, we don't have a good publication program here."
+				""
+				"This segment of your research has 4 subsections where you will explore two Generators, and two structures that form fuels for the aforementioned two generators."
+				""
+				"Of note: all of these multiblock structures &odo not care&r about the shape of the structure. Place it in whatever orientation or shape you want, just make sure you have included the required modules."
+				""
+				"Also of note: As tasty as these higher tier integral components may look, they do &onot&r work in single-block machines or in any existing tools. They're only applicable for this incredibly high-tech machinery you discover in this chapter of research."
+			]
+			size: 1.25d
+			id: "07BFFC45B1175C61"
+			tasks: [{
+				id: "48A5062922F8DE3D"
+				type: "checkmark"
+				title: "Advanced Flux Generation"
+				icon: "kubejs:ostrum_integral_components"
+			}]
+			rewards: [{
+				id: "4B1CBEF27AB60A45"
+				type: "item"
+				item: "beyond_earth:moon_stone"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "Burning Steam"
+			icon: "advgenerators:steam_turbine_controller"
+			x: 0.0d
+			y: 2.0d
+			shape: "octagon"
+			subtitle: "Hot to the Touch!"
+			description: [
+				"You discover that after creating Steam in a Heat Exchanger, you can utilize this steam to spin up as many as &o50&r turbines. In addition to the turbines and controller, this module can also accept:"
+				""
+				"• 0-10 Power Capacitors (Additional Flux Buffer)"
+				"• 0-10 Control Modules (Controls the Turbines via Redstone)"
+				"• 0-10 Sensors (Outputs Redstone Based on Turbine State)"
+			]
+			hide_dependency_lines: false
+			dependencies: ["508D5C8253821C87"]
+			id: "07C817FB978C3AE3"
+			tasks: [
+				{
+					id: "66EBFF0D99D2AC6C"
+					type: "item"
+					item: "advgenerators:steam_turbine_controller"
+				}
+				{
+					id: "388C02A22C3AAA6B"
+					type: "item"
+					title: "Any Turbine (1-50)"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "advgenerators:turbine_tier1"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier2"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier3"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier4"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier5"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "69DB2B2F4E9DEE29"
+					type: "item"
+					item: "advgenerators:fluid_input"
+				}
+				{
+					id: "78779B53EB53A97A"
+					type: "item"
+					item: "advgenerators:fe_output"
+				}
+			]
+			rewards: [
+				{
+					id: "5DF149DB6190AB2C"
+					type: "item"
+					item: "beyond_earth:raw_ostrum"
+					count: 4
+				}
+				{
+					id: "4A6973B55D0EEC7A"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Steam Workshop"
+			icon: "advgenerators:exchanger_controller"
+			x: 2.0d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "An Obsidian Generator with Extra Steps"
+			description: [
+				"You realize that to run a Steam Turbine, you'll need to &ohave&r steam in the first place. Producing Steam seems to be done most efficiently using Heat Exchangers, where your heat source is Lava (going into one Fluid Intake Valve) and pumping Water (going into the other) to create steam."
+				""
+				"This process will harden your Lava into Obsidian, so you'll need a chest for the item output. Lastly, Fluid Outputs are necessary to output steam into a Steam Generator (or a buffer tank if you'd like)."
+				""
+				"Along with the 4 modules you've learned in this research entry, your Heat Exchanger can also accept:"
+				"• 0-10 Control Modules (Controls the Machine via Redstone)"
+				"• 0-10 Sensors (Outputs Redstone Based on Machine State)"
+			]
+			dependencies: ["07BFFC45B1175C61"]
+			id: "508D5C8253821C87"
+			tasks: [
+				{
+					id: "2726ABE2E46A6662"
+					type: "item"
+					item: "advgenerators:exchanger_controller"
+				}
+				{
+					id: "10FE45E3497AA248"
+					type: "item"
+					item: "advgenerators:item_output"
+				}
+				{
+					id: "7287BCDCF280E05A"
+					type: "item"
+					item: "advgenerators:fluid_input"
+					count: 2L
+				}
+				{
+					id: "36BE3F36B3163922"
+					type: "item"
+					item: "advgenerators:fluid_output_select"
+				}
+				{
+					id: "60F75E3519106CA0"
+					type: "item"
+					title: "Heat Exchanger (Up to 50)"
+					item: "advgenerators:heat_exchanger"
+				}
+			]
+			rewards: [
+				{
+					id: "5D986117F07398FC"
+					type: "item"
+					item: "beyond_earth:raw_ostrum"
+					count: 4
+				}
+				{
+					id: "77C1F2F86D77893C"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 16
+				}
+			]
+		}
+		{
+			icon: "advgenerators:syngas_controller"
+			x: 4.0d
+			y: 2.0d
+			shape: "circle"
+			subtitle: "Carboniferous Combustion"
+			description: [
+				"Creating Syngas (Synthetic Gasoline) is a rather complicated process of turning carbon into gasoline. To do this, you'll need to provide a steady flow of Steam and Water to your system."
+				""
+				"On top of that, you will no doubt need a significant amount of Carbon - this could be logs, planks, charcoals, even coal coke! Once you start producing Syngas, you can start burning it in a Gas Turbine."
+				""
+				"In addition to the modules you learned about in this research entry, you can also implement:"
+				"• 0-10 Control Modules (Controls the Machine via Redstone)"
+				"• 0-10 Sensors (Outputs Redstone Based on Machine State)"
+			]
+			dependencies: [
+				"508D5C8253821C87"
+				"61716C470E9C4924"
+			]
+			optional: true
+			id: "4C35AF780A8B5F09"
+			tasks: [
+				{
+					id: "7D9E245890AE0832"
+					type: "item"
+					item: "advgenerators:syngas_controller"
+				}
+				{
+					id: "48398C5905672804"
+					type: "item"
+					title: "Mixing Chamber (Up to 25)"
+					item: "advgenerators:mixing_chamber"
+				}
+				{
+					id: "2DDF50FD730B64AC"
+					type: "item"
+					title: "Heating Chamber (Up to 10)"
+					item: "advgenerators:heating_chamber"
+				}
+				{
+					id: "1C6B91A300F120CB"
+					type: "item"
+					item: "advgenerators:fluid_input"
+				}
+				{
+					id: "768249C686248356"
+					type: "item"
+					item: "advgenerators:fluid_output_select"
+				}
+				{
+					id: "62056ACE0C0C77CF"
+					type: "item"
+					item: "advgenerators:item_input"
+				}
+			]
+			rewards: [
+				{
+					id: "42F26434F848FAD4"
+					type: "item"
+					item: "beyond_earth:raw_ostrum"
+					count: 4
+				}
+				{
+					id: "05E97D08CF23CC84"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Gas-Fueled Turbines"
+			icon: "advgenerators:fuel_turbine_controller"
+			x: 1.875d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Most forms of fuel accepted™"
+			description: [
+				"In your studies around Generators and Dynamo, you've finally found what has to be the most efficient way to burn fuel. By burning combustible fluids, you can force turbines to spin using the heat differential, and harness the turbines to produce Flux."
+				""
+				"It turns out that not only is Biofuel considered combustible enough, but so is Refined Fuel and this new fuel called \"Syngas\".."
+				""
+				"Along with the modules you learned are required to get this machine up and running, you've also found a few other devices that are also compatible:"
+				"• 0-10 Power Capacitors (Additional Flux Buffer)"
+				"• 0-10 Control Modules (Controls the Turbines via Redstone)"
+				"• 0-10 Sensors (Outputs Redstone Based on Turbine State)"
+				"• 0-10 Fuel Tanks (extra liquid fuel buffer)"
+				"• 1 Fuel Air Mixer (Increases Fuel Efficiency)"
+				"• 1 Gas Mix Compressor (Requires Fuel Air Mixer, Increases Fuel Efficiency)"
+			]
+			dependencies: ["07BFFC45B1175C61"]
+			id: "61716C470E9C4924"
+			tasks: [
+				{
+					id: "043EDDA111E44038"
+					type: "item"
+					item: "advgenerators:fuel_turbine_controller"
+				}
+				{
+					id: "3BD4872011D5F531"
+					type: "item"
+					title: "Up to 50 of Any Turbine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "advgenerators:turbine_tier1"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier2"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier3"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier4"
+									Count: 1b
+								}
+								{
+									id: "advgenerators:turbine_tier5"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "39E6124341631D19"
+					type: "item"
+					item: "advgenerators:fluid_input"
+				}
+				{
+					id: "3C8EBBF5E6CEC5A1"
+					type: "item"
+					item: "advgenerators:fe_output"
+				}
+			]
+			rewards: [
+				{
+					id: "42977C98435BC9D7"
+					type: "item"
+					item: "beyond_earth:raw_ostrum"
+					count: 4
+				}
+				{
+					id: "74041E9BE1FDDF71"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Infinite Oil"
+			x: 3.875d
+			y: 0.0d
+			subtitle: "The Deepest Dig"
+			description: [
+				"As you research the dependencies required to run a Gas Turbine for extended periods of time, you stumble across the ability to burn Refined Fuel."
+				""
+				"While investigating how Crude Oil is formed and used, you remember previous research you did on infinitely harvesting Oil using a Fluid Laser Miner. Perhaps this will be enough to satiate your Gas Turbine?"
+			]
+			dependencies: ["61716C470E9C4924"]
+			optional: true
+			id: "1B944C4F8FDFBC7B"
+			tasks: [{
+				id: "41200761EDEEBAA4"
+				type: "item"
+				item: "industrialforegoing:laser_lens15"
+			}]
+			rewards: [{
+				id: "61AEA2F094D830F1"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
+		}
+	]
+}

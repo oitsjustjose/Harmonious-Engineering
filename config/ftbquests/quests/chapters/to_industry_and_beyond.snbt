@@ -15,7 +15,7 @@
 		{
 			title: "Pitiful Machinery"
 			x: 0.0d
-			y: 0.0d
+			y: 1.5d
 			shape: "diamond"
 			subtitle: "Don't be so sad!"
 			description: [

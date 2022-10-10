@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "Vanilla+"
-			icon: "minecraft:grass_block"
+			icon: "minecraft:clay_ball"
 			x: -3.5d
 			y: -2.5d
 			shape: "hexagon"
@@ -123,7 +123,7 @@
 		}
 		{
 			title: "Thermally Expanding"
-			icon: "thermal:machine_frame"
+			icon: "thermal:upgrade_augment_3"
 			x: 6.5d
 			y: -2.5d
 			shape: "hexagon"
@@ -172,6 +172,43 @@
 				type: "item"
 				item: "industrialforegoing:machine_frame_pity"
 			}]
+		}
+		{
+			title: "High-Flux Generation"
+			icon: "kubejs:calorite_integral_components"
+			x: 10.5d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "Enough Flux for a Lifetime"
+			dependencies: ["4C2EF6EC5CCF37FC"]
+			hide: true
+			id: "00384765EA9C67A4"
+			tasks: [
+				{
+					id: "600080EA589002C9"
+					type: "item"
+					item: "beyond_earth:moon_stone"
+				}
+				{
+					id: "03BA3BA6090E8561"
+					type: "item"
+					item: "beyond_earth:ice_shard"
+				}
+				{
+					id: "318631E5B7E2BF1D"
+					type: "item"
+					item: "beyond_earth:ostrum_ingot"
+				}
+				{
+					id: "4935160AB3A0AA7E"
+					type: "item"
+					item: {
+						id: "beyond_earth:rocket_t4"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
 		}
 	]
 }

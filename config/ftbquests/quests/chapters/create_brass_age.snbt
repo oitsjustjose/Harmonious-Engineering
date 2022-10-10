@@ -233,7 +233,6 @@
 			rewards: [{
 				id: "7BE033E6E61E6D75"
 				type: "item"
-				auto: "invisible"
 				item: "create:experience_nugget"
 				count: 16
 			}]
