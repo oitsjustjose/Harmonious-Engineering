@@ -51,6 +51,7 @@ const items = [
   'beyond_earth:iron_plate',
   'beyond_earth:iron_stick',
   'beyond_earth:oil_bucket',
+  'beyond_earth:oil_bucket',
   'beyond_earth:solar_panel',
   'beyond_earth:steel_block',
   'beyond_earth:steel_ingot',
@@ -88,6 +89,7 @@ const items = [
   'create:iron_sheet',
   'create:unprocessed_obsidian_sheet',
   'createaddition:accumulator',
+  'createaddition:bioethanol_bucket',
   'createaddition:brass_rod',
   'createaddition:capacitor',
   'createaddition:connector',
@@ -102,6 +104,7 @@ const items = [
   'createaddition:iron_wire',
   'createaddition:redstone_relay',
   'createaddition:rolling_mill',
+  'createaddition:seed_oil_bucket',
   'createaddition:spool',
   'createaddition:tesla_coil',
   'createaddition:zinc_sheet',
@@ -294,6 +297,9 @@ const items = [
   'minecraft:sculk_sensor',
   'moreminecarts:silica_steel_mix',
   'pipez:gas_pipe',
+  'pneumaticcraft:biodiesel_bucket',
+  'pneumaticcraft:ethanol_bucket',
+  'pneumaticcraft:vegetable_oil_bucket',
   'refinedstorage:black_controller',
   'refinedstorage:black_crafter_manager',
   'refinedstorage:black_crafter',
@@ -551,11 +557,13 @@ const items = [
   'supplementaries:bomb_blue_projectile',
   'supplementaries:bomb_projectile',
   'supplementaries:bomb_spiky_projectile',
-  'thermal:apatite',
   'thermal:apatite_block',
   'thermal:apatite_dust',
+  'thermal:apatite',
   'thermal:beetroot_block',
   'thermal:carrot_block',
+  'thermal:creosote_bucket',
+  'thermal:crude_oil_bucket',
   'thermal:deepslate_ruby_ore',
   'thermal:deepslate_sapphire_ore',
   'thermal:drill_head',
@@ -767,6 +775,8 @@ onEvent('jei.hide.fluids', event => {
     'beyond_earth:flowing_oil',
     'beyond_earth:fuel',
     'beyond_earth:oil',
+    'createaddition:bioethanol',
+    'createaddition:seed_oil',
     'mekanism:brine',
     'mekanism:chlorine',
     'mekanism:ethene',
@@ -803,6 +813,11 @@ onEvent('jei.hide.fluids', event => {
     'mekanism:superheated_sodium',
     'mekanism:uranium_hexafluoride',
     'mekanism:uranium_oxide',
+    'pneumaticcraft:biodiesel',
+    'pneumaticcraft:ethanol',
+    'pneumaticcraft:vegetable_oil',
+    'thermal:creosote',
+    'thermal:crude_oil',
   ];
 
   fluids.forEach(fluid => {
@@ -814,6 +829,7 @@ onEvent('jei.hide.fluids', event => {
   });
 });
 
+//  TODO: Re-enable when fixed
 // onEvent('jei.hide.custom', event => {
 //   const MekanismJEI = java('mekanism.client.jei.MekanismJEI');
 

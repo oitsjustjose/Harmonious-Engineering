@@ -11,7 +11,7 @@
 		{
 			title: "Factory Ready"
 			x: 0.0d
-			y: 0.0d
+			y: 0.75d
 			shape: "diamond"
 			subtitle: "Like a True Engineer"
 			description: ["Our research indicates that you could use a hammer - perhaps one of Andesite Alloy will suffice?"]
@@ -40,7 +40,7 @@
 			title: "Coke Ovens"
 			icon: "immersiveengineering:coke_oven"
 			x: 0.0d
-			y: 1.5d
+			y: 2.5d
 			shape: "hexagon"
 			subtitle: "Extracting Impurities from Coal"
 			description: [
@@ -78,7 +78,7 @@
 			title: "Blasting"
 			icon: "immersiveengineering:blast_furnace"
 			x: 0.0d
-			y: 3.0d
+			y: 4.0d
 			shape: "hexagon"
 			subtitle: "Imbuing Iron with Carbon"
 			description: ["You find that the high amounts of heat that Coked Coal produces can be used to infuse Iron with Carbon to produce Steel."]
@@ -111,8 +111,8 @@
 		{
 			title: "Alloys via Arc"
 			icon: "immersiveengineering:arc_furnace"
-			x: 2.0d
-			y: 4.5d
+			x: 0.0d
+			y: 7.5d
 			shape: "octagon"
 			subtitle: "Brassification"
 			description: [
@@ -120,7 +120,10 @@
 				""
 				"Perhaps you can combine these molten metals to form some new alloys which you haven't yet explored?"
 			]
-			dependencies: ["686B8A3E779BCF3D"]
+			dependencies: [
+				"76695500DD40840A"
+				"4B3F996C7BABD3D2"
+			]
 			size: 1.25d
 			id: "4E9BFC9573DF2929"
 			tasks: [
@@ -157,7 +160,7 @@
 			title: "Low Voltage"
 			icon: "immersiveengineering:wirecoil_copper"
 			x: 0.0d
-			y: 4.5d
+			y: 5.5d
 			subtitle: "Crudely transfer of electricity"
 			description: [
 				"By utilizing a dynamo, you've found a way to hrness rotational energy through charging a copper coil."
@@ -214,8 +217,8 @@
 		{
 			title: "Viable Crushing"
 			icon: "immersiveengineering:crusher"
-			x: -2.0d
-			y: 4.5d
+			x: 2.0d
+			y: 6.5d
 			shape: "octagon"
 			subtitle: "Optimal Ore Processing"
 			description: [
@@ -379,7 +382,7 @@
 		{
 			title: "Automated Hydroponics"
 			x: -2.0d
-			y: 6.0d
+			y: 4.5d
 			subtitle: "Cloches are alsy very pretty!"
 			description: [
 				"In your research, you have found a way to fix together a mini greenhouse of sorts. Such a structure capable of emitting light, hydrating and fertilizing the soil, this cloche you've fashioned together is even able to automatically harvest these crops!"
@@ -404,8 +407,9 @@
 		{
 			title: "Metal Pressing"
 			icon: "immersiveengineering:metal_press"
-			x: 2.0d
-			y: 6.0d
+			x: -2.0d
+			y: 6.5d
+			shape: "octagon"
 			subtitle: "Good for more than plates!"
 			description: [
 				"You're finding that there are certain materials, such as gears and rods, that you simply cannot craft efficiently enough using rotational energy alone."
@@ -413,6 +417,7 @@
 				"This metal press is an easily automated device capable of quickly processing several different types of metals and gems into gears, plates, rods and more."
 			]
 			dependencies: ["686B8A3E779BCF3D"]
+			size: 1.25d
 			id: "4B3F996C7BABD3D2"
 			tasks: [
 				{
@@ -446,8 +451,8 @@
 		}
 		{
 			title: "Immersive Arsenal"
-			x: 0.0d
-			y: 7.0d
+			x: 2.0d
+			y: 4.5d
 			subtitle: "Steampunk enough for you?"
 			description: [
 				"As a saavy engineer, you may be finding the process of repairing and your gear to be a tiresome process."
@@ -466,61 +471,61 @@
 					tag: {
 						items: [
 							{
-								tag: {
-									bullets: {
-										Items: [ ]
-									}
-								}
-								Count: 1b
+								id: "immersiveengineering:revolver"
 								ForgeCaps: {
 									Parent: {
 										Size: 21
 										Items: [ ]
 									}
 								}
-								id: "immersiveengineering:revolver"
-							}
-							{
-								tag: { }
 								Count: 1b
-								ForgeCaps: {
-									Parent: {
-										Size: 5
+								tag: {
+									bullets: {
 										Items: [ ]
 									}
 								}
+							}
+							{
 								id: "immersiveengineering:buzzsaw"
-							}
-							{
-								tag: { }
-								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
 										Items: [ ]
 									}
 								}
+								Count: 1b
+								tag: { }
+							}
+							{
 								id: "immersiveengineering:drill"
+								ForgeCaps: {
+									Parent: {
+										Size: 5
+										Items: [ ]
+									}
+								}
+								Count: 1b
+								tag: { }
 							}
 							{
 								id: "immersiveengineering:railgun"
-								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 3
 										Items: [ ]
 									}
 								}
+								Count: 1b
 							}
 							{
 								id: "immersiveengineering:chemthrower"
-								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 4
 										Items: [ ]
 									}
 								}
+								Count: 1b
 							}
 						]
 					}

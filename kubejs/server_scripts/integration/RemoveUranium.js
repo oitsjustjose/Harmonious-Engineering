@@ -17,6 +17,11 @@ onEvent('recipes', event => {
     event.remove({input: x});
     event.remove({output: x});
   });
+
+  event.remove({input: '#forge:raw_materials/uranium'});
+  event.remove({input: '#forge:ingots/uranium'});
+  event.remove({id: 'immersiveengineering:crusher/raw_ore_uranium'});
+  event.remove({id: 'immersiveengineering:crusher/ingot_uranium'});
 });
 
 onEvent('item.tags', event => {

@@ -18,7 +18,7 @@ onEvent('recipes', event => {
     Item.of('architects_palette:nether_brass_ingot')
   );
 
-  // Re-add precision mech recipe because it was removed by its inclusion in global.duplicateResources
+  // Re-add precision mech recipe because it was removed by its inclusion in global.duplicateItemResources
   const icpm = Item.of('create:incomplete_precision_mechanism');
   event.recipes.create
     .sequenced_assembly([Item.of('create:precision_mechanism')], '#forge:plates/gold', [

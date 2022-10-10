@@ -67,6 +67,16 @@ onEvent('recipes', event => {
       'advgenerators:fuel_tank',
       'advgenerators:fe_output',
     ].forEach(x => event.remove({output: x}));
+
+    /* Remove fuel recipes */
+    event.remove({id: 'advgenerators:fuel/mekanism_ethene'});
+    event.remove({id: 'advgenerators:fuel/mekanism_hydrogen'});
+    event.remove({id: 'advgenerators:fuel/syngas'});
+    event.custom({
+      type: 'advgenerators:liquid_fuel',
+      fuel: {fluid: 'advgenerators:syngas'},
+      fePerMb: 2500,
+    });
   };
 
   const add = () => {

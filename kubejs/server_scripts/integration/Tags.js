@@ -2,7 +2,7 @@
 
 onEvent('item.tags', event => {
   const unifyMaterials = () => {
-    global.duplicateResources.forEach(x => {
+    global.duplicateItemResources.forEach(x => {
       const tag = x.tag;
       const item = x.item;
       const rootTag = tag.indexOf('/') >= 0 ? tag.split('/')[0] : tag;

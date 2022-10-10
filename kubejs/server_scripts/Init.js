@@ -4,7 +4,7 @@ settings.logInvalidRecipeHandlers = false;
 
 global.validateInput = x => (Item.of(x) === Item.empty ? 'minecraft:air' : tmp);
 
-global.duplicateResources = [
+global.duplicateItemResources = [
   {tag: 'forge:coal_coke', item: 'immersiveengineering:coal_coke'},
   {tag: 'forge:dusts/constantan', item: 'immersiveengineering:dust_constantan'},
   {tag: 'forge:dusts/copper', item: 'immersiveengineering:dust_copper'},

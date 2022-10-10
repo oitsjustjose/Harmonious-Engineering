@@ -2,6 +2,41 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.11
+
+## Added:
+
+- Advanced Generators
+- `[Library]` BDLib
+- `[Library]` ScalableCatsForce
+
+### Advanced Generators
+
+Advanced Generators has been placed as post-Space mod locked behind at least one trip to the Moon and Mars. I've also re-textured the entire mod to fit in with the post-Space theme and you should find it fits your base better. A new quest chapter has been created centered around upping your power generation to meet and exceed the needs of your Mekasuit and Infinity Gear, since AdvGen's wiki is very early-2010s
+
+## Changed
+
+- Reorganized a couple of quests in the Fluxical Evolution chapter
+- Organized and consolidated redundant fluids. Please check your setups and make sure that any storage tanks / buffers you have are cleared or will end up adjusting automatically - they should eventually work fine because I did **not** remove any recipes that *take* the now hidden fluids, but you should no longer be producing these fluids going forwards. TL;DR: once your fluid buffers empty with the old fluids (which should happen automatically), new fluids may take their place.
+
+## Updated:
+
+- Configured
+- Dave's Building Extended
+- Framed Blocks
+- KubeJS
+- Neko's Enchanted Books
+- Stack Refill
+- Supplementaries
+- Thermal Mods
+- Xaero's World Map
+
+## Fixed:
+
+- Fixed boars, elephants, giraffes, hippos, lions, rhinos, vultures and zebras *technically* being able to spawn in space... 🤔
+- Doesn't apply to most users, but Andesite Alloy's recipe now accepts any `#forge:ingots/zinc` rather than `create:zinc_ingot`
+- Many fluids still showing up in JEI - should be much better now, still haven't been able to get Gasses/Slurries/Pigments/Infuse Types to work due to a bug in KubeJS
+
 # 3.1.10
 
 ## Added:
