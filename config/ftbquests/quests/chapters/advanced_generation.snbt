@@ -22,6 +22,8 @@
 				""
 				"Also of note: As tasty as these higher tier integral components may look, they do &onot&r work in single-block machines or in any existing tools. They're only applicable for this incredibly high-tech machinery you discover in this chapter of research."
 			]
+			dependencies: ["00384765EA9C67A4"]
+			hide: true
 			size: 1.25d
 			id: "07BFFC45B1175C61"
 			tasks: [{

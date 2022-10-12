@@ -2,6 +2,19 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.12
+
+## Updated:
+
+- Dave's Building Extended
+- HT's TreeChop
+- ModelFix
+- Rubidium
+
+## Fixed:
+
+- Advanced Generation quest not being hidden properly
+
 # 3.1.11
 
 ## Added:
