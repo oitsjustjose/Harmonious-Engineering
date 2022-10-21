@@ -15,6 +15,9 @@ It has come to my attention that the Pipez mod has some pretty outstanding perfo
 ## Disabled:
 - Pipez (See Above)
 
+## Changed:
+- Renamed Desh/Ostrum/Calorite "Integral Components" to "Component Kits" to reduce confusion. I just like the integral comp texture too much to let go of it :\
+
 ## Fixed:
 
 - Ore Blocks having two recipes in the IE Crusher
