@@ -135,4 +135,16 @@ onEvent('item.tooltip', event => {
     ],
     '§8Too Powerful for Standard Flux Devices§r'
   );
+
+  ['pipez:item_pipe', 'pipez:fluid_pipe', 'pipez:energy_pipe', 'pipez:universal_pipe'].forEach(
+    x => {
+      event.addAdvanced(x, (item, adv, txt) => {
+        if (event.shift) {
+          txt.add('§cUse at your own risk, these may cause lag!');
+        } else {
+          txt.add('§8[Press Shift]§r');
+        }
+      });
+    }
+  );
 });
