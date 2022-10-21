@@ -15,6 +15,7 @@ const items = [
   '/industrialforegoing:infinity_saw/',
   '/industrialforegoing:infinity_trident/',
   '/itemfilters:*/',
+  '/pipez:*/',
   'advgenerators:advanced_pressure_valve',
   'advgenerators:capacitor_kit_tier2',
   'advgenerators:capacitor_kit_tier3',
@@ -828,105 +829,6 @@ onEvent('jei.hide.fluids', event => {
     }
   });
 });
-
-//  TODO: Re-enable when fixed
-// onEvent('jei.hide.custom', event => {
-//   const MekanismJEI = java('mekanism.client.jei.MekanismJEI');
-
-//   const gasses = event.get(MekanismJEI.TYPE_GAS);
-//   console.log(JSON.stringify(gasses));
-//   const infusion = event.get(MekanismJEI.TYPE_INFUSION);
-//   console.log(JSON.stringify(infusion));
-//   const pigments = event.get(MekanismJEI.TYPE_PIGMENT);
-//   console.log(JSON.stringify(pigments));
-//   const slurries = event.get(MekanismJEI.TYPE_SLURRY);
-//   console.log(JSON.stringify(slurries));
-
-//   gasses.hide()
-
-// [
-//   'mekanism:antimatter',
-//   'mekanism:brine',
-//   'mekanism:chlorine',
-//   'mekanism:empty',
-//   'mekanism:ethene',
-//   'mekanism:fissile_fuel',
-//   'mekanism:hydrofluoric_acid',
-//   'mekanism:hydrogen_chloride',
-//   'mekanism:hydrogen',
-//   'mekanism:lithium',
-//   'mekanism:nuclear_waste',
-//   'mekanism:osmium',
-//   'mekanism:oxygen',
-//   'mekanism:plutonium',
-//   'mekanism:polonium',
-//   'mekanism:sodium',
-//   'mekanism:spent_nuclear_waste',
-//   'mekanism:steam',
-//   'mekanism:sulfur_dioxide',
-//   'mekanism:sulfur_trioxide',
-//   'mekanism:sulfuric_acid',
-//   'mekanism:superheated_sodium',
-//   'mekanism:uranium_hexafluoride',
-//   'mekanism:uranium_oxide',
-//   'mekanism:water_vapor',
-// ].forEach(x => {
-//   console.log(x);
-//   gasses.hide(x);
-// });
-
-// [
-//   'mekanism:aqua',
-//   'mekanism:black',
-//   'mekanism:blue',
-//   'mekanism:brown',
-//   'mekanism:cyan',
-//   'mekanism:dark_red',
-//   'mekanism:empty',
-//   'mekanism:gray',
-//   'mekanism:green',
-//   'mekanism:light_blue',
-//   'mekanism:light_gray',
-//   'mekanism:lime',
-//   'mekanism:magenta',
-//   'mekanism:orange',
-//   'mekanism:pink',
-//   'mekanism:purple',
-//   'mekanism:red',
-//   'mekanism:white',
-//   'mekanism:yellow',
-// ].forEach(x => pigments.hide(x));
-
-// [
-//   'mekanism:clean_copper',
-//   'mekanism:clean_gold',
-//   'mekanism:clean_iron',
-//   'mekanism:clean_lead',
-//   'mekanism:clean_osmium',
-//   'mekanism:clean_tin',
-//   'mekanism:clean_uranium',
-//   'mekanism:dirty_copper',
-//   'mekanism:dirty_gold',
-//   'mekanism:dirty_iron',
-//   'mekanism:dirty_lead',
-//   'mekanism:dirty_osmium',
-//   'mekanism:dirty_tin',
-//   'mekanism:dirty_uranium',
-//   'mekanism:empty',
-// ].forEach(x => slurries.hide(x));
-
-// [
-//   'mekanism:bio',
-//   'mekanism:carbon',
-//   'mekanism:diamond',
-//   'mekanism:empty',
-//   'mekanism:fungi',
-//   'mekanism:gold',
-//   'mekanism:redstone',
-//   'mekanism:refined_obsidian',
-//   'mekanism:tin',
-// ].forEach(x => infusion.hide(x));
-// });
 
 onEvent('jei.add.items', event => {
   [
