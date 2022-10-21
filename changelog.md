@@ -2,6 +2,26 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.13
+
+## ⚠️ATTENTION⚠️
+
+It has come to my attention that the Pipez mod has some pretty outstanding performance issues (even though it's designed for performance). Since this pack (and many peoples worlds) are pretty old, I won't be doing anything with the mod as far as removing it. That said, I've included Refined Pipes, implemented custom textures & recipes, and even a conversion recipe from Pipez to Refined Pipes.
+
+## Added:
+- Refined Pipes
+- [RECIPE] use for IE Circuit Boards to make Empty PCBs
+
+## Disabled:
+- Pipez (See Above)
+
+## Fixed:
+
+- Ore Blocks having two recipes in the IE Crusher
+- Mekanism Things showing up that shouldn't be in JEI
+- Arc Furnace not being able to smelt Beyond Earth dusts
+
+
 # 3.1.12
 
 ## Updated:

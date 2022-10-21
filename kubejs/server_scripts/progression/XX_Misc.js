@@ -130,19 +130,19 @@ onEvent('recipes', event => {
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:item"}}'),
       Item.of('entangled:block'),
-      Item.of('pipez:item_pipe')
+      Item.of('refinedpipes:basic_item_pipe')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:fluid"}}'),
       Item.of('entangled:block'),
-      Item.of('pipez:fluid_pipe')
+      Item.of('refinedpipes:basic_fluid_pipe')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:energy"}}'),
       Item.of('entangled:block'),
-      Item.of('pipez:energy_pipe')
+      Item.of('refinedpipes:basic_energy_pipe')
     );
 
     CustomRecipeHandler.automatableSmithing(
@@ -294,11 +294,25 @@ onEvent('recipes', event => {
   };
 
   const mcjty = () => {
-    event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', 'pipez:universal_pipe');
+    event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', [
+      'refinedpipes:advanced_energy_pipe',
+      'refinedpipes:advanced_fluid_pipe',
+      'refinedpipes:advanced_item_pipe',
+      'refinedpipes:basic_energy_pipe',
+      'refinedpipes:basic_fluid_pipe',
+      'refinedpipes:basic_item_pipe',
+      'refinedpipes:elite_energy_pipe',
+      'refinedpipes:elite_fluid_pipe',
+      'refinedpipes:improved_energy_pipe',
+      'refinedpipes:improved_fluid_pipe',
+      'refinedpipes:improved_item_pipe',
+      'refinedpipes:ultimate_energy_pipe',
+      'refinedpipes:ultimate_fluid_pipe',
+    ]);
     event.replaceInput(
       {output: '#xnet:connectors'},
       'minecraft:gold_ingot',
-      'pipez:universal_pipe'
+      'refinedpipes:advanced_extractor_attachment'
     );
     event.remove({output: 'rftoolsbase:crafting_card'});
     event.remove({output: 'rftoolsbase:dimensionalshard'});
@@ -382,30 +396,6 @@ onEvent('recipes', event => {
       speed: 0.1,
       air_use_multiplier: 10.0,
       exothermic: false,
-    });
-  };
-
-  const pipez = () => {
-    event.remove({output: 'pipez:item_pipe'});
-    event.remove({output: 'pipez:fluid_pipe'});
-    event.remove({output: 'pipez:energy_pipe'});
-
-    event.shaped('24x pipez:item_pipe', ['PPP', 'GUG', 'PPP'], {
-      U: 'prettypipes:low_extraction_module',
-      P: 'prettypipes:pipe',
-      G: '#forge:glass/yellow',
-    });
-
-    event.shaped('24x pipez:fluid_pipe', ['PPP', 'GUG', 'PPP'], {
-      U: 'create:mechanical_pump',
-      P: 'create:fluid_pipe',
-      G: '#forge:glass/light_blue',
-    });
-
-    event.shaped('24x pipez:energy_pipe', ['PPP', 'GUG', 'PPP'], {
-      U: 'immersiveengineering:connector_lv',
-      P: 'immersiveengineering:wirecoil_copper',
-      G: '#forge:glass/red',
     });
   };
 
@@ -546,7 +536,6 @@ onEvent('recipes', event => {
   ieSheetmetal();
   mcjty();
   moreMinecarts();
-  pipez();
   recycling();
   refinedStorage();
   routers();

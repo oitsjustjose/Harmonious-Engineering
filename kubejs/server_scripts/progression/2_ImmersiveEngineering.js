@@ -145,4 +145,11 @@ onEvent('recipes', event => {
       });
     })
   );
+
+  // Recipe for Circuit Backplane -> Empty PCB
+  event.shapeless('pneumaticcraft:empty_pcb', [
+    '#forge:nuggets/gold',
+    'immersiveengineering:circuit_board',
+    '#forge:nuggets/gold',
+  ]);
 });

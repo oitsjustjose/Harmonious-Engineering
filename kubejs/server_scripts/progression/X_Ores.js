@@ -31,6 +31,7 @@ onEvent('recipes', event => {
         event.remove({id: `thermal:machines/smelter/smelter_raw_${ore.resourceName}`});
         event.remove({id: `immersiveengineering:crusher/raw_block_${ore.resourceName}`});
         event.remove({id: `immersiveengineering:crusher/raw_ore_${ore.resourceName}`});
+        event.remove({id: `immersiveengineering:crusher/ore_${ore.resourceName}`});
         event.remove({id: `immersiveengineering:arcfurnace/raw_block_${ore.resourceName}`});
         event.remove({
           input: `#forge:storage_blocks/raw_${ore.resourceName}`,
@@ -97,6 +98,20 @@ onEvent('recipes', event => {
           event.recipes.thermal.pulverizer(Item.of(dust).withChance(3.0), deepslateOre);
         }
       });
+
+    // Space Ores being weird in the arc furnace
+    event.recipes.immersiveengineering.arc_furnace(
+      Item.of('beyond_earth:desh_ingot'),
+      Item.of('kubejs:desh_dust')
+    );
+    event.recipes.immersiveengineering.arc_furnace(
+      Item.of('beyond_earth:ostrum_ingot'),
+      Item.of('kubejs:ostrum_dust')
+    );
+    event.recipes.immersiveengineering.arc_furnace(
+      Item.of('beyond_earth:calorite_ingot'),
+      Item.of('kubejs:calorite_dust')
+    );
   };
 
   remove();

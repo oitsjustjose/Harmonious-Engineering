@@ -182,7 +182,13 @@ onEvent('recipes', event => {
       M: 'beyond_earth:moon_stone',
       C: 'beyond_earth:compressed_desh',
       F: 'thermal:energy_cell_frame',
-      P: 'pipez:energy_pipe',
+      P: [
+        'refinedpipes:basic_energy_pipe',
+        'refinedpipes:improved_energy_pipe',
+        'refinedpipes:advanced_energy_pipe',
+        'refinedpipes:elite_energy_pipe',
+        'refinedpipes:ultimate_energy_pipe',
+      ],
     });
   };
 
