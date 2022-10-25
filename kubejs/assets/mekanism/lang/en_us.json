@@ -1,7 +1,6 @@
 {
   "block.mekanism.advanced_bin": "Improved Bin",
   "block.mekanism.basic_bin": "Basic Bin",
-  "block.mekanism.elite_bin": "Advanced Bin",
   "block.mekanism.ultimate_bin": "Vacuous Bin",
   "description.mekanism.bin": "A block used to store large quantities of a single type of item."
 }

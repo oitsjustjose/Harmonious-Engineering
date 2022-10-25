@@ -112,7 +112,7 @@
 	#Induction
 	[tier.induction]
 		#Maximum number of Joules Basic induction cells can store.
-		basicStorage = "8000000000"
+		basicStorage = "12000000"
 		#Maximum number of Joules Advanced induction cells can store.
 		advancedStorage = "64000000000"
 		#Maximum number of Joules Elite induction cells can store.

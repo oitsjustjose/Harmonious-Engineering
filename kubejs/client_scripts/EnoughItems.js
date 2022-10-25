@@ -5,7 +5,7 @@ const items = [
   '/expandedstorage:*_present/',
   '/libraryferret:*/',
   '/lootr:*/',
-  '/mekanism:(?!.*_bin)(?!meka.*)(?!modification_station.*)(?!module_.*).*/',
+  '/mekanism:(?!.*_bin)(?!meka.*)(?!modification_station.*)(?!module_.*)(?!.*induction.*)(?!configurator).*/',
   '/.*:.*_spawn_egg/',
   '/industrialforegoing:infinity_backpack/',
   '/industrialforegoing:infinity_drill/',

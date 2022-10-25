@@ -1,118 +1,189 @@
-const MekanismModuleRecipes = CustomRecipeHandler => {
-  [
-    {
-      items: [Item.of('pneumaticcraft:jumping_upgrade_4')],
-      output: Item.of('mekanism:module_hydraulic_propulsion_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:magnet_upgrade')],
-      output: Item.of('mekanism:module_magnetic_attraction_unit'),
-    },
-    {
-      items: [
-        Item.of('blue_ice'),
-        Item.of('thermal:ice_grenade'),
-        Item.of('thermal:ice_charge'),
-        Item.of('blue_ice'),
-      ],
-      output: Item.of('mekanism:module_frost_walker_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:night_vision_upgrade')],
-      output: Item.of('mekanism:module_vision_enhancement_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:speed_upgrade')],
-      output: Item.of('mekanism:module_excavation_escalation_unit'),
-    },
-    {
-      items: [Item.of('minecraft:diamond_sword'), Item.of('minecraft:diamond_sword')],
-      output: Item.of('mekanism:module_attack_amplification_unit'),
-    },
-    {
-      items: [Item.of('minecraft:diamond_hoe'), Item.of('minecraft:diamond_hoe')],
-      output: Item.of('mekanism:module_farming_unit'),
-    },
-    {
-      items: [Item.of('minecraft:shears')],
-      output: Item.of('mekanism:module_shearing_unit'),
-    },
-    {
-      items: [
-        Item.of('infernalexp:glowsilk'),
-        Item.of('refinedstorage:silk_touch_upgrade'),
-        Item.of('infernalexp:glowsilk'),
-      ],
-      output: Item.of('mekanism:module_silk_touch_unit'),
-    },
-    {
-      items: [
-        Item.of('minecraft:lapis_block'),
-        Item.of('refinedstorage:fortune_3_upgrade'),
-        Item.of('minecraft:lapis_block'),
-      ],
-      output: Item.of('mekanism:module_fortune_unit'),
-    },
-    {
-      items: [
-        Item.of('minecraft:tnt'),
-        Item.of('minecraft:tnt'),
-        Item.of('minecraft:tnt'),
-        Item.of('thermal:ender_tnt'),
-        Item.of('thermal:ender_tnt'),
-        Item.of('thermal:ender_tnt'),
-        Item.of('thermal:ender_tnt'),
-      ],
-      output: Item.of('mekanism:module_blasting_unit'),
-    },
-    {
-      items: [Item.of('tempad:tempad')],
-      output: Item.of('mekanism:module_teleportation_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:scuba_upgrade')],
-      output: Item.of('mekanism:module_electrolytic_breathing_unit'),
-    },
-    {
-      items: [Item.of('thermal:energy_cell')],
-      output: Item.of('mekanism:module_energy_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:stomp_upgrade')],
-      output: Item.of('mekanism:module_gyroscopic_stabilization_unit'),
-    },
-    {
-      items: [
-        Item.of('pneumaticcraft:speed_upgrade'),
-        Item.of('pneumaticcraft:speed_upgrade'),
-        Item.of('pneumaticcraft:speed_upgrade'),
-      ],
-      output: Item.of('mekanism:module_locomotive_boosting_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:flippers_upgrade')],
-      output: Item.of('mekanism:module_hydrostatic_repulsor_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:jet_boots_upgrade_3')],
-      output: Item.of('mekanism:module_jetpack_unit'),
-    },
-    {
-      items: [Item.of('pneumaticcraft:elytra_upgrade')],
-      output: Item.of('mekanism:module_elytra_unit'),
-    },
-  ].forEach(x => {
-    CustomRecipeHandler.dissolution(
-      x.output,
-      x.items.concat([Item.of('mekanism:module_base')]),
-      Fluid.of('industrialforegoing:pink_slime', 500)
-    );
-  });
-};
-
 onEvent('recipes', event => {
   // const CustomRecipeHandler = global.recipes(event);
   const CustomRecipeHandler = global.recipes(event);
+
+  const MekanismModuleRecipes = () => {
+    [
+      {
+        items: [Item.of('pneumaticcraft:jumping_upgrade_4')],
+        output: Item.of('mekanism:module_hydraulic_propulsion_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:magnet_upgrade')],
+        output: Item.of('mekanism:module_magnetic_attraction_unit'),
+      },
+      {
+        items: [
+          Item.of('blue_ice'),
+          Item.of('thermal:ice_grenade'),
+          Item.of('thermal:ice_charge'),
+          Item.of('blue_ice'),
+        ],
+        output: Item.of('mekanism:module_frost_walker_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:night_vision_upgrade')],
+        output: Item.of('mekanism:module_vision_enhancement_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:speed_upgrade')],
+        output: Item.of('mekanism:module_excavation_escalation_unit'),
+      },
+      {
+        items: [Item.of('minecraft:diamond_sword'), Item.of('minecraft:diamond_sword')],
+        output: Item.of('mekanism:module_attack_amplification_unit'),
+      },
+      {
+        items: [Item.of('minecraft:diamond_hoe'), Item.of('minecraft:diamond_hoe')],
+        output: Item.of('mekanism:module_farming_unit'),
+      },
+      {
+        items: [Item.of('minecraft:shears')],
+        output: Item.of('mekanism:module_shearing_unit'),
+      },
+      {
+        items: [
+          Item.of('infernalexp:glowsilk'),
+          Item.of('refinedstorage:silk_touch_upgrade'),
+          Item.of('infernalexp:glowsilk'),
+        ],
+        output: Item.of('mekanism:module_silk_touch_unit'),
+      },
+      {
+        items: [
+          Item.of('minecraft:lapis_block'),
+          Item.of('refinedstorage:fortune_3_upgrade'),
+          Item.of('minecraft:lapis_block'),
+        ],
+        output: Item.of('mekanism:module_fortune_unit'),
+      },
+      {
+        items: [
+          Item.of('minecraft:tnt'),
+          Item.of('minecraft:tnt'),
+          Item.of('minecraft:tnt'),
+          Item.of('thermal:ender_tnt'),
+          Item.of('thermal:ender_tnt'),
+          Item.of('thermal:ender_tnt'),
+          Item.of('thermal:ender_tnt'),
+        ],
+        output: Item.of('mekanism:module_blasting_unit'),
+      },
+      {
+        items: [Item.of('tempad:tempad')],
+        output: Item.of('mekanism:module_teleportation_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:scuba_upgrade')],
+        output: Item.of('mekanism:module_electrolytic_breathing_unit'),
+      },
+      {
+        items: [Item.of('thermal:energy_cell')],
+        output: Item.of('mekanism:module_energy_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:stomp_upgrade')],
+        output: Item.of('mekanism:module_gyroscopic_stabilization_unit'),
+      },
+      {
+        items: [
+          Item.of('pneumaticcraft:speed_upgrade'),
+          Item.of('pneumaticcraft:speed_upgrade'),
+          Item.of('pneumaticcraft:speed_upgrade'),
+        ],
+        output: Item.of('mekanism:module_locomotive_boosting_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:flippers_upgrade')],
+        output: Item.of('mekanism:module_hydrostatic_repulsor_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:jet_boots_upgrade_3')],
+        output: Item.of('mekanism:module_jetpack_unit'),
+      },
+      {
+        items: [Item.of('pneumaticcraft:elytra_upgrade')],
+        output: Item.of('mekanism:module_elytra_unit'),
+      },
+    ].forEach(x => {
+      CustomRecipeHandler.dissolution(
+        x.output,
+        x.items.concat([Item.of('mekanism:module_base')]),
+        Fluid.of('industrialforegoing:pink_slime', 500)
+      );
+    });
+  };
+
+  const InductionCellRecipes = () => {
+    event.shaped('8x mekanism:induction_casing', ['PPP', 'PCP', 'PPP'], {
+      P: '#forge:plastic',
+      C: 'thermal:upgrade_augment_3',
+    });
+
+    CustomRecipeHandler.automatableSmithing(
+      Item.of('mekanism:induction_port'),
+      Item.of('mekanism:induction_casing'),
+      Item.of('refinedpipes:advanced_extractor_attachment')
+    );
+
+    /* Induction Cells */
+    event.shaped('mekanism:basic_induction_cell', ['CAC', 'HIH', 'CAC'], {
+      C: '#forge:storage_blocks/copper',
+      A: 'immersiveengineering:capacitor_hv',
+      I: 'thermal:upgrade_augment_1',
+      H: 'mekanism:induction_casing',
+    });
+
+    event.shaped('mekanism:advanced_induction_cell', ['CAC', 'HIH', 'CAC'], {
+      C: '#forge:storage_blocks/enderium',
+      A: 'mekanism:basic_induction_cell',
+      I: 'thermal:upgrade_augment_3',
+      H: 'mekanism:induction_casing',
+    });
+
+    event.shaped('mekanism:elite_induction_cell', ['CAC', 'HIH', 'CAC'], {
+      C: '#forge:storage_blocks/ostrum',
+      A: 'mekanism:advanced_induction_cell',
+      I: 'kubejs:ostrum_integral_components',
+      H: 'mekanism:induction_casing',
+    });
+
+    event.shaped('mekanism:ultimate_induction_cell', ['CAC', 'HIH', 'CAC'], {
+      C: '#forge:storage_blocks/calorite',
+      A: 'mekanism:elite_induction_cell',
+      I: 'kubejs:calorite_integral_components',
+      H: 'mekanism:induction_casing',
+    });
+
+    /* Induction Providers */
+    event.shaped('mekanism:basic_induction_provider', ['CPC', 'AIA', 'CPC'], {
+      C: '#forge:storage_blocks/copper',
+      P: '#thermal:glass/hardened',
+      I: 'thermal:upgrade_augment_1',
+      A: 'mekanism:induction_casing',
+    });
+
+    event.shaped('mekanism:advanced_induction_provider', ['CPC', 'AIA', 'CPC'], {
+      C: '#forge:storage_blocks/enderium',
+      P: '#thermal:glass/hardened',
+      I: 'thermal:upgrade_augment_3',
+      A: 'mekanism:induction_casing',
+    });
+
+    event.shaped('mekanism:elite_induction_provider', ['CPC', 'AIA', 'CPC'], {
+      C: '#forge:storage_blocks/ostrum',
+      P: '#thermal:glass/hardened',
+      I: 'kubejs:ostrum_integral_components',
+      A: 'mekanism:induction_casing',
+    });
+
+    event.shaped('mekanism:ultimate_induction_provider', ['CPC', 'AIA', 'CPC'], {
+      C: '#forge:storage_blocks/calorite',
+      P: '#thermal:glass/hardened',
+      I: 'kubejs:calorite_integral_components',
+      A: 'mekanism:induction_casing',
+    });
+  };
 
   /* Remove recipes for Mekanism */
   event.remove({mod: 'mekanism'});
@@ -211,8 +282,14 @@ onEvent('recipes', event => {
     Fluid.of('industrialforegoing:ether_gas', 200)
   );
 
-  /** MODULES **/
-  MekanismModuleRecipes(CustomRecipeHandler);
+  InductionCellRecipes();
+  MekanismModuleRecipes();
+
+  CustomRecipeHandler.warping(
+    Item.of('fluxnetworks:flux_configurator'),
+    Item.of('mekanism:configurator'),
+    'minecraft:the_end'
+  );
 
   CustomRecipeHandler.automatableSmithing(
     Item.of('mekanism:basic_bin'),
