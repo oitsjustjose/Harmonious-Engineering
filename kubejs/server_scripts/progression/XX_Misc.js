@@ -129,26 +129,26 @@ onEvent('recipes', event => {
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:item"}}'),
-      Item.of('entangled:block'),
-      Item.of('refinedpipes:basic_item_pipe')
+      Item.of('refinedpipes:basic_item_pipe'),
+      Item.of('entangled:block')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:fluid"}}'),
-      Item.of('entangled:block'),
-      Item.of('refinedpipes:basic_fluid_pipe')
+      Item.of('refinedpipes:basic_fluid_pipe'),
+      Item.of('entangled:block')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:energy"}}'),
-      Item.of('entangled:block'),
-      Item.of('refinedpipes:basic_energy_pipe')
+      Item.of('refinedpipes:basic_energy_pipe'),
+      Item.of('entangled:block')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('compactmachines:personal_shrinking_device'),
-      Item.of('tempad:tempad'),
-      Item.of('compactmachines:wall')
+      Item.of('compactmachines:wall'),
+      Item.of('tempad:tempad')
     );
   };
 
