@@ -376,7 +376,7 @@ global.recipes = event => ({
       pattern: ['LR'],
       key: {L: left, R: right},
       result: out.toResultJson(),
-      acceptMirrored: false,
+      acceptMirrored: true,
     });
   },
 });
