@@ -1,21 +1,11 @@
 onEvent('recipes', event => {
   const CustomRecipeHandler = global.recipes(event);
 
-  event.remove({output: 'pipez:item_pipe'});
-  event.remove({output: 'pipez:fluid_pipe'});
-  event.remove({output: 'pipez:energy_pipe'});
-  event.remove({output: 'pipez:universal_pipe'});
+  event.remove({mod: 'pipez'});
 
   event.shapeless('1x refinedpipes:basic_item_pipe', ['pipez:item_pipe']);
   event.shapeless('1x refinedpipes:basic_fluid_pipe', ['pipez:fluid_pipe']);
   event.shapeless('1x refinedpipes:basic_energy_pipe', ['pipez:energy_pipe']);
-
-  /* upgrade tiers:
-  Tier II: electrum nugget
-  Tier III: enderium nugget
-  Tier IV: ostrum nugget
-  Tier V: calorite nugget
-  */
 
   /* Refined Pipes */
   event.remove({mod: 'refinedpipes'});
