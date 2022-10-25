@@ -2,6 +2,37 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.1.14
+
+## Chunk Loaders May Need To Be Broken And Re-Placed
+
+## Added:
+
+- Mekanism's Induction Cells for massive energy storage
+
+## Removed:
+
+- Magmatic Dynamos - Any of them that you already have will continue to work and can be moved around, but the recipe has been disabled
+- All Pipez' Recipes
+
+## Changed:
+
+- Smithing Recipes that are automated in the Create Mechanical Crafter can now be done in reverse meaning the order of items *does not matter* for your convenience :)
+
+## Fixed:
+
+- Refined Pipes' Joints having a mismatched texture
+- Compact Machine's Tunnel recipe having the refined pipe in the *right* slot - this will fix shift-clicking your pipe upgrades
+
+## Updated:
+
+- Chunkloaders
+- Pretty Pipes
+- Supplementaries
+- Villagers Sell Animals
+- Library Mods
+
+
 # 3.1.13
 
 ## ⚠️ATTENTION⚠️

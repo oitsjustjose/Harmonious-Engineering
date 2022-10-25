@@ -247,6 +247,8 @@ onEvent('recipes', event => {
   event.recipes.thermal.chiller('thermal:rubber', [Fluid.of('industrialforegoing:latex', 100)]);
   event.recipes.thermal.press('pneumaticcraft:plastic', ['3x thermal:rubber']);
 
+  event.remove({output: 'thermal:dynamo_magmatic'});
+
   event.replaceInput(
     {output: 'thermal:enderium_dust'},
     '#forge:ender_pearls',
