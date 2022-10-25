@@ -159,28 +159,28 @@ onEvent('recipes', event => {
     event.shaped('mekanism:basic_induction_provider', ['CPC', 'AIA', 'CPC'], {
       C: '#forge:storage_blocks/copper',
       P: '#thermal:glass/hardened',
-      I: 'thermal:upgrade_augment_1',
+      I: 'pneumaticcraft:printed_circuit_board',
       A: 'mekanism:induction_casing',
     });
 
     event.shaped('mekanism:advanced_induction_provider', ['CPC', 'AIA', 'CPC'], {
       C: '#forge:storage_blocks/enderium',
-      P: '#thermal:glass/hardened',
-      I: 'thermal:upgrade_augment_3',
+      P: 'mekanism:basic_induction_provider',
+      I: 'pneumaticcraft:printed_circuit_board',
       A: 'mekanism:induction_casing',
     });
 
     event.shaped('mekanism:elite_induction_provider', ['CPC', 'AIA', 'CPC'], {
       C: '#forge:storage_blocks/ostrum',
-      P: '#thermal:glass/hardened',
-      I: 'kubejs:ostrum_integral_components',
+      P: 'mekanism:advanced_induction_provider',
+      I: 'pneumaticcraft:printed_circuit_board',
       A: 'mekanism:induction_casing',
     });
 
     event.shaped('mekanism:ultimate_induction_provider', ['CPC', 'AIA', 'CPC'], {
       C: '#forge:storage_blocks/calorite',
-      P: '#thermal:glass/hardened',
-      I: 'kubejs:calorite_integral_components',
+      P: 'mekanism:elite_induction_provider',
+      I: 'pneumaticcraft:printed_circuit_board',
       A: 'mekanism:induction_casing',
     });
   };
