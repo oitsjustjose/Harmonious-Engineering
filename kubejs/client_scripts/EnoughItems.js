@@ -15,6 +15,7 @@ const items = [
   '/industrialforegoing:infinity_saw/',
   '/industrialforegoing:infinity_trident/',
   '/itemfilters:*/',
+  '/titanium:*/',
   '/pipez:*/',
   'advgenerators:advanced_pressure_valve',
   'advgenerators:capacitor_kit_tier2',
@@ -46,12 +47,10 @@ const items = [
   'beyond_earth:engine_fan',
   'beyond_earth:engine_frame',
   'beyond_earth:fuel_bucket',
-  'beyond_earth:fuel_bucket',
   'beyond_earth:fuel_refinery',
   'beyond_earth:hammer',
   'beyond_earth:iron_plate',
   'beyond_earth:iron_stick',
-  'beyond_earth:oil_bucket',
   'beyond_earth:oil_bucket',
   'beyond_earth:solar_panel',
   'beyond_earth:steel_block',
@@ -586,11 +585,6 @@ const items = [
   'thermal:sapphire_ore',
   'thermal:sapphire',
   'thermal:saw_blade',
-  'titanium:block_asset_test',
-  'titanium:block_test',
-  'titanium:block_twenty_four_test',
-  'titanium:creative_generator',
-  'titanium:machine_test',
   'torchmaster:feral_flare_lantern',
   'torchmaster:frozen_pearl',
   Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'),
@@ -821,6 +815,7 @@ onEvent('jei.hide.fluids', event => {
     'pneumaticcraft:vegetable_oil',
     'thermal:creosote',
     'thermal:crude_oil',
+    'thermal:latex',
   ];
 
   fluids.forEach(fluid => {
@@ -862,19 +857,5 @@ onEvent('jei.add.items', event => {
 });
 
 onEvent('jei.remove.categories', event => {
-  categories.forEach(x => event.remove(x));
-});
-
-onEvent('rei.hide.items', event => {
-  items.forEach(x => {
-    try {
-      event.hide(x);
-    } catch (e) {
-      console.log(e);
-    }
-  });
-});
-
-onEvent('rei.remove.categories', event => {
   categories.forEach(x => event.remove(x));
 });
