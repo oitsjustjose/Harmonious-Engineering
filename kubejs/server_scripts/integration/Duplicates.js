@@ -29,7 +29,7 @@ onEvent('recipes', event => {
     event.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_logs'});
     event.recipes.thermal.pyrolyzer(
       [Item.of('minecraft:charcoal'), Fluid.of('immersiveengineering:creosote', 250)],
-      Item.of('#minecraft:logs')
+      '#minecraft:logs_that_burn'
     );
 
     /* Pyrolize Creosote from Coal */

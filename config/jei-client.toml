@@ -7,7 +7,7 @@
 	#Set low-memory mode (makes search very slow, but uses less RAM)
 	LowMemorySlowSearchEnabled = false
 	#Enable cheating items into the hotbar by using the shift+number keys.
-	CheatToHotbarUsingHotkeysEnabled = false
+	CheatToHotbarUsingHotkeysEnabled = true
 	#How items should be handed to you
 	#Allowed Values: INVENTORY, MOUSE_PICKUP
 	GiveMode = "MOUSE_PICKUP"

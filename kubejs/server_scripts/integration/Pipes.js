@@ -1,12 +1,6 @@
 onEvent('recipes', event => {
   const CustomRecipeHandler = global.recipes(event);
 
-  event.remove({mod: 'pipez'});
-
-  event.shapeless('1x refinedpipes:basic_item_pipe', ['pipez:item_pipe']);
-  event.shapeless('1x refinedpipes:basic_fluid_pipe', ['pipez:fluid_pipe']);
-  event.shapeless('1x refinedpipes:basic_energy_pipe', ['pipez:energy_pipe']);
-
   /* Refined Pipes */
   event.remove({mod: 'refinedpipes'});
   /* Item Pipes */
