@@ -290,7 +290,7 @@ onEvent('recipes', event => {
     event.replaceInput(
       {output: 'fluxnetworks:flux_core'},
       'minecraft:obsidian',
-      'architects_palette:unobtanium'
+      '#forge:plates/enderium'
     );
   };
 
@@ -455,11 +455,13 @@ onEvent('recipes', event => {
       'minecraft:paper',
       '#forge:plastic'
     );
-    event.replaceInput(
-      {output: 'modularrouters:modular_router'},
-      'minecraft:iron_ingot',
-      'architects_palette:unobtanium'
-    );
+
+    event.remove({output: 'modularrouters:modular_router'});
+    event.shaped('1x modularrouters:modular_router', ['RSR', 'SMS', 'RSR'], {
+      R: 'thermal:cured_rubber',
+      S: '#forge:plates/steel',
+      M: 'modularrouters:blank_module',
+    });
   };
 
   const ieSheetmetal = () => {
@@ -492,6 +494,8 @@ onEvent('recipes', event => {
     });
   };
 
+  const itemFilters = () => event.remove({mod: 'itemfilters'});
+
   const supermartijn = () => {
     event.remove({output: 'entangled:block'});
     event.shaped('entangled:block', ['LDL', 'ESE', 'LDL'], {
@@ -500,6 +504,7 @@ onEvent('recipes', event => {
       L: '#forge:ingots/lead',
       S: '#immersiveengineering:scaffoldings/steel',
     });
+    event.shapeless('entangled:block', ['entangled:block']);
   };
 
   const tempad = () => {
@@ -535,6 +540,7 @@ onEvent('recipes', event => {
   expandedstorage();
   fluxNetworks();
   ieSheetmetal();
+  itemFilters();
   mcjty();
   moreMinecarts();
   recycling();

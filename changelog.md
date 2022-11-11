@@ -2,6 +2,38 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.2.0
+
+## ⚠️ Major Updates Incoming! Make a backup of your world!! ⚠️
+
+## Removed:
+
+- Better Villages
+- Library Ferret
+- Pipez
+- Pehkui
+
+## Added:
+
+- ChoiceTheorem's Overhauled Villages (replaces Better Villages and is MUCH nicer 🙂)
+
+## Changes:
+
+- Re-textured AdvGen's Cells
+- Otters will no longer spawn - apparently Critters & Companions doesn't allow you to configure their frequency, and they just *keep on spawning*, so they've been culled using V-Tweaks. If you already had otters around, they'll continue to be around, but no new otters will spawn
+
+### Recipes:
+
+- Unobtanium is no longer used in making Modular Routers & Flux Cores - went a little ham with unobtanium but it didn't really make *sense* so they now have new recipes accordingly.
+- Basic Induction Cell recipe now uses Thermal's Energy Cells - meant to do fix this myself but it slipped my mind 
+
+## Fixes:
+
+- Typo in tip about flower pots being hung from ceilings
+- Thermal's Pyrolizer only accepting dark oak to make charcoal. Now accepts any burnable log.
+- Thermal's Latex still showing up in JEI (latex buckets are really persistent 😒)
+- Some Titanium items still showing up in JEI
+
 # 3.1.14
 
 ## Chunk Loaders May Need To Be Broken And Re-Placed

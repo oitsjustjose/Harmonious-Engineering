@@ -129,7 +129,7 @@ onEvent('recipes', event => {
     /* Induction Cells */
     event.shaped('mekanism:basic_induction_cell', ['CAC', 'HIH', 'CAC'], {
       C: '#forge:storage_blocks/copper',
-      A: 'immersiveengineering:capacitor_hv',
+      A: 'thermal:energy_cell',
       I: 'thermal:upgrade_augment_1',
       H: 'mekanism:induction_casing',
     });
