@@ -83,22 +83,22 @@ onEvent('recipes', event => {
     const CustomRecipeHandler = global.recipes(event);
 
     /* Integral Component Recipes */
-    event.shaped('1x kubejs:desh_integral_components', ['CSC', 'GIG', 'CSC'], {
+    event.shaped('1x headdons:desh_integral_components', ['CSC', 'GIG', 'CSC'], {
       I: 'thermal:upgrade_augment_3',
       C: 'beyond_earth:desh_ingot',
       G: 'beyond_earth:compressed_desh',
       S: 'beyond_earth:ice_shard',
     });
 
-    event.shaped('1x kubejs:ostrum_integral_components', ['CSC', 'GIG', 'CSC'], {
-      I: 'kubejs:desh_integral_components',
+    event.shaped('1x headdons:ostrum_integral_components', ['CSC', 'GIG', 'CSC'], {
+      I: 'headdons:desh_integral_components',
       C: 'beyond_earth:ostrum_ingot',
       G: 'beyond_earth:compressed_ostrum',
       S: 'beyond_earth:ice_shard',
     });
 
-    event.shaped('1x kubejs:calorite_integral_components', ['CSC', 'GIG', 'CSC'], {
-      I: 'kubejs:ostrum_integral_components',
+    event.shaped('1x headdons:calorite_integral_components', ['CSC', 'GIG', 'CSC'], {
+      I: 'headdons:ostrum_integral_components',
       C: 'beyond_earth:calorite_ingot',
       G: 'beyond_earth:compressed_calorite',
       S: 'beyond_earth:ice_shard',
@@ -114,19 +114,19 @@ onEvent('recipes', event => {
     CustomRecipeHandler.automatableSmithing(
       Item.of('advgenerators:turbine_tier3'),
       Item.of('advgenerators:turbine_tier2'),
-      Item.of('kubejs:desh_integral_components')
+      Item.of('headdons:desh_integral_components')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('advgenerators:turbine_tier4'),
       Item.of('advgenerators:turbine_tier3'),
-      Item.of('kubejs:ostrum_integral_components')
+      Item.of('headdons:ostrum_integral_components')
     );
 
     CustomRecipeHandler.automatableSmithing(
       Item.of('advgenerators:turbine_tier5'),
       Item.of('advgenerators:turbine_tier4'),
-      Item.of('kubejs:calorite_integral_components')
+      Item.of('headdons:calorite_integral_components')
     );
 
     /* Capacitor Recipes */
@@ -145,7 +145,7 @@ onEvent('recipes', event => {
     CustomRecipeHandler.automatableSmithing(
       Item.of('advgenerators:power_capacitor_tier3'),
       Item.of('advgenerators:power_capacitor_tier2'),
-      Item.of('kubejs:ostrum_integral_components')
+      Item.of('headdons:ostrum_integral_components')
     );
 
     /* Misc */

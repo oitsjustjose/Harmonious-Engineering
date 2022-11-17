@@ -144,14 +144,14 @@ onEvent('recipes', event => {
     event.shaped('mekanism:elite_induction_cell', ['CAC', 'HIH', 'CAC'], {
       C: '#forge:storage_blocks/ostrum',
       A: 'mekanism:advanced_induction_cell',
-      I: 'kubejs:ostrum_integral_components',
+      I: 'headdons:ostrum_integral_components',
       H: 'mekanism:induction_casing',
     });
 
     event.shaped('mekanism:ultimate_induction_cell', ['CAC', 'HIH', 'CAC'], {
       C: '#forge:storage_blocks/calorite',
       A: 'mekanism:elite_induction_cell',
-      I: 'kubejs:calorite_integral_components',
+      I: 'headdons:calorite_integral_components',
       H: 'mekanism:induction_casing',
     });
 

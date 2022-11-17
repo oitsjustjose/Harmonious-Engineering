@@ -29,6 +29,8 @@ onEvent('item.tags', event => {
     event.add('forge:tools/knives', 'tools_complement:electrum_knife');
     event.add('forge:tools/knives', 'tools_complement:invar_knife');
 
+    event.add('forge:pickaxes', 'thermal:flux_drill');
+    event.add('forge:tools/pickaxes', 'thermal:flux_drill');
     event.add('forge:dusts/saltpeter', 'thermal:niter_dust');
   };
 
