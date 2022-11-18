@@ -126,13 +126,4 @@ onEvent('item.tooltip', event => {
     ],
     '§1For Decoration Only§r'
   );
-
-  event.add(
-    [
-      'kubejs:desh_integral_components',
-      'kubejs:ostrum_integral_components',
-      'kubejs:calorite_integral_components',
-    ],
-    '§8Too Powerful for Standard Flux Devices§r'
-  );
 });

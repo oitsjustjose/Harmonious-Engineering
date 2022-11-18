@@ -18,16 +18,6 @@ onEvent('item.registry', event => {
   event.create('calorite_dust').texture('kubejs:item/calorite_dust');
   event.create('desh_dust').texture('kubejs:item/desh_dust');
   event.create('ostrum_dust').texture('kubejs:item/ostrum_dust');
-
-  event
-    .create('calorite_integral_components')
-    .translationKey('item.kubejs.calorite_integral_components.name');
-  event
-    .create('desh_integral_components')
-    .translationKey('item.kubejs.desh_integral_components.name');
-  event
-    .create('ostrum_integral_components')
-    .translationKey('item.kubejs.ostrum_integral_components.name');
 });
 
 onEvent('item.modification', event => {
@@ -53,4 +43,11 @@ onEvent('item.modification', event => {
   minecarts.forEach(cart => {
     event.modify(cart, item => item.setMaxStackSize(16));
   });
+});
+
+/* Version 3.2.2 removes KubeJS Integral Components in favor of HEAddons' exact same versions */
+onEvent('item.missing_mappings', event => {
+  event.remap('kubejs:calorite_integral_components', 'headdons:calorite_integral_components');
+  event.remap('kubejs:desh_integral_components', 'headdons:desh_integral_components');
+  event.remap('kubejs:ostrum_integral_components', 'headdons:ostrum_integral_components');
 });
