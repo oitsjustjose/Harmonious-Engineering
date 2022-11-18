@@ -175,7 +175,7 @@
 		}
 		{
 			title: "High-Flux Generation"
-			icon: "kubejs:calorite_integral_components"
+			icon: "headdons:calorite_integral_components"
 			x: 10.5d
 			y: -2.5d
 			shape: "hexagon"

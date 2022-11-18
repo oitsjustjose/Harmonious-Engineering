@@ -1085,5 +1085,147 @@
 				count: 24
 			}]
 		}
+		{
+			title: "Teleportation"
+			icon: "tempad:tempad"
+			x: -1.5d
+			y: -3.5d
+			subtitle: "Convenient Teleporting"
+			description: [
+				"You've spent so much time around the Endermen that you've learned that their Ender Pearls are actually the core that makes them teleport."
+				""
+				"You find that this core on its own is not very helpful, but once pulverized its essence can be used to embue crafted items with the nature of teleportation."
+				""
+				"You find that the Tempad can be used as a portable teleporation unit, but it seems to be mildly affected by each teleportation and therefore has to cool down between each use. Perhaps using this to create some sort of portal will allow you to pick a specific target rather than some random place in The Nether?"
+				""
+				"This Teleporter seems to have a particular structure, where the Core goes in the bottom center, and the remaining 9 frame blocks go around it leaving a 1-wide 2-tall space for you to walk through. Once you make two they can be linked, but you find that process is relatively power hungry!"
+				""
+				"{image:kubejs:textures/quest_images/teleporter.png width:206 height:281 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["41020ABCC20659D6"]
+			id: "07235556F10939B9"
+			tasks: [
+				{
+					id: "753D8441B97B7814"
+					type: "item"
+					item: "tempad:tempad"
+				}
+				{
+					id: "2866E3E5911E957C"
+					type: "item"
+					item: "mekanism:teleporter"
+				}
+				{
+					id: "08837882441935AE"
+					type: "item"
+					item: "mekanism:teleporter_frame"
+					count: 9L
+				}
+			]
+			rewards: [{
+				id: "2DA76A783035DA22"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 64
+			}]
+		}
+		{
+			title: "Induction Matrix"
+			icon: "mekanism:basic_induction_cell"
+			x: 1.5d
+			y: -3.5d
+			subtitle: "Just a Huge Battery"
+			description: [
+				"You start to find that your energy infrastructure is unable to cope with the large amounts of energy throughput and buffering that you'd like to have. You &ocould&r make a lot of Energy Cells, but managing them becomes cumbersome after 9 of them or so."
+				""
+				"Rather than setting up such a Matrix, you find that an induction cell can handle this function for you."
+				""
+				"A minimal induction cell requires 1 Cell and 1 Provider of any tier. The Cell determines how much Flux is stored, and the Provider determines maximum Flux throughput. Once crafted, encase your cell and provider in induction casing such that it forms a Rectangular Prism. Use the Induction port to perform Flux Input/Output."
+				""
+				"You figured out that a flash of Redstone Particles indicate that the structure is formed correctly around your structure."
+				""
+				"Some of these materials look unfamiliar to you, but Enderium is at least good enough for now..."
+			]
+			hide_dependency_lines: true
+			dependencies: ["42D1F952E62F8F45"]
+			id: "179EF7F1AC2371C6"
+			tasks: [
+				{
+					id: "1191FB55317AED52"
+					type: "item"
+					item: "mekanism:induction_casing"
+				}
+				{
+					id: "4D60451E47958932"
+					type: "item"
+					item: "mekanism:induction_port"
+				}
+				{
+					id: "1838871285DF5C6B"
+					type: "item"
+					title: "Any Induction Cell"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:basic_induction_cell"
+									Count: 1b
+								}
+								{
+									id: "mekanism:advanced_induction_cell"
+									Count: 1b
+								}
+								{
+									id: "mekanism:elite_induction_cell"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_induction_cell"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "560A512D6BFB3330"
+					type: "item"
+					title: "Any Induction Provider"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:basic_induction_provider"
+									Count: 1b
+								}
+								{
+									id: "mekanism:advanced_induction_provider"
+									Count: 1b
+								}
+								{
+									id: "mekanism:elite_induction_provider"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_induction_provider"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7EBE93206F1281E4"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
 	]
 }

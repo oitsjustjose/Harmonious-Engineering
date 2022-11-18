@@ -25,6 +25,8 @@
 				""
 				"There may be some way to subject Iron to large amounts of pressure without any existing machinery - perhaps TNT can do something here, but it might be a little impractical and a slight bit destructive.."
 			]
+			dependencies: ["5477EA198509D2E0"]
+			hide: true
 			size: 1.5d
 			id: "1180C4A43309EC2B"
 			tasks: [{

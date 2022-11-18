@@ -4,7 +4,7 @@
 	order_index: 7
 	filename: "advanced_generation"
 	title: "High-Flux Generation"
-	icon: "kubejs:calorite_integral_components"
+	icon: "headdons:calorite_integral_components"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -30,7 +30,7 @@
 				id: "48A5062922F8DE3D"
 				type: "checkmark"
 				title: "Advanced Flux Generation"
-				icon: "kubejs:ostrum_integral_components"
+				icon: "headdons:ostrum_integral_components"
 			}]
 			rewards: [{
 				id: "4B1CBEF27AB60A45"
