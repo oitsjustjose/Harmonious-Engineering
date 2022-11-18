@@ -320,6 +320,19 @@ onEvent('recipes', event => {
     Item.of('thermal:machine_frame'),
     Item.of('immersiveengineering:workbench')
   );
+
+  event.shaped('9x mekanism:teleporter_frame', ['SRS', 'RER', 'SRS'], {
+    S: 'moreminecarts:silica_steel',
+    R: 'thermal:cured_rubber',
+    E: '#forge:dusts/ender_pearl',
+  });
+
+  event.shaped('9x mekanism:teleporter', ['SRS', 'ETE', 'SRS'], {
+    S: 'moreminecarts:silica_steel',
+    R: 'thermal:cured_rubber',
+    E: '#forge:dusts/ender_pearl',
+    T: 'tempad:tempad',
+  });
 });
 
 /**
