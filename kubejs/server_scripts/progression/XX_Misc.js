@@ -398,6 +398,16 @@ onEvent('recipes', event => {
       air_use_multiplier: 10.0,
       exothermic: false,
     });
+
+    event.recipes.thermal
+      .insolator(
+        [
+          Item.of('moreminecarts:glass_cactus').withChance(1.0),
+          Item.of('moreminecarts:glass_spines').withChance(0.125),
+        ],
+        Item.of('moreminecarts:glass_cactus')
+      )
+      .water(10);
   };
 
   const recycling = () => {
