@@ -2,6 +2,40 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.2.2
+
+## Added:
+
+### Mods
+
+- Connected Textures Mod
+    - Makes many textures connect in a nice way!
+- Diagonal Fences
+- **Harmonious Engineering Addons**
+- OK Zoomer
+
+### Harmonious Engineering Addons
+
+Some things I haven't been able to get done with *just* KubeJS, so the addition of HEA will allow you to take your Desh/Ostrum/Calorite integral components and **🎉 use them in Thermal Devices 🎉**!!
+
+In addition, I've fixed the bug where Dave's Building Extended blocks *don't drop when broken* - this is an MCreator/DBe bug, but I was able to write an event that intercepted the drops and I've confirmed it works when using a Drill/Fluxbore/Jackhammer, which is exactly when they weren't dropping themselves before.
+
+If you have more integration you'd like to see from the KubeJS items (or other), please drop me a note - now that I have full Java class access I'm glad to add more robust features to make the pack feel more thoroughly integrated.
+
+### Other
+
+- Added in Mekanism Teleporters, because late-game has no non-time-locked way to teleport around
+- Added compatibility for the new liquid blaze burner :)
+    - It's exactly what it sounds like - ponder the Straw by holding <kbd>W</kbd> and see exactly how it's used. 
+    - You can see all compatible fuels by browsing the uses for a blaze burner in JEI
+- Added recipe to reproduce Glass Spines using the Phytogenic Insolator
+
+## Removed:
+
+### Mods:
+
+- All things related to Rubidium. Feel free to add them yourself! It just causes *enough* issues in this pack that I can't with sound mind include it anymore.
+
 # 3.2.0
 
 ## ⚠️ Major Updates Incoming! Make a backup of your world!! ⚠️
