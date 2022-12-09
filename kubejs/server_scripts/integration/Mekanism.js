@@ -327,7 +327,7 @@ onEvent('recipes', event => {
     E: '#forge:dusts/ender_pearl',
   });
 
-  event.shaped('9x mekanism:teleporter', ['SRS', 'ETE', 'SRS'], {
+  event.shaped('mekanism:teleporter', ['SRS', 'ETE', 'SRS'], {
     S: 'moreminecarts:silica_steel',
     R: 'thermal:cured_rubber',
     E: '#forge:dusts/ender_pearl',

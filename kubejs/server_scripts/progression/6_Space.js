@@ -234,11 +234,11 @@ onEvent('recipes', event => {
     event.stonecutting('beyond_earth:blue_iron_plating_block', 'beyond_earth:iron_plating_block');
 
     event.remove({output: 'beyond_earth:iron_mark_block'});
-    CustomRecipeHandler.automatableSmithing(
-      Item.of('2x beyond_earth:iron_mark_block'),
-      Item.of('minecraft:iron_block'),
-      Item.of('davebuildingmod:stripedblock')
-    );
+    event.shaped('8x beyond_earth:iron_mark_block', [' Y ', 'BSB', ' Y '], {
+      Y: '#forge:dyes/yellow',
+      B: '#forge:dyes/black',
+      S: '#forge:plates/iron',
+    });
 
     event.remove({output: 'beyond_earth:rusted_iron_pillar_block'});
     event.remove({output: 'beyond_earth:rusted_iron_plating_block'});

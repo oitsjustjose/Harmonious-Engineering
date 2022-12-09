@@ -294,6 +294,13 @@ onEvent('recipes', event => {
     );
   };
 
+  const heAddons = () => {
+    CustomRecipeHandler.giant(Item.of('headdons:portable_stonecutter'), [' I ', 'SSS'], {
+      I: {tag: 'forge:plates/iron'},
+      S: {item: 'minecraft:stone_slab'},
+    });
+  };
+
   const mcjty = () => {
     event.replaceInput({mod: 'xnet'}, 'minecraft:gold_nugget', [
       'refinedpipes:advanced_energy_pipe',
@@ -549,6 +556,7 @@ onEvent('recipes', event => {
   engineersDecor();
   expandedstorage();
   fluxNetworks();
+  heAddons();
   ieSheetmetal();
   itemFilters();
   mcjty();

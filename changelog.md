@@ -2,6 +2,33 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.2.3
+
+## Added:
+
+- Portable Stonecutter!
+- Recipes in the Phytogenic Insolator for:
+    - `Farmer's Delight` Onions
+    - `Farmer's Delight` Tomatoes
+    - `Farmer's Delight` Rice
+    - `Farmer's Delight` Cabbage
+    - `Immersive Engineering` Hemp
+    - `Supplementaries` Flax
+    - `Ecologics` Azalea Tree
+    - `Ecologics` Coconut Tree
+    - `Ecologics` Walnut Tree
+    - `Ecologics/Minecraft` Azalea Bush/Tree
+    - `Ecologics/Minecraft` Flowering Azalea Bush/Tree
+    - `Architects Palette` Twisted Tree
+
+## Fixed:
+
+- Mekanism Teleporter Core recipe returning 9 (it should've been 1)
+
+## Changed:
+
+- Flux Points / Plugs have been renamed to Flux Consumer (Plug) and Flux Provider (Point)
+
 # 3.2.2
 
 ## Added:
