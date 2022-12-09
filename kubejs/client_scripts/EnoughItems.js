@@ -155,6 +155,7 @@ const items = [
   'davebuildingmod:steam_passive_generator',
   'davebuildingmod:steel_block',
   'davebuildingmod:steel_ingot',
+  'davebuildingmod:small_thomas_face',
   'davebuildingmod:thomas_face',
   'davebuildingmod:tnt_passive_generator',
   'davebuildingmod:tungsten_carbite',

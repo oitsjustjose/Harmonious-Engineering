@@ -177,6 +177,7 @@ onEvent('recipes', event => {
       'davebuildingmod:rocky_dirt',
       'davebuildingmod:rubber_duck',
       'davebuildingmod:soft_air',
+      'davebuildingmod:small_thomas_face',
       'davebuildingmod:steel_ingot',
       'davebuildingmod:thomas_face',
       'davebuildingmod:track_end',
