@@ -21,6 +21,21 @@
     - `Ecologics/Minecraft` Flowering Azalea Bush/Tree
     - `Architects Palette` Twisted Tree
 
+## Updated:
+
+- Create Addition
+- Dave's Building Extended
+- Engineer's Decor
+- FTB Teams
+- Harmonious Engineering Addons
+- JEI ([Please Report Any Issues Here](github.com/oitsjustjose/harmonious-Engineering/issues), this was a major update)
+- KubeJS
+- More Overlays
+- Terralith
+- Thermal Expansion Series
+- Toolbelt
+- Xaero's World / Mini Map
+
 ## Fixed:
 
 - Mekanism Teleporter Core recipe returning 9 (it should've been 1)
