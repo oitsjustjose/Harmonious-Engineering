@@ -57,6 +57,16 @@ const items = [
   'beyond_earth:steel_nugget',
   'beyond_earth:water_pump',
   'beyond_earth:wheel',
+  'beyond_earth_giselle_addon:advanced_compressor',
+  'beyond_earth_giselle_addon:electric_blast_furnace',
+  'beyond_earth_giselle_addon:fuel_loader',
+  'beyond_earth_giselle_addon:gravity_normalizer',
+  'beyond_earth_giselle_addon:mold_compressing',
+  'beyond_earth_giselle_addon:pneumatic_gravity_normalizing_upgrade',
+  'beyond_earth_giselle_addon:pneumatic_space_breathing_upgrade',
+  'beyond_earth_giselle_addon:pneumatic_space_fire_proof_upgrade',
+  'beyond_earth_giselle_addon:pneumatic_venus_acid_proof_upgrade',
+  'beyond_earth_giselle_addon:press_compressing_die',
   'buildinggadgets:construction_block_dense',
   'buildinggadgets:construction_block_powder',
   'buildinggadgets:construction_block',
@@ -614,6 +624,22 @@ const items = [
   'torchmaster:feral_flare_lantern',
   'torchmaster:frozen_pearl',
   Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'),
+  Item.of(
+    'minecraft:enchanted_book',
+    '{StoredEnchantments:[{id:"beyond_earth_giselle_addon:gravity_normalizing",lvl:1s}]}'
+  ),
+  Item.of(
+    'minecraft:enchanted_book',
+    '{StoredEnchantments:[{id:"beyond_earth_giselle_addon:space_breathing",lvl:1s}]}'
+  ),
+  Item.of(
+    'minecraft:enchanted_book',
+    '{StoredEnchantments:[{id:"beyond_earth_giselle_addon:space_fire_proof",lvl:1s}]}'
+  ),
+  Item.of(
+    'minecraft:enchanted_book',
+    '{StoredEnchantments:[{id:"beyond_earth_giselle_addon:venus_acid_proof",lvl:1s}]}'
+  ),
   Item.of('minecraft:lingering_potion', '{Potion:"ecologics:long_sliding"}'),
   Item.of('minecraft:lingering_potion', '{Potion:"ecologics:sliding"}'),
   Item.of('minecraft:lingering_potion', '{Potion:"infernalexp:infection"}'),

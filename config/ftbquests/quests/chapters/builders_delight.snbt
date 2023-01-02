@@ -230,32 +230,33 @@
 						items: [
 							{
 								id: "buildinggadgets:gadget_building"
+								Count: 1b
 								tag: {
 									state: {
-										data: { }
 										state: {
 											Name: "minecraft:air"
 										}
+										data: { }
 										serializer: "buildinggadgets:dummy_serializer"
 									}
 								}
-								Count: 1b
 							}
 							{
 								id: "buildinggadgets:gadget_exchanging"
+								Count: 1b
 								tag: {
 									state: {
-										data: { }
 										state: {
 											Name: "minecraft:air"
 										}
+										data: { }
 										serializer: "buildinggadgets:dummy_serializer"
 									}
 								}
-								Count: 1b
 							}
 							{
 								id: "buildinggadgets:gadget_copy_paste"
+								Count: 1b
 								tag: {
 									template_id: [I;
 										-444425108
@@ -265,15 +266,14 @@
 									]
 									mode: 0b
 								}
-								Count: 1b
 							}
 							{
 								id: "buildinggadgets:gadget_destruction"
+								Count: 1b
 								tag: {
 									overlay: 1b
 									fuzzy: 1b
 								}
-								Count: 1b
 							}
 						]
 					}
@@ -343,4 +343,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

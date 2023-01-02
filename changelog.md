@@ -4,6 +4,36 @@
 
 # 3.2.3
 
+**YOU WILL NEED TO BREAK AND RE-PLACE CHUNK LOADERS**
+
+## Added:
+
+- Various Modules for the Mekasuit allowing you to use it in place of a space suit
+
+## Changed:
+
+- Downgraded JEI to fix many things being inconsistent or broken
+- Downgraded ChunkLoaders to fix glitched behavior with uncontrolled mob spawning at loading borders.
+
+## Updated
+
+**Forge: 40.2.0**
+
+- CoFH Core
+- Compressed Creativity
+- Create
+- Create Addition
+- Dave's Building Extended
+- Every Compat
+- Immersive Engineering
+- KubeJS
+- More Minecarts
+- Refined Storage
+- Supplementaries
+- Xaeros World Map
+
+# 3.2.3
+
 ## Added:
 
 - Portable Stonecutter!

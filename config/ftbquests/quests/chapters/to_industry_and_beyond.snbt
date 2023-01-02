@@ -966,58 +966,59 @@
 				""
 				"You can fill your newly created Space Suit in an Oxygen Loader, which requires Flux and Water. You can also make them work in an AoE using the Bubble Distributor."
 				""
+				"If you'd prefer to use your MekaSuit, you will need the &4&l&ofull&r suit to survive in space, as well as the Space Breathing Unit. Otherwise, you'll need to wear the full space suit set to survive the cold void."
+				""
 				"When visiting new planets you can choose to orbit them if you'd like, or even create a space station to set yourself up with a nice space-base!!"
 				""
 				"Lastly, any time you visit a new planet, your lander will contain your ship but you will need to bring Launch Pads to make your way back home... Or just use a Tempad. Don't forget Fuel!"
 			]
 			dependencies: ["701832B356A5E78F"]
 			id: "7C8CCA7A869A5944"
-			tasks: [
-				{
-					id: "767EE6BC47CB809C"
-					type: "item"
-					item: {
-						id: "beyond_earth:oxygen_mask"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "73C8024283F9D616"
+				type: "item"
+				title: "Any Suitable Space Gear"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "beyond_earth_giselle_addon:module_space_breathing_unit"
+								Count: 1b
+							}
+							{
+								id: "beyond_earth:oxygen_mask"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "beyond_earth:space_suit"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "beyond_earth:space_pants"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "beyond_earth:space_boots"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
 				}
-				{
-					id: "2A1D9BB53CF9EBD2"
-					type: "item"
-					item: {
-						id: "beyond_earth:space_suit"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "766B43646F0E93C4"
-					type: "item"
-					item: {
-						id: "beyond_earth:space_pants"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "7F8F1BE3A9A2929D"
-					type: "item"
-					item: {
-						id: "beyond_earth:space_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			}]
 			rewards: [{
 				id: "57972C0A2F6C854B"
 				type: "choice"
@@ -1027,4 +1028,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

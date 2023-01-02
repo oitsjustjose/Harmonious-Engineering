@@ -256,10 +256,102 @@ onEvent('recipes', event => {
     );
   };
 
+  const giselle = () => {
+    // Remove by ID specifically since there's so much NBT
+    event.remove({id: 'beyond_earth_giselle_addon:crafting/enchanted_book_gravity_normalizing'});
+    event.remove({id: 'beyond_earth_giselle_addon:crafting/enchanted_book_space_breathing'});
+    event.remove({id: 'beyond_earth_giselle_addon:crafting/enchanted_book_space_fire_proof'});
+    event.remove({id: 'beyond_earth_giselle_addon:crafting/enchanted_book_venus_acid_proof'});
+
+    event.remove({
+      id: 'beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/compressed_calorite',
+    });
+    event.remove({
+      id: 'beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/compressed_desh',
+    });
+    event.remove({
+      id: 'beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/compressed_ostrum',
+    });
+    event.remove({
+      id: 'beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/compressed_steel',
+    });
+    event.remove({
+      id: 'beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/plate_desh',
+    });
+
+    event.remove({output: 'beyond_earth_giselle_addon:advanced_compressor'});
+    event.remove({output: 'beyond_earth_giselle_addon:electric_blast_furnace'});
+    event.remove({output: 'beyond_earth_giselle_addon:fuel_loader'});
+    event.remove({output: 'beyond_earth_giselle_addon:gravity_normalizer'});
+    event.remove({output: 'beyond_earth_giselle_addon:mold_compressing'});
+    event.remove({output: 'beyond_earth_giselle_addon:pneumatic_gravity_normalizing_upgrade'});
+    event.remove({output: 'beyond_earth_giselle_addon:pneumatic_space_breathing_upgrade'});
+    event.remove({output: 'beyond_earth_giselle_addon:pneumatic_space_fire_proof_upgrade'});
+    event.remove({output: 'beyond_earth_giselle_addon:pneumatic_venus_acid_proof_upgrade'});
+    event.remove({output: 'beyond_earth_giselle_addon:press_compressing_die'});
+
+    const fireProofUnit = Item.of('beyond_earth_giselle_addon:module_space_fire_proof_unit');
+    event.remove({output: fireProofUnit});
+    CustomRecipeHandler.dissolution(
+      fireProofUnit,
+      [
+        Item.of('mekanism:module_base'),
+        Item.of('thermal:hazmat_fabric'),
+        Item.of('minecraft:netherite_ingot'),
+        Item.of('thermal:hazmat_fabric'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 500)
+    );
+
+    const gravUnit = Item.of('beyond_earth_giselle_addon:module_gravity_normalizing_unit');
+    event.remove({output: gravUnit});
+    CustomRecipeHandler.dissolution(
+      gravUnit,
+      [
+        Item.of('mekanism:module_base'),
+        Item.of('pneumaticcraft:printed_circuit_board'),
+        Item.of('headdons:desh_integral_components'),
+        Item.of('pneumaticcraft:printed_circuit_board'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 500)
+    );
+
+    const breathingUnit = Item.of('beyond_earth_giselle_addon:module_space_breathing_unit');
+    event.remove({output: breathingUnit});
+    CustomRecipeHandler.dissolution(
+      breathingUnit,
+      [
+        Item.of('mekanism:module_base'),
+        Item.of('beyond_earth:oxygen_tank'),
+        Item.of('beyond_earth:oxygen_gear'),
+        Item.of('beyond_earth:oxygen_tank'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 500)
+    );
+
+    const acidUnit = Item.of('beyond_earth_giselle_addon:module_venus_acid_proof_unit');
+    event.remove({output: acidUnit});
+    CustomRecipeHandler.dissolution(
+      acidUnit,
+      [
+        Item.of('mekanism:module_base'),
+        Item.of('headdons:ostrum_integral_components'),
+        Item.of('beyond_earth:ice_shard'),
+        Item.of('beyond_earth:ice_shard'),
+        Item.of('beyond_earth:ice_shard'),
+        Item.of('thermal:blizz_rod'),
+        Item.of('thermal:blizz_rod'),
+        Item.of('thermal:blizz_rod'),
+      ],
+      Fluid.of('industrialforegoing:ether_gas', 500)
+    );
+  };
+
   cleanup();
   integration();
   cosmetic();
   rockets();
+  giselle();
 });
 
 onEvent('item.tags', event => {

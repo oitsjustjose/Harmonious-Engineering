@@ -471,61 +471,61 @@
 					tag: {
 						items: [
 							{
-								id: "immersiveengineering:revolver"
+								tag: {
+									bullets: {
+										Items: [ ]
+									}
+								}
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 21
 										Items: [ ]
 									}
 								}
+								id: "immersiveengineering:revolver"
+							}
+							{
+								tag: { }
 								Count: 1b
-								tag: {
-									bullets: {
+								ForgeCaps: {
+									Parent: {
+										Size: 5
 										Items: [ ]
 									}
 								}
-							}
-							{
 								id: "immersiveengineering:buzzsaw"
-								ForgeCaps: {
-									Parent: {
-										Size: 5
-										Items: [ ]
-									}
-								}
-								Count: 1b
-								tag: { }
 							}
 							{
-								id: "immersiveengineering:drill"
+								tag: { }
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 5
 										Items: [ ]
 									}
 								}
-								Count: 1b
-								tag: { }
+								id: "immersiveengineering:drill"
 							}
 							{
 								id: "immersiveengineering:railgun"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 3
 										Items: [ ]
 									}
 								}
-								Count: 1b
 							}
 							{
 								id: "immersiveengineering:chemthrower"
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										Size: 4
 										Items: [ ]
 									}
 								}
-								Count: 1b
 							}
 						]
 					}
@@ -610,4 +610,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }
