@@ -2,7 +2,7 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
-# 3.2.3
+# 3.2.4
 
 **YOU WILL NEED TO BREAK AND RE-PLACE CHUNK LOADERS**
 
