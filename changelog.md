@@ -2,6 +2,37 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.2.5
+
+## Fixed:
+
+- Conflicting recipe between Rockwool & Slag Glass
+- Quest for Mushroom Colonies not being completely written, not explaining how to get them
+
+## Removed:
+
+- Elytra Physics - Client Mods can be installed by players on their own 🙂
+
+## Updated:
+
+- Better Compatibility Checker
+- Create
+- Create Crafts & Additions
+- Dave's Building Extended
+- Expanded Storage
+- Framed Blocks
+- FTB Mods
+- Functional Storage
+- HT's TreeChop
+- Immersive Engineering
+- PneumaticCraft
+- Stack Refill
+- Thermal Mods
+- Tips
+- Verdure
+- Villagers Sell Animals
+- X-Net
+
 # 3.2.4
 
 **YOU WILL NEED TO BREAK AND RE-PLACE CHUNK LOADERS**

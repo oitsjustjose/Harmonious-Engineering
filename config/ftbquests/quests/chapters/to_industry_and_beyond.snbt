@@ -989,31 +989,31 @@
 							}
 							{
 								id: "beyond_earth:oxygen_mask"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
+								Count: 1b
 							}
 							{
 								id: "beyond_earth:space_suit"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
+								Count: 1b
 							}
 							{
 								id: "beyond_earth:space_pants"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
+								Count: 1b
 							}
 							{
 								id: "beyond_earth:space_boots"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
+								Count: 1b
 							}
 						]
 					}

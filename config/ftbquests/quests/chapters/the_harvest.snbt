@@ -122,7 +122,12 @@
 			title: "Mushroom Colonies"
 			x: -3.0d
 			y: -2.0d
-			description: ["You've found that planting a brown mushroom on Rich Soil in a dark environment willl allow these "]
+			subtitle: "Mycelial Rebels"
+			description: [
+				"You've found that planting a brown mushroom on Rich Soil in a dark environment will allow mushrooms to colonize and grow."
+				""
+				"You can either harvest these for bonus mushrooms, or use Shears to collect the colony as a whole."
+			]
 			dependencies: ["6A243C5DCD8A4CA9"]
 			optional: true
 			id: "2C7823612349D65E"

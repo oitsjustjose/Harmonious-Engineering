@@ -98,6 +98,19 @@ onEvent('recipes', event => {
   event.remove({output: 'immersiveengineering:windmill_blade'});
   event.remove({output: 'immersiveengineering:watermill'});
   event.remove({output: 'immersiveengineering:waterwheel_segment'});
+  event.remove({output: 'immersiveengineering:slag_glass'});
+
+  event.recipes.immersiveengineering.alloy(
+    '2x immersiveengineering:slag_glass',
+    '#forge:glass',
+    '#forge:slag'
+  );
+
+  event.recipes.immersiveengineering.arc_furnace(
+    '3x immersiveengineering:slag_glass',
+    '2x #forge:glass',
+    '#forge:slag'
+  );
 
   /* Coke Dust Recipes for other machines */
   event.recipes.createCrushing('immersiveengineering:dust_coke', ['#forge:coal_coke']);

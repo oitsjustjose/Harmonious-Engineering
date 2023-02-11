@@ -79,7 +79,7 @@
 		durabilityDuration = 60
 
 [recipes]
-	tagPreferences = ["minecraft", "thermal",  "immersiveengineering", "create", "mekanism"]
+	tagPreferences = ["minecraft", "thermal", "immersiveengineering", "create", "mekanism"]
 
 	[recipes.recycling]
 		#Compressed and plate items can restore into be each ingot (a.k.a recycling)
