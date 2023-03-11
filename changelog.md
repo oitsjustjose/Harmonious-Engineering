@@ -2,6 +2,40 @@
 
 ## [Credits](https://github.com/oitsjustjose/Harmonious-Engineering/blob/v3.0/CREDITS.md)
 
+# 3.2.6
+
+## Fixed:
+
+- Compressed Desh, Ostrum & Calorite not being automatable
+
+## Changed:
+
+- Tempad now stays open for 6 seconds instead of 3, now takes 90 Seconds to recharge instead of 3 minutes
+
+## Updated:
+
+- Building Gadgets
+- Comforts
+- Createaddition
+- Curios
+- Defaultoptions
+- Expandedstorage
+- Framedblocks
+- Ftb Quests
+- Immersiveengineering
+- Industrial Foregoing
+- Jei
+- Pneumaticcraft Repressurized
+- Refinedstorage
+- Savage And Ravage
+- Titanium
+- Trashslot
+- Treechop Forge
+- Xaeros Minimap
+- Xaerosworldmap
+- Xnet
+- Yungsapi
+
 # 3.2.5
 
 ## Fixed:

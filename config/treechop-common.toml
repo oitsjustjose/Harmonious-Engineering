@@ -85,9 +85,18 @@
 [compatibility]
 	#Better chopping behavior for block with the #forge:mushroom_stems tag
 	mushroomStems = true
-	#Prevent conflicts with DynamicTrees
-	#See https://www.curseforge.com/minecraft/mc-mods/dynamictrees
-	dynamicTrees = true
+	#https://www.curseforge.com/minecraft/mc-mods/carry-on
+	#https://modrinth.com/mod/carry-on
+	#Small fixes.
+	carryOn = true
+	#https://www.curseforge.com/minecraft/mc-mods/project-mmo
+	#https://modrinth.com/mod/project-mmo
+	#Award woodcutting XP for chopping.
+	projectMMO = true
+	#https://www.curseforge.com/minecraft/mc-mods/the-one-probe
+	#https://modrinth.com/mod/the-one-probe
+	#Shows the number of chops required to fell a tree and what loot will drop.
+	theOneProbe = true
 
 	[compatibility.general]
 		#Prevent chopping when right-clicking blocks
@@ -118,6 +127,30 @@
 	[compatibility.API]
 		#Log information about TreeChop API usage. May be useful for debugging mod compatibility issues.
 		verbose = false
+
+	[compatibility.silentgear]
+		#https://www.curseforge.com/minecraft/mc-mods/tinkers-construct
+		#https://modrinth.com/mod/tinkers-construct
+		#Makes saws do more chops.
+		enabled = true
+		#Number of chops a saw should perform on a single block break
+		#Range: 1 ~ 10000
+		sawChops = 5
+
+	[compatibility.tinkersConstruct]
+		#https://www.curseforge.com/minecraft/mc-mods/tinkers-construct
+		#https://modrinth.com/mod/tinkers-construct
+		#Makes AOE tools do more chops.
+		enabled = true
+		#Number of chops that tree breaking tools (like broad axes) should perform on a single block break
+		#Range: 1 ~ 10000
+		treeBreakingTools = 5
+		#Number of chops that wood breaking tools (like hand axes) should perform on a single block break
+		#Range: 1 ~ 10000
+		woodBreakingTools = 1
+		#The chop count multiplier for each level of the expanded upgrade
+		#Range: 1.0 ~ 10000.0
+		expandedMultiplier = 2.0
 
 [mod]
 	#Set to false to disable TreeChop without having to uninstall the mod

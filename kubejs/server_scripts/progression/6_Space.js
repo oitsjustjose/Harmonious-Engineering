@@ -40,9 +40,11 @@ onEvent('recipes', event => {
     event.remove({output: '#beyond_earth:compresseds'});
     event.remove({output: '#forge:plates', mod: 'beyond_earth'});
     event.recipes.thermal.press('beyond_earth:desh_plate', ['1x #forge:ingots/desh']);
-    event.recipes.thermal.press('beyond_earth:compressed_desh', [ '2x beyond_earth:desh_ingot' ]);
-    event.recipes.thermal.press('beyond_earth:compressed_calorite', [ '2x beyond_earth:calorite_ingot' ]);
-    event.recipes.thermal.press('beyond_earth:compressed_ostrum', [ '2x beyond_earth:ostrum_ingot' ]);
+    event.recipes.thermal.press('beyond_earth:compressed_desh', ['2x beyond_earth:desh_ingot']);
+    event.recipes.thermal.press('beyond_earth:compressed_calorite', [
+      '2x beyond_earth:calorite_ingot',
+    ]);
+    event.recipes.thermal.press('beyond_earth:compressed_ostrum', ['2x beyond_earth:ostrum_ingot']);
 
     /* NASA workbench in Mechanical Crafter */
     event.remove({output: 'beyond_earth:nasa_workbench'});

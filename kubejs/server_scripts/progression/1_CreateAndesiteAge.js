@@ -2,6 +2,11 @@
 onEvent('recipes', event => {
   const CustomRecipeHandler = global.recipes(event);
 
+  event.remove({id: 'pneumaticcraft:manual_compressor'});
+  event.remove({id: 'pneumaticcraft:solar_compressor'});
+  event.remove({id: 'pneumaticcraft:assembly/solar_cell'});
+  event.remove({id: 'pneumaticcraft:pressure_chamber/solar_wafer'});
+
   event.remove({id: 'pneumaticcraft:pressure_chamber/compressed_stone'});
   CustomRecipeHandler.pressurizing(
     [{type: 'pneumaticcraft:stacked_item', item: 'minecraft:stone', count: 1}],
@@ -33,11 +38,13 @@ onEvent('recipes', event => {
   event.remove({output: 'createaddition:copper_spool'});
   event.remove({output: 'createaddition:copper_wire'});
   event.remove({output: 'createaddition:diamond_grit'});
+  event.remove({output: 'createaddition:festive_spool'});
   event.remove({output: 'createaddition:gold_rod'});
   event.remove({output: 'createaddition:gold_spool'});
   event.remove({output: 'createaddition:gold_wire'});
   event.remove({output: 'createaddition:iron_rod'});
   event.remove({output: 'createaddition:iron_wire'});
+  event.remove({output: 'createaddition:modular_accumulator'});
   event.remove({output: 'createaddition:redstone_relay'});
   event.remove({output: 'createaddition:rolling_mill'});
   event.remove({output: 'createaddition:spool'});
